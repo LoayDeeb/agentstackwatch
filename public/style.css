@@ -100,4 +100,9 @@ nav{display:flex;gap:4px}nav a{font-size:14px;color:var(--mut);padding:7px 12px;
 /* mobile */
 @media(max-width:900px){.shell{padding:0 20px}nav{display:none}.front,.pgrid,.signup{grid-template-columns:1fr;gap:28px}.rail{border:0;padding:0}.quad{grid-template-columns:1fr 1fr}.qc{border:0;margin:0;padding:20px 12px 20px 0;border-bottom:1px solid var(--line)}
 .kpis{grid-template-columns:1fr 1fr}.kpis div{border:0;margin:0;border-bottom:1px solid var(--line)}.hide-s{display:none}.signup,.signup.feature{padding:28px}.hero{padding:56px 0 32px}.pull{margin:36px 0;font-size:26px}.arow{grid-template-columns:1fr;gap:6px}.cats{grid-template-columns:1fr}.tf{min-width:0;width:100%}.prose{font-size:19px}.hero-meta{gap:16px}}
-.bh-embed{width:100%;min-height:56px}.bh-embed iframe{width:100%!important;max-width:100%;border:0}.sg-alt{width:100%;margin:6px 0 0;font-size:13px;color:var(--mut)}.sg-alt a{color:var(--acc);font-weight:600}
+/* Beehiiv embed */
+.sg-form{min-width:0}.bh-embed{width:100%;min-width:0;min-height:120px;overflow:hidden;border-radius:12px}.bh-embed>div{width:100%!important;max-width:100%!important}.bh-embed iframe{display:block;width:100%!important;max-width:100%!important;border:0;color-scheme:light}
+.sg-alt{display:none;width:100%;margin:8px 0 0;font-size:12.5px;color:var(--mut)}.sg-alt a{color:var(--acc);font-weight:600}.sg-form.bh-failed .sg-alt{display:block}.sg-form.bh-failed .bh-embed{min-height:0}
+@media(max-width:900px){.signup,.signup.feature{gap:16px}}
+@media(max-width:520px){.signup,.signup.feature{padding:26px 18px 14px;margin:44px 0;border-radius:16px}.signup h3{font-size:26px}.sg-copy p:last-child{font-size:15.5px}/* Beehiiv's form has a fixed 80px inner padding; crop it so the field uses the card width */.bh-embed{margin:-4px 0 0}.bh-embed iframe{width:calc(100% + 136px)!important;max-width:none!important;margin:-62px -68px -66px}.mrow{gap:10px}.brand{font-size:19px;min-width:0}.mtools{gap:4px;flex-shrink:0}.subbtn{padding:8px 12px;font-size:13px}}
+@media(max-width:400px){.mtools .ic[aria-label=Search]{display:none}}

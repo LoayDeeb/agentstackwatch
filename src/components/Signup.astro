@@ -9,3 +9,6 @@ const { variant = 'inline' } = Astro.props;
   <p class="sg-alt">Form not loading? <a href="https://loays-newsletter.beehiiv.com/subscribe" target="_blank" rel="noopener">Subscribe on Beehiiv →</a></p>
  </div>
 </section>
+<script is:inline>
+(function(){var f=document.currentScript.previousElementSibling.querySelector('.sg-form');var t=Date.now();(function c(){if(f.querySelector('iframe'))return;if(Date.now()-t>8000){f.classList.add('bh-failed');return}setTimeout(c,400)})();})();
+</script>
