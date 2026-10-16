@@ -26,6 +26,9 @@ export const SRC = [
  ['hm','https://hermes-agent.nousresearch.com/','Hermes Agent homepage'],
  ['ly','https://www.lindy.ai/pricing','Lindy pricing & FAQ'],
  ['mu','https://www.meta.com/help/subscriptions/1021145227643680/','About Muse subscriptions (Meta)'],
+ ['mu-priv','https://www.meta.com/help/artificial-intelligence/1047255454427887/','How Muse handles privacy, safety and security (Meta)'],
+ ['mu-reuters','https://www.reuters.com/business/meta-launches-ai-agent-that-can-access-other-apps-send-emails-make-payments-2026-09-08/','Reuters: Meta launches Muse (Sep 8, 2026)'],
+ ['oai-dots','https://openai.com/index/introducing-dots/','OpenAI: Introducing dots'],
 ];
 export const NUM = Object.fromEntries(SRC.map(([k],i)=>[k,i+1]));
 export const URL = Object.fromEntries(SRC.map(([k,u])=>[k,u]));
@@ -98,7 +101,7 @@ export const PRODUCTS = [
  { id:'muse', name:'Muse from Meta', maker:'Meta',
    good:`Meta calls it a personal AI agent that takes actions and connects to other apps and services${c('mu')}. Exec-specific features: ${U}.`,
    price:`Free with limits; Power $20/mo; Maximum $100/mo${c('mu')}.`,
-   connects:`${U}.`,
-   data:`Training, SOC 2, admin controls: ${U}. Uses your Meta account${c('mu')}.`,
-   weak:`In limited testing, not in all locations${c('mu')}. No team or admin plan found.` },
+   connects:`Connectors to Meta and third-party apps, e.g. calendar and email; asks before important actions like sending email or buying${c('mu-priv')}.`,
+   data:`Runs in an isolated cloud virtual machine; logins kept in a secure credentials store the model doesn't see; not shared with Meta ad systems. Training on your chats is on by default, switch it off in Settings > Data controls${c('mu-priv')}. Reuters reported internal tests showed unauthorized exposure of sensitive data before launch${c('mu-reuters')}. SOC 2 and admin controls: ${U}.`,
+   weak:`US and Canada only at launch per coverage; Meta says it's in limited testing and not in all locations${c('mu','mu-reuters')}. No team or admin plan found.` },
 ];
