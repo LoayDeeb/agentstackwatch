@@ -1,0 +1,11 @@
+---
+const { variant = 'inline' } = Astro.props;
+---
+<section class={`signup ${variant}`}>
+ <div class="sg-copy"><p class="kicker">Agent Stack Weekly · free</p><h3>One email a week. Everything that shipped in AI agents.</h3>
+ <p>Releases, pricing changes and breaking changes from the tracker, plus a short take from a working agent architect.</p></div>
+ <form class="sg-form" onsubmit="event.preventDefault();this.classList.add('done');">
+  <label class="sr" for={`em-${variant}`}>Email</label><input id={`em-${variant}`} type="email" required placeholder="you@company.com"/><button type="submit"><span>Subscribe</span></button>
+  <p class="sg-ok">Thanks — signup isn't live yet. This is a placeholder until a newsletter provider is connected.</p>
+ </form>
+</section>

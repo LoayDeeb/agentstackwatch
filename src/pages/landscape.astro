@@ -1,0 +1,7 @@
+---
+import Base from '../layouts/Base.astro'; import Landscape from '../components/Landscape.astro'; import { CATS } from '../lib/data.js';
+---
+<Base title="The Agent Landscape — AgentStackWatch" desc="Interactive map of AI agents, platforms, frameworks and benchmarks, sized by GitHub stars." og="landscape">
+<header class="pagehead"><p class="kicker">Interactive map</p><h1>The Agent Landscape</h1><p class="dek">Every tracked product, clustered by where it sits in the stack and sized by GitHub stars. Real data, refreshed nightly.</p>
+<div class="legend">{Object.entries(CATS).map(([k,c])=> <span><i class={`sw c-${k}`}></i>{c.name}</span>)}</div></header>
+<Landscape/></Base>

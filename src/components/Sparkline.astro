@@ -1,0 +1,10 @@
+---
+const { series = [], w = 96, h = 26, big = false } = Astro.props;
+const pts = series.map(x=>x.n); const max=Math.max(...pts), min=Math.min(...pts);
+const xy = pts.map((n,i)=>[ (i/(pts.length-1||1))*w, h-2-((n-min)/((max-min)||1))*(h-4) ]);
+const line = xy.map(p=>p.map(v=>v.toFixed(1)).join(',')).join(' ');
+const area = `0,${h} ${line} ${w},${h}`; const up = pts.at(-1) >= pts[0];
+---
+{pts.length>1 ? <svg class={big?'spark big':'spark'} viewBox={`0 0 ${w} ${h}`} preserveAspectRatio="none" role="img" aria-label={`Weekly downloads trend, ${series[0].w} to ${series.at(-1).w}`}>
+ <polygon points={area} class={up?'a up':'a dn'}/><polyline points={line} class={up?'l up':'l dn'} vector-effect="non-scaling-stroke"/>
+ <circle cx={xy.at(-1)[0]} cy={xy.at(-1)[1]} r={big?3:2} class={up?'d up':'d dn'}/></svg> : <span class="muted">—</span>}

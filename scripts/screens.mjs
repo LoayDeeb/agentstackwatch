@@ -1,0 +1,14 @@
+import { chromium } from 'playwright';
+const B='http://127.0.0.1:4321', b = await chromium.launch({ executablePath: '/usr/bin/google-chrome' });
+const errs=[]; const ctx = await b.newContext({ viewport:{width:1440,height:900}, deviceScaleFactor:1, reducedMotion:'reduce' });
+const p = await ctx.newPage(); p.on('console',m=>m.type()==='error'&&errs.push(p.url()+' '+m.text())); p.on('pageerror',e=>errs.push(p.url()+' '+e.message));
+const shot = async (u,f,full=false,fn) => { await p.goto(B+u,{waitUntil:'networkidle'}); await p.evaluate(()=>document.querySelectorAll('.rv').forEach(e=>e.classList.add('in'))); if(fn) await fn(); await p.waitForTimeout(300); await p.screenshot({path:'screens/'+f,fullPage:full}); };
+await shot('/','home-full.png',true);
+await shot('/landscape/','landscape.png',false,async()=>{ const n=p.locator('.nd').first(); await n.scrollIntoViewIfNeeded(); await n.hover(); });
+await shot('/posts/draft-placeholder-what-shipped-this-week/','post.png',true);
+await shot('/tracker/','tracker.png');
+await shot('/agents/langgraph/','product-langgraph.png',true);
+await shot('/agents/openclaw/','product-openclaw.png');
+const m = await b.newContext({ viewport:{width:390,height:844}, deviceScaleFactor:2, isMobile:true, reducedMotion:'reduce' }); const mp = await m.newPage();
+mp.on('pageerror',e=>errs.push('mobile '+e.message)); await mp.goto(B+'/',{waitUntil:'networkidle'}); await mp.screenshot({path:'screens/mobile-home.png',fullPage:true});
+await b.close(); console.log('errors:', errs.length? errs : 'none');

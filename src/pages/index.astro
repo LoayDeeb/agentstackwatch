@@ -1,0 +1,29 @@
+---
+import Base from '../layouts/Base.astro'; import Signup from '../components/Signup.astro'; import Ticker from '../components/Ticker.astro';
+import Landscape from '../components/Landscape.astro'; import Sparkline from '../components/Sparkline.astro';
+import { getPosts, pdate } from '../lib/posts.js'; import { all, CATS, movers, releases, fmt } from '../lib/data.js';
+const posts = await getPosts(); const [lead, ...rest] = posts;
+const verified = all.filter(e=>e.status==='verified').length; const repoV = all.filter(e=>e.status==='repo-verified').length; const stars = all.reduce((a,e)=>a+(e.stats.stars||0),0);
+const top = [...all].filter(e=>e.stats.downloads_weekly).sort((a,b)=>b.stats.downloads_weekly.at(-1).n-a.stats.downloads_weekly.at(-1).n).slice(0,6);
+const pct = g => (g>=0?'+':'')+(g*100).toFixed(0)+'%';
+---
+<Base>
+<section class="hero"><p class="eyebrow rv">Issue No. 0 · {pdate(new Date())}</p>
+<h1 class="rv">The AI agent stack,<br/><em>tracked</em> every night.</h1>
+<p class="dek rv">An independent publication on personal agents, managed platforms, frameworks and the research behind them — with a live tracker of {all.length} products and every fact sourced.</p>
+<div class="hero-meta rv"><span><b>{all.length}</b> products</span><span><b>{verified}</b> source-verified</span><span><b>{repoV}</b> repo-verified</span><span><b>{fmt(stars)}</b> GitHub stars tracked</span><span><b>{releases.length}</b> release feeds</span></div></section>
+<Ticker/>
+<section class="front">
+ <div class="lead-story rv">{lead && <a href={`/posts/${lead.slug}/`} class="story"><p class="date">{pdate(lead.data.date)} {lead.data.draft && <span class="draft">Draft</span>}</p><h2>{lead.data.title}</h2><p class="dek sm">{lead.data.summary}</p><span class="more">Read the issue →</span></a>}
+ {rest.map(p=> <a href={`/posts/${p.slug}/`} class="story s2"><p class="date">{pdate(p.data.date)}</p><h3>{p.data.title}</h3></a>)}</div>
+ <aside class="rail rv"><p class="kicker">Most downloaded this week</p>
+ <ol class="movers">{top.map((e,i)=> <li><a href={`/agents/${e.slug}/`}><span class="rk">{String(i+1).padStart(2,'0')}</span><span class="nm">{e.name}<small>{fmt(e.stats.downloads_weekly.at(-1).n)} / wk · {e.stats.downloads_source}</small></span><Sparkline series={e.stats.downloads_weekly}/></a></li>)}</ol>
+ <p class="kicker mt">Fastest growing · 12 weeks</p>
+ <ol class="movers g">{movers.slice(0,4).map(({e,g})=> <li><a href={`/agents/${e.slug}/`}><span class="nm">{e.name}</span><span class={g>=0?'pos':'neg'}>{pct(g)}</span></a></li>)}</ol>
+ <p class="small muted">Weekly downloads from PyPI (without mirrors) and npm.</p></aside>
+</section>
+<Signup variant="feature"/>
+<section class="sect rv"><div class="sect-h"><p class="kicker">The landscape</p><h2>Who's building the agent stack</h2><a href="/landscape/" class="more">Open full map →</a></div><Landscape compact/></section>
+<section class="sect rv"><div class="sect-h"><p class="kicker">The tracker</p><h2>Four corners of the stack</h2><a href="/tracker/" class="more">Browse all {all.length} →</a></div>
+<div class="quad">{Object.entries(CATS).map(([k,c])=> <a href={`/category/${k}/`} class="qc"><span class={`sw c-${k}`}></span><h3>{c.name}</h3><p>{c.blurb}</p><small>{all.filter(e=>e.category===k).length} entries</small></a>)}</div></section>
+</Base>

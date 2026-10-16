@@ -1,0 +1,6 @@
+---
+import Base from '../../layouts/Base.astro'; import { getPosts, pdate } from '../../lib/posts.js';
+const posts = await getPosts();
+---
+<Base title="Writing — AgentStackWatch"><header class="pagehead"><p class="kicker">Archive</p><h1>Writing</h1><p class="dek">Every issue of Agent Stack Weekly.</p></header>
+<div class="archive">{posts.map(p=> <a class="arow" href={`/posts/${p.slug}/`}><span class="date">{pdate(p.data.date)}</span><span><h3>{p.data.title}{p.data.draft && <span class="draft">Draft</span>}</h3><p>{p.data.summary}</p></span></a>)}</div></Base>

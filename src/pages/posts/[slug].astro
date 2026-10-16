@@ -1,0 +1,14 @@
+---
+import Base from '../../layouts/Base.astro'; import Signup from '../../components/Signup.astro';
+import { getPosts, pdate } from '../../lib/posts.js';
+export async function getStaticPaths(){ return (await getPosts()).map(p=>({params:{slug:p.slug},props:{p}})); }
+const { p } = Astro.props; const { Content } = await p.render(); const mins = Math.max(1, Math.round(p.body.split(/\s+/).length/230));
+---
+<Base title={`${p.data.title} — AgentStackWatch`} desc={p.data.summary} og={`posts-${p.slug}`}>
+<div class="progress" aria-hidden="true"><i id="pg"></i></div>
+<article class="post"><header><p class="kicker">Agent Stack Weekly {p.data.draft && <span class="draft">Draft placeholder</span>}</p><h1>{p.data.title}</h1><p class="dek">{p.data.summary}</p>
+<p class="byline">By <b>Loay Deeb</b> · {pdate(p.data.date)} · {mins} min read</p></header>
+<div class="prose"><Content/></div></article>
+<Signup variant="feature"/>
+<script is:inline>const pg=document.getElementById('pg');addEventListener('scroll',()=>{const h=document.documentElement;pg.style.transform=`scaleX(${h.scrollTop/(h.scrollHeight-h.clientHeight||1)})`},{passive:true});</script>
+</Base>

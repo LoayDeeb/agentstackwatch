@@ -1,0 +1,12 @@
+---
+import { fmt } from '../lib/data.js'; import Sparkline from './Sparkline.astro';
+const { list } = Astro.props; const u=v=>(v==null||v==='unknown')?'unknown':v;
+---
+<div class="tt-wrap"><table class="tt"><thead><tr><th>Product</th><th class="hide-s">Pricing</th><th>Version</th><th class="num">Stars</th><th class="num hide-s">Downloads / wk</th><th class="hide-s">26-week trend</th></tr></thead><tbody>
+{list.map(e=> <tr data-row data-text={(e.name+' '+e.maker+' '+e.description).toLowerCase()}>
+ <td><a href={`/agents/${e.slug}/`} class="pn">{e.name}</a>{e.status!=='unverified' && <span class="ok" title={e.status.replace('-',' ')}>✓</span>}<small class={u(e.maker)==='unknown'?'unk':''}>{u(e.maker)}</small></td>
+ <td class={'hide-s '+(u(e.pricing)==='unknown'?'unk':'')}>{u(e.pricing)}</td>
+ <td class="mono">{e.stats.display_version?.replace(/^v/,'') ?? '—'}</td><td class="num mono">{fmt(e.stats.stars)}</td>
+ <td class="num mono hide-s">{e.stats.downloads_weekly ? fmt(e.stats.downloads_weekly.at(-1).n) : '—'}</td>
+ <td class="hide-s">{e.stats.downloads_weekly ? <Sparkline series={e.stats.downloads_weekly}/> : <span class="muted">—</span>}</td></tr>)}
+</tbody></table></div>

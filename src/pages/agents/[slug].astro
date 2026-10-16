@@ -1,0 +1,28 @@
+---
+import Base from '../../layouts/Base.astro'; import Sparkline from '../../components/Sparkline.astro'; import Signup from '../../components/Signup.astro';
+import { all, CATS, changes, fmt, d, PAIRS } from '../../lib/data.js';
+export function getStaticPaths(){ return all.map(e=>({params:{slug:e.slug}, props:{e}})); }
+const { e } = Astro.props; const s = e.stats; const u = v => (v==null||v==='unknown') ? 'unknown' : v;
+const hist = changes.filter(c=>c.slug===e.slug).reverse(); const cmp = PAIRS.filter(p=>p.includes(e.slug));
+const rows = [['Maker',u(e.maker)],['Pricing',u(e.pricing)],['Open source',e.open_source==='unknown'?'unknown':e.open_source?'Yes':'No'],['License',s.license&&s.license!=='NOASSERTION'?s.license:u(e.license)],['Website',e.url]];
+if (e.github) rows.push(['Repository',`https://github.com/${e.github}`]);
+const w = s.downloads_weekly; const peak = w ? Math.max(...w.map(x=>x.n)) : 0;
+---
+<Base title={`${e.name} — releases, pricing & stats | AgentStackWatch`} desc={e.description} og={`agents-${e.slug}`}>
+<header class="pagehead prod"><p class="kicker"><a href="/tracker/">Tracker</a> / <a href={`/category/${e.category}/`}>{CATS[e.category].name}</a></p>
+<h1>{e.name}</h1><p class="dek">{e.description}</p><span class={`badge ${e.status}`}>{e.status==='verified'?'✓ Verified against sources':e.status==='repo-verified'?'✓ Repository verified':'Unverified'}</span></header>
+<div class="kpis">
+ <div><span>Latest version</span><b class="mono">{s.display_version?.replace(/^v/,'')??'—'}</b><small>{s.display_version_source??''}{s.release_date?' · '+d(s.release_date):''}</small></div>
+ <div><span>GitHub stars</span><b class="mono">{fmt(s.stars)}</b><small>{s.forks?fmt(s.forks)+' forks':''}</small></div>
+ <div><span>Downloads / week</span><b class="mono">{w?fmt(w.at(-1).n):'—'}</b><small>{s.downloads_source??''}</small></div>
+ <div><span>Last commit</span><b class="mono">{d(s.pushed_at)}</b><small>{s.open_issues!=null?fmt(s.open_issues)+' open issues':''}</small></div>
+</div>
+{w && <figure class="chart"><figcaption><b>Weekly downloads</b><span>{w[0].w} → {w.at(-1).w} · peak {fmt(peak)} · {s.downloads_source}</span></figcaption><Sparkline series={w} w={800} h={160} big/></figure>}
+<div class="pgrid"><section><h2>Facts</h2><dl class="facts">{rows.map(([k,v])=> <><dt>{k}</dt><dd class={v==='unknown'?'unk':''}>{String(v).startsWith('http')?<a href={v}>{v.replace(/^https?:\/\//,'')}</a>:v}</dd></>)}</dl>
+{e.notes && <p class="note">{e.notes}</p>}</section>
+<section><h2>Changelog</h2>{hist.length? <ul class="changes">{hist.map(c=> <li><span>{c.date}</span>{c.field}: {c.from} → <b>{c.to}</b></li>)}</ul> : <p class="muted">No changes recorded since tracking began on {d(s.fetched_at)}.</p>}
+{s.release_url && <p><a href={s.release_url} class="more">Latest release notes →</a></p>}
+<h2>Sources</h2>{e.sources.length? <ol class="src">{e.sources.map(x=> <li><a href={x}>{x.replace(/^https?:\/\//,'')}</a></li>)}</ol> : <p class="muted">No sources yet.</p>}
+{cmp.length>0 && <><h2>Compare</h2>{cmp.map(([a,b])=> <p><a class="more" href={`/compare/${a}-vs-${b}/`}>{a} vs {b} →</a></p>)}</>}</section></div>
+<Signup/>
+</Base>

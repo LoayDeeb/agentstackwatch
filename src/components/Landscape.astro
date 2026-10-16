@@ -1,0 +1,34 @@
+---
+import { all, CATS, fmt } from '../lib/data.js';
+const { compact = false } = Astro.props;
+const W=1200,H=compact?620:760;
+const centers={frameworks:[W*0.30,H*0.47],personal:[W*0.72,H*0.30],managed:[W*0.74,H*0.74],research:[W*0.10,H*0.80]};
+const maxS=Math.max(...all.map(e=>e.stats.stars||0));
+const nodes=[];
+for (const cat of Object.keys(CATS)) {
+  const list=all.filter(e=>e.category===cat).map(e=>({e,r:e.stats.stars?12+52*Math.sqrt(e.stats.stars/maxS):10}));
+  list.sort((a,b)=>b.r-a.r); const [cx,cy]=centers[cat]; const placed=[];
+  for (const n of list) { let t=0,x=cx,y=cy;
+    while (placed.some(p=>Math.hypot(p.x-x,p.y-y)<p.r+n.r+5)) { t+=0.35; const rad=2.6*t; x=cx+rad*Math.cos(t); y=cy+rad*Math.sin(t)*0.82; }
+    x=Math.min(W-n.r-4,Math.max(n.r+4,x)); y=Math.min(H-n.r-4,Math.max(n.r+30,y)); placed.push({...n,x,y}); }
+  nodes.push(...placed.map(p=>({...p,cat})));
+}
+const labels=Object.fromEntries(Object.keys(CATS).map(k=>{const ns=nodes.filter(n=>n.cat===k);return [k,[Math.min(...ns.map(n=>n.x-n.r)),Math.min(...ns.map(n=>n.y-n.r))-12]];}));
+---
+<figure class="landscape" data-landscape>
+<svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label="Agent landscape: entries clustered by category, circle area by GitHub stars">
+ {Object.entries(labels).map(([k,[x,y]])=> <text class="cl" x={x} y={y}>{CATS[k].name.toUpperCase()}</text>)}
+ {nodes.map(n=> <a href={`/agents/${n.e.slug}/`} class={`nd c-${n.cat}${n.e.stats.stars?'':' nostar'}`} data-name={n.e.name} data-maker={n.e.maker} data-stars={n.e.stats.stars?fmt(n.e.stats.stars)+' stars':'Closed source / no repo'} data-ver={n.e.stats.display_version||''} data-desc={n.e.description}>
+   <circle cx={n.x.toFixed(1)} cy={n.y.toFixed(1)} r={n.r.toFixed(1)}/>
+   {n.r>24 && <text x={n.x.toFixed(1)} y={(n.y+4).toFixed(1)} class="nl" style={`font-size:${Math.min(15,n.r/3.4).toFixed(1)}px`}>{n.e.name.replace(/ \(.*\)$/,'')}</text>}
+ </a>)}
+</svg>
+<div class="hc" hidden><b></b><span class="hm"></span><p></p><em></em></div>
+<figcaption>Circle area ∝ GitHub stars (fetched {all.find(e=>e.stats.fetched_at)?.stats.fetched_at.slice(0,10)}). Hollow circles are closed-source products with no public repo. Hover for details, click to open.</figcaption>
+</figure>
+<script is:inline>
+document.querySelectorAll('[data-landscape]').forEach(f=>{const hc=f.querySelector('.hc');f.querySelectorAll('.nd').forEach(n=>{
+n.addEventListener('mouseenter',()=>{hc.querySelector('b').textContent=n.dataset.name;hc.querySelector('.hm').textContent=n.dataset.maker==='unknown'?'':n.dataset.maker;hc.querySelector('p').textContent=n.dataset.desc;hc.querySelector('em').textContent=[n.dataset.stars,n.dataset.ver&&('v'+n.dataset.ver.replace(/^v/,''))].filter(Boolean).join(' · ');hc.hidden=false;});
+n.addEventListener('mousemove',e=>{const r=f.getBoundingClientRect();let x=e.clientX-r.left+16,y=e.clientY-r.top+16;if(x+280>r.width)x-=300;hc.style.transform=`translate(${x}px,${y}px)`;});
+n.addEventListener('mouseleave',()=>hc.hidden=true);});});
+</script>

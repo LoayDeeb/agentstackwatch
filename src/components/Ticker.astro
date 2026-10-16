@@ -1,0 +1,7 @@
+---
+import { releases } from '../lib/data.js';
+const items = releases.slice(0,16);
+const md = s => new Date(s+'T00:00:00Z').toLocaleDateString('en-US',{month:'short',day:'numeric',timeZone:'UTC'});
+---
+<div class="ticker" aria-label="Latest releases"><span class="live"><i></i>Latest releases</span>
+<div class="tk-viewport"><div class="tk-track">{[0,1].map(k=> <div class="tk-set" aria-hidden={k?'true':undefined}>{items.map(r=> <a href={`/agents/${r.slug}/`}><b>{r.name}</b> {r.v.replace(/^v/,'')}<span>{md(r.date)}</span></a>)}</div>)}</div></div></div>

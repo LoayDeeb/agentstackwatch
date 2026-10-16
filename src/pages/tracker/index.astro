@@ -1,0 +1,10 @@
+---
+import Base from '../../layouts/Base.astro'; import TrackerTable from '../../components/TrackerTable.astro';
+import { all, CATS } from '../../lib/data.js';
+---
+<Base title="Tracker — AgentStackWatch" og="tracker">
+<header class="pagehead"><p class="kicker">Reference</p><h1>The Tracker</h1><p class="dek">{all.length} products refreshed nightly from GitHub, PyPI and npm. <span class="ok">✓</span> marks entries checked against sources; anything unchecked reads <em>unknown</em>.</p>
+<div class="tf-row"><input id="tf" class="tf" placeholder="Filter products, makers…" aria-label="Filter"/><div class="chips">{Object.entries(CATS).map(([k,c])=> <a href={`#${k}`}><i class={`sw c-${k}`}></i>{c.name}</a>)}</div></div></header>
+{Object.entries(CATS).map(([k,c])=> <section class="cat" id={k}><div class="cat-h"><h2><a href={`/category/${k}/`}>{c.name}</a></h2><p class="muted">{c.blurb}</p></div><TrackerTable list={all.filter(e=>e.category===k)}/></section>)}
+<script is:inline>document.getElementById('tf').addEventListener('input',e=>{const q=e.target.value.toLowerCase();document.querySelectorAll('[data-row]').forEach(r=>r.style.display=r.dataset.text.includes(q)?'':'none')});</script>
+</Base>

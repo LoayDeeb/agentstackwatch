@@ -1,0 +1,11 @@
+---
+import Base from '../../layouts/Base.astro'; import { PAIRS, bySlug, fmt, d } from '../../lib/data.js';
+export function getStaticPaths(){ return PAIRS.map(([a,b])=>({params:{pair:`${a}-vs-${b}`},props:{a:bySlug[a],b:bySlug[b]}})); }
+const { a, b } = Astro.props; const u=v=>(v==null||v==='unknown')?'unknown':String(v);
+const rows=[['Maker',x=>u(x.maker)],['Pricing',x=>u(x.pricing)],['Open source',x=>x.open_source==='unknown'?'unknown':x.open_source?'Yes':'No'],['GitHub stars',x=>fmt(x.stats.stars)],['Latest version',x=>x.stats.display_version?`${x.stats.display_version} (${x.stats.display_version_source})`:'—'],['Release date',x=>d(x.stats.release_date)],['PyPI / week',x=>fmt(x.stats.pypi_last_week)],['npm / week',x=>fmt(x.stats.npm_last_week)],['Last push',x=>d(x.stats.pushed_at)],['Verification',x=>x.status]];
+---
+<Base title={`${a.name} vs ${b.name} — AgentStackWatch`} desc={`Side-by-side: ${a.name} vs ${b.name} releases, pricing, adoption.`}>
+<header class="pagehead"><p class="kicker">Compare</p><h1>{a.name} vs {b.name}</h1><p class="dek">Live data, refreshed nightly. No winner declared — pick by what you are building.</p></header>
+<div class="panel"><table class="cmp"><tr><th></th><th><a href={`/agents/${a.slug}/`}>{a.name}</a></th><th><a href={`/agents/${b.slug}/`}>{b.name}</a></th></tr>
+{rows.map(([k,f])=> <tr><th>{k}</th><td>{f(a)}</td><td>{f(b)}</td></tr>)}
+<tr><th>What it is</th><td>{a.description}</td><td>{b.description}</td></tr></table></div></Base>
