@@ -1,7 +1,7 @@
 // Post-build: prefix root-relative URLs in dist with BASE_PATH (e.g. /agentstackwatch) for GitHub Pages project sites.
 import fs from 'node:fs'; import path from 'node:path';
 const B = (process.env.BASE_PATH || '').replace(/\/$/, ''); if (!B) { console.log('rebase: no BASE_PATH, skipping'); process.exit(0); }
-const SITE = (process.env.SITE_URL || 'https://loaydeeb.github.io').replace(/\/$/, '');
+const SITE = (process.env.SITE_URL || 'https://agentstackwatch.com').replace(/\/$/, '');
 const walk = d => fs.readdirSync(d,{withFileTypes:true}).flatMap(f => f.isDirectory() ? walk(path.join(d,f.name)) : [path.join(d,f.name)]);
 let n = 0;
 for (const f of walk('dist').filter(f => /\.(html|css|xml)$/.test(f))) {

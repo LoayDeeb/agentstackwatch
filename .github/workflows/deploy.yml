@@ -7,7 +7,6 @@ concurrency: { group: pages, cancel-in-progress: true }
 jobs:
   build:
     runs-on: ubuntu-latest
-    env: { BASE_PATH: /agentstackwatch, SITE_URL: 'https://loaydeeb.github.io' }
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && node scripts/rebase.mjs && pagefind --site dist",
+    "build": "astro build && pagefind --site dist",
     "preview": "astro preview --port 4321 --host 127.0.0.1",
     "fetch": "node scripts/fetch-stats.mjs",
     "og": "node scripts/og.mjs",

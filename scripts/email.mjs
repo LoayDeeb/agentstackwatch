@@ -1,6 +1,6 @@
 // Builds an email-ready (Beehiiv-friendly) HTML version of a post from dist output. Usage: node scripts/email.mjs <slug> <out>
 import fs from 'node:fs';
-const [slug, out] = process.argv.slice(2); const SITE = 'https://loaydeeb.github.io/agentstackwatch';
+const [slug, out] = process.argv.slice(2); const SITE = 'https://agentstackwatch.com';
 const html = fs.readFileSync(`dist/posts/${slug}/index.html`, 'utf8');
 let body = html.match(/<div class="prose">([\s\S]*?)<\/div><\/article>/)[1];
 const title = html.match(/<h1>([\s\S]*?)<\/h1>/)[1]; const dek = html.match(/<p class="dek">([\s\S]*?)<\/p>/)[1];
