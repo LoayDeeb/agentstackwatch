@@ -1,6 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro'; import Sparkline from '../../components/Sparkline.astro'; import Signup from '../../components/Signup.astro';
-import { all, CATS, changes, fmt, d, PAIRS } from '../../lib/data.js';
+import { all, bySlug, CATS, changes, fmt, d, PAIRS } from '../../lib/data.js';
 export function getStaticPaths(){ return all.map(e=>({params:{slug:e.slug}, props:{e}})); }
 const { e } = Astro.props; const s = e.stats; const u = v => (v==null||v==='unknown') ? 'unknown' : v;
 const hist = changes.filter(c=>c.slug===e.slug).reverse(); const cmp = PAIRS.filter(p=>p.includes(e.slug));
@@ -23,6 +23,8 @@ const w = s.downloads_weekly; const peak = w ? Math.max(...w.map(x=>x.n)) : 0;
 <section><h2>Changelog</h2>{hist.length? <ul class="changes">{hist.map(c=> <li><span>{c.date}</span>{c.field}: {c.from} → <b>{c.to}</b></li>)}</ul> : <p class="muted">No changes recorded since tracking began on {d(s.fetched_at)}.</p>}
 {s.release_url && <p><a href={s.release_url} class="more">Latest release notes →</a></p>}
 <h2>Sources</h2>{e.sources.length? <ol class="src">{e.sources.map(x=> <li><a href={x}>{x.replace(/^https?:\/\//,'')}</a></li>)}</ol> : <p class="muted">No sources yet.</p>}
-{cmp.length>0 && <><h2>Compare</h2>{cmp.map(([a,b])=> <p><a class="more" href={`/compare/${a}-vs-${b}/`}>{a} vs {b} →</a></p>)}</>}</section></div>
+{cmp.length>0 && <><h2>Compare</h2>{cmp.map(([a,b])=> <p><a class="more" href={`/compare/${a}-vs-${b}/`}>{bySlug[a].name} vs {bySlug[b].name} →</a></p>)}</>}
+<h2>Get your badge</h2><p><img src={`/badge/${e.slug}.svg`} alt={`${e.name} tracked on AgentStackWatch`} height="20"/></p>
+<p class="muted small">Make this product? Paste this into your website or README to show it's tracked here:</p><pre class="snip">{`[![Tracked on AgentStackWatch](https://agentstackwatch.com/badge/${e.slug}.svg)](https://agentstackwatch.com/agents/${e.slug}/)`}</pre></section></div>
 <Signup/>
 </Base>

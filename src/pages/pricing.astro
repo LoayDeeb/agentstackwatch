@@ -1,0 +1,16 @@
+---
+import Base from '../layouts/Base.astro'; import { bySlug, pricing, pricingCurated } from '../lib/data.js';
+const order = ['personal','managed'];
+const rows = Object.keys(pricingCurated).filter(k=>!k.startsWith('_')&&bySlug[k]).map(k=>({e:bySlug[k],c:pricingCurated[k],p:pricing[k]||{}}))
+  .sort((a,b)=>order.indexOf(a.e.category)-order.indexOf(b.e.category));
+const groups = [['personal','AI assistants for you and your team'],['managed','Platforms for businesses running their own agents']];
+---
+<Base title="AI agent pricing compared: personal agents & managed platforms | AgentStackWatch" desc="Plans and prices for Grok Bot, ChatGPT, Claude, Manus, Lindy, Gemini Agent, OpenClaw and managed agent platforms, each linked to the vendor's official pricing page with the date checked.">
+<header class="pagehead"><p class="kicker">Pricing</p><h1>What AI agents cost</h1><p class="dek">The monthly plans for AI assistants like Grok Bot, ChatGPT, Claude and Manus, then what businesses pay to run agents on the big cloud platforms. Each price links to the company's own page, with the date we checked it. We re-check every week and note when a page changes. If we couldn't confirm a price, we say so.</p></header>
+{groups.map(([cat,label])=> <section class="wk"><h2>{label}</h2><table class="ptab"><thead><tr><th>Product</th><th>Price</th><th>Where it's from</th></tr></thead><tbody>
+{rows.filter(r=>r.e.category===cat).map(({e,c,p})=> <tr><td class="nm"><a href={`/agents/${e.slug}/`}>{e.name}</a><small>{e.maker}</small></td>
+<td>{c.price}{!c.confirmed && <small>We couldn't confirm this on the pricing page itself, so treat it as unconfirmed.</small>}</td>
+<td class="src"><a href={p.url}>{p.url?.replace(/^https?:\/\//,'')}</a><small>Checked {c.checked}{p.last_checked&&p.last_checked!==c.checked?` · page snapshot ${p.last_checked}`:''}{p.last_changed?` · page text changed on ${p.last_changed}`:''}{p.last_status&&p.last_status!==200?` · last fetch: ${p.last_status}`:''}</small></td></tr>)}
+</tbody></table></section>)}
+<p class="muted small">For the curious: saved copies of each page are in <a href="https://github.com/LoayDeeb/agentstackwatch/tree/main/data/pricing-snapshots">data/pricing-snapshots</a> · change log in <a href="https://github.com/LoayDeeb/agentstackwatch/blob/main/data/pricing.json">pricing.json</a>.</p>
+</Base>

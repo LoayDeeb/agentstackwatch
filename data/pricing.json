@@ -1,0 +1,191 @@
+{
+ "grok-bot": {
+  "url": "https://docs.x.ai/x-subscription/pricing",
+  "history": [],
+  "last_status": 200,
+  "last_attempt": "2026-10-16",
+  "last_checked": "2026-10-16",
+  "first_snapshot": "2026-10-16",
+  "hash": "068a184c8d131dcd"
+ },
+ "muse": {
+  "url": "https://apps.apple.com/us/app/muse-from-meta/id6760173601",
+  "history": [],
+  "last_status": 200,
+  "last_attempt": "2026-10-16",
+  "last_checked": "2026-10-16",
+  "first_snapshot": "2026-10-16",
+  "hash": "3396ae3fe32665c5"
+ },
+ "openclaw": {
+  "url": "https://openclaw.ai/",
+  "history": [],
+  "last_status": 200,
+  "last_attempt": "2026-10-16",
+  "last_checked": "2026-10-16",
+  "first_snapshot": "2026-10-16",
+  "hash": "aeb66947713c5219"
+ },
+ "chatgpt-dots": {
+  "url": "https://help.openai.com/en/articles/20001530-getting-started-with-your-dot",
+  "history": [],
+  "last_status": 403,
+  "last_attempt": "2026-10-16"
+ },
+ "hermes-agent": {
+  "url": "https://hermes-agent.nousresearch.com/",
+  "history": [],
+  "last_status": 200,
+  "last_attempt": "2026-10-16",
+  "last_checked": "2026-10-16",
+  "first_snapshot": "2026-10-16",
+  "hash": "19616ebbe3a3e427"
+ },
+ "manus": {
+  "url": "https://help.manus.im/en/articles/11711111-what-is-the-current-membership-pricing-for-manus",
+  "history": [],
+  "last_status": 200,
+  "last_attempt": "2026-10-16",
+  "last_checked": "2026-10-16",
+  "first_snapshot": "2026-10-16",
+  "hash": "72fe8d5cefa398ec"
+ },
+ "lindy": {
+  "url": "https://www.lindy.ai/pricing",
+  "history": [],
+  "last_status": 200,
+  "last_attempt": "2026-10-16",
+  "last_checked": "2026-10-16",
+  "first_snapshot": "2026-10-16",
+  "hash": "19f733f6f679bc15"
+ },
+ "perplexity-comet": {
+  "url": "https://www.perplexity.ai/hub/blog/introducing-comet-plus",
+  "history": [],
+  "last_status": 403,
+  "last_attempt": "2026-10-16"
+ },
+ "gemini-agent": {
+  "url": "https://one.google.com/about/google-ai-plans/",
+  "history": [],
+  "last_status": 200,
+  "last_attempt": "2026-10-16",
+  "last_checked": "2026-10-16",
+  "first_snapshot": "2026-10-16",
+  "hash": "0250dd77edc753b8"
+ },
+ "claude-app": {
+  "url": "https://claude.com/pricing",
+  "history": [],
+  "last_status": 200,
+  "last_attempt": "2026-10-16",
+  "last_checked": "2026-10-16",
+  "first_snapshot": "2026-10-16",
+  "hash": "da1284d99653116c"
+ },
+ "claude-managed-agents": {
+  "url": "https://platform.claude.com/docs/en/about-claude/pricing",
+  "history": [],
+  "last_status": 200,
+  "last_attempt": "2026-10-16",
+  "last_checked": "2026-10-16",
+  "first_snapshot": "2026-10-16",
+  "hash": "68333a6b7f82f966"
+ },
+ "openai-agents-api": {
+  "url": "https://help.openai.com/en/articles/20001551-agents-api-beta-faq",
+  "history": [],
+  "last_status": 403,
+  "last_attempt": "2026-10-16"
+ },
+ "vertex-agent-engine": {
+  "url": "https://cloud.google.com/products/gemini-enterprise-agent-platform/pricing",
+  "history": [],
+  "last_status": 200,
+  "last_attempt": "2026-10-16",
+  "last_checked": "2026-10-16",
+  "first_snapshot": "2026-10-16",
+  "hash": "464295ec30b3fc48"
+ },
+ "bedrock-agentcore": {
+  "url": "https://aws.amazon.com/bedrock/agentcore/pricing/",
+  "history": [],
+  "last_status": 200,
+  "last_attempt": "2026-10-16",
+  "last_checked": "2026-10-16",
+  "first_snapshot": "2026-10-16",
+  "hash": "b82863c2b3ec0512"
+ },
+ "azure-foundry-agents": {
+  "url": "https://azure.microsoft.com/en-us/pricing/details/foundry-agent-service/",
+  "history": [],
+  "last_status": 200,
+  "last_attempt": "2026-10-16",
+  "last_checked": "2026-10-16",
+  "first_snapshot": "2026-10-16",
+  "hash": "74c92ddf0861d178"
+ },
+ "relevance-ai": {
+  "url": "https://relevanceai.com/docs/get-started/pricing",
+  "history": [],
+  "last_status": 200,
+  "last_attempt": "2026-10-16",
+  "last_checked": "2026-10-16",
+  "first_snapshot": "2026-10-16",
+  "hash": "2f131ac6e5df073b"
+ },
+ "letta-cloud": {
+  "url": "https://docs.letta.com/pricing/",
+  "history": [],
+  "last_status": 200,
+  "last_attempt": "2026-10-16",
+  "last_checked": "2026-10-16",
+  "first_snapshot": "2026-10-16",
+  "hash": "731b454287521987"
+ },
+ "langgraph-platform": {
+  "url": "https://www.langchain.com/pricing",
+  "history": [],
+  "last_status": 200,
+  "last_attempt": "2026-10-16",
+  "last_checked": "2026-10-16",
+  "first_snapshot": "2026-10-16",
+  "hash": "a992dda36da811ba"
+ },
+ "crewai-amp": {
+  "url": "https://crewai.com/pricing",
+  "history": [],
+  "last_status": 200,
+  "last_attempt": "2026-10-16",
+  "last_checked": "2026-10-16",
+  "first_snapshot": "2026-10-16",
+  "hash": "b0be8f7f3a75bcb8"
+ },
+ "e2b": {
+  "url": "https://e2b.dev/pricing",
+  "history": [],
+  "last_status": 200,
+  "last_attempt": "2026-10-16",
+  "last_checked": "2026-10-16",
+  "first_snapshot": "2026-10-16",
+  "hash": "19819d4d3c11a738"
+ },
+ "modal": {
+  "url": "https://modal.com/pricing",
+  "history": [],
+  "last_status": 200,
+  "last_attempt": "2026-10-16",
+  "last_checked": "2026-10-16",
+  "first_snapshot": "2026-10-16",
+  "hash": "4e0dfcb9a4cde698"
+ },
+ "daytona": {
+  "url": "https://www.daytona.io/pricing",
+  "history": [],
+  "last_status": 200,
+  "last_attempt": "2026-10-16",
+  "last_checked": "2026-10-16",
+  "first_snapshot": "2026-10-16",
+  "hash": "172a8cc9f1cefeff"
+ }
+}

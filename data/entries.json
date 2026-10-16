@@ -388,14 +388,16 @@
   "maker": "E2B",
   "url": "https://e2b.dev/",
   "description": "Cloud sandboxes for agent code execution.",
-  "pricing": "unknown",
+  "pricing": "Hobby free ($100 one-time credit); Pro $150/mo + usage; Enterprise custom",
   "open_source": "unknown",
   "license": "unknown",
   "github": "e2b-dev/E2B",
   "pypi": "e2b",
   "npm": null,
   "verified": false,
-  "sources": [],
+  "sources": [
+   "https://e2b.dev/pricing"
+  ],
   "notes": null
  },
  {
@@ -426,7 +428,7 @@
   "maker": "Daytona",
   "url": "https://www.daytona.io/",
   "description": "Sandboxes for AI code; supported Hermes Agent backend.",
-  "pricing": "unknown",
+  "pricing": "Pay as you go: $0.0504/vCPU-h + $0.0162/GiB-h; $200 free compute",
   "open_source": "unknown",
   "license": "unknown",
   "github": "daytonaio/daytona",
@@ -434,7 +436,8 @@
   "npm": null,
   "verified": false,
   "sources": [
-   "https://github.com/nousresearch/hermes-agent/"
+   "https://github.com/nousresearch/hermes-agent/",
+   "https://www.daytona.io/pricing"
   ],
   "notes": null
  },

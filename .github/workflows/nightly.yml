@@ -13,6 +13,10 @@ jobs:
       - run: npm ci
       - run: node scripts/fetch-stats.mjs
         env: { GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}' }
+      - run: node scripts/fetch-breaking.mjs
+        env: { GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}' }
+      - name: Weekly pricing page snapshot (Mondays, or manual run)
+        run: '[ "$(date -u +%u)" = "1" ] || [ "${{ github.event_name }}" = "workflow_dispatch" ] && node scripts/pricing-snapshot.mjs || true'
       - name: Commit data changes
         run: |
           git config user.name "agentstackwatch-bot"

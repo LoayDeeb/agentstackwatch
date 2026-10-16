@@ -1,0 +1,5487 @@
+[
+ {
+  "slug": "goose",
+  "name": "Goose",
+  "category": "frameworks",
+  "tag": "v1.55.0",
+  "date": "2026-10-16",
+  "week": "2026-10-12",
+  "url": "https://github.com/aaif-goose/goose/releases/tag/v1.55.0",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "- Remove background subagents and orchestrator; make Doctor session-only #12729",
+   "- Remove false optionality in desktop props #12776"
+  ]
+ },
+ {
+  "slug": "mastra",
+  "name": "Mastra",
+  "category": "frameworks",
+  "tag": "@mastra/core@1.78.0",
+  "date": "2026-10-16",
+  "week": "2026-10-12",
+  "url": "https://github.com/mastra-ai/mastra/releases/tag/%40mastra/core%401.78.0",
+  "keywords": [
+   "breaking",
+   "removed",
+   "deprecated",
+   "migration"
+  ],
+  "excerpt": [
+   "Breaking Changes",
+   "- buildInputPreview() and INPUT_PREVIEW_MAX_LENGTH are deprecated in favor of buildPreview() and PREVIEW_MAX_LENGTH.",
+   "- Factory sessions no longer have modes (Plan/Explore removed); thinking defaults and related config endpoints now use a single global default, and PUT /web/config/thinking rejects modeDefaults.",
+   "- Factory credential behavior changed: cross-scope credential fallback is removed; custom credential providers must move from orgFirst to explicit credentialScope / policy resolution."
+  ]
+ },
+ {
+  "slug": "haystack",
+  "name": "Haystack",
+  "category": "frameworks",
+  "tag": "v3.4.0",
+  "date": "2026-10-15",
+  "week": "2026-10-12",
+  "url": "https://github.com/deepset-ai/haystack/releases/tag/v3.4.0",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "- The base Tool.warm_up() and Toolset.warm_up() methods were removed. OpenAI/Azure Chat Generators no longer warm up tools.",
+   "- Removed the Sockets.__getattribute__ override. It looked up a _sockets attribute that no instance has, so on every attribute access it raised and caught AttributeError and never returned a socket; socket access has alw",
+   "- The default prompt of QueryExpander now states that its examples show the output for 3 requested queries and that exactly n_expansions queries must be returned. The trailing JSON format example, which always showed thr"
+  ]
+ },
+ {
+  "slug": "langgraph",
+  "name": "LangGraph",
+  "category": "frameworks",
+  "tag": "prebuilt==1.1.1",
+  "date": "2026-10-15",
+  "week": "2026-10-12",
+  "url": "https://github.com/langchain-ai/langgraph/releases/tag/prebuilt%3D%3D1.1.1",
+  "keywords": [
+   "migration"
+  ],
+  "excerpt": [
+   "chore: migrate Python type checking to ty (8002)"
+  ]
+ },
+ {
+  "slug": "openai-agents-sdk",
+  "name": "OpenAI Agents SDK",
+  "category": "frameworks",
+  "tag": "v0.24.0",
+  "date": "2026-10-15",
+  "week": "2026-10-12",
+  "url": "https://github.com/openai/openai-agents-python/releases/tag/v0.24.0",
+  "keywords": [
+   "migration"
+  ],
+  "excerpt": [
+   "🟢 GREEN LIGHT TO SHIP. The prepared 0.24.0 candidate has no unresolved release blocker. Its compatibility changes have supported migration or fallback paths described below.",
+   "- Action: finish affected legacy tasks with the original SDK, unchanged agent definitions, and hook ordering used when the snapshot was written. Use unique agent names before starting new durable runs. Do not rename a st",
+   "- Risk: 🟢 LOW, with an explicit migration for exhaustive callbacks. A formatter that treats every non-rejection as a missing tool can now return misleading text for a crashed function.",
+   "- Action: retain the macOS behavior note and 5335 reporter credit in the release. Do not describe local sandboxing as complete host or network isolation; use the documented Docker or hosted alternatives where needed. No "
+  ]
+ },
+ {
+  "slug": "openclaw",
+  "name": "OpenClaw",
+  "category": "personal",
+  "tag": "v2026.10.10-beta.1",
+  "date": "2026-10-15",
+  "week": "2026-10-12",
+  "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.10-beta.1",
+  "keywords": [
+   "removed",
+   "deprecated",
+   "migration"
+  ],
+  "excerpt": [
+   "- Plugins and SDK: allow per-run model fallback overrides, fork a session's live context for background side questions, let plugins steer a session's active run, support Solid Control UI views, add worker-owned keyed sta",
+   "- More: expose wrapped browser observations to Code Mode, allow pausing automatic team-report collection, and add scoped startup migration backups. (164833, 171840, 171764) Thanks @alkor2000, @potterdigital, and @vincent",
+   "- State ownership: keep secret, catalog, config, agent, plugin, backup, device, Memory, Matrix, and Workboard writes with the running Gateway, protect provider and MCP credentials from concurrent CLI writes, keep channel",
+   "- Model catalogs: stop pickers offering retired models, fix Groq Qwen 3.6 and image capability flags, keep recommended picker models after upgrades, keep valid models beside malformed pricing, warn about absent configure"
+  ]
+ },
+ {
+  "slug": "openclaw",
+  "name": "OpenClaw",
+  "category": "personal",
+  "tag": "v2026.10.5-beta.4",
+  "date": "2026-10-15",
+  "week": "2026-10-12",
+  "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.5-beta.4",
+  "keywords": [
+   "migration"
+  ],
+  "excerpt": [
+   "- Update and Doctor: update repair no longer fails after Doctor completes on busy macOS hosts, slow update admission no longer holds the database writer and disrupts Gateway work, update repair prepares its config before"
+  ]
+ },
+ {
+  "slug": "openclaw",
+  "name": "OpenClaw",
+  "category": "personal",
+  "tag": "v2026.9.33",
+  "date": "2026-10-15",
+  "week": "2026-10-12",
+  "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.33",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "- Updating from 2026.8.35: cron jobs approved with \"allow always\" keep running unattended after the update, pnpm 12 Gateway services left on a deleted store generation are rewritten to the durable install link, Doctor de"
+  ]
+ },
+ {
+  "slug": "crewai",
+  "name": "CrewAI",
+  "category": "frameworks",
+  "tag": "1.15.28",
+  "date": "2026-10-14",
+  "week": "2026-10-12",
+  "url": "https://github.com/crewAIInc/crewAI/releases/tag/1.15.28",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "- Show reasons for deployment failures and fix deploy remove and lockfile checks."
+  ]
+ },
+ {
+  "slug": "hermes-agent",
+  "name": "Hermes Agent",
+  "category": "personal",
+  "tag": "v0.22.1",
+  "date": "2026-10-14",
+  "week": "2026-10-12",
+  "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v0.22.1",
+  "keywords": [
+   "removed",
+   "migration"
+  ],
+  "excerpt": [
+   "- Migrate queued Bot mailbox identities without replaying claims (`af49e2fc`)",
+   "- Remove obsolete updater sidecar deletion path (`58895653`)",
+   "- Remove retired local serve launch imports (`5702f9df`)",
+   "- Remove extracted runner initialization bodies (`4b1379fb`)"
+  ]
+ },
+ {
+  "slug": "hermes-agent",
+  "name": "Hermes Agent",
+  "category": "personal",
+  "tag": "v0.22.0",
+  "date": "2026-10-14",
+  "week": "2026-10-12",
+  "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v0.22.0",
+  "keywords": [
+   "breaking",
+   "removed",
+   "migration"
+  ],
+  "excerpt": [
+   "- Plugin authors: the old plugin compatibility import layer is gone (#126164), hermes sync (Skill Sync) was removed (#132465), and the bundled tirith scanner was removed (#133832). Several tools were renamed (todo → todo",
+   "- Prompt caching — opt-in cache_ttl: auto (1h interactive, 5m subagents/cron); big sessions confirm a cache-breaking /model; compaction keeps the prefix. (#118337, #95267, #104455 — @kshitijk4poor, @JoaoMarcos44)",
+   "- One gateway serves every profile — hermes gateway status explains any boot-guard refusal, hermes gateway migrate --multiplex migrates by hand, webhook platforms serve each profile at /p/<profile/, hermes -p X gateway s",
+   "- Editable /queue — list, edit, move or remove prompts; /s = /steer. (#95999, #125803 — @abhinav11082001-stack, @OutThisLife)"
+  ]
+ },
+ {
+  "slug": "mastra",
+  "name": "Mastra",
+  "category": "frameworks",
+  "tag": "@mastra/core@1.77.0",
+  "date": "2026-10-14",
+  "week": "2026-10-12",
+  "url": "https://github.com/mastra-ai/mastra/releases/tag/%40mastra/core%401.77.0",
+  "keywords": [
+   "breaking",
+   "removed",
+   "deprecated",
+   "migration"
+  ],
+  "excerpt": [
+   "Breaking Changes",
+   "- @mastra/playground-ui: Dialog/AlertDialog removed handle/render-style props; components are now controlled via open/onOpenChange.",
+   "- @mastra/client-js / @mastra/react compare-experiments APIs deprecate experimentIdA/experimentIdB in favor of experimentIds (+ optional baselineId).",
+   "Deprecated the SessionRecord.modeId, modelId, state, and pending fields, the HarnessStorage.appendPendingItem(), updatePendingItem(), and removePendingItem() helpers, and SessionSuspensions.resolveToolCallId()."
+  ]
+ },
+ {
+  "slug": "e2b",
+  "name": "E2B",
+  "category": "managed",
+  "tag": "e2b@2.56.0",
+  "date": "2026-10-13",
+  "week": "2026-10-12",
+  "url": "https://github.com/e2b-dev/E2B/releases/tag/e2b%402.56.0",
+  "keywords": [
+   "breaking",
+   "removed"
+  ],
+  "excerpt": [
+   "- Breaking: the SDK-level in-flight request cap is removed, along with the E2B_API_INFLIGHT_REQUESTS, E2B_ENVD_INFLIGHT_REQUESTS and E2B_ENVD_RPC_INFLIGHT_REQUESTS env vars. Concurrency is governed by undici's connection"
+  ]
+ },
+ {
+  "slug": "e2b",
+  "name": "E2B",
+  "category": "managed",
+  "tag": "@e2b/python-sdk@2.56.0",
+  "date": "2026-10-13",
+  "week": "2026-10-12",
+  "url": "https://github.com/e2b-dev/E2B/releases/tag/%40e2b/python-sdk%402.56.0",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "- 775f017: Balance HTTP/2 streams with pyqwest's native connection pool instead of a Python-side balancer over multiple transports. The pool dials a new connection once every existing one is at the server-advertised conc"
+  ]
+ },
+ {
+  "slug": "e2b",
+  "name": "E2B",
+  "category": "managed",
+  "tag": "@e2b/desktop@2.5.0",
+  "date": "2026-10-13",
+  "week": "2026-10-12",
+  "url": "https://github.com/e2b-dev/E2B/releases/tag/%40e2b/desktop%402.5.0",
+  "keywords": [
+   "breaking",
+   "removed"
+  ],
+  "excerpt": [
+   "- Breaking: the SDK-level in-flight request cap is removed, along with the E2B_API_INFLIGHT_REQUESTS, E2B_ENVD_INFLIGHT_REQUESTS and E2B_ENVD_RPC_INFLIGHT_REQUESTS env vars. Concurrency is governed by undici's connection"
+  ]
+ },
+ {
+  "slug": "e2b",
+  "name": "E2B",
+  "category": "managed",
+  "tag": "@e2b/code-interpreter@2.9.0",
+  "date": "2026-10-13",
+  "week": "2026-10-12",
+  "url": "https://github.com/e2b-dev/E2B/releases/tag/%40e2b/code-interpreter%402.9.0",
+  "keywords": [
+   "breaking",
+   "removed"
+  ],
+  "excerpt": [
+   "- Breaking: the SDK-level in-flight request cap is removed, along with the E2B_API_INFLIGHT_REQUESTS, E2B_ENVD_INFLIGHT_REQUESTS and E2B_ENVD_RPC_INFLIGHT_REQUESTS env vars. Concurrency is governed by undici's connection"
+  ]
+ },
+ {
+  "slug": "e2b",
+  "name": "E2B",
+  "category": "managed",
+  "tag": "@e2b/cli@2.22.0",
+  "date": "2026-10-13",
+  "week": "2026-10-12",
+  "url": "https://github.com/e2b-dev/E2B/releases/tag/%40e2b/cli%402.22.0",
+  "keywords": [
+   "breaking",
+   "removed"
+  ],
+  "excerpt": [
+   "- Breaking: the SDK-level in-flight request cap is removed, along with the E2B_API_INFLIGHT_REQUESTS, E2B_ENVD_INFLIGHT_REQUESTS and E2B_ENVD_RPC_INFLIGHT_REQUESTS env vars. Concurrency is governed by undici's connection"
+  ]
+ },
+ {
+  "slug": "google-adk",
+  "name": "Google ADK",
+  "category": "frameworks",
+  "tag": "v2.12.0",
+  "date": "2026-10-13",
+  "week": "2026-10-12",
+  "url": "https://github.com/google/adk-python/releases/tag/v2.12.0",
+  "keywords": [
+   "breaking",
+   "removed",
+   "deprecated",
+   "migration"
+  ],
+  "excerpt": [
+   "migrate ADK to google-cloud-aiplatform v2.2 (agentplatform) (77d4dcd)",
+   "migrate VertexAiExampleStore and VertexAiRagRetrieval away from vertexai.preview (9e411be)",
+   "skills: migrate GCPSkillRegistry.search_skills from GET to POST (e9464ca)",
+   "evaluation: stop loading deprecated Vertex RAG on eval import (6854b88), closes #7415"
+  ]
+ },
+ {
+  "slug": "mastra",
+  "name": "Mastra",
+  "category": "frameworks",
+  "tag": "@mastra/core@1.76.0",
+  "date": "2026-10-13",
+  "week": "2026-10-12",
+  "url": "https://github.com/mastra-ai/mastra/releases/tag/%40mastra/core%401.76.0",
+  "keywords": [
+   "breaking",
+   "removed",
+   "deprecated"
+  ],
+  "excerpt": [
+   "Agents no longer get “stuck” when a provider rejects an attached file: the new default UnsupportedFileHandler retries with the file removed (or replaced by a sandbox path when available). For file-centric tool workflows,",
+   "Breaking Changes",
+   "- @mastra/playground-ui: old Metrics card views/components were removed in favor of the new self-contained Metrics cards/dashboard building blocks.",
+   "- Fixed the messageFilter and onDelegationStart delegation types to match the messages they actually receive. Both now receive AI SDK model messages (ModelMessage[]) — the processor-adjusted prompt the supervisor model s"
+  ]
+ },
+ {
+  "slug": "openclaw",
+  "name": "OpenClaw",
+  "category": "personal",
+  "tag": "v2026.10.5-beta.3",
+  "date": "2026-10-13",
+  "week": "2026-10-12",
+  "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.5-beta.3",
+  "keywords": [
+   "deprecated",
+   "migration"
+  ],
+  "excerpt": [
+   "- Stuck updates recover: updates settle package-activation journals after filesystem remounts or device-number drift, ride out a briefly locked state database, stop reporting false post-install failures after migration, ",
+   "- Plugin SDK compatibility: createSessionHeaderLink is restored in openclaw/plugin-sdk/control-ui as a deprecated export for plugins built against 2026.10.1 and 2026.10.2. (169746) Thanks @RomneyDa.",
+   "- Update outcomes: updates with a running Gateway no longer record false post-install failures after migration, unsafe Doctor recovery guidance is kept until settled, candidate bookkeeping no longer makes older updaters "
+  ]
+ },
+ {
+  "slug": "pydantic-ai",
+  "name": "Pydantic AI",
+  "category": "frameworks",
+  "tag": "v2.56.0",
+  "date": "2026-10-13",
+  "week": "2026-10-12",
+  "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.56.0",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "Remove WarnNearLimits from the harness Coder capability by @adtyavrdhn in https://github.com/pydantic/pydantic-ai/pull/9969"
+  ]
+ },
+ {
+  "slug": "dspy",
+  "name": "DSPy",
+  "category": "frameworks",
+  "tag": "3.4.1",
+  "date": "2026-10-12",
+  "week": "2026-10-12",
+  "url": "https://github.com/stanfordnlp/dspy/releases/tag/3.4.1",
+  "keywords": [
+   "breaking",
+   "removed",
+   "deprecated",
+   "migration"
+  ],
+  "excerpt": [
+   "The 3.5 LM-interface cutoff announced in 3.4.0 still applies. Legacy forward()/aforward() custom LMs, the legacy-engine wrappers, custom complete_legacy() shortcuts, and OpenAI-style messages= calls are deprecated and wi",
+   "Breaking change for sandbox backend authors. The shim constants and helper that dspy.predict.flex.bridge exposed now live in dspy.primitives.facade, which dspy.Flex and dspy.RLM share. The old module doesn't re-export th",
+   "DSPy's bundled model-metadata snapshot moved from LiteLLM 1.102.1 to 1.105.0. Upstream added 803 entries and removed 264. Of those, 234 had passed their provider deprecation dates and 30 were renamed or retired.",
+   "Offline setups lose capability flags for some still-routable models. DSPy uses the bundled snapshot only when it can't use LiteLLM's live map: offline, when the fetch fails, or with LITELLM_LOCAL_MODEL_COST_MAP=true. In "
+  ]
+ },
+ {
+  "slug": "openclaw",
+  "name": "OpenClaw",
+  "category": "personal",
+  "tag": "v2026.10.5-beta.2",
+  "date": "2026-10-12",
+  "week": "2026-10-12",
+  "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.5-beta.2",
+  "keywords": [
+   "migration"
+  ],
+  "excerpt": [
+   "- Tool approval hooks: ordinary hooks can no longer rewrite trusted-inline-approved tool arguments without another approval, and transforming plugins must request separate approval for their final arguments or the call i"
+  ]
+ },
+ {
+  "slug": "openclaw",
+  "name": "OpenClaw",
+  "category": "personal",
+  "tag": "v2026.10.2",
+  "date": "2026-10-12",
+  "week": "2026-10-12",
+  "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.2",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "- Doctor and update recovery: Doctor no longer stops on residual legacy imports, stale Gateway locks, slow state inspection, memory reindex locks, or allowlists for removed channel accounts, and stale-receipt sessions ke"
+  ]
+ },
+ {
+  "slug": "openhands",
+  "name": "OpenHands",
+  "category": "frameworks",
+  "tag": "v1.27.0",
+  "date": "2026-10-12",
+  "week": "2026-10-12",
+  "url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.27.0",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "chore: remove merged PR artifacts by @all-hands-bot in https://github.com/OpenHands/OpenHands/pull/17718"
+  ]
+ },
+ {
+  "slug": "openclaw",
+  "name": "OpenClaw",
+  "category": "personal",
+  "tag": "v2026.10.5-beta.1",
+  "date": "2026-10-11",
+  "week": "2026-10-05",
+  "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.5-beta.1",
+  "keywords": [
+   "breaking",
+   "removed",
+   "migration"
+  ],
+  "excerpt": [
+   "- Session cleanup: remove leftover GitHub publication receipts and managed worktrees on cleanup and Incognito reset, and publish conversation, plugin-state, sandbox, worktree, and GitHub authority receipts. (163833, 1651",
+   "- Channel security: stop removed X allowlist senders from reaching dispatch mid-authorization, redact credentials in Discord PluralKit, LINE, and Tlon API error bodies, bound pending IRC inbound lines, and reject unsafe ",
+   "- Exec and tools: preserve channel context in node exec, prevent NUL commands from breaking shutdown, stop stalled sandbox finalization loops, advertise only session-supported hosts, fix Kimi K3 exec calls, stop yielded ",
+   "- Control UI misc: confirm dirty exec approval target switches, keep focus in config collections, revert Slack and Discord session return buttons, consolidate browser connections in Activity, and remove duplicate agent u"
+  ]
+ },
+ {
+  "slug": "e2b",
+  "name": "E2B",
+  "category": "managed",
+  "tag": "e2b@2.55.0",
+  "date": "2026-10-09",
+  "week": "2026-10-05",
+  "url": "https://github.com/e2b-dev/E2B/releases/tag/e2b%402.55.0",
+  "keywords": [
+   "removed",
+   "deprecated"
+  ],
+  "excerpt": [
+   "pause() and the lifecycle.onTimeout / lifecycle[\"on_timeout\"] pause object form accept the same mode. Their keepMemory / keep_memory option is deprecated in favor of it (keepMemory: false is mode: 'filesystem') and keeps",
+   "- 0894595: Remove dead empty-chunk guards from command output handling; envd never sends empty output chunks, so behavior is unchanged."
+  ]
+ },
+ {
+  "slug": "e2b",
+  "name": "E2B",
+  "category": "managed",
+  "tag": "@e2b/python-sdk@2.55.0",
+  "date": "2026-10-09",
+  "week": "2026-10-05",
+  "url": "https://github.com/e2b-dev/E2B/releases/tag/%40e2b/python-sdk%402.55.0",
+  "keywords": [
+   "removed",
+   "deprecated"
+  ],
+  "excerpt": [
+   "pause() and the lifecycle.onTimeout / lifecycle[\"on_timeout\"] pause object form accept the same mode. Their keepMemory / keep_memory option is deprecated in favor of it (keepMemory: false is mode: 'filesystem') and keeps",
+   "- 0894595: Remove dead empty-chunk guards from command output handling; envd never sends empty output chunks, so behavior is unchanged."
+  ]
+ },
+ {
+  "slug": "goose",
+  "name": "Goose",
+  "category": "frameworks",
+  "tag": "v1.54.0",
+  "date": "2026-10-08",
+  "week": "2026-10-05",
+  "url": "https://github.com/aaif-goose/goose/releases/tag/v1.54.0",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "- Remove Nostr session sharing from goose core #12453"
+  ]
+ },
+ {
+  "slug": "openclaw",
+  "name": "OpenClaw",
+  "category": "personal",
+  "tag": "v2026.10.1-beta.2",
+  "date": "2026-10-08",
+  "week": "2026-10-05",
+  "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.1-beta.2",
+  "keywords": [
+   "migration"
+  ],
+  "excerpt": [
+   "- Doctor and migrations: import sessions from older completed migration receipts while retaining current sessions, verify snapshots on Linux hosts without file birthtime, and skip empty migration scans on unconfigured Ma"
+  ]
+ },
+ {
+  "slug": "openhands",
+  "name": "OpenHands",
+  "category": "frameworks",
+  "tag": "v1.26.0",
+  "date": "2026-10-08",
+  "week": "2026-10-05",
+  "url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.26.0",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "refactor(canvas): remove bundled VSCode consumer assumptions by @neubig in https://github.com/OpenHands/OpenHands/pull/17660",
+   "test: Weekly test sweep: remove low-value tests + simplify by @enyst in https://github.com/OpenHands/OpenHands/pull/16574"
+  ]
+ },
+ {
+  "slug": "mastra",
+  "name": "Mastra",
+  "category": "frameworks",
+  "tag": "@mastra/core@1.75.0",
+  "date": "2026-10-07",
+  "week": "2026-10-05",
+  "url": "https://github.com/mastra-ai/mastra/releases/tag/%40mastra/core%401.75.0",
+  "keywords": [
+   "breaking",
+   "removed",
+   "deprecated",
+   "migration"
+  ],
+  "excerpt": [
+   "Breaking Changes",
+   "- @mastra/connect: API rename integrations → providers; removed legacy surfaces like the connect() alias of tools(), environment() sandbox credential surface, and several resolver helpers/exports.",
+   "- AgentController model switching: removed modeId/scope; session.model.switch signature changed to switch(modelId, options?) and sessions persist one model per thread (mode switches no longer auto-change models).",
+   "- Changed AgentController sessions to keep one active model instead of a separate model for each mode. Switching modes no longer changes the model automatically, and session.model.switch no longer accepts modeId or scope"
+  ]
+ },
+ {
+  "slug": "openhands",
+  "name": "OpenHands",
+  "category": "frameworks",
+  "tag": "v1.25.0",
+  "date": "2026-10-06",
+  "week": "2026-10-05",
+  "url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.25.0",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "chore: remove gpt-5.2-codex from agent-canvas model router prompts by @juanmichelini in https://github.com/OpenHands/OpenHands/pull/17811",
+   "refactor(agent-settings): remove the unreachable non-embedded mode by @simonrosenberg in https://github.com/OpenHands/OpenHands/pull/17825",
+   "chore(deps): remove unused socket.io-client by @enyst in https://github.com/OpenHands/OpenHands/pull/17989",
+   "test(catalog): remove upstream data mirrors by @kr1shna-exe in https://github.com/OpenHands/OpenHands/pull/17855"
+  ]
+ },
+ {
+  "slug": "mastra",
+  "name": "Mastra",
+  "category": "frameworks",
+  "tag": "@mastra/core@1.74.0",
+  "date": "2026-10-05",
+  "week": "2026-10-05",
+  "url": "https://github.com/mastra-ai/mastra/releases/tag/%40mastra/core%401.74.0",
+  "keywords": [
+   "breaking",
+   "removed",
+   "deprecated"
+  ],
+  "excerpt": [
+   "Breaking Changes",
+   "- @mastra/playground-ui: anchorTraceId removed from ThreadViewByTrace, TraceThreadPanel, and ThreadTrace; ThreadTrace.LoadMoreSentinel removed. Use pageSize and onLoadOlder on ThreadTrace to control pagination/loading ol",
+   "Deprecated",
+   "Breaking: anchorTraceId was removed from ThreadViewByTrace, TraceThreadPanel and ThreadTrace, and ThreadTrace.LoadMoreSentinel was removed. Pass onLoadOlder to ThreadTrace to load older turns."
+  ]
+ },
+ {
+  "slug": "mastra",
+  "name": "Mastra",
+  "category": "frameworks",
+  "tag": "@mastra/core@1.73.0",
+  "date": "2026-10-05",
+  "week": "2026-10-05",
+  "url": "https://github.com/mastra-ai/mastra/releases/tag/%40mastra/core%401.73.0",
+  "keywords": [
+   "breaking",
+   "removed",
+   "deprecated"
+  ],
+  "excerpt": [
+   "Breaking Changes",
+   "- Fixed misleading tool input validation errors. When a model sent null for optional fields and the call still failed for another reason, the error listed the null fields as problems and hid the real cause. Errors now re",
+   "- Fixed ToolCallFilter stripping a resumed run's own tool calls. When a tool suspended the agent (for example askUserTool) and the run was continued with resumeStream(), the filter treated the suspended tool call and its",
+   "- Requests routed to a specific account stop instead of switching to a different account when that account is removed. Applying that account no longer shows a notice on every prompt, but failover notices still appear."
+  ]
+ },
+ {
+  "slug": "openclaw",
+  "name": "OpenClaw",
+  "category": "personal",
+  "tag": "v2026.10.1-beta.1",
+  "date": "2026-10-05",
+  "week": "2026-10-05",
+  "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.1-beta.1",
+  "keywords": [
+   "breaking",
+   "deprecated",
+   "migration"
+  ],
+  "excerpt": [
+   "- Existing agents can be migrated to local Claws with the explicit, consented openclaw claws migrate <agent-id workflow, preserving their workspace and sessions. Migration is not automatic (162329) Thanks @Patrick-Erichs",
+   "Plugin SDK migration",
+   "- Breaking change: third-party plugins importing retired compatibility facades or whole-session-store helpers must migrate before upgrading. Use focused channel/config/session APIs and row-level session operations; bundl",
+   "- Awaited session persistence APIs commit through the writer. Deprecated synchronous adapters remain until the next major with warnings; this addition does not require a data conversion (163264)."
+  ]
+ },
+ {
+  "slug": "pydantic-ai",
+  "name": "Pydantic AI",
+  "category": "frameworks",
+  "tag": "v2.54.0",
+  "date": "2026-10-03",
+  "week": "2026-09-28",
+  "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.54.0",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "State when the ConversationSearch default-scope warning will be removed by @DouweM in https://github.com/pydantic/pydantic-ai/pull/9383"
+  ]
+ },
+ {
+  "slug": "google-adk",
+  "name": "Google ADK",
+  "category": "frameworks",
+  "tag": "v2.11.0",
+  "date": "2026-10-02",
+  "week": "2026-09-28",
+  "url": "https://github.com/google/adk-python/releases/tag/v2.11.0",
+  "keywords": [
+   "migration"
+  ],
+  "excerpt": [
+   "report the events the SQLite migration actually migrated (31e5358), closes #7298"
+  ]
+ },
+ {
+  "slug": "goose",
+  "name": "Goose",
+  "category": "frameworks",
+  "tag": "v1.53.0",
+  "date": "2026-10-02",
+  "week": "2026-09-28",
+  "url": "https://github.com/aaif-goose/goose/releases/tag/v1.53.0",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "- Show working directory in session remove command #12232",
+   "- Remove MCP sampling code #12193",
+   "- Remove production code only reachable from tests #12504"
+  ]
+ },
+ {
+  "slug": "openai-agents-sdk",
+  "name": "OpenAI Agents SDK",
+  "category": "frameworks",
+  "tag": "v0.23.1",
+  "date": "2026-10-02",
+  "week": "2026-09-28",
+  "url": "https://github.com/openai/openai-agents-python/releases/tag/v0.23.1",
+  "keywords": [
+   "migration"
+  ],
+  "excerpt": [
+   "1. First PyPI publication of the 0.23 series includes earlier migration requirements",
+   "- Risk: 🟢 LOW with the previously reviewed migration paths. Users upgrading from 0.22.3 receive the 0.23.0 behavior changes as well as this patch.",
+   "- Action: Carry forward the 0.23.0 migration guidance in the 0.23.1 announcement, particularly explicit strict-tool parameters, fresh legacy approvals, trusted encrypted-history import, resource-limit overrides and the e",
+   "- Post-release suggestions: retain the detailed follow-ups from 5226. In particular, update docs/voice/quickstart.md and docs/voice/pipeline.md with the new default and explicit prior-model override; docs/human_in_the_lo"
+  ]
+ },
+ {
+  "slug": "openai-agents-sdk",
+  "name": "OpenAI Agents SDK",
+  "category": "frameworks",
+  "tag": "v0.23.0",
+  "date": "2026-10-02",
+  "week": "2026-09-28",
+  "url": "https://github.com/openai/openai-agents-python/releases/tag/v0.23.0",
+  "keywords": [
+   "migration"
+  ],
+  "excerpt": [
+   "migrate Vercel sandboxes to the owned provider client (#5255) (9706013)"
+  ]
+ },
+ {
+  "slug": "openclaw",
+  "name": "OpenClaw",
+  "category": "personal",
+  "tag": "v2026.8.35",
+  "date": "2026-10-02",
+  "week": "2026-09-28",
+  "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.8.35",
+  "keywords": [
+   "migration"
+  ],
+  "excerpt": [
+   "- Safer updates and recovery: preserve plugin settings, prevent duplicate Gateways, handle pnpm package updates without terminal failures, and retain plugin inventory through migration. (160344, 160193, 161920, 161485) T",
+   "- Update safety: preserve incompatible-plugin settings through recovery, keep retained plugin records during migration, avoid pnpm terminal failures, and carry the existing Gateway lock through container/direct startup. "
+  ]
+ },
+ {
+  "slug": "openclaw",
+  "name": "OpenClaw",
+  "category": "personal",
+  "tag": "v2026.8.34",
+  "date": "2026-10-02",
+  "week": "2026-09-28",
+  "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.8.34",
+  "keywords": [
+   "migration"
+  ],
+  "excerpt": [
+   "- Prevent device pairing migration crash on contaminated records.",
+   "- Doctor: Detect shared auth migration by provenance (134808)",
+   "- Auth: Verify shared credential migration receipts (134952)",
+   "- Doctor: Migrate legacy Codex music model selectors (143235)"
+  ]
+ },
+ {
+  "slug": "pydantic-ai",
+  "name": "Pydantic AI",
+  "category": "frameworks",
+  "tag": "v2.53.0",
+  "date": "2026-10-02",
+  "week": "2026-09-28",
+  "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.53.0",
+  "keywords": [
+   "deprecated"
+  ],
+  "excerpt": [
+   "Deprecate pydantic_ai_harness.step_persistence.naming by @mpfaffenberger in https://github.com/pydantic/pydantic-ai/pull/9499"
+  ]
+ },
+ {
+  "slug": "e2b",
+  "name": "E2B",
+  "category": "managed",
+  "tag": "e2b@2.52.0",
+  "date": "2026-10-01",
+  "week": "2026-09-28",
+  "url": "https://github.com/e2b-dev/E2B/releases/tag/e2b%402.52.0",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "- 4975149: Remove unused internal constants and attributes, and share the command handle setup between Commands.run and Commands.connect"
+  ]
+ },
+ {
+  "slug": "e2b",
+  "name": "E2B",
+  "category": "managed",
+  "tag": "@e2b/python-sdk@2.52.0",
+  "date": "2026-10-01",
+  "week": "2026-09-28",
+  "url": "https://github.com/e2b-dev/E2B/releases/tag/%40e2b/python-sdk%402.52.0",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "- f713914: Sandbox commands/files traffic is now balanced across HTTP/2 connections the way the JS SDK's undici agent does it, instead of being sharded into a fixed number of pools by sandbox ID. Every request goes to th",
+   "- 4975149: Remove unused internal constants and attributes, and share the command handle setup between Commands.run and Commands.connect"
+  ]
+ },
+ {
+  "slug": "haystack",
+  "name": "Haystack",
+  "category": "frameworks",
+  "tag": "v3.3.0",
+  "date": "2026-10-01",
+  "week": "2026-09-28",
+  "url": "https://github.com/deepset-ai/haystack/releases/tag/v3.3.0",
+  "keywords": [
+   "breaking",
+   "removed"
+  ],
+  "excerpt": [
+   "- Fixed ChatPromptBuilder dropping content parts when the template is a list of ChatMessage objects. Only the first TextContent part was rendered, and every other part - additional texts, images, files -was removed from ",
+   "- ConfirmationHook no longer drops the messages that come after the last user or tool message when it rewrites the conversation, such as a system message added by another hook or an assistant answer followed by an on_exi",
+   "- Fixed DOCXToDocument breaking a Markdown table when a cell contains a pipe or spans several paragraphs. A pipe was emitted as a column separator, and a cell's line break ended the row in the middle of it. Pipes are now"
+  ]
+ },
+ {
+  "slug": "mastra",
+  "name": "Mastra",
+  "category": "frameworks",
+  "tag": "@mastra/core@1.72.0",
+  "date": "2026-09-30",
+  "week": "2026-09-28",
+  "url": "https://github.com/mastra-ai/mastra/releases/tag/%40mastra/core%401.72.0",
+  "keywords": [
+   "breaking",
+   "removed",
+   "deprecated",
+   "migration"
+  ],
+  "excerpt": [
+   "Mastra({ channels }) now accepts a resolver function (via channels() in @mastra/connect) so channel connections added/removed on Mastra Platform appear on a running server without redeploy; use mastra.resolveChannels() t",
+   "Breaking Changes",
+   "- @mastra/playground-ui removed/renamed multiple UI APIs (notably ScrollArea props, PageHeader props, ToolCall → Activity component renames, and significant color token API changes).",
+   "- Removed the unused executeDurableToolCalls helper and its ToolExecutionContext/ToolExecutionError types from @mastra/core/agent/durable. This code was never wired into any agent loop; both the durable and regular loops"
+  ]
+ },
+ {
+  "slug": "pydantic-ai",
+  "name": "Pydantic AI",
+  "category": "frameworks",
+  "tag": "v2.52.0",
+  "date": "2026-09-30",
+  "week": "2026-09-28",
+  "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.52.0",
+  "keywords": [
+   "removed",
+   "deprecated"
+  ],
+  "excerpt": [
+   "Stop SubAgents loading agent files by default, and deprecate inherit_tools by @DouweM in https://github.com/pydantic/pydantic-ai/pull/9023",
+   "Allow text output on Vertex gemini-live-2.5-flash and remove a stale Gemini Live docs claim by @DouweM in https://github.com/pydantic/pydantic-ai/pull/9069",
+   "Remove the default ACP request_limit by @DouweM in https://github.com/pydantic/pydantic-ai/pull/9380"
+  ]
+ },
+ {
+  "slug": "openclaw",
+  "name": "OpenClaw",
+  "category": "personal",
+  "tag": "v2026.8.33",
+  "date": "2026-09-29",
+  "week": "2026-09-28",
+  "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.8.33",
+  "keywords": [
+   "migration"
+  ],
+  "excerpt": [
+   "- Complete GPT-5.6 family support: preserve Sol, Terra, and Luna catalog, routing, migration, image, vision, and thinking behavior, including Ultra reasoning across model-runtime boundaries and Bedrock tool-result images"
+  ]
+ },
+ {
+  "slug": "dspy",
+  "name": "DSPy",
+  "category": "frameworks",
+  "tag": "3.4.0",
+  "date": "2026-09-25",
+  "week": "2026-09-21",
+  "url": "https://github.com/stanfordnlp/dspy/releases/tag/3.4.0",
+  "keywords": [
+   "breaking",
+   "removed",
+   "deprecated",
+   "migration"
+  ],
+  "excerpt": [
+   "3.4 is the LM transition release; 3.5 is the migration deadline. The experimental LM types introduced in 3.3 are replaced now. Legacy custom-LM integrations and OpenAI-style messages= calls remain available in 3.4 with d",
+   "See the LM migration guide and custom-engine tutorial.",
+   "Material for MkDocs entered maintenance mode with an announced end-of-life date of November 5, 2026. That prompted us to migrate DSPy's Current documentation to Zensical, its actively developed successor, so we can keep ",
+   "Separately, we added versioned documentation alongside the migration. You can now select documentation for a specific DSPy release instead of relying only on Current, which tracks ongoing development. Historical release "
+  ]
+ },
+ {
+  "slug": "google-adk",
+  "name": "Google ADK",
+  "category": "frameworks",
+  "tag": "v2.10.0",
+  "date": "2026-09-25",
+  "week": "2026-09-21",
+  "url": "https://github.com/google/adk-python/releases/tag/v2.10.0",
+  "keywords": [
+   "breaking",
+   "removed",
+   "migration"
+  ],
+  "excerpt": [
+   "sessions: report the redacted database URL when migration cannot connect (1579927)",
+   "remove the 1.x breaking-changes callout from the README (d69f995)"
+  ]
+ },
+ {
+  "slug": "mastra",
+  "name": "Mastra",
+  "category": "frameworks",
+  "tag": "@mastra/core@1.71.0",
+  "date": "2026-09-25",
+  "week": "2026-09-21",
+  "url": "https://github.com/mastra-ai/mastra/releases/tag/%40mastra/core%401.71.0",
+  "keywords": [
+   "breaking",
+   "removed",
+   "migration"
+  ],
+  "excerpt": [
+   "Breaking Changes",
+   "- @mastra/playground-ui TaskList API: title, TaskListHeader, and hideWhenEmpty are removed.",
+   "To migrate, rewrite affected patterns without lookarounds or backreferences, for example replace pattern: '^(?=.\\\\d).+$' with pattern: '\\\\d', then update the dataset schema.",
+   "- Status dots use one circular shape. StatusDot and Status now draw every state as a circle. Meaning comes from color plus a filled or ring treatment. The square and dashed glyphs and the blue idle tone are removed. (249"
+  ]
+ },
+ {
+  "slug": "mastra",
+  "name": "Mastra",
+  "category": "frameworks",
+  "tag": "@mastra/core@1.70.0",
+  "date": "2026-09-25",
+  "week": "2026-09-21",
+  "url": "https://github.com/mastra-ai/mastra/releases/tag/%40mastra/core%401.70.0",
+  "keywords": [
+   "breaking",
+   "removed",
+   "migration"
+  ],
+  "excerpt": [
+   "Breaking Changes",
+   "- @mastra/playground-ui: ErrorState removed (use EmptyState tone=\"error\").",
+   "- @mastra/playground-ui: Button outline variant removed (use default/primary).",
+   "- @mastra/playground-ui: TraceKeysAndValues removed; TraceDataPanelView placement=\"trace-page\" now renders the summary itself."
+  ]
+ },
+ {
+  "slug": "openhands",
+  "name": "OpenHands",
+  "category": "frameworks",
+  "tag": "v1.24.0",
+  "date": "2026-09-25",
+  "week": "2026-09-21",
+  "url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.24.0",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "chore: remove merged PR artifacts by @all-hands-bot in https://github.com/OpenHands/OpenHands/pull/17695",
+   "refactor: remove test-conversation-id fallbacks in websocket context + add state-update tests by @Lothnic in https://github.com/OpenHands/OpenHands/pull/16516"
+  ]
+ },
+ {
+  "slug": "haystack",
+  "name": "Haystack",
+  "category": "frameworks",
+  "tag": "v3.2.0",
+  "date": "2026-09-24",
+  "week": "2026-09-21",
+  "url": "https://github.com/deepset-ai/haystack/releases/tag/v3.2.0",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "- The + operator for combining Toolsets has been removed. Pass Toolsets as a list wherever tools are accepted instead: Agent(..., tools=[toolset_a, toolset_b]). Pipelines serialized with a +-combined Toolset cannot be lo",
+   "- Pipeline snapshot resumption now rejects snapshots whose component set differs from the current pipeline. This prevents newly added components from being silently skipped during a resumed run, while preserving the exis"
+  ]
+ },
+ {
+  "slug": "mastra",
+  "name": "Mastra",
+  "category": "frameworks",
+  "tag": "@mastra/core@1.69.0",
+  "date": "2026-09-24",
+  "week": "2026-09-21",
+  "url": "https://github.com/mastra-ai/mastra/releases/tag/%40mastra/core%401.69.0",
+  "keywords": [
+   "breaking",
+   "removed",
+   "deprecated",
+   "migration"
+  ],
+  "excerpt": [
+   "Breaking Changes",
+   "- @mastra/playground-ui: removed @mastra/playground-ui/lib/springs; FluidHoverHighlight API changed to accept only hover and className.",
+   "- @mastra/playground-ui: PageLayout/shell APIs reworked (removed PageLayoutRoot, MainContentLayout, MainContentContent, and multiple AppShell header-related props/contexts); migrate to the new PageLayout with breadcrumbs",
+   "- Trace grouping deprecations (Core/Server/Client): grouped results in queryTraces() / trace-query group are deprecated; migrate to thread query (queryTraceThreads() / queryThreads contract)."
+  ]
+ },
+ {
+  "slug": "goose",
+  "name": "Goose",
+  "category": "frameworks",
+  "tag": "v1.52.0",
+  "date": "2026-09-23",
+  "week": "2026-09-21",
+  "url": "https://github.com/aaif-goose/goose/releases/tag/v1.52.0",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "- Remove Rube extension documentation (service discontinued) #12116"
+  ]
+ },
+ {
+  "slug": "mastra",
+  "name": "Mastra",
+  "category": "frameworks",
+  "tag": "@mastra/core@1.68.0",
+  "date": "2026-09-23",
+  "week": "2026-09-21",
+  "url": "https://github.com/mastra-ai/mastra/releases/tag/%40mastra/core%401.68.0",
+  "keywords": [
+   "breaking",
+   "removed",
+   "deprecated",
+   "migration"
+  ],
+  "excerpt": [
+   "Breaking Changes",
+   "- @mastra/mcp@2.0.0 is a major rewrite: MCP 2026-07-28 only (legacy handshake removed), suspend/resume replaces elicitation APIs, and several server/client transport and protocol surfaces were removed per the MCP v2 migr",
+   "When messageHistory is set without an explicit lastMessages, the default 10-message cap is dropped so the token budget alone defines the window. lastMessages remains supported and can be combined with messageHistory, but",
+   "- Deprecated the surfaces MCP 2026-07-28 removed, for removal in the next core major: startSSE, startHonoSSE, MCPServerSSEOptions, MCPServerHonoSSEOptions, MCPServerHTTPOptions.options, context.mcp.elicitation.sendReques"
+  ]
+ },
+ {
+  "slug": "openhands",
+  "name": "OpenHands",
+  "category": "frameworks",
+  "tag": "v1.23.0",
+  "date": "2026-09-23",
+  "week": "2026-09-21",
+  "url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.23.0",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "chore: remove merged PR artifacts by @all-hands-bot in https://github.com/OpenHands/OpenHands/pull/17591"
+  ]
+ },
+ {
+  "slug": "openhands",
+  "name": "OpenHands",
+  "category": "frameworks",
+  "tag": "v1.21.0",
+  "date": "2026-09-22",
+  "week": "2026-09-21",
+  "url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.21.0",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "chore: remove merged PR artifacts by @all-hands-bot in https://github.com/OpenHands/OpenHands/pull/17507"
+  ]
+ },
+ {
+  "slug": "llamaindex",
+  "name": "LlamaIndex",
+  "category": "frameworks",
+  "tag": "v0.14.25",
+  "date": "2026-09-21",
+  "week": "2026-09-21",
+  "url": "https://github.com/run-llama/llama_index/releases/tag/v0.14.25",
+  "keywords": [
+   "removed",
+   "deprecated"
+  ],
+  "excerpt": [
+   "- Remove deprecated ipex-llm and optimum-intel IPEX integrations (#22406)"
+  ]
+ },
+ {
+  "slug": "openclaw",
+  "name": "OpenClaw",
+  "category": "personal",
+  "tag": "v2026.7.35",
+  "date": "2026-09-21",
+  "week": "2026-09-21",
+  "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.7.35",
+  "keywords": [
+   "migration"
+  ],
+  "excerpt": [
+   "- Doctor plugin registry: preserve the complete bundled plugin inventory when Doctor creates or repairs registry state, so default Browser, Canvas, pairing, file-transfer, phone-control, Talk voice, and Bonjour plugins r"
+  ]
+ },
+ {
+  "slug": "e2b",
+  "name": "E2B",
+  "category": "managed",
+  "tag": "e2b@2.51.0",
+  "date": "2026-09-18",
+  "week": "2026-09-14",
+  "url": "https://github.com/e2b-dev/E2B/releases/tag/e2b%402.51.0",
+  "keywords": [
+   "removed",
+   "deprecated"
+  ],
+  "excerpt": [
+   "- 5c0f6eb: Remove SDK-side defaults from API request payloads so the API defaults apply when options are omitted. Sandbox create/fork/connect no longer preset a 5-minute timeout, fork no longer presets count: 1, create n",
+   "Sandbox create and connect now use the v2 API endpoints (POST /v2/sandboxes, POST /v2/sandboxes/{id}/connect), which default timeout to 5 minutes and always secure envd access. The secure option on Sandbox.create is depr",
+   "- 5c0f6eb: Remove client-side validation of the fork count argument. The API validates the requested fork count and rejects invalid values."
+  ]
+ },
+ {
+  "slug": "e2b",
+  "name": "E2B",
+  "category": "managed",
+  "tag": "@e2b/python-sdk@2.51.0",
+  "date": "2026-09-18",
+  "week": "2026-09-14",
+  "url": "https://github.com/e2b-dev/E2B/releases/tag/%40e2b/python-sdk%402.51.0",
+  "keywords": [
+   "removed",
+   "deprecated"
+  ],
+  "excerpt": [
+   "- 5c0f6eb: Remove SDK-side defaults from API request payloads so the API defaults apply when options are omitted. Sandbox create/fork/connect no longer preset a 5-minute timeout, fork no longer presets count: 1, create n",
+   "Sandbox create and connect now use the v2 API endpoints (POST /v2/sandboxes, POST /v2/sandboxes/{id}/connect), which default timeout to 5 minutes and always secure envd access. The secure option on Sandbox.create is depr",
+   "- 5c0f6eb: Remove client-side validation of the fork count argument. The API validates the requested fork count and rejects invalid values."
+  ]
+ },
+ {
+  "slug": "e2b",
+  "name": "E2B",
+  "category": "managed",
+  "tag": "@e2b/desktop-python@2.6.0",
+  "date": "2026-09-18",
+  "week": "2026-09-14",
+  "url": "https://github.com/e2b-dev/E2B/releases/tag/%40e2b/desktop-python%402.6.0",
+  "keywords": [
+   "deprecated"
+  ],
+  "excerpt": [
+   "- 5c0f6eb: Deprecate the secure option of Sandbox.create (still accepted, now ignored): every sandbox is created through the v2 API, which always secures envd access. allow_internet_access is no longer preset to True; wh"
+  ]
+ },
+ {
+  "slug": "goose",
+  "name": "Goose",
+  "category": "frameworks",
+  "tag": "v1.51.0",
+  "date": "2026-09-17",
+  "week": "2026-09-14",
+  "url": "https://github.com/aaif-goose/goose/releases/tag/v1.51.0",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "- Remove planning mode from the CLI #12061",
+   "- Remove create recipe command in CLI #11942",
+   "- Remove Inkeep search integration #12085"
+  ]
+ },
+ {
+  "slug": "pydantic-ai",
+  "name": "Pydantic AI",
+  "category": "frameworks",
+  "tag": "v2.44.0",
+  "date": "2026-09-17",
+  "week": "2026-09-14",
+  "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.44.0",
+  "keywords": [
+   "migration"
+  ],
+  "excerpt": [
+   "Add a Vercel AI SDK and Eve migration skill by @adtyavrdhn in https://github.com/pydantic/pydantic-ai/pull/8357"
+  ]
+ },
+ {
+  "slug": "e2b",
+  "name": "E2B",
+  "category": "managed",
+  "tag": "e2b@2.50.0",
+  "date": "2026-09-16",
+  "week": "2026-09-14",
+  "url": "https://github.com/e2b-dev/E2B/releases/tag/e2b%402.50.0",
+  "keywords": [
+   "removed",
+   "deprecated"
+  ],
+  "excerpt": [
+   "- 5b015ad: Removed the V1 template build operations and schemas from the generated API clients. The API no longer serves them (runtime 87968fc1e1fa); control planes carrying that change answer 410 Gone. Template builds g",
+   "The regenerated clients also pick up a documented 429 on most operations, a 409 on template create (v3), the upload-request headers on the build file-upload link, minLength: 1 on the v2 build source fields, and a depreca"
+  ]
+ },
+ {
+  "slug": "e2b",
+  "name": "E2B",
+  "category": "managed",
+  "tag": "@e2b/python-sdk@2.50.0",
+  "date": "2026-09-16",
+  "week": "2026-09-14",
+  "url": "https://github.com/e2b-dev/E2B/releases/tag/%40e2b/python-sdk%402.50.0",
+  "keywords": [
+   "removed",
+   "deprecated"
+  ],
+  "excerpt": [
+   "- 5b015ad: Removed the V1 template build operations and schemas from the generated API clients. The API no longer serves them (runtime 87968fc1e1fa); control planes carrying that change answer 410 Gone. Template builds g",
+   "The regenerated clients also pick up a documented 429 on most operations, a 409 on template create (v3), the upload-request headers on the build file-upload link, minLength: 1 on the v2 build source fields, and a depreca"
+  ]
+ },
+ {
+  "slug": "e2b",
+  "name": "E2B",
+  "category": "managed",
+  "tag": "@e2b/cli@2.19.1",
+  "date": "2026-09-16",
+  "week": "2026-09-14",
+  "url": "https://github.com/e2b-dev/E2B/releases/tag/%40e2b/cli%402.19.1",
+  "keywords": [
+   "removed",
+   "deprecated",
+   "migration"
+  ],
+  "excerpt": [
+   "- 5b015ad: Removed the hidden e2b template build command (alias bd). It printed a V1 deprecation notice and exited 1; the V1 build system it fronted is gone from the API. A script still calling it now gets commander's un"
+  ]
+ },
+ {
+  "slug": "openhands",
+  "name": "OpenHands",
+  "category": "frameworks",
+  "tag": "v1.19.0",
+  "date": "2026-09-16",
+  "week": "2026-09-14",
+  "url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.19.0",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "chore: remove merged PR artifacts by @all-hands-bot in https://github.com/OpenHands/OpenHands/pull/17414"
+  ]
+ },
+ {
+  "slug": "mastra",
+  "name": "Mastra",
+  "category": "frameworks",
+  "tag": "@mastra/core@1.67.0",
+  "date": "2026-09-15",
+  "week": "2026-09-14",
+  "url": "https://github.com/mastra-ai/mastra/releases/tag/%40mastra/core%401.67.0",
+  "keywords": [
+   "breaking",
+   "removed",
+   "deprecated",
+   "migration"
+  ],
+  "excerpt": [
+   "Threads can now be transferred to a new resourceId with Memory.updateThreadResourceId({ threadId, resourceId }), a new server route POST /memory/threads/:threadId/transfer, and client-js support via MemoryThread.transfer",
+   "Breaking Changes",
+   "Use agent_connections_list to discover peers, agent_connect to save an exact peer endpoint, agent_signal_send to send a correlated message, and agent_disconnect to remove the saved connection. Sends require a currently a",
+   "- Added hideSignals to the core memory recall contract so memory implementations and callers can explicitly control which stored signal messages are returned. Omitted exclusions preserve the existing reminder-hidden hist"
+  ]
+ },
+ {
+  "slug": "dspy",
+  "name": "DSPy",
+  "category": "frameworks",
+  "tag": "3.4.0b1",
+  "date": "2026-09-11",
+  "week": "2026-09-07",
+  "url": "https://github.com/stanfordnlp/dspy/releases/tag/3.4.0b1",
+  "keywords": [
+   "removed",
+   "deprecated",
+   "migration"
+  ],
+  "excerpt": [
+   "This is a prerelease, not the stable 3.4.0 release. APIs and behavior may change before stable. We especially welcome feedback on native versus LiteLLM compatibility, tool calling and streaming, custom LM migration, save",
+   "3.4 is the LM transition release; 3.5 is the migration deadline. Ordinary DSPy programs and list-returning prompt calls remain supported, but the experimental LM types introduced in 3.3 are replaced in this release. Revi",
+   "Use engine=\"lm15\" to require native execution and reject unsupported mappings. LiteLLM remains installed and supported; it is not deprecated.",
+   "See the LM migration guide and custom-engine tutorial."
+  ]
+ },
+ {
+  "slug": "hermes-agent",
+  "name": "Hermes Agent",
+  "category": "personal",
+  "tag": "v2026.9.11",
+  "date": "2026-09-11",
+  "week": "2026-09-07",
+  "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.9.11",
+  "keywords": [
+   "breaking"
+  ],
+  "excerpt": [
+   "- Telegram bots must @mention when bots_require_mention is on, breaking bot-to-bot loops (106534); Matrix renders LaTeX (106515); Signal renders markdown tables (106538); WhatsApp replies to view-once messages keep their"
+  ]
+ },
+ {
+  "slug": "mastra",
+  "name": "Mastra",
+  "category": "frameworks",
+  "tag": "@mastra/core@1.66.0",
+  "date": "2026-09-11",
+  "week": "2026-09-07",
+  "url": "https://github.com/mastra-ai/mastra/releases/tag/%40mastra/core%401.66.0",
+  "keywords": [
+   "breaking",
+   "removed",
+   "migration"
+  ],
+  "excerpt": [
+   "Breaking Changes",
+   "- Removed redundant type assertions in workflow execution without changing runtime behavior or public types. (23502)",
+   "- Removed redundant type assertions in storage and channels without changing runtime behavior or public types. (23503)",
+   "- Removed redundant type assertions without changing runtime behavior or public types. (23501)"
+  ]
+ },
+ {
+  "slug": "openhands",
+  "name": "OpenHands",
+  "category": "frameworks",
+  "tag": "v1.18.0",
+  "date": "2026-09-11",
+  "week": "2026-09-07",
+  "url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.18.0",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "fix: OHE-3110 : remove misleading \"No budget limit\" line from Token Usage panel by @tofarr in https://github.com/OpenHands/OpenHands/pull/17264"
+  ]
+ },
+ {
+  "slug": "google-adk",
+  "name": "Google ADK",
+  "category": "frameworks",
+  "tag": "v2.9.0",
+  "date": "2026-09-10",
+  "week": "2026-09-07",
+  "url": "https://github.com/google/adk-python/releases/tag/v2.9.0",
+  "keywords": [
+   "breaking",
+   "removed"
+  ],
+  "excerpt": [
+   "a2a: stop a completed task delegation breaking later peer delegations (04be48b), closes #6831",
+   "telemetry: remove helper methods for type-safe hallucination checking and update function signatures (e1e4331)",
+   "tests: remove the internal notebook link from the hello world fixtures (7988f4c)"
+  ]
+ },
+ {
+  "slug": "crewai",
+  "name": "CrewAI",
+  "category": "frameworks",
+  "tag": "1.15.21",
+  "date": "2026-09-09",
+  "week": "2026-09-07",
+  "url": "https://github.com/crewAIInc/crewAI/releases/tag/1.15.21",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "- Remove stale parameters from handle_llm_stream_chunk docstring."
+  ]
+ },
+ {
+  "slug": "mastra",
+  "name": "Mastra",
+  "category": "frameworks",
+  "tag": "@mastra/core@1.65.0",
+  "date": "2026-09-09",
+  "week": "2026-09-07",
+  "url": "https://github.com/mastra-ai/mastra/releases/tag/%40mastra/core%401.65.0",
+  "keywords": [
+   "breaking",
+   "removed",
+   "deprecated",
+   "migration"
+  ],
+  "excerpt": [
+   "Breaking Changes",
+   "- @mastra/factory: global rules object removed (FactoryRules, defaults/merge/assert helpers, new MastraFactory({ rules })); tool-result rules move onto defineBoard({ tools }) and configVersion replaces rules.version.",
+   "- @mastra/factory: GET /web/factory/projects/:id/attention response shape changed (tier removed; counts/latest fields moved under kinds[kind]...).",
+   "- SKILL_ACTION covers the whole skill lifecycle — resolve, inject, activate, search, read. SKILL_RESOLUTION is deprecated and no longer emitted."
+  ]
+ },
+ {
+  "slug": "openhands",
+  "name": "OpenHands",
+  "category": "frameworks",
+  "tag": "v1.17.0",
+  "date": "2026-09-09",
+  "week": "2026-09-07",
+  "url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.17.0",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "docs: remove duplicate OpenHands/extensions bullet in DEVELOPMENT.md by @imitater-dou in https://github.com/OpenHands/OpenHands/pull/17136"
+  ]
+ },
+ {
+  "slug": "goose",
+  "name": "Goose",
+  "category": "frameworks",
+  "tag": "v1.50.0",
+  "date": "2026-09-08",
+  "week": "2026-09-07",
+  "url": "https://github.com/aaif-goose/goose/releases/tag/v1.50.0",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "- Remove keyring timeout #11798",
+   "- Remove managed model registry from local inference #11789",
+   "- Remove fast model routing #11469"
+  ]
+ },
+ {
+  "slug": "openclaw",
+  "name": "OpenClaw",
+  "category": "personal",
+  "tag": "v2026.9.3",
+  "date": "2026-09-08",
+  "week": "2026-09-07",
+  "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.3",
+  "keywords": [
+   "breaking",
+   "removed",
+   "deprecated",
+   "migration"
+  ],
+  "excerpt": [
+   "- Breaking — Node runtime: require Node 24.16.0 or newer on 24.x, or Node 26.1.0 or newer; Node 26 is recommended. Upgrade Node before OpenClaw to prevent SQLite text truncation: Node 22, Node 25, and earlier 24.x/26.x b",
+   "- Breaking — execution-policy SDK: move the retired exec-mode and comparator helpers from infra-runtime to execPolicy on openclaw/plugin-sdk/agent-harness-runtime; use resolveExecModePolicy and select the returned fields",
+   "- Breaking — approval SDK: import approval account-resolution helpers from approval-native-runtime, adapt session filtering to the full matchesApprovalRequestFilters contract, and replace the retired generic forwarding e",
+   "- Breaking — SDK aliases: replace channel-inbound.buildChannelTurnMediaPayload with buildChannelInboundMediaPayload; infer the retained abortAndDrainAgentHarnessRun callable’s result instead of importing the removed Abor"
+  ]
+ },
+ {
+  "slug": "pydantic-ai",
+  "name": "Pydantic AI",
+  "category": "frameworks",
+  "tag": "v2.41.0",
+  "date": "2026-09-08",
+  "week": "2026-09-07",
+  "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.41.0",
+  "keywords": [
+   "deprecated"
+  ],
+  "excerpt": [
+   "Deprecate fallback_model in favor of fallback_subagent_model on ImageGeneration and XSearch by @dsfaccini in https://github.com/pydantic/pydantic-ai/pull/8077"
+  ]
+ },
+ {
+  "slug": "openclaw",
+  "name": "OpenClaw",
+  "category": "personal",
+  "tag": "v2026.9.2",
+  "date": "2026-09-05",
+  "week": "2026-08-31",
+  "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.2",
+  "keywords": [
+   "removed",
+   "deprecated",
+   "migration"
+  ],
+  "excerpt": [
+   "- Compaction accounting: include orphaned, duplicate, and displaced tool results removed during history repair in dropped-message summaries and token totals. (134987) Thanks @qingminglong, @Dengshanzhi, and @obviyus.",
+   "- Telegram upgrades: retain account names and sender-policy keys that happen to match retired tuning-setting names in Doctor migration. (137860)",
+   "- Cron jobs: preserve the final reply when an automation removes itself, cancel removed conditions before main-session handoff, retain native creator tools in scheduled jobs, and preserve failure-alert policies when edit",
+   "- Plugin SDK context aliases: deprecated untrusted-named prompt-context aliases become eligible for removal on or after September 8, 2026. Migrate to the channel-named context fields and buildChannelMetadata; see plugin "
+  ]
+ },
+ {
+  "slug": "browser-use",
+  "name": "Browser Use",
+  "category": "frameworks",
+  "tag": "0.13.10",
+  "date": "2026-09-04",
+  "week": "2026-08-31",
+  "url": "https://github.com/browser-use/browser-use/releases/tag/0.13.10",
+  "keywords": [
+   "migration"
+  ],
+  "excerpt": [
+   "- Upgrade and migrate to MCP Python SDK 2.1.1."
+  ]
+ },
+ {
+  "slug": "browser-use",
+  "name": "Browser Use",
+  "category": "frameworks",
+  "tag": "0.13.9",
+  "date": "2026-09-04",
+  "week": "2026-08-31",
+  "url": "https://github.com/browser-use/browser-use/releases/tag/0.13.9",
+  "keywords": [
+   "removed",
+   "migration"
+  ],
+  "excerpt": [
+   "ci: remove the dead cloud_evals image-build trigger by @sauravpanda in https://github.com/browser-use/browser-use/pull/5491",
+   "docs: migrate remote browser skill to CLI 3.0 by @MagMueller in https://github.com/browser-use/browser-use/pull/5583"
+  ]
+ },
+ {
+  "slug": "crewai",
+  "name": "CrewAI",
+  "category": "frameworks",
+  "tag": "1.15.19",
+  "date": "2026-09-04",
+  "week": "2026-08-31",
+  "url": "https://github.com/crewAIInc/crewAI/releases/tag/1.15.19",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "- Remove CodeInterpreterTool from AI/ML overview examples"
+  ]
+ },
+ {
+  "slug": "mastra",
+  "name": "Mastra",
+  "category": "frameworks",
+  "tag": "@mastra/core@1.64.0",
+  "date": "2026-09-04",
+  "week": "2026-08-31",
+  "url": "https://github.com/mastra-ai/mastra/releases/tag/%40mastra/core%401.64.0",
+  "keywords": [
+   "breaking",
+   "removed",
+   "deprecated",
+   "migration"
+  ],
+  "excerpt": [
+   "Breaking Changes",
+   "- @mastra/factory: sandbox config is now a callback (ctx = new E2BSandbox({ id: ctx.sessionId })) rather than an options object; workdir/maxSandboxes and the sandbox fleet/reattach model are removed.",
+   "- @mastra/playground-ui: Chip, ChipsGroup, and StatusBadge were removed in favor of a single Badge component (now a <span with updated prop typing).",
+   "Providers that already carried this concept under other names keep those names working as deprecated aliases feeding the same field: workingDir on @mastra/docker and @mastra/apple-container, and workdir on @mastra/modal."
+  ]
+ },
+ {
+  "slug": "openclaw",
+  "name": "OpenClaw",
+  "category": "personal",
+  "tag": "v2026.9.1",
+  "date": "2026-09-03",
+  "week": "2026-08-31",
+  "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.1",
+  "keywords": [
+   "removed",
+   "migration"
+  ],
+  "excerpt": [
+   "- A Gateway that stays up: startup recovers under load and with large agent rosters, malformed legacy cron rows are quarantined instead of blocking boot, migration warnings degrade the Gateway instead of refusing to star",
+   "- CLI: channels add/login/logout/remove/resolve accept --agent, mcp --json emits a JSON failure envelope, zsh and Bash completions escape descriptions and option values correctly, heartbeat status shows Gateway ages, ses",
+   "- Plugins and skills: renamed official plugins migrate by their legacy npm package name, plugin updates require capability consent when prior acceptance is stale while verified first-party plugins are exempt, plugin unin",
+   "- Uninstall and backups: openclaw uninstall defaults to removing only the service and keeps user data, Claude migration backups preserve overwritten generated skills, and backups exclude disabled workspaces, tolerate ACP"
+  ]
+ },
+ {
+  "slug": "openclaw",
+  "name": "OpenClaw",
+  "category": "personal",
+  "tag": "v2026.8.2",
+  "date": "2026-09-01",
+  "week": "2026-08-31",
+  "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.8.2",
+  "keywords": [
+   "removed",
+   "deprecated",
+   "migration"
+  ],
+  "excerpt": [
+   "- Your Home agent, beside your work: open Home in a right or bottom dock with Cmd/Ctrl+Shift+H, keep your current page in view, and preview or remove its work-context snapshot or attach selected text to your message. Rel",
+   "- Recovery cleanup: preview retained migration originals with openclaw update cleanup --dry-run, then explicitly remove eligible originals while the selected Gateway is stopped; cleanup preserves current SQLite history b",
+   "- Home without switching pages: dock the selected agent’s existing Home conversation beside your work, retain its draft and attachments when opening it full page, and inspect or remove the “Working on” context before sen",
+   "- Migration safety: coordinate automatic agent-database maintenance with its current owner, check migration readiness before accepting workspace work, and preserve existing voice-call settings and disabled shared heartbe"
+  ]
+ },
+ {
+  "slug": "hermes-agent",
+  "name": "Hermes Agent",
+  "category": "personal",
+  "tag": "v2026.8.31",
+  "date": "2026-08-31",
+  "week": "2026-08-31",
+  "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.8.31",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "- Supply-chain response — the Blender MCP catalog entry and skill were removed after an upstream compromise (#83404); plugin installs get Tier-1 security scanning (#80728).",
+   "- Electron rolled back to 40.10.2; TCC interpreter anchor removed (superseded by the signing-identity approach that shipped)."
+  ]
+ },
+ {
+  "slug": "openclaw",
+  "name": "OpenClaw",
+  "category": "personal",
+  "tag": "v2026.8.1",
+  "date": "2026-08-31",
+  "week": "2026-08-31",
+  "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.8.1",
+  "keywords": [
+   "breaking",
+   "removed",
+   "deprecated",
+   "migration"
+  ],
+  "excerpt": [
+   "Update help: If the automatic update fails, use a local coding harness to help complete the update, diagnose any migration errors, and verify that the Gateway starts correctly. Back up your configuration and state before",
+   "- OpenProse migration (breaking): remove the bundled OpenProse plugin and /prose command; run openclaw doctor --fix to clean stale configuration and follow the upstream Agent Skill migration, keeping existing .prose sour",
+   "- OpenAI route migration (breaking): use openclaw doctor --fix to migrate shipped codex/ and openai-codex/ model refs, provider config, stored sessions, and automation routes to openai/, retaining Codex runtime intent an",
+   "- Upcoming deprecations (2026-09-01): external plugins should migrate ahead of the SDK removal gate: plugin-sdk-config-runtime-subpath moves to api.pluginConfig and the focused openclaw/plugin-sdk/config-mutation, opencl"
+  ]
+ },
+ {
+  "slug": "mastra",
+  "name": "Mastra",
+  "category": "frameworks",
+  "tag": "@mastra/core@1.63.0",
+  "date": "2026-08-28",
+  "week": "2026-08-24",
+  "url": "https://github.com/mastra-ai/mastra/releases/tag/%40mastra/core%401.63.0",
+  "keywords": [
+   "breaking",
+   "removed",
+   "deprecated"
+  ],
+  "excerpt": [
+   "A new AdaptableLogger contract in @mastra/core/logger standardizes trace correlation by injecting trace_id/span_id into native log records during traced operations, and deriving observability LogEvents from the same reco",
+   "Breaking Changes",
+   "- @mastra/playground-ui DataList API cleanup: removed variant=\"lined\", flushLeft/flushRight, per-cell height, and DataList.MonoCell (use DataList.TextCell font=\"mono\" instead).",
+   "Custom IMastraLogger implementations without adapter support continue to work through the existing dual-write wrapper, which is now deprecated and will be removed in the next major version."
+  ]
+ },
+ {
+  "slug": "google-adk",
+  "name": "Google ADK",
+  "category": "frameworks",
+  "tag": "v1.39.1",
+  "date": "2026-08-27",
+  "week": "2026-08-24",
+  "url": "https://github.com/google/adk-python/releases/tag/v1.39.1",
+  "keywords": [
+   "migration"
+  ],
+  "excerpt": [
+   "Port migration unpickle allowlist and database URL redaction to v1 (#6791) (6deda28)"
+  ]
+ },
+ {
+  "slug": "goose",
+  "name": "Goose",
+  "category": "frameworks",
+  "tag": "v1.48.0",
+  "date": "2026-08-27",
+  "week": "2026-08-24",
+  "url": "https://github.com/aaif-goose/goose/releases/tag/v1.48.0",
+  "keywords": [
+   "removed",
+   "deprecated"
+  ],
+  "excerpt": [
+   "- Inform user of clipboard copy and remove copilot auth retry on timeout #11160",
+   "- Deprecated Gemini OAuth provider #11223",
+   "- Remove goose tui command #11484",
+   "- Remove automation_script, web_scrape, and cache tools from computercontroller #11198"
+  ]
+ },
+ {
+  "slug": "openhands",
+  "name": "OpenHands",
+  "category": "frameworks",
+  "tag": "v1.16.0",
+  "date": "2026-08-27",
+  "week": "2026-08-24",
+  "url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.16.0",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "chore: remove unused random tip code by @smolpaws in https://github.com/OpenHands/OpenHands/pull/16935"
+  ]
+ },
+ {
+  "slug": "google-adk",
+  "name": "Google ADK",
+  "category": "frameworks",
+  "tag": "v2.8.0",
+  "date": "2026-08-26",
+  "week": "2026-08-24",
+  "url": "https://github.com/google/adk-python/releases/tag/v2.8.0",
+  "keywords": [
+   "removed",
+   "migration"
+  ],
+  "excerpt": [
+   "sessions: stop dropping event actions on v0 PostgreSQL migration (e3ae4ac)",
+   "remove redundant event scans in prompt assembly (d7adc1c)",
+   "remove redundant event scans in prompt assembly (e66fdd2)"
+  ]
+ },
+ {
+  "slug": "mastra",
+  "name": "Mastra",
+  "category": "frameworks",
+  "tag": "@mastra/core@1.62.0",
+  "date": "2026-08-26",
+  "week": "2026-08-24",
+  "url": "https://github.com/mastra-ai/mastra/releases/tag/%40mastra/core%401.62.0",
+  "keywords": [
+   "breaking",
+   "removed",
+   "migration"
+  ],
+  "excerpt": [
+   "Breaking Changes",
+   "- Removed exported types: BlaxelProcessManagerOptions (@mastra/blaxel) and RailwayProcessManagerOptions (@mastra/railway)",
+   "- DaytonaSandbox command results changed: result.args removed and result.command now contains the full command string",
+   "- agent.stream(..., { persistPartialOnAbort: true }) option removed; canceled runs now retain transcript history without opt-in"
+  ]
+ },
+ {
+  "slug": "pydantic-ai",
+  "name": "Pydantic AI",
+  "category": "frameworks",
+  "tag": "v2.35.0",
+  "date": "2026-08-26",
+  "week": "2026-08-24",
+  "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.35.0",
+  "keywords": [
+   "deprecated"
+  ],
+  "excerpt": [
+   "Deprecate RunContext.capability_loaded and available_capability_ids in favor of capability_active and active_capability_ids by @DouweM in https://github.com/pydantic/pydantic-ai/pull/7454"
+  ]
+ },
+ {
+  "slug": "pydantic-ai",
+  "name": "Pydantic AI",
+  "category": "frameworks",
+  "tag": "v2.34.0",
+  "date": "2026-08-25",
+  "week": "2026-08-24",
+  "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.34.0",
+  "keywords": [
+   "migration"
+  ],
+  "excerpt": [
+   "Add a LangChain migration skill by @adtyavrdhn in https://github.com/pydantic/pydantic-ai/pull/7679"
+  ]
+ },
+ {
+  "slug": "haystack",
+  "name": "Haystack",
+  "category": "frameworks",
+  "tag": "v3.1.0",
+  "date": "2026-08-24",
+  "week": "2026-08-24",
+  "url": "https://github.com/deepset-ai/haystack/releases/tag/v3.1.0",
+  "keywords": [
+   "breaking",
+   "removed",
+   "deprecated"
+  ],
+  "excerpt": [
+   "- Fixed an issue where PipelineBase.remove_component did not reset auto-variadic socket flags (is_lazy_variadic and wrap_input_in_list) on input sockets when components or connections were removed.",
+   "- Fixed Pipeline.remove_component leaving dangling references to the removed component on the sockets of its neighboring components. Previously, removing a component reset only its own sockets, so a surviving neighbor ke",
+   "- Fixed serialization of types that contain ... (Ellipsis), such as variadic tuples (tuple[int, ...]) and Callable[..., X]. Previously serialize_type rendered the ... as the literal string \"Ellipsis\", which deserialize_t",
+   "Deprecation Notes"
+  ]
+ },
+ {
+  "slug": "mastra",
+  "name": "Mastra",
+  "category": "frameworks",
+  "tag": "@mastra/core@1.61.0",
+  "date": "2026-08-24",
+  "week": "2026-08-24",
+  "url": "https://github.com/mastra-ai/mastra/releases/tag/%40mastra/core%401.61.0",
+  "keywords": [
+   "breaking",
+   "removed"
+  ],
+  "excerpt": [
+   "Breaking Changes",
+   "- Removed a catch that hid a broken durable run. When a durable run's state could not be read between iterations, the loop kept going and crashed one step later with an error that pointed at the wrong place. It now fails",
+   "- Provider OAuth sign-in can now be shared with the whole organization. Org admins get a \"Just me\" / \"Everyone in org\" toggle on the OAuth provider list; org-scoped sign-ins are stored as shared org credentials, reported"
+  ]
+ },
+ {
+  "slug": "dspy",
+  "name": "DSPy",
+  "category": "frameworks",
+  "tag": "3.3.1",
+  "date": "2026-08-21",
+  "week": "2026-08-17",
+  "url": "https://github.com/stanfordnlp/dspy/releases/tag/3.3.1",
+  "keywords": [
+   "removed",
+   "deprecated"
+  ],
+  "excerpt": [
+   "CodeAct and ProgramOfThought Deprecation",
+   "- Deprecate CodeAct and ProgramOfThought in favor of RLM by @isaacbmiller",
+   "- Remove wall-clock retry waits from tests by @isaacbmiller"
+  ]
+ },
+ {
+  "slug": "goose",
+  "name": "Goose",
+  "category": "frameworks",
+  "tag": "v1.47.0",
+  "date": "2026-08-21",
+  "week": "2026-08-17",
+  "url": "https://github.com/aaif-goose/goose/releases/tag/v1.47.0",
+  "keywords": [
+   "removed",
+   "deprecated",
+   "migration"
+  ],
+  "excerpt": [
+   "- Deprecate Gemini OAuth provider #11223",
+   "- Remove automation_script, web_scrape, and cache tools from computercontroller #11198",
+   "- Migrate session/delete to the standard ACP SDK #11286"
+  ]
+ },
+ {
+  "slug": "pydantic-ai",
+  "name": "Pydantic AI",
+  "category": "frameworks",
+  "tag": "v2.33.0",
+  "date": "2026-08-21",
+  "week": "2026-08-17",
+  "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.33.0",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "anthropic 1.0.0 — rebuilt on httpx2, with legacy httpx support removed — reached PyPI on August 20. Every earlier pydantic-ai release, including v2.32.2 cut a few hours before this one, allowed that version without suppo"
+  ]
+ },
+ {
+  "slug": "pydantic-ai",
+  "name": "Pydantic AI",
+  "category": "frameworks",
+  "tag": "v2.32.2",
+  "date": "2026-08-21",
+  "week": "2026-08-17",
+  "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.32.2",
+  "keywords": [
+   "deprecated"
+  ],
+  "excerpt": [
+   "Fail the workflow on UnexpectedModelBehavior and FallbackExceptionGroup under the deprecated TemporalAgent by @aviseth in https://github.com/pydantic/pydantic-ai/pull/7465"
+  ]
+ },
+ {
+  "slug": "langgraph",
+  "name": "LangGraph",
+  "category": "frameworks",
+  "tag": "sdk==0.4.3",
+  "date": "2026-08-19",
+  "week": "2026-08-17",
+  "url": "https://github.com/langchain-ai/langgraph/releases/tag/sdk%3D%3D0.4.3",
+  "keywords": [
+   "migration"
+  ],
+  "excerpt": [
+   "chore: migrate Python type checking to ty (8002)"
+  ]
+ },
+ {
+  "slug": "llamaindex",
+  "name": "LlamaIndex",
+  "category": "frameworks",
+  "tag": "v0.14.24",
+  "date": "2026-08-19",
+  "week": "2026-08-17",
+  "url": "https://github.com/run-llama/llama_index/releases/tag/v0.14.24",
+  "keywords": [
+   "removed",
+   "migration"
+  ],
+  "excerpt": [
+   "- docs: remove leftover generation text from desearch tool README (#22149)",
+   "- feat: migrate llama-index-tools-mcp to mcp 2.x (#22557)"
+  ]
+ },
+ {
+  "slug": "mastra",
+  "name": "Mastra",
+  "category": "frameworks",
+  "tag": "@mastra/core@1.60.0",
+  "date": "2026-08-19",
+  "week": "2026-08-17",
+  "url": "https://github.com/mastra-ai/mastra/releases/tag/%40mastra/core%401.60.0",
+  "keywords": [
+   "breaking",
+   "removed",
+   "deprecated",
+   "migration"
+  ],
+  "excerpt": [
+   "@mastra/mcp adds opt-in support for the stateless 2026-07-28 protocol revision (server + client) plus updated elicitation support using the spec’s multi round-trip mechanism, enabling more modern MCP interoperability wit",
+   "Breaking Changes",
+   "When two calls of the same tool were waiting and one of them was approved after its approval requirement had changed, the other call's pending state could be removed, leaving it stuck and unresumable. Approving one call ",
+   "- Fixed getWorkflowRunById and getWorkflowRunSteps so nested workflows report the correct single suspended leaf step. Obsolete suspension details are removed after the step resumes or completes. (21229) (21565)"
+  ]
+ },
+ {
+  "slug": "hermes-agent",
+  "name": "Hermes Agent",
+  "category": "personal",
+  "tag": "v2026.8.16.2",
+  "date": "2026-08-17",
+  "week": "2026-08-17",
+  "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.8.16.2",
+  "keywords": [
+   "migration"
+  ],
+  "excerpt": [
+   "Since v0.20.2 (v2026.8.16, tagged earlier today), this window landed ~250 commits across ~461 files (+42,613 / −1,641) — ~125 merged PRs including the MCP 2.x SDK migration and 2026-07-28 stateless protocol support, the "
+  ]
+ },
+ {
+  "slug": "openhands",
+  "name": "OpenHands",
+  "category": "frameworks",
+  "tag": "v1.14.0",
+  "date": "2026-08-17",
+  "week": "2026-08-17",
+  "url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.14.0",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "ci: remove broken QA Changes workflow by @neubig in https://github.com/OpenHands/OpenHands/pull/16549",
+   "chore: remove unreachable frontend modules and their tests by @VascoSch92 in https://github.com/OpenHands/OpenHands/pull/16606"
+  ]
+ },
+ {
+  "slug": "browser-use",
+  "name": "Browser Use",
+  "category": "frameworks",
+  "tag": "0.13.8",
+  "date": "2026-08-16",
+  "week": "2026-08-10",
+  "url": "https://github.com/browser-use/browser-use/releases/tag/0.13.8",
+  "keywords": [
+   "deprecated"
+  ],
+  "excerpt": [
+   "fix(mcp): update deprecated Bedrock Claude model identifier by @scemii in https://github.com/browser-use/browser-use/pull/5448"
+  ]
+ },
+ {
+  "slug": "mastra",
+  "name": "Mastra",
+  "category": "frameworks",
+  "tag": "@mastra/core@1.59.0",
+  "date": "2026-08-16",
+  "week": "2026-08-10",
+  "url": "https://github.com/mastra-ai/mastra/releases/tag/%40mastra/core%401.59.0",
+  "keywords": [
+   "breaking",
+   "removed",
+   "deprecated"
+  ],
+  "excerpt": [
+   "Breaking Changes",
+   "- CostGuardProcessor renamed to TokenCostControl (deprecated aliases remain for now, but will be removed in a future major version).",
+   "- CostGuardProcessor is now TokenCostControl with processor id 'token-cost-control'. The CostGuardProcessor export (and the CostGuardOptions, CostGuardUsage, CostGuardBreakdownEntry, CostGuardTripwireMetadata, and CostGu",
+   "- Deprecated translationQuality on LanguageDetector. The option previously selected prompt-level \"Quality Level\" guidance, but that behavior was removed when the language detection and translation prompts were streamline"
+  ]
+ },
+ {
+  "slug": "openai-agents-sdk",
+  "name": "OpenAI Agents SDK",
+  "category": "frameworks",
+  "tag": "v0.21.0",
+  "date": "2026-08-15",
+  "week": "2026-08-10",
+  "url": "https://github.com/openai/openai-agents-python/releases/tag/v0.21.0",
+  "keywords": [
+   "breaking"
+  ],
+  "excerpt": [
+   "This minor release does not introduce a known breaking SDK behavior change. The minor version bump is for the new provider-neutral testing APIs and the OpenAI Python v3 compatibility update."
+  ]
+ },
+ {
+  "slug": "openclaw",
+  "name": "OpenClaw",
+  "category": "personal",
+  "tag": "v2026.8.1-beta.2",
+  "date": "2026-08-15",
+  "week": "2026-08-10",
+  "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.8.1-beta.2",
+  "keywords": [
+   "breaking",
+   "removed",
+   "deprecated",
+   "migration"
+  ],
+  "excerpt": [
+   "- Channel plugin ingress monitors: add a shared plugin SDK monitor for durable admission, polling, pruning, claim identity validation, adoption handoff, and shutdown, and migrate IRC, Synology Chat, and Google Chat to th",
+   "- Developer workflow: remove the obsolete scoped-commit helper and use standard Git commands in isolated worktrees.",
+   "- Plugin uninstall cleanup: remove exact recorded install paths from plugins.load.paths for marketplace, npm, and other managed installs while preserving parent, child, prefix, and unrelated paths. Thanks @vincentkoc.",
+   "- Channel plugin ingress monitors: add a shared plugin SDK monitor for durable admission, polling, pruning, claim identity validation, adoption handoff, and shutdown, and migrate IRC, Synology Chat, and Google Chat to th"
+  ]
+ },
+ {
+  "slug": "google-adk",
+  "name": "Google ADK",
+  "category": "frameworks",
+  "tag": "v2.7.0",
+  "date": "2026-08-13",
+  "week": "2026-08-10",
+  "url": "https://github.com/google/adk-python/releases/tag/v2.7.0",
+  "keywords": [
+   "BREAKING CHANGE",
+   "breaking",
+   "removed",
+   "deprecated",
+   "migration"
+  ],
+  "excerpt": [
+   "Breaking changes",
+   "⚠ BREAKING CHANGES",
+   "remove invalid event from 10_burgers sample test trace (6930be4)",
+   "samples: make the MCP auth sample actually enforce auth, move MCP samples off the deprecated toolset name, and correct code execution claims (c840dbe)"
+  ]
+ },
+ {
+  "slug": "goose",
+  "name": "Goose",
+  "category": "frameworks",
+  "tag": "v1.46.0",
+  "date": "2026-08-12",
+  "week": "2026-08-10",
+  "url": "https://github.com/aaif-goose/goose/releases/tag/v1.46.0",
+  "keywords": [
+   "removed",
+   "deprecated",
+   "migration"
+  ],
+  "excerpt": [
+   "- Migrate desktop routing to React Router 8.3.0 #10971",
+   "- Remove CLI project support #10838",
+   "- Deprecate and remove ui/text TUI #10799",
+   "- Remove MCP sampling support #10087"
+  ]
+ },
+ {
+  "slug": "mastra",
+  "name": "Mastra",
+  "category": "frameworks",
+  "tag": "@mastra/core@1.58.0",
+  "date": "2026-08-12",
+  "week": "2026-08-10",
+  "url": "https://github.com/mastra-ai/mastra/releases/tag/%40mastra/core%401.58.0",
+  "keywords": [
+   "breaking",
+   "removed",
+   "migration"
+  ],
+  "excerpt": [
+   "Breaking Changes",
+   "This is a behavior change for every channel agent. If your agent was prompted to emit a platform dialect such as Slack mrkdwn to work around the old behavior, either remove those prompt instructions (recommended) or set ",
+   "- Fixed deferred notification deliveries failing with \"No model selected\" when the woken thread had no request context. The notification dispatch workflow re-sends deferred and summarized notifications long after the ori",
+   "- Fixed tool execute-time input validation for Zod tools on Anthropic Claude 3.5 Haiku. The compat layer now skips string min/max checks that were removed from the model-facing JSON Schema, while preserving refinements, "
+  ]
+ },
+ {
+  "slug": "openai-agents-sdk",
+  "name": "OpenAI Agents SDK",
+  "category": "frameworks",
+  "tag": "v0.20.0",
+  "date": "2026-08-11",
+  "week": "2026-08-10",
+  "url": "https://github.com/openai/openai-agents-python/releases/tag/v0.20.0",
+  "keywords": [
+   "breaking",
+   "migration"
+  ],
+  "excerpt": [
+   "Version 0.20.0 is a minor release because it changes the implicit default model and includes a potentially breaking MCP dependency migration for applications with customized local HTTP transports. MCP v1 remains supporte"
+  ]
+ },
+ {
+  "slug": "mastra",
+  "name": "Mastra",
+  "category": "frameworks",
+  "tag": "@mastra/core@1.57.0",
+  "date": "2026-08-10",
+  "week": "2026-08-10",
+  "url": "https://github.com/mastra-ai/mastra/releases/tag/%40mastra/core%401.57.0",
+  "keywords": [
+   "breaking"
+  ],
+  "excerpt": [
+   "Breaking Changes"
+  ]
+ },
+ {
+  "slug": "openclaw",
+  "name": "OpenClaw",
+  "category": "personal",
+  "tag": "v2026.6.34",
+  "date": "2026-08-08",
+  "week": "2026-08-03",
+  "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.6.34",
+  "keywords": [
+   "migration"
+  ],
+  "excerpt": [
+   "- Plugin SDK migration: before_agent_start, root openclaw/plugin-sdk imports, providerAuthEnvVars, and channelEnvVars are scheduled for removal after July 24. Migrate to the modern hook stages, focused SDK subpath import"
+  ]
+ },
+ {
+  "slug": "langgraph",
+  "name": "LangGraph",
+  "category": "frameworks",
+  "tag": "checkpoint==4.2.0",
+  "date": "2026-08-07",
+  "week": "2026-08-03",
+  "url": "https://github.com/langchain-ai/langgraph/releases/tag/checkpoint%3D%3D4.2.0",
+  "keywords": [
+   "migration"
+  ],
+  "excerpt": [
+   "chore: migrate Python type checking to ty (8002)"
+  ]
+ },
+ {
+  "slug": "openhands",
+  "name": "OpenHands",
+  "category": "frameworks",
+  "tag": "v1.11.0",
+  "date": "2026-08-07",
+  "week": "2026-08-03",
+  "url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.11.0",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "fix(metrics): fetch runtime conversation directly instead of removed cloud-proxy by @tofarr in https://github.com/OpenHands/OpenHands/pull/16392"
+  ]
+ },
+ {
+  "slug": "mastra",
+  "name": "Mastra",
+  "category": "frameworks",
+  "tag": "@mastra/core@1.56.0",
+  "date": "2026-08-06",
+  "week": "2026-08-03",
+  "url": "https://github.com/mastra-ai/mastra/releases/tag/%40mastra/core%401.56.0",
+  "keywords": [
+   "breaking",
+   "removed",
+   "migration"
+  ],
+  "excerpt": [
+   "Breaking Changes",
+   "- @mastra/platform-workspace@1.0.0: removed MASTRA_PLATFORM_SECRET_KEY auth for workspace providers; use platform-injected MASTRA_PLATFORM_ACCESS_TOKEN or pass accessToken explicitly.",
+   "Both engines interpret declarative entries per kind at the invoke point (via internal step-entry accessors and per-kind entry executors — getEntryId / getEntryWorkflow are exported for integrations) instead of materializ",
+   "This restores the summarization metric that was removed with the legacy evals system, rebuilt on the scorers pipeline."
+  ]
+ },
+ {
+  "slug": "crewai",
+  "name": "CrewAI",
+  "category": "frameworks",
+  "tag": "1.15.12",
+  "date": "2026-08-05",
+  "week": "2026-08-03",
+  "url": "https://github.com/crewAIInc/crewAI/releases/tag/1.15.12",
+  "keywords": [
+   "breaking"
+  ],
+  "excerpt": [
+   "Breaking Changes"
+  ]
+ },
+ {
+  "slug": "claude-agent-sdk",
+  "name": "Claude Agent SDK",
+  "category": "frameworks",
+  "tag": "v0.2.129",
+  "date": "2026-08-04",
+  "week": "2026-08-03",
+  "url": "https://github.com/anthropics/claude-agent-sdk-python/releases/tag/v0.2.129",
+  "keywords": [
+   "breaking"
+  ],
+  "excerpt": [
+   "Breaking Changes"
+  ]
+ },
+ {
+  "slug": "openai-agents-sdk",
+  "name": "OpenAI Agents SDK",
+  "category": "frameworks",
+  "tag": "v0.19.3",
+  "date": "2026-08-04",
+  "week": "2026-08-03",
+  "url": "https://github.com/openai/openai-agents-python/releases/tag/v0.19.3",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "fix(sandbox): remove apply_patch move source as the bound user by @hsusul in https://github.com/openai/openai-agents-python/pull/4100"
+  ]
+ },
+ {
+  "slug": "openclaw",
+  "name": "OpenClaw",
+  "category": "personal",
+  "tag": "v2026.7.1-1",
+  "date": "2026-08-04",
+  "week": "2026-08-03",
+  "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.7.1-1",
+  "keywords": [
+   "migration"
+  ],
+  "excerpt": [
+   "- Legacy migration recovery: keep reviewed migration residue nonfatal during startup instead of blocking otherwise healthy upgrades. (106101)"
+  ]
+ },
+ {
+  "slug": "dspy",
+  "name": "DSPy",
+  "category": "frameworks",
+  "tag": "3.3.0",
+  "date": "2026-08-03",
+  "week": "2026-08-03",
+  "url": "https://github.com/stanfordnlp/dspy/releases/tag/3.3.0",
+  "keywords": [
+   "breaking",
+   "removed",
+   "deprecated",
+   "migration"
+  ],
+  "excerpt": [
+   "Try out the typed return path with dspy.context(experimental=True), and the public migration plan explains the staged transition for custom LM and adapter authors.",
+   "See the full plan here",
+   "Breaking Changes",
+   "- Image.from_url(..., download=...) and the download_images / verify options on encode_image() were removed. Choose reference construction or an explicit factory instead."
+  ]
+ },
+ {
+  "slug": "hermes-agent",
+  "name": "Hermes Agent",
+  "category": "personal",
+  "tag": "v2026.8.3",
+  "date": "2026-08-03",
+  "week": "2026-08-03",
+  "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.8.3",
+  "keywords": [
+   "removed",
+   "migration"
+  ],
+  "excerpt": [
+   "- Readonly config loader at 29 call sites (28× cheaper reads); per-turn config deepcopies killed (telemetry gate 54×); one raw config.yaml parse per process; inter-tool delay removed (#74322, #74211, #74228, #64172 — @te",
+   "- Canonical config loaders for behavioral reads; table-driven config migration registry; DEFAULT_CONFIG extracted to config_defaults.py; auto-migration support floor at v12 (#74237, #74200, #74182, #74433 — @teknium1)",
+   "- hermes import-agent — one-command migration from Claude Code / Codex CLI setups (#72190 — @teknium1)",
+   "- Office skills bundled: docx, xlsx, pdf + refreshed powerpoint; skills-tree debloat continues (yuanbao, segment-anything, jupyter, heartmula, audiocraft → optional-skills; claude-marketplace source removed; hub restruct"
+  ]
+ },
+ {
+  "slug": "openclaw",
+  "name": "OpenClaw",
+  "category": "personal",
+  "tag": "v2026.7.2-beta.7",
+  "date": "2026-08-02",
+  "week": "2026-07-27",
+  "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.7.2-beta.7",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "- Provider reliability: prevent false Codex exhaustion and silent replies, honor Anthropic Retry-After, preserve selected Claude CLI profiles and adopted chats, remove the rejected Codex OAuth realtime fallback, recover "
+  ]
+ },
+ {
+  "slug": "openclaw",
+  "name": "OpenClaw",
+  "category": "personal",
+  "tag": "v2026.7.2-beta.6",
+  "date": "2026-08-01",
+  "week": "2026-07-27",
+  "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.7.2-beta.6",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "- Provider reliability: prevent false Codex exhaustion and silent replies, honor Anthropic Retry-After, preserve selected Claude CLI profiles and adopted chats, remove the rejected Codex OAuth realtime fallback, recover "
+  ]
+ },
+ {
+  "slug": "crewai",
+  "name": "CrewAI",
+  "category": "frameworks",
+  "tag": "1.15.10",
+  "date": "2026-07-31",
+  "week": "2026-07-27",
+  "url": "https://github.com/crewAIInc/crewAI/releases/tag/1.15.10",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "- Remove migrated AMP documentation"
+  ]
+ },
+ {
+  "slug": "mastra",
+  "name": "Mastra",
+  "category": "frameworks",
+  "tag": "@mastra/core@1.55.0",
+  "date": "2026-07-31",
+  "week": "2026-07-27",
+  "url": "https://github.com/mastra-ai/mastra/releases/tag/%40mastra/core%401.55.0",
+  "keywords": [
+   "breaking"
+  ],
+  "excerpt": [
+   "Breaking Changes"
+  ]
+ },
+ {
+  "slug": "google-adk",
+  "name": "Google ADK",
+  "category": "frameworks",
+  "tag": "v2.6.0",
+  "date": "2026-07-30",
+  "week": "2026-07-27",
+  "url": "https://github.com/google/adk-python/releases/tag/v2.6.0",
+  "keywords": [
+   "migration"
+  ],
+  "excerpt": [
+   "migrate v0 event timestamps as local time, not UTC (6f1efe7)"
+  ]
+ },
+ {
+  "slug": "langgraph",
+  "name": "LangGraph",
+  "category": "frameworks",
+  "tag": "checkpointsqlite==3.1.1",
+  "date": "2026-07-30",
+  "week": "2026-07-27",
+  "url": "https://github.com/langchain-ai/langgraph/releases/tag/checkpointsqlite%3D%3D3.1.1",
+  "keywords": [
+   "migration"
+  ],
+  "excerpt": [
+   "chore: migrate Python type checking to ty (8002)"
+  ]
+ },
+ {
+  "slug": "langgraph",
+  "name": "LangGraph",
+  "category": "frameworks",
+  "tag": "checkpointpostgres==3.1.1",
+  "date": "2026-07-30",
+  "week": "2026-07-27",
+  "url": "https://github.com/langchain-ai/langgraph/releases/tag/checkpointpostgres%3D%3D3.1.1",
+  "keywords": [
+   "migration"
+  ],
+  "excerpt": [
+   "chore: migrate Python type checking to ty (8002)"
+  ]
+ },
+ {
+  "slug": "mastra",
+  "name": "Mastra",
+  "category": "frameworks",
+  "tag": "@mastra/core@1.54.0",
+  "date": "2026-07-30",
+  "week": "2026-07-27",
+  "url": "https://github.com/mastra-ai/mastra/releases/tag/%40mastra/core%401.54.0",
+  "keywords": [
+   "breaking"
+  ],
+  "excerpt": [
+   "Breaking Changes"
+  ]
+ },
+ {
+  "slug": "goose",
+  "name": "Goose",
+  "category": "frameworks",
+  "tag": "v1.45.0",
+  "date": "2026-07-29",
+  "week": "2026-07-27",
+  "url": "https://github.com/aaif-goose/goose/releases/tag/v1.45.0",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "- UI cleanup to remove unused components and functions #10761"
+  ]
+ },
+ {
+  "slug": "mastra",
+  "name": "Mastra",
+  "category": "frameworks",
+  "tag": "@mastra/core@1.53.0",
+  "date": "2026-07-29",
+  "week": "2026-07-27",
+  "url": "https://github.com/mastra-ai/mastra/releases/tag/%40mastra/core%401.53.0",
+  "keywords": [
+   "breaking",
+   "removed",
+   "deprecated"
+  ],
+  "excerpt": [
+   "Breaking Changes",
+   "- Removed redundant non-null assertions from core control flow. (#20140)",
+   "- Keep deprecated provider models in the model registry instead of dropping them (#20220)",
+   "The models.dev gateway filtered out every model marked status: 'deprecated' upstream. That status means \"still served, scheduled for retirement\" rather than \"removed\", so filtering it silently degraded models that still "
+  ]
+ },
+ {
+  "slug": "openhands",
+  "name": "OpenHands",
+  "category": "frameworks",
+  "tag": "v1.7.0",
+  "date": "2026-07-29",
+  "week": "2026-07-27",
+  "url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.7.0",
+  "keywords": [
+   "removed",
+   "migration"
+  ],
+  "excerpt": [
+   "chore: remove the human-tested checkbox from the PR template by @VascoSch92 in https://github.com/OpenHands/OpenHands/pull/16122",
+   "ci: disable tag publish triggers for release migration by @malhotra5 in https://github.com/OpenHands/OpenHands/pull/16133",
+   "ci: remove stale release-please bootstrap sha by @malhotra5 in https://github.com/OpenHands/OpenHands/pull/16138"
+  ]
+ },
+ {
+  "slug": "openhands",
+  "name": "OpenHands",
+  "category": "frameworks",
+  "tag": "v1.6.1",
+  "date": "2026-07-28",
+  "week": "2026-07-27",
+  "url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.6.1",
+  "keywords": [
+   "migration"
+  ],
+  "excerpt": [
+   "This release migration was performed by an AI agent (OpenHands) on behalf of the user."
+  ]
+ },
+ {
+  "slug": "mastra",
+  "name": "Mastra",
+  "category": "frameworks",
+  "tag": "@mastra/core@1.52.0",
+  "date": "2026-07-27",
+  "week": "2026-07-27",
+  "url": "https://github.com/mastra-ai/mastra/releases/tag/%40mastra/core%401.52.0",
+  "keywords": [
+   "breaking",
+   "removed",
+   "deprecated",
+   "migration"
+  ],
+  "excerpt": [
+   "Breaking Changes",
+   "- Aligned A2AAgent streams with the regular Agent stream contract. A2A streams now emit a leading start chunk on fresh runs (skipped when resuming, matching Agent behavior) and the finish chunk now carries the Agent-shap",
+   "- Updated the bundled provider SDKs used by the model router for Cerebras, DeepInfra, DeepSeek, Perplexity, Together AI, and OpenAI-compatible endpoints (including custom provider URLs and the Netlify gateway) to their A",
+   "- Remove leftover branches that selected the evented workflow engine inside the regular Agent loop. The agentic-execution workflow now always uses the in-process workflow engine, and Agent no longer maintains an ephemera"
+  ]
+ },
+ {
+  "slug": "openai-agents-sdk",
+  "name": "OpenAI Agents SDK",
+  "category": "frameworks",
+  "tag": "v0.19.0",
+  "date": "2026-07-27",
+  "week": "2026-07-27",
+  "url": "https://github.com/openai/openai-agents-python/releases/tag/v0.19.0",
+  "keywords": [
+   "breaking",
+   "removed"
+  ],
+  "excerpt": [
+   "This minor release does not introduce a breaking change. The minor version bump reflects a significant new OpenAI Responses feature area: Programmatic Tool Calling.",
+   "fix: remove programmatic transcripts from handoff tool filtering by @seratch in https://github.com/openai/openai-agents-python/pull/3879",
+   "docs: remove unnecessary RunContextWrapper wrapping in tool enabling example by @AAliKKhan in https://github.com/openai/openai-agents-python/pull/3869",
+   "docs: remove unused Runner import in tracing docs by @AAliKKhan in https://github.com/openai/openai-agents-python/pull/3881"
+  ]
+ },
+ {
+  "slug": "goose",
+  "name": "Goose",
+  "category": "frameworks",
+  "tag": "v1.44.0",
+  "date": "2026-07-23",
+  "week": "2026-07-20",
+  "url": "https://github.com/aaif-goose/goose/releases/tag/v1.44.0",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "- Remove stale gooseignore references #10359"
+  ]
+ },
+ {
+  "slug": "haystack",
+  "name": "Haystack",
+  "category": "frameworks",
+  "tag": "v3.0.0",
+  "date": "2026-07-20",
+  "week": "2026-07-20",
+  "url": "https://github.com/deepset-ai/haystack/releases/tag/v3.0.0",
+  "keywords": [
+   "breaking",
+   "removed",
+   "migration"
+  ],
+  "excerpt": [
+   "A few small, intentional breaking changes come with it but our Migration Guide and Upgrading to Haystack 3.0 make it easy to upgrade.",
+   "The Agent gained a general-purpose hooks system and now owns tool execution end to end (the standalone ToolInvoker has been removed). Hooks at before_run, before_llm, before_tool, after_tool, on_exit, and after_run let y",
+   "Legacy Generators are gone, haystack-experimental is no longer a core dependency, and 30 components now live in independently released packages in haystack-core-integrations: Sentence Transformers, local & API Hugging Fa",
+   "The full old → new import table is in MIGRATION.md."
+  ]
+ },
+ {
+  "slug": "hermes-agent",
+  "name": "Hermes Agent",
+  "category": "personal",
+  "tag": "v2026.7.20",
+  "date": "2026-07-20",
+  "week": "2026-07-20",
+  "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.7.20",
+  "keywords": [
+   "removed",
+   "deprecated"
+  ],
+  "excerpt": [
+   "- ~80% TTFT cut — Discord capability detection off the critical path (token-keyed 24h disk cache + background refresh), Ollama probe skipped for known non-Ollama providers, agent-init blocking work removed; cold submit→d",
+   "- Unified delegation concurrency caps (max_async_children deprecated); explain long provider waits on the live status line; deterministic tool-output risk exposure (#56955, #64775, #61793 — @teknium1)",
+   "- hermes config get / unset; warn on unknown root config keys + doctor deprecated-key reporting; display.timestamp_format (#65540, #67370, #40622 — @teknium1)"
+  ]
+ },
+ {
+  "slug": "openclaw",
+  "name": "OpenClaw",
+  "category": "personal",
+  "tag": "v2026.7.2-beta.3",
+  "date": "2026-07-18",
+  "week": "2026-07-13",
+  "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.7.2-beta.3",
+  "keywords": [
+   "breaking",
+   "removed",
+   "deprecated",
+   "migration"
+  ],
+  "excerpt": [
+   "- Control UI sidebar usage: remove the provider usage quota row from the expanded sidebar while keeping usage details available in the chat composer and Usage page. Thanks @shakkernerd and @vincentkoc.",
+   "- SQLite maintenance schema validation: reject current-version global and agent databases with missing or drifted canonical tables, constraints, indexes, triggers, or table options before compaction, while accepting supp",
+   "- Gateway chat typecheck: import chat event types from their owning protocol schema after the retired aggregate type module was removed, restoring full project typechecks. Thanks @vincentkoc.",
+   "- iOS Share Extension drafts: preserve legitimate shared text beginning with scaffold-like prefixes, remove only exact legacy scaffold lines, avoid treating scheme-like prose as a URL, and deduplicate host-mirrored conte"
+  ]
+ },
+ {
+  "slug": "crewai",
+  "name": "CrewAI",
+  "category": "frameworks",
+  "tag": "1.15.3a1",
+  "date": "2026-07-16",
+  "week": "2026-07-13",
+  "url": "https://github.com/crewAIInc/crewAI/releases/tag/1.15.3a1",
+  "keywords": [
+   "breaking"
+  ],
+  "excerpt": [
+   "- Fix after_llm_call hooks to prevent breaking native tool execution."
+  ]
+ },
+ {
+  "slug": "google-adk",
+  "name": "Google ADK",
+  "category": "frameworks",
+  "tag": "v2.5.0",
+  "date": "2026-07-16",
+  "week": "2026-07-13",
+  "url": "https://github.com/google/adk-python/releases/tag/v2.5.0",
+  "keywords": [
+   "breaking",
+   "removed",
+   "deprecated",
+   "migration"
+  ],
+  "excerpt": [
+   "Breaking Changes",
+   "Update GCP Skill Registry to use agentregistry/skill endpoint (fa884e3): Existing users of GCP Skill Registry should note that the underlying endpoint is now AgentRegistry, so users will need to migrate their data and en",
+   "remove OpenTelemetry event logger setup since the Events API/SDK has been deprecated and is soon being removed entirely (bb3b2a4)",
+   "samples: Remove NOT WORKING YET comments from workflow samples (f3f602f)"
+  ]
+ },
+ {
+  "slug": "mastra",
+  "name": "Mastra",
+  "category": "frameworks",
+  "tag": "@mastra/core@1.51.0",
+  "date": "2026-07-15",
+  "week": "2026-07-13",
+  "url": "https://github.com/mastra-ai/mastra/releases/tag/%40mastra/core%401.51.0",
+  "keywords": [
+   "breaking",
+   "removed",
+   "deprecated",
+   "migration"
+  ],
+  "excerpt": [
+   "Breaking Changes",
+   "Added mastra.removeTool(key) to remove a dynamically registered tool from the Mastra instance, the counterpart to mastra.addTool():",
+   "mastra.removeTool('calculator-tool'); // returns true if a tool was removed",
+   "- Added legacy-to-VNext span migration for ClickHouse observability storage. Customers using ObservabilityStorageClickhouse (legacy) can now run npx mastra migrate to copy historical spans from mastra_ai_spans to the VNe"
+  ]
+ },
+ {
+  "slug": "goose",
+  "name": "Goose",
+  "category": "frameworks",
+  "tag": "v1.43.0",
+  "date": "2026-07-14",
+  "week": "2026-07-13",
+  "url": "https://github.com/aaif-goose/goose/releases/tag/v1.43.0",
+  "keywords": [
+   "migration"
+  ],
+  "excerpt": [
+   "- Migrate diagnostics to JSON report #9964",
+   "- ACP migration for desktop UI #10081"
+  ]
+ },
+ {
+  "slug": "goose",
+  "name": "Goose",
+  "category": "frameworks",
+  "tag": "v1.42.0",
+  "date": "2026-07-13",
+  "week": "2026-07-13",
+  "url": "https://github.com/aaif-goose/goose/releases/tag/v1.42.0",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "- Remove stale crates/goose-server and update docs #10224"
+  ]
+ },
+ {
+  "slug": "openai-agents-sdk",
+  "name": "OpenAI Agents SDK",
+  "category": "frameworks",
+  "tag": "v0.18.2",
+  "date": "2026-07-11",
+  "week": "2026-07-06",
+  "url": "https://github.com/openai/openai-agents-python/releases/tag/v0.18.2",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "chore: remove unused noqa directives by @seratch in https://github.com/openai/openai-agents-python/pull/3804"
+  ]
+ },
+ {
+  "slug": "openhands",
+  "name": "OpenHands",
+  "category": "frameworks",
+  "tag": "cloud-1.46.0",
+  "date": "2026-07-10",
+  "week": "2026-07-06",
+  "url": "https://github.com/OpenHands/OpenHands/releases/tag/cloud-1.46.0",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "feat(app-server): enrich final archive manifests and remove initial snapshots by @simonrosenberg in https://github.com/OpenHands/OpenHands/pull/15058"
+  ]
+ },
+ {
+  "slug": "openai-agents-sdk",
+  "name": "OpenAI Agents SDK",
+  "category": "frameworks",
+  "tag": "v0.18.1",
+  "date": "2026-07-09",
+  "week": "2026-07-06",
+  "url": "https://github.com/openai/openai-agents-python/releases/tag/v0.18.1",
+  "keywords": [
+   "migration"
+  ],
+  "excerpt": [
+   "feat: add GPT-5.6 model defaults and migrate examples by @seratch in https://github.com/openai/openai-agents-python/pull/3774"
+  ]
+ },
+ {
+  "slug": "haystack",
+  "name": "Haystack",
+  "category": "frameworks",
+  "tag": "v2.31.0",
+  "date": "2026-07-08",
+  "week": "2026-07-06",
+  "url": "https://github.com/deepset-ai/haystack/releases/tag/v2.31.0",
+  "keywords": [
+   "removed",
+   "deprecated",
+   "migration"
+  ],
+  "excerpt": [
+   "This release begins the migration of many components out of haystack core and into dedicated integration packages, in preparation for Haystack 3.0. Components with heavy or optional dependencies — including all SentenceT",
+   "Each component continues to work as before for now, and moving to the new package is a one-line import change once you install it. See the Deprecation Notes below for the full list and per-component migration snippets. F",
+   "- Added optional YAML frontmatter extraction to MarkdownToDocument. When initialized with extract_frontmatter=True, YAML frontmatter at the beginning of a Markdown file is removed from the converted content and added to ",
+   "⚠️ Deprecation Notes"
+  ]
+ },
+ {
+  "slug": "mastra",
+  "name": "Mastra",
+  "category": "frameworks",
+  "tag": "@mastra/core@1.50.0",
+  "date": "2026-07-08",
+  "week": "2026-07-06",
+  "url": "https://github.com/mastra-ai/mastra/releases/tag/%40mastra/core%401.50.0",
+  "keywords": [
+   "breaking",
+   "removed",
+   "deprecated"
+  ],
+  "excerpt": [
+   "Agent “heartbeats” and workflow schedules are unified under mastra.schedules and /api/schedules (client + server), with deprecated/removed heartbeat routes and methods; persisted legacy rows are normalized (target.type: ",
+   "Breaking Changes",
+   "- Server removed /api/heartbeats/ routes in favor of the unified /api/schedules/ API.",
+   "- Client deprecated Heartbeat() methods in favor of unified schedule methods (to be removed in a future release)."
+  ]
+ },
+ {
+  "slug": "openhands",
+  "name": "OpenHands",
+  "category": "frameworks",
+  "tag": "1.9.3",
+  "date": "2026-07-08",
+  "week": "2026-07-06",
+  "url": "https://github.com/OpenHands/OpenHands/releases/tag/1.9.3",
+  "keywords": [
+   "migration"
+  ],
+  "excerpt": [
+   "fix(app-server): pass index columns as a list in migration 013 by @VascoSch92 in https://github.com/OpenHands/OpenHands/pull/15176"
+  ]
+ },
+ {
+  "slug": "openhands",
+  "name": "OpenHands",
+  "category": "frameworks",
+  "tag": "cloud-1.43.0",
+  "date": "2026-07-08",
+  "week": "2026-07-06",
+  "url": "https://github.com/OpenHands/OpenHands/releases/tag/cloud-1.43.0",
+  "keywords": [
+   "migration"
+  ],
+  "excerpt": [
+   "fix(app-server): pass index columns as a list in migration 013 by @VascoSch92 in https://github.com/OpenHands/OpenHands/pull/15176"
+  ]
+ },
+ {
+  "slug": "google-adk",
+  "name": "Google ADK",
+  "category": "frameworks",
+  "tag": "v2.4.0",
+  "date": "2026-07-07",
+  "week": "2026-07-06",
+  "url": "https://github.com/google/adk-python/releases/tag/v2.4.0",
+  "keywords": [
+   "breaking",
+   "removed",
+   "deprecated",
+   "migration"
+  ],
+  "excerpt": [
+   "correct misleading workflow-agent deprecation messages (53a8ab1)",
+   "migrate AgentRegistry base URLs from v1alpha to v1 (82432a3)",
+   "remove unit test with wrong assumption about claude thinking parts (94fcdbb)",
+   "remove unused userinfo_endpoint from GoogleApiToolset OIDC config (1509dcf)"
+  ]
+ },
+ {
+  "slug": "mastra",
+  "name": "Mastra",
+  "category": "frameworks",
+  "tag": "@mastra/core@1.49.0",
+  "date": "2026-07-07",
+  "week": "2026-07-06",
+  "url": "https://github.com/mastra-ai/mastra/releases/tag/%40mastra/core%401.49.0",
+  "keywords": [
+   "breaking",
+   "removed",
+   "deprecated"
+  ],
+  "excerpt": [
+   "Breaking Changes",
+   "- @mastra/playground-ui removed root named exports; import from explicit subpaths (e.g. @mastra/playground-ui/components/Button).",
+   "- @mastra/playground-ui removed Searchbar; use InputGroup composition instead.",
+   "- Fixed durable agent parity gaps: emit start chunk for correct stream ordering, handle TripWire from input processors during preparation, and port onInputAvailable/onOutput tool lifecycle hooks to the durable tool execu"
+  ]
+ },
+ {
+  "slug": "goose",
+  "name": "Goose",
+  "category": "frameworks",
+  "tag": "v1.41.0",
+  "date": "2026-07-03",
+  "week": "2026-06-29",
+  "url": "https://github.com/aaif-goose/goose/releases/tag/v1.41.0",
+  "keywords": [
+   "removed",
+   "migration"
+  ],
+  "excerpt": [
+   "- Fallback REST API call removed in ACP mode for edit in place (10034)",
+   "- Removed unused SubagentStart/SubagentStop hook events (9960)",
+   "- Removed window goosed when closing window (9818)",
+   "- Unused fetch-metadata IPC handler removed (SSRF) (9340)"
+  ]
+ },
+ {
+  "slug": "goose",
+  "name": "Goose",
+  "category": "frameworks",
+  "tag": "v1.40.0",
+  "date": "2026-07-02",
+  "week": "2026-06-29",
+  "url": "https://github.com/aaif-goose/goose/releases/tag/v1.40.0",
+  "keywords": [
+   "removed",
+   "migration"
+  ],
+  "excerpt": [
+   "- Removed window goosed when closing window #9818",
+   "- Remove hard-coded React alias that points to wrong location #9842",
+   "- AAIF migration blog post #9866"
+  ]
+ },
+ {
+  "slug": "hermes-agent",
+  "name": "Hermes Agent",
+  "category": "personal",
+  "tag": "v2026.7.1",
+  "date": "2026-07-01",
+  "week": "2026-06-29",
+  "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.7.1",
+  "keywords": [
+   "removed",
+   "migration"
+  ],
+  "excerpt": [
+   "- The agent verifies its own work — \"done\" means proven, not claimed — Hermes now records verification evidence for coding work and can decide it's finished by actually running your project's checks, not by asserting suc",
+   "- Run Hermes at scale — scale-to-zero and drain coordination — The gateway can now go dormant when idle and quiesce cleanly before a restart, migration, or auto-update — without dropping in-flight conversations. A hosted",
+   "- verify-on-stop defaults OFF with a one-time v32 migration; skips doc-only edits; surface-aware \"auto\" default restored; gated off for messaging surfaces (#53552, #54740, #55449, #52412 — @teknium1, @OutThisLife, @GodsB",
+   "- Krea via managed Nous Subscription gateway; Z.AI endpoint picker (Global/China/Coding Plan); Ollama-cloud reasoning_effort wiring; remove google-gemini-cli + google-antigravity OAuth providers (#52647, #52364, #51494, "
+  ]
+ },
+ {
+  "slug": "mastra",
+  "name": "Mastra",
+  "category": "frameworks",
+  "tag": "@mastra/core@1.48.0",
+  "date": "2026-07-01",
+  "week": "2026-06-29",
+  "url": "https://github.com/mastra-ai/mastra/releases/tag/%40mastra/core%401.48.0",
+  "keywords": [
+   "breaking",
+   "removed"
+  ],
+  "excerpt": [
+   "Breaking Changes",
+   "Scalable cascade deletes. Deleting a thread (with its messages) or a dataset (with its items) is deliberately _not_ wrapped in a transaction, because those children are unbounded and a transactional delete is capped by M",
+   "- Fix the Zod v4 string handler silently dropping unrecognized string_format checks. Formats without a textual description (such as ipv4, ipv6, datetime, date, time, base64, cuid2, ulid, nanoid, jwt) are now preserved as",
+   "- Breaking change: Renamed the Vercel sandbox exports to make the MicroVM and serverless implementations explicit. VercelSandbox now refers to the MicroVM-backed Vercel Sandbox product. The serverless implementation is n"
+  ]
+ },
+ {
+  "slug": "mastra",
+  "name": "Mastra",
+  "category": "frameworks",
+  "tag": "@mastra/core@1.47.0",
+  "date": "2026-07-01",
+  "week": "2026-06-29",
+  "url": "https://github.com/mastra-ai/mastra/releases/tag/%40mastra/core%401.47.0",
+  "keywords": [
+   "breaking",
+   "removed",
+   "deprecated",
+   "migration"
+  ],
+  "excerpt": [
+   "Gateway-first model discovery & auth via new GatewayManager (Harness hooks removed)",
+   "Harness now sources model catalog, auth status, mode agents, observational-memory models, and subagents entirely from registered gateways (no fallback to resolveModel, customModelCatalogProvider, or modelAuthChecker, whi",
+   "Breaking Changes",
+   "- Harness→AgentController migration: @mastra/server removed legacy /harness/... routes and harness: permissions; clients must use /agent-controller/... and agent-controller: permissions."
+  ]
+ },
+ {
+  "slug": "crewai",
+  "name": "CrewAI",
+  "category": "frameworks",
+  "tag": "1.15.0",
+  "date": "2026-06-25",
+  "week": "2026-06-22",
+  "url": "https://github.com/crewAIInc/crewAI/releases/tag/1.15.0",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "- Remove duplicated Exa tool",
+   "- Remove StateProxy from flow state access"
+  ]
+ },
+ {
+  "slug": "crewai",
+  "name": "CrewAI",
+  "category": "frameworks",
+  "tag": "1.14.8a5",
+  "date": "2026-06-25",
+  "week": "2026-06-22",
+  "url": "https://github.com/crewAIInc/crewAI/releases/tag/1.14.8a5",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "- Remove StateProxy from flow state access (6327)"
+  ]
+ },
+ {
+  "slug": "goose",
+  "name": "Goose",
+  "category": "frameworks",
+  "tag": "v1.39.0",
+  "date": "2026-06-25",
+  "week": "2026-06-22",
+  "url": "https://github.com/aaif-goose/goose/releases/tag/v1.39.0",
+  "keywords": [
+   "removed",
+   "migration"
+  ],
+  "excerpt": [
+   "- Remove hard-coded React alias that breaks dev render #9842",
+   "- Removed window goosed when closing window #9818",
+   "- Remove dead component and useNavigationSessions cleanup #9603",
+   "- Removed create recipe from session modal and REST API #9916"
+  ]
+ },
+ {
+  "slug": "mastra",
+  "name": "Mastra",
+  "category": "frameworks",
+  "tag": "@mastra/core@1.46.0",
+  "date": "2026-06-24",
+  "week": "2026-06-22",
+  "url": "https://github.com/mastra-ai/mastra/releases/tag/%40mastra/core%401.46.0",
+  "keywords": [
+   "breaking",
+   "removed",
+   "deprecated",
+   "migration"
+  ],
+  "excerpt": [
+   "Breaking Changes",
+   "- Run control moved from Harness. to Session (e.g. sendMessage, sendSignal, abort, respondToToolSuspension, etc. removed from Harness).",
+   "- Deprecated Harness.getState() / Harness.setState() compatibility wrappers removed (use session.state.get() / session.state.set()).",
+   "- Removed the deprecated Harness.getState() and Harness.setState() compatibility wrappers, along with the unused private updateState. Harness state has lived on the session for a while; these were thin proxies marked @de"
+  ]
+ },
+ {
+  "slug": "openai-agents-sdk",
+  "name": "OpenAI Agents SDK",
+  "category": "frameworks",
+  "tag": "v0.17.7",
+  "date": "2026-06-24",
+  "week": "2026-06-22",
+  "url": "https://github.com/openai/openai-agents-python/releases/tag/v0.17.7",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "fix: remove dependency on types-requests by @rouge8 in https://github.com/openai/openai-agents-python/pull/3509"
+  ]
+ },
+ {
+  "slug": "daytona",
+  "name": "Daytona",
+  "category": "managed",
+  "tag": "v0.190.0",
+  "date": "2026-06-23",
+  "week": "2026-06-22",
+  "url": "https://github.com/daytonaio/daytona/releases/tag/v0.190.0",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "- docs: remove oss and on-prem / rename cmc to byoc (#5022)"
+  ]
+ },
+ {
+  "slug": "daytona",
+  "name": "Daytona",
+  "category": "managed",
+  "tag": "v0.189.0",
+  "date": "2026-06-19",
+  "week": "2026-06-15",
+  "url": "https://github.com/daytonaio/daytona/releases/tag/v0.189.0",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "- docs: remove android / update gpu (#5055)"
+  ]
+ },
+ {
+  "slug": "hermes-agent",
+  "name": "Hermes Agent",
+  "category": "personal",
+  "tag": "v2026.6.19",
+  "date": "2026-06-19",
+  "week": "2026-06-15",
+  "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.6.19",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "- Edit images, not just generate them — image-to-image in image_generate — image_generate can now edit and transform a source image, not only create one from scratch. Pass an existing image and a prompt and it routes to ",
+   "- The memory tool got a major upgrade — atomic batch operations — The memory tool gained an operations array that applies a batch of add/replace/remove edits atomically against the final character budget. The model can f",
+   "- memory batch operations — atomic add/replace/remove array against the final char budget, so a single call can free space and add entries (#48507 — @teknium1)",
+   "- Removed the agent-callable send_message tool; coding-context posture across CLI/TUI/desktop/ACP; read_file extracts .ipynb/.docx/.xlsx to text (#47856, #43316, #37082 — @teknium1)"
+  ]
+ },
+ {
+  "slug": "mastra",
+  "name": "Mastra",
+  "category": "frameworks",
+  "tag": "@mastra/core@1.45.0",
+  "date": "2026-06-19",
+  "week": "2026-06-15",
+  "url": "https://github.com/mastra-ai/mastra/releases/tag/%40mastra/core%401.45.0",
+  "keywords": [
+   "breaking"
+  ],
+  "excerpt": [
+   "Breaking Changes"
+  ]
+ },
+ {
+  "slug": "google-adk",
+  "name": "Google ADK",
+  "category": "frameworks",
+  "tag": "v2.3.0",
+  "date": "2026-06-18",
+  "week": "2026-06-15",
+  "url": "https://github.com/google/adk-python/releases/tag/v2.3.0",
+  "keywords": [
+   "removed",
+   "deprecated",
+   "migration"
+  ],
+  "excerpt": [
+   "core: migrate core and CLI to enterprise parameters (68221f0)",
+   "Migrate McpToolset to AsyncAuthorizedSession for mTLS support (fe497a4)",
+   "utils: add GOOGLE_GENAI_USE_ENTERPRISE env var with deprecation fallback (4e85e9c)",
+   "remove developer notes from transfer_to_agent docstring (2a0b4e7)"
+  ]
+ },
+ {
+  "slug": "google-adk",
+  "name": "Google ADK",
+  "category": "frameworks",
+  "tag": "v1.35.2",
+  "date": "2026-06-18",
+  "week": "2026-06-15",
+  "url": "https://github.com/google/adk-python/releases/tag/v1.35.2",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "remove live event buffering in runner (#6151) (afe4083)"
+  ]
+ },
+ {
+  "slug": "goose",
+  "name": "Goose",
+  "category": "frameworks",
+  "tag": "v1.38.0",
+  "date": "2026-06-17",
+  "week": "2026-06-15",
+  "url": "https://github.com/aaif-goose/goose/releases/tag/v1.38.0",
+  "keywords": [
+   "removed",
+   "migration"
+  ],
+  "excerpt": [
+   "- Remove unused fetch-metadata IPC handler (SSRF) #9340",
+   "- Mount ACP in goosed server for iterative migration #9097",
+   "- Remove popular chat topics from new chat screen #9307",
+   "- Remove vendored Windows binaries #9318"
+  ]
+ },
+ {
+  "slug": "daytona",
+  "name": "Daytona",
+  "category": "managed",
+  "tag": "v0.188.0",
+  "date": "2026-06-16",
+  "week": "2026-06-15",
+  "url": "https://github.com/daytonaio/daytona/releases/tag/v0.188.0",
+  "keywords": [
+   "deprecated"
+  ],
+  "excerpt": [
+   "- sdk-typescript: auto-deprecate @daytonaio/sdk on each publish (#5050)"
+  ]
+ },
+ {
+  "slug": "browser-use",
+  "name": "Browser Use",
+  "category": "frameworks",
+  "tag": "0.13.2",
+  "date": "2026-06-12",
+  "week": "2026-06-08",
+  "url": "https://github.com/browser-use/browser-use/releases/tag/0.13.2",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "chore(llm): remove bu-3 / bu-3-max, default beta example to openai/gpt-5.5 by @sauravpanda in https://github.com/browser-use/browser-use/pull/5020"
+  ]
+ },
+ {
+  "slug": "langgraph",
+  "name": "LangGraph",
+  "category": "frameworks",
+  "tag": "1.2.5",
+  "date": "2026-06-12",
+  "week": "2026-06-08",
+  "url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.5",
+  "keywords": [
+   "migration"
+  ],
+  "excerpt": [
+   "chore: migrate Python type checking to ty (8002)"
+  ]
+ },
+ {
+  "slug": "mastra",
+  "name": "Mastra",
+  "category": "frameworks",
+  "tag": "@mastra/core@1.42.0",
+  "date": "2026-06-12",
+  "week": "2026-06-08",
+  "url": "https://github.com/mastra-ai/mastra/releases/tag/%40mastra/core%401.42.0",
+  "keywords": [
+   "breaking",
+   "removed",
+   "deprecated",
+   "migration"
+  ],
+  "excerpt": [
+   "Breaking Changes",
+   "- Removed harness.respondToQuestion(...) → use harness.respondToToolSuspension(...).",
+   "- Removed ask_question event → listen for tool_suspended and read event.suspendPayload.",
+   "- Removed Harness question-related APIs/types (registerQuestion, pendingQuestion, HarnessQuestion types); pendingSuspension becomes pendingSuspensions: Map<toolCallId, ...."
+  ]
+ },
+ {
+  "slug": "daytona",
+  "name": "Daytona",
+  "category": "managed",
+  "tag": "v0.187.0",
+  "date": "2026-06-11",
+  "week": "2026-06-08",
+  "url": "https://github.com/daytonaio/daytona/releases/tag/v0.187.0",
+  "keywords": [
+   "breaking",
+   "migration"
+  ],
+  "excerpt": [
+   "⚠️ Breaking Changes",
+   "- api: GET /object-storage/push-access and GET /docker-registry/registry-push-access now require the caller to hold either write:snapshots or write:sandboxes (previously no specific permission was required). Migration: g"
+  ]
+ },
+ {
+  "slug": "daytona",
+  "name": "Daytona",
+  "category": "managed",
+  "tag": "v0.186.0",
+  "date": "2026-06-10",
+  "week": "2026-06-08",
+  "url": "https://github.com/daytonaio/daytona/releases/tag/v0.186.0",
+  "keywords": [
+   "removed",
+   "migration"
+  ],
+  "excerpt": [
+   "- api,dashboard: remove obsolete runner class property (#4943)",
+   "- migrate workflows to Blacksmith (#4922)"
+  ]
+ },
+ {
+  "slug": "langgraph",
+  "name": "LangGraph",
+  "category": "frameworks",
+  "tag": "cli==0.4.28",
+  "date": "2026-06-10",
+  "week": "2026-06-08",
+  "url": "https://github.com/langchain-ai/langgraph/releases/tag/cli%3D%3D0.4.28",
+  "keywords": [
+   "migration"
+  ],
+  "excerpt": [
+   "chore: migrate Python type checking to ty (8002)"
+  ]
+ },
+ {
+  "slug": "daytona",
+  "name": "Daytona",
+  "category": "managed",
+  "tag": "v0.185.0",
+  "date": "2026-06-09",
+  "week": "2026-06-08",
+  "url": "https://github.com/daytonaio/daytona/releases/tag/v0.185.0",
+  "keywords": [
+   "breaking",
+   "deprecated",
+   "migration"
+  ],
+  "excerpt": [
+   "- api: un-deprecate sandboxClass and set enumName (#4942)",
+   "⚠️ Breaking Changes",
+   "- daemon: daemon /git/clone now verifies TLS certificates by default (previously silently skipped); clones against self-signed or private-CA Git servers will fail with a TLS verification error. Migration: pass insecure_s"
+  ]
+ },
+ {
+  "slug": "hermes-agent",
+  "name": "Hermes Agent",
+  "category": "personal",
+  "tag": "v2026.6.5",
+  "date": "2026-06-06",
+  "week": "2026-06-01",
+  "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.6.5",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "- Always enable embedded chat; remove dashboard --tui flag (#38591 — @benbarclay)",
+   "- Removed (redundant / dead): spotify (→ Spotify plugin's 7 native tools), linear (→ hermes mcp install linear), kanban-codex-lane, debugging-hermes-tui-commands, stale domain orphan, empty category markers (diagramming,"
+  ]
+ },
+ {
+  "slug": "mastra",
+  "name": "Mastra",
+  "category": "frameworks",
+  "tag": "@mastra/core@1.41.0",
+  "date": "2026-06-05",
+  "week": "2026-06-01",
+  "url": "https://github.com/mastra-ai/mastra/releases/tag/%40mastra/core%401.41.0",
+  "keywords": [
+   "breaking",
+   "removed",
+   "deprecated"
+  ],
+  "excerpt": [
+   "Deprecation: dedicated UntilIdle methods/endpoints",
+   "streamUntilIdle() and resumeStreamUntilIdle() (and the dedicated /stream-until-idle and /resume-stream-until-idle endpoints) are deprecated in favor of stream(..., { untilIdle: true }) / resumeStream(..., { untilIdle: tr",
+   "Breaking Changes",
+   "Failed sandbox resolver calls are removed from the cache so later calls can retry. Use workspace.clearSandboxCache(cacheKey) to drop a keyed sandbox reference when your own lifecycle code has destroyed or replaced that s"
+  ]
+ },
+ {
+  "slug": "mastra",
+  "name": "Mastra",
+  "category": "frameworks",
+  "tag": "@mastra/core@1.40.0",
+  "date": "2026-06-05",
+  "week": "2026-06-01",
+  "url": "https://github.com/mastra-ai/mastra/releases/tag/%40mastra/core%401.40.0",
+  "keywords": [
+   "breaking"
+  ],
+  "excerpt": [
+   "Breaking Changes"
+  ]
+ },
+ {
+  "slug": "google-adk",
+  "name": "Google ADK",
+  "category": "frameworks",
+  "tag": "v2.2.0",
+  "date": "2026-06-04",
+  "week": "2026-06-01",
+  "url": "https://github.com/google/adk-python/releases/tag/v2.2.0",
+  "keywords": [
+   "BREAKING CHANGE",
+   "breaking",
+   "migration"
+  ],
+  "excerpt": [
+   "⚠ BREAKING CHANGES",
+   "migration: restrict unpickling of v0 actions blobs (9db48ce)"
+  ]
+ },
+ {
+  "slug": "mastra",
+  "name": "Mastra",
+  "category": "frameworks",
+  "tag": "@mastra/core@1.39.0",
+  "date": "2026-06-04",
+  "week": "2026-06-01",
+  "url": "https://github.com/mastra-ai/mastra/releases/tag/%40mastra/core%401.39.0",
+  "keywords": [
+   "breaking",
+   "removed"
+  ],
+  "excerpt": [
+   "Breaking Changes",
+   "- Removed Hono from @mastra/core and auth package runtime dependencies. Auth providers now receive framework-agnostic request types that support standard Request objects and Hono-compatible request shapes. MCP and deploy",
+   "- Removed Hono from @mastra/core and auth package runtime dependencies. Auth providers now receive framework-agnostic request types that support standard Request objects and Hono-compatible request shapes. MCP and deploy",
+   "- Removed Hono from @mastra/core and auth package runtime dependencies. Auth providers now receive framework-agnostic request types that support standard Request objects and Hono-compatible request shapes. MCP and deploy"
+  ]
+ },
+ {
+  "slug": "daytona",
+  "name": "Daytona",
+  "category": "managed",
+  "tag": "v0.184.0",
+  "date": "2026-06-03",
+  "week": "2026-06-01",
+  "url": "https://github.com/daytonaio/daytona/releases/tag/v0.184.0",
+  "keywords": [
+   "breaking",
+   "deprecated",
+   "migration"
+  ],
+  "excerpt": [
+   "- daemon: add modifiedAt (ISO 8601) to FileInfo and deprecate modTime (#4890)",
+   "- api: make migration jobs from docker container work as non-root without network (#4904)",
+   "⚠️ Breaking Changes"
+  ]
+ },
+ {
+  "slug": "goose",
+  "name": "Goose",
+  "category": "frameworks",
+  "tag": "v1.37.0",
+  "date": "2026-06-03",
+  "week": "2026-06-01",
+  "url": "https://github.com/aaif-goose/goose/releases/tag/v1.37.0",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "- Remove unused fetch-metadata IPC handler (SSRF) #9340",
+   "- Remove popular chat topics from new chat screen #9307",
+   "- Remove vendored Windows binaries #9318"
+  ]
+ },
+ {
+  "slug": "haystack",
+  "name": "Haystack",
+  "category": "frameworks",
+  "tag": "v2.30.0",
+  "date": "2026-06-03",
+  "week": "2026-06-01",
+  "url": "https://github.com/deepset-ai/haystack/releases/tag/v2.30.0",
+  "keywords": [
+   "removed",
+   "migration"
+  ],
+  "excerpt": [
+   "- DALLEImageGenerator has been updated to account for OpenAI's retirement of the DALL-E models. The default model is now gpt-image-2 (previously dall-e-3). To migrate:",
+   "- All Haystack ChatGenerator components now also accept a plain string for the messages parameter in addition to a list of ChatMessage objects. The string is automatically converted into a list containing a ChatMessage w"
+  ]
+ },
+ {
+  "slug": "mastra",
+  "name": "Mastra",
+  "category": "frameworks",
+  "tag": "@mastra/core@1.38.0",
+  "date": "2026-06-03",
+  "week": "2026-06-01",
+  "url": "https://github.com/mastra-ai/mastra/releases/tag/%40mastra/core%401.38.0",
+  "keywords": [
+   "breaking",
+   "removed",
+   "deprecated",
+   "migration"
+  ],
+  "excerpt": [
+   "Breaking Changes",
+   "The existing resumeAsync() client/server surface is unchanged and still resolves with the full workflow result, so there is no breaking change.",
+   "resumeNoWait is intentionally additive in v1. In Mastra v2 the fire-and-forget behavior is planned to become the default behavior of resumeAsync() (mirroring start/resume semantics), at which point resumeNoWait and the r",
+   "Providers implement a VNext surface (listToolkitsVNext, listToolsVNext, resolveToolsVNext) plus the auth round-trip (authorize, getAuthStatus, listConnections, disconnectConnection, listConnectionFields, health). The Com"
+  ]
+ },
+ {
+  "slug": "daytona",
+  "name": "Daytona",
+  "category": "managed",
+  "tag": "v0.183.0",
+  "date": "2026-05-29",
+  "week": "2026-05-25",
+  "url": "https://github.com/daytonaio/daytona/releases/tag/v0.183.0",
+  "keywords": [
+   "removed",
+   "deprecated"
+  ],
+  "excerpt": [
+   "- api: handle invalid labels filter in deprecated sandbox list (#4822)",
+   "- docs: remove tier 2 access requirement (#4824)"
+  ]
+ },
+ {
+  "slug": "smolagents",
+  "name": "smolagents",
+  "category": "frameworks",
+  "tag": "v1.26.0",
+  "date": "2026-05-29",
+  "week": "2026-05-25",
+  "url": "https://github.com/huggingface/smolagents/releases/tag/v1.26.0",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "Remove remote WasmExecutor by @albertvillanova in https://github.com/huggingface/smolagents/pull/2321"
+  ]
+ },
+ {
+  "slug": "dspy",
+  "name": "DSPy",
+  "category": "frameworks",
+  "tag": "3.3.0b1",
+  "date": "2026-05-28",
+  "week": "2026-05-25",
+  "url": "https://github.com/stanfordnlp/dspy/releases/tag/3.3.0b1",
+  "keywords": [
+   "breaking",
+   "removed",
+   "deprecated",
+   "migration"
+  ],
+  "excerpt": [
+   "Most existing DSPy programs should keep working without changes. Review the breaking changes if you depend on NumPy from the base dspy install, inspect GEPA result internals, or catch provider-specific LM exceptions dire",
+   "Try out the typed return path with dspy.context(experimental=True), and the public migration plan explains the staged transition for custom LM and adapter authors.",
+   "See the full plan here",
+   "The base install is lighter: numpy is now optional via dspy[numpy], and direct dependencies on asyncer, xxhash, and typeguard were removed in favor of standard-library paths."
+  ]
+ },
+ {
+  "slug": "hermes-agent",
+  "name": "Hermes Agent",
+  "category": "personal",
+  "tag": "v2026.5.28",
+  "date": "2026-05-28",
+  "week": "2026-05-25",
+  "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.5.28",
+  "keywords": [
+   "removed",
+   "migration"
+  ],
+  "excerpt": [
+   "The Velocity Release. Hermes gets dramatically faster — to start, to run, to ship work, and to grow. The 16,083-line run_agent.py collapses to 3,821 (-76%) across 14 cohesive agent/ modules. Kanban grew into a real multi",
+   "- May 15 model retirement detection — grok-4, grok-4-fast{,-reasoning,-non-reasoning}, grok-3, grok-code-fast-1, grok-imagine-image-pro etc. are detected in doctor and chat startup, with hermes migrate xai to one-shot co",
+   "- Make legacy task migration idempotent. (#28397)",
+   "- May 15 model retirement detection + hermes migrate xai for grok-4 / grok-3 / grok-code-fast-1 / grok-imagine-image-pro. (#29277)"
+  ]
+ },
+ {
+  "slug": "goose",
+  "name": "Goose",
+  "category": "frameworks",
+  "tag": "v1.36.0",
+  "date": "2026-05-27",
+  "week": "2026-05-25",
+  "url": "https://github.com/aaif-goose/goose/releases/tag/v1.36.0",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "- Remove unused fetch-metadata IPC handler (SSRF) #9340",
+   "- Remove popular chat topics from new chat screen #9307",
+   "- Remove vendored Windows binaries #9318"
+  ]
+ },
+ {
+  "slug": "mastra",
+  "name": "Mastra",
+  "category": "frameworks",
+  "tag": "@mastra/core@1.37.0",
+  "date": "2026-05-27",
+  "week": "2026-05-25",
+  "url": "https://github.com/mastra-ai/mastra/releases/tag/%40mastra/core%401.37.0",
+  "keywords": [
+   "breaking",
+   "removed",
+   "deprecated",
+   "migration"
+  ],
+  "excerpt": [
+   "Breaking Changes",
+   "- @mastra/slack: removed cards: boolean and formatToolCall from Slack provider/channel config; migrate to toolDisplay: 'text' (for cards: false) or toolDisplay function form (for formatToolCall).",
+   "Deprecation (no breaking changes): ChannelAdapterConfig.cards: boolean and ChannelAdapterConfig.formatToolCall are now @deprecated and surface in IDEs with a strikethrough. Both still work at runtime — they're mutually e",
+   "- Made provider capabilities loading lazy instead of bulk-syncing on every registry access. Removed subscription setup from harness switchMode() — subscriptions are now lazily ensured at send time. Added 10s TTL cache an"
+  ]
+ },
+ {
+  "slug": "daytona",
+  "name": "Daytona",
+  "category": "managed",
+  "tag": "v0.180.0",
+  "date": "2026-05-24",
+  "week": "2026-05-18",
+  "url": "https://github.com/daytonaio/daytona/releases/tag/v0.180.0",
+  "keywords": [
+   "breaking",
+   "removed",
+   "deprecated",
+   "migration"
+  ],
+  "excerpt": [
+   "⚠️ Breaking Changes",
+   "- The GET /api/sandbox endpoint now returns a paginated response object with full search capabilities built in, and the legacy /api/sandbox/paginated endpoint is being deprecated. Additionally, all /api/workspace endpoin"
+  ]
+ },
+ {
+  "slug": "goose",
+  "name": "Goose",
+  "category": "frameworks",
+  "tag": "v1.35.0",
+  "date": "2026-05-22",
+  "week": "2026-05-18",
+  "url": "https://github.com/aaif-goose/goose/releases/tag/v1.35.0",
+  "keywords": [
+   "removed",
+   "migration"
+  ],
+  "excerpt": [
+   "- Remove popular chat topics from new chat screen #9307",
+   "- Remove vendored Windows binaries #9318",
+   "- Remove Filesystem MCP extension from catalog #9225",
+   "- Mount ACP in goosed server for iterative migration #9097"
+  ]
+ },
+ {
+  "slug": "browser-use",
+  "name": "Browser Use",
+  "category": "frameworks",
+  "tag": "0.12.7",
+  "date": "2026-05-19",
+  "week": "2026-05-18",
+  "url": "https://github.com/browser-use/browser-use/releases/tag/0.12.7",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "fix(schema): remove unreachable 'type' key from validation fields list by @Will-hxw in https://github.com/browser-use/browser-use/pull/4734",
+   "fix: remove dead code 'type' from second elif branch in optimize_schema() by @kuishou68 in https://github.com/browser-use/browser-use/pull/4704"
+  ]
+ },
+ {
+  "slug": "google-adk",
+  "name": "Google ADK",
+  "category": "frameworks",
+  "tag": "v1.34.0",
+  "date": "2026-05-18",
+  "week": "2026-05-18",
+  "url": "https://github.com/google/adk-python/releases/tag/v1.34.0",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "auth: remove unneeded OAuth flows (c35a579)"
+  ]
+ },
+ {
+  "slug": "hermes-agent",
+  "name": "Hermes Agent",
+  "category": "personal",
+  "tag": "v2026.5.16",
+  "date": "2026-05-16",
+  "week": "2026-05-11",
+  "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.5.16",
+  "keywords": [
+   "breaking",
+   "removed",
+   "migration"
+  ],
+  "excerpt": [
+   "- Provider rename — Alibaba Cloud → Qwen Cloud — The Alibaba Cloud provider is renamed to Qwen Cloud in the picker and config to match what the rest of the world calls it. Existing config keys still work — no breaking ch",
+   "- Codex-runtime: skip unavailable plugins during migration (#25437)",
+   "- Sanitize env and redact output in quick commands + remove write-only _pending_messages (#23584)",
+   "- Remove public security advisory page (#24253)"
+  ]
+ },
+ {
+  "slug": "daytona",
+  "name": "Daytona",
+  "category": "managed",
+  "tag": "v0.176.0",
+  "date": "2026-05-14",
+  "week": "2026-05-11",
+  "url": "https://github.com/daytonaio/daytona/releases/tag/v0.176.0",
+  "keywords": [
+   "removed",
+   "migration"
+  ],
+  "excerpt": [
+   "- sdk-typescript: migrate otel decorators to modern API (#4702)",
+   "- docs: remove text decoration from code snippets (#4718)"
+  ]
+ },
+ {
+  "slug": "llamaindex",
+  "name": "LlamaIndex",
+  "category": "frameworks",
+  "tag": "v0.14.22",
+  "date": "2026-05-14",
+  "week": "2026-05-11",
+  "url": "https://github.com/run-llama/llama_index/releases/tag/v0.14.22",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "- fix: remove stale exports from public all lists (#21133)"
+  ]
+ },
+ {
+  "slug": "smolagents",
+  "name": "smolagents",
+  "category": "frameworks",
+  "tag": "v1.25.0",
+  "date": "2026-05-14",
+  "week": "2026-05-11",
+  "url": "https://github.com/huggingface/smolagents/releases/tag/v1.25.0",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "Remove support for legacy no-prefix pickle by @albertvillanova in https://github.com/huggingface/smolagents/pull/1986",
+   "Remove allow_origin from Docker and Modal executors by @albertvillanova in https://github.com/huggingface/smolagents/pull/2028",
+   "Remove unused safe_serialization param from _websocket_run_code_raise_errors by @albertvillanova in https://github.com/huggingface/smolagents/pull/2131"
+  ]
+ },
+ {
+  "slug": "goose",
+  "name": "Goose",
+  "category": "frameworks",
+  "tag": "v1.34.0",
+  "date": "2026-05-13",
+  "week": "2026-05-11",
+  "url": "https://github.com/aaif-goose/goose/releases/tag/v1.34.0",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "- Remove defaults yaml #8854",
+   "- Remove threads layer, use sessions directly for ACP #9078",
+   "- Remove attachment preamble in goose2 #9052",
+   "- Redesign Extensions page, remove enable toggle, treat Extension Manager as core MCP enabler per session #8940"
+  ]
+ },
+ {
+  "slug": "google-adk",
+  "name": "Google ADK",
+  "category": "frameworks",
+  "tag": "v1.33.0",
+  "date": "2026-05-08",
+  "week": "2026-05-04",
+  "url": "https://github.com/google/adk-python/releases/tag/v1.33.0",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "remove input.type and output.type attributes from adk metrics (9559968)"
+  ]
+ },
+ {
+  "slug": "openai-agents-sdk",
+  "name": "OpenAI Agents SDK",
+  "category": "frameworks",
+  "tag": "v0.17.0",
+  "date": "2026-05-08",
+  "week": "2026-05-04",
+  "url": "https://github.com/openai/openai-agents-python/releases/tag/v0.17.0",
+  "keywords": [
+   "migration"
+  ],
+  "excerpt": [
+   "To migrate, grant trusted host roots at the manifest level with SandboxPathGrant, preferably as read-only when the sandbox only needs to read those files:"
+  ]
+ },
+ {
+  "slug": "hermes-agent",
+  "name": "Hermes Agent",
+  "category": "personal",
+  "tag": "v2026.5.7",
+  "date": "2026-05-07",
+  "week": "2026-05-04",
+  "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.5.7",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "- Remove /provider alias for /model (#20358)"
+  ]
+ },
+ {
+  "slug": "dspy",
+  "name": "DSPy",
+  "category": "frameworks",
+  "tag": "3.2.1",
+  "date": "2026-05-05",
+  "week": "2026-05-04",
+  "url": "https://github.com/stanfordnlp/dspy/releases/tag/3.2.1",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "- Removed the upper bound on litellm. (9687)",
+   "- Removed an unused setup-node step from the docs push workflow. (9702)"
+  ]
+ },
+ {
+  "slug": "google-adk",
+  "name": "Google ADK",
+  "category": "frameworks",
+  "tag": "v1.32.0",
+  "date": "2026-05-01",
+  "week": "2026-04-27",
+  "url": "https://github.com/google/adk-python/releases/tag/v1.32.0",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "remove exclude_unset=True to correctly serialize pydantic types (f95ac48)"
+  ]
+ },
+ {
+  "slug": "daytona",
+  "name": "Daytona",
+  "category": "managed",
+  "tag": "v0.171.0",
+  "date": "2026-04-30",
+  "week": "2026-04-27",
+  "url": "https://github.com/daytonaio/daytona/releases/tag/v0.171.0",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "- docs: remove unused assets (#4584)"
+  ]
+ },
+ {
+  "slug": "hermes-agent",
+  "name": "Hermes Agent",
+  "category": "personal",
+  "tag": "v2026.4.30",
+  "date": "2026-04-30",
+  "week": "2026-04-27",
+  "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.4.30",
+  "keywords": [
+   "removed",
+   "migration"
+  ],
+  "excerpt": [
+   "- Index tool_name + tool_calls in FTS5, with repair + migration (salvages 16866) (#16914)",
+   "- Refactor: remove flush_memories entirely (#15696)",
+   "OpenClaw migration (for folks coming from OpenClaw)",
+   "- Hardened OpenClaw import — plan-first apply, redaction, pre-migration backup (#16911)"
+  ]
+ },
+ {
+  "slug": "goose",
+  "name": "Goose",
+  "category": "frameworks",
+  "tag": "v1.33.1",
+  "date": "2026-04-29",
+  "week": "2026-04-27",
+  "url": "https://github.com/aaif-goose/goose/releases/tag/v1.33.1",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "- Remove Windows CUDA build variant from release pipeline #8895"
+  ]
+ },
+ {
+  "slug": "openai-agents-sdk",
+  "name": "OpenAI Agents SDK",
+  "category": "frameworks",
+  "tag": "v0.14.7",
+  "date": "2026-04-28",
+  "week": "2026-04-27",
+  "url": "https://github.com/openai/openai-agents-python/releases/tag/v0.14.7",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "fix: remove unset fields from calls to Responses API by @s0rc3r3r01 in https://github.com/openai/openai-agents-python/pull/3026"
+  ]
+ },
+ {
+  "slug": "daytona",
+  "name": "Daytona",
+  "category": "managed",
+  "tag": "v0.170.0",
+  "date": "2026-04-27",
+  "week": "2026-04-27",
+  "url": "https://github.com/daytonaio/daytona/releases/tag/v0.170.0",
+  "keywords": [
+   "breaking",
+   "deprecated"
+  ],
+  "excerpt": [
+   "- security: replace deprecated dev-hanz-ops/install-gh-cli-action (#4536)",
+   "⚠️ Breaking Changes"
+  ]
+ },
+ {
+  "slug": "goose",
+  "name": "Goose",
+  "category": "frameworks",
+  "tag": "v1.32.0",
+  "date": "2026-04-23",
+  "week": "2026-04-20",
+  "url": "https://github.com/aaif-goose/goose/releases/tag/v1.32.0",
+  "keywords": [
+   "removed",
+   "deprecated"
+  ],
+  "excerpt": [
+   "- Remove double border on content in chat #8545",
+   "- Removed hardcoded dependency of goose-acp-macro #8753",
+   "- Remove stale gemini-acp references #8572",
+   "- Replace deprecated Claude ACP package links #8625"
+  ]
+ },
+ {
+  "slug": "hermes-agent",
+  "name": "Hermes Agent",
+  "category": "personal",
+  "tag": "v2026.4.23",
+  "date": "2026-04-23",
+  "week": "2026-04-20",
+  "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.4.23",
+  "keywords": [
+   "breaking",
+   "removed",
+   "deprecated"
+  ],
+  "excerpt": [
+   "- /steer — mid-run agent nudges — /steer <prompt injects a note that the running agent sees after its next tool call, without interrupting the turn or breaking prompt cache. For when you want to course-correct an agent i",
+   "- Fix: enforce config.yaml as sole CWD source + deprecate .env CWD vars + add hermes memory reset (#11029)",
+   "- Website removed Discussions link from README"
+  ]
+ },
+ {
+  "slug": "daytona",
+  "name": "Daytona",
+  "category": "managed",
+  "tag": "v0.168.0",
+  "date": "2026-04-21",
+  "week": "2026-04-20",
+  "url": "https://github.com/daytonaio/daytona/releases/tag/v0.168.0",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "- dashboard: remove suspend-react (#4314)"
+  ]
+ },
+ {
+  "slug": "dspy",
+  "name": "DSPy",
+  "category": "frameworks",
+  "tag": "3.2.0",
+  "date": "2026-04-21",
+  "week": "2026-04-20",
+  "url": "https://github.com/stanfordnlp/dspy/releases/tag/3.2.0",
+  "keywords": [
+   "removed",
+   "deprecated"
+  ],
+  "excerpt": [
+   "fix(predict): remove code corruption in ProgramOfThought._parse_code by @adityasingh2400 (9276)",
+   "Deprecation warning for prefix, format, and parser kwargs in InputField/OutputField by @MaximeRivest (9394)",
+   "Refactor: Move model capability checks to BaseLM to remove litellm from adapters by @MaximeRivest (9516)",
+   "docs: remove n=5 assumption from modules tutorial example by @MaximeRivest (9380)"
+  ]
+ },
+ {
+  "slug": "llamaindex",
+  "name": "LlamaIndex",
+  "category": "frameworks",
+  "tag": "v0.14.21",
+  "date": "2026-04-21",
+  "week": "2026-04-20",
+  "url": "https://github.com/run-llama/llama_index/releases/tag/v0.14.21",
+  "keywords": [
+   "breaking"
+  ],
+  "excerpt": [
+   "- Fix Breaking Change in Message Block Buffer Resolution (#21339)"
+  ]
+ },
+ {
+  "slug": "openai-agents-sdk",
+  "name": "OpenAI Agents SDK",
+  "category": "frameworks",
+  "tag": "v0.14.4",
+  "date": "2026-04-21",
+  "week": "2026-04-20",
+  "url": "https://github.com/openai/openai-agents-python/releases/tag/v0.14.4",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "docs: remove duplicate word in voice interruptions section by @abhicris in https://github.com/openai/openai-agents-python/pull/2981"
+  ]
+ },
+ {
+  "slug": "haystack",
+  "name": "Haystack",
+  "category": "frameworks",
+  "tag": "v2.28.0",
+  "date": "2026-04-20",
+  "week": "2026-04-20",
+  "url": "https://github.com/deepset-ai/haystack/releases/tag/v2.28.0",
+  "keywords": [
+   "migration"
+  ],
+  "excerpt": [
+   "- As part of the migration from requests to httpx, request_with_retry and async_request_with_retry (in haystack.utils.requests_utils) no longer raise requests.exceptions.RequestException on failure; they now raise httpx."
+  ]
+ },
+ {
+  "slug": "daytona",
+  "name": "Daytona",
+  "category": "managed",
+  "tag": "v0.165.0",
+  "date": "2026-04-14",
+  "week": "2026-04-13",
+  "url": "https://github.com/daytonaio/daytona/releases/tag/v0.165.0",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "- api: remove early return in resize sandbox job success handler (#4430)"
+  ]
+ },
+ {
+  "slug": "hermes-agent",
+  "name": "Hermes Agent",
+  "category": "personal",
+  "tag": "v2026.4.13",
+  "date": "2026-04-13",
+  "week": "2026-04-13",
+  "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.4.13",
+  "keywords": [
+   "removed",
+   "migration"
+  ],
+  "excerpt": [
+   "- hermes backup & hermes import — Full backup and restore of your Hermes configuration, sessions, skills, and memory. Migrate between machines or create snapshots before major changes. (#7997)",
+   "- Cross-signing recovery key verification for E2EE migration (#8282)",
+   "- Rebrand OpenClaw → Hermes during migration (#8210)",
+   "- Remove dead LLM_MODEL env var + migration to clear stale entries (#6543)"
+  ]
+ },
+ {
+  "slug": "daytona",
+  "name": "Daytona",
+  "category": "managed",
+  "tag": "v0.164.0",
+  "date": "2026-04-10",
+  "week": "2026-04-06",
+  "url": "https://github.com/daytonaio/daytona/releases/tag/v0.164.0",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "- proxy: remove auth header after successful validation (#4419)"
+  ]
+ },
+ {
+  "slug": "google-adk",
+  "name": "Google ADK",
+  "category": "frameworks",
+  "tag": "v1.29.0",
+  "date": "2026-04-09",
+  "week": "2026-04-06",
+  "url": "https://github.com/google/adk-python/releases/tag/v1.29.0",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "Remove use of raw_event field in vertex ai session service (642d337)",
+   "Remove the session events dependency from A2aAgentExecutor (aaa03ac)",
+   "adk: clean up remote triggers README to remove internal references (ccac461)"
+  ]
+ },
+ {
+  "slug": "goose",
+  "name": "Goose",
+  "category": "frameworks",
+  "tag": "v1.30.0",
+  "date": "2026-04-08",
+  "week": "2026-04-06",
+  "url": "https://github.com/aaif-goose/goose/releases/tag/v1.30.0",
+  "keywords": [
+   "migration"
+  ],
+  "excerpt": [
+   "- Blog: AAIF migration post & homepage rework (#8356)"
+  ]
+ },
+ {
+  "slug": "hermes-agent",
+  "name": "Hermes Agent",
+  "category": "personal",
+  "tag": "v2026.4.8",
+  "date": "2026-04-08",
+  "week": "2026-04-06",
+  "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.4.8",
+  "keywords": [
+   "removed",
+   "migration"
+  ],
+  "excerpt": [
+   "- Unnecessary members intent removed on startup + token lock leak fix (#5302)",
+   "- Doctor diagnostics — sync provider checks, config migration, WAL and mem0 diagnostics (#5077)",
+   "- hermes auth remove now clears env-seeded credentials permanently (#5285)",
+   "- Stale test skips removed, regex backtracking, file search bug, and test flakiness (#4969)"
+  ]
+ },
+ {
+  "slug": "hermes-agent",
+  "name": "Hermes Agent",
+  "category": "personal",
+  "tag": "v2026.4.3",
+  "date": "2026-04-03",
+  "week": "2026-03-30",
+  "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.4.3",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "- Remove user-facing compression warnings — cleaner message flow (#4139)"
+  ]
+ },
+ {
+  "slug": "browser-use",
+  "name": "Browser Use",
+  "category": "frameworks",
+  "tag": "0.12.6",
+  "date": "2026-04-02",
+  "week": "2026-03-30",
+  "url": "https://github.com/browser-use/browser-use/releases/tag/0.12.6",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "fix(mcp): remove oneOf from browser_click schema that breaks Claude API clients by @gabros20 in https://github.com/browser-use/browser-use/pull/4212"
+  ]
+ },
+ {
+  "slug": "daytona",
+  "name": "Daytona",
+  "category": "managed",
+  "tag": "v0.160.0",
+  "date": "2026-04-02",
+  "week": "2026-03-30",
+  "url": "https://github.com/daytonaio/daytona/releases/tag/v0.160.0",
+  "keywords": [
+   "removed",
+   "migration"
+  ],
+  "excerpt": [
+   "- dashboard: migrate create dialogs to sheets (#4252)",
+   "- api: undefined reading id on snapshot remove event (#4305)",
+   "- dashboard: remove pay handler check (874e80370)",
+   "- docs: remove toolbox actions (#4304)"
+  ]
+ },
+ {
+  "slug": "goose",
+  "name": "Goose",
+  "category": "frameworks",
+  "tag": "v1.29.0",
+  "date": "2026-03-31",
+  "week": "2026-03-30",
+  "url": "https://github.com/aaif-goose/goose/releases/tag/v1.29.0",
+  "keywords": [
+   "removed",
+   "deprecated"
+  ],
+  "excerpt": [
+   "- Overwrite the deprecated googledrive extension config #7974",
+   "- Remove configured marker when deleting OAuth provider configuration #7887",
+   "- Remove unnecessary Arc<Mutex from tool execution pipeline #7979",
+   "- Remove lead/worker provider #7989"
+  ]
+ },
+ {
+  "slug": "letta",
+  "name": "Letta",
+  "category": "frameworks",
+  "tag": "0.16.7",
+  "date": "2026-03-31",
+  "week": "2026-03-30",
+  "url": "https://github.com/letta-ai/letta/releases/tag/0.16.7",
+  "keywords": [
+   "breaking",
+   "removed",
+   "deprecated"
+  ],
+  "excerpt": [
+   "Breaking Changes",
+   "- Block limits are no longer enforced -- block limit validation has been deprecated and removed from the git memory sync path (9977, 9983). Blocks can now grow freely. If you were relying on limits to cap per-turn cost, ",
+   "- OpenAI proxy cleanup -- extra fields removed (9949), parallel tool calling supported (9879)"
+  ]
+ },
+ {
+  "slug": "hermes-agent",
+  "name": "Hermes Agent",
+  "category": "personal",
+  "tag": "v2026.3.30",
+  "date": "2026-03-30",
+  "week": "2026-03-30",
+  "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.3.30",
+  "keywords": [
+   "removed",
+   "deprecated",
+   "migration"
+  ],
+  "excerpt": [
+   "- Remove input() from /tools disable — eliminates freeze in terminal when disabling tools (#3918)",
+   "- Non-deprecated HTTP transport — switched from sse_client to streamable_http_client (#3646)",
+   "- OpenClaw migration model config overwrite — migration no longer overwrites model config dict with a string (#3924) — @0xbyt4",
+   "- OpenClaw migration expanded — covers full data footprint including sessions, cron, memory (#3869)"
+  ]
+ },
+ {
+  "slug": "daytona",
+  "name": "Daytona",
+  "category": "managed",
+  "tag": "v0.158.1",
+  "date": "2026-03-28",
+  "week": "2026-03-23",
+  "url": "https://github.com/daytonaio/daytona/releases/tag/v0.158.1",
+  "keywords": [
+   "migration"
+  ],
+  "excerpt": [
+   "- api: add ssl config to migration data source (#4246)"
+  ]
+ },
+ {
+  "slug": "hermes-agent",
+  "name": "Hermes Agent",
+  "category": "personal",
+  "tag": "v2026.3.28",
+  "date": "2026-03-28",
+  "week": "2026-03-23",
+  "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.3.28",
+  "keywords": [
+   "breaking",
+   "removed",
+   "migration"
+  ],
+  "excerpt": [
+   "- Supply chain hardening — Removed compromised litellm dependency, pinned all dependency version ranges, regenerated uv.lock with hashes, added CI workflow scanning PRs for supply chain attack patterns, and bumped deps t",
+   "- Removed /model slash command from CLI and gateway in favor of hermes model subcommand (#3080)",
+   "- Migrate OAuth token refresh to platform.claude.com with fallback (#3246)",
+   "- Remove mini-swe-agent dependency — Inline Docker and Modal backends directly (#2804)"
+  ]
+ },
+ {
+  "slug": "daytona",
+  "name": "Daytona",
+  "category": "managed",
+  "tag": "v0.157.0",
+  "date": "2026-03-26",
+  "week": "2026-03-23",
+  "url": "https://github.com/daytonaio/daytona/releases/tag/v0.157.0",
+  "keywords": [
+   "migration"
+  ],
+  "excerpt": [
+   "- api: migration drift (#3961)"
+  ]
+ },
+ {
+  "slug": "browser-use",
+  "name": "Browser Use",
+  "category": "frameworks",
+  "tag": "0.12.5",
+  "date": "2026-03-25",
+  "week": "2026-03-23",
+  "url": "https://github.com/browser-use/browser-use/releases/tag/0.12.5",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "Remove litellm from core dependencies in response to the litellm supply chain attack (versions 1.82.7 & 1.82.8 backdoored on March 24, 2026)."
+  ]
+ },
+ {
+  "slug": "llamaindex",
+  "name": "LlamaIndex",
+  "category": "frameworks",
+  "tag": "v0.14.19",
+  "date": "2026-03-25",
+  "week": "2026-03-23",
+  "url": "https://github.com/run-llama/llama_index/releases/tag/v0.14.19",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "- fix(core): remove incorrect per-node delete calls in index helpers (#21050)",
+   "- fix: llama-cloud managed index and remove llamaparse reader (#21043)"
+  ]
+ },
+ {
+  "slug": "hermes-agent",
+  "name": "Hermes Agent",
+  "category": "personal",
+  "tag": "v2026.3.23",
+  "date": "2026-03-24",
+  "week": "2026-03-23",
+  "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.3.23",
+  "keywords": [
+   "breaking",
+   "removed",
+   "migration"
+  ],
+  "excerpt": [
+   "- Fix: remove ANTHROPIC_BASE_URL env var to avoid collisions (#1675)",
+   "- Fix: remove hardcoded gemini-3-flash-preview as default summary model (#2464)",
+   "- Fix: remove synthetic error message injection, fix session resume after repeated failures (#2303)",
+   "- Fix: remove bugged followup messages + /ask command (#1836)"
+  ]
+ },
+ {
+  "slug": "browser-use",
+  "name": "Browser Use",
+  "category": "frameworks",
+  "tag": "0.12.3",
+  "date": "2026-03-23",
+  "week": "2026-03-23",
+  "url": "https://github.com/browser-use/browser-use/releases/tag/0.12.3",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "fix open security advisories: restrict workflow permissions, bump vulnerable deps, remove unused authlib by @laithrw in https://github.com/browser-use/browser-use/pull/4468"
+  ]
+ },
+ {
+  "slug": "daytona",
+  "name": "Daytona",
+  "category": "managed",
+  "tag": "v0.153.0",
+  "date": "2026-03-19",
+  "week": "2026-03-16",
+  "url": "https://github.com/daytonaio/daytona/releases/tag/v0.153.0",
+  "keywords": [
+   "breaking",
+   "removed"
+  ],
+  "excerpt": [
+   "- ⚠️ docs,sdk: remove find one method (#4115)",
+   "- api: remove state lock on job completion (#4148)",
+   "⚠️ Breaking Changes",
+   "- docs,sdk: The find_one/findOne method is being removed across all SDK languages (Python, TypeScript, Go, Ruby). All sandbox retrieval should be done via get using an ID or a name. If you're relying on label-based looku"
+  ]
+ },
+ {
+  "slug": "goose",
+  "name": "Goose",
+  "category": "frameworks",
+  "tag": "v1.28.0",
+  "date": "2026-03-18",
+  "week": "2026-03-16",
+  "url": "https://github.com/aaif-goose/goose/releases/tag/v1.28.0",
+  "keywords": [
+   "removed",
+   "migration"
+  ],
+  "excerpt": [
+   "- Migrate autovisualiser extension to MCP Apps #7852",
+   "- Remove incorrect agent_visible filter on user message in claude-code #7931",
+   "- Remove insecure default secret from GOOSE_EXTERNAL_BACKEND #7783",
+   "- Removed double dash in pnpm command #7951"
+  ]
+ },
+ {
+  "slug": "haystack",
+  "name": "Haystack",
+  "category": "frameworks",
+  "tag": "v2.26.0",
+  "date": "2026-03-18",
+  "week": "2026-03-16",
+  "url": "https://github.com/deepset-ai/haystack/releases/tag/v2.26.0",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "- Removed redundant deepcopy operations from Pipeline and AsyncPipeline execution. Component outputs are no longer deepcopied when collecting pipeline results, as inputs are already deepcopied before each component execu",
+   "- Reduced unnecessary deepcopies in Agent for improved performance. Replaced deepcopy of state_schema with a shallow dict copy since only top-level keys are modified, and removed deepcopy of agent_inputs for span tags si",
+   "- Update Pipeline.inputs() to return any variadic inputs as not mandatory if they already have a connection. Removed the utility functions describe_pipeline_inputs and describe_pipeline_inputs_as_string from haystack/cor"
+  ]
+ },
+ {
+  "slug": "hermes-agent",
+  "name": "Hermes Agent",
+  "category": "personal",
+  "tag": "v2026.3.17",
+  "date": "2026-03-17",
+  "week": "2026-03-16",
+  "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.3.17",
+  "keywords": [
+   "breaking",
+   "removed",
+   "migration"
+  ],
+  "excerpt": [
+   "- Remove recursive ExecStop from systemd units (#1530)",
+   "- OpenClaw migration during first-time setup — by @kshitijk4poor (#981)",
+   "- hermes claw migrate command + migration docs (#1059)",
+   "- Terminal subprocesses inheriting OPENAI_BASE_URL breaking external tools (Issue #1002, #1399)"
+  ]
+ },
+ {
+  "slug": "llamaindex",
+  "name": "LlamaIndex",
+  "category": "frameworks",
+  "tag": "v0.14.18",
+  "date": "2026-03-16",
+  "week": "2026-03-16",
+  "url": "https://github.com/run-llama/llama_index/releases/tag/v0.14.18",
+  "keywords": [
+   "deprecated"
+  ],
+  "excerpt": [
+   "- chore: deprecate python 3.9 once and for all (#20956)",
+   "- chore: deprecate python 3.9 once and for all (#20956)",
+   "- chore: deprecate python 3.9 once and for all (#20956)",
+   "- chore: deprecate python 3.9 once and for all (#20956)"
+  ]
+ },
+ {
+  "slug": "browser-use",
+  "name": "Browser Use",
+  "category": "frameworks",
+  "tag": "0.12.2",
+  "date": "2026-03-12",
+  "week": "2026-03-09",
+  "url": "https://github.com/browser-use/browser-use/releases/tag/0.12.2",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "Remove free credit mentions from documentation by @sauravpanda in https://github.com/browser-use/browser-use/pull/4322",
+   "fix: remove incorrect await on synchronous get_llm() by @Bortlesboat in https://github.com/browser-use/browser-use/pull/4305",
+   "remove read long content action by @sauravpanda in https://github.com/browser-use/browser-use/pull/4340"
+  ]
+ },
+ {
+  "slug": "llamaindex",
+  "name": "LlamaIndex",
+  "category": "frameworks",
+  "tag": "v0.14.16",
+  "date": "2026-03-10",
+  "week": "2026-03-09",
+  "url": "https://github.com/run-llama/llama_index/releases/tag/v0.14.16",
+  "keywords": [
+   "removed",
+   "deprecated"
+  ],
+  "excerpt": [
+   "- refactor: deprecate asyncio_module in favour of get_asyncio_module (#20902)",
+   "- Deprecate Preprocess reader: service discontinued (#20759)",
+   "- fix(lantern,yugabytedb): remove deprecated sessionmaker.close_all() from close() (#20884)",
+   "- fix(lantern,yugabytedb): remove deprecated sessionmaker.close_all() from close() (#20884)"
+  ]
+ },
+ {
+  "slug": "letta",
+  "name": "Letta",
+  "category": "frameworks",
+  "tag": "0.16.6",
+  "date": "2026-03-04",
+  "week": "2026-03-02",
+  "url": "https://github.com/letta-ai/letta/releases/tag/0.16.6",
+  "keywords": [
+   "removed",
+   "deprecated"
+  ],
+  "excerpt": [
+   "- Kept backwards compatibility for conversation_id=agent- (deprecated path).",
+   "- Git-backed memory frontmatter no longer emits limit (legacy limit keys are removed on merge)."
+  ]
+ },
+ {
+  "slug": "goose",
+  "name": "Goose",
+  "category": "frameworks",
+  "tag": "v1.26.0",
+  "date": "2026-02-26",
+  "week": "2026-02-23",
+  "url": "https://github.com/aaif-goose/goose/releases/tag/v1.26.0",
+  "keywords": [
+   "removed",
+   "deprecated"
+  ],
+  "excerpt": [
+   "- flake.nix build failure and deprecation warning #7408",
+   "- Remove allows_unlisted_models flag, always allow custom model entry #7255"
+  ]
+ },
+ {
+  "slug": "haystack",
+  "name": "Haystack",
+  "category": "frameworks",
+  "tag": "v2.25.0",
+  "date": "2026-02-26",
+  "week": "2026-02-23",
+  "url": "https://github.com/deepset-ai/haystack/releases/tag/v2.25.0",
+  "keywords": [
+   "removed",
+   "deprecated",
+   "migration"
+  ],
+  "excerpt": [
+   "- Removed the deprecated PipelineTemplate and PredefinedPipeline classes, along with the Pipeline.from_template() method. Users should migrate to Pipeline YAML files for similar functionality. See the \\Serialization docu",
+   "- text2text-generation is now considered deprecated in Haystack and may be removed in a future release."
+  ]
+ },
+ {
+  "slug": "browser-use",
+  "name": "Browser Use",
+  "category": "frameworks",
+  "tag": "0.11.12",
+  "date": "2026-02-23",
+  "week": "2026-02-23",
+  "url": "https://github.com/browser-use/browser-use/releases/tag/0.11.12",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "remove simple judge by @sauravpanda in https://github.com/browser-use/browser-use/pull/4144"
+  ]
+ },
+ {
+  "slug": "browser-use",
+  "name": "Browser Use",
+  "category": "frameworks",
+  "tag": "0.11.11",
+  "date": "2026-02-20",
+  "week": "2026-02-16",
+  "url": "https://github.com/browser-use/browser-use/releases/tag/0.11.11",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "fix: remove double-counting of reasoning_tokens in OpenAI usage by @Chase-Xuu in https://github.com/browser-use/browser-use/pull/4075"
+  ]
+ },
+ {
+  "slug": "llamaindex",
+  "name": "LlamaIndex",
+  "category": "frameworks",
+  "tag": "v0.14.15",
+  "date": "2026-02-18",
+  "week": "2026-02-16",
+  "url": "https://github.com/run-llama/llama_index/releases/tag/v0.14.15",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "- fix: remove redundant metadata_seperator field from TextNode (#20649)",
+   "- chore: Remove persistent_connection parameter support, update (#20714)",
+   "- chore: Remove persistent_connection parameter support, update (#20714)",
+   "- Fix: remove ORM Collection mix-usage with MilvusClient in Milvus vector store (#20687)"
+  ]
+ },
+ {
+  "slug": "browser-use",
+  "name": "Browser Use",
+  "category": "frameworks",
+  "tag": "0.11.10a1",
+  "date": "2026-02-12",
+  "week": "2026-02-09",
+  "url": "https://github.com/browser-use/browser-use/releases/tag/0.11.10a1",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "fix: remove double-counting of reasoning_tokens in OpenAI usage by @Chase-Xuu in https://github.com/browser-use/browser-use/pull/4075"
+  ]
+ },
+ {
+  "slug": "llamaindex",
+  "name": "LlamaIndex",
+  "category": "frameworks",
+  "tag": "v0.14.14",
+  "date": "2026-02-10",
+  "week": "2026-02-09",
+  "url": "https://github.com/run-llama/llama_index/releases/tag/v0.14.14",
+  "keywords": [
+   "removed",
+   "deprecated",
+   "migration"
+  ],
+  "excerpt": [
+   "- Fix DeprecationWarning: 'asyncio.iscoroutinefunction' is deprecated (#20517)",
+   "- Fix DeprecationWarning: 'asyncio.iscoroutinefunction' is deprecated (#20517)",
+   "- fix(dashscope): remove empty tool_calls from assistant messages (#20535)",
+   "- Fix DeprecationWarning: 'asyncio.iscoroutinefunction' is deprecated (#20517)"
+  ]
+ },
+ {
+  "slug": "dspy",
+  "name": "DSPy",
+  "category": "frameworks",
+  "tag": "3.1.3",
+  "date": "2026-02-05",
+  "week": "2026-02-02",
+  "url": "https://github.com/stanfordnlp/dspy/releases/tag/3.1.3",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "Temporarily remove the GEPA tool optimization doc by @chenmoneygithub in https://github.com/stanfordnlp/dspy/pull/9220",
+   "fix(gepa): Remove enable_tool_optimization feature by @Ju-usc in https://github.com/stanfordnlp/dspy/pull/9223"
+  ]
+ },
+ {
+  "slug": "browser-use",
+  "name": "Browser Use",
+  "category": "frameworks",
+  "tag": "0.11.5",
+  "date": "2026-01-28",
+  "week": "2026-01-26",
+  "url": "https://github.com/browser-use/browser-use/releases/tag/0.11.5",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "removed duplicate --headed flag from skill cli by @sauravpanda in https://github.com/browser-use/browser-use/pull/3943"
+  ]
+ },
+ {
+  "slug": "llamaindex",
+  "name": "LlamaIndex",
+  "category": "frameworks",
+  "tag": "v0.14.13",
+  "date": "2026-01-21",
+  "week": "2026-01-19",
+  "url": "https://github.com/run-llama/llama_index/releases/tag/v0.14.13",
+  "keywords": [
+   "removed",
+   "deprecated"
+  ],
+  "excerpt": [
+   "- chore(bedrock-converse): Remove extraneous thinking_delta kwarg from ChatMessage (#20455)",
+   "- chore: deprecate llama-index-llms-gemini (#20511)",
+   "- security: remove exposed OpenAI API keys from notebook outputs (#20474)",
+   "- security: remove exposed OpenAI API keys from notebook outputs (#20474)"
+  ]
+ },
+ {
+  "slug": "dspy",
+  "name": "DSPy",
+  "category": "frameworks",
+  "tag": "3.1.1",
+  "date": "2026-01-19",
+  "week": "2026-01-19",
+  "url": "https://github.com/stanfordnlp/dspy/releases/tag/3.1.1",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "fix(RLM): Change FinalAnswerResult to FinalOutput and remove RLM __call__ by @isaacbmiller in https://github.com/stanfordnlp/dspy/pull/9212",
+   "fix(PythonInterpreter): Remove overly permissive read permissions and add strict allow by @isaacbmiller in https://github.com/stanfordnlp/dspy/pull/9081"
+  ]
+ },
+ {
+  "slug": "browser-use",
+  "name": "Browser Use",
+  "category": "frameworks",
+  "tag": "0.11.3",
+  "date": "2026-01-16",
+  "week": "2026-01-12",
+  "url": "https://github.com/browser-use/browser-use/releases/tag/0.11.3",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "feat: remove redundant retry step from history by @sauravpanda in https://github.com/browser-use/browser-use/pull/3807",
+   "Remove search from v1 by @LarsenCundric in https://github.com/browser-use/browser-use/pull/3834"
+  ]
+ },
+ {
+  "slug": "smolagents",
+  "name": "smolagents",
+  "category": "frameworks",
+  "tag": "v1.24.0",
+  "date": "2026-01-16",
+  "week": "2026-01-12",
+  "url": "https://github.com/huggingface/smolagents/releases/tag/v1.24.0",
+  "keywords": [
+   "deprecated"
+  ],
+  "excerpt": [
+   "Fix: Add backward compatibility for deprecated HfApiModel by @MohammadKassas143 in https://github.com/huggingface/smolagents/pull/1863"
+  ]
+ },
+ {
+  "slug": "dspy",
+  "name": "DSPy",
+  "category": "frameworks",
+  "tag": "3.1.0",
+  "date": "2026-01-06",
+  "week": "2026-01-05",
+  "url": "https://github.com/stanfordnlp/dspy/releases/tag/3.1.0",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "Remove unused notebook python file by @TomeHirata in https://github.com/stanfordnlp/dspy/pull/8971"
+  ]
+ },
+ {
+  "slug": "llamaindex",
+  "name": "LlamaIndex",
+  "category": "frameworks",
+  "tag": "v0.14.9",
+  "date": "2025-12-02",
+  "week": "2025-12-01",
+  "url": "https://github.com/run-llama/llama_index/releases/tag/v0.14.9",
+  "keywords": [
+   "breaking",
+   "removed"
+  ],
+  "excerpt": [
+   "- fix: Pin azure-ai-projects version to prevent breaking changes (#20255)",
+   "- Refactor Confluence integration: Update license to MIT, remove requirements.txt, and implement HtmlTextParser for HTML to Markdown conversion. Update dependencies and tests accordingly. (#20262)"
+  ]
+ },
+ {
+  "slug": "dspy",
+  "name": "DSPy",
+  "category": "frameworks",
+  "tag": "3.1.0b1",
+  "date": "2025-11-18",
+  "week": "2025-11-17",
+  "url": "https://github.com/stanfordnlp/dspy/releases/tag/3.1.0b1",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "Remove unused notebook python file by @TomeHirata in https://github.com/stanfordnlp/dspy/pull/8971"
+  ]
+ },
+ {
+  "slug": "smolagents",
+  "name": "smolagents",
+  "category": "frameworks",
+  "tag": "v1.23.0",
+  "date": "2025-11-17",
+  "week": "2025-11-17",
+  "url": "https://github.com/huggingface/smolagents/releases/tag/v1.23.0",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "Remove 'Server' from model names in doc by @aymeric-roucher in https://github.com/huggingface/smolagents/pull/1812"
+  ]
+ },
+ {
+  "slug": "dspy",
+  "name": "DSPy",
+  "category": "frameworks",
+  "tag": "3.0.4",
+  "date": "2025-11-10",
+  "week": "2025-11-10",
+  "url": "https://github.com/stanfordnlp/dspy/releases/tag/3.0.4",
+  "keywords": [
+   "removed",
+   "deprecated"
+  ],
+  "excerpt": [
+   "- Deprecate Image from_ helpers in favor of flexible constructor by @isaacbmiller in 8771",
+   "- fix: removed duplicate cell from GEPA information extraction tutorial by @vacmar01 in 8806",
+   "- Remove EmailInsight class from email extraction tutorial by @TomeHirata in 8790"
+  ]
+ },
+ {
+  "slug": "llamaindex",
+  "name": "LlamaIndex",
+  "category": "frameworks",
+  "tag": "v0.14.8",
+  "date": "2025-11-10",
+  "week": "2025-11-10",
+  "url": "https://github.com/run-llama/llama_index/releases/tag/v0.14.8",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "- chore: remove unsupported models (#20211)"
+  ]
+ },
+ {
+  "slug": "llamaindex",
+  "name": "LlamaIndex",
+  "category": "frameworks",
+  "tag": "v0.14.5",
+  "date": "2025-10-15",
+  "week": "2025-10-13",
+  "url": "https://github.com/run-llama/llama_index/releases/tag/v0.14.5",
+  "keywords": [
+   "removed",
+   "deprecated"
+  ],
+  "excerpt": [
+   "- Remove debug print (#20000)",
+   "- Baseten provider Kimi K2 0711, Llama 4 Maverick and Llama 4 Scout Model APIs deprecation (#20042)"
+  ]
+ },
+ {
+  "slug": "letta",
+  "name": "Letta",
+  "category": "frameworks",
+  "tag": "0.12.1",
+  "date": "2025-10-09",
+  "week": "2025-10-06",
+  "url": "https://github.com/letta-ai/letta/releases/tag/0.12.1",
+  "keywords": [
+   "breaking",
+   "deprecated"
+  ],
+  "excerpt": [
+   "Breaking Changes",
+   "Deprecated APIs"
+  ]
+ },
+ {
+  "slug": "dspy",
+  "name": "DSPy",
+  "category": "frameworks",
+  "tag": "3.0.4b1",
+  "date": "2025-09-29",
+  "week": "2025-09-29",
+  "url": "https://github.com/stanfordnlp/dspy/releases/tag/3.0.4b1",
+  "keywords": [
+   "removed",
+   "deprecated"
+  ],
+  "excerpt": [
+   "- Deprecate Image from_ helpers in favor of flexible constructor by @isaacbmiller in 8771",
+   "- fix: removed duplicate cell from GEPA information extraction tutorial by @vacmar01 in 8806",
+   "- Remove EmailInsight class from email extraction tutorial by @TomeHirata in 8790"
+  ]
+ },
+ {
+  "slug": "smolagents",
+  "name": "smolagents",
+  "category": "frameworks",
+  "tag": "v1.22.0",
+  "date": "2025-09-25",
+  "week": "2025-09-22",
+  "url": "https://github.com/huggingface/smolagents/releases/tag/v1.22.0",
+  "keywords": [
+   "removed",
+   "deprecated"
+  ],
+  "excerpt": [
+   "Change truncation to remove end rather than middle by @aymeric-roucher in https://github.com/huggingface/smolagents/pull/1665",
+   "Fix deprecation warning about parameter messages by @albertvillanova in https://github.com/huggingface/smolagents/pull/1718",
+   "Remove untranslated sections from the documentation by @albertvillanova in https://github.com/huggingface/smolagents/pull/1729",
+   "fix(agent): remove unused get_variable_names function by @keli-wen in https://github.com/huggingface/smolagents/pull/1784"
+  ]
+ },
+ {
+  "slug": "llamaindex",
+  "name": "LlamaIndex",
+  "category": "frameworks",
+  "tag": "v0.14.3",
+  "date": "2025-09-24",
+  "week": "2025-09-22",
+  "url": "https://github.com/run-llama/llama_index/releases/tag/v0.14.3",
+  "keywords": [
+   "migration"
+  ],
+  "excerpt": [
+   "- feat(readers/web-firecrawl): migrate to Firecrawl v2 SDK (#19773)"
+  ]
+ },
+ {
+  "slug": "llamaindex",
+  "name": "LlamaIndex",
+  "category": "frameworks",
+  "tag": "v0.14.0",
+  "date": "2025-09-08",
+  "week": "2025-09-08",
+  "url": "https://github.com/run-llama/llama_index/releases/tag/v0.14.0",
+  "keywords": [
+   "breaking",
+   "removed",
+   "deprecated"
+  ],
+  "excerpt": [
+   "- breaking: bumped llama-index-workflows dependency to 2.0",
+   "- Remove deprecated checkpointer feature",
+   "- Remove deprecated sub-workflows feature",
+   "- Remove deprecated send_event method from Workflow class (still existing on the Context class)"
+  ]
+ },
+ {
+  "slug": "letta",
+  "name": "Letta",
+  "category": "frameworks",
+  "tag": "0.11.7",
+  "date": "2025-09-04",
+  "week": "2025-09-01",
+  "url": "https://github.com/letta-ai/letta/releases/tag/0.11.7",
+  "keywords": [
+   "migration"
+  ],
+  "excerpt": [
+   "- DeepSeek Support: Migration of DeepSeek to new agent loop architecture (#4266)"
+  ]
+ },
+ {
+  "slug": "llamaindex",
+  "name": "LlamaIndex",
+  "category": "frameworks",
+  "tag": "v0.13.4",
+  "date": "2025-09-02",
+  "week": "2025-09-01",
+  "url": "https://github.com/run-llama/llama_index/releases/tag/v0.13.4",
+  "keywords": [
+   "deprecated"
+  ],
+  "excerpt": [
+   "- feat: Support for additional/external urls, make instance_id deprecated (19749)",
+   "- feat: Support for additional/external urls, make instance_id deprecated (19749)",
+   "- feat: Support for additional/external urls, make instance_id deprecated (19749)"
+  ]
+ },
+ {
+  "slug": "dspy",
+  "name": "DSPy",
+  "category": "frameworks",
+  "tag": "3.0.3",
+  "date": "2025-08-31",
+  "week": "2025-08-25",
+  "url": "https://github.com/stanfordnlp/dspy/releases/tag/3.0.3",
+  "keywords": [
+   "removed",
+   "deprecated"
+  ],
+  "excerpt": [
+   "Remove deprecated LiteLLM caching from LM by @okhat in https://github.com/stanfordnlp/dspy/pull/8742"
+  ]
+ },
+ {
+  "slug": "dspy",
+  "name": "DSPy",
+  "category": "frameworks",
+  "tag": "3.0.2",
+  "date": "2025-08-22",
+  "week": "2025-08-18",
+  "url": "https://github.com/stanfordnlp/dspy/releases/tag/3.0.2",
+  "keywords": [
+   "deprecated"
+  ],
+  "excerpt": [
+   "MIPROv2: Warn on deprecated requires_permission_to_run by @TomeHirata in https://github.com/stanfordnlp/dspy/pull/8635"
+  ]
+ },
+ {
+  "slug": "llamaindex",
+  "name": "LlamaIndex",
+  "category": "frameworks",
+  "tag": "v0.13.3",
+  "date": "2025-08-22",
+  "week": "2025-08-18",
+  "url": "https://github.com/run-llama/llama_index/releases/tag/v0.13.3",
+  "keywords": [
+   "removed",
+   "deprecated"
+  ],
+  "excerpt": [
+   "- chore: remove deprecated model(solar-pro) (19704)"
+  ]
+ },
+ {
+  "slug": "letta",
+  "name": "Letta",
+  "category": "frameworks",
+  "tag": "0.11.4",
+  "date": "2025-08-20",
+  "week": "2025-08-18",
+  "url": "https://github.com/letta-ai/letta/releases/tag/0.11.4",
+  "keywords": [
+   "deprecated"
+  ],
+  "excerpt": [
+   "feat: deprecate legacy paths for azure and together by @carenthomas in https://github.com/letta-ai/letta/pull/3987"
+  ]
+ },
+ {
+  "slug": "dspy",
+  "name": "DSPy",
+  "category": "frameworks",
+  "tag": "3.0.1",
+  "date": "2025-08-14",
+  "week": "2025-08-11",
+  "url": "https://github.com/stanfordnlp/dspy/releases/tag/3.0.1",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "Remove hardcoded model list from OpenAIProvider file by @chenmoneygithub in https://github.com/stanfordnlp/dspy/pull/8649"
+  ]
+ },
+ {
+  "slug": "dspy",
+  "name": "DSPy",
+  "category": "frameworks",
+  "tag": "3.0.0",
+  "date": "2025-08-12",
+  "week": "2025-08-11",
+  "url": "https://github.com/stanfordnlp/dspy/releases/tag/3.0.0",
+  "keywords": [
+   "breaking",
+   "removed",
+   "migration"
+  ],
+  "excerpt": [
+   "💥 Breaking changes / notable removals",
+   "Remove community retrievers (8073). If you relied on unmaintained retriever integrations, migrate to custom code (or use Tool/MCP integrations).",
+   "Alias removed: dspy.Program → remove/replace (was cleaned up in 3.0 work).",
+   "Migrate GitHub Actions from set-output to $GITHUB_OUTPUT (@kurtmckee, 8557)."
+  ]
+ },
+ {
+  "slug": "dspy",
+  "name": "DSPy",
+  "category": "frameworks",
+  "tag": "3.0.0b4",
+  "date": "2025-08-11",
+  "week": "2025-08-11",
+  "url": "https://github.com/stanfordnlp/dspy/releases/tag/3.0.0b4",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "Remove user confirmation from MiproV2 by @TomeHirata in https://github.com/stanfordnlp/dspy/pull/8552",
+   "remove history and callbacks from module saving by @arnavsinghvi11 in https://github.com/stanfordnlp/dspy/pull/8599",
+   "Vendor Hasher class from datasets library in order to remove larger dependency by @BenMcH in https://github.com/stanfordnlp/dspy/pull/8621"
+  ]
+ },
+ {
+  "slug": "letta",
+  "name": "Letta",
+  "category": "frameworks",
+  "tag": "0.11.1",
+  "date": "2025-08-08",
+  "week": "2025-08-04",
+  "url": "https://github.com/letta-ai/letta/releases/tag/0.11.1",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "- Removed optional argument for memory_replace to improve reliability (#3800)"
+  ]
+ },
+ {
+  "slug": "llamaindex",
+  "name": "LlamaIndex",
+  "category": "frameworks",
+  "tag": "v0.13.1",
+  "date": "2025-08-08",
+  "week": "2025-08-04",
+  "url": "https://github.com/run-llama/llama_index/releases/tag/v0.13.1",
+  "keywords": [
+   "deprecated"
+  ],
+  "excerpt": [
+   "- chore: deprecate llama-index-indices-managed-llama-cloud in favor of llama-cloud-services (19608)"
+  ]
+ },
+ {
+  "slug": "letta",
+  "name": "Letta",
+  "category": "frameworks",
+  "tag": "0.11.0",
+  "date": "2025-08-07",
+  "week": "2025-08-04",
+  "url": "https://github.com/letta-ai/letta/releases/tag/0.11.0",
+  "keywords": [
+   "removed",
+   "deprecated"
+  ],
+  "excerpt": [
+   "⚠️ Legacy LocalClient and RestClient fully deprecated",
+   "Legacy clients are fully removed moving forward and replaced by the new Letta sdk clients (python and typescript supported)",
+   "Removed redundant rendering operations in critical paths",
+   "chore: remove python 3.10 support and testing by @carenthomas in https://github.com/letta-ai/letta/pull/2754"
+  ]
+ },
+ {
+  "slug": "smolagents",
+  "name": "smolagents",
+  "category": "frameworks",
+  "tag": "v1.21.0",
+  "date": "2025-08-07",
+  "week": "2025-08-04",
+  "url": "https://github.com/huggingface/smolagents/releases/tag/v1.21.0",
+  "keywords": [
+   "removed",
+   "deprecated"
+  ],
+  "excerpt": [
+   "Fix: Remove duplicate line in tool_calling_agent prompt by @yusuf-eren in https://github.com/huggingface/smolagents/pull/1636",
+   "Fix CI quality: remove trailing whitespace by @albertvillanova in https://github.com/huggingface/smolagents/pull/1617",
+   "Replace deprecated ast.Num and ast.Str with ast.Constant in tool validation by @WilliamRabuel in https://github.com/huggingface/smolagents/pull/1594",
+   "Remove deprecated grammar parameter by @albertvillanova in https://github.com/huggingface/smolagents/pull/1651"
+  ]
+ },
+ {
+  "slug": "letta",
+  "name": "Letta",
+  "category": "frameworks",
+  "tag": "0.10.0",
+  "date": "2025-08-01",
+  "week": "2025-07-28",
+  "url": "https://github.com/letta-ai/letta/releases/tag/0.10.0",
+  "keywords": [
+   "removed",
+   "deprecated"
+  ],
+  "excerpt": [
+   "- Removed deprecation warnings and excessive logging (#3560)",
+   "- Removed OpenTelemetry file exports (#3691)"
+  ]
+ },
+ {
+  "slug": "llamaindex",
+  "name": "LlamaIndex",
+  "category": "frameworks",
+  "tag": "v0.13.0",
+  "date": "2025-07-31",
+  "week": "2025-07-28",
+  "url": "https://github.com/run-llama/llama_index/releases/tag/v0.13.0",
+  "keywords": [
+   "breaking",
+   "removed",
+   "deprecated",
+   "migration"
+  ],
+  "excerpt": [
+   "- breaking: removed deprecated agent classes, including FunctionCallingAgent, the older ReActAgent implementation, AgentRunner, all step workers, StructuredAgentPlanner, OpenAIAgent, and more. All users should migrate to",
+   "- breaking: removed deprecated QueryPipeline class and all associated code (19554)",
+   "- breaking: changed default index.as_chat_engine() to return a CondensePlusContextChatEngine. Agent-based chat engines have been removed (which was the previous default). If you need an agent, use the above mentioned age"
+  ]
+ },
+ {
+  "slug": "letta",
+  "name": "Letta",
+  "category": "frameworks",
+  "tag": "0.9.0",
+  "date": "2025-07-24",
+  "week": "2025-07-21",
+  "url": "https://github.com/letta-ai/letta/releases/tag/0.9.0",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "When documents are uploaded to Letta, they are represented in the context window as files in a folder, and can be \"open\" (in-context) or \"closed\" (hidden). The agent manages this automatically will tools, but you can als"
+  ]
+ },
+ {
+  "slug": "dspy",
+  "name": "DSPy",
+  "category": "frameworks",
+  "tag": "3.0.0b2",
+  "date": "2025-07-01",
+  "week": "2025-06-30",
+  "url": "https://github.com/stanfordnlp/dspy/releases/tag/3.0.0b2",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "Remove dspy.Program alias by @TomeHirata in https://github.com/stanfordnlp/dspy/pull/8392",
+   "Remove pandas and datasets from core dependencies by @TomeHirata in https://github.com/stanfordnlp/dspy/pull/8274",
+   "Remove Hyperparameter class by @TomeHirata in https://github.com/stanfordnlp/dspy/pull/8386",
+   "Remove unused multi-hop state files by @TomeHirata in https://github.com/stanfordnlp/dspy/pull/8389"
+  ]
+ },
+ {
+  "slug": "letta",
+  "name": "Letta",
+  "category": "frameworks",
+  "tag": "0.8.7",
+  "date": "2025-06-27",
+  "week": "2025-06-23",
+  "url": "https://github.com/letta-ai/letta/releases/tag/0.8.7",
+  "keywords": [
+   "deprecated"
+  ],
+  "excerpt": [
+   "- Some tools marked as deprecated"
+  ]
+ },
+ {
+  "slug": "smolagents",
+  "name": "smolagents",
+  "category": "frameworks",
+  "tag": "v1.19.0",
+  "date": "2025-06-24",
+  "week": "2025-06-23",
+  "url": "https://github.com/huggingface/smolagents/releases/tag/v1.19.0",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "Remove plural from named argument return_full_results in examples by @vladlen32230 in https://github.com/huggingface/smolagents/pull/1434",
+   "Fix: __new__ method only accepts class object, remove args and kw… by @abdulhakkeempa in https://github.com/huggingface/smolagents/pull/1462"
+  ]
+ },
+ {
+  "slug": "dspy",
+  "name": "DSPy",
+  "category": "frameworks",
+  "tag": "3.0.0b1",
+  "date": "2025-06-11",
+  "week": "2025-06-09",
+  "url": "https://github.com/stanfordnlp/dspy/releases/tag/3.0.0b1",
+  "keywords": [
+   "breaking",
+   "removed",
+   "deprecated",
+   "migration"
+  ],
+  "excerpt": [
+   "A cleaner release note to follow. The only breaking change to be aware of in 3.0 is just 8073 for unmaintained retriever integration (should affect almost no one, and easy to migrate to custom code for those affected).",
+   "Fix Pydantic v2 deprecation warning in json_adapter by @brishin in https://github.com/stanfordnlp/dspy/pull/8263",
+   "Remove unused GRPO endpoint by @Ziems in https://github.com/stanfordnlp/dspy/pull/8354",
+   "Remove community retrievers by @TomeHirata in https://github.com/stanfordnlp/dspy/pull/8073"
+  ]
+ },
+ {
+  "slug": "dspy",
+  "name": "DSPy",
+  "category": "frameworks",
+  "tag": "2.6.25",
+  "date": "2025-06-02",
+  "week": "2025-06-02",
+  "url": "https://github.com/stanfordnlp/dspy/releases/tag/2.6.25",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "Remove dspy/.internal_dspyai/dist/ produced in the pipeline by @TomeHirata in https://github.com/stanfordnlp/dspy/pull/8240"
+  ]
+ },
+ {
+  "slug": "smolagents",
+  "name": "smolagents",
+  "category": "frameworks",
+  "tag": "v1.17.0",
+  "date": "2025-05-27",
+  "week": "2025-05-26",
+  "url": "https://github.com/huggingface/smolagents/releases/tag/v1.17.0",
+  "keywords": [
+   "removed",
+   "deprecated"
+  ],
+  "excerpt": [
+   "Remove deprecated from_hf_api methods by @albertvillanova in https://github.com/huggingface/smolagents/pull/1351"
+  ]
+ },
+ {
+  "slug": "dspy",
+  "name": "DSPy",
+  "category": "frameworks",
+  "tag": "2.6.24",
+  "date": "2025-05-17",
+  "week": "2025-05-12",
+  "url": "https://github.com/stanfordnlp/dspy/releases/tag/2.6.24",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "Remove duplicated callback field from LM by @TomeHirata in https://github.com/stanfordnlp/dspy/pull/8230"
+  ]
+ },
+ {
+  "slug": "smolagents",
+  "name": "smolagents",
+  "category": "frameworks",
+  "tag": "v1.16.0",
+  "date": "2025-05-16",
+  "week": "2025-05-12",
+  "url": "https://github.com/huggingface/smolagents/releases/tag/v1.16.0",
+  "keywords": [
+   "removed",
+   "deprecated"
+  ],
+  "excerpt": [
+   "Fix deprecation of HfApiModel by @albertvillanova in https://github.com/huggingface/smolagents/pull/1315",
+   "Remove utils dir from Makefile check_dirs by @tobiasofsn in https://github.com/huggingface/smolagents/pull/1335"
+  ]
+ },
+ {
+  "slug": "smolagents",
+  "name": "smolagents",
+  "category": "frameworks",
+  "tag": "v1.15.0",
+  "date": "2025-05-07",
+  "week": "2025-05-05",
+  "url": "https://github.com/huggingface/smolagents/releases/tag/v1.15.0",
+  "keywords": [
+   "removed",
+   "deprecated"
+  ],
+  "excerpt": [
+   "Remove dead code related to non-CompletionDelta streaming results by @albertvillanova in https://github.com/huggingface/smolagents/pull/1248",
+   "Remove unused argument from the MultiStepAgent documentation by @damnever in https://github.com/huggingface/smolagents/pull/1250",
+   "Remove smolagents installation from remote executors by @albertvillanova in https://github.com/huggingface/smolagents/pull/1274",
+   "Remove unnecessary dependencies from DockerExecutor image by @albertvillanova in https://github.com/huggingface/smolagents/pull/1272"
+  ]
+ },
+ {
+  "slug": "dspy",
+  "name": "DSPy",
+  "category": "frameworks",
+  "tag": "2.6.19",
+  "date": "2025-04-24",
+  "week": "2025-04-21",
+  "url": "https://github.com/stanfordnlp/dspy/releases/tag/2.6.19",
+  "keywords": [
+   "removed",
+   "deprecated",
+   "migration"
+  ],
+  "excerpt": [
+   "Migrate from Poetry to UV by @chenmoneygithub in https://github.com/stanfordnlp/dspy/pull/8083",
+   "Remove unnecessary LM callback by @TomeHirata in https://github.com/stanfordnlp/dspy/pull/8098",
+   "Fix Pydantic Deprecation warning by @Miyamura80 in https://github.com/stanfordnlp/dspy/pull/8087"
+  ]
+ },
+ {
+  "slug": "smolagents",
+  "name": "smolagents",
+  "category": "frameworks",
+  "tag": "v1.14.0",
+  "date": "2025-04-18",
+  "week": "2025-04-14",
+  "url": "https://github.com/huggingface/smolagents/releases/tag/v1.14.0",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "Remove header comments from MDX docs for proper rendering by @albertvillanova in https://github.com/huggingface/smolagents/pull/1212"
+  ]
+ },
+ {
+  "slug": "dspy",
+  "name": "DSPy",
+  "category": "frameworks",
+  "tag": "2.6.17",
+  "date": "2025-04-08",
+  "week": "2025-04-07",
+  "url": "https://github.com/stanfordnlp/dspy/releases/tag/2.6.17",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "Remove inspect_history from COPRO by @TomeHirata in https://github.com/stanfordnlp/dspy/pull/8033"
+  ]
+ },
+ {
+  "slug": "smolagents",
+  "name": "smolagents",
+  "category": "frameworks",
+  "tag": "v1.13.0",
+  "date": "2025-04-02",
+  "week": "2025-03-31",
+  "url": "https://github.com/huggingface/smolagents/releases/tag/v1.13.0",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "Remove transformers/huggingface-hub to check torch availability by @albertvillanova in https://github.com/huggingface/smolagents/pull/1022"
+  ]
+ },
+ {
+  "slug": "smolagents",
+  "name": "smolagents",
+  "category": "frameworks",
+  "tag": "v1.12.0",
+  "date": "2025-03-20",
+  "week": "2025-03-17",
+  "url": "https://github.com/huggingface/smolagents/releases/tag/v1.12.0",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "Remove dependency on transformers get_tests_dir by @albertvillanova in https://github.com/huggingface/smolagents/pull/1026"
+  ]
+ },
+ {
+  "slug": "smolagents",
+  "name": "smolagents",
+  "category": "frameworks",
+  "tag": "v1.11.0",
+  "date": "2025-03-14",
+  "week": "2025-03-10",
+  "url": "https://github.com/huggingface/smolagents/releases/tag/v1.11.0",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "Remove default model_id from models by @albertvillanova in https://github.com/huggingface/smolagents/pull/905"
+  ]
+ },
+ {
+  "slug": "smolagents",
+  "name": "smolagents",
+  "category": "frameworks",
+  "tag": "v1.10.0",
+  "date": "2025-03-05",
+  "week": "2025-03-03",
+  "url": "https://github.com/huggingface/smolagents/releases/tag/v1.10.0",
+  "keywords": [
+   "removed",
+   "deprecated"
+  ],
+  "excerpt": [
+   "Remove non-existent subfolder arg in MultiStepAgent.from_hub by @albertvillanova in https://github.com/huggingface/smolagents/pull/653",
+   "Remove deprecated resume_download arg in from_hub by @albertvillanova in https://github.com/huggingface/smolagents/pull/670",
+   "Remove translation tool from README by @keetrap in https://github.com/huggingface/smolagents/pull/705",
+   "Remove transformers tasks from load_tool docstring by @albertvillanova in https://github.com/huggingface/smolagents/pull/726"
+  ]
+ },
+ {
+  "slug": "smolagents",
+  "name": "smolagents",
+  "category": "frameworks",
+  "tag": "v1.9.0",
+  "date": "2025-02-14",
+  "week": "2025-02-10",
+  "url": "https://github.com/huggingface/smolagents/releases/tag/v1.9.0",
+  "keywords": [
+   "removed",
+   "deprecated"
+  ],
+  "excerpt": [
+   "Remove unused import in guided_tour docs by @albertvillanova in https://github.com/huggingface/smolagents/pull/600",
+   "Remove unused api-base arg from Open DeepResearch example by @albertvillanova in https://github.com/huggingface/smolagents/pull/616",
+   "Remove --prompt argument of instance instruction in README.md by @leeivan1007 in https://github.com/huggingface/smolagents/pull/632",
+   "Remove ManagedAgent from doc by @aymeric-roucher in https://github.com/huggingface/smolagents/pull/563"
+  ]
+ },
+ {
+  "slug": "smolagents",
+  "name": "smolagents",
+  "category": "frameworks",
+  "tag": "v1.8.0",
+  "date": "2025-02-07",
+  "week": "2025-02-03",
+  "url": "https://github.com/huggingface/smolagents/releases/tag/v1.8.0",
+  "keywords": [
+   "removed",
+   "deprecated"
+  ],
+  "excerpt": [
+   "We've removed the ManagedAgents class: directly provide name and description attributes to your agent to make it work as a managed agent ! Check an example here.",
+   "Remove default max_tokens for all models by @albertvillanova in https://github.com/huggingface/smolagents/pull/475",
+   "Fix deprecation warning from importlib.resources.read_text by @albertvillanova in https://github.com/huggingface/smolagents/pull/543"
+  ]
+ },
+ {
+  "slug": "smolagents",
+  "name": "smolagents",
+  "category": "frameworks",
+  "tag": "v1.7.0",
+  "date": "2025-01-31",
+  "week": "2025-01-27",
+  "url": "https://github.com/huggingface/smolagents/releases/tag/v1.7.0",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "Remove explicit model arg in HfApiModel - which wouldn't run without Pro by @sanjeed5 in https://github.com/huggingface/smolagents/pull/373",
+   "Remove duplicate final_memory_step creation by @albertvillanova in https://github.com/huggingface/smolagents/pull/444",
+   "Remove unused ChatMessageToolCall raw argument by @albertvillanova in https://github.com/huggingface/smolagents/pull/445"
+  ]
+ },
+ {
+  "slug": "smolagents",
+  "name": "smolagents",
+  "category": "frameworks",
+  "tag": "v1.5.0",
+  "date": "2025-01-24",
+  "week": "2025-01-20",
+  "url": "https://github.com/huggingface/smolagents/releases/tag/v1.5.0",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "Remove unused and undocumented test_mode parameter by @Wauplin in https://github.com/huggingface/smolagents/pull/273",
+   "Remove pickle5 package from E2BExecutor by @albertvillanova in https://github.com/huggingface/smolagents/pull/295",
+   "Remove package json files by @albertvillanova in https://github.com/huggingface/smolagents/pull/314"
+  ]
+ },
+ {
+  "slug": "smolagents",
+  "name": "smolagents",
+  "category": "frameworks",
+  "tag": "v1.4.1",
+  "date": "2025-01-17",
+  "week": "2025-01-13",
+  "url": "https://github.com/huggingface/smolagents/releases/tag/v1.4.1",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "Remove dependency on _is_package_available from transformers by @albertvillanova in https://github.com/huggingface/smolagents/pull/247"
+  ]
+ },
+ {
+  "slug": "smolagents",
+  "name": "smolagents",
+  "category": "frameworks",
+  "tag": "v1.2.0",
+  "date": "2025-01-10",
+  "week": "2025-01-06",
+  "url": "https://github.com/huggingface/smolagents/releases/tag/v1.2.0",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "Remove dependency on LiteLLM by @aymeric-roucher in https://github.com/huggingface/smolagents/pull/126"
+  ]
+ },
+ {
+  "slug": "smolagents",
+  "name": "smolagents",
+  "category": "frameworks",
+  "tag": "v1.1.0",
+  "date": "2025-01-06",
+  "week": "2025-01-06",
+  "url": "https://github.com/huggingface/smolagents/releases/tag/v1.1.0",
+  "keywords": [
+   "breaking"
+  ],
+  "excerpt": [
+   "!Breaking change: Agent initialization argument max_iterations changed to max_steps for consistency."
+  ]
+ }
+]

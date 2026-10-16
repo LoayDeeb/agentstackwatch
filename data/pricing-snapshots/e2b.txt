@@ -1,0 +1,114 @@
+Pricing | E2B — The AI Agent Cloud
+Skip to main content
+2 billion sandboxes run on E2B. And counting. Start building → Dismiss
+Enterprise
+Resources
+Company
+Pricing
+Docs
+14.4K Sign up Sign in Console Book a Demo
+pricing
+Pay for What You Run Nothing More
+Free Hobby tier, and paid upgrades to cover all needs. Separate usage costs.
+↓ calculate your costs ↓
+Hobby FREE
+/$100 of usage in credits
++ Usage Costs
+See our cost calculator
+$100 one-time usage credit
+Sessions up to 1 hour
+20 concurrent sandboxes
+Default sandbox CPU and RAM
+Start for Free (✓) No credit card required
+pro $150
+/month
++ Usage Costs
+See our cost calculator
+Everything in Hobby, usage billed by the second
+Sessions up to 24 hours
+100 concurrent sandboxes, expandable to 1,100
+Custom sandbox CPU and RAM
+Choose Pro (S) Billed through Stripe
+Enterprise CUSTOM
++ Usage Costs
+See our cost calculator
+Committed usage, custom billing
+Multi-day and persistent sessions
+Tens of thousands of concurrent sandboxes
+Custom sizes, plus BYOC deployment
+Talk to an engineer ($) Custom deployment and billing
+Workload pricing estimator
+We charge per second of a running sandbox. See a detailed breakdown below.
+Compute Configuration
+vCPUs
+RAM (GiB)
+Run Hours / Month
+Run Hours = total sandbox runtime.
+Example: 100 sandboxes × 10 hrs = 1,000 hrs
+Concurrency
+Hobby — 20 concurrent Included Pro — 100 concurrent Included Pro+ — 600 concurrent +$500/mo Pro++ — 1,100 concurrent +$1,000/mo
+Pro Plan Monthly Cost
+Usage Cost
+$166
+Pro Plan Base
+$150
+Concurrency Addon
+$0
+Total Monthly
+$316
+Max Concurrent Sandboxes 100
+Enterprise requires $3,000/mo minimum. Your estimated costs are below that threshold.
+Step 1 of 2: enter your email address.
+Let us know if you need more powerful compute.
+If you don't see convenient times, please email us at enterprise@e2b.dev with preferences and we'll reach out.
+Please enter your work email *
+Book a call
+Estimate your monthly costs Estimate your monthly costs Estimate your monthly costs Estimate your monthly costs Estimate your monthly costs Estimate your monthly costs
+Estimate your monthly costs Estimate your monthly costs Estimate your monthly costs Estimate your monthly costs Estimate your monthly costs Estimate your monthly costs
+Pricing guide
+We charge per second of a running sandbox. See a detailed breakdown below.
+vCPUs RAM Storage
+vCPUs Plan Costs
+1 Hobby / Pro $0.000014/s
+2 [Default] Hobby / Pro $0.000028/s
+4 Hobby / Pro $0.000056/s
+6 Hobby / Pro $0.000084/s
+8 Hobby / Pro $0.000112/s
+Memory (GiB) Plan Costs
+1 Hobby / Pro $0.0000045/s
+2 Hobby / Pro $0.0000090/s
+4 [Default] Hobby / Pro $0.0000180/s
+8 Hobby / Pro $0.0000360/s
+Storage (GiB) Plan Costs
+10 Hobby Free
+20 Pro Free
+Let us know if you need more powerful compute.
+2B+ sandboxes started
+Give every agent a machine
+Start Building Talk to an engineer
+pip install e2b // npm i e2b · free tier
+Follow us on:
+SOC 2 · HIPAA Trust center
+Company
+About
+Careers
+Contact
+Security
+Brand assets
+Resources
+All Resources
+Blog
+Case studies
+Cookbook
+Docs
+E2B for Research
+E2B for Startups
+Open source
+Product updates
+Talks
+System Dark Light
+© 2026 FoundryLabs, inc. dba E2B. All rights reserved.
+All Systems Operational
+Privacy
+Terms
+Security

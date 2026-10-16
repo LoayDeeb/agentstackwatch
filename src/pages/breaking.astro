@@ -1,0 +1,17 @@
+---
+import Base from '../layouts/Base.astro'; import { breaking, CATS } from '../lib/data.js';
+const cutoff = new Date(Date.now()-84*864e5).toISOString().slice(0,10);
+const recent = breaking.filter(b=>b.date>=cutoff);
+const pri = {personal:0,managed:1,frameworks:2,research:3};
+const weeks = [...new Set(recent.map(b=>b.week))].sort().reverse();
+---
+<Base title="Breaking changes in AI agent frameworks & personal agents, by week | AgentStackWatch" desc="Releases from OpenClaw, Hermes Agent, LangGraph, CrewAI, Mastra, OpenAI Agents SDK and more whose notes mention breaking changes, removals, deprecations or migrations. Linked to each GitHub release.">
+<header class="pagehead"><p class="kicker">Breaking changes</p><h1>Updates that may need attention</h1><p class="dek">When an AI tool ships an update that removes a feature or changes how things work, the tools built on it can stop working. This page lists recent updates (last 12 weeks) whose official release notes mention words like “breaking”, “removed”, “deprecated” or “migration”, newest first. It flags words automatically, so open the link for the full story.</p></header>
+{weeks.map(w=> <section class="wk"><h2>Week of {w}</h2><ul class="brk">
+{recent.filter(b=>b.week===w).sort((a,b)=>pri[a.category]-pri[b.category]||a.name.localeCompare(b.name)).map(b=> <li>
+<b><a href={b.url}>{b.name} {b.tag}</a></b> <span class="muted small">{b.date} · {CATS[b.category]?.name}</span><br/>
+{b.keywords.map(k=> <span class={`flag ${/BREAKING|breaking/.test(k)?'hard':''}`}>{k}</span>)}
+{b.excerpt.slice(0,2).map(x=> <p>{x}</p>)}</li>)}
+</ul></section>)}
+{!weeks.length && <p class="muted">No flagged releases in the last 12 weeks.</p>}
+</Base>
