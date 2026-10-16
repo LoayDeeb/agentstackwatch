@@ -3,6 +3,4 @@ import Base from '../layouts/Base.astro'; import Signup from '../components/Sign
 ---
 <Base title="Agent Stack Weekly — newsletter">
 <header class="pagehead"><p class="kicker">Newsletter</p><h1>Agent Stack Weekly</h1><p class="dek">What shipped, what broke, what got cheaper. One email a week, generated from the changelog plus a short architect's take.</p></header>
-<div class="panel narrow"><form onsubmit="event.preventDefault();this.querySelector('p').hidden=false;">
-<input type="email" required placeholder="you@company.com"/><button class="btn" type="submit">Subscribe</button>
-<p hidden class="note">Signup isn't live yet — this is a placeholder until a newsletter provider is connected.</p></form></div></Base>
+<Signup variant="feature"/></Base>

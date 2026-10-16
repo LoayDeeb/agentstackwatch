@@ -100,3 +100,4 @@ nav{display:flex;gap:4px}nav a{font-size:14px;color:var(--mut);padding:7px 12px;
 /* mobile */
 @media(max-width:900px){.shell{padding:0 20px}nav{display:none}.front,.pgrid,.signup{grid-template-columns:1fr;gap:28px}.rail{border:0;padding:0}.quad{grid-template-columns:1fr 1fr}.qc{border:0;margin:0;padding:20px 12px 20px 0;border-bottom:1px solid var(--line)}
 .kpis{grid-template-columns:1fr 1fr}.kpis div{border:0;margin:0;border-bottom:1px solid var(--line)}.hide-s{display:none}.signup,.signup.feature{padding:28px}.hero{padding:56px 0 32px}.pull{margin:36px 0;font-size:26px}.arow{grid-template-columns:1fr;gap:6px}.cats{grid-template-columns:1fr}.tf{min-width:0;width:100%}.prose{font-size:19px}.hero-meta{gap:16px}}
+.bh-embed{width:100%;min-height:56px}.bh-embed iframe{width:100%!important;max-width:100%;border:0}.sg-alt{width:100%;margin:6px 0 0;font-size:13px;color:var(--mut)}.sg-alt a{color:var(--acc);font-weight:600}
