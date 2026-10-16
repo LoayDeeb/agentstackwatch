@@ -2,7 +2,7 @@
 import '@fontsource-variable/newsreader'; import '@fontsource-variable/newsreader/wght-italic.css'; import '@fontsource-variable/inter';
 const { title = 'AgentStackWatch — the AI agent stack, tracked', desc = 'A publication tracking what shipped, what broke and what got cheaper across AI agents, platforms and frameworks.', og = 'home', wide = false } = Astro.props;
 const ogUrl = new URL(`/og/${og}.png`, Astro.site); const path = Astro.url.pathname;
-const nav=[['/','Home'],['/posts/','Writing'],['/landscape/','Landscape'],['/tracker/','Tracker'],['/changes/','Changes'],['/pricing/','Pricing'],['/breaking/','Breaking']];
+const nav=[['/','Home'],['/guide/','2026 Guide'],['/posts/','Writing'],['/landscape/','Landscape'],['/tracker/','Tracker'],['/changes/','Changes'],['/pricing/','Pricing'],['/breaking/','Breaking']];
 ---
 <html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
 <title>{title}</title><meta name="description" content={desc}/>

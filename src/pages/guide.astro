@@ -1,0 +1,131 @@
+---
+import Base from '../layouts/Base.astro'; import GuideSignup from '../components/GuideSignup.astro';
+import { PRODUCTS, SRC, CHECKED, c, U } from '../lib/guide-data.js';
+const P = Object.fromEntries(PRODUCTS.map(p=>[p.id,p]));
+const picks = [
+ ['You live in Microsoft 365 (Outlook, Teams, Word)','Microsoft 365 Copilot',`Built into Outlook, Teams, Word, Excel; data stays in the M365 boundary${c('ms-biz')}`,'$21/user/mo list + M365 plan'+c('ms-price')],
+ ['You live in Google Workspace and want inbox + calendar help','Claude (Team) or Gemini Enterprise',`Claude drafts, schedules and RSVPs via Gmail/Calendar connectors${c('cl-gws')}; Gemini Enterprise connects Workspace and M365${c('g-ent')}`,'$20–25/seat'+c('cl-team')+' · from $21/seat'+c('g-ent')],
+ ['You want a teammate that works in any web app, 24/7','Grok Bot',`Own cloud computer, parallel bots, learns a workflow from one demo${c('gb-page')}`,'$30/mo (Premium)'+c('gb-pricing')],
+ ['You want finished deliverables: decks, research, sites','ChatGPT (Work) or Manus',`ChatGPT Work plans and completes tasks${c('oai-bizpage')}; Manus does slides, research, site deployment${c('mn-pricing')}`,'$20–25/seat'+c('oai-biz')+' · from $20/mo'+c('mn-pricing')],
+ ['Research is most of your day','Perplexity Comet',`AI browser assistant across tabs, emails and Slack${c('px-comet-ent')}`,'$40/seat (Enterprise Pro)'+c('px-ent')],
+ ['You want an assistant that lives in Slack and runs your meetings','Lindy',`Inbox, scheduling, prep, notes, follow-up; SOC 2${c('ly')}`,'from $29.99/user/mo'+c('ly')],
+ ['You want full control and no vendor cloud','OpenClaw or Hermes Agent',`Open source (MIT), runs on your machines${c('oc','hm')}`,'Free + model costs'+c('oc','hm')],
+];
+const usecases = [
+ ['email','Email & calendar',[
+   ['Claude',`The clearest published feature list: search and draft email, send/reply/forward with approval by default, create and move events, find mutual availability, RSVP${c('cl-gws')}.`],
+   ['Microsoft 365 Copilot',`Drafts emails and recaps meetings inside Outlook and Teams${c('ms-biz')}. The obvious pick for an all-Microsoft company.`],
+   ['Gemini',`Gemini in Gmail, AI Inbox briefings, and asking your inbox for an overview (US)${c('g-plans')}.`],
+   ['Lindy',`Built for this job: inbox triage, replies in your voice, scheduling, meeting prep and follow-up${c('ly')}.`],
+   ['OpenClaw',`Inbox and calendar from WhatsApp or iMessage, if you're willing to self-host${c('oc')}.`]]],
+ ['research','Research & briefings',[
+   ['Perplexity Comet',`Summaries across tabs, articles, emails and Slack in a browser sidebar${c('px-comet-ent')}.`],
+   ['ChatGPT',`Deep research with apps on Plus and up; scheduled tasks for recurring briefs${c('oai-pricing')}.`],
+   ['Manus',`Advanced research and "Wide Research" for high-volume jobs${c('mn-pricing')}.`],
+   ['Gemini',`Deep Research and Deep Search in AI Mode on Pro and Ultra${c('g-plans')}.`],
+   ['Hermes Agent',`Natural-language scheduled reports and briefings, self-hosted${c('hm')}.`]]],
+ ['travel','Travel & web errands',[
+   ['Gemini',`Chrome auto browse can compare hotel and flight costs across dates (Pro/Ultra, US and India)${c('g-plans')}.`],
+   ['Grok Bot',`Works inside websites and apps you log it into, on its own computer, even when your laptop is closed${c('gb-page')}.`],
+   ['Claude',`Cowork can drive the browser or your computer when there's no connector (Pro/Max, beta)${c('cl-cu')}.`],
+   ['OpenClaw',`Advertises flight check-in and form filling${c('oc')}.`]]],
+ ['crm','CRM & sales follow-up',[
+   ['Grok Bot',`Vendor's "Sales Outbound" job: researches accounts, drafts email and LinkedIn in your voice, leaves a review list${c('gb-page')}.`],
+   ['ChatGPT Business',`Sales "command center" combining call notes, emails and messages${c('oai-bizpage')}.`],
+   ['Gemini Enterprise',`HubSpot connector plus no-code Workflow Builder${c('g-ent')}.`],
+   ['Lindy',`1,500+ integrations and approvals built in${c('ly')}.`]]],
+ ['docs','Docs, decks & spreadsheets',[
+   ['Microsoft 365 Copilot',`Writes, edits and summarizes in Word; builds PowerPoint decks; works in Excel${c('ms-biz')}.`],
+   ['ChatGPT',`Extensions for Excel, Word, PowerPoint and Google Sheets; Sites for live dashboards${c('oai-pricing','oai-bizpage')}.`],
+   ['Claude',`Claude Slides, Docs and Dashboards (beta), plus Microsoft 365 integration${c('cl-pricing')}.`],
+   ['Manus',`Slide generation and shared team slide templates${c('mn-pricing')}.`]]],
+];
+const safety = [
+ ['ChatGPT Business',`No (by default)${c('oai-privacy')}`,`Yes, Type 2${c('oai-privacy')}`,`SSO, admin retention; SCIM/RBAC on Enterprise${c('oai-privacy','oai-bizpage')}`],
+ ['Claude Team / Enterprise',`No (by default)${c('cl-pricing')}`,U,`SSO, connector controls; audit logs & SCIM on Enterprise${c('cl-pricing')}`],
+ ['Grok Bot',`Opt-out available${c('gb-page')}`,U,`Cursor SSO; Enterprise DLP & network controls${c('gb-page')}`],
+ ['Manus Team',`Opt-out on Team${c('mn-pricing')}`,`Yes, Type 2${c('mn-sec')}`,`SSO, access control, analytics${c('mn-pricing')}`],
+ ['Perplexity Enterprise',`No${c('px-blog')}`,U,`Domain-level action limits, MDM, audit logs at 50+ seats${c('px-blog','px-comet-ent')}`],
+ ['Gemini Enterprise',`No${c('g-ent')}`,U,`Admin connector & sharing controls${c('g-ent')}`],
+ ['Microsoft 365 Copilot',`No${c('ms-biz')}`,U,`Purview, eDiscovery, retention policies${c('ms-biz')}`],
+ ['Lindy',`No${c('ly')}`,`Yes${c('ly')}`,`SSO, SCIM, audit logs on Enterprise${c('ly')}`],
+ ['OpenClaw / Hermes',`Your choice of model provider${c('oc','hm')}`,'n/a (self-hosted)',`Whatever you build; sandboxing available${c('oc','hm')}`],
+ ['Muse',U,U,U],
+];
+const costs = [
+ ['ChatGPT Business (Standard)',20,25,c('oai-biz')],['Claude Team (Standard)',20,25,c('cl-team')],['Gemini Enterprise Business',21,null,c('g-ent')],
+ ['Microsoft 365 Copilot Business (add-on)',21,25.2,c('ms-price')],['Manus Team',null,20,c('mn-pricing')],['Lindy',null,29.99,c('ly')],
+ ['Grok Bot (Premium seat)',25,30,c('gb-pricing')],['Perplexity Enterprise Pro',33.33,40,c('px-ent')],
+ ['ChatGPT / Claude Premium seat',100,125,c('oai-biz','cl-team')],['OpenClaw / Hermes Agent',0,0,c('oc','hm')],
+];
+const D = '16 Oct 2026';
+const money = n => n==null?'—':n===0?'$0':'$'+(Number.isInteger(n)?n:n.toFixed(2));
+---
+<Base title="Which personal AI agent should you use in 2026? A guide for founders and business leaders | AgentStackWatch" desc="ChatGPT, Claude, Grok Bot, Manus, Perplexity Comet, Gemini, Microsoft Copilot, OpenClaw, Hermes Agent, Lindy and Muse compared for executives: what each is good at, price per seat, accounts it connects to, data and security posture. Every fact sourced.">
+<article class="guide">
+<header class="pagehead ghead"><p class="kicker">The 2026 guide · Free, no email required</p>
+<h1>Which personal AI agent should you use in 2026?</h1>
+<p class="dek">A guide for founders and business leaders. Eleven assistants compared on the jobs execs actually hand off: email, calendar, research, travel, CRM and documents. Every fact links to the vendor's own page, checked {D}. If we couldn't verify something, it says <span class="unk">unknown</span>.</p>
+<p class="byline">By <b>Loay Deeb</b>, AI agent architect · Updated {D}</p>
+<nav class="gtoc" aria-label="Guide sections"><a href="#pick">1-minute picks</a><a href="#usecases">By use case</a><a href="#products">Product cards</a><a href="#safe">Safe to connect?</a><a href="#cost">Cost</a><a href="#method">Method</a></nav>
+</header>
+<GuideSignup pos="top"/>
+
+<section id="pick" class="gsec"><p class="kicker">In one minute</p><h2>Pick this if…</h2>
+<div class="gtable-wrap"><table class="gtab picks"><thead><tr><th>If you…</th><th>Pick</th><th>Why</th><th>From</th></tr></thead><tbody>
+{picks.map(([q,a,w,pr])=> <tr><td data-l="If you…">{q}</td><td data-l="Pick" class="nm">{a}</td><td data-l="Why" set:html={w}/><td data-l="From" set:html={pr}/></tr>)}
+</tbody></table></div>
+<p class="muted small">No single winner. The right answer is usually "the one that lives where your company data already lives."</p></section>
+
+<section id="usecases" class="gsec"><p class="kicker">By use case</p><h2>What to use for which job</h2>
+<div class="ucgrid">{usecases.map(([id,title,items])=> <div class="uc" id={id}><h3>{title}</h3><ul>{items.map(([n,t])=> <li><b>{n}.</b> <span set:html={t}/></li>)}</ul></div>)}</div></section>
+
+<section id="products" class="gsec"><p class="kicker">Product cards</p><h2>Each assistant, in five lines</h2>
+<div class="pcards">{PRODUCTS.map(p=> <div class="pcard" id={p.id}><h3>{p.name}<small>{p.maker}</small></h3><dl>
+<dt>Good at</dt><dd set:html={p.good}/><dt>Price</dt><dd set:html={p.price}/><dt>Connects to</dt><dd set:html={p.connects}/><dt>Data & security</dt><dd set:html={p.data}/><dt>Weak spots</dt><dd set:html={p.weak}/></dl></div>)}</div></section>
+
+<section id="safe" class="gsec"><p class="kicker">Before you click "Connect"</p><h2>Safe to connect to company accounts?</h2>
+<p>Use the business tier. Consumer plans generally lack SSO and admin consoles<span set:html={c('oai-pricing','cl-pricing')}/>, and an agent that can read email can be tricked by what's in it: OpenAI documents this "prompt injection" risk for its own agent<span set:html={c('oai-agent')}/>.</p>
+<div class="gtable-wrap"><table class="gtab"><thead><tr><th>Business tier</th><th>Trains on your data?</th><th>SOC 2</th><th>Admin controls</th></tr></thead><tbody>
+{safety.map(([n,t,s,a])=> <tr><td data-l="Tier" class="nm">{n}</td><td data-l="Trains?" set:html={t}/><td data-l="SOC 2" set:html={s}/><td data-l="Admin" set:html={a}/></tr>)}
+</tbody></table></div>
+<div class="note gcheck"><h3>A five-point check before rollout</h3><ol>
+<li>Business plan, not personal: confirm "no training by default" in writing.</li>
+<li>SSO on, and an admin who can see and remove connected apps.</li>
+<li>Sending, posting and paying require a human approval. Claude and Lindy publish this as the default<span set:html={c('cl-gws','ly')}/>.</li>
+<li>Connect one inbox and one calendar first. Add CRM later.</li>
+<li>Ask the vendor for its SOC 2 report. Where this guide says <span class="unk">unknown</span>, we couldn't find it on a public page.</li></ol></div></section>
+
+<section id="cost" class="gsec"><p class="kicker">Cost</p><h2>What it costs per seat</h2>
+<div class="gtable-wrap"><table class="gtab cost"><thead><tr><th>Plan</th><th>Per seat / mo, annual</th><th>Per seat / mo, monthly</th><th>10 people / yr (best listed rate)</th></tr></thead><tbody>
+{costs.map(([n,a,m,s])=>{const best=[a,m].filter(x=>x!=null);const lo=best.length?Math.min(...best):null; return <tr><td data-l="Plan" class="nm">{n}<span set:html={s}/></td><td data-l="Annual" class="mono">{money(a)}</td><td data-l="Monthly" class="mono">{money(m)}</td><td data-l="10 seats / yr" class="mono">{lo==null?'—':'$'+Math.round(lo*120).toLocaleString('en-US')}</td></tr>})}
+</tbody></table></div>
+<ul class="gnotes"><li>Microsoft's Copilot add-on also needs a Microsoft 365 business plan; first-year promo $18 until Dec 31, 2026<span set:html={c('ms-price')}/>.</li>
+<li>Gemini Agent itself is only on Google AI Ultra, $99.99/mo, US and English only<span set:html={c('g-plans')}/>.</li>
+<li>Grok Bot annual rate is the $300/yr Premium price divided by 12<span set:html={c('gb-pricing')}/>. Perplexity's is $400/yr divided by 12<span set:html={c('px-ent')}/>.</li>
+<li>Open-source agents are free, but you pay for the AI model and the time to run them.</li>
+<li>Credit-based plans (Manus, Lindy) can cost more than the seat price for heavy users<span set:html={c('mn-pricing','ly')}/>.</li></ul></section>
+
+<section id="method" class="gsec"><p class="kicker">Method</p><h2>How this guide was made</h2>
+<div class="prose"><p>On {D} we read each vendor's own pricing page, help center, security page and product page, listed below. We didn't use review sites or benchmarks, and this guide contains no personal test results or rankings by score. Products come from the personal-agent category of the <a href="/tracker/">AgentStackWatch tracker</a>, plus Microsoft Copilot.</p>
+<p>Perplexity and Microsoft pricing pages blocked our direct fetch; those prices come from the vendor's own pages as shown in a search index. ChatGPT's "agent mode" is listed as retired in OpenAI's help center and replaced by ChatGPT Work, so we cover ChatGPT Work instead. Research and drafting were assisted by an AI agent (Grok Bot, one of the products covered); every fact was checked against the linked source. No vendor paid for placement.</p></div>
+<ol class="gsrc">{SRC.map(([k,u,t])=> <li id={`s-${k}`}><a href={u} target="_blank" rel="noopener">{t}</a> <span class="muted small">{u.replace(/^https?:\/\//,'')} · checked {D}</span></li>)}</ol></section>
+
+<GuideSignup pos="bottom"/>
+</article>
+<style is:global>
+.guide .ghead h1{max-width:20ch}.guide .byline{margin-top:10px}
+.gtoc{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}.gtoc a{font:500 13px/1 var(--sans);padding:9px 13px;border:1px solid var(--line);border-radius:999px;background:var(--card)}.gtoc a:hover{border-color:var(--acc);color:var(--acc)}
+.gsign{margin:28px 0}.gsec{padding:44px 0;border-top:1px solid var(--line)}.gsec h2{font:500 clamp(28px,4vw,40px)/1.1 var(--serif);margin:0 0 20px;letter-spacing:-.01em}
+.gtable-wrap{overflow-x:auto}.gtab{width:100%;border-collapse:collapse;font-size:14.5px}.gtab th{text-align:left;font:600 11.5px/1.2 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--mut);padding:10px 12px;border-bottom:1px solid var(--ink)}
+.gtab td{padding:13px 12px;border-bottom:1px solid var(--line);vertical-align:top}.gtab td.nm{font-weight:600}.gtab.picks td:first-child{font-family:var(--serif);font-size:17px}
+a.cite{display:inline-block;font:600 10px/1 var(--sans);color:var(--acc);background:var(--acc-s);border-radius:4px;padding:2px 4px;margin-left:3px;vertical-align:super}a.cite:hover{background:var(--acc);color:#fff}
+.ucgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:18px}.uc{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px}.uc h3{font:500 22px/1.2 var(--serif);margin:0 0 10px}.uc ul{margin:0;padding-left:18px}.uc li{margin:8px 0;font-size:15px}
+.pcards{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:18px}.pcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px}.pcard h3{font:500 22px/1.2 var(--serif);margin:0 0 12px}.pcard h3 small{display:block;font:500 12px var(--sans);color:var(--mut);margin-top:4px}
+.pcard dl{margin:0}.pcard dt{font:600 11px/1 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--acc);margin-top:14px}.pcard dd{margin:6px 0 0;font-size:14.5px;color:var(--ink2)}
+.gsign{overflow:hidden}.gsrc span{overflow-wrap:anywhere}
+.gcheck{margin-top:26px}.gcheck h3{margin-top:0;font:500 20px var(--serif)}.gnotes{font-size:14.5px;color:var(--ink2)}.gsrc{font-size:14px}.gsrc li{margin:6px 0}.gsrc a{text-decoration:underline}
+@media(max-width:720px){.gsec{padding:32px 0}.gtab thead{display:none}.gtab,.gtab tbody,.gtab tr,.gtab td{display:block;width:100%}.gtab tr{border:1px solid var(--line);border-radius:12px;padding:6px 14px;margin-bottom:12px;background:var(--card)}
+.gtab td{border:0;padding:7px 0}.gtab td::before{content:attr(data-l);display:block;font:600 10.5px/1.4 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--mut)}.ucgrid,.pcards{grid-template-columns:1fr}.gtab.picks td:first-child{font-size:18px}}
+</style>
+</Base>
