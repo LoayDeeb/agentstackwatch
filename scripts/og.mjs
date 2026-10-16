@@ -3,7 +3,7 @@ import fsx from 'node:fs'; const require_exe = () => fsx.existsSync('/usr/bin/go
 import { chromium } from 'playwright'; import fs from 'node:fs';
 const E = JSON.parse(fs.readFileSync('data/entries.json','utf8')); const S = JSON.parse(fs.readFileSync('data/stats.json','utf8'));
 const fmt = n => n==null?null:n>=1e6?(n/1e6).toFixed(1)+'M':n>=1e3?(n/1e3).toFixed(1)+'k':String(n);
-const posts = fs.readdirSync('src/content/posts').filter(f=>f.endsWith('.md')).map(f=>{const t=fs.readFileSync('src/content/posts/'+f,'utf8');return {slug:f.replace(/\.md$/,''),title:(t.match(/title:\s*"?(.*?)"?\n/)||[])[1]}});
+const posts = fs.readdirSync('src/content/posts').filter(f=>f.endsWith('.md')).map(f=>{const t=fs.readFileSync('src/content/posts/'+f,'utf8');if(/draft:\s*true/.test(t))return null;return {slug:f.replace(/\.md$/,''),title:(t.match(/title:\s*"?(.*?)"?\n/)||[])[1]}}).filter(Boolean);
 const CAT={frameworks:'Dev frameworks & SDKs',personal:'Personal agents',managed:'Managed agent platforms',research:'Research & benchmarks'};
 const esc = s => String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const fonts = ['@fontsource-variable/newsreader/files/newsreader-latin-wght-normal.woff2','@fontsource-variable/inter/files/inter-latin-wght-normal.woff2'].map(p=>'file://'+process.cwd()+'/node_modules/'+p);
