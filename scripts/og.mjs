@@ -16,6 +16,11 @@ const jobs = [['home',{kicker:'The AI agent stack, tracked',title:'What shipped,
  ['landscape',{kicker:'Interactive map',title:'The Agent Landscape',meta:[`<b>${E.length}</b> products`]}],['tracker',{kicker:'Reference',title:'The Tracker',meta:[`<b>${E.length}</b> products, refreshed nightly`]}],
  ...posts.map(p=>['posts-'+p.slug,{kicker:'Agent Stack Weekly',title:p.title}]),
  ...JSON.parse(fs.readFileSync('src/lib/guides.json','utf8')).map(g=>['guides-'+g.slug,{kicker:'Guide · '+g.kicker,title:g.short}]),
+ ...[['guide',"Free · The 2026 guide","The Personal AI Agent Buyer's Guide"],['guides','Guides','Guides to personal AI agents'],['pricing','Pricing','What AI agents cost'],['compare','Compare','AI agents, side by side'],
+   ['breaking','Breaking changes','What broke this week in AI agents'],['changes','Changelog','What changed this week'],['featured','Featured','Featured listings'],['sponsor','Sponsor','Reach people choosing AI agents'],
+   ['newsletter','Agent Stack Weekly','One email a week. Everything that shipped in AI agents.'],['search','Search','Search AgentStackWatch'],['posts','Writing','Every issue of Agent Stack Weekly']].map(([n,k,t])=>[n,{kicker:k,title:t}]),
+ ...Object.entries(CAT).map(([c,n])=>['category-'+c,{kicker:'Category',title:n,meta:[`<b>${E.filter(e=>e.category===c).length}</b> products`]}]),
+ ...JSON.parse(fs.readFileSync('src/lib/pairs.json','utf8')).filter(([a,b])=>E.find(e=>e.slug===a)&&E.find(e=>e.slug===b)).map(([a,b])=>['compare-'+a+'-vs-'+b,{kicker:'Compare',title:`${E.find(e=>e.slug===a).name} vs ${E.find(e=>e.slug===b).name}`}]),
  ...E.map(e=>{const s=S[e.slug]||{};return ['agents-'+e.slug,{kicker:CAT[e.category],title:e.name,meta:[s.display_version&&`v<b>${esc(s.display_version.replace(/^v/,''))}</b>`,s.stars&&`<b>${fmt(s.stars)}</b> stars`,s.downloads_weekly&&`<b>${fmt(s.downloads_weekly.at(-1).n)}</b>/wk`].filter(Boolean)}]})];
 const b = await chromium.launch(require_exe()); const p = await b.newPage({viewport:{width:1200,height:630}});
 for (const [name,d] of jobs) { await p.setContent(tpl(d),{waitUntil:'load'}); await p.evaluate(()=>document.fonts.ready); await p.screenshot({path:`public/og/${name}.png`}); }

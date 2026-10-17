@@ -1,0 +1,70 @@
+---
+import GuideArticle from '../layouts/GuideArticle.astro'; import { citer } from '../lib/cite.js';
+const { c, used, U } = citer();
+const body = `
+<div class="tldr"><p><b>Short answer.</b> For one-off deep dives, the $20-a-month tier of ChatGPT (deep research, plus ChatGPT Work for finished reports) or Google AI Pro (Deep Research) is enough for most people${c('oai-pricing','oai-rn','g-plans')}. For big batches, such as researching 50 companies at once, Manus's Wide Research is built for volume${c('mn-pricing2')}. For research that never stops, use scheduled monitoring tasks in ChatGPT or Hermes's scheduled briefings${c('oai-rn','hm2')}. Whatever you use, open the sources before you rely on the answer.</p></div>
+
+<h2>Three kinds of research job</h2>
+<ul>
+<li><b>Deep dive:</b> "Explain the market for X, with sources." One question, a long report.</li>
+<li><b>Batch:</b> "Do the same research on these 40 suppliers." Many similar small jobs.</li>
+<li><b>Watch:</b> "Tell me when a competitor changes pricing." Recurring checks that stay quiet unless something changes.</li>
+</ul>
+<p>Most tools are good at one of these. Pick by the job you do most.</p>
+
+<h2>The options</h2>
+<div class="gtable-wrap"><table class="gtab"><thead><tr><th>Agent</th><th>Best at</th><th>Price</th><th>Notes</th></tr></thead><tbody>
+<tr><td data-l="Agent" class="nm">ChatGPT (deep research, Work)</td><td data-l="Best at">Deep dives and finished reports</td><td data-l="Price">Plus $20/mo; Pro $100 or $200${c('oai-rn')}</td><td data-l="Notes">Deep research on Plus and up${c('oai-pricing')}; Work researches, analyzes and produces documents, spreadsheets, presentations and reports${c('oai-rn')}</td></tr>
+<tr><td data-l="Agent" class="nm">ChatGPT scheduled tasks</td><td data-l="Best at">Watching</td><td data-l="Price">Plus, Pro, Business, Enterprise${c('oai-rn')}</td><td data-l="Notes">Monitoring tasks search the web and check connected apps, and notify you only when something is worth reporting; no more than once an hour${c('oai-rn')}</td></tr>
+<tr><td data-l="Agent" class="nm">Google Gemini</td><td data-l="Best at">Deep dives</td><td data-l="Price">AI Pro $19.99/mo; Ultra from $99.99${c('g-plans')}</td><td data-l="Notes">Deep Research and Deep Search in AI Mode on Pro and Ultra${c('g-plans')}</td></tr>
+<tr><td data-l="Agent" class="nm">Manus</td><td data-l="Best at">Batches</td><td data-l="Price">Free tier; Pro from $20/mo${c('mn-pricing2')}</td><td data-l="Notes">Advanced research and Wide Research on Pro, up to 20 tasks at once${c('mn-pricing2')}</td></tr>
+<tr><td data-l="Agent" class="nm">Perplexity Comet</td><td data-l="Best at">Reading while you browse</td><td data-l="Price">Enterprise Pro $40/seat/mo or $400/yr${c('px-ent')}; consumer prices ${U}</td><td data-l="Notes">AI browser that summarizes articles, emails and Slack chats and works across tabs${c('px-comet-ent')}</td></tr>
+<tr><td data-l="Agent" class="nm">Microsoft 365 Copilot</td><td data-l="Best at">Research over your company's files</td><td data-l="Price">$21/user/mo add-on${c('ms-price')}</td><td data-l="Notes">Includes a Researcher agent; works over Microsoft 365 data${c('ms-biz')}</td></tr>
+<tr><td data-l="Agent" class="nm">Hermes Agent</td><td data-l="Best at">Watching, self-hosted</td><td data-l="Price">Free (MIT) plus your model costs${c('hm2')}</td><td data-l="Notes">Natural-language scheduling for reports and briefings, running unattended${c('hm2')}</td></tr>
+</tbody></table></div>
+<p>Claude also does research, but we didn't verify the details of its research feature or which plans include it for this guide: ${U}. See <a href="/chatgpt-vs-claude-for-business/">ChatGPT vs Claude</a> for what we did check.</p>
+
+<h2>Picks by job</h2>
+<h3>Deep dives: ChatGPT or Gemini at $20</h3>
+<p>Both include a deep-research mode in their roughly $20 tier${c('oai-pricing','g-plans')}. ChatGPT's advantage is what comes after: ChatGPT Work can turn findings into a document, spreadsheet, presentation or Site${c('oai-rn')}, and it can pull in files from Google Drive, Box, Dropbox and SharePoint${c('oai-rn')}. Gemini's advantage is Google: if you already pay for Google AI Pro, try it first.</p>
+<h3>Batches: Manus</h3>
+<p>Manus's Pro plan includes Wide Research for large jobs and up to 20 concurrent tasks${c('mn-pricing2')}. That's the shape of "research every company on this list". Manus is credit-based (4,000 credits for $20), and how many credits a batch uses is ${U} until you try it${c('mn-pricing2')}.</p>
+<h3>Watching: scheduled tasks or a self-hosted agent</h3>
+<p>ChatGPT's monitoring tasks check the web and your connected apps and only notify you when there's something worth reporting${c('oai-rn')}. Hermes Agent can run scheduled briefings unattended if you want it on your own server${c('hm2')}. Grok Bot runs bots on their own cloud computer 24/7, which also suits ongoing monitoring jobs${c('gb-page')}.</p>
+<h3>Reading in your browser: Comet</h3>
+<p>If most of your research is reading web pages, Perplexity's Comet browser summarizes across tabs as you go${c('px-comet-ent')}. On Enterprise, admins can limit it to answers only, or allow actions only on approved domains${c('px-blog')}.</p>
+
+<h2>How to trust what comes back</h2>
+<ul>
+<li><b>Click the sources.</b> Research agents cite links; ChatGPT's agent outputs included them${c('oai-agent2')}. Open the three claims that matter most and check that the source says what the summary says.</li>
+<li><b>Watch for poisoned pages.</b> Web pages can carry hidden instructions. OpenAI warns this "prompt injection" can push an agent into unintended actions${c('oai-agent2')}. ChatGPT's Lockdown Mode switches off deep research and live browsing to reduce data exfiltration when you're working with sensitive material${c('oai-rn')}.</li>
+<li><b>Prefer primary sources.</b> Ask the agent to cite official pages, filings and papers rather than blogs or aggregators.</li>
+<li><b>Date-stamp it.</b> Ask for the date each source was published. Prices and policies change.</li>
+<li><b>Keep confidential material in business plans.</b> ChatGPT Business doesn't train on workspace data${c('oai-biz2')}; Perplexity says enterprise data is never used for training${c('px-blog')}.</li>
+</ul>
+
+<h2>A prompt that works</h2>
+<p>Agents do better with a clear brief. Try:</p>
+<blockquote><p>"Research [topic] for [who it's for]. I need: (1) a one-paragraph answer, (2) the five facts that matter most, each with a link to a primary source and its date, (3) what's disputed or unknown. Prefer official sources. Say 'unknown' rather than guessing."</p></blockquote>
+<p>That last line matters: it gives the agent permission not to fill gaps with plausible guesses. It's the rule we use on this site.</p>
+
+<h2>What it costs</h2>
+<p>For most people, $20 a month covers occasional deep research on ChatGPT Plus or Gemini through Google AI Pro${c('oai-rn','g-plans')}. Heavy researchers move up to ChatGPT Pro ($100–200) or Gemini Ultra (from $99.99)${c('oai-rn','g-plans')}. See <a href="/how-much-does-an-ai-agent-cost/">How much does an AI agent cost?</a> and <a href="/pricing/">/pricing</a> for every plan.</p>
+`;
+const faqs = [
+ ['What is the best AI agent for research?',`For deep dives, ChatGPT (deep research on Plus and up) or Gemini (Deep Research on AI Pro)${c('oai-pricing','g-plans')}. For big batches, Manus Wide Research${c('mn-pricing2')}. For ongoing monitoring, ChatGPT scheduled tasks or Hermes briefings${c('oai-rn','hm2')}.`],
+ ['Can an AI agent monitor a topic for me?',`Yes. ChatGPT's monitoring tasks search the web and connected apps and notify you only when something is worth reporting, at most once an hour${c('oai-rn')}. Hermes Agent can run scheduled briefings unattended${c('hm2')}.`],
+ ['How much does an AI research agent cost?',`About $20 a month: ChatGPT Plus is $20${c('oai-rn')}, Google AI Pro $19.99${c('g-plans')}, and Manus Pro starts at $20${c('mn-pricing2')}.`],
+ ['Can I trust AI research reports?',`Check them. Open the cited sources for the key claims, and be aware that web pages can contain hidden instructions aimed at agents (prompt injection)${c('oai-agent2')}.`],
+ ['Is Perplexity Comet good for research?',`It's an AI browser that summarizes articles, emails and Slack chats and works across tabs${c('px-comet-ent')}. Enterprise Pro is $40/seat/month${c('px-ent')}; consumer prices are unknown to us.`],
+];
+---
+<GuideArticle slug="ai-agent-for-research" kicker="Research"
+ title="Best AI Agent for Research (2026): Deep Research, Batches & Monitoring | AgentStackWatch"
+ desc="Which AI agent is best for research in 2026: ChatGPT deep research and Work, Gemini Deep Research, Manus Wide Research, Perplexity Comet and Hermes compared, plus how to check what they bring back."
+ h1="The best AI agent for research (2026)"
+ dek="Deep dives, big batches and always-on monitoring need different tools. Here's which agent fits each job, what it costs, and how to check its work."
+ faqs={faqs} used={used}
+ related={[['/compare/perplexity-comet-vs-gemini-agent/','Perplexity Comet vs Gemini'],['/compare/manus-vs-chatgpt-dots/','Manus vs ChatGPT dots'],['/compare/claude-app-vs-gemini-agent/','Claude vs Gemini']]}>
+<Fragment set:html={body}/>
+</GuideArticle>

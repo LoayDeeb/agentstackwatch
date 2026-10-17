@@ -48,5 +48,15 @@
   "from": "v1.54.0",
   "to": "v1.55.0",
   "url": "https://github.com/aaif-goose/goose/releases/tag/v1.55.0"
+ },
+ {
+  "date": "2026-10-17",
+  "slug": "crewai-amp",
+  "name": "CrewAI AMP",
+  "type": "pricing",
+  "field": "pricing",
+  "from": "Enterprise custom; AWS Marketplace Basic $99/mo (100 executions, 2 live crews, 5 seats)",
+  "to": "Basic free (50 workflow executions/mo); Enterprise custom",
+  "url": "https://crewai.com/pricing"
  }
 ]

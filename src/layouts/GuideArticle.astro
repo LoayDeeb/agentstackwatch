@@ -8,8 +8,8 @@ const ld = [{"@context":"https://schema.org","@type":"FAQPage","mainEntity":faqs
 const D = new Date(updated+'T12:00:00Z').toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'});
 const more = guides.filter(g=>g.slug!==slug);
 ---
-<Base title={title} desc={desc} og={`guides-${slug}`}>
-<Fragment slot="head"><link rel="canonical" href={url}/><meta property="og:type" content="article"/><meta property="og:url" content={url}/><meta name="author" content="Loay Deeb"/>
+<Base title={title} desc={desc} og={`guides-${slug}`} ogType="article">
+<Fragment slot="head"><link rel="canonical" href={url}/><meta name="author" content="Loay Deeb"/>
 <script type="application/ld+json" set:html={JSON.stringify(ld)}/></Fragment>
 <article class="guide ga">
 <header class="pagehead ghead"><p class="kicker"><a href="/guides/">Guides</a> · {kicker}</p><h1>{h1}</h1><p class="dek" set:html={dek}/>

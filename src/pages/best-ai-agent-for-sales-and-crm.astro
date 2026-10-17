@@ -1,0 +1,73 @@
+---
+import GuideArticle from '../layouts/GuideArticle.astro'; import { citer } from '../lib/cite.js';
+const { c, used, U } = citer();
+const body = `
+<div class="tldr"><p><b>Short answer.</b> If your CRM is Salesforce, Agentforce's Sales add-on ($125/user/month) keeps the agent inside your data${c('sf-agentforce')}. For everyone else, a general agent that can research accounts and draft outreach for you to approve is the better first buy: Grok Bot's "Sales Outbound" job does exactly that${c('gb-page')}, ChatGPT connects to HubSpot and Gmail${c('oai-rn')}, Gemini Enterprise connects to HubSpot from $21/seat${c('g-ent')}, and Lindy offers 1,500+ integrations${c('ly')}.</p></div>
+
+<h2>What a sales agent actually does</h2>
+<p>Strip away the marketing and sales agents do four jobs:</p>
+<ol>
+<li><b>Research:</b> read a prospect's site, news and LinkedIn and summarize why they might buy.</li>
+<li><b>Prioritize:</b> score leads so reps call the right people first.</li>
+<li><b>Draft:</b> write first-touch and follow-up emails in your voice.</li>
+<li><b>Update the CRM:</b> log calls, notes and next steps so the pipeline stays accurate.</li>
+</ol>
+<p>The first three are low-risk because a person still decides what goes out. The fourth touches your system of record, so set it up with care.</p>
+
+<h2>The options</h2>
+<div class="gtable-wrap"><table class="gtab"><thead><tr><th>Agent</th><th>Price</th><th>CRM connection</th><th>Approval before sending</th></tr></thead><tbody>
+<tr><td data-l="Agent" class="nm">Salesforce Agentforce</td><td data-l="Price">Sales add-on $125/user/mo (unmetered employee use); or Flex Credits $500 per 100,000${c('sf-agentforce')}</td><td data-l="CRM connection">Native to Salesforce${c('sf-agentforce')}</td><td data-l="Approval before sending">${U} (depends on how you build the agent)</td></tr>
+<tr><td data-l="Agent" class="nm">Grok Bot</td><td data-l="Price">$30/seat/mo (Premium); Super $100, Ultra $200${c('gb-pricing2')}</td><td data-l="CRM connection">Uses any app you log it into, like a person would${c('gb-page')}</td><td data-l="Approval before sending">Sales Outbound leaves a review list for you to approve${c('gb-page')}</td></tr>
+<tr><td data-l="Agent" class="nm">ChatGPT (Work)</td><td data-l="Price">Plus $20/mo${c('oai-rn')}; Business $20–25/seat${c('oai-biz2')}</td><td data-l="CRM connection">HubSpot plugin (among the first with Sign in with ChatGPT)${c('oai-rn')}; Data plugin for business data${c('oai-rn')}</td><td data-l="Approval before sending">Drafts email, you choose to send${c('oai-rn')}</td></tr>
+<tr><td data-l="Agent" class="nm">Gemini Enterprise</td><td data-l="Price">From $21/seat/mo${c('g-ent')}</td><td data-l="CRM connection">HubSpot, plus Microsoft 365, Google Workspace, Slack${c('g-ent')}</td><td data-l="Approval before sending">${U}</td></tr>
+<tr><td data-l="Agent" class="nm">Lindy</td><td data-l="Price">From $29.99/user/mo (3,000 credits)${c('ly')}</td><td data-l="CRM connection">1,500+ integrations and MCP${c('ly')}</td><td data-l="Approval before sending">Actions with outside impact wait for approval${c('ly')}</td></tr>
+<tr><td data-l="Agent" class="nm">Claude</td><td data-l="Price">Pro $20/mo; Team $20–25/seat${c('cl-pricing','cl-team2')}</td><td data-l="CRM connection">${U} (no CRM connector named on the pages we checked; custom connectors are supported${c('cl-cu')})</td><td data-l="Approval before sending">Gmail connector asks before sending by default${c('cl-gws')}</td></tr>
+</tbody></table></div>
+<p>HubSpot's and Pipedrive's own built-in AI agents and their pricing: ${U} (not checked for this guide). If you're on one of them, look there first.</p>
+
+<h2>Picks by situation</h2>
+<h3>You run Salesforce</h3>
+<p>Agentforce is the natural choice. You can start building for $0 with Salesforce Foundations, then either pay per action (an action is 20 Flex Credits, about $0.10) or buy the $125/user/month Sales add-on for unmetered employee use${c('sf-agentforce')}. Salesforce's own example of an agent helping 100 users manage cases comes to about $1,800 a month on Flex Credits${c('sf-agentforce')}; work out your own numbers before you choose.</p>
+<h3>You want pipeline generated while you sleep</h3>
+<p>Grok Bot describes its Sales Outbound job as: "Researches accounts, scores contacts with intent, drafts email and LinkedIn in your voice, and leaves a review list for you to approve."${c('gb-page')} Bots run on their own cloud computer, work in parallel and keep going 24/7${c('gb-page')}, and they keep context on accounts across conversations (the vendor's example remembers that a customer only signs annual contracts)${c('gb-page')}.</p>
+<h3>You live in HubSpot and Gmail</h3>
+<p>ChatGPT has a HubSpot plugin${c('oai-rn')} and drafts emails from Gmail or Outlook that you choose to send${c('oai-rn')}. ChatGPT Work can also run tasks when a new Gmail message arrives (Plus and Pro)${c('oai-rn')}, which is handy for "when a lead replies, draft a follow-up and update the deal". On Google Workspace, Gemini Enterprise connects to HubSpot${c('g-ent')}.</p>
+<h3>You want many small automations</h3>
+<p>Lindy is built around integrations and approval steps, from $29.99 a user${c('ly')}. Watch the credits: when they run out, Lindy pauses until reset or a top-up at $10 per 1,000${c('ly')}.</p>
+
+<h2>Guardrails that matter in sales</h2>
+<ul>
+<li><b>Approve every outbound message at first.</b> A bad email in your name costs more than the time saved. Every tool above except Agentforce publishes an approval or draft-first flow${c('gb-page','oai-rn','ly','cl-gws')}.</li>
+<li><b>Give it a CRM user with limited rights.</b> Let it create notes and tasks, not delete records or change deal stages, until you trust it.</li>
+<li><b>Watch for prompt injection.</b> Prospects' websites and email replies are untrusted text. OpenAI warns that agents can be steered by hidden instructions on pages they read${c('oai-agent2')}.</li>
+<li><b>Respect the rules on cold outreach.</b> Anti-spam and data-protection laws still apply to AI-written email. Check with whoever handles compliance for you.</li>
+<li><b>Keep training off for customer data.</b> ChatGPT Business doesn't train on workspace data${c('oai-biz2')}; Lindy says it never trains models on your data${c('ly')}; Grok Bot offers a training opt-out${c('gb-page')}.</li>
+</ul>
+
+<h2>A one-week test</h2>
+<ol>
+<li>Pick 25 target accounts you already know well, so you can judge the research.</li>
+<li>Ask the agent for a one-paragraph "why now" per account and a first-touch email.</li>
+<li>Score each one: would you send it unedited, after edits, or never?</li>
+<li>If more than half are sendable after light edits, connect the CRM with a limited user and let it log notes.</li>
+<li>After a month, compare reply rate and rep hours per week with the month before.</li>
+</ol>
+<p>Comparing general agents? See <a href="/compare/grok-bot-vs-chatgpt-dots/">Grok Bot vs ChatGPT dots</a>, <a href="/compare/grok-bot-vs-gemini-agent/">Grok Bot vs Gemini</a> and <a href="/compare/manus-vs-lindy/">Manus vs Lindy</a>.</p>
+`;
+const faqs = [
+ ['What is the best AI agent for sales?',`It depends on your CRM. On Salesforce, Agentforce's Sales add-on is $125/user/month${c('sf-agentforce')}. Otherwise, a general agent that researches accounts and drafts outreach for approval, such as Grok Bot's Sales Outbound job${c('gb-page')}, ChatGPT with HubSpot${c('oai-rn')} or Lindy${c('ly')}.`],
+ ['Can an AI agent update my CRM?',`Yes. Agentforce works natively in Salesforce${c('sf-agentforce')}; ChatGPT has a HubSpot plugin${c('oai-rn')}; Gemini Enterprise connects to HubSpot${c('g-ent')}; Grok Bot uses any app you log it into${c('gb-page')}. Start it with a limited CRM user.`],
+ ['How much does a sales AI agent cost?',`Roughly $20–30 per user per month for general agents (ChatGPT, Gemini Enterprise, Lindy, Grok Bot Premium)${c('oai-biz2','g-ent','ly','gb-pricing2')}, and $125/user/month for Agentforce's Sales add-on${c('sf-agentforce')}.`],
+ ['Will an AI agent send emails without asking me?',`Not by default in most tools: Grok Bot's outbound job leaves a review list${c('gb-page')}, ChatGPT drafts and you send${c('oai-rn')}, and Lindy waits for approval on actions with outside impact${c('ly')}.`],
+ ['Does Claude work with my CRM?',`Unknown: we found no named CRM connector on Anthropic's pages, though Claude supports custom connectors${c('cl-cu')}.`],
+];
+---
+<GuideArticle slug="best-ai-agent-for-sales-and-crm" kicker="Sales & CRM"
+ title="Best AI Agent for Sales and CRM (2026): Agentforce, Grok Bot, ChatGPT & More | AgentStackWatch"
+ desc="The best AI agents for sales and CRM in 2026: Salesforce Agentforce, Grok Bot, ChatGPT with HubSpot, Gemini Enterprise and Lindy compared on price, CRM connections and approval controls."
+ h1="The best AI agent for sales and CRM (2026)"
+ dek="Agents that research accounts, draft outreach and keep your CRM up to date, compared on price, which CRMs they connect to, and whether they ask before they send."
+ faqs={faqs} used={used}
+ related={[['/compare/grok-bot-vs-chatgpt-dots/','Grok Bot vs ChatGPT dots'],['/compare/grok-bot-vs-gemini-agent/','Grok Bot vs Gemini'],['/compare/manus-vs-lindy/','Manus vs Lindy']]}>
+<Fragment set:html={body}/>
+</GuideArticle>

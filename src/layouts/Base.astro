@@ -1,12 +1,17 @@
 ---
-import '@fontsource-variable/newsreader'; import '@fontsource-variable/newsreader/wght-italic.css'; import '@fontsource-variable/inter'; import guidesList from '../lib/guides.json';
-const { title = 'AgentStackWatch — the AI agent stack, tracked', desc = 'A publication tracking what shipped, what broke and what got cheaper across AI agents, platforms and frameworks.', og = 'home', wide = false } = Astro.props;
-const ogUrl = new URL(`/og/${og}.png`, Astro.site); const path = Astro.url.pathname;
+import '@fontsource-variable/newsreader'; import '@fontsource-variable/newsreader/wght-italic.css'; import '@fontsource-variable/inter'; import guidesList from '../lib/guides.json'; import fs from 'node:fs';
+const { title = 'AgentStackWatch — the AI agent stack, tracked', desc = 'A publication tracking what shipped, what broke and what got cheaper across AI agents, platforms and frameworks.', og, wide = false, ogType = 'website' } = Astro.props;
+const path = Astro.url.pathname;
+// One preview card per page: use the og prop, else derive from the path (/compare/a-vs-b/ -> compare-a-vs-b), else fall back to the home card.
+const derived = path === '/' ? 'home' : path.replace(/^\/|\/$/g,'').replace(/\//g,'-');
+const ogName = [og, derived].find(n => n && fs.existsSync(`public/og/${n}.png`)) || 'home';
+const ogUrl = new URL(`/og/${ogName}.png`, Astro.site); const pageUrl = new URL(path, Astro.site);
 const nav=[['/','Home'],['/guide/',"Buyer's Guide"],['/guides/','Guides'],['/posts/','Writing'],['/landscape/','Landscape'],['/tracker/','Tracker'],['/changes/','Changes'],['/pricing/','Pricing'],['/breaking/','Breaking']];
 ---
 <html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
 <title>{title}</title><meta name="description" content={desc}/>
-<meta property="og:title" content={title}/><meta property="og:description" content={desc}/><meta property="og:image" content={ogUrl}/><meta name="twitter:card" content="summary_large_image"/>
+<meta property="og:site_name" content="AgentStackWatch"/><meta property="og:title" content={title}/><meta property="og:description" content={desc}/><meta property="og:image" content={ogUrl}/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image:alt" content={title}/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content={title}/><meta name="twitter:description" content={desc}/><meta name="twitter:image" content={ogUrl}/>
+<meta property="og:type" content={ogType}/><meta property="og:url" content={pageUrl}/>
 <link rel="alternate" type="application/rss+xml" title="AgentStackWatch" href="/rss.xml"/><link rel="icon" href="/favicon.svg"/>
 <script is:inline>document.documentElement.dataset.theme=localStorage.theme||'light'</script>
 <link rel="stylesheet" href="/style.css"/><slot name="head"/></head>

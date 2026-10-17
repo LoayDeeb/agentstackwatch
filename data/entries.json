@@ -6,7 +6,7 @@
   "maker": "xAI",
   "url": "https://x.ai/bot",
   "description": "AI teammate included with The X Subscription.",
-  "pricing": "Included in X Premium ($30/mo), Super ($100/mo), Ultra ($200/mo); not in Plus",
+  "pricing": "Included in X Premium ($30/mo), Super ($100/mo), Ultra ($200/mo); not in Plus. Team seats: Premium $30, Super $100, Ultra $200 per seat/mo",
   "open_source": false,
   "license": "proprietary",
   "github": null,
@@ -55,7 +55,7 @@
   "verified": true,
   "sources": [
    "https://openclaw.ai/",
-   "http://github.com/openclaw/openclaw"
+   "https://github.com/openclaw/openclaw"
   ],
   "notes": null
  },
@@ -356,7 +356,8 @@
   "npm": null,
   "verified": true,
   "sources": [
-   "https://langchain.launchnotes.io/announcements/ann_NXVDQVGqbwBqW",
+   "https://www.langchain.com/langsmith/deployment",
+   "https://github.com/langchain-ai/langgraph/pull/6281",
    "https://www.langchain.com/pricing"
   ],
   "notes": null
@@ -368,7 +369,7 @@
   "maker": "CrewAI",
   "url": "https://docs-platform.crewai.com/platform/en/introduction",
   "description": "CrewAI Agent Management Platform to deploy, monitor and scale crews.",
-  "pricing": "Enterprise custom; AWS Marketplace Basic $99/mo (100 executions, 2 live crews, 5 seats)",
+  "pricing": "Basic free (50 workflow executions/mo); Enterprise custom",
   "open_source": false,
   "license": "proprietary",
   "github": null,
@@ -377,7 +378,7 @@
   "verified": true,
   "sources": [
    "https://crewai.com/pricing",
-   "https://aws.amazon.com/marketplace/pp/prodview-e6oyhm2ed6l3c"
+   "https://docs-platform.crewai.com/platform/en/introduction"
   ],
   "notes": null
  },
@@ -545,13 +546,14 @@
   "description": "Role-based multi-agent framework.",
   "pricing": "Free / open source",
   "open_source": true,
-  "license": "unknown",
+  "license": "MIT",
   "github": "crewAIInc/crewAI",
   "pypi": "crewai",
   "npm": null,
-  "verified": false,
+  "verified": true,
   "sources": [
-   "https://www.reddit.com/r/AI_Agents/comments/1tuum2e/best_agentic_frameworks_in_2026_ranked_by_what/"
+   "https://github.com/crewAIInc/crewAI",
+   "https://crewai.com/pricing"
   ],
   "notes": null
  },

@@ -1,6 +1,6 @@
 {
  "_note": "Prices hand-checked against the official page text snapshot on `checked`. confirmed=false means the price was not visible in the fetched page text (blocked or client-rendered) and comes from the entry's other cited source.",
- "grok-bot": {"price":"Included in X Premium $30/mo, Super $100/mo, Ultra $200/mo; not included in Free or Plus ($8/mo)","checked":"2026-10-16","confirmed":true},
+ "grok-bot": {"price":"Included in X Premium $30/mo ($300/yr), Super $100/mo ($1,000/yr), Ultra $200/mo ($2,000/yr); not included in Free or Plus ($8/mo). Team plans: Premium $30, Super $100, Ultra $200 per seat/mo, seat tiers can be mixed; Plus not available for teams; annual team pricing unknown","checked":"2026-10-17","confirmed":true},
  "chatgpt-dots": {"price":"First dot included in Pro, Business Premium, Enterprise (rolling out)","checked":"2026-10-16","confirmed":false},
  "claude-app": {"price":"Free $0; Pro $20/mo ($17/mo annual); Max from $100/mo (5x) to $200/mo (20x); Team $25/seat monthly ($20 annual)","checked":"2026-10-16","confirmed":true},
  "manus": {"price":"Free $0; Pro from $20/mo or $40/mo; Team from $20/seat/mo; 17% off annual","checked":"2026-10-16","confirmed":true},
@@ -18,7 +18,7 @@
  "relevance-ai": {"price":"Pro $19/mo annual or $29 monthly; Team $234/mo annual or $349 monthly; Enterprise custom","checked":"2026-10-16","confirmed":true},
  "letta-cloud": {"price":"Free $0; Pro $20/mo; API plan $20/mo + $0.10/active agent/mo + usage","checked":"2026-10-16","confirmed":true},
  "langgraph-platform": {"price":"Developer $0/seat; Plus $39/seat/mo incl. 1 free small serverless deployment","checked":"2026-10-16","confirmed":true},
- "crewai-amp": {"price":"Basic free (50 executions/mo); Enterprise custom","checked":"2026-10-16","confirmed":true},
+ "crewai-amp": {"price":"Basic free (50 workflow executions/mo); Enterprise custom","checked":"2026-10-17","confirmed":true},
  "e2b": {"price":"Hobby free ($100 one-time credit); Pro $150/mo + usage; Enterprise custom ($3,000/mo minimum)","checked":"2026-10-16","confirmed":true},
  "modal": {"price":"Starter $0 + compute ($30/mo credits); Team $250/mo + compute ($100/mo credits)","checked":"2026-10-16","confirmed":true},
  "daytona": {"price":"Pay as you go: $0.0504/vCPU-h, $0.0162/GiB-h memory; $200 free compute","checked":"2026-10-16","confirmed":true}

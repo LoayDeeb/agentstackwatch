@@ -10,5 +10,14 @@ const { variant = 'inline' } = Astro.props;
  </div>
 </section>
 <script is:inline>
-(function(){var f=document.currentScript.previousElementSibling.querySelector('.sg-form');var t=Date.now();(function c(){if(f.querySelector('iframe'))return;if(Date.now()-t>8000){f.classList.add('bh-failed');return}setTimeout(c,400)})();})();
+(function(){var sec=document.currentScript.previousElementSibling,f=sec.querySelector('.sg-form'),box=f.querySelector('.bh-embed'),t=Date.now();
+// Beehiiv's iframe has a fixed 80px inner padding. On phones we render it wider, then scale it down so it fits the screen exactly (no box wider than the viewport).
+function fit(){var fr=box.querySelector('iframe');if(!fr)return;var st=fr.style;
+ if(window.innerWidth>520){['width','max-width','margin','transform','transform-origin'].forEach(function(k){st.removeProperty(k)});box.style.height='';return}
+ var vw=document.documentElement.clientWidth,left=box.getBoundingClientRect().left,W=vw+58,k=vw/W;
+ st.setProperty('width',W+'px','important');st.setProperty('max-width','none','important');st.setProperty('margin','0','important');
+ st.setProperty('transform-origin','0 0','important');st.setProperty('transform','translate('+(-left)+'px,'+(-62*k)+'px) scale('+k+')','important');
+ var h=fr.offsetHeight;if(h)box.style.height=Math.max(60,(h-62-66)*k)+'px'}
+(function c(){var fr=box.querySelector('iframe');if(fr){fit();try{new ResizeObserver(fit).observe(fr);new MutationObserver(function(){if(!/scale/.test(fr.getAttribute('style')||''))fit()}).observe(fr,{attributes:true,attributeFilter:['style']})}catch(e){}window.addEventListener('resize',fit);return}
+ if(Date.now()-t>8000){f.classList.add('bh-failed');return}setTimeout(c,400)})();})();
 </script>

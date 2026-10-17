@@ -1,0 +1,76 @@
+---
+import GuideArticle from '../layouts/GuideArticle.astro'; import { citer } from '../lib/cite.js'; import { bySlug } from '../lib/data.js';
+const { c, used, U } = citer();
+const oc = bySlug['openclaw']?.stats || {}, hm = bySlug['hermes-agent']?.stats || {};
+const n = x => typeof x === 'number' ? x.toLocaleString('en-US') : U;
+const d = x => x ? new Date(x).toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric',timeZone:'UTC'}) : U;
+const body = `
+<div class="tldr"><p><b>Short answer.</b> Both are free, MIT-licensed agents you host yourself and talk to from chat apps${c('oc','hm2')}. <b>OpenClaw</b> is the bigger project with the most channels and a hardened-config guide, but a long advisory history to keep patched${c('oc','oc-base','oc-adv')}. <b>Hermes Agent</b> is built around memory that turns into reusable skills and five sandbox backends, and its security policy is unusually blunt that the operating system is the only real boundary${c('hm2','hm-sec')}. Choose OpenClaw for breadth of channels and ecosystem; choose Hermes if you want stronger isolation options and a research-lab maintainer.</p></div>
+
+<h2>At a glance</h2>
+<div class="gtable-wrap"><table class="gtab"><thead><tr><th></th><th>OpenClaw</th><th>Hermes Agent</th></tr></thead><tbody>
+<tr><td data-l="" class="nm">Maker</td><td data-l="OpenClaw">OpenClaw Foundation (open source)${c('oc')}</td><td data-l="Hermes">Nous Research (open source)${c('hm2')}</td></tr>
+<tr><td data-l="" class="nm">License and price</td><td data-l="OpenClaw">MIT, free; no hosted tier${c('oc')}</td><td data-l="Hermes">MIT, free; optional Nous Portal tiers (prices ${U}) and optional cloud hosting${c('hm2')}</td></tr>
+<tr><td data-l="" class="nm">Chat channels</td><td data-l="OpenClaw">WhatsApp, Telegram, Slack, iMessage and more (29 listed)${c('oc')}</td><td data-l="Hermes">Telegram, Discord, Slack, WhatsApp, Signal, email, CLI${c('hm2')}</td></tr>
+<tr><td data-l="" class="nm">Memory</td><td data-l="OpenClaw">Persistent memory${c('oc')}</td><td data-l="Hermes">Persistent memory plus auto-generated skills${c('hm2')}</td></tr>
+<tr><td data-l="" class="nm">Scheduling and subagents</td><td data-l="OpenClaw">${U} (not on the homepage)</td><td data-l="Hermes">Natural-language scheduling; isolated subagents${c('hm2')}</td></tr>
+<tr><td data-l="" class="nm">Sandboxing</td><td data-l="OpenClaw">"Full system access" unless you sandbox it; hardened baseline config in the docs${c('oc','oc-base')}</td><td data-l="Hermes">Five backends: local, Docker, SSH, Singularity, Modal${c('hm2')}</td></tr>
+<tr><td data-l="" class="nm">Install</td><td data-l="OpenClaw">Self-hosted on your machine${c('oc')}</td><td data-l="Hermes">Desktop app for macOS and Windows, Linux install${c('hm2')}</td></tr>
+<tr><td data-l="" class="nm">GitHub stars</td><td data-l="OpenClaw">${n(oc.stars)}${c('oc-gh')}</td><td data-l="Hermes">${n(hm.stars)}${c('hm-gh')}</td></tr>
+<tr><td data-l="" class="nm">Latest release</td><td data-l="OpenClaw">${oc.display_version||U} (${d(oc.release_date)})${c('oc-gh')}</td><td data-l="Hermes">${hm.display_version||U} (${d(hm.release_date)})${c('hm-gh')}</td></tr>
+<tr><td data-l="" class="nm">Published security advisories</td><td data-l="OpenClaw">722 (31 Jan–11 Sep 2026)${c('oc-adv')}</td><td data-l="Hermes">0 returned by GitHub${c('hm-adv')}</td></tr>
+<tr><td data-l="" class="nm">Bug bounty</td><td data-l="OpenClaw">${U}</td><td data-l="Hermes">None${c('hm-sec')}</td></tr>
+</tbody></table></div>
+<p>Star counts and versions come from GitHub on our daily refresh (last ${d(hm.fetched_at||oc.fetched_at)}). OpenClaw also records about ${n(oc.npm_last_week)} npm downloads a week; we don't track a comparable download count for Hermes, so it's ${U} here.</p>
+
+<h2>What they're like to use</h2>
+<p>Both live in the chat apps you already use, so you message your agent like a person. OpenClaw leans into everyday life admin: inbox, email, calendar, flight check-in, browsing and filling in forms${c('oc')}. Hermes leans into getting better over time: it keeps memory across conversations, writes its own skills from what it learns, runs scheduled tasks you describe in plain language, and spins up isolated subagents for parallel work${c('hm2')}.</p>
+<p>Neither is a sign-up product. You'll install it, connect a model provider and pay for that model's usage yourself. Hermes offers optional Nous Portal tiers (Free, Plus, Super, Ultra) for model access, but we couldn't verify their prices${c('hm2')}.</p>
+
+<h2>Security: two very different stories</h2>
+<h3>OpenClaw: lots of fixes, good defaults, your responsibility</h3>
+<p>OpenClaw publishes vulnerabilities as GitHub advisories; we counted 722 published between 31 Jan and 11 Sep 2026, 14 of them critical${c('oc-adv')}. Its policy treats one Gateway as one trusted boundary, "not a hostile multi-tenant security boundary"${c('oc-sec')}, and it documents a hardened baseline: local-only Gateway with token auth, a messaging-only tool profile, workspace-only file access and shell execution denied or always-ask${c('oc-base')}. Our <a href="/is-openclaw-safe/">Is OpenClaw safe?</a> guide covers this in detail.</p>
+<h3>Hermes: an honest threat model</h3>
+<p>Hermes's SECURITY.md is refreshingly direct: "The only security boundary against an adversarial LLM is the operating system."${c('hm-sec')} Its approval gate, redaction and allowlists are described as heuristics, not guarantees${c('hm-sec')}. Two details matter in practice:</p>
+<ul>
+<li>The default terminal backend runs on your host, and choosing a sandboxed terminal backend confines only shell and file tools, not code execution, MCP servers, plugins or skills${c('hm-sec')}.</li>
+<li>For untrusted input (web pages, email, several users), the supported setup is to wrap the whole process, using the Docker image or Compose, or NVIDIA OpenShell${c('hm-sec')}.</li>
+</ul>
+<p>On the plus side, API keys and gateway tokens are stripped from subprocess environments by default${c('hm-sec')}. There's no bug bounty${c('hm-sec')}. GitHub returned no published advisories for the repository${c('hm-adv')}; that could mean fewer reported problems or less formal disclosure, and we can't tell which.</p>
+
+<h2>Which should you choose?</h2>
+<ul>
+<li><b>You want the widest choice of chat apps and the biggest community:</b> OpenClaw${c('oc','oc-gh')}.</li>
+<li><b>You want the agent to learn routines and run scheduled briefings:</b> Hermes, with auto-generated skills and natural-language scheduling${c('hm2')}.</li>
+<li><b>You'll feed it untrusted email or web content:</b> either, but in a container. Hermes documents whole-process Docker wrapping as the supported posture${c('hm-sec')}; OpenClaw documents a hardened baseline and an audit command${c('oc-base','oc-sec')}.</li>
+<li><b>Several people will share it:</b> neither is built as a multi-tenant boundary${c('oc-sec','hm-sec')}. Run separate instances per person.</li>
+<li><b>You don't want to run servers:</b> neither. Look at hosted agents in the <a href="/guide/">buyer's guide</a>; prices are on <a href="/pricing/">/pricing</a>.</li>
+</ul>
+
+<h2>Setup checklist for either</h2>
+<ol>
+<li>Run it on a dedicated machine or VM, not your main laptop.</li>
+<li>Use a separate phone number or account for chat channels.</li>
+<li>Start with read-only tools; add sending and shell access one at a time.</li>
+<li>Keep model API keys in the agent's secret store, never in chat.</li>
+<li>Subscribe to release notifications and update weekly.</li>
+</ol>
+<p>The live comparison, updated daily, is at <a href="/compare/openclaw-vs-hermes-agent/">OpenClaw vs Hermes Agent</a>. You can also compare <a href="/compare/openclaw-vs-grok-bot/">OpenClaw with a hosted agent</a>.</p>
+`;
+const faqs = [
+ ['Is Hermes Agent better than OpenClaw?',`Neither is strictly better. OpenClaw has more chat channels and a larger community${c('oc','oc-gh')}; Hermes has auto-generated skills, natural-language scheduling and five sandbox backends${c('hm2')}.`],
+ ['Are OpenClaw and Hermes Agent free?',`Yes, both are MIT-licensed and free${c('oc','hm2')}. You pay for the AI model you connect. Hermes also offers optional Nous Portal tiers whose prices we couldn't verify${c('hm2')}.`],
+ ['Which is more secure, OpenClaw or Hermes?',`It depends on setup. OpenClaw has published 722 advisories and documents a hardened baseline${c('oc-adv','oc-base')}. Hermes says the operating system is the only real security boundary and recommends wrapping the whole process in Docker for untrusted input${c('hm-sec')}.`],
+ ['Can I run Hermes Agent in Docker?',`Yes. Docker is one of its five sandbox backends, and whole-process Docker wrapping is the supported posture for untrusted input${c('hm2','hm-sec')}.`],
+ ['Which chat apps do they support?',`OpenClaw: WhatsApp, Telegram, Slack, iMessage and more${c('oc')}. Hermes: Telegram, Discord, Slack, WhatsApp, Signal, email and CLI${c('hm2')}.`],
+];
+---
+<GuideArticle slug="openclaw-vs-hermes-agent" kicker="Open source"
+ title="OpenClaw vs Hermes Agent (2026): Features, Security & Which to Self-Host | AgentStackWatch"
+ desc="OpenClaw vs Hermes Agent compared: chat channels, memory and skills, sandboxing, security model, advisory history, GitHub activity and real costs of the two biggest self-hosted AI agents."
+ h1="OpenClaw vs Hermes Agent (2026)"
+ dek="The two biggest self-hosted AI agents side by side: what they do, how they handle security, how active they are, and which one fits you."
+ faqs={faqs} used={used}
+ related={[['/compare/openclaw-vs-hermes-agent/','OpenClaw vs Hermes Agent (tracker)'],['/is-openclaw-safe/','Is OpenClaw safe?'],['/compare/openclaw-vs-grok-bot/','OpenClaw vs Grok Bot']]}>
+<Fragment set:html={body}/>
+</GuideArticle>

@@ -1,0 +1,74 @@
+---
+import GuideArticle from '../layouts/GuideArticle.astro'; import { citer } from '../lib/cite.js';
+const { c, used, U } = citer();
+const vol = 1000;
+const body = `
+<div class="tldr"><p><b>Short answer.</b> If you want an AI that answers customers for you, start with a support platform's own agent: Intercom's Fin charges $0.99 per resolved outcome and also works on top of other helpdesks${c('ic-pricing')}; Salesforce shops can use Agentforce, from $2 per conversation${c('sf-agentforce')}. If you want AI that helps your human team reply faster, a copilot or a general agent (ChatGPT's Zendesk plugin, Grok Bot) is cheaper and lower-risk${c('oai-rn','gb-page')}.</p></div>
+
+<h2>Two different jobs</h2>
+<p>"AI for customer support" means one of two things, and they're priced and risked differently:</p>
+<ul>
+<li><b>Customer-facing agents</b> talk to your customers directly in chat, email or phone, answer from your help center, take simple actions and hand off to a person when stuck. Intercom says Fin answers email, live chat, phone and more, takes actions on external systems, and hands off to agents in your preferred inbox${c('ic-pricing')}.</li>
+<li><b>Agent-assist tools</b> sit beside your support team: they summarize tickets, find the right article and draft a reply a human sends. Intercom Copilot${c('ic-pricing')}, the ChatGPT Zendesk plugin${c('oai-rn')} and general agents like Grok Bot${c('gb-page')} fall here.</li>
+</ul>
+<p>The best evidence so far is for the second kind. A study of 5,179 customer support agents found that access to an AI assistant raised issues resolved per hour by 14% on average and 34% for novice and lower-skilled workers, with minimal impact on the most experienced, and improved customer sentiment and retention${c('nber-genai')}.</p>
+
+<h2>The options, with prices</h2>
+<div class="gtable-wrap"><table class="gtab"><thead><tr><th>Option</th><th>Type</th><th>Price</th><th>Good to know</th></tr></thead><tbody>
+<tr><td data-l="Option" class="nm">Intercom Fin AI Agent</td><td data-l="Type">Customer-facing</td><td data-l="Price">$0.99 per outcome${c('ic-pricing')}</td><td data-l="Good to know">Works with your current helpdesk (Salesforce and others) with no seats, but a minimum monthly commitment applies (e.g. 50 outcomes)${c('ic-pricing')}</td></tr>
+<tr><td data-l="Option" class="nm">Intercom helpdesk + Fin</td><td data-l="Type">Platform</td><td data-l="Price">$29, $85 or $132 per seat/mo billed annually, plus Fin outcomes${c('ic-pricing')}</td><td data-l="Good to know">SSO and HIPAA support on Expert; 14-day free trial${c('ic-pricing')}</td></tr>
+<tr><td data-l="Option" class="nm">Intercom Copilot</td><td data-l="Type">Agent-assist</td><td data-l="Price">$29/agent/mo annual, $35 monthly${c('ic-pricing')}</td><td data-l="Good to know">10 free Copilot conversations per agent each month${c('ic-pricing')}</td></tr>
+<tr><td data-l="Option" class="nm">Salesforce Agentforce</td><td data-l="Type">Customer-facing and employee</td><td data-l="Price">$2 per conversation, or Flex Credits at $500 per 100,000; $125/user/mo add-ons${c('sf-agentforce')}</td><td data-l="Good to know">An action costs 20 credits ($0.10); voice actions 30; you can't mix Flex Credits and Conversations in one org${c('sf-agentforce')}</td></tr>
+<tr><td data-l="Option" class="nm">ChatGPT + Zendesk plugin</td><td data-l="Type">Agent-assist</td><td data-l="Price">Included in your ChatGPT plan (beta)${c('oai-rn')}</td><td data-l="Good to know">Reviews tickets and customer history, finds knowledge, prepares replies; each member connects their own Zendesk account${c('oai-rn')}</td></tr>
+<tr><td data-l="Option" class="nm">Grok Bot</td><td data-l="Type">Agent-assist / back office</td><td data-l="Price">$30/seat/mo (Premium)${c('gb-pricing2')}</td><td data-l="Good to know">Works inside any app you log it into, including Zendesk, on its own cloud computer${c('gb-page')}</td></tr>
+</tbody></table></div>
+<p>Zendesk's own AI agent pricing and Freshdesk's: ${U} (not checked for this guide). Get a quote from your current helpdesk before switching platforms.</p>
+
+<h2>What it costs at your volume</h2>
+<p>Take ${vol.toLocaleString('en-US')} conversations a month the AI handles end to end. On Fin that's about <b>$${(vol*0.99).toLocaleString('en-US')}</b> a month if every one counts as an outcome${c('ic-pricing')}. On Agentforce's per-conversation pricing it's <b>$${(vol*2).toLocaleString('en-US')}</b>${c('sf-agentforce')}. The units differ: Fin charges only when the customer confirms it's resolved, doesn't ask for more help, or a workflow completes${c('ic-pricing')}, while Agentforce Conversations bill per conversation. Salesforce's own example puts 20 "where is my order?" requests a day at about $120 a month on Flex Credits${c('sf-agentforce')}.</p>
+<p>Compare that with what a resolved ticket costs you today in staff time. If the AI's price per resolution is well below it and customers aren't complaining, it's paying for itself. More on this in <a href="/are-ai-agents-worth-it-for-business/">Are AI agents worth it for business?</a></p>
+
+<h2>Which should you pick?</h2>
+<h3>You already use Intercom, or a helpdesk without good AI</h3>
+<p>Fin is the simplest test: it runs on Intercom or on top of other helpdesks, you pay per outcome, and the startup programme offers up to 93% off${c('ic-pricing')}.</p>
+<h3>You're on Salesforce Service Cloud</h3>
+<p>Agentforce keeps the agent inside your CRM data. Start with the free Foundations tier to build, then choose Flex Credits or Conversations${c('sf-agentforce')}.</p>
+<h3>You're a small team and want help, not a bot</h3>
+<p>Give your team an assistant first. ChatGPT Business or Claude Team cost $20–25 a seat${c('oai-biz2','cl-team2')}, and ChatGPT's Zendesk plugin drafts replies from ticket history${c('oai-rn')}. That's the pattern the productivity research measured${c('nber-genai')}.</p>
+
+<h2>Safety: customers will test it</h2>
+<ul>
+<li><b>Anyone can type anything.</b> A customer-facing agent reads untrusted text all day. OpenAI warns that agents can be tricked by malicious content into unintended actions (prompt injection) and that safeguards "don't eliminate all risks"${c('oai-agent2')}. Give it read-only access to orders, not refunds, until you've watched it work.</li>
+<li><b>Always offer a human.</b> Pick a tool that hands off cleanly; Fin hands off to your team's inbox${c('ic-pricing')}.</li>
+<li><b>Start with your help center.</b> Answers are only as good as your articles. Fix the top 20 first.</li>
+<li><b>Watch costs weekly.</b> Usage pricing has no natural cap; Salesforce provides usage alerts in Digital Wallet${c('sf-agentforce')}.</li>
+<li><b>Regulated data?</b> Intercom lists HIPAA support only on its Expert plan${c('ic-pricing')}.</li>
+</ul>
+
+<h2>A two-week pilot</h2>
+<ol>
+<li>Pick your 10 most common questions and make sure each has an accurate help article.</li>
+<li>Turn the AI on for one channel (usually chat) during staffed hours only.</li>
+<li>Read every AI conversation for the first week. Note wrong answers and fix the source article.</li>
+<li>Compare resolution rate, customer rating and cost per resolution with the month before.</li>
+<li>Expand only if all three hold up.</li>
+</ol>
+<p>For general AI assistants for your whole team, see the <a href="/best-ai-agent-for-small-business/">small-business guide</a> and the <a href="/guide/">buyer's guide</a>.</p>
+`;
+const faqs = [
+ ['What is the best AI agent for customer support?',`For customer-facing automation, a helpdesk's own agent: Intercom Fin ($0.99 per outcome, works with other helpdesks)${c('ic-pricing')} or Salesforce Agentforce for Salesforce users${c('sf-agentforce')}. For helping your human team, an assistant like Intercom Copilot or ChatGPT with the Zendesk plugin${c('ic-pricing','oai-rn')}.`],
+ ['How much does an AI customer support agent cost?',`Usually per resolution or per conversation: Fin is $0.99 per outcome${c('ic-pricing')}; Agentforce is $2 per conversation, or $0.10 per action on Flex Credits${c('sf-agentforce')}.`],
+ ['Do AI agents actually improve customer support?',`A study of 5,179 support agents found AI assistance raised issues resolved per hour by 14% on average and 34% for novices, and improved customer sentiment${c('nber-genai')}. That was an assistant for human agents, not a fully autonomous bot.`],
+ ['Can an AI agent replace my support team?',`Not fully. Customer-facing agents handle routine questions and hand off the rest; Fin, for example, hands off to your team's inbox${c('ic-pricing')}. The research benefit came from helping people, not replacing them${c('nber-genai')}.`],
+ ['Is it safe to let an AI answer customers?',`With limits. Agents can be manipulated by malicious input (prompt injection)${c('oai-agent2')}. Keep actions read-only at first, always offer a human, and review conversations weekly.`],
+];
+---
+<GuideArticle slug="best-ai-agent-for-customer-support" kicker="Customer support"
+ title="Best AI Agent for Customer Support (2026): Fin, Agentforce & More | AgentStackWatch"
+ desc="The best AI agent for customer support in 2026: Intercom Fin, Salesforce Agentforce, Intercom Copilot, ChatGPT's Zendesk plugin and Grok Bot compared on price per resolution, safety and what the research shows."
+ h1="The best AI agent for customer support (2026)"
+ dek="Customer-facing bots vs assistants for your support team: what each costs per resolution or seat, what the research says works, and how to pilot one without upsetting customers."
+ faqs={faqs} used={used}
+ related={[['/compare/grok-bot-vs-chatgpt-dots/','Grok Bot vs ChatGPT dots'],['/compare/chatgpt-dots-vs-claude-app/','ChatGPT vs Claude'],['/compare/manus-vs-lindy/','Manus vs Lindy']]}>
+<Fragment set:html={body}/>
+</GuideArticle>

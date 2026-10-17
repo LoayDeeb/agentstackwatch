@@ -4,4 +4,4 @@ import { all, CATS } from '../../lib/data.js';
 export function getStaticPaths(){ return Object.keys(CATS).map(cat=>({params:{cat}})); }
 const { cat } = Astro.params; const c = CATS[cat];
 ---
-<Base title={`${c.name} — AgentStackWatch`} desc={c.blurb} og="tracker"><header class="pagehead"><p class="kicker"><a href="/tracker/">Tracker</a></p><h1>{c.name}</h1><p class="dek">{c.blurb}</p></header><TrackerTable list={all.filter(e=>e.category===cat)}/></Base>
+<Base title={`${c.name} — AgentStackWatch`} desc={c.blurb}><header class="pagehead"><p class="kicker"><a href="/tracker/">Tracker</a></p><h1>{c.name}</h1><p class="dek">{c.blurb}</p></header><TrackerTable list={all.filter(e=>e.category===cat)}/></Base>

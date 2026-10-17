@@ -1,0 +1,77 @@
+---
+import GuideArticle from '../layouts/GuideArticle.astro'; import { citer } from '../lib/cite.js';
+const { c, used, U } = citer();
+// Worked example (illustrative inputs, not data): a $25/month seat vs time saved at a given hourly cost.
+const seat = 25, rate = 40, hrs = seat / rate;
+const fmt = x => x.toLocaleString('en-US',{maximumFractionDigits:1});
+const body = `
+<div class="tldr"><p><b>Short answer.</b> Usually yes for the cheap version, and only sometimes for the expensive one. A $20–30 a seat assistant pays for itself if it saves each person about an hour a month${c('oai-biz2','cl-team2')}. The best independent study we know of, of 5,179 support agents, found a 14% productivity gain on average and 34% for newer staff${c('nber-genai')}. Fully autonomous agents priced per action or outcome can be worth it too, but only where you can measure the result and keep a human in the loop for anything risky.</p></div>
+
+<h2>What the evidence says</h2>
+<p>Most "ROI" numbers you'll see come from vendors. Treat them as marketing. Intercom, for example, quotes customers reporting a 50% resolution rate and a 96% cut in resolution time${c('ic-pricing')}; those are real testimonials, but they are chosen by the seller.</p>
+<p>The strongest independent evidence is the study "Generative AI at Work" by Erik Brynjolfsson, Danielle Li and Lindsey Raymond, published in the <i>Quarterly Journal of Economics</i> in 2025${c('nber-genai')}. Looking at 5,179 customer support agents, it found that an AI assistant:</p>
+<ul>
+<li>raised issues resolved per hour by <b>14%</b> on average${c('nber-genai')};</li>
+<li>helped novice and lower-skilled workers most, at <b>34%</b>, with minimal impact on experienced, highly skilled workers${c('nber-genai')};</li>
+<li>improved customer sentiment and employee retention${c('nber-genai')}.</li>
+</ul>
+<p>Two lessons follow. AI that <i>helps</i> people has the best track record. And the gains are biggest where people are still learning the job. Good, independent evidence on fully autonomous agents running business processes end to end: ${U}. We haven't found a study of the same quality.</p>
+
+<h2>What agents actually cost</h2>
+<div class="gtable-wrap"><table class="gtab"><thead><tr><th>Type</th><th>Typical price</th><th>Examples</th></tr></thead><tbody>
+<tr><td data-l="Type" class="nm">Assistant per seat</td><td data-l="Typical price">$20–25 per person per month</td><td data-l="Examples">ChatGPT Business, Claude Team${c('oai-biz2','cl-team2')}; Gemini Enterprise from $21${c('g-ent')}; Microsoft 365 Copilot $21 add-on${c('ms-price')}</td></tr>
+<tr><td data-l="Type" class="nm">Always-on agent</td><td data-l="Typical price">$30–200 per person per month</td><td data-l="Examples">Grok Bot $30/$100/$200 per seat${c('gb-pricing2')}; ChatGPT Pro with a dot $100 or $200${c('oai-rn')}; Lindy from $29.99${c('ly')}</td></tr>
+<tr><td data-l="Type" class="nm">Per outcome or action</td><td data-l="Typical price">$0.10–2 each</td><td data-l="Examples">Intercom Fin $0.99 per outcome${c('ic-pricing')}; Agentforce $0.10 per action or $2 per conversation${c('sf-agentforce')}</td></tr>
+<tr><td data-l="Type" class="nm">Self-hosted</td><td data-l="Typical price">$0 software, plus model usage and your time</td><td data-l="Examples">OpenClaw, Hermes Agent (MIT)${c('oc','hm2')}</td></tr>
+</tbody></table></div>
+<p>Hidden costs to budget for: setup time, someone to own it, cleaning up the help articles or data it relies on, and usage beyond the included limits. ChatGPT Business and Claude Team both sell extra credits${c('oai-biz2','cl-team2')}; Lindy pauses when credits run out until you top up at $10 per 1,000${c('ly')}; unused Agentforce Flex Credits don't roll over${c('sf-agentforce')}.</p>
+
+<h2>A break-even you can run yourself</h2>
+<p>This is an illustration with made-up inputs; plug in your own. Say a seat costs <b>$${seat}</b> a month and an hour of the person's time costs you <b>$${rate}</b>. The seat pays for itself if it saves <b>${fmt(hrs*60)} minutes</b> a month (that's $${seat} ÷ $${rate}). If it saves an hour a week, about 4.3 hours a month, you get back roughly $${fmt(4.3*rate)} for a $${seat} spend.</p>
+<p>For per-outcome pricing, compare cost per resolution. If a ticket handled by a person costs you $6 in time and the AI resolves it for $0.99${c('ic-pricing')}, each resolution saves about $5, <i>provided the customer really was helped</i>. Check customer ratings, not just resolution counts.</p>
+<p>The question isn't really "is AI worth $25?" It's "will people actually use it every week?" A seat nobody opens is worth nothing. Start monthly, measure use, then switch to annual (about 20% cheaper on ChatGPT and Claude seats${c('oai-biz2','cl-team2')}).</p>
+
+<h2>Where agents are worth it</h2>
+<ul>
+<li><b>High-volume, repetitive questions</b> with good written answers, such as support FAQs. See the <a href="/best-ai-agent-for-customer-support/">customer support guide</a>.</li>
+<li><b>First drafts</b>: emails, proposals, reports, slides. A person still reviews.</li>
+<li><b>Research and summaries</b> of many sources. See the <a href="/ai-agent-for-research/">research guide</a>.</li>
+<li><b>Newer staff</b>, where the study found the biggest gains${c('nber-genai')}.</li>
+<li><b>Admin glue</b>: inbox triage, scheduling, CRM updates. See <a href="/ai-agent-for-email-and-calendar/">email and calendar</a> and <a href="/best-ai-agent-for-sales-and-crm/">sales and CRM</a>.</li>
+</ul>
+
+<h2>Where they're not (yet)</h2>
+<ul>
+<li><b>Anything irreversible without review</b>: payments, contracts, deleting data. OpenAI warns agents can be manipulated by hidden instructions on web pages and in email (prompt injection), and that safeguards don't remove all risk${c('oai-agent2')}.</li>
+<li><b>Work you can't measure.</b> If you can't tell whether the output is right, you can't tell whether it's worth it.</li>
+<li><b>Self-hosting without a technical owner.</b> OpenClaw, for example, has published hundreds of security advisories this year that someone has to keep patched${c('oc-adv')}. See <a href="/is-openclaw-safe/">Is OpenClaw safe?</a></li>
+<li><b>Experts who are already fast.</b> The study found minimal gains for the most experienced, highly skilled workers${c('nber-genai')}.</li>
+</ul>
+
+<h2>A 30-day test</h2>
+<ol>
+<li>Pick one workflow and one measure (tickets per hour, hours on reports, reply rate).</li>
+<li>Record the current number for two weeks.</li>
+<li>Buy monthly seats for the people who do that work, minimum two on most business plans${c('oai-biz2','cl-team2')}.</li>
+<li>Train them for an hour: what to delegate, what to check.</li>
+<li>After 30 days, compare. Keep it if the gain beats the cost and quality held; otherwise cancel.</li>
+</ol>
+<p>Choosing a tool? Start with the <a href="/guide/">buyer's guide</a>, compare <a href="/compare/chatgpt-dots-vs-claude-app/">ChatGPT vs Claude</a> or <a href="/compare/grok-bot-vs-chatgpt-dots/">Grok Bot vs ChatGPT dots</a>, and see every price on <a href="/pricing/">/pricing</a>.</p>
+`;
+const faqs = [
+ ['Are AI agents worth it for small businesses?',`Usually, at the $20–25 a seat level${c('oai-biz2','cl-team2')}: a seat pays for itself if it saves each person roughly an hour a month at typical staff costs. Run a 30-day test with one measurable workflow.`],
+ ['What is the ROI of AI agents?',`Independent evidence is limited. The best study we know of found a 14% average productivity gain for support agents with an AI assistant, and 34% for novices${c('nber-genai')}. Vendor ROI figures are testimonials, not studies.`],
+ ['How much does an AI agent cost a business?',`$20–25 per person per month for assistants${c('oai-biz2','cl-team2')}, $30–200 for always-on agents${c('gb-pricing2','oai-rn')}, or $0.10–2 per action or outcome for customer-facing agents${c('sf-agentforce','ic-pricing')}.`],
+ ['When are AI agents not worth it?',`When the work is irreversible without review, can't be measured, or is done by experts who are already fast${c('nber-genai')}. Also when nobody owns the tool, especially self-hosted ones that need patching${c('oc-adv')}.`],
+ ['Do AI agents replace employees?',`The strongest evidence shows them making people more productive, especially newer staff, rather than replacing them${c('nber-genai')}.`],
+];
+---
+<GuideArticle slug="are-ai-agents-worth-it-for-business" kicker="ROI"
+ title="Are AI Agents Worth It for Business? Costs, Evidence & a Break-Even (2026) | AgentStackWatch"
+ desc="Are AI agents worth it for your business in 2026? What independent research shows, what agents really cost per seat and per outcome, a break-even you can run on your numbers, and when they're not worth it."
+ h1="Are AI agents worth it for business?"
+ dek="What the independent evidence shows, what agents really cost, a simple break-even you can run on your own numbers, and where they still aren't worth it."
+ faqs={faqs} used={used}
+ related={[['/compare/chatgpt-dots-vs-claude-app/','ChatGPT vs Claude'],['/compare/grok-bot-vs-chatgpt-dots/','Grok Bot vs ChatGPT dots'],['/compare/manus-vs-lindy/','Manus vs Lindy']]}>
+<Fragment set:html={body}/>
+</GuideArticle>

@@ -1,0 +1,67 @@
+---
+import GuideArticle from '../layouts/GuideArticle.astro'; import { citer } from '../lib/cite.js';
+const { c, used, U } = citer();
+const body = `
+<div class="tldr"><p><b>Short answer.</b> "ChatGPT agent" no longer exists as a separate mode: OpenAI's help article now says it "is no longer available" and points to ChatGPT Work for longer, multi-step tasks${c('oai-agent2')}. So the real comparison is <b>ChatGPT Work (and dots) vs Manus</b>. Pick ChatGPT if you already pay for it and live in Gmail, Outlook or Office; pick Manus if you want finished deliverables (research, slides, websites) on a cheap credit plan and many tasks running at once${c('oai-rn','mn-pricing2')}.</p></div>
+
+<h2>What happened to ChatGPT agent?</h2>
+<p>ChatGPT agent was OpenAI's mode for doing tasks on a virtual computer: browsing, filling forms, running code. Operator was folded into it${c('oai-agent2')}. It had monthly caps (40 messages on Plus, 400 on Pro, 40 on Business and Enterprise) and safeguards such as asking for confirmation before high-impact actions, monitoring for prompt injection, a "watch mode" on sensitive sites and a takeover mode for logins${c('oai-agent2')}.</p>
+<p>Today it's retired. Its successor, <b>ChatGPT Work</b>, researches, works across connected apps and files, and creates documents, spreadsheets, presentations, reports and Sites, asking you to approve important actions${c('oai-rn')}. For work that keeps going on its own, OpenAI added <b>dots</b>: always-on agents with their own cloud computer that keep making progress between conversations${c('oai-rn')}. If you searched for "ChatGPT agent vs Manus", this is what you'd use now.</p>
+
+<h2>Side by side</h2>
+<div class="gtable-wrap"><table class="gtab"><thead><tr><th></th><th>ChatGPT (Work, dots)</th><th>Manus</th></tr></thead><tbody>
+<tr><td data-l="" class="nm">Entry price</td><td data-l="ChatGPT">Plus $20/mo${c('oai-rn')}; Business $20/seat annual or $25 monthly${c('oai-biz2')}</td><td data-l="Manus">Free tier with 300 daily refresh credits; Pro from $20/mo (4,000 credits)${c('mn-pricing2')}</td></tr>
+<tr><td data-l="" class="nm">Heavier use</td><td data-l="ChatGPT">Pro $100 or $200/mo, includes a dot${c('oai-rn')}</td><td data-l="Manus">Pro $40/mo (8,000 credits, 7-day trial)${c('mn-pricing2')}</td></tr>
+<tr><td data-l="" class="nm">Teams</td><td data-l="ChatGPT">Business: min. 2 seats, Premium seats $100–125${c('oai-biz2')}</td><td data-l="Manus">Team from $20/seat/mo with SSO, analytics, access control${c('mn-pricing2')}</td></tr>
+<tr><td data-l="" class="nm">Parallel tasks</td><td data-l="ChatGPT">${U} (no published number)</td><td data-l="Manus">1 on Free, 20 on Pro${c('mn-pricing2')}</td></tr>
+<tr><td data-l="" class="nm">Scheduled work</td><td data-l="ChatGPT">Scheduled tasks; dots keep working between chats${c('oai-pricing','oai-rn')}</td><td data-l="Manus">2 scheduled automations on Free, 20 on Pro${c('mn-pricing2')}</td></tr>
+<tr><td data-l="" class="nm">Deliverables</td><td data-l="ChatGPT">Docs, spreadsheets, presentations, reports, Sites${c('oai-rn')}</td><td data-l="Manus">Advanced research, slides, website deployment, Wide Research${c('mn-pricing2')}</td></tr>
+<tr><td data-l="" class="nm">Your apps</td><td data-l="ChatGPT">Gmail, Outlook, Google Calendar, Office and many plugins${c('oai-rn')}</td><td data-l="Manus">${U} (no connector list on the pages we checked)</td></tr>
+<tr><td data-l="" class="nm">Training on your data</td><td data-l="ChatGPT">Business: no${c('oai-biz2')}; Plus/Pro: your "Improve the model" setting${c('oai-agent2')}</td><td data-l="Manus">Opt-out listed as a Team feature${c('mn-pricing2')}; individual default ${U}</td></tr>
+<tr><td data-l="" class="nm">Certifications</td><td data-l="ChatGPT">Business: SOC 2 Type 2${c('oai-privacy')}</td><td data-l="Manus">SOC 2 Type 1 and Type 2, ISO 27001:2022, ISO 27701:2019${c('mn-sec2')}</td></tr>
+</tbody></table></div>
+
+<h2>Price: seats vs credits</h2>
+<p>ChatGPT charges a flat subscription with usage limits; Business workspaces can buy credits beyond the included limits${c('oai-biz2')}. Manus runs on credits: Free refreshes 300 a day, Pro gives 4,000 or 8,000 a month, and annual billing is 17% off${c('mn-pricing2')}. Manus says its older Basic and Plus plans were renamed Pro${c('mn-pricing2')}. How many credits a typical task uses is ${U}: it depends on the job, so run your real tasks during the trial and watch the meter.</p>
+<p>For one person, both start around $20 a month. ChatGPT's extra value is that the same subscription also covers chat, writing, Office extensions and email drafting${c('oai-rn')}. Manus's extra value is volume: up to 20 tasks at once on Pro${c('mn-pricing2')}.</p>
+
+<h2>What each is better at</h2>
+<h3>ChatGPT Work: your existing tools</h3>
+<p>ChatGPT works inside the apps you already use. With Gmail or Outlook connected it drafts email and you choose to send; the Outlook apps also handle shared mailboxes and calendars${c('oai-rn')}. There are extensions for Word, Excel, PowerPoint and Google Sheets${c('oai-rn')}. If the job is "go through my inbox and update this spreadsheet", ChatGPT is the better fit.</p>
+<h3>Manus: finished deliverables, many at once</h3>
+<p>Manus is built for jobs you hand off and come back to: advanced research, slide decks, deploying a website, and Wide Research for large batches${c('mn-pricing2')}. If the job is "research 40 competitors and give me a deck", Manus's parallel tasks and credit pricing are appealing. Manus also sells a separate phone-number subscription called Cue${c('mn-pricing2')}.</p>
+
+<h2>Safety and privacy</h2>
+<ul>
+<li><b>Prompt injection applies to both.</b> OpenAI warns that agents working on websites can be tricked by hidden instructions, and that safeguards reduce but don't eliminate the risk${c('oai-agent2')}. The same risk applies to any agent that browses, including Manus. Give either one only the logins the task needs.</li>
+<li><b>Paper trail.</b> Manus publishes SOC 2 Type 1 and 2 and two ISO certifications, plus penetration testing, and says customer data is deleted when you leave${c('mn-sec2')}. ChatGPT Business lists SOC 2 Type 2 and doesn't train on workspace data${c('oai-privacy','oai-biz2')}.</li>
+<li><b>Admin controls.</b> ChatGPT workspaces can block sites for agent work${c('oai-agent2')}. Manus Team adds SSO, access control and a data-training opt-out${c('mn-pricing2')}.</li>
+<li><b>Check outputs.</b> ChatGPT's agent outputs included source links${c('oai-agent2')}; whatever you use, open the sources before you rely on the result.</li>
+</ul>
+
+<h2>Which should you choose?</h2>
+<ul>
+<li><b>You already pay for ChatGPT:</b> try ChatGPT Work first. No new vendor, and it reaches your email and Office files.</li>
+<li><b>You need lots of research or decks fast:</b> try Manus Pro at $20 and see how far 4,000 credits go${c('mn-pricing2')}.</li>
+<li><b>You need an agent running 24/7:</b> ChatGPT dots (Pro or Business Premium)${c('oai-rn')} or another always-on agent; see <a href="/compare/grok-bot-vs-chatgpt-dots/">Grok Bot vs ChatGPT dots</a>.</li>
+<li><b>Team with security review:</b> both have certifications; Manus lists ISO 27001 and 27701 as well as SOC 2${c('mn-sec2')}, ChatGPT Business SOC 2 Type 2${c('oai-privacy')}.</li>
+</ul>
+<p>The full side-by-side tracker is at <a href="/compare/manus-vs-chatgpt-dots/">Manus vs ChatGPT dots</a>; prices for every agent are on <a href="/pricing/">/pricing</a>.</p>
+`;
+const faqs = [
+ ['Is ChatGPT agent still available?',`No. OpenAI's help article says ChatGPT agent is no longer available and to use ChatGPT Work for longer, multi-step tasks${c('oai-agent2')}.`],
+ ['Is Manus better than ChatGPT?',`For hand-off deliverables like research reports, slides and websites, with many tasks in parallel, Manus is strong${c('mn-pricing2')}. For working inside Gmail, Outlook and Office, ChatGPT is the better fit${c('oai-rn')}.`],
+ ['How much does Manus cost compared with ChatGPT?',`Manus has a free tier and Pro from $20/month for 4,000 credits${c('mn-pricing2')}. ChatGPT Plus is $20/month and Pro $100 or $200${c('oai-rn')}.`],
+ ['Is Manus safe to use for work?',`Manus lists SOC 2 Type 1 and Type 2, ISO 27001 and ISO 27701 and regular penetration testing${c('mn-sec2')}. The training opt-out is listed as a Team plan feature${c('mn-pricing2')}.`],
+ ['What replaced ChatGPT Operator?',`Operator was folded into ChatGPT agent${c('oai-agent2')}, which has itself been replaced by ChatGPT Work${c('oai-agent2')}.`],
+];
+---
+<GuideArticle slug="chatgpt-agent-vs-manus" kicker="Head to head"
+ title="ChatGPT Agent vs Manus (2026): What Replaced Agent Mode, and Which to Pick | AgentStackWatch"
+ desc="ChatGPT agent is retired; ChatGPT Work and dots replaced it. How they compare with Manus on price, credits, parallel tasks, deliverables, privacy and certifications, with sources."
+ h1="ChatGPT agent vs Manus (2026)"
+ dek="OpenAI retired agent mode and replaced it with ChatGPT Work and dots. Here's how today's ChatGPT compares with Manus on price, credits, deliverables and safety."
+ faqs={faqs} used={used}
+ related={[['/compare/manus-vs-chatgpt-dots/','Manus vs ChatGPT dots'],['/compare/manus-vs-lindy/','Manus vs Lindy'],['/compare/grok-bot-vs-chatgpt-dots/','Grok Bot vs ChatGPT dots']]}>
+<Fragment set:html={body}/>
+</GuideArticle>
