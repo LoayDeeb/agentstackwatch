@@ -1,0 +1,26 @@
+---
+import Base from '../layouts/Base.astro';
+import { all, PAIRS, CATS } from '../lib/data.js';
+const tracked = all.length, pairs = PAIRS.length, cats = Object.keys(CATS).length;
+const mail = 'mailto:loay@motqenai.com?subject=Sponsoring%20AgentStackWatch';
+---
+<Base title="Sponsor AgentStackWatch" desc="Reach founders, executives, operators and developers who are choosing personal AI agents. Newsletter slots, featured listings and sponsored hands-on tests.">
+<header class="pagehead"><p class="kicker">Advertise</p><h1>Sponsor AgentStackWatch</h1><p class="dek">Put your product in front of people who are deciding which AI agents to trust with their work.</p></header>
+
+<div class="panel"><h2>Who reads it</h2>
+<p>AgentStackWatch is written for people adopting personal AI agents, not just building them:</p>
+<ul><li><b>Founders and executives</b> deciding which assistant or agent to hand their inbox, calendar and research to.</li>
+<li><b>Operators</b> rolling agents out to a team and comparing price, reliability and what changed this week.</li>
+<li><b>Developers</b> choosing the frameworks and platforms underneath.</li></ul>
+<p class="muted">We're a new publication, so we won't quote audience numbers we don't have yet. Here is what we do have: {tracked} products tracked daily from official sources, {pairs} side-by-side compare pages, and {cats} tracker categories.</p></div>
+
+<div class="cats">
+<div class="catcard"><h3>Newsletter primary slot</h3><p class="muted">One sponsor per issue, at the top of the weekly digest. Short, plain copy and a link, labelled "Sponsor".</p></div>
+<div class="catcard"><h3>Featured listing</h3><p class="muted">A clearly labelled "Featured" placement on the tracker and on relevant compare pages.</p></div>
+<div class="catcard"><h3>Sponsored hands-on test</h3><p class="muted">We use your product for real tasks and write up what worked and what didn't. You pay for our time, not our opinion.</p></div>
+</div>
+
+<div class="panel"><p><b>Editorial independence:</b> sponsors never see or approve reviews before publication. Paid placement never changes tracker data, stats, rankings or comparisons, and every sponsored item is labelled.</p>
+<p><b>Launch pricing, ask us.</b> Early sponsors get launch rates while the audience grows.</p>
+<p><a class="btn" href={mail}>Email loay@motqenai.com</a></p></div>
+</Base>
