@@ -1,0 +1,15 @@
+---
+import Base from '../../layouts/Base.astro'; import Signup from '../../components/Signup.astro'; import { PAIRS, bySlug } from '../../lib/data.js';
+const u=v=>(v==null||v==='unknown')?'unknown':String(v);
+const pairs = PAIRS.filter(([a,b])=>bySlug[a]&&bySlug[b]).map(([a,b])=>({a:bySlug[a],b:bySlug[b],href:`/compare/${a}-vs-${b}/`}));
+const groupOf = p => p.a.category==='personal'||p.b.category==='personal' ? 'personal' : (p.a.category==='managed'||p.b.category==='managed') ? 'managed' : 'frameworks';
+const groups = [['personal','AI assistants for you and your team','ChatGPT, Claude, Grok Bot, Gemini, Manus and more: what each costs and what you get.'],['managed','Platforms for businesses running their own agents','Cloud services companies use to host and run agents.'],['frameworks','Tools for developers building agents','Open-source building blocks, compared on popularity and how often they ship.']];
+---
+<Base title="AI agent comparisons: ChatGPT vs Claude, Grok Bot vs Gemini & more | AgentStackWatch" desc={`${pairs.length} side-by-side AI agent comparisons: personal assistants like ChatGPT, Claude, Grok Bot, Gemini and Manus, plus business agent platforms. Prices and facts linked to official sources, updated daily.`}>
+<header class="pagehead"><p class="kicker">Compare</p><h1>AI agents, side by side</h1><p class="dek">Pick two and see price, maker and what's changed lately in one table. Every fact links to the company's own page and the data refreshes daily. We don't pick winners. Not sure where to start? Read the <a href="/guide/">buyer's guide</a> first.</p></header>
+{groups.map(([g,label,blurb])=>{const list=pairs.filter(p=>groupOf(p)===g); return list.length>0 && <section class="wk"><h2>{label}</h2><p class="muted">{blurb}</p><table class="ptab"><thead><tr><th>Comparison</th><th>Price at a glance</th></tr></thead><tbody>
+{list.map(p=> <tr><td class="nm"><a href={p.href}>{p.a.name} vs {p.b.name}</a><small>{u(p.a.maker)} · {u(p.b.maker)}</small></td><td><small>{p.a.name}: {u(p.a.pricing).slice(0,90)}</small><small>{p.b.name}: {u(p.b.pricing).slice(0,90)}</small></td></tr>)}
+</tbody></table></section>})}
+<Signup variant="feature"/>
+<p class="muted small">Want a pair we don't cover yet? See every product on the <a href="/tracker/">tracker</a> or all plans on the <a href="/pricing/">pricing page</a>.</p>
+</Base>

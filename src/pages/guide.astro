@@ -145,6 +145,7 @@ const money = n => n==null?'—':n===0?'$0':'$'+(Number.isInteger(n)?n:n.toFixed
 <li>Credit-based plans (Manus, Lindy) can cost more than the seat price for heavy users<span set:html={c('mn-pricing','ly')}/>.</li></ul></section>
 
 <section id="compare" class="gsec"><p class="kicker">Full comparison</p><h2>What each agent can do on your behalf</h2>
+<p class="muted small">Want two side by side? See <a href="/compare/">head-to-head comparisons</a>, like <a href="/compare/chatgpt-dots-vs-claude-app/">ChatGPT vs Claude</a>.</p>
 <div class="gtable-wrap"><table class="gtab"><thead><tr><th>Agent</th><th>Browse</th><th>Email</th><th>Calendar</th><th>Files</th><th>Computer</th></tr></thead><tbody>
 {capm.map(([n,...r])=> <tr><td data-l="Agent" class="nm">{n}</td>{r.map((v,i)=> <td data-l={['Browse','Email','Calendar','Files','Computer'][i]} set:html={v}/>)}</tr>)}
 </tbody></table></div></section>

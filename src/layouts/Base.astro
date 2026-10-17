@@ -18,7 +18,7 @@ const nav=[['/','Home'],['/guide/',"Buyer's Guide"],['/posts/','Writing'],['/lan
 </div></header>
 <main class={wide?'shell':'shell'} data-pagefind-body><slot/></main>
 <footer class="foot"><div class="shell frow"><div><a class="brand" href="/">AgentStack<i>Watch</i></a><p>An independent publication on the AI agent stack.<br/>Every tracker fact links to a source. Unverified fields read <em>unknown</em>.</p></div>
-<div class="fl"><a href="/posts/">Writing</a><a href="/landscape/">Landscape</a><a href="/tracker/">Tracker</a><a href="/changes/">Changes</a><a href="/pricing/">Pricing</a><a href="/breaking/">Breaking changes</a><a href="/featured/">Featured listings</a><a href="/sponsor/">Sponsor</a><a href="/rss.xml">RSS</a></div></div></footer>
+<div class="fl"><a href="/posts/">Writing</a><a href="/landscape/">Landscape</a><a href="/tracker/">Tracker</a><a href="/changes/">Changes</a><a href="/pricing/">Pricing</a><a href="/compare/">Compare</a><a href="/breaking/">Breaking changes</a><a href="/featured/">Featured listings</a><a href="/sponsor/">Sponsor</a><a href="/rss.xml">RSS</a></div></div></footer>
 <script is:inline>document.getElementById('tt').onclick=()=>{const t=document.documentElement.dataset.theme==='dark'?'light':'dark';document.documentElement.dataset.theme=t;localStorage.theme=t};
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{rootMargin:'0px 0px -8% 0px'});document.querySelectorAll('.rv').forEach(el=>io.observe(el));</script>
 </body></html>
