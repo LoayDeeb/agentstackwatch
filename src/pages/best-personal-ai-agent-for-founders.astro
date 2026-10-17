@@ -1,0 +1,86 @@
+---
+import GuideArticle from '../layouts/GuideArticle.astro'; import { citer } from '../lib/cite.js';
+const { c, used, U } = citer();
+const picks = [
+ ['Solo founder who wants one assistant for everything','ChatGPT Plus or Claude Pro',`$20/mo each${c('oai-rn','cl-pricing')}. Claude Pro is $17/mo on annual billing${c('cl-pricing')}.`],
+ ['Team on Google Workspace, inbox and calendar are the pain','Claude Team',`Gmail and Calendar connectors draft, send (with approval by default), schedule and RSVP${c('cl-gws')}. $20/seat annual, $25 monthly${c('cl-team2')}.`],
+ ['Team on Microsoft 365','Microsoft 365 Copilot',`Built into Outlook, Teams, Word and Excel${c('ms-biz')}. $21/user/mo add-on on top of a Microsoft 365 business plan${c('ms-price')}.`],
+ ['You want work done while you sleep, inside any web app','Grok Bot or ChatGPT dots',`Grok Bot runs on its own cloud computer, 24/7, and can learn a workflow by watching you once${c('gb-page')}. Dots are always-on agents with their own cloud computer${c('oai-rn')}.`],
+ ['You want finished decks, research and sites','Manus or ChatGPT Work',`Manus does research, slides and website deployment${c('mn-pricing')}; ChatGPT Work creates documents, spreadsheets, presentations and Sites${c('oai-rn')}.`],
+ ['Technical founder, wants full control','OpenClaw or Hermes Agent',`Free, MIT-licensed, runs on your own machine${c('oc','hm')}. You own setup and security (see <a href="/is-openclaw-safe/">Is OpenClaw safe?</a>).`],
+];
+const costs = [
+ ['ChatGPT Plus',`$20/mo${c('oai-rn')}`,'Personal plan; no admin console or SSO'+c('oai-pricing')],
+ ['Claude Pro',`$20/mo, or $17/mo annual${c('cl-pricing')}`,'Training is on unless you switch it off'+c('cl-pricing')],
+ ['Grok Bot (X Premium)',`$30/mo${c('gb-pricing')}`,'Usage comes from a weekly pool shared with Grok and Cursor'+c('gb-docs')],
+ ['ChatGPT Pro (includes a dot)',`$100 or $200/mo${c('oai-rn')}`,'Dots rolling out gradually; Pro access excludes the EEA, Switzerland and the UK at launch'+c('oai-rn')],
+ ['Manus Pro',`$20 or $40/mo${c('mn-pricing')}`,'Credit-based; heavy tasks use up the allowance'+c('mn-pricing')],
+ ['Lindy',`From $29.99/mo${c('ly')}`,'Pauses when credits run out until reset or top-up'+c('ly')],
+ ['OpenClaw / Hermes Agent',`$0 software${c('oc','hm')}`,'Plus the AI model you plug in and your time'],
+];
+const body = `
+<div class="tldr"><p><b>Short answer.</b> Most founders should start with a $20 assistant (ChatGPT Plus or Claude Pro) and connect only email and calendar. Move to an always-on agent (Grok Bot, ChatGPT dots) once you have repeatable web tasks worth handing off. Pick the business tier the day a co-founder or employee joins.</p></div>
+
+<h2>What founders actually hand off</h2>
+<p>Founders don't need an agent that "does everything". They need one that takes the same five jobs off their plate every week:</p>
+<ul>
+<li><b>Inbox and calendar:</b> triage, first drafts, scheduling across time zones. See <a href="/ai-agent-for-email-and-calendar/">which agents can really do this</a>.</li>
+<li><b>Research:</b> market sizing, competitor scans, prepping for an investor or customer call.</li>
+<li><b>Sales follow-up:</b> account research and personalised drafts you approve before they go out.</li>
+<li><b>Documents:</b> board updates, decks, a one-page model.</li>
+<li><b>Web back-office errands:</b> filling in portals, pulling reports, chasing invoices in tools that have no integration.</li>
+</ul>
+<p>The first four are covered by any good chat assistant with connectors. The fifth is where "agents" that run their own computer earn their price.</p>
+
+<h2>The quick picks</h2>
+<div class="gtable-wrap"><table class="gtab"><thead><tr><th>If you are…</th><th>Start with</th><th>Why</th></tr></thead><tbody>
+${picks.map(([a,b,w])=>`<tr><td data-l="If you are…">${a}</td><td data-l="Start with" class="nm">${b}</td><td data-l="Why">${w}</td></tr>`).join('')}
+</tbody></table></div>
+<p>There is no single winner. The best agent is usually the one that lives where your company data already lives: Google Workspace, Microsoft 365, or a pile of web apps.</p>
+
+<h2>Chat assistants vs always-on agents</h2>
+<p><b>Chat assistants with connectors</b> (ChatGPT, Claude, Gemini, Copilot) work while you're in the conversation. You ask, they read your mail or calendar, draft, and wait for you. Claude's Gmail connector asks before sending by default${c('cl-gws')}; ChatGPT creates the draft and you choose to send it${c('oai-rn')}. That approval step is the main reason they're low-risk.</p>
+<p><b>Always-on agents</b> keep working when you close the laptop. Grok Bot gives each bot its own cloud computer, runs bots in parallel around the clock, and lists founder-shaped jobs such as sales outbound, expense manager and chief of staff${c('gb-page')}. ChatGPT dots are always-on agents that "keep making progress between conversations" on their own cloud computer, bringing results back for review${c('oai-rn')}. Manus adds scheduled automations${c('mn-pricing')}. These are more powerful and need more care: they act on logged-in accounts without you watching.</p>
+<p><b>Self-hosted agents</b> (OpenClaw, Hermes Agent) are free and run on your hardware${c('oc','hm')}. OpenClaw advertises inbox, email, calendar and flight check-in from WhatsApp, Telegram, Slack or iMessage${c('oc')}. The trade-off is that you are the IT department.</p>
+
+<h2>What it costs a founder</h2>
+<div class="gtable-wrap"><table class="gtab"><thead><tr><th>Plan</th><th>Price</th><th>Watch out for</th></tr></thead><tbody>
+${costs.map(([a,b,w])=>`<tr><td data-l="Plan" class="nm">${a}</td><td data-l="Price">${b}</td><td data-l="Watch out for">${w}</td></tr>`).join('')}
+</tbody></table></div>
+<p>Once you have a team, business seats run about $20–25 per person per month for ChatGPT Business or Claude Team${c('oai-biz2','cl-team2')}. Both need at least two seats${c('oai-biz2','cl-team2')}. The full table is in <a href="/how-much-does-an-ai-agent-cost/">How much does an AI agent cost?</a> and on our <a href="/pricing/">pricing page</a>.</p>
+
+<h2>What to connect first (and what never to)</h2>
+<ol>
+<li><b>Calendar, read access.</b> Lowest risk, instant value for scheduling and meeting prep.</li>
+<li><b>Inbox, read and draft.</b> Keep "send" behind your approval. OpenAI itself warns that an agent signed in to email and websites is exposed to prompt injection, meaning instructions hidden in content it reads${c('oai-agent')}.</li>
+<li><b>Docs and drive</b> for one project folder, not the whole company.</li>
+<li><b>Never</b> hand over banking, payroll or admin logins.</li>
+</ol>
+<p>If you'll put company or customer data in it, use a business plan. ChatGPT Business doesn't train on workspace data${c('oai-biz2')}. Claude Team and Enterprise don't train by default${c('cl-pricing')}, and Anthropic lists SOC 2 Type II and ISO 27001 for its commercial products${c('cl-certs')}. On personal Claude plans, training is opt-out${c('cl-pricing')}. Grok Bot offers a training opt-out and an Auto Review step for sensitive actions${c('gb-page')}; its SOC 2 status is ${U}.</p>
+
+<h2>Choose in ten minutes</h2>
+<ol>
+<li>Where does your company email live? Google: Claude or Gemini. Microsoft: Copilot. Neither: ChatGPT or Claude.</li>
+<li>Do you need it to act while you're away? If not, a $20 plan is enough.</li>
+<li>Is there a web task you repeat every week? That's your test for Grok Bot or a dot.</li>
+<li>Is it in your country? Gemini Agent is US and English only${c('g-plans')}; Muse is limited to the US and Canada at launch per coverage${c('mu-reuters')}.</li>
+</ol>
+<p>For the full eleven-product breakdown, read the <a href="/guide/">buyer's guide</a>.</p>
+`;
+const faqs = [
+ ['What is the best personal AI agent for a founder?',`For most founders, a $20/month assistant (ChatGPT Plus or Claude Pro) connected to email and calendar is the right start${c('oai-rn','cl-pricing')}. Upgrade to an always-on agent such as Grok Bot ($30/month with X Premium${c('gb-pricing')}) or ChatGPT dots once you have repeatable web tasks to hand off.`],
+ ['Can an AI agent manage my inbox safely?',`Yes, if sending stays behind your approval. Claude's Gmail connector asks before sending by default${c('cl-gws')}, and ChatGPT drafts and lets you choose to send${c('oai-rn')}. Start with read and draft access only.`],
+ ['Do these agents train on my data?',`Business plans generally don't: ChatGPT Business doesn't train on workspace data${c('oai-biz2')} and Claude Team doesn't by default${c('cl-pricing')}. On Claude's personal plans, training is on unless you switch it off${c('cl-pricing')}.`],
+ ['Is a free open-source agent good enough?',`OpenClaw and Hermes Agent are free and MIT-licensed${c('oc','hm')}, but you pay for the AI model and own the setup, updates and security. Good for technical founders; risky otherwise.`],
+ ['What does an always-on agent cost?',`Grok Bot is included in X Premium at $30/month${c('gb-pricing')}. ChatGPT dots come with Pro ($100 or $200/month) and Business Premium${c('oai-rn','oai-pricing')}.`],
+];
+---
+<GuideArticle slug="best-personal-ai-agent-for-founders" kicker="For founders"
+ title="Best Personal AI Agent for Founders (2026): Picks, Prices & Safety | AgentStackWatch"
+ desc="Which personal AI agent should a founder use in 2026? ChatGPT, Claude, Grok Bot, Copilot, Manus and OpenClaw compared on inbox, research, sales follow-up and cost, with every fact sourced."
+ h1="The best personal AI agent for founders (2026)"
+ dek="What to hand your inbox, research, sales follow-up and web errands to, picked by where your company already works. Prices and features link to each vendor's own pages."
+ faqs={faqs} used={used}
+ related={[['/compare/grok-bot-vs-chatgpt-dots/','Grok Bot vs ChatGPT dots'],['/compare/grok-bot-vs-claude-app/','Grok Bot vs Claude'],['/compare/chatgpt-dots-vs-claude-app/','ChatGPT vs Claude'],['/compare/manus-vs-chatgpt-dots/','Manus vs ChatGPT dots'],['/compare/openclaw-vs-grok-bot/','OpenClaw vs Grok Bot']]}>
+<Fragment set:html={body}/>
+</GuideArticle>

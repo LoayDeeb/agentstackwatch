@@ -1,0 +1,96 @@
+---
+import GuideArticle from '../layouts/GuideArticle.astro'; import { citer } from '../lib/cite.js'; import { bySlug } from '../lib/data.js';
+const { c, used, U } = citer();
+const oc = bySlug['openclaw']; const ver = oc?.stats?.display_version || U;
+const fixes = [
+ ['2026.10.4','16 Oct 2026',`Tlon group DMs no longer treat other participants as the owner, "closing an owner-impersonation path"${c('oc-v2026.10.4')}.`],
+ ['2026.9.33 (extended-stable)','15 Oct 2026',`OpenClaw's LTS-equivalent line: the end-of-September code "plus critical security updates"${c('oc-v2026.9.33')}.`],
+ ['2026.10.2','12 Oct 2026',`Fixed credential leaks when a secret crossed a chunk boundary in long tool output; secret redaction no longer stalls on large text${c('oc-v2026.10.2')}.`],
+ ['2026.8.35 / 2026.8.33','Sep–Oct 2026',`Security rollup that "reconcile[s] all repository advisories that affect 2026.8.2", Prometheus metrics authorization hardening, and a Nodemailer upgrade clearing a denial-of-service advisory${c('oc-v2026.8.33')}; secret-store and cron tool-allowlist hardening${c('oc-v2026.8.35')}.`],
+ ['2026.7.35','21 Sep 2026',`Hardened command parsing, browser origin checks, plugin Git installs (git specs can no longer inject options) and webhook logging${c('oc-v2026.7.35')}.`],
+ ['2026.9.3','8 Sep 2026',`Setup now generates a local Gateway token by default${c('oc-v2026.9.3')}. Breaking: requires Node 24.16+ or 26.1+ to prevent SQLite text truncation${c('oc-v2026.9.3')}.`],
+ ['2026.9.1','3 Sep 2026',`<code>config.get</code> no longer returns unredacted snapshots; systemd unit backups no longer leak Gateway tokens; iOS omits deep-link URLs from logs${c('oc-v2026.9.1')}.`],
+ ['2026.8.1','31 Aug 2026',`Agents can request a credential through a masked prompt that keeps the value out of chat and model context; ClawHub shows security-audit information before a plugin install${c('oc-v2026.8.1')}.`],
+ ['2026.6.33','8 Aug 2026',`Codex app-server commands require an actual human or plugin approval; exec auto-review is bound to the exact resolved command; the Gateway rejects disallowed browser origins before unauthenticated handling${c('oc-v2026.6.33')}.`],
+];
+const baseline = `{
+  gateway: {
+    mode: "local",
+    bind: "loopback",
+    auth: { mode: "token", token: "replace-with-long-random-token" },
+  },
+  session: { dmScope: "per-channel-peer" },
+  tools: {
+    profile: "messaging",
+    deny: ["group:automation", "group:runtime", "group:fs", "sessions_spawn", "sessions_send"],
+    fs: { workspaceOnly: true },
+    exec: { security: "deny", ask: "always" },
+    elevated: { enabled: false },
+    sessions: { visibility: "agent" },
+    agentToAgent: { enabled: false },
+  },
+  channels: {
+    whatsapp: { dmPolicy: "pairing", groups: { "*": { requireMention: true } } },
+  },
+}`;
+const body = `
+<div class="tldr"><p><b>Short answer.</b> OpenClaw can be run safely, but it is not safe by accident. It ships with conservative defaults${c('oc-sec')}, publishes its security fixes as public advisories${c('oc-adv')}, and gives you a built-in audit command${c('oc-sec')}. It also runs with "full system access" unless you sandbox it${c('oc')}, and its maintainers say plainly that anyone who can operate an agent can make it do anything that agent can do${c('oc-policy')}. Run it on its defaults, on the latest release, with tools locked down, and it's a reasonable choice for a technical user. Don't hand it to a non-technical team as-is.</p></div>
+
+<h2>What OpenClaw is, and why safety is your job</h2>
+<p>OpenClaw is a free, MIT-licensed, self-hosted personal assistant that you reach from WhatsApp, Telegram, Slack, iMessage and other chat apps${c('oc')}. It can handle your inbox and calendar, browse and fill forms, and run on your own machine where state stays local${c('oc')}. There's no vendor cloud and no subscription${c('oc')}, which is the appeal. It also means there's no vendor security team standing between the agent and your accounts. You are the operator.</p>
+
+<h2>The real setup risks</h2>
+<ul>
+<li><b>Full system access.</b> Out of the box it can act with your computer's permissions unless you sandbox it${c('oc')}.</li>
+<li><b>Exposed Gateways.</b> A normal host install binds the Gateway to loopback (this machine only). Container images are the deliberate exception: they default to an exposed bind, which you must pair with authentication${c('oc-sec')}.</li>
+<li><b>Shared agents aren't isolated.</b> OpenClaw assumes one trusted boundary per Gateway and is "not a hostile multi-tenant security boundary"${c('oc-sec')}. Session ownership and visibility are "usability features, not security boundaries"${c('oc-policy')}.</li>
+<li><b>Cross-conversation messaging.</b> Agents with the message tool can send across conversations and chat providers by default${c('oc-sec')}.</li>
+<li><b>Defaults that widened.</b> In 2026.9.2, session tools moved to all-session visibility and ordinary agent-to-agent access was switched on; you set <code>tools.sessions.visibility</code> to <code>agent</code> or <code>self</code> to narrow it${c('oc-v2026.9.2')}.</li>
+<li><b>Prompt injection is on you.</b> The project's security policy says prompt injection without a policy, approval, sandbox or tool-boundary bypass is usually not treated as a vulnerability, and neither is a malicious plugin you chose to install${c('oc-policy')}. Limiting tools is how you contain it.</li>
+</ul>
+
+<h2>The security track record, in numbers</h2>
+<p>OpenClaw publishes its vulnerabilities as GitHub security advisories${c('oc-adv')}. When we queried GitHub on 17 Oct 2026, it returned <b>722 published advisories</b> dated 31 Jan to 11 Sep 2026: 14 critical, 249 high, 390 medium and 69 low. Most landed in February (220) and March (204), falling to 45 in June and 75 in September. A big project that discloses openly will log more advisories than one that doesn't, but this is still a lot of surface to keep patched.</p>
+<p>The critical ones were serious, and each lists a fixed version. Examples: remote code execution through a node-invoke approval bypass, fixed in 2026.2.14${c('oc-ghsa-gv46')}; path traversal in plugin installation, fixed in 2026.2.1${c('oc-ghsa-qrq5')}; pairing-scoped device tokens that could mint admin rights and reach code execution, fixed in 2026.3.11${c('oc-ghsa-4jpw')}; a sandbox escape via a race condition, fixed in 2026.3.31${c('oc-ghsa-9p3r')}; and a <code>.env</code> injection allowing config takeover, fixed in 2026.3.28${c('oc-ghsa-8rh7')}. If you're running a release from early 2026, update now. The current release is ${ver}.</p>
+<p>Whether any of these was exploited in the wild: ${U}. The advisories we read don't say.</p>
+
+<h2>Recent security fixes from the release notes</h2>
+<div class="gtable-wrap"><table class="gtab"><thead><tr><th>Release</th><th>Date</th><th>What changed</th></tr></thead><tbody>
+${fixes.map(([v,d,t])=>`<tr><td data-l="Release" class="nm mono">${v}</td><td data-l="Date">${d}</td><td data-l="What changed">${t}</td></tr>`).join('')}
+</tbody></table></div>
+<p>Our <a href="/breaking/">breaking-changes tracker</a> flags OpenClaw releases that need migration work, and the <a href="/agents/openclaw/">OpenClaw page</a> shows the latest version daily.</p>
+
+<h2>How to run OpenClaw safely: a checklist</h2>
+<ol>
+<li><b>Run the audit.</b> <code>openclaw security audit</code> tells you if you've drifted from safe defaults${c('oc-sec')}.</li>
+<li><b>Keep the Gateway local</b> (loopback bind) with token auth. Never expose a container's Gateway without authentication${c('oc-sec','oc-base')}.</li>
+<li><b>Lock down tools.</b> Start from the project's hardened baseline below: messaging-only tool profile, file access limited to the workspace, shell execution denied or always-ask, elevated mode off, no agent-to-agent access${c('oc-base')}.</li>
+<li><b>Pair DMs and gate groups.</b> Unknown senders get a pairing code; group replies require a mention${c('oc-base')}.</li>
+<li><b>Use a separate number</b> for WhatsApp, Signal or Telegram so personal chats stay out of the bot's reach${c('oc-base')}.</li>
+<li><b>Split trust.</b> For people who don't fully trust each other, use separate Gateways and credentials, ideally separate OS users or hosts${c('oc-sec')}.</li>
+<li><b>Update on a schedule.</b> If you want fewer surprises, follow the extended-stable line, which carries critical security updates${c('oc-v2026.9.33')}.</li>
+<li><b>Treat plugins as code you run.</b> Check ClawHub's security-audit information before installing${c('oc-v2026.8.1')}.</li>
+</ol>
+<p>The 60-second hardened baseline from OpenClaw's docs${c('oc-base')}:</p>
+<pre class="code"><code>${baseline}</code></pre>
+
+<h2>Should you use it?</h2>
+<p><b>Yes</b>, if you're comfortable with a terminal, will keep it updated, and want an assistant that lives in your chat apps with no vendor cloud. <b>No</b>, if you want something your team can sign up for and forget: a business plan from ChatGPT, Claude or Microsoft gives you admin controls and a vendor accountable for security (see the <a href="/best-ai-agent-for-small-business/">small-business guide</a>). Also compare <a href="/compare/openclaw-vs-hermes-agent/">OpenClaw vs Hermes Agent</a>, the other main self-hosted option, which offers five sandbox backends${c('hm')}.</p>
+`;
+const faqs = [
+ ['Is OpenClaw safe to use?',`It can be, with care. It ships with conservative defaults (local-only Gateway, DM pairing, allowlisted groups)${c('oc-sec')}, but runs with full system access unless sandboxed${c('oc')}. Run <code>openclaw security audit</code>, stay on the latest release, and restrict tools.`],
+ ['Has OpenClaw had security vulnerabilities?',`Yes. GitHub listed 722 published OpenClaw advisories between 31 Jan and 11 Sep 2026 when we checked on 17 Oct 2026, 14 of them critical, each with a fixed version${c('oc-adv')}.`],
+ ['Is OpenClaw safe to connect to my email?',`Only with tools restricted and sending under your control. Prompt injection on its own isn't treated as a vulnerability by the project${c('oc-policy')}, so limiting what the agent can do is your defence.`],
+ ['Can several people share one OpenClaw agent safely?',`Only if they trust each other. OpenClaw isn't a hostile multi-tenant boundary; use separate Gateways and credentials, ideally separate OS users or hosts${c('oc-sec')}.`],
+ ['Does OpenClaw send my data anywhere?',`State stays on your machine; only a daily version check is sent, and you can turn it off${c('oc')}. Your messages do go to whichever AI model provider you connect.`],
+];
+---
+<GuideArticle slug="is-openclaw-safe" kicker="Security"
+ title="Is OpenClaw Safe? Setup Risks, Security Fixes & Hardening (2026) | AgentStackWatch"
+ desc="Is OpenClaw safe? Its real setup risks, 722 published security advisories in 2026 and what got fixed, recent security changes from the release notes, and a hardening checklist from its own docs."
+ h1="Is OpenClaw safe?"
+ dek="The open-source agent's real setup risks, what its security advisories and release notes say got fixed, and the checklist we'd follow before connecting it to anything that matters."
+ faqs={faqs} used={used}
+ related={[['/compare/openclaw-vs-hermes-agent/','OpenClaw vs Hermes Agent'],['/compare/openclaw-vs-grok-bot/','OpenClaw vs Grok Bot'],['/agents/openclaw/','OpenClaw: latest version and sources'],['/breaking/','Breaking changes tracker']]}>
+<Fragment set:html={body}/>
+</GuideArticle>

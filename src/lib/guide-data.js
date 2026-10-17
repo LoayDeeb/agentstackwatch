@@ -29,6 +29,7 @@ export const SRC = [
  ['mu-priv','https://www.meta.com/help/artificial-intelligence/1047255454427887/','How Muse handles privacy, safety and security (Meta)'],
  ['mu-reuters','https://www.reuters.com/business/meta-launches-ai-agent-that-can-access-other-apps-send-emails-make-payments-2026-09-08/','Reuters: Meta launches Muse (Sep 8, 2026)'],
  ['oai-dots','https://openai.com/index/introducing-dots/','OpenAI: Introducing dots'],
+ ['cl-certs','https://privacy.claude.com/en/articles/10015870-what-certifications-has-anthropic-obtained','Anthropic: certifications for commercial products (checked 2026-10-17)'],
 ];
 export const NUM = Object.fromEntries(SRC.map(([k],i)=>[k,i+1]));
 export const URL = Object.fromEntries(SRC.map(([k,u])=>[k,u]));
@@ -48,7 +49,7 @@ export const PRODUCTS = [
    good:`Gmail, Google Calendar and Drive connectors: search, draft, send, schedule, find mutual availability, RSVP; asks before sending by default${c('cl-gws')}. Cowork can use your computer when no connector exists${c('cl-cu')}. Claude for Microsoft 365 and Outlook on Pro and up${c('cl-pricing')}.`,
    price:`Pro $20/mo ($17 annual); Max from $100/mo${c('cl-pricing')}. Team: $20/seat annual or $25 monthly (Standard); $100 or $125 (Premium)${c('cl-team')}. Enterprise: $20/seat plus usage at API rates${c('cl-pricing')}.`,
    connects:`Gmail, Google Calendar, Google Drive${c('cl-gws')}; Microsoft 365, Outlook, Chrome${c('cl-pricing')}; Slack and custom connectors${c('cl-cu')}.`,
-   data:`Pro/Max: model training is opt-out (you must switch it off). Team/Enterprise: no training by default; SSO on Team; SCIM, audit logs, custom retention on Enterprise${c('cl-pricing')}. SOC 2: ${U} (trust portal didn't load).`,
+   data:`Pro/Max: model training is opt-out (you must switch it off). Team/Enterprise: no training by default; SSO on Team; SCIM, audit logs, custom retention on Enterprise${c('cl-pricing')}. Commercial products (Team, Enterprise, API): SOC 2 Type I & II, ISO 27001, ISO 42001${c('cl-certs')}.`,
    weak:`Computer use is beta, Pro/Max only (not Team/Enterprise), needs your desktop awake, and is slower than connectors${c('cl-cu')}.` },
  { id:'grokbot', name:'Grok Bot', maker:'xAI',
    good:`Bots get their own cloud computer, use your apps and websites like you would, run in parallel 24/7, and can learn a workflow by watching you once${c('gb-page')}. Example jobs listed: sales outbound, expense manager, chief of staff${c('gb-page')}.`,

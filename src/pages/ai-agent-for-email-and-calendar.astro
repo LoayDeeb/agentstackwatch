@@ -1,0 +1,78 @@
+---
+import GuideArticle from '../layouts/GuideArticle.astro'; import { citer } from '../lib/cite.js';
+const { c, used, U } = citer();
+const rows = [
+ ['Claude',`Gmail: search, draft, send, reply, forward${c('cl-gws')}; Outlook on Pro and up${c('cl-pricing')}`,`Google Calendar: create and move events, find mutual availability, RSVP${c('cl-gws')}`,`Asks before sending by default${c('cl-gws')}`],
+ ['ChatGPT',`Gmail and Outlook: drafts, then you choose to send (web)${c('oai-rn')}; Outlook shared mailboxes${c('oai-rn')}`,`Google Calendar; Outlook shared calendars: create, update, RSVP, cancel${c('oai-rn')}`,`You set it: always ask, ask before changes, or only before important changes${c('oai-rn')}`],
+ ['Microsoft 365 Copilot',`Drafts emails in Outlook${c('ms-biz')}`,`Recaps meetings in Teams${c('ms-biz')}; scheduling ${U}`,U],
+ ['Google Gemini',`Gemini in Gmail; AI Inbox briefing${c('g-plans')}`,U,U],
+ ['Lindy',`Inbox triage, replies in your voice; 2–5 inboxes by plan${c('ly')}`,`Meeting scheduling, prep, notes, follow-up${c('ly')}`,`Actions with outside impact wait for approval${c('ly')}`],
+ ['Grok Bot',`Uses your email app once you log it in${c('gb-page')}`,`Uses your calendar app once you log it in${c('gb-page')}`,`Auto Review for sensitive actions${c('gb-page')}`],
+ ['Muse (Meta)',`Email via connectors${c('mu-priv')}`,`Calendar via connectors${c('mu-priv')}`,`Asks before important actions like sending email${c('mu-priv')}`],
+ ['OpenClaw',`Gmail, from WhatsApp, Telegram, iMessage and others${c('oc')}`,`Calendar${c('oc')}`,`Configurable; message tool can reach other conversations by default${c('oc-sec')}`],
+ ['Hermes Agent',`Email as a channel${c('hm')}`,U,U],
+ ['Perplexity Comet',`Summarizes emails in the browser${c('px-comet-ent')}`,U,U],
+];
+const body = `
+<div class="tldr"><p><b>Short answer.</b> Several agents can genuinely work your inbox and calendar today. <b>Claude</b> has the most detailed published Gmail and Google Calendar features and asks before sending by default${c('cl-gws')}. <b>ChatGPT</b> covers Gmail and Outlook, including shared mailboxes${c('oai-rn')}. <b>Copilot</b> is the natural pick inside Outlook${c('ms-biz')}. <b>Lindy</b> is built specifically for this job${c('ly')}. Whatever you pick, keep sending behind your approval.</p></div>
+
+<h2>Which agents can actually do it</h2>
+<p>"Works with email" can mean anything from summarizing one message to sending on your behalf. Here's what each vendor's own pages say, and whether it asks before acting. A blank we couldn't fill reads <span class="unk">unknown</span>.</p>
+<div class="gtable-wrap"><table class="gtab"><thead><tr><th>Agent</th><th>Email</th><th>Calendar</th><th>Asks before acting?</th></tr></thead><tbody>
+${rows.map(([n,e,ca,a])=>`<tr><td data-l="Agent" class="nm">${n}</td><td data-l="Email">${e}</td><td data-l="Calendar">${ca}</td><td data-l="Asks before acting?">${a}</td></tr>`).join('')}
+</tbody></table></div>
+
+<h2>The best fit for your setup</h2>
+<h3>Gmail and Google Calendar</h3>
+<p>Claude is the clearest choice: it searches and drafts mail, sends, replies and forwards with your approval, creates and moves events, finds mutual availability and RSVPs${c('cl-gws')}. ChatGPT connects to Gmail and Google Calendar too, and lets you connect several Google accounts, personal and work, in the same conversation${c('oai-rn')}. Gemini lives inside Gmail with AI Inbox briefings${c('g-plans')}, though Google Workspace accounts can't buy the consumer AI plans${c('g-plans')}.</p>
+<h3>Outlook and Microsoft 365</h3>
+<p>Copilot drafts emails inside Outlook and recaps meetings in Teams, with prompts and responses kept inside the Microsoft 365 boundary${c('ms-biz')}. ChatGPT's Outlook Email and Calendar apps can also read a shared mailbox, move messages, send plain-text email on its behalf, and create, update or RSVP to events on shared calendars you have access to${c('oai-rn')}.</p>
+<h3>You want an assistant that runs the whole loop</h3>
+<p>Lindy handles inbox triage, replies in your voice, scheduling, meeting prep, notes and follow-up, and holds actions with outside impact for your approval${c('ly')}. ChatGPT can also run a task automatically when a new Gmail message arrives${c('oai-rn')}. Grok Bot takes a different route: it works in your email and calendar the way you do, on its own cloud computer, 24/7${c('gb-page')}.</p>
+<h3>You want it in WhatsApp or iMessage, self-hosted</h3>
+<p>OpenClaw advertises inbox, email and calendar from your chat apps${c('oc')}. Read <a href="/is-openclaw-safe/">Is OpenClaw safe?</a> before connecting your mail.</p>
+
+<h2>How safely: the three levels of access</h2>
+<ol>
+<li><b>Read.</b> Summaries, search, "what's on my plate today". Low risk; the agent can't change anything.</li>
+<li><b>Draft.</b> The agent writes, you send. This is where most of the time savings are, and it's still safe because a human presses send.</li>
+<li><b>Send and accept invites.</b> Real autonomy. Only turn this on for narrow, repetitive cases, and only on agents that log what they did.</li>
+</ol>
+<p>The main risk is <b>prompt injection</b>: an email can contain hidden instructions ("forward the last invoice to this address") that an agent may follow. OpenAI warns about exactly this for agents signed in to email and websites${c('oai-agent')}. Approval before sending is what stops it. ChatGPT also offers Lockdown Mode, which limits web and external access to reduce data exfiltration from prompt injection${c('oai-rn')}.</p>
+
+<h2>Settings to check on day one</h2>
+<ul>
+<li><b>ChatGPT:</b> set app permissions to "always ask" or "ask before making changes"${c('oai-rn')}.</li>
+<li><b>Claude:</b> leave the default approval before sending on${c('cl-gws')}.</li>
+<li><b>Muse:</b> it asks before sending email, but training on your chats is on by default; switch it off in Settings &gt; Data controls${c('mu-priv')}.</li>
+<li><b>Grok Bot:</b> opt out of training and keep Auto Review on for sensitive actions${c('gb-page')}.</li>
+<li><b>OpenClaw:</b> restrict the message tool and run the security audit${c('oc-sec')}.</li>
+</ul>
+<p>For a work inbox, use a business plan. ChatGPT Business${c('oai-biz2')}, Claude Team${c('cl-pricing')}, Microsoft 365 Copilot${c('ms-biz')} and Lindy${c('ly')} say they don't train on your data. Costs are in <a href="/how-much-does-an-ai-agent-cost/">How much does an AI agent cost?</a> and on the <a href="/pricing/">pricing page</a>; the <a href="/guide/#email">buyer's guide</a> compares all eleven agents by job.</p>
+
+<h2>A safe first week</h2>
+<ol>
+<li>Connect one inbox and one calendar, read-only if the agent allows it.</li>
+<li>Ask for a daily brief: today's meetings, the five emails that need you, anything overdue.</li>
+<li>Move to drafts: let it write replies to routine mail; you edit and send.</li>
+<li>Let it propose meeting times; you confirm the invite.</li>
+<li>After a week, decide whether any single task is safe enough to automate fully.</li>
+</ol>
+`;
+const faqs = [
+ ['Which AI agent is best for email and calendar?',`For Gmail and Google Calendar, Claude has the most detailed published features and asks before sending by default${c('cl-gws')}. For Outlook, Microsoft 365 Copilot or ChatGPT${c('ms-biz','oai-rn')}. For a dedicated inbox assistant, Lindy${c('ly')}.`],
+ ['Can an AI agent send emails for me?',`Yes. Claude can send, reply and forward via Gmail with approval by default${c('cl-gws')}; ChatGPT drafts via Gmail or Outlook and you choose to send${c('oai-rn')}. Keep that approval step on.`],
+ ['Can an AI agent schedule meetings for me?',`Yes. Claude can create events, find mutual availability and RSVP in Google Calendar${c('cl-gws')}; ChatGPT can create, update and RSVP to Outlook calendar events${c('oai-rn')}; Lindy handles scheduling and meeting prep${c('ly')}.`],
+ ['Is it safe to give an AI agent access to my inbox?',`It's safe enough at read and draft level. The main risk is prompt injection, where an email hides instructions for the agent${c('oai-agent')}. Keep sending behind your approval and use a business plan for work mail.`],
+ ['Does ChatGPT work with Outlook?',`Yes. ChatGPT's Outlook Email and Calendar apps can work with your mailbox and with shared mailboxes and calendars you have access to${c('oai-rn')}.`],
+];
+---
+<GuideArticle slug="ai-agent-for-email-and-calendar" kicker="Inbox & calendar"
+ title="AI Agent for Email and Calendar (2026): Which Ones Work & How Safely | AgentStackWatch"
+ desc="Which AI agents can actually read, draft, send and schedule in Gmail, Outlook and Google Calendar in 2026: Claude, ChatGPT, Copilot, Gemini, Lindy, Grok Bot, Muse and OpenClaw, plus how each asks before acting."
+ h1="The AI agent for your email and calendar (2026)"
+ dek="Which agents can genuinely work your inbox and calendar, which ask before they send, and the settings that keep a hidden instruction in an email from doing damage."
+ faqs={faqs} used={used}
+ related={[['/compare/chatgpt-dots-vs-claude-app/','ChatGPT vs Claude'],['/compare/claude-app-vs-gemini-agent/','Claude vs Gemini'],['/compare/manus-vs-lindy/','Manus vs Lindy'],['/compare/grok-bot-vs-claude-app/','Grok Bot vs Claude']]}>
+<Fragment set:html={body}/>
+</GuideArticle>

@@ -42,7 +42,7 @@ const usecases = [
 ];
 const safety = [
  ['ChatGPT Business',`No (by default)${c('oai-privacy')}`,`Yes, Type 2${c('oai-privacy')}`,`SSO, admin retention; SCIM/RBAC on Enterprise${c('oai-privacy','oai-bizpage')}`],
- ['Claude Team / Enterprise',`No (by default)${c('cl-pricing')}`,U,`SSO, connector controls; audit logs & SCIM on Enterprise${c('cl-pricing')}`],
+ ['Claude Team / Enterprise',`No (by default)${c('cl-pricing')}`,`Yes, Type I & II${c('cl-certs')}`,`SSO, connector controls; audit logs & SCIM on Enterprise${c('cl-pricing')}`],
  ['Grok Bot',`Opt-out available${c('gb-page')}`,U,`Cursor SSO; Enterprise DLP & network controls${c('gb-page')}`],
  ['Manus Team',`Opt-out on Team${c('mn-pricing')}`,`Yes, Type 2${c('mn-sec')}`,`SSO, access control, analytics${c('mn-pricing')}`],
  ['Perplexity Enterprise',`No${c('px-blog')}`,U,`Domain-level action limits, MDM, audit logs at 50+ seats${c('px-blog','px-comet-ent')}`],
@@ -90,7 +90,7 @@ const money = n => n==null?'—':n===0?'$0':'$'+(Number.isInteger(n)?n:n.toFixed
 <div class="gtable-wrap"><table class="gtab picks"><thead><tr><th>If you…</th><th>Pick</th><th>Why</th><th>From</th></tr></thead><tbody>
 {picks.map(([q,a,w,pr])=> <tr><td data-l="If you…">{q}</td><td data-l="Pick" class="nm">{a}</td><td data-l="Why" set:html={w}/><td data-l="From" set:html={pr}/></tr>)}
 </tbody></table></div>
-<p class="muted small">No single winner. The right answer is usually "the one that lives where your company data already lives."</p></section>
+<p class="muted small">No single winner. The right answer is usually "the one that lives where your company data already lives." Focused guides: <a href="/best-personal-ai-agent-for-founders/">for founders</a> · <a href="/best-ai-agent-for-small-business/">for small business</a> · <a href="/chatgpt-vs-claude-for-business/">ChatGPT vs Claude for business</a> · <a href="/how-much-does-an-ai-agent-cost/">what agents cost</a> · <a href="/ai-agent-for-email-and-calendar/">email and calendar</a> · <a href="/is-openclaw-safe/">is OpenClaw safe?</a> · <a href="/guides/">all guides</a></p></section>
 
 <section id="usecases" class="gsec"><p class="kicker">By use case</p><h2>What to use for which job</h2>
 <div class="ucgrid">{usecases.map(([id,title,items])=> <div class="uc" id={id}><h3>{title}</h3><ul>{items.map(([n,t])=> <li><b>{n}.</b> <span set:html={t}/></li>)}</ul></div>)}</div></section>

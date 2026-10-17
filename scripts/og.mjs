@@ -15,6 +15,7 @@ body{margin:0;width:1200px;height:630px;background:#fbfaf7;font-family:I;color:#
 const jobs = [['home',{kicker:'The AI agent stack, tracked',title:'What shipped, what broke, what got cheaper.',meta:[`<b>${E.length}</b> products`]}],
  ['landscape',{kicker:'Interactive map',title:'The Agent Landscape',meta:[`<b>${E.length}</b> products`]}],['tracker',{kicker:'Reference',title:'The Tracker',meta:[`<b>${E.length}</b> products, refreshed nightly`]}],
  ...posts.map(p=>['posts-'+p.slug,{kicker:'Agent Stack Weekly',title:p.title}]),
+ ...JSON.parse(fs.readFileSync('src/lib/guides.json','utf8')).map(g=>['guides-'+g.slug,{kicker:'Guide · '+g.kicker,title:g.short}]),
  ...E.map(e=>{const s=S[e.slug]||{};return ['agents-'+e.slug,{kicker:CAT[e.category],title:e.name,meta:[s.display_version&&`v<b>${esc(s.display_version.replace(/^v/,''))}</b>`,s.stars&&`<b>${fmt(s.stars)}</b> stars`,s.downloads_weekly&&`<b>${fmt(s.downloads_weekly.at(-1).n)}</b>/wk`].filter(Boolean)}]})];
 const b = await chromium.launch(require_exe()); const p = await b.newPage({viewport:{width:1200,height:630}});
 for (const [name,d] of jobs) { await p.setContent(tpl(d),{waitUntil:'load'}); await p.evaluate(()=>document.fonts.ready); await p.screenshot({path:`public/og/${name}.png`}); }

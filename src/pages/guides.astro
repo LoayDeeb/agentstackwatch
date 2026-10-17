@@ -1,0 +1,21 @@
+---
+import Base from '../layouts/Base.astro'; import Signup from '../components/Signup.astro'; import guides from '../lib/guides.json';
+const ld = {"@context":"https://schema.org","@type":"CollectionPage","name":"AgentStackWatch Guides","url":"https://agentstackwatch.com/guides/","hasPart":[{"@type":"Article","name":"The Personal AI Agent Buyer's Guide (2026)","url":"https://agentstackwatch.com/guide/"},...guides.map(g=>({"@type":"Article","name":g.short,"url":`https://agentstackwatch.com/${g.slug}/`}))]};
+---
+<Base title="Guides: choosing, pricing and securing personal AI agents | AgentStackWatch" desc="Plain-language guides to personal AI agents for founders, small businesses and everyday users: the best agent for you, ChatGPT vs Claude, what agents cost, email and calendar agents, and OpenClaw security. Every fact sourced.">
+<Fragment slot="head"><link rel="canonical" href="https://agentstackwatch.com/guides/"/><script type="application/ld+json" set:html={JSON.stringify(ld)}/></Fragment>
+<header class="pagehead"><p class="kicker">Guides</p><h1>Guides to personal AI agents</h1><p class="dek">Plain-language answers to the questions founders, business owners and everyday users ask before they hand work to an AI agent. Every fact links to the vendor's own page; anything we couldn't verify says <span class="unk">unknown</span>.</p></header>
+<div class="ghub">
+<a class="gcard gfeat" href="/guide/"><p class="kicker">Start here · the full guide</p><h2>The Personal AI Agent Buyer's Guide (2026)</h2><p>Eleven assistants compared on email, calendar, research, travel, CRM and documents, with security and cost tables.</p></a>
+{guides.map(g=> <a class="gcard" href={`/${g.slug}/`}><p class="kicker">{g.kicker}</p><h2>{g.short}</h2><p>{g.blurb}</p></a>)}
+</div>
+<Signup variant="feature"/>
+<p class="muted small">Also useful: <a href="/pricing/">pricing for every plan</a> · <a href="/compare/">head-to-head comparisons</a> · <a href="/tracker/">the tracker</a>.</p>
+<style>
+.ghub{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px;margin:8px 0 36px}
+.gcard{display:block;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;transition:border-color .2s}.gcard:hover{border-color:var(--acc)}
+.gcard h2{font:500 24px/1.2 var(--serif);margin:6px 0 8px}.gcard p{margin:0;font-size:15px;color:var(--ink2)}.gcard .kicker{margin:0;color:var(--acc)}
+.gfeat{grid-column:1/-1}.gfeat h2{font-size:30px}
+@media(max-width:720px){.ghub{grid-template-columns:1fr}.gfeat h2{font-size:26px}}
+</style>
+</Base>

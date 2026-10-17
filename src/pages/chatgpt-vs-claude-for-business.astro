@@ -1,0 +1,67 @@
+---
+import GuideArticle from '../layouts/GuideArticle.astro'; import { citer } from '../lib/cite.js';
+const { c, used, U } = citer();
+const rows = [
+ ['Standard seat',`$20/user/mo annual, $25 monthly${c('oai-biz2')}`,`$20/member/mo annual, $25 monthly${c('cl-team2')}`],
+ ['Premium seat',`$100 annual, $125 monthly; 5x Standard usage, no 5-hour limit${c('oai-biz2')}`,`$100 annual, $125 monthly; 6.25x Pro's per-session usage${c('cl-team2')}`],
+ ['Team size',`Minimum 2 seats${c('oai-biz2')}; maximum ${U}`,`Minimum 2, up to 150 seats${c('cl-team2')}`],
+ ['Agent for long tasks',`ChatGPT Work and Codex included${c('oai-biz2')}`,`Cowork and Claude Code included${c('cl-team2')}`],
+ ['Always-on agent',`Dots on Business Premium (rolling out)${c('oai-rn')}`,`${U}: no always-on agent listed on the pages we checked`],
+ ['Email',`Gmail and Outlook: drafts, and you choose to send (web)${c('oai-rn')}`,`Gmail: search, draft, send/reply with approval by default${c('cl-gws')}; Outlook on Pro and up${c('cl-pricing')}`],
+ ['Calendar',`Google Calendar; Outlook Calendar incl. shared calendars${c('oai-rn')}`,`Google Calendar: create, move, find mutual availability, RSVP${c('cl-gws')}`],
+ ['Office apps',`ChatGPT for Word, Excel, PowerPoint, Google Sheets${c('oai-rn')}`,`Claude for Microsoft 365${c('cl-pricing')}`],
+ ['Using your computer',`Desktop app Work can use local files and apps with permission${c('oai-rn')}`,`Computer use is beta on Pro and Max only, not Team${c('cl-cu')}`],
+ ['Trains on your data?',`No${c('oai-biz2')}`,`No, by default${c('cl-pricing')}`],
+ ['Certifications',`SOC 2 Type 2${c('oai-privacy')}`,`SOC 2 Type I and II, ISO 27001, ISO 42001${c('cl-certs')}`],
+ ['Identity and admin',`SAML SSO, admin-controlled retention${c('oai-privacy')}; SCIM and RBAC on Enterprise${c('oai-bizpage')}`,`SSO, domain capture, JIT provisioning, role-based permissions, spend caps${c('cl-team2')}`],
+ ['API usage',`Not included, billed separately${c('oai-biz2')}`,`Monthly Claude API credits included${c('cl-team2')}`],
+];
+const body = `
+<div class="tldr"><p><b>Short answer.</b> On price they're identical: $20 per seat per month on annual billing, $25 monthly, $100–125 for power users${c('oai-biz2','cl-team2')}. Pick <b>ChatGPT Business</b> if you want Office add-ins, Outlook support and an always-on agent (dots). Pick <b>Claude Team</b> if your team lives in Gmail and Google Calendar and you want the published approve-before-send default and the broader certification list.</p></div>
+
+<h2>Side by side</h2>
+<p>Both plans are self-serve workspaces with admin controls and no model training on your data by default. Here's where they differ, fact by fact, from each company's own pages.</p>
+<div class="gtable-wrap"><table class="gtab"><thead><tr><th></th><th>ChatGPT Business</th><th>Claude Team</th></tr></thead><tbody>
+${rows.map(([k,a,b])=>`<tr><td data-l="" class="nm">${k}</td><td data-l="ChatGPT Business">${a}</td><td data-l="Claude Team">${b}</td></tr>`).join('')}
+</tbody></table></div>
+
+<h2>Email and calendar: who does more?</h2>
+<p>Claude publishes the clearest feature list for Google Workspace: it can search and draft mail, send, reply and forward (asking first by default), create and move events, find a time that works for everyone and RSVP${c('cl-gws')}. If most of your team's day is Gmail and Google Calendar, that's the deciding factor.</p>
+<p>ChatGPT covers both Google and Microsoft. With Gmail or Outlook connected, it drafts an email and you choose to send it, on the web for Plus, Pro, Business and Enterprise${c('oai-rn')}. The Outlook apps can work with shared mailboxes and shared calendars you have access to${c('oai-rn')}, and you can connect several Google accounts at once${c('oai-rn')}. For a Microsoft-heavy business, ChatGPT is the stronger fit of the two. More in <a href="/ai-agent-for-email-and-calendar/">AI agents for email and calendar</a>.</p>
+
+<h2>Agents: getting work done, not just answers</h2>
+<p><b>ChatGPT Work</b> is OpenAI's agent for longer tasks: it researches, works across connected apps and files, and creates documents, spreadsheets, presentations, reports and Sites, asking you to approve important actions${c('oai-rn')}. It's included in Standard seats along with Codex${c('oai-biz2')}. <b>Dots</b> go further: always-on agents with their own cloud computer that keep working between conversations, rolling out to eligible Business Premium users${c('oai-rn')}.</p>
+<p><b>Claude Team</b> includes Cowork and Claude Code${c('cl-team2')}. One limit matters for businesses: Claude's computer use, which lets Cowork drive your desktop when there's no connector, is a beta for Pro and Max and isn't available on Team or Enterprise${c('cl-cu')}.</p>
+
+<h2>Security and admin</h2>
+<p>Both keep business data out of training: OpenAI says it won't train on a Business workspace's data${c('oai-biz2')}; Anthropic doesn't train on Team or Enterprise data by default${c('cl-pricing')}. ChatGPT Business is SOC 2 Type 2 with SAML SSO${c('oai-privacy')}. Anthropic lists SOC 2 Type I and II, ISO 27001:2022 and ISO/IEC 42001:2023 for its commercial products${c('cl-certs')}, and Claude Team adds SSO, domain capture and role-based permissions${c('cl-team2')}.</p>
+<p>For prompt injection, the risk that an agent follows instructions hidden in an email or web page${c('oai-agent')}, ChatGPT offers Lockdown Mode, which restricts browsing and other network features; workspace admins can set it for members${c('oai-rn')}. We didn't find an equivalent switch documented for Claude Team: ${U}.</p>
+
+<h2>Usage limits and surprise costs</h2>
+<p>Both bill per seat with usage caps. ChatGPT Business lets you buy workspace credits for usage beyond the included limits${c('oai-biz2')}. Claude Team Standard seats get 1.25x the Pro plan's per-session allowance with a weekly cap, and you can enable usage credits to keep working past it${c('cl-team2')}. Limits are per person, not pooled${c('cl-team2')}. A practical difference: Claude Team includes monthly API credits${c('cl-team2')}, while ChatGPT Business doesn't include API usage${c('oai-biz2')}.</p>
+
+<h2>Which should you buy?</h2>
+<ul>
+<li><b>Choose ChatGPT Business</b> if you use Outlook or Microsoft Office, want an agent that builds finished files and Sites, or want dots.</li>
+<li><b>Choose Claude Team</b> if you're on Google Workspace, want approve-before-send as the documented default, or need ISO 27001 on paper.</li>
+<li><b>Not sure?</b> Both need only two seats${c('oai-biz2','cl-team2')}. Run a month of each on monthly billing ($50 per plan for two people) and keep the one your team actually opens.</li>
+</ul>
+<p>Also weighing Microsoft or Google's own AI? See the <a href="/best-ai-agent-for-small-business/">small-business guide</a>. For personal plans, see <a href="/compare/chatgpt-dots-vs-claude-app/">ChatGPT vs Claude</a> on our compare pages.</p>
+`;
+const faqs = [
+ ['Is ChatGPT or Claude better for business?',`Neither wins outright. They cost the same per seat${c('oai-biz2','cl-team2')}. ChatGPT is stronger for Microsoft Office and Outlook${c('oai-rn')}; Claude has the most detailed Gmail and Google Calendar features${c('cl-gws')}.`],
+ ['How much do ChatGPT Business and Claude Team cost?',`Both are $20 per seat per month billed annually or $25 monthly, with Premium seats at $100 annual or $125 monthly${c('oai-biz2','cl-team2')}.`],
+ ['Do ChatGPT Business or Claude Team train on my company data?',`No by default. OpenAI won't train on Business workspace data${c('oai-biz2')}; Anthropic doesn't train on Team data by default${c('cl-pricing')}.`],
+ ['Which has better security certifications?',`ChatGPT Business is SOC 2 Type 2${c('oai-privacy')}. Anthropic lists SOC 2 Type I and II plus ISO 27001 and ISO 42001 for its commercial products${c('cl-certs')}.`],
+ ['Can either one send emails for me?',`Yes, both with your approval. ChatGPT drafts and you choose to send via Gmail or Outlook${c('oai-rn')}. Claude can send, reply and forward via Gmail and asks first by default${c('cl-gws')}.`],
+];
+---
+<GuideArticle slug="chatgpt-vs-claude-for-business" kicker="Head to head"
+ title="ChatGPT vs Claude for Business (2026): Price, Email, Security | AgentStackWatch"
+ desc="ChatGPT Business vs Claude Team in 2026: same $20–25 seat price, different strengths. Email and calendar, agents, Office apps, SOC 2 and ISO certifications, data training and usage limits, all sourced."
+ h1="ChatGPT vs Claude for business (2026)"
+ dek="ChatGPT Business and Claude Team cost the same. Here's what's different: email and calendar, agents, admin controls, certifications and usage limits."
+ faqs={faqs} used={used}
+ related={[['/compare/chatgpt-dots-vs-claude-app/','ChatGPT dots vs Claude (live compare)'],['/compare/grok-bot-vs-chatgpt-dots/','Grok Bot vs ChatGPT dots'],['/compare/grok-bot-vs-claude-app/','Grok Bot vs Claude'],['/compare/claude-app-vs-gemini-agent/','Claude vs Gemini']]}>
+<Fragment set:html={body}/>
+</GuideArticle>

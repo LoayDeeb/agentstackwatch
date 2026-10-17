@@ -1,0 +1,83 @@
+---
+import GuideArticle from '../layouts/GuideArticle.astro'; import { citer } from '../lib/cite.js';
+const { c, used, U } = citer();
+const seats = [
+ ['ChatGPT Business (Standard)',20,`$25 monthly; minimum 2 seats${c('oai-biz2')}`],
+ ['Claude Team (Standard)',20,`$25 monthly; minimum 2, up to 150 seats${c('cl-team2')}`],
+ ['Manus Team',20,`"From" price; credit-based${c('mn-pricing')}`],
+ ['Gemini Enterprise (Business)',21,`"From" price${c('g-ent')}`],
+ ['Microsoft 365 Copilot Business',21,`Add-on to a Microsoft 365 business plan; $18 first-year promo to Dec 31, 2026; annual commitment${c('ms-price','ms-biz')}`],
+ ['Lindy',29.99,`"From" price, 3,000 credits per user${c('ly')}`],
+ ['Grok Bot (X Premium seat)',30,`Team seats at the same price as personal${c('gb-pricing')}`],
+ ['Perplexity Enterprise Pro',33.33,`$400/yr per seat, or $40 monthly${c('px-ent')}`],
+];
+const yr = (p,n) => '$'+Math.round(p*12*n).toLocaleString('en-US');
+const body = `
+<div class="tldr"><p><b>Short answer.</b> Buy the AI that matches your email system. On Google Workspace, Claude Team or Gemini Enterprise. On Microsoft 365, Copilot. On neither, ChatGPT Business or Claude Team. Expect about $20–30 per person per month, and always buy the business tier, never personal plans, for staff.</p></div>
+
+<h2>What a small business actually needs from an AI agent</h2>
+<p>A small team doesn't need the most impressive demo. It needs four boring things:</p>
+<ul>
+<li><b>Admin controls.</b> One person can add and remove users and see which apps are connected. Personal plans don't have this: ChatGPT's personal tiers have no admin console or SSO${c('oai-pricing')}.</li>
+<li><b>No training on your data.</b> ChatGPT Business${c('oai-biz2')}, Claude Team${c('cl-pricing')}, Gemini Enterprise${c('g-ent')}, Microsoft 365 Copilot${c('ms-biz')} and Lindy${c('ly')} all say customer data isn't used to train models.</li>
+<li><b>Approval before anything goes out.</b> Claude asks before sending email by default${c('cl-gws')}; Lindy holds actions with outside impact for approval${c('ly')}.</li>
+<li><b>A predictable bill.</b> Flat seats beat credits for most teams. Manus and Lindy are credit-based and can cost more for heavy users${c('mn-pricing','ly')}.</li>
+</ul>
+
+<h2>Picks by how your business runs</h2>
+<h3>You run on Microsoft 365</h3>
+<p>Microsoft 365 Copilot is built into Word, Excel, PowerPoint, Outlook and Teams, drafts email and recaps meetings, and keeps prompts and responses inside the Microsoft 365 boundary${c('ms-biz')}. It's sold for up to 300 users and needs a Microsoft 365 business plan${c('ms-biz')}.</p>
+<h3>You run on Google Workspace</h3>
+<p>Claude Team connects to Gmail, Google Calendar and Drive and can search and draft email, create events, find mutual availability and RSVP${c('cl-gws')}. Gemini Enterprise connects to Google Workspace and Microsoft 365, Jira, GitHub, HubSpot and Slack${c('g-ent')}. One catch: Workspace accounts can't buy the consumer Google AI plans${c('g-plans')}, so you buy Gemini Enterprise instead.</p>
+<h3>You live in a mix of web apps</h3>
+<p>ChatGPT Business includes ChatGPT Work, an agent for longer tasks that works across connected apps and files${c('oai-biz2','oai-rn')}. Grok Bot gives each bot its own cloud computer and uses any app or site you log it into, 24/7${c('gb-page')}. That's useful for back-office work in tools with no integration.</p>
+<h3>You want an assistant that lives in Slack and runs meetings</h3>
+<p>Lindy is built for inbox triage, replies in your voice, scheduling, meeting prep, notes and follow-up, and is Slack-native${c('ly')}.</p>
+<h3>Research and proposals are most of the work</h3>
+<p>Manus does advanced research, slides and website deployment${c('mn-pricing')}; Perplexity's Comet browser summarizes across tabs, email and Slack${c('px-comet-ent')}.</p>
+
+<h2>What it costs for your team</h2>
+<p>Lowest listed per-seat price (annual billing where offered), times your headcount. Taxes and regional pricing excluded.</p>
+<div class="gtable-wrap"><table class="gtab"><thead><tr><th>Plan</th><th>Per seat / mo</th><th>5 people / yr</th><th>10 people / yr</th><th>Notes</th></tr></thead><tbody>
+${seats.map(([n,p,note])=>`<tr><td data-l="Plan" class="nm">${n}</td><td data-l="Per seat / mo" class="mono">$${p}</td><td data-l="5 people / yr" class="mono">${yr(p,5)}</td><td data-l="10 people / yr" class="mono">${yr(p,10)}</td><td data-l="Notes">${note}</td></tr>`).join('')}
+</tbody></table></div>
+<p>Power users can get bigger seats: Premium seats on ChatGPT Business and Claude Team are $100 annual or $125 monthly${c('oai-biz2','cl-team2')}. More plans on the <a href="/pricing/">pricing page</a> and in <a href="/how-much-does-an-ai-agent-cost/">How much does an AI agent cost?</a></p>
+
+<h2>Security: what's verified, what isn't</h2>
+<div class="gtable-wrap"><table class="gtab"><thead><tr><th>Business tier</th><th>Trains on your data?</th><th>SOC 2</th><th>Admin</th></tr></thead><tbody>
+<tr><td data-l="Tier" class="nm">ChatGPT Business</td><td data-l="Trains?">No${c('oai-biz2')}</td><td data-l="SOC 2">Type 2${c('oai-privacy')}</td><td data-l="Admin">SAML SSO, admin retention${c('oai-privacy')}</td></tr>
+<tr><td data-l="Tier" class="nm">Claude Team</td><td data-l="Trains?">No, by default${c('cl-pricing')}</td><td data-l="SOC 2">Type I and II${c('cl-certs')}</td><td data-l="Admin">SSO, role-based permissions, spend caps${c('cl-team2')}</td></tr>
+<tr><td data-l="Tier" class="nm">Microsoft 365 Copilot</td><td data-l="Trains?">No${c('ms-biz')}</td><td data-l="SOC 2">${U}</td><td data-l="Admin">Purview, eDiscovery${c('ms-biz')}</td></tr>
+<tr><td data-l="Tier" class="nm">Gemini Enterprise</td><td data-l="Trains?">No${c('g-ent')}</td><td data-l="SOC 2">${U}</td><td data-l="Admin">Connector and sharing controls${c('g-ent')}</td></tr>
+<tr><td data-l="Tier" class="nm">Manus Team</td><td data-l="Trains?">Opt-out on Team${c('mn-pricing')}</td><td data-l="SOC 2">Type 2${c('mn-sec')}</td><td data-l="Admin">SSO, access control${c('mn-pricing')}</td></tr>
+<tr><td data-l="Tier" class="nm">Lindy</td><td data-l="Trains?">No${c('ly')}</td><td data-l="SOC 2">Yes${c('ly')}</td><td data-l="Admin">SSO, SCIM, audit logs on Enterprise${c('ly')}</td></tr>
+<tr><td data-l="Tier" class="nm">Grok Bot</td><td data-l="Trains?">Opt-out available${c('gb-page')}</td><td data-l="SOC 2">${U}</td><td data-l="Admin">Enterprise DLP and network controls${c('gb-page')}</td></tr>
+</tbody></table></div>
+<p>"Unknown" means we couldn't find it on a public vendor page. Ask the vendor for the report before you sign.</p>
+
+<h2>A 30-day rollout that won't backfire</h2>
+<ol>
+<li><b>Week 1:</b> two seats (the minimum on ChatGPT Business and Claude Team${c('oai-biz2','cl-team2')}). Connect one inbox and one calendar.</li>
+<li><b>Week 2:</b> write down three tasks it saved real time on. If you can't, don't expand.</li>
+<li><b>Week 3:</b> add the people who do those tasks. Keep sending, posting and paying behind a human approval.</li>
+<li><b>Week 4:</b> review connected apps and the activity log; remove anything nobody used.</li>
+</ol>
+<p>Never connect admin, banking or payroll accounts. An agent that reads email can be manipulated by what's in that email; OpenAI documents this prompt-injection risk for its own agent${c('oai-agent')}.</p>
+`;
+const faqs = [
+ ['What is the best AI agent for a small business?',`The one that matches your email system: Microsoft 365 Copilot for Microsoft shops${c('ms-biz')}, Claude Team or Gemini Enterprise for Google Workspace${c('cl-gws','g-ent')}, and ChatGPT Business or Claude Team otherwise.`],
+ ['How much does an AI agent cost for a small team?',`Mostly $20–30 per person per month: ChatGPT Business and Claude Team are $20 annual or $25 monthly per seat${c('oai-biz2','cl-team2')}; Copilot Business is $21 on top of Microsoft 365${c('ms-price')}.`],
+ ['Is it safe to give an AI agent access to company email?',`On a business plan with approvals on, it's a manageable risk. Keep sending behind approval, start with one inbox, and never connect banking or admin accounts. Prompt injection is a known risk${c('oai-agent')}.`],
+ ['Can my staff just use personal ChatGPT or Claude accounts?',`Not for company data. Personal plans have no admin console or SSO${c('oai-pricing')}, and Claude's personal plans train on chats unless you opt out${c('cl-pricing')}.`],
+ ['Is there a minimum team size?',`ChatGPT Business and Claude Team both require at least two seats${c('oai-biz2','cl-team2')}. Claude Team goes up to 150 seats${c('cl-team2')}; Copilot Business up to 300 users${c('ms-biz')}.`],
+];
+---
+<GuideArticle slug="best-ai-agent-for-small-business" kicker="Small business"
+ title="Best AI Agent for Small Business (2026): Costs per Seat & Safe Setup | AgentStackWatch"
+ desc="The best AI agent for a small business in 2026: ChatGPT Business, Claude Team, Microsoft Copilot, Gemini Enterprise, Lindy and Grok Bot compared on cost per seat, admin controls and data safety. Sourced."
+ h1="The best AI agent for small business (2026)"
+ dek="What a 2–50 person company should buy, what it costs for your headcount, and the business-tier settings that keep customer data out of model training."
+ faqs={faqs} used={used}
+ related={[['/compare/chatgpt-dots-vs-claude-app/','ChatGPT vs Claude'],['/compare/claude-app-vs-gemini-agent/','Claude vs Gemini'],['/compare/manus-vs-lindy/','Manus vs Lindy'],['/compare/grok-bot-vs-gemini-agent/','Grok Bot vs Gemini']]}>
+<Fragment set:html={body}/>
+</GuideArticle>
