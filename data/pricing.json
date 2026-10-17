@@ -3,26 +3,39 @@
   "url": "https://docs.x.ai/x-subscription/pricing",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-16",
-  "last_checked": "2026-10-16",
+  "last_attempt": "2026-10-17",
+  "last_checked": "2026-10-17",
   "first_snapshot": "2026-10-16",
   "hash": "068a184c8d131dcd"
  },
  "muse": {
   "url": "https://apps.apple.com/us/app/muse-from-meta/id6760173601",
-  "history": [],
+  "history": [
+   {
+    "date": "2026-10-17",
+    "from": "3396ae3fe32665c5",
+    "to": "39990768da099aef",
+    "removed": [
+     "251K Ratings"
+    ],
+    "added": [
+     "268K Ratings"
+    ]
+   }
+  ],
   "last_status": 200,
-  "last_attempt": "2026-10-16",
-  "last_checked": "2026-10-16",
+  "last_attempt": "2026-10-17",
+  "last_checked": "2026-10-17",
   "first_snapshot": "2026-10-16",
-  "hash": "3396ae3fe32665c5"
+  "hash": "39990768da099aef",
+  "last_changed": "2026-10-17"
  },
  "openclaw": {
   "url": "https://openclaw.ai/",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-16",
-  "last_checked": "2026-10-16",
+  "last_attempt": "2026-10-17",
+  "last_checked": "2026-10-17",
   "first_snapshot": "2026-10-16",
   "hash": "aeb66947713c5219"
  },
@@ -30,14 +43,14 @@
   "url": "https://help.openai.com/en/articles/20001530-getting-started-with-your-dot",
   "history": [],
   "last_status": 403,
-  "last_attempt": "2026-10-16"
+  "last_attempt": "2026-10-17"
  },
  "hermes-agent": {
   "url": "https://hermes-agent.nousresearch.com/",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-16",
-  "last_checked": "2026-10-16",
+  "last_attempt": "2026-10-17",
+  "last_checked": "2026-10-17",
   "first_snapshot": "2026-10-16",
   "hash": "19616ebbe3a3e427"
  },
@@ -45,41 +58,171 @@
   "url": "https://help.manus.im/en/articles/11711111-what-is-the-current-membership-pricing-for-manus",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-16",
-  "last_checked": "2026-10-16",
+  "last_attempt": "2026-10-17",
+  "last_checked": "2026-10-17",
   "first_snapshot": "2026-10-16",
   "hash": "72fe8d5cefa398ec"
  },
  "lindy": {
   "url": "https://www.lindy.ai/pricing",
-  "history": [],
+  "history": [
+   {
+    "date": "2026-10-17",
+    "from": "19f733f6f679bc15",
+    "to": "7668bf03d184f20f",
+    "removed": [
+     "Pricing - Lindy Skip to main content Hire Lindy for Paid ads Account management Client reporting Social media SEO & content Marketing strategy Project management Lead gen & outreach Inbox & calendar Data analysis Bookkeeping Operations HR & onboarding Customer support Calls & bookings Recruiting Product management Anything else",
+     "See every role →",
+     "Chrome Extension Case Studies Docs Blog",
+     "$ 29.99 /mo",
+     "3,000 credits / mo 3,000 credits $29.99",
+     "4,000 credits $39.99",
+     "5,000 credits $49.99",
+     "3,000 credits every month",
+     "Every active user in your workspace is billed, from $29.99 a month for 3,000 credits each.",
+     "How do credits work? ⌄ Credits are how Lindy measures work, and bigger jobs use more. Pick the monthly credits your team needs, starting at 3,000 for $29.99 a month. Every active user in your workspace is billed, from $29.99 a month for 3,000 credits each, and everyone draws from one shared pool.",
+     "Can I try Lindy for free? ⌄ Yes. Start with $50 in free credits, no credit card required. The free credits last 7 days. After that, paid usage starts at $29.99 per user per month.",
+     "Hire Lindy for",
+     "Paid ads Account management Client reporting Lead gen & outreach Inbox & calendar Data analysis Calls & bookings See every role",
+     "Docs Contact Creators Sitemap Partners"
+    ],
+    "added": [
+     "Pricing - Lindy Skip to main content Solutions Roles",
+     "Marketing Sales Support Operations Finance Product Engineering",
+     "Use Cases",
+     "Track competitors Triage support queue Build meeting deck Analyze funnel Compare vendors Log invoices Update CRM Build dashboards Monitor ad spend Create ads Watch escalations Month-end chase File eng tickets Plan your week",
+     "See all use cases →",
+     "Chrome Extension Case Studies Docs Blog Engineering blog",
+     "$ 49.99 /mo",
+     "5,000 credits / mo 5,000 credits $49.99",
+     "7,000 credits $69.99",
+     "5,000 credits every month",
+     "Every active user in your workspace is billed, from $49.99 a month for 5,000 credits each.",
+     "How do credits work? ⌄ Credits are how Lindy measures work, and bigger jobs use more. Pick the monthly credits your team needs, starting at 5,000 for $49.99 a month. Every active user in your workspace is billed, from $49.99 a month for 5,000 credits each, and everyone draws from one shared pool.",
+     "Can I try Lindy for free? ⌄ Yes. Start with $50 in free credits, no credit card required. The free credits last 7 days. After that, paid usage starts at $49.99 per user per month.",
+     "Solutions",
+     "Marketing Sales Support Operations Finance Product Engineering See all use cases",
+     "Docs Engineering blog Contact Creators Sitemap Partners"
+    ]
+   }
+  ],
   "last_status": 200,
-  "last_attempt": "2026-10-16",
-  "last_checked": "2026-10-16",
+  "last_attempt": "2026-10-17",
+  "last_checked": "2026-10-17",
   "first_snapshot": "2026-10-16",
-  "hash": "19f733f6f679bc15"
+  "hash": "7668bf03d184f20f",
+  "last_changed": "2026-10-17"
  },
  "perplexity-comet": {
   "url": "https://www.perplexity.ai/hub/blog/introducing-comet-plus",
   "history": [],
   "last_status": 403,
-  "last_attempt": "2026-10-16"
+  "last_attempt": "2026-10-17"
  },
  "gemini-agent": {
   "url": "https://one.google.com/about/google-ai-plans/",
-  "history": [],
+  "history": [
+   {
+    "date": "2026-10-17",
+    "from": "0250dd77edc753b8",
+    "to": "a41a43561722ede4",
+    "removed": [
+     "Expanded access to image, music, and video generation models in Gemini, Search, 2 and Google Flow, 4 plus added benefits in Google Photos (US only), like more Remix generations (US only).",
+     "Expanded limits in AI Studio 5 and Jules. 6",
+     "Get the Google Home Premium Standard plan at no cost ($10/mo value), with 30 days of event history and Gemini features.",
+     "Higher access to image, music, and video generation models in Gemini, Search, 2 and Google Flow, 4 plus added benefits in Google Photos (US only), like more Remix generations (US only).",
+     "Interactive world creation and exploration in real time with Project Genie. 7",
+     "Higher limits in AI Studio 5 and Jules. 6",
+     "Enjoy YouTube ad-free with the YouTube Premium individual plan 8 (availability varies by country ).",
+     "Get the Google Home Premium Advanced plan at no cost ($20/mo value), with 24/7 event history, Gemini features, and event descriptions.",
+     "Google Sheets",
+     "Start quickly with spreadsheets that build themselves",
+     "Build and organize spreadsheets faster",
+     "Just describe your task and Gemini can create entire sheets, add tables or dashboards, and populate missing data using context from your files or real‑time information from Google Search.",
+     "When you get a Google AI Ultra subscription, you’ll also get a YouTube Premium individual plan for no additional cost — enjoy ad-free YouTube and YouTube Music, offline and in the background. 8",
+     "A Google AI Pro subscription comes with YouTube Premium Lite — see fewer ads on most videos, at no extra cost.",
+     "Google Flow 4",
+     "Google Flow Music 4",
+     "Google AI Studio 5",
+     "Jules 6",
+     "Project Genie 7",
+     "Gemini app with access to Gemini 3.6 Flash and limited access to Gemini Omni Flash 4",
+     "Google Flow with more access to Google Omni Flash 4",
+     "Gemini app with expanded limits to 3.1 Pro and access to Google Omni Flash 4",
+     "Google Flow with expanded limits to Google Omni Flash 4",
+     "AI Studio with expanded limits to prototype, experiment and build with our Gemini 3.1 Pro models and Nano Banana Pro. 5",
+     "Jules: 6 Expanded task and concurrency limits, and access to latest models",
+     "More Remix generations and Veo 3 4 photo-to-video generations in Google Photos (US only)",
+     "Gemini app with higher limits to 3.1 Pro and Google Omni Flash 4",
+     "Google Flow with higher limits to Google Omni Flash 4",
+     "AI Studio with higher limits to prototype, experiment and build with our Gemini 3.1 Pro models and Nano Banana Pro. 5",
+     "Project Genie 7 is available in more than 140 countries - see full list of countries . Only available with a Google AI Ultra plan.",
+     "YouTube Premium 8 individual plan",
+     "Jules: 6 Higher task and concurrency limits, and access to latest models",
+     "Highest Remix generations and Veo 3 4 photo-to-video generations in Google Photos (US only)",
+     "4. Veo 3.1, Google Flow, and Google Flow Music are available in more than 140 countries and territories — see full list of countries for Veo 3.1 , Google Flow , and Google Flow Music .",
+     "5. The Gemini API Additional Terms of Service and the Google Privacy Policy apply to your use of Google AI Studio. Learn more about data use .",
+     "6. Jules is an asynchronous coding agent that is currently in beta. To use Jules, you must be 18 years old or older. Only English is officially supported at this time. Capacity is subject to availability and not guaranteed.",
+     "7. Project Genie is available in more than 140 countries — see full list of countries . Only available with a Google AI Ultra plan.",
+     "8. YouTube Premium individual plan is included in Google AI Ultra in over 40 countries — see full list of countries ."
+    ],
+    "added": [
+     "Access to Chrome auto browse. 4",
+     "Expanded access to image, music, and video generation models in Gemini, Search, 2 and Google Flow, 5 plus added benefits in Google Photos (US only), like more Remix generations (US only).",
+     "Expanded limits in AI Studio 6 and Jules. 7",
+     "Enjoy YouTube with fewer ads, offline, and in the background with the YouTube Premium Lite plan 8 (availability varies by country ).",
+     "Unlock Google Health Premium ( /mo value) included for access to health coaching that’s built with Gemini and made for you (eligible device required). 9",
+     "Get the Google Home Premium Standard plan at no cost ($10/mo value), with 30 days of event history and Gemini features. 10",
+     "Higher limits to Chrome auto browse. 4",
+     "Higher access to image, music, and video generation models in Gemini, Search, 2 and Google Flow, 5 plus added benefits in Google Photos (US only), like more Remix generations (US only).",
+     "Interactive world creation and exploration in real time with Project Genie. 11",
+     "Higher limits in AI Studio 6 and Jules. 7",
+     "Enjoy YouTube ad-free with the YouTube Premium individual plan 12 (availability varies by country ).",
+     "Get the Google Home Premium Advanced plan at no cost ($20/mo value), with 24/7 event history, Gemini features, and event descriptions. 10",
+     "Rolling out",
+     "Find emails and draft documents just by talking",
+     "Let your voice do the work",
+     "Say what you need to instantly search your inbox with Gmail Live, or outline and write full documents with Docs Live just by talking.",
+     "Gmail Live (AI Plus, Pro, Ultra) and Docs Live (AI Pro, Ultra) are rolling out on Android and iOS in US only.",
+     "When you get a Google AI Ultra subscription, you’ll also get a YouTube Premium individual plan for no additional cost — enjoy ad-free YouTube and YouTube Music, offline and in the background. 12",
+     "A Google AI Pro subscription comes with YouTube Premium Lite — see fewer ads on most videos, at no extra cost. 8",
+     "Google Home Premium",
+     "Supercharge your smart home devices with Gemini for simpler, smarter living",
+     "Google AI Ultra subscribers get the Advanced plan of Google Home Premium for no extra cost. 1",
+     "A Google AI Pro subscription includes Google Home Premium for no additional cost, and can upgrade to Advanced for /month any time. 10",
+     "Only available with Google AI Pro or Google AI Ultra plans in countries where Google Home Premium is available.",
+     "Google Health Premium",
+     "Get personalized fitness, sleep, and health coaching, powered by Gemini",
+     "A Google AI Ultra or AI Pro subscription includes Google Health Premium for no extra cost. 1",
+     "Google Health Premium brings together effortless tracking and a health coach built with Gemini to deliver proactive, personal, and adaptive guidance that makes the most of your everyday. 9",
+     "Requires the Google Health app and a Pixel Watch or Fitbit device (sold separately). Only available with Google AI Pro or Google AI Ultra plans in countries where Google Health Premium is available.",
+     "Playground",
+     "Create custom games in minutes (US only)",
+     "See how Google AI plans deliver more value",
+     "Google AI Plans",
+     "Starting at /mo",
+     "Other AI Plans*",
+     "Starting at $8/mo",
+     "More access to the latest AI models and features",
+     "AI directly integrated in Google apps",
+     "Cloud storage",
+     "Share with up to 5 people"
+    ]
+   }
+  ],
   "last_status": 200,
-  "last_attempt": "2026-10-16",
-  "last_checked": "2026-10-16",
+  "last_attempt": "2026-10-17",
+  "last_checked": "2026-10-17",
   "first_snapshot": "2026-10-16",
-  "hash": "0250dd77edc753b8"
+  "hash": "a41a43561722ede4",
+  "last_changed": "2026-10-17"
  },
  "claude-app": {
   "url": "https://claude.com/pricing",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-16",
-  "last_checked": "2026-10-16",
+  "last_attempt": "2026-10-17",
+  "last_checked": "2026-10-17",
   "first_snapshot": "2026-10-16",
   "hash": "da1284d99653116c"
  },
@@ -87,8 +230,8 @@
   "url": "https://platform.claude.com/docs/en/about-claude/pricing",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-16",
-  "last_checked": "2026-10-16",
+  "last_attempt": "2026-10-17",
+  "last_checked": "2026-10-17",
   "first_snapshot": "2026-10-16",
   "hash": "68333a6b7f82f966"
  },
@@ -96,14 +239,14 @@
   "url": "https://help.openai.com/en/articles/20001551-agents-api-beta-faq",
   "history": [],
   "last_status": 403,
-  "last_attempt": "2026-10-16"
+  "last_attempt": "2026-10-17"
  },
  "vertex-agent-engine": {
   "url": "https://cloud.google.com/products/gemini-enterprise-agent-platform/pricing",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-16",
-  "last_checked": "2026-10-16",
+  "last_attempt": "2026-10-17",
+  "last_checked": "2026-10-17",
   "first_snapshot": "2026-10-16",
   "hash": "464295ec30b3fc48"
  },
@@ -111,8 +254,8 @@
   "url": "https://aws.amazon.com/bedrock/agentcore/pricing/",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-16",
-  "last_checked": "2026-10-16",
+  "last_attempt": "2026-10-17",
+  "last_checked": "2026-10-17",
   "first_snapshot": "2026-10-16",
   "hash": "b82863c2b3ec0512"
  },
@@ -120,8 +263,8 @@
   "url": "https://azure.microsoft.com/en-us/pricing/details/foundry-agent-service/",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-16",
-  "last_checked": "2026-10-16",
+  "last_attempt": "2026-10-17",
+  "last_checked": "2026-10-17",
   "first_snapshot": "2026-10-16",
   "hash": "74c92ddf0861d178"
  },
@@ -129,8 +272,8 @@
   "url": "https://relevanceai.com/docs/get-started/pricing",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-16",
-  "last_checked": "2026-10-16",
+  "last_attempt": "2026-10-17",
+  "last_checked": "2026-10-17",
   "first_snapshot": "2026-10-16",
   "hash": "2f131ac6e5df073b"
  },
@@ -138,8 +281,8 @@
   "url": "https://docs.letta.com/pricing/",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-16",
-  "last_checked": "2026-10-16",
+  "last_attempt": "2026-10-17",
+  "last_checked": "2026-10-17",
   "first_snapshot": "2026-10-16",
   "hash": "731b454287521987"
  },
@@ -147,8 +290,8 @@
   "url": "https://www.langchain.com/pricing",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-16",
-  "last_checked": "2026-10-16",
+  "last_attempt": "2026-10-17",
+  "last_checked": "2026-10-17",
   "first_snapshot": "2026-10-16",
   "hash": "a992dda36da811ba"
  },
@@ -156,8 +299,8 @@
   "url": "https://crewai.com/pricing",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-16",
-  "last_checked": "2026-10-16",
+  "last_attempt": "2026-10-17",
+  "last_checked": "2026-10-17",
   "first_snapshot": "2026-10-16",
   "hash": "b0be8f7f3a75bcb8"
  },
@@ -165,8 +308,8 @@
   "url": "https://e2b.dev/pricing",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-16",
-  "last_checked": "2026-10-16",
+  "last_attempt": "2026-10-17",
+  "last_checked": "2026-10-17",
   "first_snapshot": "2026-10-16",
   "hash": "19819d4d3c11a738"
  },
@@ -174,8 +317,8 @@
   "url": "https://modal.com/pricing",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-16",
-  "last_checked": "2026-10-16",
+  "last_attempt": "2026-10-17",
+  "last_checked": "2026-10-17",
   "first_snapshot": "2026-10-16",
   "hash": "4e0dfcb9a4cde698"
  },
@@ -183,8 +326,8 @@
   "url": "https://www.daytona.io/pricing",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-16",
-  "last_checked": "2026-10-16",
+  "last_attempt": "2026-10-17",
+  "last_checked": "2026-10-17",
   "first_snapshot": "2026-10-16",
   "hash": "172a8cc9f1cefeff"
  }

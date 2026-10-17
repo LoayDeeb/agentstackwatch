@@ -1,1 +1,52 @@
-[]
+[
+ {
+  "date": "2026-10-17",
+  "slug": "langgraph",
+  "name": "LangGraph",
+  "type": "release",
+  "field": "latest_release",
+  "from": "prebuilt==1.1.1",
+  "to": "1.2.16",
+  "url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.16"
+ },
+ {
+  "date": "2026-10-17",
+  "slug": "langgraph",
+  "name": "LangGraph",
+  "type": "release",
+  "field": "pypi_version",
+  "from": "1.2.15",
+  "to": "1.2.16",
+  "url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.16"
+ },
+ {
+  "date": "2026-10-17",
+  "slug": "vercel-ai-sdk",
+  "name": "Vercel AI SDK",
+  "type": "release",
+  "field": "latest_release",
+  "from": "@ai-sdk/harness-fx@1.0.68",
+  "to": "@ai-sdk/zai@3.0.33",
+  "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/zai%403.0.33"
+ },
+ {
+  "date": "2026-10-17",
+  "slug": "vercel-ai-sdk",
+  "name": "Vercel AI SDK",
+  "type": "release",
+  "field": "npm_version",
+  "from": "7.0.142",
+  "to": "7.0.143",
+  "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/zai%403.0.33"
+ },
+ {
+  "date": "2026-10-17",
+  "slug": "goose",
+  "name": "Goose",
+  "type": "release",
+  "field": "latest_release",
+  "from": "v1.54.0",
+  "to": "v1.55.0",
+  "url": "https://github.com/aaif-goose/goose/releases/tag/v1.55.0"
+ }
+]
