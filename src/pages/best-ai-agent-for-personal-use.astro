@@ -1,0 +1,116 @@
+---
+import GuideArticle from '../layouts/GuideArticle.astro'; import { citer } from '../lib/cite.js';
+const { c, used, U } = citer();
+const picks = [
+ ['You want one helper for everything and you\'re not techy','ChatGPT Plus',`$20/month${c('oai-plus')}. Books restaurant tables through OpenTable, Resy and Yelp${c('oai-rn3')}. ChatGPT Work can finish tasks on websites you sign in to, and asks before a reservation or payment${c('oai-rn3')}.`],
+ ['Your life runs on Gmail and Google Calendar, and you want it to ask first','Claude (Free or Pro)',`Gmail, Calendar and Drive connectors work on every plan, and Claude asks before it sends an email by default${c('cl-gws3')}. Pro is $20/month, or $17/month paid yearly${c('cl-pricing3')}.`],
+ ['You already pay Google for storage, or you live in Chrome','Google AI Pro',`$19.99/month and it includes 5 TB of storage${c('g-plans3')}. Gemini in Gmail, Tasks in Gemini, and Chrome auto browse, which can compare flight and hotel costs for you (US and India only)${c('g-plans3')}.`],
+ ['You want errands done while you sleep','Grok Bot, or a ChatGPT dot',`Grok Bot has its own computer and keeps working 24/7 with your laptop closed, from $30/month${c('gb-page3','gb-pricing3')}. A dot is an always-on agent included with ChatGPT Pro, not available in the EEA, Switzerland or the UK${c('oai-dot')}.`],
+ ['You want an agent app for bookings and shopping, and you\'re in the US or Canada','Muse from Meta',`Free with a usage limit, $20/month for more${c('mu3')}. Asks before sending an email or buying something${c('mu-priv3')}. Coverage says US and Canada at launch${c('mu-reuters')}.`],
+ ['You mostly want research, reports and slides','Manus',`Free plan with 300 credits a day, Pro from $20/month${c('mn-pricing3')}. Does in-depth research and slide generation${c('mn-pricing3')}.`],
+ ['You care most about privacy and you\'re handy with tech','OpenClaw or Hermes Agent',`Free and open source${c('oc3','hm3')}. OpenClaw runs on your own computer and you chat with it on WhatsApp or Telegram${c('oc3')}. You pay for the AI model you plug in.`],
+];
+const costs = [
+ ['ChatGPT',`Free${c('oai-pricing3')}`,`Plus $20/mo${c('oai-plus')}; Pro $100, $200 or $500/mo${c('oai-rn3')}`,`Go plan price not shown on the page we checked: ${U}. Go may include ads${c('oai-pricing3')}.`],
+ ['Claude',`Free${c('cl-pricing3')}`,`Pro $20/mo, or $17/mo yearly ($200 up front); Max from $100/mo${c('cl-pricing3')}`,`Free plan already includes connectors and memory${c('cl-pricing3')}.`],
+ ['Google Gemini',`AI Plus $4.99/mo${c('g-plans3')}`,`AI Pro $19.99/mo; Ultra $99.99 or $199.99/mo${c('g-plans3')}`,`Gemini Agent is Ultra only, US and English only${c('g-plans3')}.`],
+ ['Grok Bot',`Premium $30/mo, or $300/yr${c('gb-pricing3')}`,`Super $100/mo; Ultra $200/mo${c('gb-pricing3')}`,`Not in the $8 Plus plan${c('gb-pricing3')}. Usage comes from a weekly pool shared with Grok and Cursor${c('gb-docs3')}.`],
+ ['ChatGPT dot',`Included with Pro${c('oai-dot')}`,`Pro $100 or $200/mo${c('oai-rn3')}`,`Rolling out gradually; not in the EEA, Switzerland or the UK${c('oai-dot')}.`],
+ ['Muse from Meta',`Free with a usage limit${c('mu3')}`,`Power $20/mo; Maximum $100/mo${c('mu3')}`,`Limited testing, not available everywhere${c('mu3')}.`],
+ ['Manus',`Free, 300 credits a day${c('mn-pricing3')}`,`Pro $20 or $40/mo; 17% off yearly${c('mn-pricing3')}`,`Credits run down faster on big tasks.`],
+ ['Perplexity Comet',`Free${c('ps-perplexity-comet')}`,`Comet Plus $5/mo, included in Perplexity Pro and Max${c('ps-perplexity-comet')}`,`From our tracker entry; Perplexity's pages blocked our check today. Pro and Max prices: ${U}.`],
+ ['Lindy',`$50 free credits for 7 days${c('ly3')}`,`From $29.99/user/mo${c('ly3')}`,`Built as a work teammate, billed per user${c('ly3')}.`],
+ ['OpenClaw / Hermes Agent',`$0 software${c('oc3','hm3')}`,`Your AI model bill`,`Hermes has optional paid Nous Portal tiers; prices ${U}${c('hm3')}.`],
+];
+const body = `
+<div class="tldr"><p><b>Short answer.</b> Most people should start with a $20 assistant: ChatGPT Plus if you want it to book and fill in forms for you, Claude if you mainly want help with Gmail and your calendar. Already paying Google for storage? Google AI Pro at $19.99 adds Gemini. Only pay $30 or more for an always-on agent like Grok Bot once you have errands worth handing off every week.</p></div>
+
+<h2>What an everyday person actually wants</h2>
+<p>Forget "an AI that does everything". At home, people hand off the same handful of jobs:</p>
+<ul>
+<li><b>Email, calendar and reminders:</b> find that one email, draft a reply, book the dentist around your week, nudge you on Thursday.</li>
+<li><b>Shopping and booking:</b> a table for four on Friday, a DMV slot, comparing prices.</li>
+<li><b>Research:</b> which stroller, which insurance plan, what a test result means.</li>
+<li><b>Trips:</b> cheapest dates, a day-by-day plan, check-in reminders.</li>
+<li><b>Staying safe:</b> not leaking your inbox, not buying the wrong thing.</li>
+<li><b>Cost:</b> one subscription you'll actually use.</li>
+</ul>
+<p>Good news: a $20 plan covers most of this now. The rest of this guide shows which one fits you.</p>
+
+<h2>Pick this if...</h2>
+<div class="gtable-wrap"><table class="gtab"><thead><tr><th>If you…</th><th>Pick</th><th>Why</th></tr></thead><tbody>
+${picks.map(([a,b,w])=>`<tr><td data-l="If you…">${a}</td><td data-l="Pick" class="nm">${b}</td><td data-l="Why">${w}</td></tr>`).join('')}
+</tbody></table></div>
+<p>Lindy is good at inboxes and meetings, but it's sold as a work teammate, billed per user from $29.99/month${c('ly3')}. For home use, the options above are cheaper places to start.</p>
+
+<h2>Job by job</h2>
+<h3>Email, calendar and reminders</h3>
+<p><b>Claude</b> connects to Gmail, Google Calendar and Drive on every plan, including Free. It can search and draft emails, create events, find a time that works for everyone and answer invites. It asks before it sends, replies or forwards, by default${c('cl-gws3')}. <b>ChatGPT</b> can draft and send from Gmail or Outlook on the web (Plus and up): it writes the draft and you choose to send it${c('oai-rn3')}. You can connect a personal and a work Google account to the same chat on Plus${c('oai-rn3')}, and ChatGPT's scheduled tasks handle reminders and recurring check-ins on Plus${c('oai-pricing3','oai-rn3')}. <b>Gemini</b> works inside Gmail on the paid Google AI plans, and AI Inbox gives you a briefing of to-dos (US only)${c('g-plans3')}.</p>
+<p>Want more detail? See <a href="/ai-agent-for-email-and-calendar/">AI agent for email and calendar</a>.</p>
+
+<h3>Shopping and booking</h3>
+<p><b>ChatGPT</b> shows open tables from OpenTable (worldwide), Resy (US) and Yelp (US and Canada), and you tap a time to book. It's on every plan${c('oai-rn3')}. On Plus and Pro, ChatGPT Work can sign in to websites with you and do things like book a DMV appointment or fill out passport renewal forms. It always asks before consequential actions such as a reservation or payment${c('oai-rn3')}. <b>Muse from Meta</b> is an agent app built for email, bookings, budgets and shopping${c('ps-muse')}, and it asks before it buys${c('mu-priv3')}. <b>Gemini</b> can handle tasks in the background with Tasks in Gemini (Pro and Ultra, select countries)${c('g-plans3')}, and Ultra adds AI-powered calls to local businesses (US only)${c('g-plans3')}.</p>
+
+<h3>Research</h3>
+<p>ChatGPT, Claude and Gemini all do deep research on their paid plans. ChatGPT Plus has expanded deep research${c('oai-pricing3')}, Claude Pro includes Research${c('cl-pricing3')}, and Google AI Pro has expanded Deep Research in Gemini${c('g-plans3')}. <b>Manus</b> is the pick if you want the result as slides or a report${c('mn-pricing3')}. Always click through to the sources before you act on a health, money or legal answer. More in <a href="/ai-agent-for-research/">AI agent for research</a>.</p>
+
+<h3>Planning trips</h3>
+<p>Google's own example for Chrome auto browse is researching hotel and flight costs across several date options to find a cheaper time to travel. It's on AI Pro and Ultra, US and India only${c('g-plans3')}. OpenClaw advertises checking you in for flights from WhatsApp or Telegram, if you're willing to set it up${c('oc3')}. Any $20 assistant can write the day-by-day plan.</p>
+
+<h3>Work while you're away</h3>
+<p>A normal assistant works while you're chatting with it. An always-on agent keeps going after you close the app. <b>Grok Bot</b> gives each bot its own computer, uses your apps and websites like you would, can learn a routine by watching you do it once, and checks back when it needs your approval${c('gb-page3')}. It's on the desktop and iOS${c('gb-page3')}. A <b>ChatGPT dot</b> has its own cloud computer, can review your calendar or remind you later, and lets you set rules for what it can buy or share without asking${c('oai-dot')}. Compare them in <a href="/compare/grok-bot-vs-chatgpt-dots/">Grok Bot vs ChatGPT dots</a>.</p>
+
+<h2>Price at a glance</h2>
+<div class="gtable-wrap"><table class="gtab"><thead><tr><th>Product</th><th>Cheapest way in</th><th>Paid plans</th><th>Good to know</th></tr></thead><tbody>
+${costs.map(([a,b,p,w])=>`<tr><td data-l="Product" class="nm">${a}</td><td data-l="Cheapest way in">${b}</td><td data-l="Paid plans">${p}</td><td data-l="Good to know">${w}</td></tr>`).join('')}
+</tbody></table></div>
+<p>Prices are as shown on each vendor's page on 18 Oct 2026; tax may be added. Every plan is on our <a href="/pricing/">pricing page</a>, and the long version is <a href="/how-much-does-an-ai-agent-cost/">How much does an AI agent cost?</a></p>
+
+<h2>Staying safe and private</h2>
+<p>The big risk isn't the AI going rogue. It's that an agent reading your email or browsing the web can be tricked by instructions hidden in what it reads. OpenAI calls this "prompt injection" and gives the example of a malicious comment telling an agent to grab a password reset code from Gmail${c('oai-agent3')}. Meta warns about the same thing for Muse${c('mu-priv3')}, and Google says Gemini can make mistakes like buying things or sharing your data unexpectedly, so watch its browsing closely${c('g-privacy')}.</p>
+<p><b>Is it training on my chats?</b></p>
+<ul>
+<li><b>ChatGPT:</b> turn off "Improve the model for everyone" in Settings → Data controls. Temporary chats aren't used for training${c('oai-data')}.</li>
+<li><b>Claude:</b> on Free, Pro and Max, training is opt-out, so switch it off if you don't want it${c('cl-pricing3')}. Claude doesn't train on your Gmail, Calendar or Drive connector data${c('cl-gws3')}.</li>
+<li><b>Gemini:</b> with Keep Activity on, Google uses your chats to improve its AI, with human reviewers, and reviewed chats are kept up to 3 years. Turning it off stops that, but some connected apps like Google Workspace stop working${c('g-privacy')}.</li>
+<li><b>Muse:</b> training is on when you start. Switch it off in Settings → Data controls${c('mu-priv3')}.</li>
+<li><b>Grok Bot:</b> offers a training opt-out and encrypts its cloud computer${c('gb-page3')}.</li>
+<li><b>Manus:</b> the training opt-out is listed as a Team plan feature${c('mn-pricing3')}; the default for individual plans is ${U}.</li>
+<li><b>OpenClaw:</b> runs on your machine and only sends a daily version check, which you can turn off${c('oc3')}. But it can have full system access unless you sandbox it${c('oc3')}. Read <a href="/is-openclaw-safe/">Is OpenClaw safe?</a> first.</li>
+</ul>
+<p><b>Five habits that keep you safe</b></p>
+<ol>
+<li>Connect only the apps a task needs, and switch off the rest. OpenAI recommends exactly this${c('oai-agent3')}.</li>
+<li>Don't say "check my email and handle everything". Give it one clear job${c('oai-agent3')}.</li>
+<li>Type passwords yourself, never in the chat${c('oai-agent3')}. Muse keeps logins in a store the AI model can't see${c('mu-priv3')}.</li>
+<li>Keep "ask before sending or buying" turned on. Claude, ChatGPT, Muse and Lindy all have an approval step${c('cl-gws3','oai-rn3','mu-priv3','ly3')}.</li>
+<li>Never hand over your banking login. ChatGPT also offers Lockdown Mode, which limits web access to cut prompt-injection risk${c('oai-rn3')}.</li>
+</ol>
+
+<h2>Choose in five minutes</h2>
+<ol>
+<li><b>Where's your email?</b> Gmail: Claude or Gemini both fit. Outlook or a mix: ChatGPT.</li>
+<li><b>Do you want it to book and buy, or just help?</b> Booking: ChatGPT Plus. Just help: any free plan is a fine start.</li>
+<li><b>Do you already pay Google One?</b> Google AI Pro may replace that bill, since it includes 5 TB of storage${c('g-plans3')}.</li>
+<li><b>Is there one errand you repeat every week?</b> That's your test for Grok Bot or a dot.</li>
+<li><b>Is it sold where you live?</b> Dots skip the EEA, Switzerland and the UK${c('oai-dot')}. Gemini Agent is US and English only${c('g-plans3')}. Muse isn't everywhere yet${c('mu3')}.</li>
+</ol>
+<p>For the full breakdown of eleven agents, including the "for everyday life" track, read <a href="/guide/#life">the buyer's guide</a>.</p>
+`;
+const faqs = [
+ ['What is the best AI personal assistant in 2026?',`For most people, a $20/month plan: ChatGPT Plus${c('oai-plus')} if you want it to book things and fill in forms, or Claude Pro${c('cl-pricing3')} if you mostly want help with Gmail and your calendar. Google AI Pro ($19.99/month) is a good pick if you already pay Google for storage${c('g-plans3')}.`],
+ ['Is there a free AI agent for personal use?',`Yes. Claude Free includes Gmail and Calendar connectors and memory${c('cl-pricing3','cl-gws3')}, ChatGPT restaurant reservations work on every plan${c('oai-rn3')}, and Muse has a free tier with a usage limit${c('mu3')}. OpenClaw and Hermes Agent are free software, but you pay for the AI model${c('oc3','hm3')}.`],
+ ['Can an AI agent book restaurants or appointments for me?',`ChatGPT can find and book restaurant times through OpenTable, Resy and Yelp, and ChatGPT Work on Plus and Pro can book things like a DMV appointment on sites you sign in to. It asks before a reservation or payment${c('oai-rn3')}.`],
+ ['Is it safe to give an AI agent my email?',`It's reasonable if sending stays behind your approval. Claude asks before sending by default${c('cl-gws3')}. Connect only what a task needs and avoid open-ended "handle everything" requests, as OpenAI advises${c('oai-agent3')}.`],
+ ['Do AI assistants train on my personal chats?',`Often yes, by default. You can turn it off: "Improve the model for everyone" in ChatGPT${c('oai-data')}, the training setting in Claude${c('cl-pricing3')}, Keep Activity in Gemini${c('g-privacy')}, and Data controls in Muse${c('mu-priv3')}.`],
+];
+---
+<GuideArticle slug="best-ai-agent-for-personal-use" kicker="Everyday life" updated="2026-10-18"
+ title="Best AI Agent for Personal Use (2026): Everyday AI Assistants Compared | AgentStackWatch"
+ desc="The best AI personal assistant for everyday life in 2026: ChatGPT, Claude, Gemini, Grok Bot, Muse, Manus and OpenClaw compared on email, calendar, booking, trips, privacy and price. Every fact sourced."
+ h1="The best AI agent for personal use (2026)"
+ dek="Which AI assistant to use for your inbox, calendar, bookings, research and trips at home, what each one costs, and how to keep your data private. Plain English, every fact linked to the vendor's own page."
+ faqs={faqs} used={used}
+ related={[['/compare/chatgpt-dots-vs-claude-app/','ChatGPT vs Claude'],['/compare/grok-bot-vs-chatgpt-dots/','Grok Bot vs ChatGPT dots'],['/compare/claude-app-vs-gemini-agent/','Claude vs Gemini Agent'],['/compare/perplexity-comet-vs-gemini-agent/','Perplexity Comet vs Gemini Agent'],['/compare/openclaw-vs-hermes-agent/','OpenClaw vs Hermes Agent'],['/ai-agent-for-email-and-calendar/','AI agent for email and calendar'],['/is-openclaw-safe/','Is OpenClaw safe?']]}>
+<Fragment set:html={body}/>
+</GuideArticle>

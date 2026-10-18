@@ -1,7 +1,8 @@
-// Per-page numbered citations. Reuses the buyer's-guide sources (checked 2026-10-16) plus sources checked for the guides hub on 2026-10-17.
+// Per-page numbered citations. Reuses the buyer's-guide sources (checked 2026-10-16) plus sources checked for the guides hub on 2026-10-17
+// and for the personal-use guide on 2026-10-18.
 import { SRC as GSRC } from './guide-data.js';
 import ps from '../../data/pricing-sources.json';
-const G = '16 Oct 2026', T = '17 Oct 2026';
+const G = '16 Oct 2026', T = '17 Oct 2026', S = '18 Oct 2026';
 const OCR = t => [`oc-${t}`, `https://github.com/openclaw/openclaw/releases/tag/${t}`, `OpenClaw release notes ${t}`, T];
 const EXTRA = [
  ['oai-rn','https://help.openai.com/en/articles/6825453-chatgpt-release-notes','ChatGPT release notes (OpenAI Help Center)',T],
@@ -29,6 +30,26 @@ const EXTRA = [
  ['hm-adv','https://github.com/NousResearch/hermes-agent/security/advisories','Hermes Agent published security advisories (GitHub)',T],
  ['oc-gh','https://github.com/openclaw/openclaw','OpenClaw on GitHub',T],
  ['gb-pricing2','https://docs.x.ai/x-subscription/pricing','The X Subscription pricing, incl. Teams (re-checked)',T],
+ // Checked 18 Oct 2026 for /best-ai-agent-for-personal-use/
+ ['oai-plus','https://help.openai.com/en/articles/6950777-what-is-chatgpt-plus','What is ChatGPT Plus? (OpenAI Help Center)',S],
+ ['oai-pricing3','https://chatgpt.com/pricing','ChatGPT plans & pricing (re-checked)',S],
+ ['oai-rn3','https://help.openai.com/en/articles/6825453-chatgpt-release-notes','ChatGPT release notes (re-checked)',S],
+ ['oai-data','https://help.openai.com/en/articles/7730893-data-controls-faq','Data controls in ChatGPT (OpenAI Help Center)',S],
+ ['oai-agent3','https://help.openai.com/en/articles/11752874-chatgpt-agent','ChatGPT agent help article (re-checked)',S],
+ ['oai-dot','https://help.openai.com/en/articles/20001530-getting-started-with-your-dot','Getting started with your dot (OpenAI Help Center)',S],
+ ['cl-pricing3','https://claude.com/pricing','Claude pricing & plan comparison (re-checked)',S],
+ ['cl-gws3','https://support.claude.com/en/articles/10166901-use-google-workspace-connectors','Claude Google Workspace connectors (re-checked)',S],
+ ['gb-page3','https://x.ai/bot','Grok Bot product page (re-checked)',S],
+ ['gb-pricing3','https://docs.x.ai/x-subscription/pricing','The X Subscription pricing (re-checked)',S],
+ ['gb-docs3','https://docs.x.ai/x-subscription/grok-bot','Grok Bot on The X Subscription (re-checked)',S],
+ ['g-plans3','https://one.google.com/about/google-ai-plans/','Google AI plans (re-checked)',S],
+ ['g-privacy','https://support.google.com/gemini/answer/13594961','Gemini Apps Privacy Hub (Google)',S],
+ ['mn-pricing3','https://help.manus.im/en/articles/11711111-what-is-the-current-membership-pricing-for-manus','Manus membership pricing (re-checked)',S],
+ ['oc3','https://openclaw.ai/','OpenClaw homepage (re-checked)',S],
+ ['hm3','https://hermes-agent.nousresearch.com/','Hermes Agent homepage (re-checked)',S],
+ ['ly3','https://www.lindy.ai/pricing','Lindy pricing & FAQ (re-checked)',S],
+ ['mu3','https://www.meta.com/help/subscriptions/1021145227643680/','About Muse subscriptions (Meta, re-checked)',S],
+ ['mu-priv3','https://www.meta.com/help/artificial-intelligence/1047255454427887/','How Muse handles privacy, safety and security (Meta, re-checked)',S],
  ...['v2026.10.4','v2026.10.2','v2026.9.33','v2026.9.3','v2026.9.2','v2026.9.1','v2026.8.35','v2026.8.33','v2026.8.2','v2026.8.1','v2026.7.35','v2026.6.33'].map(OCR),
  ...Object.entries(ps).map(([k,u])=>[`ps-${k}`,u,`Pricing page: ${k}`,G]),
 ];
