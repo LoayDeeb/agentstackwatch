@@ -24,6 +24,12 @@
   "blurb": "ChatGPT Business vs Claude Team: seat prices, email and calendar, admin controls, data training and certifications."
  },
  {
+  "slug": "chatgpt-vs-gemini",
+  "short": "ChatGPT vs Gemini",
+  "kicker": "Head to head",
+  "blurb": "Which to pick for a Google or Microsoft business, everyday life or research: personal and business prices, agent features, privacy defaults and certifications."
+ },
+ {
   "slug": "how-much-does-an-ai-agent-cost",
   "short": "How much does an AI agent cost?",
   "kicker": "Cost",

@@ -23,7 +23,7 @@ const more = guides.filter(g=>g.slug!==slug);
 {related.map(([h,l])=> <li><a href={h}>{l}</a></li>)}
 <li><a href="/compare/">All head-to-head comparisons</a></li></ul>
 <p class="muted small">More guides: <Fragment set:html={more.map(g=>`<a href="/${g.slug}/">${g.short}</a>`).join(' · ')}/> · <a href="/guides/">all guides</a></p></section>
-<section class="gsec gctasec"><h2>Get the weekly agent briefing</h2><p>One email a week: what shipped, what broke and what got cheaper across AI agents, plus hands-on tests on real business tasks.</p></section>
+<section class="gsec gctasec"><h2>Get the weekly agent briefing</h2><p>One email a week: what shipped, what broke and what got cheaper across AI agents, plus hands-on tests on real tasks at work and at home.</p></section>
 <div class="gsign"><Signup variant="feature"/></div>
 <section class="gsec" id="sources"><p class="kicker">Sources</p><h2>Where these facts come from</h2>
 <p class="muted small">We read each vendor's own pricing page, help center, docs or release notes. No review sites, no paid placement. Research and drafting were assisted by an AI agent (Grok Bot, one of the products covered); every fact was checked against the linked source.</p>

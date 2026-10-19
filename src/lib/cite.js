@@ -1,8 +1,8 @@
 // Per-page numbered citations. Reuses the buyer's-guide sources (checked 2026-10-16) plus sources checked for the guides hub on 2026-10-17
-// and for the personal-use guide on 2026-10-18.
+// for the personal-use guide on 2026-10-18, and for the ChatGPT vs Gemini guide on 2026-10-19.
 import { SRC as GSRC } from './guide-data.js';
 import ps from '../../data/pricing-sources.json';
-const G = '16 Oct 2026', T = '17 Oct 2026', S = '18 Oct 2026';
+const G = '16 Oct 2026', T = '17 Oct 2026', S = '18 Oct 2026', M = '19 Oct 2026';
 const OCR = t => [`oc-${t}`, `https://github.com/openclaw/openclaw/releases/tag/${t}`, `OpenClaw release notes ${t}`, T];
 const EXTRA = [
  ['oai-rn','https://help.openai.com/en/articles/6825453-chatgpt-release-notes','ChatGPT release notes (OpenAI Help Center)',T],
@@ -50,6 +50,29 @@ const EXTRA = [
  ['ly3','https://www.lindy.ai/pricing','Lindy pricing & FAQ (re-checked)',S],
  ['mu3','https://www.meta.com/help/subscriptions/1021145227643680/','About Muse subscriptions (Meta, re-checked)',S],
  ['mu-priv3','https://www.meta.com/help/artificial-intelligence/1047255454427887/','How Muse handles privacy, safety and security (Meta, re-checked)',S],
+ // Checked 19 Oct 2026 for /chatgpt-vs-gemini/
+ ['oai-pricing4','https://chatgpt.com/pricing','ChatGPT plans & pricing (re-checked)',M],
+ ['oai-plus4','https://help.openai.com/en/articles/6950777-what-is-chatgpt-plus','What is ChatGPT Plus? (re-checked)',M],
+ ['oai-go4','https://openai.com/index/introducing-chatgpt-go/','OpenAI: Introducing ChatGPT Go (Jan 2026)',M],
+ ['oai-biz4','https://help.openai.com/en/articles/8792828-chatgpt-business-overview','ChatGPT Business overview (re-checked)',M],
+ ['oai-bizpage4','https://chatgpt.com/business/','ChatGPT Business product page (re-checked)',M],
+ ['oai-privacy4','https://openai.com/enterprise-privacy/','OpenAI enterprise privacy (re-checked)',M],
+ ['oai-data4','https://help.openai.com/en/articles/7730893-data-controls-faq','Data controls in ChatGPT (re-checked)',M],
+ ['oai-dot4','https://help.openai.com/en/articles/20001530-getting-started-with-your-dot','Getting started with your dot (re-checked)',M],
+ ['oai-agent4','https://help.openai.com/en/articles/11752874-chatgpt-agent','ChatGPT agent help article (re-checked)',M],
+ ['oai-rn4','https://help.openai.com/en/articles/6825453-chatgpt-release-notes','ChatGPT release notes (re-checked)',M],
+ ['g-plans4','https://one.google.com/about/google-ai-plans/','Google AI plans (re-checked)',M],
+ ['g-overview4','https://gemini.google/overview/agent/','Gemini app overview and plans (Google)',M],
+ ['g-privacy4','https://support.google.com/gemini/answer/13594961','Gemini Apps Privacy Hub (re-checked)',M],
+ ['g-gws4','https://support.google.com/gemini/answer/15229592','Connect the Google Workspace app to Gemini Apps (Google)',M],
+ ['g-cal4','https://support.google.com/gemini/answer/15305236','Create & manage calendar events with Gemini Apps (Google)',M],
+ ['g-gmail4','https://support.google.com/mail/answer/14355636','Collaborate with Gemini in Gmail (Google)',M],
+ ['gws-pricing4','https://workspace.google.com/pricing','Google Workspace pricing',M],
+ ['gws-plans4','https://knowledge.workspace.google.com/admin/billing/compare-flexible-and-annual-fixed-term-payment-plans','Google Workspace: Flexible vs Annual plan pricing',M],
+ ['gws-editions4','https://knowledge.workspace.google.com/admin/getting-started/editions/business-editions','Google Workspace Business editions',M],
+ ['gws-privacy4','https://knowledge.workspace.google.com/admin/generative-ai/generative-ai-in-google-workspace-privacy-hub','Generative AI in Google Workspace Privacy Hub',M],
+ ['gws-faq4','https://support.google.com/a/answer/14130944','Google Workspace with Gemini FAQ for Business',M],
+ ['g-ent4','https://cloud.google.com/gemini-enterprise/business','Gemini Enterprise Business edition (re-checked)',M],
  ...['v2026.10.4','v2026.10.2','v2026.9.33','v2026.9.3','v2026.9.2','v2026.9.1','v2026.8.35','v2026.8.33','v2026.8.2','v2026.8.1','v2026.7.35','v2026.6.33'].map(OCR),
  ...Object.entries(ps).map(([k,u])=>[`ps-${k}`,u,`Pricing page: ${k}`,G]),
 ];

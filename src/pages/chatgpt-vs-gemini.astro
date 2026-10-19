@@ -1,0 +1,117 @@
+---
+import GuideArticle from '../layouts/GuideArticle.astro'; import { citer } from '../lib/cite.js';
+const { c, used, U } = citer();
+const picks = [
+ ['Your company runs on Google Workspace (Gmail, Drive, Meet)','Gemini, already in your Workspace plan',`Gemini in Gmail and the Gemini app come with every Business plan, from $7 per user per month on an annual plan${c('gws-pricing4','gws-plans4')}. Business Standard ($14) adds Gemini in Docs, Meet and more${c('gws-pricing4','gws-plans4')}. Add ChatGPT Business later only if you want its agent to build finished files for you.`],
+ ['Your company runs on Microsoft 365, or a mix of tools','ChatGPT Business',`$20 per seat per month on annual billing, $25 monthly, from 2 seats${c('oai-biz4')}. Works with Outlook email and calendar, Word, Excel and PowerPoint, and SharePoint files${c('oai-rn4')}. Google's answer for non-Google shops is Gemini Enterprise Business, from $21 per seat${c('g-ent4')}.`],
+ ['You want one personal assistant for everyday life','ChatGPT Plus or Google AI Pro (about $20 either way)',`ChatGPT Plus is $20/month${c('oai-plus4')} and can book restaurant tables and finish tasks on websites you sign in to, asking before a reservation or payment${c('oai-rn4')}. Google AI Pro is $19.99/month and includes 5 TB of storage${c('g-plans4')}. If you already pay Google for storage, Pro is the better deal.`],
+ ['You read and research a lot','Google AI Pro for huge documents; ChatGPT Plus for finished reports',`Google AI Pro gives you a 1 million token context window and expanded Deep Research${c('g-plans4')}. ChatGPT Plus has expanded deep research and a 256K reasoning context${c('oai-pricing4')}, and ChatGPT Work turns research into documents, spreadsheets, slides and Sites${c('oai-rn4')}.`],
+ ['You want an agent that keeps working while you\'re away','ChatGPT Pro (dots) or Google AI Ultra',`A ChatGPT dot is an always-on agent with its own cloud computer, included with Pro ($100/month and up) and Business Premium${c('oai-dot4','oai-rn4')}. Gemini Agent is on Ultra ($99.99/month and up), US and English only${c('g-plans4')}.`],
+];
+const consumer = [
+ ['Free',`Unlimited text chats, limited deep research, limited ChatGPT Work on desktop${c('oai-pricing4')}`,`Gemini app with Deep Research, Gemini Live and 15 GB of storage${c('g-overview4')}`],
+ ['Budget',`Go: $8/month in the US at launch${c('oai-go4')}; current price not shown on the pricing page (${U}). May include ads${c('oai-pricing4')}`,`Google AI Plus: $4.99/month with 400 GB storage${c('g-plans4')}`],
+ ['Main plan',`Plus: $20/month, monthly billing only${c('oai-plus4')}`,`Google AI Pro: $19.99/month with 5 TB storage${c('g-plans4')}`],
+ ['Power user',`Pro: $100, $200 or $500/month${c('oai-rn4')}; includes a dot${c('oai-pricing4')}`,`Google AI Ultra: $99.99 or $199.99/month, 20 TB or 30 TB storage${c('g-plans4')}`],
+];
+const business = [
+ ['Entry seat',`ChatGPT Business Standard: $20/user/month annual, $25 monthly; minimum 2 seats${c('oai-biz4')}`,`Workspace Business Starter: $7/user/month annual, $8.40 flexible${c('gws-plans4')}. Includes Gemini in Gmail and the Gemini app${c('gws-pricing4')}`],
+ ['Mid tier',`No middle tier listed; you mix Standard and Premium seats${c('oai-biz4')}`,`Business Standard: $14 annual, $16.80 flexible${c('gws-plans4')}. Gemini in Gmail, Docs, Meet and more${c('gws-pricing4')}`],
+ ['Power seat',`Business Premium: $100/user/month annual, $125 monthly; 5x Standard usage and dots${c('oai-biz4','oai-bizpage4')}`,`Business Plus: $22 annual, $26.40 flexible, adds Vault and advanced endpoint management${c('gws-plans4','gws-editions4')}`],
+ ['AI without switching email',`Not needed: ChatGPT Business works alongside any email system`,`Gemini Enterprise Business edition: from $21/seat/month, connects to Microsoft 365, Google Workspace, HubSpot, Slack and more${c('g-ent4')}`],
+ ['Team size cap',`Minimum 2 seats${c('oai-biz4')}; maximum ${U}`,`Business plans: up to 300 users; Enterprise has no limit${c('gws-pricing4')}`],
+];
+const agent = [
+ ['Email',`Drafts and sends from Gmail or Outlook: it writes the draft and you choose to send (web; Plus, Pro, Business, Enterprise)${c('oai-rn4')}`,`Gemini in Gmail drafts, summarizes, searches and organizes (archive, delete, label) only after you confirm${c('g-gmail4')}. Needs a Workspace or Google AI plan${c('g-gmail4')}`],
+ ['Calendar',`Google Calendar, plus Outlook calendars; connect personal and work Google accounts in one chat${c('oai-rn4')}`,`Create, find and edit events, including shared calendars${c('g-cal4')}; from Gmail it can find open slots and reschedule${c('g-gmail4')}`],
+ ['Office documents',`ChatGPT for Word, Excel, PowerPoint and Google Sheets${c('oai-rn4')}`,`Gemini in Docs and Sheets on Google AI Pro${c('g-plans4')}; in Docs, Sheets, Slides, Drive and Meet on Workspace plans${c('gws-pricing4')}`],
+ ['Longer tasks',`ChatGPT Work researches, works across apps and creates documents, spreadsheets, presentations and Sites, asking you to approve important actions${c('oai-rn4')}. Full access on Plus and up; limited on Free and Go${c('oai-pricing4')}`,`Tasks in Gemini plans the steps, browses sites and keeps working in the background (Pro and Ultra, select countries)${c('g-plans4')}, using a remote browser and computer${c('g-privacy4')}`],
+ ['Browsing for you',`Work can sign in to websites with you, e.g. to book a DMV appointment; it asks before a reservation or payment (Plus and Pro)${c('oai-rn4')}`,`Chrome auto browse on Pro and Ultra, US and India only${c('g-plans4')}`],
+ ['Always-on agent',`Dots: own cloud computer, keep working between chats; Pro (not in the EEA, Switzerland or UK) and Business Premium${c('oai-dot4')}`,`Gemini Agent: Ultra only, US and English only${c('g-plans4')}`],
+ ['Phone calls',`A dot can't call you at launch${c('oai-dot4')}`,`AI calls to local businesses on Ultra (US only)${c('g-plans4')}`],
+ ['Connectors',`Plugins on every plan${c('oai-pricing4')}: Gmail, Google Calendar, Google Drive, Outlook, Box, Dropbox, SharePoint and more${c('oai-rn4')}`,`Gmail, Docs, Drive, Calendar, Tasks and Keep through the Google Workspace app${c('g-gws4')}; custom third-party MCP connectors${c('g-privacy4')}`],
+];
+const body = `
+<div class="tldr"><p><b>Short answer.</b> If your business already pays for Google Workspace, start with the Gemini you already have: it's built into every Business plan from $7 a user${c('gws-pricing4','gws-plans4')}. If you're on Microsoft 365 or want an agent that hands back finished files, ChatGPT Business at $20–25 a seat is the stronger pick${c('oai-biz4','oai-rn4')}. For personal use they cost about the same, $20 vs $19.99 a month${c('oai-plus4','g-plans4')}: pick ChatGPT for bookings and errands on websites, Gemini if you live in Gmail and want 5 TB of storage thrown in.</p></div>
+
+<h2>Quick verdict: which one fits you</h2>
+<div class="gtable-wrap"><table class="gtab"><thead><tr><th>If you…</th><th>Pick</th><th>Why</th></tr></thead><tbody>
+${picks.map(([a,b,w])=>`<tr><td data-l="If you…">${a}</td><td data-l="Pick" class="nm">${b}</td><td data-l="Why">${w}</td></tr>`).join('')}
+</tbody></table></div>
+
+<h2>Price at a glance: personal plans</h2>
+<div class="gtable-wrap"><table class="gtab"><thead><tr><th></th><th>ChatGPT</th><th>Google Gemini</th></tr></thead><tbody>
+${consumer.map(([k,a,b])=>`<tr><td data-l="" class="nm">${k}</td><td data-l="ChatGPT">${a}</td><td data-l="Google Gemini">${b}</td></tr>`).join('')}
+</tbody></table></div>
+<p>Google's paid plans are also storage plans, shared with up to five family members${c('g-plans4')}. ChatGPT Plus has no annual option${c('oai-plus4')}. Prices are US prices as shown on 19 Oct 2026; tax may be added.</p>
+
+<h2>Price at a glance: business plans</h2>
+<p>This isn't quite apples to apples. A Google Workspace seat is your business email, storage, video calls and documents, with Gemini included. A ChatGPT Business seat is the AI only, so you keep whatever email you already use.</p>
+<div class="gtable-wrap"><table class="gtab"><thead><tr><th></th><th>ChatGPT Business</th><th>Gemini with Google Workspace</th></tr></thead><tbody>
+${business.map(([k,a,b])=>`<tr><td data-l="" class="nm">${k}</td><td data-l="ChatGPT Business">${a}</td><td data-l="Gemini with Google Workspace">${b}</td></tr>`).join('')}
+</tbody></table></div>
+<p>Annual Workspace plans lock in your seat count until renewal; flexible plans let you add and remove people any month${c('gws-plans4')}. ChatGPT Business lets you buy workspace credits for usage past the included limits, and API usage is billed separately${c('oai-biz4')}. Enterprise pricing for both is through sales.</p>
+
+<h2>What each can actually do as an agent</h2>
+<p>Both have moved past "chatbot". Here's what each one can do for you today, from their own help pages. One housekeeping note: ChatGPT's old "agent mode" is gone. OpenAI now points you to ChatGPT Work for multi-step tasks${c('oai-agent4')}, and dots for always-on work${c('oai-dot4')}.</p>
+<div class="gtable-wrap"><table class="gtab"><thead><tr><th></th><th>ChatGPT</th><th>Gemini</th></tr></thead><tbody>
+${agent.map(([k,a,b])=>`<tr><td data-l="" class="nm">${k}</td><td data-l="ChatGPT">${a}</td><td data-l="Gemini">${b}</td></tr>`).join('')}
+</tbody></table></div>
+<h3>Where ChatGPT pulls ahead</h3>
+<p>Finished work. ChatGPT Work goes from a goal to a document, spreadsheet, deck or website${c('oai-rn4')}, and on the desktop app it can use your local files and apps with your permission${c('oai-rn4')}. It's also the better fit for Microsoft shops: Outlook, Word, Excel and PowerPoint all work with it${c('oai-rn4')}. And dots, the always-on agents, are available to businesses on Premium seats today${c('oai-dot4')}.</p>
+<h3>Where Gemini pulls ahead</h3>
+<p>It's already inside Gmail, Docs and Drive, so there's nothing to connect for a Google company${c('gws-pricing4')}. Gemini in Gmail can clean up your inbox in bulk, with a confirm step and 60 seconds to undo${c('g-gmail4')}. Google's plans also bundle storage, and Pro adds YouTube Premium Lite and Google Home Premium${c('g-plans4')}. The catch for Google's most agentic features: many are limited by country. Chrome auto browse is US and India only, and Gemini Agent is US and English only${c('g-plans4')}.</p>
+<p>Want the inbox side in more depth? See <a href="/ai-agent-for-email-and-calendar/">AI agent for email and calendar</a>.</p>
+
+<h2>Privacy: is it training on your chats?</h2>
+<h3>Personal plans</h3>
+<ul>
+<li><b>ChatGPT:</b> OpenAI may use your conversations to improve its models, and you can opt out any time${c('oai-plus4')}. Turn off "Improve the model for everyone" in Settings → Data controls. Temporary chats aren't used for training and may be kept up to 30 days for safety${c('oai-data4')}.</li>
+<li><b>Gemini:</b> with Keep Activity on, Google uses your activity to improve its services, including training its AI, and human reviewers read some chats. Reviewed chats are kept up to 3 years, even if you delete your activity${c('g-privacy4')}. Activity auto-deletes after 18 months by default${c('g-privacy4')}.</li>
+<li><b>The Gemini trade-off:</b> turning Keep Activity off stops training on future chats, but Google Workspace stops working as a connected app until you turn it back on${c('g-privacy4')}. To use Gemini with your Gmail and Calendar, Keep Activity has to be on${c('g-gws4')}.</li>
+<li><b>Ads:</b> ChatGPT Free and Go may show ads${c('oai-pricing4','oai-rn4')}. Google says Gemini chats aren't used to show you ads${c('g-privacy4')}.</li>
+</ul>
+<h3>Business plans</h3>
+<ul>
+<li><b>ChatGPT Business:</b> OpenAI won't train on your workspace's data${c('oai-biz4')}, including data from connected apps, by default${c('oai-privacy4')}. Admins can view, export and delete members' conversations and set how long data is kept${c('oai-privacy4')}.</li>
+<li><b>Gemini with Workspace:</b> your content isn't reviewed by humans or used to train AI models outside your domain without permission${c('gws-privacy4')}. Licensed users' Gemini app chats aren't used for training and are never reviewed by humans${c('gws-faq4')}. Admins set Gemini app retention up to 36 months${c('gws-privacy4')}.</li>
+</ul>
+<p>One habit for both: connect only the apps a task needs, and don't hand over passwords in the chat. OpenAI gives exactly this advice${c('oai-agent4')}, and Google warns that Gemini can make mistakes like buying things or sharing your data unexpectedly, so watch its browsing${c('g-privacy4')}.</p>
+
+<h2>Security and admin for business tiers</h2>
+<ul>
+<li><b>Certifications:</b> ChatGPT Business has completed a SOC 2 Type 2 audit${c('oai-privacy4')}. Google lists SOC 1/2/3, ISO 9001, ISO/IEC 27001, 27701, 27017, 27018 and 42001 for Gemini, plus FedRAMP High authorization${c('gws-privacy4')}. OpenAI's ISO certifications for Business weren't stated on the pages we checked: ${U}.</li>
+<li><b>Sign-in and admin:</b> ChatGPT Business has SSO and multi-factor authentication${c('oai-bizpage4')}, with SAML SSO for enterprise-level sign-in${c('oai-privacy4')}. SCIM, role-based access and data residency need Enterprise${c('oai-bizpage4')}. On supported Workspace editions, admins can turn Gemini features on or off per app, and Gemini audit logs are available${c('gws-privacy4')}.</li>
+<li><b>Data protection:</b> on supported Workspace editions, existing data loss prevention rules apply to Gemini output, and file restrictions can keep Gemini away from sensitive documents${c('gws-privacy4')}. Gemini can't act on email and files encrypted with your own keys${c('gws-faq4')}.</li>
+<li><b>Healthcare:</b> Gemini with Workspace can support HIPAA workloads${c('gws-faq4')}. For OpenAI, a BAA needs a contracted plan, not self-serve Business${c('oai-biz4')}.</li>
+<li><b>Prompt injection:</b> Gemini checks content for threats before acting and blocks or excludes it${c('gws-privacy4')}. ChatGPT offers Lockdown Mode, which limits web access to reduce data leaks from prompt injection, and admins can set it for members${c('oai-rn4')}.</li>
+</ul>
+
+<h2>Choose in five minutes</h2>
+<ol>
+<li><b>Where's your work email?</b> Google Workspace: try the Gemini you already pay for first. Outlook: ChatGPT.</li>
+<li><b>Do you want answers or finished files?</b> Finished decks, spreadsheets and Sites: ChatGPT Work${c('oai-rn4')}.</li>
+<li><b>Are you buying for yourself?</b> Both main plans cost about $20${c('oai-plus4','g-plans4')}. Already paying Google One? Google AI Pro replaces that bill with 5 TB included${c('g-plans4')}.</li>
+<li><b>Where do you live?</b> Dots on Pro skip the EEA, Switzerland and the UK${c('oai-dot4')}. Gemini Agent and Chrome auto browse are limited to the US (and India for auto browse)${c('g-plans4')}.</li>
+<li><b>Still torn?</b> Both have free plans${c('oai-pricing4','g-overview4')}. Give each the same real task for a week, like "find every unpaid invoice in my email", and keep the one that gets it right.</li>
+</ol>
+<p>Comparing other assistants too? Read <a href="/chatgpt-vs-claude-for-business/">ChatGPT vs Claude for business</a>, <a href="/best-ai-agent-for-personal-use/">the best AI agent for personal use</a>, or the full <a href="/guide/">buyer's guide</a>.</p>
+`;
+const faqs = [
+ ['Is Gemini better than ChatGPT?',`Neither wins for everyone. Gemini is the better value if you already use Google Workspace, since it's included from $7 a user${c('gws-pricing4','gws-plans4')}. ChatGPT is stronger for Microsoft Office and Outlook and for agent work that ends in finished files${c('oai-rn4')}.`],
+ ['How much do ChatGPT and Gemini cost in 2026?',`For personal use: ChatGPT Plus is $20/month${c('oai-plus4')} and Pro is $100, $200 or $500${c('oai-rn4')}; Google AI Plus is $4.99, AI Pro $19.99, and Ultra $99.99 or $199.99${c('g-plans4')}. For business: ChatGPT Business is $20–25 per seat${c('oai-biz4')}; Google Workspace with Gemini is $7–22 per user on annual plans${c('gws-plans4')}.`],
+ ['Gemini or ChatGPT for business?',`If your company is on Google Workspace, Gemini is already in Gmail and the Gemini app on every Business plan${c('gws-pricing4')}. If you're on Microsoft 365, ChatGPT Business works with Outlook, Word, Excel and PowerPoint${c('oai-rn4')}, or look at Gemini Enterprise Business from $21 a seat${c('g-ent4')}.`],
+ ['Do ChatGPT and Gemini train on my data?',`On personal plans, both can unless you switch it off: "Improve the model for everyone" in ChatGPT${c('oai-data4')}, Keep Activity in Gemini${c('g-privacy4')}. On business plans, OpenAI won't train on Business workspace data${c('oai-biz4')}, and Google doesn't use Workspace content for training outside your domain without permission${c('gws-privacy4')}.`],
+ ['Can ChatGPT or Gemini send emails and manage my calendar?',`ChatGPT drafts an email in Gmail or Outlook and you choose to send it${c('oai-rn4')}. Gemini can create, find and edit Google Calendar events${c('g-cal4')}, and Gemini in Gmail drafts emails and organizes your inbox after you confirm${c('g-gmail4')}.`],
+ ['Does ChatGPT still have agent mode?',`No. OpenAI says ChatGPT agent is no longer available and points to ChatGPT Work for longer, multi-step tasks${c('oai-agent4')}. Dots are its always-on agents${c('oai-dot4')}.`],
+];
+---
+<GuideArticle slug="chatgpt-vs-gemini" kicker="Head to head" updated="2026-10-19"
+ title="ChatGPT vs Gemini (2026): Price, Agents, Privacy, Business Plans | AgentStackWatch"
+ desc="ChatGPT vs Gemini in 2026: which to pick for a Google Workspace business, a Microsoft business, everyday life or heavy research. Personal and business prices, agent features, privacy defaults and certifications, all sourced."
+ h1="ChatGPT vs Gemini (2026)"
+ dek="Which one to pick for your business or your everyday life: what each costs, what it can actually do as an agent, and what happens to your data. Plain English, every fact linked to OpenAI's and Google's own pages."
+ faqs={faqs} used={used}
+ related={[['/chatgpt-vs-claude-for-business/','ChatGPT vs Claude for business'],['/compare/grok-bot-vs-gemini-agent/','Grok Bot vs Gemini Agent'],['/compare/claude-app-vs-gemini-agent/','Claude vs Gemini Agent'],['/compare/grok-bot-vs-chatgpt-dots/','Grok Bot vs ChatGPT dots'],['/best-ai-agent-for-small-business/','Best AI agent for small business'],['/ai-agent-for-research/','AI agent for research']]}>
+<Fragment set:html={body}/>
+</GuideArticle>
