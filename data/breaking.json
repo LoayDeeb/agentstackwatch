@@ -1,5 +1,25 @@
 [
  {
+  "slug": "openclaw",
+  "name": "OpenClaw",
+  "category": "personal",
+  "tag": "v2026.10.5",
+  "date": "2026-10-18",
+  "week": "2026-10-12",
+  "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.5",
+  "keywords": [
+   "removed",
+   "deprecated",
+   "migration"
+  ],
+  "excerpt": [
+   "- Tool approval hooks: ordinary hooks can no longer rewrite trusted-inline-approved tool arguments without another approval, and transforming plugins must request separate approval for their final arguments or the call i",
+   "- Session cleanup: remove leftover GitHub publication receipts and managed worktrees on cleanup and Incognito reset, and publish conversation, plugin-state, sandbox, worktree, and GitHub authority receipts. (163833, 1651",
+   "- Channel security: stop removed X allowlist senders from reaching dispatch mid-authorization, redact credentials in Discord PluralKit, LINE, and Tlon API error bodies, bound pending IRC inbound lines, and reject unsafe ",
+   "- Control UI misc: confirm dirty exec approval target switches, keep focus in config collections, revert Slack and Discord session return buttons, consolidate browser connections in Activity, and remove duplicate agent u"
+  ]
+ },
+ {
   "slug": "goose",
   "name": "Goose",
   "category": "frameworks",

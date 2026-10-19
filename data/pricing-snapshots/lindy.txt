@@ -17,11 +17,10 @@ Setup in 2 minutes
 Free credits last 7 days
 Team
 Buy the credits you need.
-$ 29.99 /mo
-3,000 credits / mo 3,000 credits $29.99
-4,000 credits $39.99
-5,000 credits $49.99
+$ 49.99 /mo
+5,000 credits / mo 5,000 credits $49.99
 6,000 credits $59.99
+7,000 credits $69.99
 8,000 credits $79.99
 15,000 credits $99.99
 20,000 credits $149.99
@@ -37,7 +36,7 @@ Growing teams
 1,750,000 credits $9,999.50
 Need more? Top up anytime at $10 per 1,000 credits, or talk to sales .
 Try for free Everything in Free, and:
-3,000 credits every month
+5,000 credits every month
 Credits pooled across your whole team
 Top up anytime, $10 per 1,000 credits
 Choose your model for each task
@@ -54,7 +53,7 @@ Audit logs
 Shared usage + bonus credits
 Dedicated support
 Onboarding & enablement
-Every active user in your workspace is billed, from $29.99 a month for 3,000 credits each.
+Every active user in your workspace is billed, from $49.99 a month for 5,000 credits each.
 See everything Lindy includes
 Everything included right out of the box.
 Slack-native teammate in threads + mentions
@@ -94,14 +93,14 @@ Every seat adds its credits to a shared pool, so anyone can draw on it when they
 No surprise bills
 If the pool runs low, Lindy pauses and tells you. Admins can set credit allocations per seat.
 FAQ.
-How do credits work? ⌄ Credits are how Lindy measures work, and bigger jobs use more. Pick the monthly credits your team needs, starting at 3,000 for $29.99 a month. Every active user in your workspace is billed, from $29.99 a month for 3,000 credits each, and everyone draws from one shared pool.
+How do credits work? ⌄ Credits are how Lindy measures work, and bigger jobs use more. Pick the monthly credits your team needs, starting at 5,000 for $49.99 a month. Every active user in your workspace is billed, from $49.99 a month for 5,000 credits each, and everyone draws from one shared pool.
 Do unused credits roll over? ⌄ Monthly credits refresh at the start of each billing cycle and don't roll over. Top-up credits are yours until you use them.
 What happens if we run out of credits? ⌄ Nothing breaks and there is no surprise bill. Lindy pauses credit-using actions until your credits reset at the start of your next cycle. Need more before then? Admins can top up at $10 per 1,000 credits, or move to more monthly credits anytime.
 Who actually needs a paid seat? ⌄ Anyone who uses Lindy takes a seat, whether they sign up directly, join your workspace, or @mention Lindy in Slack. New teammates who join through Slack get a 7-day free trial before the seat is billed; direct signups are billed right away.
 How does billing and seat management work? ⌄ Teammate is one workspace subscription: every seat is on a single bill and all credits pool together. Admins manage seats and credit allocations in one place. Remove a seat any time and it stays active through the cycle you've paid for, with no mid-cycle proration, and Lindy won't re-add anyone an admin removed.
 Will Lindy do anything without my approval? ⌄ No. Anything with outside impact waits for approval such as sending an email, updating a ticket, posting to another channel, publishing a doc. Read-only lookups from approved sources do not require approval.
 Is our data secure? ⌄ Yes. Your data is encrypted, never sold, and never used to train models. Lindy is SOC 2 and GDPR compliant, and Enterprise adds SSO, audit logs, and HIPAA with a signed BAA.
-Can I try Lindy for free? ⌄ Yes. Start with $50 in free credits, no credit card required. The free credits last 7 days. After that, paid usage starts at $29.99 per user per month.
+Can I try Lindy for free? ⌄ Yes. Start with $50 in free credits, no credit card required. The free credits last 7 days. After that, paid usage starts at $49.99 per user per month.
 What happens if we cancel? ⌄ Your workspace stays active through the cycle you've paid for, with no mid-cycle proration. After that, credit-using actions stop.
 Does a returning teammate get another free trial? ⌄ The free week is one-time per teammate. If someone leaves and comes back, they pick up right where the team left off with immediate access, going straight onto a billed seat.
 More questions? See our docs

@@ -3,8 +3,8 @@
   "url": "https://docs.x.ai/x-subscription/pricing",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-18",
-  "last_checked": "2026-10-18",
+  "last_attempt": "2026-10-19",
+  "last_checked": "2026-10-19",
   "first_snapshot": "2026-10-16",
   "hash": "068a184c8d131dcd"
  },
@@ -50,36 +50,68 @@
      "Version 12.0 12h ago",
      "Size 114 MB"
     ]
+   },
+   {
+    "date": "2026-10-19",
+    "from": "022953635fb0361a",
+    "to": "766c99626f4f3384",
+    "removed": [
+     "279K Ratings",
+     "5d ago Stellar Luner",
+     "12.0 12h ago",
+     "11.0 5d ago",
+     "Version 12.0 12h ago"
+    ],
+    "added": [
+     "291K Ratings",
+     "6d ago Stellar Luner",
+     "12.0 1d ago",
+     "11.0 6d ago",
+     "Version 12.0 1d ago"
+    ]
    }
   ],
   "last_status": 200,
-  "last_attempt": "2026-10-18",
-  "last_checked": "2026-10-18",
+  "last_attempt": "2026-10-19",
+  "last_checked": "2026-10-19",
   "first_snapshot": "2026-10-16",
-  "hash": "022953635fb0361a",
-  "last_changed": "2026-10-18"
+  "hash": "766c99626f4f3384",
+  "last_changed": "2026-10-19"
  },
  "openclaw": {
   "url": "https://openclaw.ai/",
-  "history": [],
+  "history": [
+   {
+    "date": "2026-10-19",
+    "from": "aeb66947713c5219",
+    "to": "84851c15643b1081",
+    "removed": [
+     "x64 · AppImage or Debian package · v2026.10.4"
+    ],
+    "added": [
+     "x64 · AppImage or Debian package · v2026.10.5"
+    ]
+   }
+  ],
   "last_status": 200,
-  "last_attempt": "2026-10-18",
-  "last_checked": "2026-10-18",
+  "last_attempt": "2026-10-19",
+  "last_checked": "2026-10-19",
   "first_snapshot": "2026-10-16",
-  "hash": "aeb66947713c5219"
+  "hash": "84851c15643b1081",
+  "last_changed": "2026-10-19"
  },
  "chatgpt-dots": {
   "url": "https://help.openai.com/en/articles/20001530-getting-started-with-your-dot",
   "history": [],
   "last_status": 403,
-  "last_attempt": "2026-10-18"
+  "last_attempt": "2026-10-19"
  },
  "hermes-agent": {
   "url": "https://hermes-agent.nousresearch.com/",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-18",
-  "last_checked": "2026-10-18",
+  "last_attempt": "2026-10-19",
+  "last_checked": "2026-10-19",
   "first_snapshot": "2026-10-16",
   "hash": "19616ebbe3a3e427"
  },
@@ -87,8 +119,8 @@
   "url": "https://help.manus.im/en/articles/11711111-what-is-the-current-membership-pricing-for-manus",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-18",
-  "last_checked": "2026-10-18",
+  "last_attempt": "2026-10-19",
+  "last_checked": "2026-10-19",
   "first_snapshot": "2026-10-16",
   "hash": "72fe8d5cefa398ec"
  },
@@ -168,20 +200,44 @@
      "Hire Lindy for",
      "Paid ads Account management Client reporting Lead gen & outreach Inbox & calendar Data analysis Calls & bookings See every role"
     ]
+   },
+   {
+    "date": "2026-10-19",
+    "from": "3dc35bffe8452f11",
+    "to": "7ed00a1874004273",
+    "removed": [
+     "$ 29.99 /mo",
+     "3,000 credits / mo 3,000 credits $29.99",
+     "4,000 credits $39.99",
+     "5,000 credits $49.99",
+     "3,000 credits every month",
+     "Every active user in your workspace is billed, from $29.99 a month for 3,000 credits each.",
+     "How do credits work? ⌄ Credits are how Lindy measures work, and bigger jobs use more. Pick the monthly credits your team needs, starting at 3,000 for $29.99 a month. Every active user in your workspace is billed, from $29.99 a month for 3,000 credits each, and everyone draws from one shared pool.",
+     "Can I try Lindy for free? ⌄ Yes. Start with $50 in free credits, no credit card required. The free credits last 7 days. After that, paid usage starts at $29.99 per user per month."
+    ],
+    "added": [
+     "$ 49.99 /mo",
+     "5,000 credits / mo 5,000 credits $49.99",
+     "7,000 credits $69.99",
+     "5,000 credits every month",
+     "Every active user in your workspace is billed, from $49.99 a month for 5,000 credits each.",
+     "How do credits work? ⌄ Credits are how Lindy measures work, and bigger jobs use more. Pick the monthly credits your team needs, starting at 5,000 for $49.99 a month. Every active user in your workspace is billed, from $49.99 a month for 5,000 credits each, and everyone draws from one shared pool.",
+     "Can I try Lindy for free? ⌄ Yes. Start with $50 in free credits, no credit card required. The free credits last 7 days. After that, paid usage starts at $49.99 per user per month."
+    ]
    }
   ],
   "last_status": 200,
-  "last_attempt": "2026-10-18",
-  "last_checked": "2026-10-18",
+  "last_attempt": "2026-10-19",
+  "last_checked": "2026-10-19",
   "first_snapshot": "2026-10-16",
-  "hash": "3dc35bffe8452f11",
-  "last_changed": "2026-10-18"
+  "hash": "7ed00a1874004273",
+  "last_changed": "2026-10-19"
  },
  "perplexity-comet": {
   "url": "https://www.perplexity.ai/hub/blog/introducing-comet-plus",
   "history": [],
   "last_status": 403,
-  "last_attempt": "2026-10-18"
+  "last_attempt": "2026-10-19"
  },
  "gemini-agent": {
   "url": "https://one.google.com/about/google-ai-plans/",
@@ -275,8 +331,8 @@
    }
   ],
   "last_status": 200,
-  "last_attempt": "2026-10-18",
-  "last_checked": "2026-10-18",
+  "last_attempt": "2026-10-19",
+  "last_checked": "2026-10-19",
   "first_snapshot": "2026-10-16",
   "hash": "a41a43561722ede4",
   "last_changed": "2026-10-17"
@@ -285,8 +341,8 @@
   "url": "https://claude.com/pricing",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-18",
-  "last_checked": "2026-10-18",
+  "last_attempt": "2026-10-19",
+  "last_checked": "2026-10-19",
   "first_snapshot": "2026-10-16",
   "hash": "da1284d99653116c"
  },
@@ -294,8 +350,8 @@
   "url": "https://platform.claude.com/docs/en/about-claude/pricing",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-18",
-  "last_checked": "2026-10-18",
+  "last_attempt": "2026-10-19",
+  "last_checked": "2026-10-19",
   "first_snapshot": "2026-10-16",
   "hash": "68333a6b7f82f966"
  },
@@ -303,14 +359,14 @@
   "url": "https://help.openai.com/en/articles/20001551-agents-api-beta-faq",
   "history": [],
   "last_status": 403,
-  "last_attempt": "2026-10-18"
+  "last_attempt": "2026-10-19"
  },
  "vertex-agent-engine": {
   "url": "https://cloud.google.com/products/gemini-enterprise-agent-platform/pricing",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-18",
-  "last_checked": "2026-10-18",
+  "last_attempt": "2026-10-19",
+  "last_checked": "2026-10-19",
   "first_snapshot": "2026-10-16",
   "hash": "464295ec30b3fc48"
  },
@@ -318,8 +374,8 @@
   "url": "https://aws.amazon.com/bedrock/agentcore/pricing/",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-18",
-  "last_checked": "2026-10-18",
+  "last_attempt": "2026-10-19",
+  "last_checked": "2026-10-19",
   "first_snapshot": "2026-10-16",
   "hash": "b82863c2b3ec0512"
  },
@@ -327,8 +383,8 @@
   "url": "https://azure.microsoft.com/en-us/pricing/details/foundry-agent-service/",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-18",
-  "last_checked": "2026-10-18",
+  "last_attempt": "2026-10-19",
+  "last_checked": "2026-10-19",
   "first_snapshot": "2026-10-16",
   "hash": "74c92ddf0861d178"
  },
@@ -336,8 +392,8 @@
   "url": "https://relevanceai.com/docs/get-started/pricing",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-18",
-  "last_checked": "2026-10-18",
+  "last_attempt": "2026-10-19",
+  "last_checked": "2026-10-19",
   "first_snapshot": "2026-10-16",
   "hash": "2f131ac6e5df073b"
  },
@@ -345,8 +401,8 @@
   "url": "https://docs.letta.com/pricing/",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-18",
-  "last_checked": "2026-10-18",
+  "last_attempt": "2026-10-19",
+  "last_checked": "2026-10-19",
   "first_snapshot": "2026-10-16",
   "hash": "731b454287521987"
  },
@@ -354,8 +410,8 @@
   "url": "https://www.langchain.com/pricing",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-18",
-  "last_checked": "2026-10-18",
+  "last_attempt": "2026-10-19",
+  "last_checked": "2026-10-19",
   "first_snapshot": "2026-10-16",
   "hash": "a992dda36da811ba"
  },
@@ -363,8 +419,8 @@
   "url": "https://crewai.com/pricing",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-18",
-  "last_checked": "2026-10-18",
+  "last_attempt": "2026-10-19",
+  "last_checked": "2026-10-19",
   "first_snapshot": "2026-10-16",
   "hash": "b0be8f7f3a75bcb8"
  },
@@ -372,8 +428,8 @@
   "url": "https://e2b.dev/pricing",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-18",
-  "last_checked": "2026-10-18",
+  "last_attempt": "2026-10-19",
+  "last_checked": "2026-10-19",
   "first_snapshot": "2026-10-16",
   "hash": "19819d4d3c11a738"
  },
@@ -381,8 +437,8 @@
   "url": "https://modal.com/pricing",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-18",
-  "last_checked": "2026-10-18",
+  "last_attempt": "2026-10-19",
+  "last_checked": "2026-10-19",
   "first_snapshot": "2026-10-16",
   "hash": "4e0dfcb9a4cde698"
  },
@@ -390,8 +446,8 @@
   "url": "https://www.daytona.io/pricing",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-18",
-  "last_checked": "2026-10-18",
+  "last_attempt": "2026-10-19",
+  "last_checked": "2026-10-19",
   "first_snapshot": "2026-10-16",
   "hash": "172a8cc9f1cefeff"
  }
