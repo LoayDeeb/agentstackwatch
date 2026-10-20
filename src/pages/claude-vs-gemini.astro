@@ -1,0 +1,120 @@
+---
+import GuideArticle from '../layouts/GuideArticle.astro'; import { citer } from '../lib/cite.js';
+const { c, used, U } = citer();
+const picks = [
+ ['Your company runs on Google Workspace (Gmail, Drive, Meet)','Gemini, already in your Workspace plan',`Every Business plan includes Gemini in Gmail and the Gemini app${c('gws-pricing5')}, from $7 per user per month on an annual plan${c('gws-plans5')}. Business Standard ($14) adds Gemini in Docs, Meet and more${c('gws-pricing5','gws-plans5')}. Add Claude Team later if you want an assistant that takes whole tasks off your plate: its Gmail, Calendar and Drive connectors work with Workspace accounts once your admin allows them${c('cl-gws5')}.`],
+ ['Your company runs on Microsoft 365, Slack or a mix of tools','Claude Team',`$20 per seat per month on annual billing, $25 monthly, for 2 to 150 people${c('cl-team5')}. Team includes Claude for Microsoft 365 and Claude for Microsoft Outlook${c('cl-pricing5')}, plus connectors for Microsoft 365, Slack, Google Drive, Gmail, Google Calendar and GitHub${c('cl-team5')}. Google's option for non-Google shops is Gemini Enterprise Business, from $21 per seat, which connects to Microsoft 365, HubSpot, Notion and more${c('g-ent5')}.`],
+ ['You want one assistant for everyday life','Google AI Pro if you live in Google\'s apps; Claude Pro if you want tasks done',`Google AI Pro is $19.99/month and includes 5 TB of storage you can share with up to five others${c('g-plans5')}. Claude Pro is $20 monthly or $17/month on an annual plan ($200 up front)${c('cl-pricing5')}, and can take on a whole task and keep working in the cloud after you close your laptop${c('cl-one5')}.`],
+ ['You write or research a lot','Either: pick by where your writing lives',`Google AI Pro has a 1 million token context window, expanded Deep Research and Gemini in Docs${c('g-plans5')}. Claude Pro includes Research, and Claude lists a context window of up to 1M depending on the model${c('cl-pricing5')}. Claude can also edit your Google Docs, Sheets and Slides live beside the chat (beta)${c('cl-gws5')}.`],
+ ['You want an agent that does tasks while you\'re away','Claude Pro or Max; Google AI Ultra if you\'re in the US',`Claude's scheduled tasks are on every paid plan and run in the cloud even when your computer is off${c('cl-sched5')}. Tasks in Gemini, which plans the steps and keeps working in the background, is on Pro and Ultra in select countries${c('g-plans5')}. Google's most hands-off feature, Gemini Agent, is Ultra only and US and English only${c('g-plans5')}.`],
+];
+const consumer = [
+ ['Free',`Chat, web search, file creation, memory and connectors to your apps${c('cl-pricing5')}`,`Gemini app with Deep Research, Gemini Live and 15 GB of storage${c('g-overview5')}`],
+ ['Budget',`No plan between Free and Pro on the pricing page${c('cl-pricing5')}`,`Google AI Plus: $4.99/month with 400 GB of storage${c('g-plans5')}`],
+ ['Main plan',`Pro: $20/month, or $17/month billed annually ($200 up front)${c('cl-pricing5')}`,`Google AI Pro: $19.99/month with 5 TB of storage${c('g-plans5')}`],
+ ['Power user',`Max: from $100/month, with 5x or 20x Pro's usage, billed monthly${c('cl-pricing5')}. The 20x price isn't shown on the page: ${U}`,`Google AI Ultra: $99.99 (5x) or $199.99 (20x) a month, with 20 TB or 30 TB of storage${c('g-plans5')}`],
+];
+const business = [
+ ['Entry seat',`Claude Team Standard: $20/member/month annual, $25 monthly; minimum 2 members${c('cl-team5')}`,`Workspace Business Starter: $7/user/month annual, $8.40 flexible${c('gws-plans5')}. Includes Gemini in Gmail and the Gemini app${c('gws-pricing5')}`],
+ ['Mid tier',`No middle tier: you mix Standard and Premium seats${c('cl-team5')}`,`Business Standard: $14 annual, $16.80 flexible${c('gws-plans5')}. Gemini in Gmail, Docs, Meet and more${c('gws-pricing5')}`],
+ ['Power seat',`Team Premium: $100/member/month annual, $125 monthly, with 6.25x Pro's per-session usage${c('cl-team5')}`,`Business Plus: $22 annual, $26.40 flexible${c('gws-plans5')}; adds Vault and advanced endpoint management${c('gws-pricing5')}`],
+ ['AI without switching email',`Not needed: Claude Team works alongside any email system, with Gmail and Outlook support${c('cl-gws5','cl-pricing5')}`,`Gemini Enterprise Business: from $21/seat/month, connects to Microsoft 365, Google Workspace, HubSpot, Notion and more${c('g-ent5')}`],
+ ['Team size',`2 to 150 seats; above that, Enterprise${c('cl-team5')}`,`Business plans: up to 300 users; Enterprise has no limit${c('gws-pricing5')}`],
+ ['Enterprise',`$20 per seat per month plus usage billed at API rates, annual only${c('cl-pricing5')}`,`Through Google sales and resellers${c('gws-plans5')}`],
+];
+const agent = [
+ ['Email',`Gmail: search, read, draft, and send, reply or forward. It asks before each send by default; on Team, owners decide whether members can skip that step${c('cl-gws5')}. Outlook on Pro and up${c('cl-pricing5')}`,`Gemini in Gmail summarizes, drafts, searches and organizes (archive, delete, label) only after you confirm, with 60 seconds to undo${c('g-gmail5')}. Needs a Workspace or Google AI plan${c('g-gmail5')}`],
+ ['Calendar',`Google Calendar: create, move and delete events, find a time that works for everyone, RSVP and set up recurring meetings, including shared calendars${c('cl-gws5')}`,`Create and manage Google Calendar events from the Gemini app${c('g-gws5')}; from Gmail it can find open slots and reschedule, on your primary calendar only${c('g-gmail5')}`],
+ ['Documents and slides',`Edits Google Docs, Sheets and Slides live beside the chat (beta)${c('cl-gws5')}; hands back documents, spreadsheets and PowerPoint decks${c('cl-one5')}; Claude for Microsoft 365 on Pro and up${c('cl-pricing5')}`,`Gemini in Docs and Sheets on Google AI Pro${c('g-plans5')}; in Gmail, Docs, Meet and more on Workspace Business Standard and up${c('gws-pricing5')}. Gemini in Gmail can create a Doc, Sheet or Slides deck${c('g-gmail5')}`],
+ ['Longer tasks',`Hand it a whole task; bigger jobs keep running in the cloud after you close your laptop${c('cl-one5')}. Cloud tasks are on Pro and Max, and in beta on web and mobile for Team${c('cl-cowork5')}`,`Tasks in Gemini plans the steps, browses across sites and keeps working in the background (Pro and Ultra, select countries)${c('g-plans5')}, using a remote browser and computer${c('g-privacy5')}`],
+ ['Recurring jobs',`Scheduled tasks on all paid plans, like a Monday inbox summary; they run with your computer off${c('cl-sched5')}`,`Tasks can keep schedules; turning task mode off pauses them${c('g-privacy5')}. Daily Brief (US only) on Google AI Pro and up${c('g-plans5','g-overview5')}`],
+ ['Browsing for you',`Opens sites, clicks and fills in forms through the Claude desktop app's browser or Claude in Chrome${c('cl-one5')}; needs the desktop app open${c('cl-cowork5')}. Claude in Chrome on Pro and up${c('cl-pricing5')}`,`Chrome auto browse on Pro and Ultra, US and India only${c('g-plans5')}`],
+ ['Using your computer',`Computer use (clicking and typing in your apps) is beta on Pro and Max only, not Team or Enterprise; your computer must be awake${c('cl-cu5')}`,`On the Mac app, Tasks can edit and organize files in folders you connect${c('g-privacy5')}`],
+ ['Phone calls',`Not listed on the pages we checked: ${U}`,`AI calls to local businesses on Ultra (US only)${c('g-plans5')}`],
+ ['Connectors',`Connectors on every plan, including Free${c('cl-pricing5')}. Team: Google Drive, Gmail, Google Calendar, GitHub, Microsoft 365 and Slack${c('cl-team5')}`,`Gmail, Docs, Drive, Calendar, Tasks and Keep through the Google Workspace app${c('g-gws5')}; custom third-party MCP connectors, which Google doesn't secure${c('g-privacy5')}`],
+];
+const body = `
+<div class="tldr"><p><b>Short answer.</b> If your business already pays for Google Workspace, start with the Gemini you already have: it's in every Business plan from $7 a user${c('gws-pricing5','gws-plans5')}. If you're on Microsoft 365 or Slack, or you want an assistant that takes on whole tasks and runs them on a schedule, Claude Team at $20–25 a seat is the better pick${c('cl-team5','cl-pricing5','cl-sched5')}. For personal use they cost the same, $20 vs $19.99 a month${c('cl-pricing5','g-plans5')}: Gemini throws in 5 TB of storage; Claude gives you hand-off tasks and a $17-a-month annual option.</p></div>
+
+<h2>Quick verdict: which one fits you</h2>
+<div class="gtable-wrap"><table class="gtab"><thead><tr><th>If you…</th><th>Pick</th><th>Why</th></tr></thead><tbody>
+${picks.map(([a,b,w])=>`<tr><td data-l="If you…">${a}</td><td data-l="Pick" class="nm">${b}</td><td data-l="Why">${w}</td></tr>`).join('')}
+</tbody></table></div>
+
+<h2>Price at a glance: personal plans</h2>
+<div class="gtable-wrap"><table class="gtab"><thead><tr><th></th><th>Claude</th><th>Google Gemini</th></tr></thead><tbody>
+${consumer.map(([k,a,b])=>`<tr><td data-l="" class="nm">${k}</td><td data-l="Claude">${a}</td><td data-l="Google Gemini">${b}</td></tr>`).join('')}
+</tbody></table></div>
+<p>Google's paid plans are also storage plans, shared with up to five family members${c('g-plans5')}. Claude Pro can be billed monthly or annually; Max is billed monthly only${c('cl-pricing5')}. Every Claude plan has usage limits that reset every five hours, with weekly limits on paid plans${c('cl-pricing5')}; Gemini's limits also refresh every 5 hours up to a weekly cap${c('g-overview5')}. Prices are US prices as shown on 20 Oct 2026; tax may be added.</p>
+
+<h2>Price at a glance: business plans</h2>
+<p>This isn't quite apples to apples. A Google Workspace seat is your business email, storage, video calls and documents, with Gemini included. A Claude Team seat is the AI only, so you keep whatever email you already use.</p>
+<div class="gtable-wrap"><table class="gtab"><thead><tr><th></th><th>Claude Team</th><th>Gemini with Google Workspace</th></tr></thead><tbody>
+${business.map(([k,a,b])=>`<tr><td data-l="" class="nm">${k}</td><td data-l="Claude Team">${a}</td><td data-l="Gemini with Google Workspace">${b}</td></tr>`).join('')}
+</tbody></table></div>
+<p>Annual Workspace plans lock in your seat count until renewal; flexible plans let you add and remove people any month${c('gws-plans5')}. New Workspace customers may see an introductory Starter price for their first 20 users for 12 months${c('gws-pricing5')}. Claude Team limits are per person, not pooled, and you can turn on usage credits so people keep working past them${c('cl-team5')}. Team also includes monthly Claude API credits${c('cl-team5')}, up to $500 a month${c('cl-pricing5')}.</p>
+
+<h2>What each can actually do as an agent</h2>
+<p>Both now do more than answer questions. Here's what each can do for you today, from their own help pages. One naming note: Anthropic has merged its task agent, Claude Cowork, into regular Claude chats, rolling out first on Pro and Max. You just describe the job in any conversation${c('cl-one5')}.</p>
+<div class="gtable-wrap"><table class="gtab"><thead><tr><th></th><th>Claude</th><th>Gemini</th></tr></thead><tbody>
+${agent.map(([k,a,b])=>`<tr><td data-l="" class="nm">${k}</td><td data-l="Claude">${a}</td><td data-l="Gemini">${b}</td></tr>`).join('')}
+</tbody></table></div>
+<h3>Where Claude pulls ahead</h3>
+<p>Handing off whole jobs. Describe the outcome you want and Claude works through the steps, from searching the web to reading your files to putting together a document, spreadsheet or deck${c('cl-one5')}. Bigger tasks keep running after you close your laptop, and you can check in and redirect from your phone${c('cl-one5')}. Scheduled tasks, like a weekly report from your Drive files, are on every paid plan, including Team${c('cl-sched5')}. And it isn't tied to one ecosystem: it works with Gmail and Google Calendar in detail${c('cl-gws5')}, plus Microsoft 365, Outlook and Slack${c('cl-pricing5','cl-team5')}. By default Claude asks before it takes actions, and you can switch a conversation to Auto, where automated safety checks run before each action${c('cl-one5')}.</p>
+<h3>Where Gemini pulls ahead</h3>
+<p>It's already inside Gmail, Docs and Drive, so there's nothing to connect for a Google company${c('gws-pricing5')}. Gemini in Gmail can clean up your inbox in bulk, with a confirm step and 60 seconds to undo${c('g-gmail5')}. Google's plans also bundle storage, and Pro adds YouTube Premium Lite and Google Home Premium${c('g-plans5')}. The catch: many of Google's most hands-off features depend on where you live. Chrome auto browse is US and India only, Tasks in Gemini is in select countries, and Gemini Agent is US and English only${c('g-plans5')}.</p>
+<p>Want the inbox side in more depth? See <a href="/ai-agent-for-email-and-calendar/">AI agent for email and calendar</a>.</p>
+
+<h2>Privacy: is it training on your chats?</h2>
+<h3>Personal plans</h3>
+<ul>
+<li><b>Claude:</b> the pricing page lists model training as "Opt-out" on Free, Pro and Max${c('cl-pricing5')}. Anthropic uses your chats to improve its models if you allow it in your privacy settings, and may also use chats flagged for a safety review${c('cl-train5')}. The switch is in Settings → Privacy${c('cl-cowork5')}. If you allow it, de-identified data can be kept up to 5 years; chats you delete are gone from Anthropic's systems within 30 days${c('cl-retain5')}. Incognito chats are never used for training${c('cl-train5')}.</li>
+<li><b>Gemini:</b> with Keep Activity on, Google uses your activity to improve its services, including training its AI, with help from human reviewers. Reviewed chats are kept up to 3 years, even if you delete your activity${c('g-privacy5')}. Activity auto-deletes after 18 months by default${c('g-privacy5')}. With Keep Activity off, future chats aren't used for training unless you send feedback, and are kept for 72 hours${c('g-privacy5')}.</li>
+<li><b>Connected apps:</b> Anthropic says it doesn't train on your Gmail, Drive or Calendar connector data${c('cl-gws5')}. With Gemini, the Google Workspace connection only works with Keep Activity on${c('g-gws5','g-privacy5')}, so using Gemini with your inbox means leaving that setting on.</li>
+<li><b>Ads:</b> Google says your Gemini chats aren't used to show you ads${c('g-privacy5')}. We didn't find an ads statement on the Claude pages we checked: ${U}.</li>
+</ul>
+<h3>Business plans</h3>
+<ul>
+<li><b>Claude Team:</b> no model training by default on Team and Enterprise${c('cl-pricing5')}. Custom data retention controls are Enterprise only${c('cl-pricing5')}.</li>
+<li><b>Gemini with Workspace:</b> your content isn't reviewed by humans or used to train AI models outside your domain without permission${c('gws-privacy5')}. Licensed users' Gemini app chats aren't used for training and are never reviewed by humans${c('gws-faq5')}. Admins set Gemini app retention up to 36 months; the default is 18${c('gws-privacy5')}.</li>
+</ul>
+<p>One habit for both: connect only the apps a task needs, and watch the agent when it acts. Google warns Gemini can make mistakes like buying things or sharing your data unexpectedly, so supervise its browsing${c('g-privacy5')}. Anthropic advises against giving computer use access to banking, healthcare or government apps${c('cl-cu5')}.</p>
+
+<h2>Security and admin for business tiers</h2>
+<ul>
+<li><b>Certifications:</b> Anthropic lists SOC 2 Type I and II, ISO 27001:2022 and ISO/IEC 42001:2023 for its commercial products, plus a HIPAA-ready setup with a BAA available${c('cl-certs5')}. Google lists SOC 1/2/3, ISO 9001, ISO/IEC 27001, 27701, 27017, 27018 and 42001 for Gemini, plus FedRAMP High authorization${c('gws-privacy5')}. Gemini in Chrome and Gemini Notebook aren't covered by those certifications yet${c('gws-privacy5')}.</li>
+<li><b>Sign-in and admin:</b> Claude Team has SSO, domain verification, central billing, usage analytics and per-person spend limits; role-based access, SCIM, audit logs and the Compliance API need Enterprise${c('cl-pricing5')}. Anthropic's Team help page lists domain capture and role-based permissions for Team${c('cl-team5')}, but the pricing table marks them Enterprise only${c('cl-pricing5')}, so confirm before you buy. On supported Workspace editions, admins can turn Gemini on or off per app (Gmail, Drive, Docs, Meet, Chat), and Gemini audit logs are available${c('gws-privacy5')}.</li>
+<li><b>Connector control:</b> on Claude Team, an owner must switch on the Google connectors before anyone can use them${c('cl-gws5')}, and admins control remote and local connectors${c('cl-pricing5')}. In Workspace, admins decide whether people can connect Workspace to the Gemini app${c('gws-privacy5')}.</li>
+<li><b>Data protection:</b> on supported Workspace editions, your data loss prevention rules apply to Gemini output, and file restrictions can keep Gemini away from sensitive documents${c('gws-privacy5')}. Gemini can't act on email and files encrypted with your own keys${c('gws-faq5')}.</li>
+<li><b>Healthcare:</b> Gemini with Workspace can support HIPAA workloads${c('gws-faq5')}. Claude's HIPAA-ready offering is on Enterprise, not Team${c('cl-pricing5')}.</li>
+<li><b>Prompt injection</b> (hidden instructions in an email or web page)<b>:</b> Gemini checks content for threats before acting and blocks or excludes it${c('gws-privacy5')}. Claude scans for signs of prompt injection when it uses your computer${c('cl-cu5')}.</li>
+</ul>
+
+<h2>Choose in five minutes</h2>
+<ol>
+<li><b>Where's your work email?</b> Google Workspace: try the Gemini you already pay for first. Outlook or Microsoft 365: Claude Team${c('cl-pricing5')}.</li>
+<li><b>Do you want answers or jobs done?</b> If you want to hand off a report and come back later, or have something run every Monday, Claude's tasks and schedules are on every paid plan${c('cl-one5','cl-sched5')}.</li>
+<li><b>Are you buying for yourself?</b> Both main plans cost about $20${c('cl-pricing5','g-plans5')}. Already paying Google One for storage? Google AI Pro replaces that bill with 5 TB included${c('g-plans5')}. Paying yearly? Claude Pro drops to $17 a month${c('cl-pricing5')}.</li>
+<li><b>Where do you live?</b> Gemini Agent is US only, Chrome auto browse is US and India, and Tasks in Gemini is in select countries${c('g-plans5')}. Claude Team is offered in supported locations only${c('cl-team5')}.</li>
+<li><b>Still torn?</b> Both have free plans${c('cl-pricing5','g-overview5')}. Give each the same real task for a week, like "find every unpaid invoice in my email", and keep the one that gets it right.</li>
+</ol>
+<p>Comparing other assistants too? Read <a href="/chatgpt-vs-gemini/">ChatGPT vs Gemini</a>, <a href="/chatgpt-vs-claude-for-business/">ChatGPT vs Claude for business</a>, <a href="/best-ai-agent-for-personal-use/">the best AI agent for personal use</a>, or the full <a href="/guide/">buyer's guide</a>.</p>
+`;
+const faqs = [
+ ['Is Claude better than Gemini?',`Neither wins for everyone. Gemini is the better value if you already use Google Workspace, since it's included from $7 a user${c('gws-pricing5','gws-plans5')}. Claude is the stronger pick for Microsoft 365 and Slack teams${c('cl-pricing5','cl-team5')} and for handing off whole tasks that keep running in the cloud${c('cl-one5')}.`],
+ ['How much do Claude and Gemini cost in 2026?',`For personal use: Claude Pro is $20 a month, or $17 a month billed annually, and Max starts at $100${c('cl-pricing5')}; Google AI Plus is $4.99, AI Pro $19.99, and Ultra $99.99 or $199.99${c('g-plans5')}. For business: Claude Team is $20–25 per seat, or $100–125 for Premium seats${c('cl-team5')}; Google Workspace with Gemini is $7–22 per user on annual plans${c('gws-plans5')}.`],
+ ['Claude or Gemini for business?',`If your company is on Google Workspace, Gemini is already in Gmail and the Gemini app on every Business plan${c('gws-pricing5')}. If you're on Microsoft 365, Claude Team includes Claude for Microsoft 365 and Outlook${c('cl-pricing5')}; Google's alternative is Gemini Enterprise Business from $21 a seat${c('g-ent5')}.`],
+ ['Do Claude and Gemini train on my data?',`On personal plans, it's a setting you control: Claude's pricing page lists training as opt-out on Free, Pro and Max${c('cl-pricing5')}, and Gemini trains on your activity while Keep Activity is on${c('g-privacy5')}. On business plans, Claude Team and Enterprise don't train by default${c('cl-pricing5')}, and Google doesn't use Workspace content for training outside your domain without permission${c('gws-privacy5')}.`],
+ ['Can Claude or Gemini send emails and manage my calendar?',`Claude can send, reply to and forward Gmail messages, asking for your approval each time by default, and can create, move and RSVP to Google Calendar events${c('cl-gws5')}. Gemini in Gmail drafts emails, organizes your inbox after you confirm, and can schedule and reschedule meetings${c('g-gmail5')}.`],
+ ['Can Claude or Gemini work while I\'m away?',`Yes. Claude's scheduled tasks run in the cloud on every paid plan, even when your computer is off${c('cl-sched5')}. Tasks in Gemini keeps working in the background on Pro and Ultra in select countries${c('g-plans5')}, and Gemini Agent is on Ultra in the US${c('g-plans5')}.`],
+];
+---
+<GuideArticle slug="claude-vs-gemini" kicker="Head to head" updated="2026-10-20"
+ title="Claude vs Gemini (2026): Price, Agents, Privacy, Business Plans | AgentStackWatch"
+ desc="Claude vs Gemini in 2026: which to pick for a Google Workspace business, a Microsoft business, everyday life, writing and research, or hands-off tasks. Personal and business prices, agent features, privacy defaults and certifications, all sourced."
+ h1="Claude vs Gemini (2026)"
+ dek="Which one to pick for your business or your everyday life: what each costs, what it can actually do as an agent, and what happens to your data. Plain English, every fact linked to Anthropic's and Google's own pages."
+ faqs={faqs} used={used}
+ related={[['/chatgpt-vs-gemini/','ChatGPT vs Gemini'],['/chatgpt-vs-claude-for-business/','ChatGPT vs Claude for business'],['/compare/claude-app-vs-gemini-agent/','Claude vs Gemini Agent (live compare)'],['/compare/grok-bot-vs-claude-app/','Grok Bot vs Claude'],['/compare/grok-bot-vs-gemini-agent/','Grok Bot vs Gemini Agent'],['/best-ai-agent-for-small-business/','Best AI agent for small business'],['/ai-agent-for-research/','AI agent for research']]}>
+<Fragment set:html={body}/>
+</GuideArticle>

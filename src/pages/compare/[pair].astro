@@ -5,7 +5,8 @@ const { a, b } = Astro.props; const u=v=>(v==null||v==='unknown')?'unknown':Stri
 const rows=[['Maker',x=>u(x.maker)],['Pricing',x=>u(x.pricing)],['Open source',x=>x.open_source==='unknown'?'unknown':x.open_source?'Yes':'No'],['GitHub stars',x=>fmt(x.stats.stars)],['Latest version',x=>x.stats.display_version?`${x.stats.display_version} (${x.stats.display_version_source})`:'—'],['Release date',x=>d(x.stats.release_date)],['PyPI / week',x=>fmt(x.stats.pypi_last_week)],['npm / week',x=>fmt(x.stats.npm_last_week)],['Last push',x=>d(x.stats.pushed_at)],['Verification',x=>x.status]];
 const brk=x=>breaking.filter(r=>r.slug===x.slug&&Date.now()-new Date(r.date)<84*864e5).length;
 const kind=a.category==='personal'?'price and plans':a.category==='managed'?'pricing and what you get':'popularity, updates and cost';
-const guide=[a.slug,b.slug].some(x=>x==='chatgpt-dots'||x==='gemini-agent')?['/chatgpt-vs-gemini/','ChatGPT vs Gemini: the full guide (prices, agents, privacy)']:null;
+const has=x=>[a.slug,b.slug].includes(x);
+const guides=[has('claude-app')&&has('gemini-agent')&&['/claude-vs-gemini/','Claude vs Gemini: the full guide (prices, agents, privacy)'],(has('chatgpt-dots')||has('gemini-agent'))&&['/chatgpt-vs-gemini/','ChatGPT vs Gemini: the full guide (prices, agents, privacy)']].filter(Boolean);
 const desc=`${a.name} vs ${b.name} (${new Date().getFullYear()}): ${kind} side by side — ${u(a.pricing).slice(0,60)} vs ${u(b.pricing).slice(0,60)}. Every fact sourced, updated daily.`;
 ---
 <Base title={`${a.name} vs ${b.name}: ${kind} compared | AgentStackWatch`} desc={desc.slice(0,300)}>
@@ -15,5 +16,5 @@ const desc=`${a.name} vs ${b.name} (${new Date().getFullYear()}): ${kind} side b
 <tr><th>Updates that may need attention (12 weeks)</th><td>{a.github?brk(a):'—'}</td><td>{b.github?brk(b):'—'}</td></tr>
 <tr><th>Pricing source</th>{[a,b].map(x=>{const url=pricing[x.slug]?.url||x.sources[0];return <td>{url?<a href={url}>{url.replace(/^https?:\/\//,'').slice(0,48)}</a>:'unknown'}</td>})}</tr>
 <tr><th>What it is</th><td>{a.description}</td><td>{b.description}</td></tr></table></div><Signup variant="inline"/>
-{guide && <p class="small">Related guide: <a href={guide[0]}>{guide[1]}</a></p>}
+{guides.length>0 && <p class="small">Related guide{guides.length>1?'s':''}: <Fragment set:html={guides.map(([h,l])=>`<a href="${h}">${l}</a>`).join(' · ')}/></p>}
 <p class="muted small">More: <a href="/compare/">all comparisons</a> · <a href="/guide/">the buyer's guide</a> · <a href="/pricing/">pricing</a> and <a href="/breaking/">breaking changes</a>. Badges and facts link to sources on each agent page.</p></Base>

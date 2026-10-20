@@ -1,8 +1,8 @@
 // Per-page numbered citations. Reuses the buyer's-guide sources (checked 2026-10-16) plus sources checked for the guides hub on 2026-10-17
-// for the personal-use guide on 2026-10-18, and for the ChatGPT vs Gemini guide on 2026-10-19.
+// for the personal-use guide on 2026-10-18, for the ChatGPT vs Gemini guide on 2026-10-19, and for the Claude vs Gemini guide on 2026-10-20.
 import { SRC as GSRC } from './guide-data.js';
 import ps from '../../data/pricing-sources.json';
-const G = '16 Oct 2026', T = '17 Oct 2026', S = '18 Oct 2026', M = '19 Oct 2026';
+const G = '16 Oct 2026', T = '17 Oct 2026', S = '18 Oct 2026', M = '19 Oct 2026', W = '20 Oct 2026';
 const OCR = t => [`oc-${t}`, `https://github.com/openclaw/openclaw/releases/tag/${t}`, `OpenClaw release notes ${t}`, T];
 const EXTRA = [
  ['oai-rn','https://help.openai.com/en/articles/6825453-chatgpt-release-notes','ChatGPT release notes (OpenAI Help Center)',T],
@@ -73,6 +73,27 @@ const EXTRA = [
  ['gws-privacy4','https://knowledge.workspace.google.com/admin/generative-ai/generative-ai-in-google-workspace-privacy-hub','Generative AI in Google Workspace Privacy Hub',M],
  ['gws-faq4','https://support.google.com/a/answer/14130944','Google Workspace with Gemini FAQ for Business',M],
  ['g-ent4','https://cloud.google.com/gemini-enterprise/business','Gemini Enterprise Business edition (re-checked)',M],
+ // Checked 20 Oct 2026 for /claude-vs-gemini/
+ ['cl-pricing5','https://claude.com/pricing','Claude pricing & plan comparison (re-checked)',W],
+ ['cl-team5','https://support.claude.com/en/articles/9266767-what-is-the-team-plan','What is the Team plan? (Claude Help Center, re-checked)',W],
+ ['cl-gws5','https://support.claude.com/en/articles/10166901-use-google-workspace-connectors','Use Google Workspace connectors (Claude Help Center, re-checked)',W],
+ ['cl-certs5','https://privacy.claude.com/en/articles/10015870-what-certifications-has-anthropic-obtained','Anthropic: certifications for commercial products (re-checked)',W],
+ ['cl-cu5','https://support.claude.com/en/articles/14128542-let-claude-use-your-computer-in-cowork','Let Claude use your computer in Cowork (re-checked)',W],
+ ['cl-train5','https://privacy.claude.com/en/articles/10023580-is-my-data-used-for-model-training','Is my data used for model training? (Anthropic Privacy Center)',W],
+ ['cl-retain5','https://privacy.claude.com/en/articles/10023548-how-long-do-you-store-my-data','How long do you store my data? (Anthropic Privacy Center)',W],
+ ['cl-one5','https://support.claude.com/en/articles/16761823-claude-cowork-and-chat-are-one-claude','Claude Cowork and chat are one Claude (Claude Help Center)',W],
+ ['cl-cowork5','https://support.claude.com/en/articles/15520349-use-claude-cowork-on-web-desktop-and-mobile','Use Claude Cowork on web, desktop, and mobile (Claude Help Center)',W],
+ ['cl-sched5','https://support.claude.com/en/articles/13854387-schedule-recurring-tasks-in-claude-cowork','Schedule recurring tasks in Claude Cowork (Claude Help Center)',W],
+ ['g-plans5','https://one.google.com/about/google-ai-plans/','Google AI plans (re-checked)',W],
+ ['g-overview5','https://gemini.google/overview/agent/','Gemini app overview and plans (re-checked)',W],
+ ['g-privacy5','https://support.google.com/gemini/answer/13594961','Gemini Apps Privacy Hub (re-checked)',W],
+ ['g-gws5','https://support.google.com/gemini/answer/15229592','Connect the Google Workspace app to Gemini Apps (re-checked)',W],
+ ['g-gmail5','https://support.google.com/mail/answer/14355636','Collaborate with Gemini in Gmail (re-checked)',W],
+ ['gws-pricing5','https://workspace.google.com/pricing','Google Workspace pricing (re-checked)',W],
+ ['gws-plans5','https://knowledge.workspace.google.com/admin/billing/compare-flexible-and-annual-fixed-term-payment-plans','Google Workspace: Flexible vs Annual plan pricing (re-checked)',W],
+ ['gws-privacy5','https://knowledge.workspace.google.com/admin/generative-ai/generative-ai-in-google-workspace-privacy-hub','Generative AI in Google Workspace Privacy Hub (re-checked)',W],
+ ['gws-faq5','https://support.google.com/a/answer/14130944','Google Workspace with Gemini FAQ for Business (re-checked)',W],
+ ['g-ent5','https://cloud.google.com/gemini-enterprise/business','Gemini Enterprise Business edition (re-checked)',W],
  ...['v2026.10.4','v2026.10.2','v2026.9.33','v2026.9.3','v2026.9.2','v2026.9.1','v2026.8.35','v2026.8.33','v2026.8.2','v2026.8.1','v2026.7.35','v2026.6.33'].map(OCR),
  ...Object.entries(ps).map(([k,u])=>[`ps-${k}`,u,`Pricing page: ${k}`,G]),
 ];
