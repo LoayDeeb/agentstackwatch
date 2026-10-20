@@ -1,5 +1,38 @@
 [
  {
+  "slug": "openhands",
+  "name": "OpenHands",
+  "category": "frameworks",
+  "tag": "v1.28.1",
+  "date": "2026-10-19",
+  "week": "2026-10-19",
+  "url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.28.1",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "chore: remove merged PR artifacts by @all-hands-bot in https://github.com/OpenHands/OpenHands/pull/18570"
+  ]
+ },
+ {
+  "slug": "openhands",
+  "name": "OpenHands",
+  "category": "frameworks",
+  "tag": "v1.28.0",
+  "date": "2026-10-19",
+  "week": "2026-10-19",
+  "url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.28.0",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "fix(chat): remove the white line above the chat input resize grip by @VascoSch92 in https://github.com/OpenHands/OpenHands/pull/18574",
+   "chore(lint): remove redundant text-medium color exception by @enyst in https://github.com/OpenHands/OpenHands/pull/18320",
+   "chore: remove dead code by @VascoSch92 in https://github.com/OpenHands/OpenHands/pull/18417",
+   "refactor(conversation): remove unreachable overview drawer sections by @VascoSch92 in https://github.com/OpenHands/OpenHands/pull/18406"
+  ]
+ },
+ {
   "slug": "openclaw",
   "name": "OpenClaw",
   "category": "personal",

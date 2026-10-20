@@ -3,8 +3,8 @@
   "url": "https://docs.x.ai/x-subscription/pricing",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-19",
-  "last_checked": "2026-10-19",
+  "last_attempt": "2026-10-20",
+  "last_checked": "2026-10-20",
   "first_snapshot": "2026-10-16",
   "hash": "068a184c8d131dcd"
  },
@@ -69,14 +69,37 @@
      "11.0 6d ago",
      "Version 12.0 1d ago"
     ]
+   },
+   {
+    "date": "2026-10-20",
+    "from": "766c99626f4f3384",
+    "to": "da0f28802846a13e",
+    "removed": [
+     "291K Ratings",
+     "6d ago Stellar Luner",
+     "12.0 1d ago",
+     "11.0 6d ago",
+     "Version 12.0 1d ago",
+     "Pocket - AI Personal Assistant",
+     "Your AI Personal Assistant"
+    ],
+    "added": [
+     "296K Ratings",
+     "Oct 12 Stellar Luner",
+     "12.0 2d ago",
+     "11.0 Oct 12",
+     "Version 12.0 2d ago",
+     "Notee: AI Note Taker",
+     "Transcribe audio to text"
+    ]
    }
   ],
   "last_status": 200,
-  "last_attempt": "2026-10-19",
-  "last_checked": "2026-10-19",
+  "last_attempt": "2026-10-20",
+  "last_checked": "2026-10-20",
   "first_snapshot": "2026-10-16",
-  "hash": "766c99626f4f3384",
-  "last_changed": "2026-10-19"
+  "hash": "da0f28802846a13e",
+  "last_changed": "2026-10-20"
  },
  "openclaw": {
   "url": "https://openclaw.ai/",
@@ -91,36 +114,62 @@
     "added": [
      "x64 · AppImage or Debian package · v2026.10.5"
     ]
+   },
+   {
+    "date": "2026-10-20",
+    "from": "84851c15643b1081",
+    "to": "c2165631fbd2615a",
+    "removed": [
+     "macOS 15+ · Apple Silicon or Intel · v2026.10.4"
+    ],
+    "added": [
+     "macOS 15+ · Apple Silicon or Intel · v2026.10.5"
+    ]
    }
   ],
   "last_status": 200,
-  "last_attempt": "2026-10-19",
-  "last_checked": "2026-10-19",
+  "last_attempt": "2026-10-20",
+  "last_checked": "2026-10-20",
   "first_snapshot": "2026-10-16",
-  "hash": "84851c15643b1081",
-  "last_changed": "2026-10-19"
+  "hash": "c2165631fbd2615a",
+  "last_changed": "2026-10-20"
  },
  "chatgpt-dots": {
   "url": "https://help.openai.com/en/articles/20001530-getting-started-with-your-dot",
   "history": [],
   "last_status": 403,
-  "last_attempt": "2026-10-19"
+  "last_attempt": "2026-10-20"
  },
  "hermes-agent": {
   "url": "https://hermes-agent.nousresearch.com/",
-  "history": [],
+  "history": [
+   {
+    "date": "2026-10-20",
+    "from": "19616ebbe3a3e427",
+    "to": "0bae364fe4e76ee9",
+    "removed": [
+     "Nous Hermes Docs",
+     "Hermes Agent Community Portal Install"
+    ],
+    "added": [
+     "Nous Hermes",
+     "Hermes Agent Community Portal Install Hermes"
+    ]
+   }
+  ],
   "last_status": 200,
-  "last_attempt": "2026-10-19",
-  "last_checked": "2026-10-19",
+  "last_attempt": "2026-10-20",
+  "last_checked": "2026-10-20",
   "first_snapshot": "2026-10-16",
-  "hash": "19616ebbe3a3e427"
+  "hash": "0bae364fe4e76ee9",
+  "last_changed": "2026-10-20"
  },
  "manus": {
   "url": "https://help.manus.im/en/articles/11711111-what-is-the-current-membership-pricing-for-manus",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-19",
-  "last_checked": "2026-10-19",
+  "last_attempt": "2026-10-20",
+  "last_checked": "2026-10-20",
   "first_snapshot": "2026-10-16",
   "hash": "72fe8d5cefa398ec"
  },
@@ -224,20 +273,49 @@
      "How do credits work? ⌄ Credits are how Lindy measures work, and bigger jobs use more. Pick the monthly credits your team needs, starting at 5,000 for $49.99 a month. Every active user in your workspace is billed, from $49.99 a month for 5,000 credits each, and everyone draws from one shared pool.",
      "Can I try Lindy for free? ⌄ Yes. Start with $50 in free credits, no credit card required. The free credits last 7 days. After that, paid usage starts at $49.99 per user per month."
     ]
+   },
+   {
+    "date": "2026-10-20",
+    "from": "7ed00a1874004273",
+    "to": "cf261d094baf1d8d",
+    "removed": [
+     "Pricing - Lindy Skip to main content Hire Lindy for Paid ads Account management Client reporting Social media SEO & content Marketing strategy Project management Lead gen & outreach Inbox & calendar Data analysis Bookkeeping Operations HR & onboarding Customer support Calls & bookings Recruiting Product management Anything else",
+     "See every role →",
+     "Integrations Pricing Security Enterprise Resources Resources",
+     "Hire Lindy for",
+     "Paid ads Account management Client reporting Lead gen & outreach Inbox & calendar Data analysis Calls & bookings See every role",
+     "Integrations Pricing Security Chrome Extension"
+    ],
+    "added": [
+     "Pricing - Lindy Skip to main content Product What Lindy does",
+     "Skills 40+ built in. Teach it yours. Memory Remembers you. Yours to edit. Routines Work that runs on schedule. Watch and Learn New Show it once. It takes it from there. Meetings Notes, follow-ups, a shared library. Phone calls New Hand off your phone work.",
+     "Where it works",
+     "Integrations 1,500+ integrations + MCP. Chrome Extension Lindy inside Gmail. What’s new Everything we’ve shipped. Latest · October 14, 2026 Phone calls",
+     "See how it all fits together →",
+     "Solutions Roles",
+     "Marketing Sales Support Operations Finance Product Engineering",
+     "Use Cases",
+     "Track competitors Triage support queue Build meeting deck Analyze funnel Compare vendors Log invoices Update CRM Build dashboards Monitor ad spend Create ads Watch escalations Month-end chase File eng tickets Plan your week",
+     "See all use cases →",
+     "Pricing Security Enterprise Resources Resources",
+     "Solutions",
+     "Marketing Sales Support Operations Finance Product Engineering See all use cases",
+     "Overview Skills Memory Routines Watch and Learn Meetings Phone calls Integrations Chrome Extension Pricing Security What’s new"
+    ]
    }
   ],
   "last_status": 200,
-  "last_attempt": "2026-10-19",
-  "last_checked": "2026-10-19",
+  "last_attempt": "2026-10-20",
+  "last_checked": "2026-10-20",
   "first_snapshot": "2026-10-16",
-  "hash": "7ed00a1874004273",
-  "last_changed": "2026-10-19"
+  "hash": "cf261d094baf1d8d",
+  "last_changed": "2026-10-20"
  },
  "perplexity-comet": {
   "url": "https://www.perplexity.ai/hub/blog/introducing-comet-plus",
   "history": [],
   "last_status": 403,
-  "last_attempt": "2026-10-19"
+  "last_attempt": "2026-10-20"
  },
  "gemini-agent": {
   "url": "https://one.google.com/about/google-ai-plans/",
@@ -331,27 +409,36 @@
    }
   ],
   "last_status": 200,
-  "last_attempt": "2026-10-19",
-  "last_checked": "2026-10-19",
+  "last_attempt": "2026-10-20",
+  "last_checked": "2026-10-20",
   "first_snapshot": "2026-10-16",
   "hash": "a41a43561722ede4",
   "last_changed": "2026-10-17"
  },
  "claude-app": {
   "url": "https://claude.com/pricing",
-  "history": [],
+  "history": [
+   {
+    "date": "2026-10-20",
+    "from": "da1284d99653116c",
+    "to": "15ce335d789d9d60",
+    "removed": [],
+    "added": []
+   }
+  ],
   "last_status": 200,
-  "last_attempt": "2026-10-19",
-  "last_checked": "2026-10-19",
+  "last_attempt": "2026-10-20",
+  "last_checked": "2026-10-20",
   "first_snapshot": "2026-10-16",
-  "hash": "da1284d99653116c"
+  "hash": "15ce335d789d9d60",
+  "last_changed": "2026-10-20"
  },
  "claude-managed-agents": {
   "url": "https://platform.claude.com/docs/en/about-claude/pricing",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-19",
-  "last_checked": "2026-10-19",
+  "last_attempt": "2026-10-20",
+  "last_checked": "2026-10-20",
   "first_snapshot": "2026-10-16",
   "hash": "68333a6b7f82f966"
  },
@@ -359,14 +446,14 @@
   "url": "https://help.openai.com/en/articles/20001551-agents-api-beta-faq",
   "history": [],
   "last_status": 403,
-  "last_attempt": "2026-10-19"
+  "last_attempt": "2026-10-20"
  },
  "vertex-agent-engine": {
   "url": "https://cloud.google.com/products/gemini-enterprise-agent-platform/pricing",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-19",
-  "last_checked": "2026-10-19",
+  "last_attempt": "2026-10-20",
+  "last_checked": "2026-10-20",
   "first_snapshot": "2026-10-16",
   "hash": "464295ec30b3fc48"
  },
@@ -374,8 +461,8 @@
   "url": "https://aws.amazon.com/bedrock/agentcore/pricing/",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-19",
-  "last_checked": "2026-10-19",
+  "last_attempt": "2026-10-20",
+  "last_checked": "2026-10-20",
   "first_snapshot": "2026-10-16",
   "hash": "b82863c2b3ec0512"
  },
@@ -383,8 +470,8 @@
   "url": "https://azure.microsoft.com/en-us/pricing/details/foundry-agent-service/",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-19",
-  "last_checked": "2026-10-19",
+  "last_attempt": "2026-10-20",
+  "last_checked": "2026-10-20",
   "first_snapshot": "2026-10-16",
   "hash": "74c92ddf0861d178"
  },
@@ -392,26 +479,38 @@
   "url": "https://relevanceai.com/docs/get-started/pricing",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-19",
-  "last_checked": "2026-10-19",
+  "last_attempt": "2026-10-20",
+  "last_checked": "2026-10-20",
   "first_snapshot": "2026-10-16",
   "hash": "2f131ac6e5df073b"
  },
  "letta-cloud": {
   "url": "https://docs.letta.com/pricing/",
-  "history": [],
+  "history": [
+   {
+    "date": "2026-10-20",
+    "from": "731b454287521987",
+    "to": "f70d2f23614e629c",
+    "removed": [],
+    "added": [
+     "5 MiB of storage per memory repository",
+     "50 MiB of storage per memory repository"
+    ]
+   }
+  ],
   "last_status": 200,
-  "last_attempt": "2026-10-19",
-  "last_checked": "2026-10-19",
+  "last_attempt": "2026-10-20",
+  "last_checked": "2026-10-20",
   "first_snapshot": "2026-10-16",
-  "hash": "731b454287521987"
+  "hash": "f70d2f23614e629c",
+  "last_changed": "2026-10-20"
  },
  "langgraph-platform": {
   "url": "https://www.langchain.com/pricing",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-19",
-  "last_checked": "2026-10-19",
+  "last_attempt": "2026-10-20",
+  "last_checked": "2026-10-20",
   "first_snapshot": "2026-10-16",
   "hash": "a992dda36da811ba"
  },
@@ -419,8 +518,8 @@
   "url": "https://crewai.com/pricing",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-19",
-  "last_checked": "2026-10-19",
+  "last_attempt": "2026-10-20",
+  "last_checked": "2026-10-20",
   "first_snapshot": "2026-10-16",
   "hash": "b0be8f7f3a75bcb8"
  },
@@ -428,8 +527,8 @@
   "url": "https://e2b.dev/pricing",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-19",
-  "last_checked": "2026-10-19",
+  "last_attempt": "2026-10-20",
+  "last_checked": "2026-10-20",
   "first_snapshot": "2026-10-16",
   "hash": "19819d4d3c11a738"
  },
@@ -437,8 +536,8 @@
   "url": "https://modal.com/pricing",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-19",
-  "last_checked": "2026-10-19",
+  "last_attempt": "2026-10-20",
+  "last_checked": "2026-10-20",
   "first_snapshot": "2026-10-16",
   "hash": "4e0dfcb9a4cde698"
  },
@@ -446,8 +545,8 @@
   "url": "https://www.daytona.io/pricing",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-19",
-  "last_checked": "2026-10-19",
+  "last_attempt": "2026-10-20",
+  "last_checked": "2026-10-20",
   "first_snapshot": "2026-10-16",
   "hash": "172a8cc9f1cefeff"
  }

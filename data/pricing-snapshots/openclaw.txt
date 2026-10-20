@@ -54,7 +54,7 @@ $ pnpm openclaw onboard
 Desktop Apps
 Full apps that install everything for you — gateway, chat, setup, and node features. Available for macOS, Windows, and Linux.
 macOS
-macOS 15+ · Apple Silicon or Intel · v2026.10.4
+macOS 15+ · Apple Silicon or Intel · v2026.10.5
 Download Universal
 Silicon Intel
 Windows

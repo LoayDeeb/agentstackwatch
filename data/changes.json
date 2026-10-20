@@ -78,5 +78,45 @@
   "from": "2026.10.4",
   "to": "2026.10.5",
   "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.5"
+ },
+ {
+  "date": "2026-10-20",
+  "slug": "langgraph",
+  "name": "LangGraph",
+  "type": "release",
+  "field": "latest_release",
+  "from": "1.2.16",
+  "to": "cli==0.4.37",
+  "url": "https://github.com/langchain-ai/langgraph/releases/tag/cli%3D%3D0.4.37"
+ },
+ {
+  "date": "2026-10-20",
+  "slug": "vercel-ai-sdk",
+  "name": "Vercel AI SDK",
+  "type": "release",
+  "field": "latest_release",
+  "from": "@ai-sdk/zai@3.0.33",
+  "to": "@ai-sdk/zai@2.0.14",
+  "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/zai%402.0.14"
+ },
+ {
+  "date": "2026-10-20",
+  "slug": "vercel-ai-sdk",
+  "name": "Vercel AI SDK",
+  "type": "release",
+  "field": "npm_version",
+  "from": "7.0.143",
+  "to": "7.0.145",
+  "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/zai%402.0.14"
+ },
+ {
+  "date": "2026-10-20",
+  "slug": "openhands",
+  "name": "OpenHands",
+  "type": "release",
+  "field": "latest_release",
+  "from": "v1.27.1",
+  "to": "v1.28.1",
+  "url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.28.1"
  }
 ]
