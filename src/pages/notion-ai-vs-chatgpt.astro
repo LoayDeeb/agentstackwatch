@@ -1,0 +1,44 @@
+---
+import GuideArticle from '../layouts/GuideArticle.astro'; import { citer } from '../lib/cite.js';
+const { c, used, U } = citer();
+const rows = [
+ ['Price to get the AI',`Notion AI is included on Business at $20 per member a month; Free and Plus ($10) get only a limited trial${c('nt-pricing7','nt-ai7')}`,`ChatGPT Free, or Plus at $20 a month${c('oai-pricing6','oai-plus6')}; Business Standard $20 per user a month annual${c('oai-biz4')}`],
+ ['What the AI knows',`Your Notion workspace, connected apps and the web; Enterprise Search across apps like Slack and GitHub on Business${c('nt-pricing7')}`,`Your chats, files and connected apps${c('oai-work7')}`],
+ ['Agent for multi-step work',`Notion Agent: "completes complex, multi-step tasks using context from Notion, your connected apps, and the web"${c('nt-pricing7')}`,`ChatGPT Work: longer, multi-step work and finished deliverables${c('oai-work7')}`],
+ ['Automations that run on their own',`Custom Agents on a trigger or schedule, 24/7; free to try, then $10 per 1,000 Notion credits${c('nt-ai7','nt-pricing7')}`,`Work tasks on a schedule or on Gmail, Slack and GitHub triggers (Plus and up)${c('oai-work7')}`],
+ ['Meeting notes',`AI Meeting Notes on Business, "no bot needed"${c('nt-pricing7')}`,`${U} (not covered on the pages we checked)`],
+ ['Models',`"Model agnostic": switch a workflow to a different model or provider${c('nt-ai7')}`,`OpenAI's own GPT models${c('oai-work7')}`],
+ ['Training on your data',`Not used to train unless you opt in; AI providers are contractually barred from training on it${c('nt-ai7')}`,`Opt out with "Improve the model for everyone"${c('oai-data6')}; Business data not used for training${c('oai-biz4')}`],
+];
+const body = `
+<div class="tldr"><p><b>The longer answer.</b> They solve different problems. <b>Notion AI</b> is best when your team's documents, wikis and projects already live in Notion: on the Business plan ($20 a member) it can search them, take meeting notes and run Custom Agents on a schedule${c('nt-pricing7','nt-ai7')}. <b>ChatGPT</b> is the better general assistant: it has a free plan, and Plus ($20) adds ChatGPT Work for finished documents, decks and spreadsheets${c('oai-pricing6','oai-plus6','oai-work7')}. Many teams end up using both.</p></div>
+<h2>Notion AI vs ChatGPT, side by side</h2>
+<div class="gtable-wrap"><table class="gtab"><thead><tr><th></th><th>Notion AI</th><th>ChatGPT</th></tr></thead><tbody>
+${rows.map(([k,a,b])=>`<tr><td data-l="" class="nm">${k}</td><td data-l="Notion AI">${a}</td><td data-l="ChatGPT">${b}</td></tr>`).join('')}
+</tbody></table></div>
+<p>US list prices checked 21 Oct 2026.</p>
+<h2>Which should you choose?</h2>
+<ul>
+<li><b>Your company runs on Notion:</b> Notion Business. The AI already sees your pages, and admins control who can build Custom Agents${c('nt-ai7')}.</li>
+<li><b>You're one person who wants a smart assistant:</b> ChatGPT. Notion's Free and Plus plans only have a limited AI trial${c('nt-pricing7')}.</li>
+<li><b>Data-sensitive company:</b> Notion Enterprise adds zero data retention with its AI providers${c('nt-pricing7')}; ChatGPT Business doesn't train on your data${c('oai-biz4')}.</li>
+</ul>
+<p>Also compare: <a href="/claude-vs-chatgpt-vs-gemini/">Claude vs ChatGPT vs Gemini</a> and <a href="/best-ai-agent-for-small-business/">best AI agent for small business</a>.</p>
+`;
+const faqs = [
+ ['Is Notion AI better than ChatGPT?',`For work inside Notion, yes: it uses your workspace and connected apps${c('nt-pricing7')}. For general questions, writing and finished files, ChatGPT is the more complete assistant${c('oai-work7')}.`],
+ ['Is Notion AI free?',`Free and Plus workspaces get a limited trial. Notion AI is included on Business and Enterprise${c('nt-ai7','nt-pricing7')}.`],
+ ['How much does Notion AI cost?',`Notion Business is $20 per member a month and includes Notion Agent, AI Meeting Notes and Enterprise Search. Custom Agents are free to try, then $10 per 1,000 Notion credits${c('nt-pricing7')}.`],
+ ['Does Notion AI use ChatGPT?',`Notion says it is "model agnostic" and lets you switch workflows to a different model or provider${c('nt-ai7')}. Which models are offered today: ${U} on the pages we checked.`],
+ ['Does Notion AI train on my data?',`Notion says it won't use your data to train its models unless you opt in, and its AI subprocessors are contractually prohibited from training on it${c('nt-ai7')}.`],
+];
+---
+<GuideArticle slug="notion-ai-vs-chatgpt" kicker="Head to head" updated="2026-10-21"
+ title="Notion AI vs ChatGPT (2026): Agents, Price and Which to Use | AgentStackWatch"
+ desc="Notion AI vs ChatGPT compared: what each costs, Notion Agent and Custom Agents vs ChatGPT Work, meeting notes, automations and data training. A plain-English pick for teams and individuals. Every fact sourced."
+ h1="Notion AI vs ChatGPT"
+ dek="One lives inside your team's docs, the other is a general assistant. What each costs, what its agents can do, and when to use which."
+ faqs={faqs} used={used}
+ related={[['/claude-vs-chatgpt-vs-gemini/','Claude vs ChatGPT vs Gemini'],['/best-ai-agent-for-small-business/','Best AI agent for small business'],['/claude-cowork-vs-chatgpt-work/','Claude Cowork vs ChatGPT Work']]}>
+<Fragment set:html={body}/>
+</GuideArticle>

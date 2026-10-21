@@ -1,11 +1,19 @@
 ---
-import '@fontsource-variable/newsreader'; import '@fontsource-variable/newsreader/wght-italic.css'; import '@fontsource-variable/inter'; import guidesList from '../lib/guides.json'; import fs from 'node:fs';
-const { title = 'AgentStackWatch — the AI agent stack, tracked', desc = 'A publication tracking what shipped, what broke and what got cheaper across AI agents, platforms and frameworks.', og, wide = false, ogType = 'website' } = Astro.props;
+import '@fontsource-variable/newsreader'; import '@fontsource-variable/newsreader/wght-italic.css'; import '@fontsource-variable/inter'; import guidesList from '../lib/guides.json'; import fs from 'node:fs'; import SlideIn from '../components/SlideIn.astro';
+const { title = 'AgentStackWatch — the AI agent stack, tracked', desc = 'A publication tracking what shipped, what broke and what got cheaper across AI agents, platforms and frameworks.', og, wide = false, ogType = 'website', crumbs = true, article } = Astro.props;
 const path = Astro.url.pathname;
 // One preview card per page: use the og prop, else derive from the path (/compare/a-vs-b/ -> compare-a-vs-b), else fall back to the home card.
 const derived = path === '/' ? 'home' : path.replace(/^\/|\/$/g,'').replace(/\//g,'-');
 const ogName = [og, derived].find(n => n && fs.existsSync(`public/og/${n}.png`)) || 'home';
 const ogUrl = new URL(`/og/${ogName}.png`, Astro.site); const pageUrl = new URL(path, Astro.site);
+// Sitewide structured data: BreadcrumbList on every page except home (GuideArticle emits its own), Article on detail pages (/posts/x/, /tests/x/, /compare/x/, /agents/x/ ...; news and guides emit their own).
+const segs = path.replace(/^\/|\/$/g,'').split('/').filter(Boolean);
+const SEC = {news:'News',posts:'Writing',tests:'Tests',compare:'Compare',agents:'Agents',category:'Categories',tracker:'Tracker',quiz:'Quiz',badge:'Badge'};
+const short = title.replace(/\s*[|—–-]\s*AgentStackWatch.*$/,'').replace(/^AgentStackWatch\s*[|—–-]\s*/,'');
+const crumbLd = crumbs && segs.length ? {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://agentstackwatch.com/"},...segs.map((sg,i)=>({"@type":"ListItem","position":i+2,"name": i===segs.length-1 ? short : (SEC[sg]||sg),"item":new URL('/'+segs.slice(0,i+1).join('/')+'/', Astro.site).href}))]} : null;
+const isDetail = article ?? (segs.length>=2 && segs[0]!=='news' && segs[0]!=='category' && segs[0]!=='badge');
+const artLd = isDetail ? {"@context":"https://schema.org","@type":"Article","headline":short,"description":desc,"author":{"@type":"Person","name":"Loay Deeb"},"publisher":{"@type":"Organization","name":"AgentStackWatch","url":"https://agentstackwatch.com/"},"mainEntityOfPage":pageUrl.href,"image":ogUrl.href} : null;
+const siteLd = [crumbLd, artLd].filter(Boolean);
 const nav=[['/','Home'],['/guide/',"Buyer's Guide"],['/guides/','Guides'],['/quiz/','Quiz'],['/news/','News'],['/posts/','Writing'],['/tests/','Tests'],['/landscape/','Landscape'],['/tracker/','Tracker'],['/changes/','Changes'],['/pricing/','Pricing'],['/breaking/','Breaking']];
 ---
 <html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
@@ -14,7 +22,7 @@ const nav=[['/','Home'],['/guide/',"Buyer's Guide"],['/guides/','Guides'],['/qui
 <meta property="og:type" content={ogType}/><meta property="og:url" content={pageUrl}/>
 <link rel="alternate" type="application/rss+xml" title="AgentStackWatch" href="/rss.xml"/><link rel="icon" href="/favicon.svg"/>
 <script is:inline>document.documentElement.dataset.theme=localStorage.theme||'light'</script>
-<link rel="stylesheet" href="/style.css"/><slot name="head"/></head>
+<link rel="stylesheet" href="/style.css"/>{siteLd.length>0 && <script type="application/ld+json" set:html={JSON.stringify(siteLd)}/>}<slot name="head"/></head>
 <body>
 <header class="mast"><div class="shell mrow">
  <a class="brand" href="/"><svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true"><circle cx="11" cy="11" r="10" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="11" cy="11" r="4" fill="var(--acc)"/></svg>AgentStack<i>Watch</i></a>
@@ -22,6 +30,7 @@ const nav=[['/','Home'],['/guide/',"Buyer's Guide"],['/guides/','Guides'],['/qui
  <div class="mtools"><a href="/search/" class="ic" aria-label="Search">⌕</a><button class="ic" id="tt" aria-label="Toggle dark mode">◐</button><a class="subbtn" href="/newsletter/">Subscribe</a></div>
 </div></header>
 <main class={wide?'shell':'shell'} data-pagefind-body><slot/></main>
+<SlideIn/>
 <footer class="foot"><div class="shell frow"><div><a class="brand" href="/">AgentStack<i>Watch</i></a><p>An independent publication on the AI agent stack.<br/>Every tracker fact links to a source. Unverified fields read <em>unknown</em>.</p></div>
 <div class="fl"><a href="/guide/">Buyer's Guide</a><a href="/guides/">Guides</a><a href="/news/">News</a><a href="/posts/">Writing</a><a href="/landscape/">Landscape</a><a href="/tracker/">Tracker</a><a href="/changes/">Changes</a><a href="/pricing/">Pricing</a><a href="/quiz/">Which AI agent? Quiz</a><a href="/tests/chatgpt-assistant-vs-grok-bot/">Agent tests</a><a href="/compare/">Compare</a><a href="/breaking/">Breaking changes</a><a href="/featured/">Featured listings</a><a href="/sponsor/">Sponsor</a><a href="/rss.xml">RSS</a></div></div></footer>
 <script is:inline>document.getElementById('tt').onclick=()=>{const t=document.documentElement.dataset.theme==='dark'?'light':'dark';document.documentElement.dataset.theme=t;localStorage.theme=t};

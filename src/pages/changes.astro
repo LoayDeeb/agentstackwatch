@@ -2,7 +2,7 @@
 import Base from '../layouts/Base.astro'; import { changes } from '../lib/data.js';
 const weeks = {}; for (const c of [...changes].reverse()) { const dt=new Date(c.date); const m=new Date(dt); m.setUTCDate(dt.getUTCDate()-((dt.getUTCDay()+6)%7)); const k=m.toISOString().slice(0,10); (weeks[k] ||= []).push(c); }
 ---
-<Base title="Weekly changes — AgentStackWatch">
+<Base title="Weekly changes — AgentStackWatch" desc="What changed this week across AI agents and frameworks: new releases, price changes and feature updates, each linked to its source.">
 <header class="pagehead"><p class="kicker">Changelog</p><h1>What changed this week</h1><p class="dek">Every version bump, release and pricing change detected by the nightly job, grouped by week.</p></header>
 {Object.keys(weeks).length===0 ? <div class="panel"><p>Baseline captured on the first run. Changes will appear here after the next nightly update.</p></div> :
 Object.entries(weeks).map(([w,list])=> <div class="panel"><h2>Week of {w}</h2><ul class="changes">{list.map(c=> <li><span class="muted">{c.date}</span> <a href={`/agents/${c.slug}/`}>{c.name}</a> — {c.field}: {c.from} → <b>{c.to}</b> {c.url && <a href={c.url}>notes</a>}</li>)}</ul></div>)}

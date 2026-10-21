@@ -6,6 +6,17 @@ import ps from '../../data/pricing-sources.json';
 const G = '16 Oct 2026', T = '17 Oct 2026', S = '18 Oct 2026', M = '19 Oct 2026', W = '20 Oct 2026', X = '21 Oct 2026';
 const OCR = t => [`oc-${t}`, `https://github.com/openclaw/openclaw/releases/tag/${t}`, `OpenClaw release notes ${t}`, T];
 const EXTRA = [
+ // Checked 21 Oct 2026 for the eight new SEO guides
+ ['oai-agent7','https://help.openai.com/en/articles/11752874-chatgpt-agent','ChatGPT agent (OpenAI Help Center: "no longer available")',X],
+ ['oai-work7','https://help.openai.com/en/articles/20001275-chatgpt-work-and-codex','ChatGPT Work and Codex (OpenAI Help Center)',X],
+ ['oai-atlas7','https://openai.com/index/introducing-chatgpt-atlas/','Introducing ChatGPT Atlas (OpenAI, now marked deprecated)',X],
+ ['mn-pricing7','https://help.manus.im/en/articles/11711111-what-is-the-current-membership-pricing-for-manus','Manus Help Center: current membership pricing',X],
+ ['gb-page7','https://x.ai/bot','Grok Bot product page and FAQ (x.ai)',X],
+ ['gb-docs7','https://docs.x.ai/x-subscription/grok-bot','Grok Bot on The X Subscription (docs.x.ai, updated 12 Oct 2026)',X],
+ ['nt-pricing7','https://www.notion.com/pricing','Notion pricing',X],
+ ['nt-ai7','https://www.notion.com/product/ai','Notion AI and Custom Agents (product page and FAQ)',X],
+ ['cl-gws7','https://support.claude.com/en/articles/10166901-use-google-workspace-connectors','Claude: use Google Workspace connectors (Gmail, Calendar, Drive)',X],
+ ['g-gmail7','https://support.google.com/mail/answer/14355636','Collaborate with Gemini in Gmail (Gmail Help)',X],
  // Re-checked for the guide upgrade on 21 Oct 2026
  ['ly-r','https://www.lindy.ai/pricing','Lindy pricing (re-checked: now from $49.99 per user for 5,000 credits)',X],
  ['oai-pro-tiers','https://help.openai.com/en/articles/9793128-about-chatgpt-pro-tiers','About ChatGPT Pro tiers (Pro 100, 200, 500)',X],

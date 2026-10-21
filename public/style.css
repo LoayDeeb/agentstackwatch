@@ -114,3 +114,7 @@ nav{display:flex;gap:4px}nav a{font-size:14px;color:var(--mut);padding:7px 12px;
 .snip{background:var(--bg2);border:1px solid var(--line);border-radius:10px;padding:12px;font:12.5px/1.5 var(--mono);white-space:pre-wrap;word-break:break-all}
 @media (max-width:720px){.ptab thead{display:none}.ptab tr{display:block;border-bottom:1px solid var(--line);padding:10px 0}.ptab td{display:block;border:0;padding:4px 0}}
 @media (max-width:720px){.cmp{table-layout:fixed;width:100%}.cmp td,.cmp th{word-break:break-word;overflow-wrap:anywhere;padding-left:6px;padding-right:6px}}
+
+/* 2026-10-21: the 12-item nav pushed the Subscribe button off-screen between 1100px and ~1460px; hide the secondary links there too. */
+@media(max-width:1480px){nav a.nx{display:none}}
+.mast nav{min-width:0}

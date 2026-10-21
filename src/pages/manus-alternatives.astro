@@ -1,0 +1,56 @@
+---
+import GuideArticle from '../layouts/GuideArticle.astro'; import { citer } from '../lib/cite.js';
+const { c, used, U } = citer();
+const rows = [
+ ['ChatGPT Work','Finished documents, spreadsheets, decks, reports and Sites from one request',`Free: limited Work in the desktop app${c('oai-pricing6')}. Plus: $20 a month${c('oai-plus6')}`,`Runs in the cloud on web and mobile; the desktop app can use local files and apps with your permission${c('oai-work7')}`],
+ ['Claude (with Cowork built in)','Writing, documents and work across Gmail, Calendar and Drive',`Pro: $20 a month, or $17 a month billed yearly${c('cl-pricing6')}`,`Scheduled tasks on every paid plan, running in the cloud even when your computer is off${c('cl-sched5')}`],
+ ['Grok Bot','An always-on assistant that signs into your own tools and runs routines',`Premium: $30 a month; Super $100; Ultra $200${c('gb-page7')}`,`Has its own persistent cloud computer and keeps working when your laptop is closed${c('gb-page7')}`],
+ ['Gemini Agent','People already paying Google for storage and Gmail',`Google AI Ultra only, US and English only${c('g-plans6')}`,`Tasks in Gemini on Pro and Ultra in select countries${c('g-plans5')}`],
+ ['Notion Custom Agents','Teams whose docs and projects already live in Notion',`Notion Business: $20 per member a month; Custom Agents free to try, then $10 per 1,000 Notion credits${c('nt-pricing7')}`,`Runs on a schedule or trigger, whether you're online or not${c('nt-ai7')}`],
+ ['OpenClaw (open source)','Tinkerers with a spare computer',`Free, MIT-licensed software; you pay for the AI model unless you pick a free one${c('oc6')}`,`Runs on your own Mac, Windows or Linux machine and chats over WhatsApp, Telegram and more${c('oc6')}`],
+ ['Hermes Agent (open source)','Tinkerers who want memory and scheduling',`Free, MIT-licensed; model providers charge separately${c('hm6')}`,`Memory, scheduling, web browsing and messaging apps${c('hm6')}`],
+];
+const body = `
+<div class="tldr"><p><b>The longer answer.</b> Manus is a credit-based agent: Free gives 300 credits a day and one task at a time, and Pro starts at $20 a month for 4,000 credits${c('mn-pricing7')}. If you already pay for ChatGPT, <b>ChatGPT Work</b> covers the same "give me a finished deliverable" job${c('oai-work7')}. If you mostly work in Gmail and documents, <b>Claude</b> is the closest swap at the same price${c('cl-pricing6','cl-gws7')}. If you want something that keeps working in your own logged-in tools, look at <b>Grok Bot</b>${c('gb-page7')}. Free and open source: <b>OpenClaw</b> or <b>Hermes Agent</b>${c('oc6','hm6')}.</p></div>
+
+<h2>What Manus costs today (so you know what you're replacing)</h2>
+<ul>
+<li><b>Free, $0:</b> 300 credits a day, 1 task at a time, 2 scheduled automations, and only the Manus 2.0 Lite model in Agent Mode${c('mn-pricing7')}.</li>
+<li><b>Pro, from $20 a month:</b> from 4,000 credits a month, 20 tasks at a time and 20 scheduled automations. A $40 tier gives 8,000 credits and a 7-day free trial. Annual billing saves 17%${c('mn-pricing7')}.</li>
+<li><b>Team, from $20 per seat a month:</b> adds SSO, a data-training opt-out, usage analytics and access controls${c('mn-pricing7')}.</li>
+</ul>
+<p>How many tasks 4,000 credits buys depends on the task; Manus doesn't publish a fixed number per task: ${U}.</p>
+
+<h2>Manus alternatives compared</h2>
+<div class="gtable-wrap"><table class="gtab"><thead><tr><th>Alternative</th><th>Best for</th><th>Price</th><th>How it works</th></tr></thead><tbody>
+${rows.map(([a,b,p,w])=>`<tr><td data-l="Alternative" class="nm">${a}</td><td data-l="Best for">${b}</td><td data-l="Price">${p}</td><td data-l="How it works">${w}</td></tr>`).join('')}
+</tbody></table></div>
+<p>US list prices checked 21 Oct 2026 unless the source date says otherwise. Genspark and other credit-based agents are left out: we couldn't load their pricing pages for a reliable check.</p>
+
+<h2>Which Manus alternative should you pick?</h2>
+<ul>
+<li><b>You already pay for ChatGPT Plus:</b> try ChatGPT Work before paying for a second agent. It researches, analyzes and builds documents, spreadsheets, presentations, reports and Sites, and can run on a schedule or when a new Gmail message arrives${c('oai-work7')}.</li>
+<li><b>You want help in your inbox and docs:</b> Claude's Gmail connector can search, draft, send, reply and forward, and asks for your approval before each send by default${c('cl-gws7')}.</li>
+<li><b>You want an assistant that works while you sleep:</b> Grok Bot runs routines on a schedule from its own cloud computer, and you can teach it a workflow by doing it once while it watches${c('gb-page7')}.</li>
+<li><b>Your team lives in Notion:</b> Notion's Custom Agents run on triggers or schedules across your workspace and connected tools${c('nt-ai7')}.</li>
+<li><b>You want free and open source:</b> OpenClaw or Hermes on a spare computer, with a model you already pay for${c('oc6','hm6')}. Read <a href="/is-openclaw-safe/">is OpenClaw safe?</a> first.</li>
+</ul>
+<p>Head to head: <a href="/chatgpt-agent-vs-manus/">ChatGPT vs Manus</a>. Not sure? The <a href="/quiz/">1-minute quiz</a> gives you a pick.</p>
+`;
+const faqs = [
+ ['What is the best alternative to Manus?',`For most people who already pay for ChatGPT, ChatGPT Work, because it produces the same kind of finished deliverables (documents, spreadsheets, presentations, reports and Sites)${c('oai-work7')} and Plus costs $20 a month${c('oai-plus6')}, the same as Manus Pro's starting price${c('mn-pricing7')}.`],
+ ['Is there a free Manus alternative?',`Yes. OpenClaw and Hermes Agent are free, MIT-licensed software, though you pay for the AI model unless you choose a free one${c('oc6','hm6')}. Manus itself has a free plan with 300 credits a day${c('mn-pricing7')}.`],
+ ['Is there an open-source Manus alternative?',`OpenClaw and Hermes Agent are both open source under the MIT license${c('oc6','hm6')}. They run on your own machine, so setup and security are your job. See our <a href="/openclaw-vs-hermes-agent/">OpenClaw vs Hermes</a> guide.`],
+ ['How much does Manus cost?',`Free is $0 with 300 daily credits. Pro starts at $20 a month for 4,000 credits, with a $40 tier for 8,000 credits. Team starts at $20 per seat a month. Annual billing saves 17%${c('mn-pricing7')}.`],
+ ['Manus vs ChatGPT: which is better?',`ChatGPT's old "agent mode" is no longer available; OpenAI now points people to ChatGPT Work${c('oai-agent7')}. Pick ChatGPT if you already pay for it and want Gmail, Slack or GitHub triggers${c('oai-work7')}; pick Manus for a cheap credit plan with up to 20 tasks running at once on Pro${c('mn-pricing7')}.`],
+];
+---
+<GuideArticle slug="manus-alternatives" kicker="Alternatives" updated="2026-10-21"
+ title="Manus Alternatives (2026): 7 Agents Compared on Price and Features | AgentStackWatch"
+ desc="The best Manus alternatives in 2026: ChatGPT Work, Claude, Grok Bot, Gemini Agent, Notion Custom Agents and free open-source OpenClaw and Hermes, compared on price, credits and what each does best. Every fact sourced."
+ h1="Manus alternatives (2026)"
+ dek="What Manus costs today, seven alternatives side by side, and which one fits you. Plain English, every fact linked to the vendor's own page."
+ faqs={faqs} used={used}
+ related={[['/chatgpt-agent-vs-manus/','ChatGPT agent vs Manus'],['/chatgpt-agent-alternatives/','ChatGPT agent alternatives'],['/grok-bot-review/','Grok Bot review'],['/openclaw-vs-hermes-agent/','OpenClaw vs Hermes Agent']]}>
+<Fragment set:html={body}/>
+</GuideArticle>

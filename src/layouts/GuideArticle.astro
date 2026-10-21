@@ -10,7 +10,7 @@ const more = guides.filter(g=>g.slug!==slug);
 const me = guides.find(g=>g.slug===slug) || {}; const relG = (me.rel||[]).map(s=>guides.find(g=>g.slug===s)).filter(Boolean);
 const news = (await getNews()).slice(0,3);
 ---
-<Base title={title} desc={desc} og={`guides-${slug}`} ogType="article">
+<Base title={title} desc={desc} og={`guides-${slug}`} ogType="article" crumbs={false} article={false}>
 <Fragment slot="head"><link rel="canonical" href={url}/><meta name="author" content="Loay Deeb"/>
 <script type="application/ld+json" set:html={JSON.stringify(ld)}/></Fragment>
 <article class="guide ga">

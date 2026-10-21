@@ -190,5 +190,101 @@
    "best-ai-agent-for-small-business",
    "best-ai-agent-for-customer-support"
   ]
+ },
+ {
+  "slug": "manus-alternatives",
+  "short": "Manus alternatives",
+  "kicker": "Alternatives",
+  "blurb": "Seven agents that do what Manus does, from ChatGPT Work and Claude to Grok Bot and free open-source options, on price and strengths.",
+  "quick": "Already pay for ChatGPT? Try ChatGPT Work first. For email and documents, Claude at $20. For an always-on assistant in your own tools, Grok Bot from $30. Free and open source: OpenClaw or Hermes.",
+  "rel": [
+   "chatgpt-agent-vs-manus",
+   "chatgpt-agent-alternatives",
+   "grok-bot-review"
+  ]
+ },
+ {
+  "slug": "chatgpt-agent-alternatives",
+  "short": "ChatGPT agent alternatives",
+  "kicker": "Alternatives",
+  "blurb": "ChatGPT agent mode is gone. What ChatGPT Work does instead, whether it's worth it, and six alternatives.",
+  "quick": "ChatGPT agent is no longer available; OpenAI now points to ChatGPT Work, included with Plus at $20. If you want something else: Manus for cheap credits, Claude for email and docs, Grok Bot for work inside your logged-in tools.",
+  "rel": [
+   "manus-alternatives",
+   "is-chatgpt-plus-worth-it",
+   "claude-cowork-vs-chatgpt-work"
+  ]
+ },
+ {
+  "slug": "claude-cowork-vs-chatgpt-work",
+  "short": "Claude Cowork vs ChatGPT Work",
+  "kicker": "Head to head",
+  "blurb": "Two $20 task agents: scheduling, Gmail and Google Docs, triggers and data training, side by side.",
+  "quick": "Both cost $20. Pick Claude for Gmail and Google Docs (it asks before sending). Pick ChatGPT Work for tasks that start on a new email, Slack message or GitHub PR, and for finished decks and spreadsheets.",
+  "rel": [
+   "chatgpt-vs-claude-for-business",
+   "chatgpt-agent-alternatives",
+   "best-ai-agent-for-gmail"
+  ]
+ },
+ {
+  "slug": "claude-vs-chatgpt-vs-gemini",
+  "short": "Claude vs ChatGPT vs Gemini",
+  "kicker": "Head to head",
+  "blurb": "The three big assistants in one table: free plans, $20 plans, team pricing, email and agents, with a pick by situation.",
+  "quick": "On Google Workspace? Start with Gemini, which comes with Business plans. For careful writing and email, Claude. For one tool that does everything plus finished files, ChatGPT. Teams: ChatGPT Business and Claude Team both cost $20 a seat yearly.",
+  "rel": [
+   "chatgpt-vs-gemini",
+   "claude-vs-gemini",
+   "best-ai-agent-for-small-business"
+  ]
+ },
+ {
+  "slug": "grok-bot-review",
+  "short": "Grok Bot review",
+  "kicker": "Review",
+  "blurb": "What xAI's AI teammate does, Premium/Super/Ultra pricing, safety controls, our test score, and who should skip it.",
+  "quick": "Worth it at $30 a month if you have repeat tasks inside web tools you log into and want them done in the background. If you mainly want answers and drafts, a $20 assistant is enough.",
+  "rel": [
+   "manus-alternatives",
+   "chatgpt-agent-alternatives",
+   "best-personal-ai-agent-for-founders"
+  ]
+ },
+ {
+  "slug": "notion-ai-vs-chatgpt",
+  "short": "Notion AI vs ChatGPT",
+  "kicker": "Head to head",
+  "blurb": "Notion Agent and Custom Agents vs ChatGPT Work: price, what each knows, automations and data training.",
+  "quick": "If your team's docs live in Notion, Notion Business ($20 a member) gives you an AI that knows them. For a general assistant with a free plan, ChatGPT. Many teams use both.",
+  "rel": [
+   "claude-vs-chatgpt-vs-gemini",
+   "best-ai-agent-for-small-business",
+   "claude-cowork-vs-chatgpt-work"
+  ]
+ },
+ {
+  "slug": "is-chatgpt-plus-worth-it",
+  "short": "Is ChatGPT Plus worth it?",
+  "kicker": "Worth it?",
+  "blurb": "What $20 a month buys now that agent mode is gone: Free vs Go vs Plus vs Pro, and when to skip it.",
+  "quick": "Yes if you use ChatGPT daily for work: $20 a month adds ChatGPT Work and removes ads. No if you ask a few questions a week; Free has unlimited text chats within fair use.",
+  "rel": [
+   "chatgpt-agent-alternatives",
+   "best-free-ai-agent",
+   "how-much-does-an-ai-agent-cost"
+  ]
+ },
+ {
+  "slug": "best-ai-agent-for-gmail",
+  "short": "Best AI agent for Gmail",
+  "kicker": "Email",
+  "blurb": "Gemini in Gmail, Claude, ChatGPT Work and Grok Bot: what each can do in your inbox, price, and safety.",
+  "quick": "For help inside Gmail, Gemini in Gmail from $4.99 a month. For an agent that can send and reply with your approval, Claude. For tasks that start when an email arrives, ChatGPT Work.",
+  "rel": [
+   "ai-agent-for-email-and-calendar",
+   "claude-cowork-vs-chatgpt-work",
+   "chatgpt-vs-gemini"
+  ]
  }
 ]

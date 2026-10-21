@@ -1,0 +1,42 @@
+---
+import GuideArticle from '../layouts/GuideArticle.astro'; import { citer } from '../lib/cite.js';
+const { c, used, U } = citer();
+const rows = [
+ ['Free','Free ($0)',`Unlimited text chats within fair use; limited uploads, images, voice and deep research; limited Work in the desktop app${c('oai-pricing6')}`,`Ads may appear${c('oai-go6','oai-ads6')}`],
+ ['Go',`$8 a month in the US at launch (Jan 2026)${c('oai-go6')}`,`More messages, uploads, images and memory, plus scheduled tasks${c('oai-pricing6')}`,`Ads may appear${c('oai-go6')}; no Work event triggers${c('oai-work7')}`],
+ ['Plus',`$20 a month, monthly billing only${c('oai-plus6')}`,`ChatGPT Work on web and mobile, advanced reasoning models${c('oai-pricing6')}; GPT-6 Astra in Work with limited usage${c('oai-work7')}; Gmail, Slack and GitHub triggers${c('oai-work7')}`,`No ads${c('oai-ads6')}`],
+ ['Pro',`$100, $200 or $500 a month tiers${c('oai-pro-tiers')}`,`GPT-6 Pro on the $100 and $200 tiers, and the full Work allowance for GPT-6 Astra${c('oai-work7')}`,`For heavy daily use`],
+];
+const TBL = rows.map(r=>'<tr><td data-l="Plan" class="nm">'+r[0]+'</td><td data-l="Price">'+r[1]+'</td><td data-l="What you get">'+r[2]+'</td><td data-l="Ads">'+r[3]+'</td></tr>').join('');
+const body = `
+<div class="tldr"><p><b>The longer answer.</b> ChatGPT Plus costs $20 a month${c('oai-plus6')}. What you're mainly paying for now is <b>ChatGPT Work</b>, the agent that replaced agent mode${c('oai-agent7')}: it researches and hands back documents, spreadsheets, decks, reports and Sites, and can start a task when a new Gmail message arrives${c('oai-work7')}. Plus is also ad-free${c('oai-ads6')}. If you use ChatGPT a few times a week for questions, Free is enough. If you use it daily for work, Plus pays for itself if it saves you at least one hour a month that's worth more than $20 to you.</p></div>
+<h2>Free vs Go vs Plus vs Pro</h2>
+<div class="gtable-wrap"><table class="gtab"><thead><tr><th>Plan</th><th>Price</th><th>What you get</th><th>Ads</th></tr></thead><tbody>
+${TBL}
+</tbody></table></div>
+<p>Checked 21 Oct 2026. ChatGPT's pricing page didn't show prices when we checked, so the Go price is OpenAI's January 2026 US launch price${c('oai-go6')}. Exact message limits per plan aren't published${c('oai-pricing6')}.</p>
+<h2>Is it worth it for you?</h2>
+<ul>
+<li><b>Worth it:</b> you use it daily for writing, research or analysis, or you want Work to produce finished files and run on a schedule${c('oai-work7')}.</li>
+<li><b>Not worth it:</b> you ask a few questions a week. Free has unlimited text chats within fair use${c('oai-pricing6')}.</li>
+<li><b>Consider instead:</b> Claude Pro at $17 a month billed yearly${c('cl-pricing6')}, or Google AI Plus at $4.99${c('g-plans6')}. See <a href="/claude-vs-chatgpt-vs-gemini/">Claude vs ChatGPT vs Gemini</a>.</li>
+<li><b>Business use:</b> ChatGPT Business is $20 a user a month on annual billing and doesn't train on your data${c('oai-biz4')}. On Plus, switch off "Improve the model for everyone" if you don't want training${c('oai-data6')}.</li>
+</ul>
+`;
+const faqs = [
+ ['Is ChatGPT Plus worth it in 2026?',`For daily users, usually yes: $20 a month${c('oai-plus6')} gets ChatGPT Work for finished deliverables and automatic triggers${c('oai-work7')}, plus no ads${c('oai-ads6')}. Occasional users can stay on Free${c('oai-pricing6')}.`],
+ ['How much is ChatGPT Plus?',`$20 a month, billed monthly${c('oai-plus6')}.`],
+ ['Is ChatGPT agent included in Plus?',`ChatGPT agent is no longer available; OpenAI now points to ChatGPT Work${c('oai-agent7')}, which is on Plus${c('oai-pricing6','oai-work7')}.`],
+ ['What is the difference between ChatGPT Go and Plus?',`Go launched at $8 a month in the US and may show ads${c('oai-go6')}; Plus is $20, ad-free and adds ChatGPT Work on web and mobile${c('oai-plus6','oai-ads6','oai-pricing6')}.`],
+ ['Is ChatGPT Plus worth it for students?',`If you use it daily for studying, the paid features help; if not, Free covers unlimited text chats within fair use${c('oai-pricing6')}. Student discounts: ${U} on the pages we checked.`],
+];
+---
+<GuideArticle slug="is-chatgpt-plus-worth-it" kicker="Worth it?" updated="2026-10-21"
+ title="Is ChatGPT Plus Worth It in 2026? Free vs Go vs Plus vs Pro | AgentStackWatch"
+ desc="Is ChatGPT Plus worth $20 a month in 2026? What Plus adds over Free and Go (ChatGPT Work, triggers, no ads), Pro tiers, who should skip it and cheaper alternatives. Every fact linked to OpenAI's own pages."
+ h1="Is ChatGPT Plus worth it?"
+ dek="What $20 a month buys you now that agent mode is gone, how it compares with Free, Go and Pro, and when to skip it."
+ faqs={faqs} used={used}
+ related={[['/chatgpt-agent-alternatives/','ChatGPT agent alternatives'],['/best-free-ai-agent/','Best free AI agents'],['/how-much-does-an-ai-agent-cost/','How much does an AI agent cost?']]}>
+<Fragment set:html={body}/>
+</GuideArticle>

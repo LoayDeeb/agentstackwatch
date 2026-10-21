@@ -1,0 +1,45 @@
+---
+import GuideArticle from '../layouts/GuideArticle.astro'; import { citer } from '../lib/cite.js';
+const { c, used, U } = citer();
+const rows = [
+ ['What it is',`Claude's task agent, now merged into regular Claude chats, rolling out first on Pro and Max: you describe the job in any conversation${c('cl-one5')}`,`ChatGPT's agent for longer, multi-step work and finished deliverables, alongside Chat and Codex${c('oai-work7')}`],
+ ['Cheapest paid plan',`Pro: $20 a month, or $17 a month billed yearly${c('cl-pricing6')}`,`Plus: $20 a month${c('oai-plus6')}`],
+ ['Free plan',`Claude Free has chat, file creation and app connectors${c('cl-pricing6')}; task hand-off and scheduling start at Pro${c('cl-pricing6')}`,`Limited Work in the desktop app${c('oai-pricing6')}`],
+ ['Where it runs',`Cloud tasks on Pro and Max, in beta on web and mobile for Team${c('cl-cowork5')}`,`Cloud on web and mobile; the desktop app can also use local files and apps with permission${c('oai-work7')}`],
+ ['Scheduling',`Scheduled tasks on every paid plan, running in the cloud even when your computer is off${c('cl-sched5')}`,`Run once, on a schedule, or on a trigger such as a new Gmail message, Slack message or GitHub PR (not on Free or Go)${c('oai-work7')}`],
+ ['Gmail and Google',`Gmail, Calendar and Drive connectors for all users; can send, reply and forward, asking for approval before each by default${c('cl-gws7')}`,`Gmail can trigger tasks${c('oai-work7')}; detailed Gmail actions: ${U} (OpenAI's connector help page blocked our check)`],
+ ['Documents',`Edits Google Docs, Sheets and Slides live beside the chat${c('cl-gws7')}`,`Creates documents, spreadsheets, presentations, reports and Sites${c('oai-work7')}`],
+ ['Training on your data',`Listed as "Opt-out" on Free, Pro and Max${c('cl-pricing6')}`,`Opt out with "Improve the model for everyone" in Data controls${c('oai-data6')}`],
+];
+const body = `
+<div class="tldr"><p><b>The longer answer.</b> Both cost $20 a month at the entry paid tier${c('cl-pricing6','oai-plus6')} and both take a whole task and hand back a finished result. Pick <b>Claude</b> if your work is email, calendar and Google documents: its Gmail connector can send and reply with your approval, and it edits Docs, Sheets and Slides live${c('cl-gws7')}. Pick <b>ChatGPT Work</b> if you want tasks that start themselves when a new email, Slack message or GitHub PR arrives, or polished decks, spreadsheets and Sites${c('oai-work7')}.</p></div>
+<h2>Claude Cowork vs ChatGPT Work, side by side</h2>
+<div class="gtable-wrap"><table class="gtab"><thead><tr><th></th><th>Claude (Cowork)</th><th>ChatGPT Work</th></tr></thead><tbody>
+${rows.map(([k,a,b])=>`<tr><td data-l="" class="nm">${k}</td><td data-l="Claude (Cowork)">${a}</td><td data-l="ChatGPT Work">${b}</td></tr>`).join('')}
+</tbody></table></div>
+<p>Prices are US list prices checked 21 Oct 2026; Claude Cowork details were checked 20 Oct 2026.</p>
+<h2>Which should you use?</h2>
+<ul>
+<li><b>Founders and managers in Google Workspace:</b> Claude. The approval-before-send default is a good safety net${c('cl-gws7')}.</li>
+<li><b>Anyone who wants "when X happens, do Y":</b> ChatGPT Work's event triggers on Gmail, Slack and GitHub${c('oai-work7')}.</li>
+<li><b>Teams:</b> Claude Team is $20 a seat on annual billing, $25 monthly${c('cl-team5')}; ChatGPT Business Standard is $20 annual, $25 monthly${c('oai-biz4')}. Both say they don't train on business data by default${c('cl-pricing5','oai-biz4')}.</li>
+<li><b>Want it to use your own logged-in websites all day?</b> Neither is built mainly for that; see <a href="/grok-bot-review/">Grok Bot</a> or <a href="/manus-alternatives/">Manus alternatives</a>.</li>
+</ul>
+`;
+const faqs = [
+ ['Is Claude Cowork better than ChatGPT Work?',`Neither wins everywhere. Claude is stronger for Gmail and Google documents (send with approval, live editing)${c('cl-gws7')}; ChatGPT Work adds event triggers from Gmail, Slack and GitHub and builds decks, spreadsheets and Sites${c('oai-work7')}.`],
+ ['How much do Claude Cowork and ChatGPT Work cost?',`Claude Pro is $20 a month or $17 billed yearly${c('cl-pricing6')}. ChatGPT Plus is $20 a month${c('oai-plus6')}. ChatGPT Free includes limited Work in the desktop app${c('oai-pricing6')}.`],
+ ['Is Claude Cowork still a separate app?',`Anthropic has merged Cowork into regular Claude chats, rolling out first on Pro and Max${c('cl-one5')}.`],
+ ['Can they run tasks while my computer is off?',`Yes. Claude's scheduled tasks run in the cloud even when your computer is off${c('cl-sched5')}, and ChatGPT Work on web and mobile runs in the cloud${c('oai-work7')}.`],
+ ['Do they train on my data?',`Claude lists training as opt-out on Free, Pro and Max${c('cl-pricing6')}; ChatGPT lets you switch off "Improve the model for everyone"${c('oai-data6')}. On business plans, both say no training by default${c('cl-pricing5','oai-biz4')}.`],
+];
+---
+<GuideArticle slug="claude-cowork-vs-chatgpt-work" kicker="Head to head" updated="2026-10-21"
+ title="Claude Cowork vs ChatGPT Work (2026): Which AI Agent Should You Use? | AgentStackWatch"
+ desc="Claude Cowork vs ChatGPT Work compared in plain English: price, free plans, scheduling, Gmail and Google Docs, triggers, and data training. Every fact linked to Anthropic's and OpenAI's own pages."
+ h1="Claude Cowork vs ChatGPT Work"
+ dek="Both cost $20 and both finish whole tasks for you. Here's where each one is better, in a side-by-side table."
+ faqs={faqs} used={used}
+ related={[['/chatgpt-vs-claude-for-business/','ChatGPT vs Claude for business'],['/chatgpt-agent-alternatives/','ChatGPT agent alternatives'],['/claude-vs-chatgpt-vs-gemini/','Claude vs ChatGPT vs Gemini'],['/best-ai-agent-for-gmail/','Best AI agent for Gmail']]}>
+<Fragment set:html={body}/>
+</GuideArticle>

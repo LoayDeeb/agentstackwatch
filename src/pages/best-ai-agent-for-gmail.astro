@@ -1,0 +1,42 @@
+---
+import GuideArticle from '../layouts/GuideArticle.astro'; import { citer } from '../lib/cite.js';
+const { c, used, U } = citer();
+const rows = [
+ ['Gemini in Gmail',`Google AI Plus from $4.99 a month${c('g-plans6')}, or a Google Workspace Business plan${c('gws-pricing5')}`,`Summarize threads, draft and refine replies, delete or label emails in bulk, find details like flight times, propose meeting times from your calendar${c('g-gmail7')}`,`Built into Gmail (the Ask Gemini button)${c('g-gmail7')}. Sending by itself: not documented${c('g-gmail7')}`],
+ ['Claude',`Gmail connector for all users, Free included${c('cl-gws7')}; Pro $20 a month${c('cl-pricing6')}`,`Search and read mail, draft, send, reply, forward, labels and threads; also Calendar and Drive${c('cl-gws7')}`,`Asks for approval before each send by default${c('cl-gws7')}; reads attachment details, not contents${c('cl-gws7')}`],
+ ['ChatGPT Work',`Plus $20 a month${c('oai-plus6')}`,`A task can start automatically when a new Gmail message arrives${c('oai-work7')}`,`Event triggers not on Free or Go${c('oai-work7')}. Full list of Gmail actions: ${U}`],
+ ['Grok Bot',`Premium $30 a month${c('gb-page7')}`,`Signs into your tools like you do and runs routines on a schedule, 24/7${c('gb-page7')}`,`Sensitive actions can go through Auto Review first${c('gb-page7')}`],
+];
+const body = `
+<div class="tldr"><p><b>The longer answer.</b> If you want help right inside Gmail, <b>Gemini in Gmail</b> is the easiest: it summarizes, drafts, labels and finds things without leaving your inbox, from $4.99 a month on Google AI Plus${c('g-gmail7','g-plans6')}. If you want an agent that can also send and reply for you, <b>Claude</b> is the safest start, because it asks before every send by default${c('cl-gws7')}. If you want work to kick off when an email lands, <b>ChatGPT Work</b> can trigger on new Gmail messages${c('oai-work7')}. For inbox chores across many web tools, <b>Grok Bot</b>${c('gb-page7')}.</p></div>
+<h2>AI agents for Gmail compared</h2>
+<div class="gtable-wrap"><table class="gtab"><thead><tr><th>Agent</th><th>Price</th><th>What it can do in Gmail</th><th>Good to know</th></tr></thead><tbody>
+${rows.map(([a,b,d,e])=>`<tr><td data-l="Agent" class="nm">${a}</td><td data-l="Price">${b}</td><td data-l="What it can do">${d}</td><td data-l="Good to know">${e}</td></tr>`).join('')}
+</tbody></table></div>
+<p>US list prices checked 21 Oct 2026. Dedicated email apps (Superhuman, Shortwave, Fyxer and others) aren't covered here yet; we'll add them once we've checked their own pages.</p>
+<h2>Keep your inbox safe</h2>
+<ul>
+<li>Emails can contain hidden instructions meant to trick an agent. OpenAI gives exactly that example (a malicious message asking the agent to fetch a password-reset code from Gmail)${c('oai-agent7')}.</li>
+<li>Keep "ask before sending" on. Claude has it on by default${c('cl-gws7')}.</li>
+<li>Don't give vague orders like "check my email and handle everything", which OpenAI also advises against${c('oai-agent7')}.</li>
+<li>Connecting Gmail to the Gemini app needs Keep Activity on, which means your activity can be used to improve Google's services${c('g-privacy6')}.</li>
+</ul>
+<p>More on this: <a href="/ai-agent-for-email-and-calendar/">AI agents for email and calendar</a>.</p>
+`;
+const faqs = [
+ ['What is the best AI agent for Gmail?',`For help inside Gmail, Gemini in Gmail (from $4.99 on Google AI Plus)${c('g-gmail7','g-plans6')}. For an agent that can also send and reply with your approval, Claude${c('cl-gws7')}.`],
+ ['Is there a free AI agent for Gmail?',`Claude's Gmail connector is available to all users, including Free${c('cl-gws7','cl-pricing6')}. Gemini in Gmail needs an eligible Google AI or Workspace plan${c('g-gmail7')}.`],
+ ['Can AI send emails for me in Gmail?',`Claude can send, reply and forward, asking for approval each time by default${c('cl-gws7')}. Google's help page for Gemini in Gmail describes drafting, not sending on its own${c('g-gmail7')}.`],
+ ['Can ChatGPT read my Gmail?',`ChatGPT Work can run a task when a new Gmail message arrives, if you connect Gmail (Plus and up)${c('oai-work7')}.`],
+ ['Is it safe to connect an AI agent to Gmail?',`It carries real risk: hidden instructions in emails or web pages can trick agents${c('oai-agent7')}. Connect only what a task needs and keep approval on for sending.`],
+];
+---
+<GuideArticle slug="best-ai-agent-for-gmail" kicker="Email" updated="2026-10-21"
+ title="Best AI Agent for Gmail (2026): Gemini vs Claude vs ChatGPT vs Grok Bot | AgentStackWatch"
+ desc="The best AI agent for Gmail in 2026: what Gemini in Gmail, Claude's Gmail connector, ChatGPT Work and Grok Bot can do in your inbox, what they cost, which can send for you, and how to stay safe. Every fact sourced."
+ h1="Best AI agent for Gmail"
+ dek="Four ways to get an AI to handle your Gmail, what each can actually do, what it costs, and how to keep your inbox safe."
+ faqs={faqs} used={used}
+ related={[['/ai-agent-for-email-and-calendar/','AI agents for email and calendar'],['/claude-cowork-vs-chatgpt-work/','Claude Cowork vs ChatGPT Work'],['/chatgpt-vs-gemini/','ChatGPT vs Gemini']]}>
+<Fragment set:html={body}/>
+</GuideArticle>

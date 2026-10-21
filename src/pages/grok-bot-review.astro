@@ -1,0 +1,56 @@
+---
+import GuideArticle from '../layouts/GuideArticle.astro'; import { citer } from '../lib/cite.js';
+const { c, used, U } = citer();
+const plans = [
+ ['Premium',`$30 a month, billed monthly${c('gb-page7')}`,`Grok Bot's own computer, signs into your tools, routines on a schedule, desktop and mobile, weekly usage included${c('gb-page7')}`],
+ ['Super',`$100 a month${c('gb-page7')}`,`3.5x Premium usage and priority model access at peak times${c('gb-page7')}`],
+ ['Ultra',`$200 a month${c('gb-page7')}`,`12x Premium usage and earliest access to new products and models${c('gb-page7')}`],
+ ['Plus ($8) and Free','Not included',`Plus doesn't include Grok Bot; you need Premium or higher${c('gb-docs7','x-pricing6')}`],
+];
+const vs = [
+ ['Grok Bot',`$30 a month${c('gb-page7')}`,`Its own persistent cloud computer; uses your apps and websites like you would; keeps working 24/7 with your laptop closed${c('gb-page7')}`],
+ ['ChatGPT Work',`Plus $20 a month${c('oai-plus6')}`,`Finished documents, decks and Sites; schedules and Gmail/Slack/GitHub triggers${c('oai-work7')}`],
+ ['Claude',`Pro $20 a month${c('cl-pricing6')}`,`Gmail, Calendar and Drive connectors; cloud scheduled tasks${c('cl-gws7','cl-sched5')}`],
+ ['Manus',`Free; Pro from $20${c('mn-pricing7')}`,`Credit-based research, slides and websites${c('mn-pricing7')}`],
+];
+const T=(h,r)=>`<div class="gtable-wrap"><table class="gtab"><thead><tr>${h.map(x=>`<th>${x}</th>`).join('')}</tr></thead><tbody>${r.map(row=>`<tr>${row.map((v,i)=>`<td data-l="${i?h[i]:''}"${i?'':' class="nm"'}>${v}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
+const body = `
+<p class="muted small"><b>Disclosure:</b> AgentStackWatch uses Grok Bot as a research assistant (see the note under Sources), so read this review with that in mind. Every claim below links to xAI's own pages or to our published test, and nobody paid for this page.</p>
+<div class="tldr"><p><b>The longer answer.</b> Grok Bot is xAI's "AI teammate": it has its own cloud computer, signs into the tools you use, and keeps working when your laptop is closed${c('gb-page7')}. It starts at $30 a month on Premium${c('gb-page7')}, so it costs more than a $20 assistant. In <a href="/tests/chatgpt-assistant-vs-grok-bot/">our hands-on test</a> on one research task it scored 94/100, mainly for speed, against 88.6 for ChatGPT's always-on assistant, whose facts were cleaner. It's worth it if you have repeat tasks inside web apps you log into; if you only want answers and drafts, a $20 plan is enough.</p></div>
+<h2>What Grok Bot does</h2>
+<ul>
+<li><b>Works inside your apps:</b> "Log Grok Bot in once. It uses your apps and websites just like you would"${c('gb-page7')}.</li>
+<li><b>Learns by watching:</b> show it a workflow once and it saves it as a routine to run on its own next time${c('gb-page7')}.</li>
+<li><b>Several Bots at once:</b> create one per job; they share one persistent cloud computer (files, browser, logins) and can hand work to each other${c('gb-page7')}.</li>
+<li><b>Where you talk to it:</b> desktop (macOS or Windows) and the iOS app${c('gb-page7')}. Android: ${U}.</li>
+<li><b>Safety and privacy:</b> encrypted cloud computer, training opt-out, and an Auto Review step for sensitive actions; Enterprise admins get DLP and network controls${c('gb-page7')}.</li>
+</ul>
+<h2>Grok Bot pricing</h2>
+${T(['Plan','Price','What you get'],plans)}
+<p>Each plan includes weekly usage; extra usage is billed by token cost${c('gb-page7')}. Usage comes from one weekly pool shared across Grok, Grok Bot and Cursor${c('gb-docs7')}. How many tasks a week Premium covers isn't published: ${U}.</p>
+<h2>Grok Bot vs the alternatives</h2>
+${T(['Agent','From','Strength'],vs)}
+<h2>Who should (and shouldn't) buy it</h2>
+<ul>
+<li><b>Good fit:</b> founders and operators with repeat work in web tools (support queues, CRM, reporting) who want it done in the background${c('gb-page7')}.</li>
+<li><b>Not a fit:</b> people who mostly want chat answers or email drafts. See <a href="/best-ai-agent-for-personal-use/">best AI agent for personal use</a>.</li>
+<li><b>Before you connect it:</b> any agent that logs into your accounts can make mistakes there. Start with low-risk tools and keep approval on for anything that sends or pays.</li>
+</ul>
+`;
+const faqs = [
+ ['How much does Grok Bot cost?',`Premium is $30 a month, Super $100 and Ultra $200, all billed monthly, with weekly usage included${c('gb-page7')}. Teams and Enterprise plans also include it${c('gb-page7')}.`],
+ ['Is Grok Bot free?',`No. It's not on the Free or $8 Plus plans; you need Premium or higher${c('gb-docs7','x-pricing6')}.`],
+ ['Is Grok Bot safe?',`xAI says the cloud computer is encrypted in transit and at rest, there's a training opt-out, and sensitive actions can go through Auto Review before they run${c('gb-page7')}. As with any agent that logs into your accounts, connect only what it needs.`],
+ ['Can I download Grok Bot for Windows?',`xAI says you can use it from desktop (macOS or Windows) or the iOS app${c('gb-page7')}.`],
+ ['Is Grok Bot better than ChatGPT?',`In our one published test it was faster and scored 94 vs 88.6 for ChatGPT's always-on assistant, but ChatGPT's facts were cleaner (<a href="/tests/chatgpt-assistant-vs-grok-bot/">full test</a>). It's also $10 a month more than ChatGPT Plus${c('gb-page7','oai-plus6')}.`],
+];
+---
+<GuideArticle slug="grok-bot-review" kicker="Review" updated="2026-10-21"
+ title="Grok Bot Review (2026): Price, Features, Safety and Is It Worth It? | AgentStackWatch"
+ desc="An honest Grok Bot review: what xAI's AI teammate does, Premium/Super/Ultra pricing, safety controls, how it scored in our hands-on test, and how it compares with ChatGPT Work, Claude and Manus. Every fact sourced."
+ h1="Grok Bot review: is it worth $30 a month?"
+ dek="What Grok Bot actually does, what it costs, how it did in our test, and who should skip it. With a disclosure up front."
+ faqs={faqs} used={used}
+ related={[['/tests/chatgpt-assistant-vs-grok-bot/','Test: ChatGPT assistant vs Grok Bot'],['/compare/grok-bot-vs-chatgpt-dots/','Grok Bot vs ChatGPT dots'],['/manus-alternatives/','Manus alternatives'],['/chatgpt-agent-alternatives/','ChatGPT agent alternatives']]}>
+<Fragment set:html={body}/>
+</GuideArticle>

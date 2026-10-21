@@ -1,0 +1,44 @@
+---
+import GuideArticle from '../layouts/GuideArticle.astro'; import { citer } from '../lib/cite.js';
+const { c, used, U } = citer();
+const rows = [
+ ['Free plan',`Unlimited text chats within fair use; may show ads${c('oai-pricing6','oai-go6')}`,`Chat, file creation, memory and app connectors${c('cl-pricing6')}`,`Deep Research, Gemini Live, Canvas and Gems${c('g-overview6')}`],
+ ['Main personal plan',`Plus: $20 a month${c('oai-plus6')}`,`Pro: $20 a month, or $17 billed yearly${c('cl-pricing6')}`,`Google AI Pro: $19.99 a month (checked 18 Oct)${c('g-plans3')}; AI Plus from $4.99${c('g-plans6')}`],
+ ['Small business plan',`Business Standard: $20 per user a month annual, $25 monthly, 2 seats minimum${c('oai-biz4')}`,`Team: $20 per seat annual, $25 monthly, 2 to 150 people${c('cl-team5')}`,`Included in Google Workspace Business plans, from $7 a user${c('gws-pricing5','gws-plans5')}`],
+ ['Agent for whole tasks',`ChatGPT Work: documents, spreadsheets, decks, reports and Sites${c('oai-work7')}`,`Cowork, now built into Claude chats${c('cl-one5')}; scheduled tasks on every paid plan${c('cl-sched5')}`,`Gemini Agent on Ultra, US and English only${c('g-plans6')}`],
+ ['Email',`Tasks can start when a new Gmail message arrives${c('oai-work7')}`,`Gmail connector: search, draft, send and reply, with approval by default${c('cl-gws7')}`,`Gemini in Gmail: summarize, draft, label, delete, search and propose meeting times${c('g-gmail7')}; from AI Plus${c('g-plans6')}`],
+ ['Business data training',`Not used for training on Business${c('oai-biz4')}`,`No training by default on Team and Enterprise${c('cl-pricing5')}`,`Workspace generative AI privacy rules apply${c('gws-privacy5')}`],
+];
+const body = `
+<div class="tldr"><p><b>The longer answer.</b> All three cost about $20 a month for one person${c('oai-plus6','cl-pricing6','g-plans3')}. <b>Already pay for Google Workspace?</b> Start with Gemini, which comes with Business plans from $7 a user${c('gws-pricing5','gws-plans5')}. <b>Writing, documents and careful email help?</b> Claude: its Gmail connector asks before sending${c('cl-gws7')}. <b>Want one tool that does a bit of everything, plus finished decks and spreadsheets?</b> ChatGPT, with ChatGPT Work${c('oai-work7')}. For a team of 2 or more, ChatGPT Business and Claude Team are the same price: $20 a seat yearly, $25 monthly${c('oai-biz4','cl-team5')}.</p></div>
+<h2>Claude vs ChatGPT vs Gemini at a glance</h2>
+<div class="gtable-wrap"><table class="gtab"><thead><tr><th></th><th>ChatGPT</th><th>Claude</th><th>Gemini</th></tr></thead><tbody>
+${rows.map(([k,a,b,g])=>`<tr><td data-l="" class="nm">${k}</td><td data-l="ChatGPT">${a}</td><td data-l="Claude">${b}</td><td data-l="Gemini">${g}</td></tr>`).join('')}
+</tbody></table></div>
+<p>US list prices. Most were checked 21 Oct 2026; business-plan prices were checked 19–20 Oct 2026 (see the source dates). Which one gives the "best answers" changes with every model release, so we don't rank answer quality here: ${U}.</p>
+<h2>Our pick by situation</h2>
+<ul>
+<li><b>Small business on Google Workspace:</b> Gemini first; you may already be paying for it${c('gws-pricing5')}.</li>
+<li><b>Small business on Microsoft 365 or Outlook:</b> Claude Team includes Claude for Microsoft 365 and Outlook${c('cl-pricing5')}.</li>
+<li><b>Solo founder who wants deliverables:</b> ChatGPT Plus with Work${c('oai-plus6','oai-work7')}.</li>
+<li><b>Everyday user on a budget:</b> Google AI Plus at $4.99${c('g-plans6')}, or any of the three free plans. See <a href="/best-free-ai-agent/">best free AI agents</a>.</li>
+</ul>
+<p>Two-way comparisons: <a href="/chatgpt-vs-gemini/">ChatGPT vs Gemini</a>, <a href="/claude-vs-gemini/">Claude vs Gemini</a>, <a href="/chatgpt-vs-claude-for-business/">ChatGPT vs Claude for business</a>.</p>
+`;
+const faqs = [
+ ['Which is best for small business: Claude, ChatGPT or Gemini?',`If you use Google Workspace, Gemini, because it's included in Business plans from $7 a user${c('gws-pricing5','gws-plans5')}. Otherwise ChatGPT Business and Claude Team cost the same, $20 a seat yearly or $25 monthly${c('oai-biz4','cl-team5')}; pick Claude for Outlook and Microsoft 365${c('cl-pricing5')}, ChatGPT for finished deliverables${c('oai-work7')}.`],
+ ['Which subscription is cheapest?',`Google AI Plus at $4.99 a month${c('g-plans6')}. Claude Pro is $17 a month billed yearly${c('cl-pricing6')}; ChatGPT Plus is $20 a month${c('oai-plus6')}.`],
+ ['Which has the best free version?',`ChatGPT Free has unlimited text chats within fair use${c('oai-pricing6')}; Gemini's free app includes Deep Research and Gemini Live${c('g-overview6')}; Claude Free includes file creation and connectors${c('cl-pricing6')}.`],
+ ['Do they train on my business data?',`ChatGPT Business data isn't used for training${c('oai-biz4')}, and Claude doesn't train by default on Team and Enterprise${c('cl-pricing5')}. Google publishes a Workspace generative AI privacy hub${c('gws-privacy5')}.`],
+ ['Should I pay for more than one?',`Most people don't need to. Try the free plans of all three for a week, then pay for the one you used most.`],
+];
+---
+<GuideArticle slug="claude-vs-chatgpt-vs-gemini" kicker="Head to head" updated="2026-10-21"
+ title="Claude vs ChatGPT vs Gemini for Small Business (2026): Price and Pick | AgentStackWatch"
+ desc="Claude vs ChatGPT vs Gemini compared for small businesses and everyday users: free plans, $20 plans, team pricing, email, agents and data training, with a clear pick by situation. Every fact sourced."
+ h1="Claude vs ChatGPT vs Gemini (for small business and everyday use)"
+ dek="Three $20 assistants, one table. What each costs for you and your team, what it does in your inbox, and which to pick."
+ faqs={faqs} used={used}
+ related={[['/best-ai-agent-for-small-business/','Best AI agent for small business'],['/chatgpt-vs-gemini/','ChatGPT vs Gemini'],['/claude-vs-gemini/','Claude vs Gemini'],['/chatgpt-vs-claude-for-business/','ChatGPT vs Claude for business']]}>
+<Fragment set:html={body}/>
+</GuideArticle>

@@ -1,0 +1,56 @@
+---
+import GuideArticle from '../layouts/GuideArticle.astro'; import { citer } from '../lib/cite.js';
+const { c, used, U } = citer();
+const rows = [
+ ['ChatGPT Work (the official replacement)',`Plus $20 a month${c('oai-plus6')}; limited Work on Free in the desktop app${c('oai-pricing6')}`,`Research, analysis and finished documents, spreadsheets, presentations, reports and Sites; schedules and Gmail, Slack or GitHub triggers on Plus and up${c('oai-work7')}`,`Usage varies by task, not a fixed count${c('oai-work7')}; for browser workflows OpenAI points to its cloud browser${c('oai-agent7')}`],
+ ['Manus',`Free with 300 credits a day; Pro from $20 a month${c('mn-pricing7')}`,`Research reports, slides and website deployment; up to 20 tasks at once on Pro${c('mn-pricing7')}`,`Credits run out; Free is limited to the Lite model in Agent Mode${c('mn-pricing7')}`],
+ ['Claude',`Pro $20 a month, or $17 billed yearly${c('cl-pricing6')}`,`Gmail, Calendar and Drive connectors; scheduled tasks on every paid plan${c('cl-gws7','cl-sched5')}`,`Browsing through Claude in Chrome or the desktop app needs the desktop app open${c('cl-cowork5')}`],
+ ['Grok Bot',`Premium $30 a month${c('gb-page7')}`,`Its own cloud computer; signs into your tools and runs routines on a schedule${c('gb-page7')}`,`Not on the $8 Plus plan${c('gb-docs7')}`],
+ ['Gemini Agent',`Google AI Ultra only${c('g-plans6')}`,`Google's task agent`,`US and English only${c('g-plans6')}`],
+ ['OpenClaw / Hermes Agent',`Free software; you pay for the model${c('oc6','hm6')}`,`Runs on your own computer and chats over WhatsApp, Telegram and more${c('oc6','hm6')}`,`You handle setup and security`],
+];
+const body = `
+<div class="tldr"><p><b>What happened.</b> OpenAI's help center now says: "ChatGPT agent is no longer available. Use ChatGPT Work for longer, multi-step tasks and finished deliverables"${c('oai-agent7')}. Operator was folded into agent mode earlier and its website is gone${c('oai-agent7')}, and the ChatGPT Atlas browser, which ran agent mode inside your own browser, is marked deprecated${c('oai-atlas7')}. So "is ChatGPT agent worth it?" now really means "is ChatGPT Work worth it, or is something else better?"</p></div>
+
+<h2>What ChatGPT Work does instead</h2>
+<ul>
+<li>Work is "an agent designed for longer, multi-step work and finished deliverables", next to Chat for quick questions and Codex for software${c('oai-work7')}.</li>
+<li>It can research, analyze, and create a document, spreadsheet, presentation, report or Site${c('oai-work7')}.</li>
+<li>It runs in the cloud on web and mobile. In the desktop app it can also use local files and desktop apps with your permission${c('oai-work7')}.</li>
+<li>Tasks can run once, on a schedule, or when something happens in a connected app, like a new Gmail message, a Slack message or GitHub pull request activity. Event triggers aren't on Free or Go${c('oai-work7')}.</li>
+<li>Usage works like Codex: an included allowance, then optional credits. OpenAI says Work usage "will vary by task"${c('oai-work7')}. A fixed number of tasks per month: ${U}.</li>
+</ul>
+<p>For comparison, the old agent mode had fixed monthly limits: 40 messages on Plus and 400 on Pro${c('oai-agent7')}.</p>
+
+<h2>ChatGPT agent alternatives compared</h2>
+<div class="gtable-wrap"><table class="gtab"><thead><tr><th>Option</th><th>Price</th><th>Good at</th><th>Watch out for</th></tr></thead><tbody>
+${rows.map(([a,p,g,w])=>`<tr><td data-l="Option" class="nm">${a}</td><td data-l="Price">${p}</td><td data-l="Good at">${g}</td><td data-l="Watch out for">${w}</td></tr>`).join('')}
+</tbody></table></div>
+<p>US list prices checked 21 Oct 2026 unless the source date says otherwise.</p>
+
+<h2>Is it worth it?</h2>
+<ul>
+<li><b>Already on ChatGPT Plus:</b> yes, try Work first. It's included, and Plus includes the GPT-6 Astra model in Work, with limited Astra usage${c('oai-work7')}.</li>
+<li><b>You want a cheap agent for reports and slides:</b> Manus Free gives 300 credits a day; Pro starts at $20${c('mn-pricing7')}.</li>
+<li><b>You need it to work inside your own logged-in tools all day:</b> Grok Bot is built for that, from $30 a month${c('gb-page7')}.</li>
+<li><b>You care most about email and documents:</b> Claude at $20 a month, with approval before it sends anything by default${c('cl-gws7','cl-pricing6')}.</li>
+</ul>
+<p>Whatever you pick, agents that read your email can be tricked by hidden instructions in web pages or emails. OpenAI warns that its safeguards "don't eliminate all risks"${c('oai-agent7')}. Connect only the apps a task needs.</p>
+`;
+const faqs = [
+ ['Is ChatGPT agent still available?',`No. OpenAI's help center says ChatGPT agent is no longer available and points users to ChatGPT Work for longer, multi-step tasks${c('oai-agent7')}.`],
+ ['What replaced ChatGPT agent mode?',`ChatGPT Work, an agent for longer, multi-step work and finished deliverables like documents, spreadsheets, presentations, reports and Sites${c('oai-work7')}. For browser workflows, OpenAI points to its cloud browser${c('oai-agent7')}.`],
+ ['Is ChatGPT agent worth it?',`The old agent mode is gone${c('oai-agent7')}. Its replacement, ChatGPT Work, comes with ChatGPT Plus at $20 a month${c('oai-plus6','oai-work7')}, so if you already pay for Plus it costs nothing extra to try.`],
+ ['What is a free alternative to ChatGPT agent?',`Manus Free (300 credits a day)${c('mn-pricing7')}, or the free open-source agents OpenClaw and Hermes, where you pay only for the AI model unless you pick a free one${c('oc6','hm6')}. ChatGPT Free also includes limited Work in the desktop app${c('oai-pricing6')}.`],
+ ['Is ChatGPT Atlas still available?',`OpenAI's Atlas launch post is now marked "Atlas has since been deprecated"${c('oai-atlas7')}.`],
+];
+---
+<GuideArticle slug="chatgpt-agent-alternatives" kicker="Alternatives" updated="2026-10-21"
+ title="ChatGPT Agent Alternatives (2026): Agent Mode Is Gone, What Now? | AgentStackWatch"
+ desc="ChatGPT agent mode is no longer available. What replaced it (ChatGPT Work), whether it's worth it, and the best alternatives: Manus, Claude, Grok Bot, Gemini Agent, OpenClaw and Hermes. Every fact sourced."
+ h1="ChatGPT agent alternatives (and what replaced agent mode)"
+ dek="OpenAI retired ChatGPT agent. Here's what ChatGPT Work does instead, whether it's worth paying for, and six alternatives side by side."
+ faqs={faqs} used={used}
+ related={[['/chatgpt-agent-vs-manus/','ChatGPT agent vs Manus'],['/manus-alternatives/','Manus alternatives'],['/claude-cowork-vs-chatgpt-work/','Claude Cowork vs ChatGPT Work'],['/is-chatgpt-plus-worth-it/','Is ChatGPT Plus worth it?']]}>
+<Fragment set:html={body}/>
+</GuideArticle>
