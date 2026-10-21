@@ -1,0 +1,126 @@
+---
+import GuideArticle from '../layouts/GuideArticle.astro'; import { citer } from '../lib/cite.js';
+const { c, used, U } = citer();
+const picks = [
+ ['You want one free assistant for everyday questions','ChatGPT Free',`Text chats are unlimited on the free plan, within OpenAI's fair-use rules${c('oai-pricing6')}. Uploads, image creation, voice and deep research are limited${c('oai-pricing6')}. Expect ads: OpenAI said in January it would test ads on Free and Go, and Plus, Pro and Business don't get them${c('oai-go6','oai-ads6')}.`],
+ ['You live in Gmail, Google Drive and an Android phone','Gemini (free)',`The free Gemini app includes Deep Research, Gemini Live, Canvas, Gems and image editing, plus the 15 GB of storage every Google account gets${c('g-overview6')}. The cheapest upgrade in this guide is Google AI Plus at $4.99 a month${c('g-plans6')}.`],
+ ['You write, plan or work with documents','Claude Free',`Free Claude can search the web, create files, run code, remember across chats and connect to your apps${c('cl-pricing6')}. It also includes Claude Slides and Docs and up to 5 projects${c('cl-pricing6')}.`],
+ ['Your work is in Word, Excel and Outlook','Microsoft Copilot (free), then Microsoft 365 Personal',`Copilot is free on the web, Windows, Mac and phones, with a limited allowance${c('ms-free6','ms-ind6')}. Copilot inside the Word, Excel, PowerPoint and Outlook desktop apps starts with Microsoft 365 Personal at $9.99 a month${c('ms-ind6')}.`],
+ ['You want an agent that does errands, not just answers','Muse from Meta (where available)',`Muse is Meta's personal agent that takes actions for you, and it has a free tier with a usage limit that refreshes${c('mu6')}. It's in limited testing and not available everywhere yet${c('mu6')}. It asks before important actions like sending an email or buying something${c('mu-priv6')}.`],
+ ['You\'re handy with tech and want control of your data','OpenClaw or Hermes Agent (free software)',`Both are open source with no subscription for the software itself${c('oc6','hm6')}. You still pay for the AI model unless you pick a free one: Hermes's Nous Portal has a $0 tier with free models only${c('hm6')}.`],
+ ['You run a company','A business plan, not a free tier',`Free plans are built for individuals${c('oai-pricing6')}. OpenAI doesn't train on ChatGPT Business or Enterprise workspaces by default${c('oai-data6')}, and Claude Team doesn't either${c('cl-pricing6')}. See <a href="/best-ai-agent-for-small-business/">the best AI agent for small business</a>.`],
+];
+const free = [
+ ['ChatGPT',`Unlimited text chats; limited uploads, images, voice, deep research and memory; limited ChatGPT Work in the desktop app; a built-in browser, projects and plugins${c('oai-pricing6')}`,`Response times are "limited on bandwidth & availability", and the free context window is the smallest (27K vs 54K on Go and Plus)${c('oai-pricing6')}. May show ads${c('oai-go6','oai-ads6')}`],
+ ['Claude',`Chat on web, desktop and mobile; web search; file creation and code; memory; connectors to your apps; Slides and Docs; voice mode; up to 5 projects${c('cl-pricing6')}`,`Usage resets in rolling five-hour windows, with no fixed message count. Free is meant for everyday questions; Pro gives at least 5x more per session${c('cl-pricing6')}`],
+ ['Gemini',`Gemini app with a Flash-Lite model, image generation and editing, Deep Research, Gemini Live, Canvas and Gems; Gemini Notebook; 15 GB of storage${c('g-overview6')}`,`Gemini app limits are based on how complex your requests are and refresh every 5 hours up to a weekly cap; Google AI Pro gets 4x the free usage${c('g-overview6')}`],
+ ['Grok',`The X Subscription's Free plan includes limited chat requests and limited agent requests, plus standard X${c('x-pricing6')}`,`"Limited" is all the pricing page says${c('x-pricing6')}. Grok Bot, xAI's agent, isn't on Free or Plus${c('gb-docs6')}`],
+ ['Microsoft Copilot',`Free at copilot.cloud.microsoft, in the apps and in Edge: chat, writing help, live web answers, image creation and page summaries in Edge. Signing in adds chat history, longer chats and voice${c('ms-free6')}`,`A limited allowance that depends on available capacity. When you hit it, you upgrade or come back later${c('ms-ind6')}`],
+ ['Muse from Meta',`A personal agent that takes actions and connects to other apps, with a free tier${c('mu6')}`,`Free usage is capped and refreshes; limited testing, not in every country${c('mu6')}`],
+ ['OpenClaw',`Free, MIT-licensed software with no subscription, no hosted tier and no paid version. Runs on your Mac, Windows or Linux machine and chats over WhatsApp, Telegram and other apps${c('oc6')}`,`You bring the model: a hosted one, one backed by a subscription you already have, or a local one${c('oc6')}`],
+ ['Hermes Agent',`Free, MIT-licensed software with memory, scheduling, web browsing and messaging apps like Telegram, WhatsApp and Slack${c('hm6')}`,`Model providers charge separately. Nous Portal's free tier is free models only, at standard rate limits${c('hm6')}`],
+];
+const locked = [
+ ['ChatGPT',`Scheduled tasks start on Go${c('oai-pricing6')}. ChatGPT Work on web and mobile, advanced reasoning models and interactive charts need Plus${c('oai-pricing6')}. Dots, the always-on agent, is Pro only${c('oai-pricing6')}`],
+ ['Claude',`Handing off and scheduling tasks, Research, Claude in Chrome, Claude for Microsoft 365 and Outlook, the Opus models and more than 5 projects all start at Pro${c('cl-pricing6')}`],
+ ['Gemini',`Gemini in Gmail starts at Google AI Plus; Gemini in Docs and Sheets, Tasks in Gemini and Chrome auto browse need Google AI Pro, and the last two only in some countries${c('g-plans6')}. Gemini Agent is Ultra, US and English only${c('g-plans6')}`],
+ ['Grok',`Grok Bot needs Premium ($30 a month) or higher${c('gb-docs6','x-pricing6')}`],
+ ['Microsoft Copilot',`Copilot in the Word, Excel, PowerPoint and Outlook desktop apps needs Microsoft 365 Personal or higher${c('ms-ind6')}. Researcher, Analyst and the Cowork agent need Premium ($19.99 a month) or Pro, and Cowork is in preview in the US and Canada${c('ms-credits6','ms-m365-6','ms-ind6')}`],
+ ['Muse',`More weekly usage: Power and Maximum plans${c('mu6')}`],
+];
+const steps = [
+ ['ChatGPT',`Go: $8 a month in the US at launch in January 2026, with local prices elsewhere${c('oai-go6')}. Today's pricing page shows no price, so check yours. Plus: $20 a month, monthly billing only${c('oai-plus6')}`,`Go: more messages, uploads, images and memory, plus scheduled tasks${c('oai-pricing6')}; ads may still appear${c('oai-pricing6','oai-go6')}. Plus is ad-free${c('oai-ads6')}`],
+ ['Claude',`Pro: $20 a month, or $17 a month billed yearly ($200 up front)${c('cl-pricing6')}`,`At least 5x Free's usage per session, plus task hand-off and scheduling${c('cl-pricing6')}`],
+ ['Gemini',`Google AI Plus: $4.99 a month${c('g-plans6')}`,`2x the usage of non-subscribers, Gemini in Gmail and 400 GB of storage you can share with up to five others${c('g-plans6')}`],
+ ['Grok',`Plus: $8 a month, or $80 a year${c('x-pricing6')}`,`Grok chat, voice, Imagine and Build, but no Grok Bot. Grok Bot starts on Premium at $30${c('x-pricing6','gb-docs6')}`],
+ ['Microsoft Copilot',`Microsoft 365 Personal: $9.99 a month${c('ms-ind6')} or $99.99 a year${c('ms-m365-6')}`,`Copilot in the Office desktop apps, more Copilot usage than free, and 1 TB of storage${c('ms-ind6')}`],
+ ['Muse',`Power: $20 a month${c('mu6')}`,`500M Muse tokens a week${c('mu6')}`],
+ ['Hermes Agent',`Nous Portal Plus: $20 a month${c('hm6')}`,`$22 of monthly model and tool credits and 200+ models${c('hm6')}`],
+];
+const body = `
+<div class="tldr"><p><b>Short answer.</b> For most people the best free AI assistant is <b>ChatGPT Free</b>: text chats are unlimited within fair-use rules${c('oai-pricing6')}. Ads may appear on the free plan, though${c('oai-go6','oai-ads6')}. If you use Google's apps, the free <b>Gemini</b> app gives you Deep Research and Gemini Live for $0${c('g-overview6')}. <b>Claude Free</b> can create files and connect to your apps${c('cl-pricing6')}. Free plans answer questions well. Agents that do tasks for you while you're away mostly need a paid plan. The cheapest real step up is Google AI Plus at $4.99 a month${c('g-plans6')}; ChatGPT Go launched at $8 in the US${c('oai-go6')}.</p></div>
+
+<h2>Quick verdict: the best free pick for you</h2>
+<div class="gtable-wrap"><table class="gtab"><thead><tr><th>If you…</th><th>Pick</th><th>Why</th></tr></thead><tbody>
+${picks.map(([a,b,w])=>`<tr><td data-l="If you…">${a}</td><td data-l="Pick" class="nm">${b}</td><td data-l="Why">${w}</td></tr>`).join('')}
+</tbody></table></div>
+
+<h2>What each one gives you for free</h2>
+<div class="gtable-wrap"><table class="gtab"><thead><tr><th></th><th>Free plan includes</th><th>The catch</th></tr></thead><tbody>
+${free.map(([k,a,b])=>`<tr><td data-l="" class="nm">${k}</td><td data-l="Free plan includes">${a}</td><td data-l="The catch">${b}</td></tr>`).join('')}
+</tbody></table></div>
+<p>We couldn't load Perplexity's pricing and help pages today (they block automated checks), so it's left out rather than guessed. Same for Grok's free-plan privacy defaults: ${U}.</p>
+
+<h2>What's locked behind paid plans</h2>
+<p>Here's the pattern: free plans answer questions, write, search and make images. The agent features, like handing off a whole task, running it on a schedule or working inside your email and documents, mostly start at the first paid tier.</p>
+<div class="gtable-wrap"><table class="gtab"><thead><tr><th></th><th>Needs a paid plan</th></tr></thead><tbody>
+${locked.map(([k,a])=>`<tr><td data-l="" class="nm">${k}</td><td data-l="Needs a paid plan">${a}</td></tr>`).join('')}
+</tbody></table></div>
+<p>Two free exceptions: ChatGPT Free includes limited use of ChatGPT Work in the desktop app${c('oai-pricing6')}, and Muse's free tier is an agent that takes actions, within a usage cap${c('mu6')}.</p>
+
+<h2>Usage limits: how much "free" really is</h2>
+<ul>
+<li><b>ChatGPT:</b> text chats are unlimited, as long as your use is reasonable and follows OpenAI's policies. Uploads, images, voice, deep research and memory are capped${c('oai-pricing6')}. OpenAI doesn't publish the exact numbers on its pricing page${c('oai-pricing6')}.</li>
+<li><b>Claude:</b> limits reset on a rolling five-hour window, and how far they go depends on how long and complex your chats are${c('cl-pricing6')}. Settings → Usage shows where you stand${c('cl-pricing6')}.</li>
+<li><b>Gemini:</b> limits refresh every 5 hours until you hit a weekly cap, and you can buy AI credits to keep going${c('g-overview6')}.</li>
+<li><b>Grok:</b> the Free plan has "limited" chat and agent requests${c('x-pricing6')}. Paid plans share one weekly pool across Grok, Grok Bot and Cursor${c('gb-docs6')}.</li>
+<li><b>Copilot:</b> the free version is limited and depends on available capacity${c('ms-ind6')}.</li>
+<li><b>Muse:</b> a free usage limit that refreshes. Paid plans add a weekly token allowance${c('mu6')}.</li>
+</ul>
+
+<h2>Privacy on free plans: is it training on your chats?</h2>
+<ul>
+<li><b>ChatGPT:</b> OpenAI may use your conversations to improve its models, and you can opt out anytime${c('oai-plus6')}: turn off "Improve the model for everyone" in Settings → Data controls${c('oai-data6')}. Temporary chats aren't used for training and may be kept up to 30 days for safety${c('oai-data6')}. Ads are a separate setting${c('oai-data6')}.</li>
+<li><b>Claude:</b> the pricing page lists training as "Opt-out" on Free${c('cl-pricing6')}. Anthropic uses your chats to improve Claude if you allow it in your privacy settings, or if a chat is flagged for a safety review${c('cl-train6')}. Incognito chats are never used, and raw connector data (like Google Drive) isn't either${c('cl-train6')}.</li>
+<li><b>Gemini:</b> with Keep Activity on, Google uses your activity to improve its services, including training AI, and human reviewers see some chats. Reviewed chats are kept up to 3 years${c('g-privacy6')}. With it off, future chats aren't used for training unless you send feedback, and are kept for 72 hours${c('g-privacy6')}. The catch: connecting Gmail and Drive needs Keep Activity on${c('g-privacy6')}. Google says your Gemini chats aren't used to show you ads${c('g-privacy6')}.</li>
+<li><b>Microsoft Copilot:</b> in the current Copilot app (since 18 August 2026), your prompts, responses and files aren't used to train foundation models${c('ms-hist6')}. Without a Microsoft 365 subscription you may see ads, and you can switch off ad personalization in Settings → Personalization${c('ms-ctrl6')}.</li>
+<li><b>Muse:</b> training is on when you first use it. Switch it off in Settings → Data controls; the change also covers past chats${c('mu-priv6')}. Muse doesn't share your chats with Meta's ad systems${c('mu-priv6')}.</li>
+<li><b>Grok:</b> Grok Bot offers a training opt-out${c('gb-page6')}. The default for free Grok chat: ${U}.</li>
+<li><b>OpenClaw:</b> it runs on your own computer and keeps its data there. By default an install only sends the project a daily version check, which you can turn off${c('oc6')}. Your chats still go to whichever model provider you connect.</li>
+</ul>
+<p>The free-plan rule of thumb: don't paste anything you wouldn't want a reviewer to read. Google says this outright for Gemini${c('g-privacy6')}. For business data, use a business plan where training is off by default${c('oai-data6','cl-pricing6')}.</p>
+
+<h2>"Free" open-source agents: the honest cost</h2>
+<p>OpenClaw and Hermes Agent are free to download, with no subscription for the software${c('oc6','hm6')}. You talk to them through chat apps you already use, like WhatsApp or Telegram, and Hermes can run scheduled jobs unattended${c('oc6','hm6')}. What you actually pay for:</p>
+<ul>
+<li><b>The AI model.</b> OpenClaw works with hosted, subscription-backed, gateway or local models${c('oc6')}. Hermes says model providers and optional hosted services have their own pricing${c('hm6')}. Nous Portal's free tier gives you free models only; paid tiers start at $20 a month with $22 of credits${c('hm6')}. API usage is billed separately from consumer plans like ChatGPT Plus${c('oai-plus6')}, so a busy agent can cost more than a $20 subscription.</li>
+<li><b>A computer that stays on.</b> OpenClaw runs on your own Mac, Windows or Linux machine${c('oc6')}. Hermes's tasks don't run while the agent is stopped; cloud hosting is optional${c('hm6')}.</li>
+<li><b>Your time and your security.</b> You set it up and keep it updated. Read <a href="/is-openclaw-safe/">Is OpenClaw safe?</a> before you connect your email, and see <a href="/openclaw-vs-hermes-agent/">OpenClaw vs Hermes Agent</a> to compare them.</li>
+</ul>
+
+<h2>When it's worth upgrading, and the cheapest step up</h2>
+<p>Upgrade when you keep hitting the limit, when you want the assistant to do tasks rather than answer, or when you want ads gone. Here's the cheapest paid step for each:</p>
+<div class="gtable-wrap"><table class="gtab"><thead><tr><th></th><th>Cheapest paid plan</th><th>What it adds</th></tr></thead><tbody>
+${steps.map(([k,a,b])=>`<tr><td data-l="" class="nm">${k}</td><td data-l="Cheapest paid plan">${a}</td><td data-l="What it adds">${b}</td></tr>`).join('')}
+</tbody></table></div>
+<p>Prices are US list prices as shown on 21 Oct 2026, before tax. ChatGPT's pricing page didn't show prices when we checked, so the Go price is the launch price from OpenAI's January 2026 announcement${c('oai-go6')}. Microsoft 365 Premium, which adds Copilot's Researcher, Analyst and Cowork agents, is $19.99 a month${c('ms-ind6','ms-credits6')}. Full price lists are on our <a href="/pricing/">pricing tracker</a> and in <a href="/how-much-does-an-ai-agent-cost/">how much does an AI agent cost</a>.</p>
+
+<h2>Our take by type of person</h2>
+<ul>
+<li><b>Founders and business owners:</b> free tiers are fine for testing ideas and personal research, not for customer or company data. When it becomes part of your work, budget for business seats, where training is off by default${c('oai-data6','cl-pricing6')}.</li>
+<li><b>Everyday users:</b> start with ChatGPT Free or the Gemini app. If you hit limits weekly, Google AI Plus at $4.99${c('g-plans6')} is the cheapest real upgrade we found today.</li>
+<li><b>Microsoft households:</b> free Copilot for chat; Microsoft 365 Personal at $9.99 a month if you want it inside Word and Outlook${c('ms-ind6')}.</li>
+<li><b>People who want errands done:</b> try Muse's free tier if it's available where you live${c('mu6')}. Otherwise, agents that run tasks on their own, like ChatGPT dots, Claude's hand-off tasks or Grok Bot, are paid features${c('oai-pricing6','cl-pricing6','gb-docs6')}.</li>
+<li><b>Tinkerers:</b> OpenClaw or Hermes with a model you already pay for or a free one, on a spare computer${c('oc6','hm6')}.</li>
+</ul>
+<p>Choosing between paid plans? Read <a href="/best-ai-agent-for-personal-use/">the best AI agent for personal use</a>, <a href="/chatgpt-vs-gemini/">ChatGPT vs Gemini</a>, <a href="/claude-vs-gemini/">Claude vs Gemini</a>, or the full <a href="/guide/">buyer's guide</a>.</p>
+`;
+const faqs = [
+ ['Is ChatGPT free?',`Yes. The free version of ChatGPT is available to everyone${c('oai-pricing6')}. Text chats are unlimited within fair-use rules, while uploads, image creation, voice and deep research are limited${c('oai-pricing6')}. The free plan may show ads; Plus, Pro and Business don't${c('oai-go6','oai-ads6')}.`],
+ ['What is the best free AI assistant in 2026?',`For most people, ChatGPT Free, because text chats are unlimited${c('oai-pricing6')}. If you use Google's apps, the free Gemini app includes Deep Research and Gemini Live${c('g-overview6')}. Claude Free is strong for writing and documents, with file creation and app connectors${c('cl-pricing6')}.`],
+ ['Is there a free AI agent that does tasks for me?',`A few, with limits. Muse from Meta is a personal agent with a free tier, but it's in limited testing and not available everywhere${c('mu6')}. ChatGPT Free includes limited ChatGPT Work in the desktop app${c('oai-pricing6')}. OpenClaw and Hermes Agent are free software, but you pay for the AI model unless you use a free one${c('oc6','hm6')}.`],
+ ['Do free AI assistants train on my chats?',`Often, unless you turn it off. ChatGPT: turn off "Improve the model for everyone"${c('oai-data6')}. Claude: training is opt-out on Free${c('cl-pricing6')}. Gemini: turn off Keep Activity${c('g-privacy6')}. Muse: training is on at first; switch it off in Data controls${c('mu-priv6')}. In the current Microsoft Copilot app, prompts and responses aren't used to train foundation models${c('ms-hist6')}.`],
+ ['What is the cheapest paid AI plan?',`Of the plans we checked today, Google AI Plus at $4.99 a month${c('g-plans6')}. ChatGPT Go launched at $8 a month in the US${c('oai-go6')}, and X's Plus plan with Grok chat is $8 a month${c('x-pricing6')}. Claude Pro is $17 a month on annual billing${c('cl-pricing6')}.`],
+ ['Is Grok free?',`There's a Free plan on The X Subscription with limited chat and agent requests${c('x-pricing6')}. Grok Bot, xAI's agent that works in your apps, needs Premium at $30 a month or higher${c('x-pricing6','gb-docs6')}.`],
+ ['Are open-source agents like OpenClaw really free?',`The software is: OpenClaw is MIT-licensed with no paid version${c('oc6')}, and Hermes Agent is free under the MIT license${c('hm6')}. The model isn't, unless you choose a free one. Hermes notes that model providers charge separately${c('hm6')}, and API usage is billed apart from plans like ChatGPT Plus${c('oai-plus6')}.`],
+];
+---
+<GuideArticle slug="best-free-ai-agent" kicker="Free & budget" updated="2026-10-21"
+ title="Best Free AI Agents and Assistants (2026): What You Get for $0 | AgentStackWatch"
+ desc="The best free AI agents and assistants in 2026: what ChatGPT, Claude, Gemini, Grok, Microsoft Copilot, Muse, OpenClaw and Hermes give you for free, what's locked behind paid plans, usage limits, privacy defaults and the cheapest upgrade. All sourced."
+ h1="Best free AI agents and assistants (2026)"
+ dek="What you actually get for $0 from ChatGPT, Claude, Gemini, Grok, Copilot, Muse and the open-source agents, what you have to pay for, and what happens to your chats. Plain English, every fact linked to the vendor's own page."
+ faqs={faqs} used={used}
+ related={[['/best-ai-agent-for-personal-use/','Best AI agent for personal use'],['/how-much-does-an-ai-agent-cost/','How much does an AI agent cost?'],['/chatgpt-vs-gemini/','ChatGPT vs Gemini'],['/claude-vs-gemini/','Claude vs Gemini'],['/openclaw-vs-hermes-agent/','OpenClaw vs Hermes Agent'],['/is-openclaw-safe/','Is OpenClaw safe?'],['/compare/grok-bot-vs-chatgpt-dots/','Grok Bot vs ChatGPT dots']]}>
+<Fragment set:html={body}/>
+</GuideArticle>

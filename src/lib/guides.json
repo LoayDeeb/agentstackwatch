@@ -12,6 +12,12 @@
   "blurb": "The best AI assistant for your inbox, calendar, bookings, research and trips at home: what to pick, what it costs, and how to keep your data private."
  },
  {
+  "slug": "best-free-ai-agent",
+  "short": "Best free AI agents and assistants",
+  "kicker": "Free & budget",
+  "blurb": "What ChatGPT, Claude, Gemini, Grok, Copilot, Muse and the open-source agents give you for $0, what's locked behind paid plans, privacy defaults and the cheapest upgrade."
+ },
+ {
   "slug": "best-ai-agent-for-small-business",
   "short": "Best AI agent for small business",
   "kicker": "Small business",

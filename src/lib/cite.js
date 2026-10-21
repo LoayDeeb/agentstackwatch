@@ -1,8 +1,9 @@
 // Per-page numbered citations. Reuses the buyer's-guide sources (checked 2026-10-16) plus sources checked for the guides hub on 2026-10-17
-// for the personal-use guide on 2026-10-18, for the ChatGPT vs Gemini guide on 2026-10-19, and for the Claude vs Gemini guide on 2026-10-20.
+// for the personal-use guide on 2026-10-18, for the ChatGPT vs Gemini guide on 2026-10-19, for the Claude vs Gemini guide on 2026-10-20,
+// and for the best free AI agents guide on 2026-10-21.
 import { SRC as GSRC } from './guide-data.js';
 import ps from '../../data/pricing-sources.json';
-const G = '16 Oct 2026', T = '17 Oct 2026', S = '18 Oct 2026', M = '19 Oct 2026', W = '20 Oct 2026';
+const G = '16 Oct 2026', T = '17 Oct 2026', S = '18 Oct 2026', M = '19 Oct 2026', W = '20 Oct 2026', X = '21 Oct 2026';
 const OCR = t => [`oc-${t}`, `https://github.com/openclaw/openclaw/releases/tag/${t}`, `OpenClaw release notes ${t}`, T];
 const EXTRA = [
  ['oai-rn','https://help.openai.com/en/articles/6825453-chatgpt-release-notes','ChatGPT release notes (OpenAI Help Center)',T],
@@ -94,6 +95,30 @@ const EXTRA = [
  ['gws-privacy5','https://knowledge.workspace.google.com/admin/generative-ai/generative-ai-in-google-workspace-privacy-hub','Generative AI in Google Workspace Privacy Hub (re-checked)',W],
  ['gws-faq5','https://support.google.com/a/answer/14130944','Google Workspace with Gemini FAQ for Business (re-checked)',W],
  ['g-ent5','https://cloud.google.com/gemini-enterprise/business','Gemini Enterprise Business edition (re-checked)',W],
+ // Checked 21 Oct 2026 for /best-free-ai-agent/
+ ['oai-pricing6','https://chatgpt.com/pricing','ChatGPT plans & pricing (re-checked)',X],
+ ['oai-plus6','https://help.openai.com/en/articles/6950777-what-is-chatgpt-plus','What is ChatGPT Plus? (re-checked)',X],
+ ['oai-go6','https://openai.com/index/introducing-chatgpt-go/','OpenAI: Introducing ChatGPT Go (Jan 2026, re-checked)',X],
+ ['oai-data6','https://help.openai.com/en/articles/7730893-data-controls-faq','Data controls in ChatGPT (re-checked)',X],
+ ['oai-ads6','https://help.openai.com/en/articles/20001207-ads-in-chatgpt-the-basics','Ads in ChatGPT: The Basics (OpenAI Help Center)',X],
+ ['cl-pricing6','https://claude.com/pricing','Claude pricing & plan comparison (re-checked)',X],
+ ['cl-train6','https://privacy.claude.com/en/articles/10023580-is-my-data-used-for-model-training','Is my data used for model training? (Anthropic, re-checked)',X],
+ ['g-plans6','https://one.google.com/about/google-ai-plans/','Google AI plans (re-checked)',X],
+ ['g-overview6','https://gemini.google/overview/agent/','Gemini app overview and plans, incl. Free (re-checked)',X],
+ ['g-privacy6','https://support.google.com/gemini/answer/13594961','Gemini Apps Privacy Hub (re-checked)',X],
+ ['x-pricing6','https://x.ai/pricing','The X Subscription pricing: Free, Plus, Premium, Super, Ultra',X],
+ ['gb-docs6','https://docs.x.ai/x-subscription/grok-bot','Grok Bot on The X Subscription (re-checked)',X],
+ ['gb-page6','https://x.ai/bot','Grok Bot product page (re-checked)',X],
+ ['ms-free6','https://support.microsoft.com/en-us/microsoft-365-copilot/what-s-the-difference-between-microsoft-copilot-free-and-copilot-in-microsoft-365','Microsoft Copilot (free) vs Copilot in Microsoft 365 (Microsoft Support)',X],
+ ['ms-ind6','https://www.microsoft.com/en-us/copilot/pricing/individuals','Copilot pricing plans for individuals (Microsoft)',X],
+ ['ms-m365-6','https://www.microsoft.com/en-us/microsoft-365','Microsoft 365 for individuals: plans (Microsoft)',X],
+ ['ms-credits6','https://support.microsoft.com/en-us/microsoft-365-copilot/ai-credits-and-limits-for-microsoft-365-subscriptions','How AI usage works across Microsoft 365 subscriptions for individuals',X],
+ ['ms-hist6','https://support.microsoft.com/en-us/privacy/microsoft-copilot/activity-history','Microsoft Copilot for individuals: your activity history',X],
+ ['ms-ctrl6','https://support.microsoft.com/en-us/privacy/microsoft-copilot/privacy-controls','Microsoft Copilot for individuals: your privacy controls and choices',X],
+ ['mu6','https://www.meta.com/help/subscriptions/1021145227643680/','About Muse subscriptions (Meta, re-checked)',X],
+ ['mu-priv6','https://www.meta.com/help/artificial-intelligence/1047255454427887/','How Muse handles privacy, safety and security (Meta, re-checked)',X],
+ ['oc6','https://openclaw.ai/','OpenClaw homepage (re-checked)',X],
+ ['hm6','https://hermes-agent.nousresearch.com/','Hermes Agent homepage and Nous Portal plans (re-checked)',X],
  ...['v2026.10.4','v2026.10.2','v2026.9.33','v2026.9.3','v2026.9.2','v2026.9.1','v2026.8.35','v2026.8.33','v2026.8.2','v2026.8.1','v2026.7.35','v2026.6.33'].map(OCR),
  ...Object.entries(ps).map(([k,u])=>[`ps-${k}`,u,`Pricing page: ${k}`,G]),
 ];
