@@ -6,10 +6,12 @@ const ld = {"@context":"https://schema.org","@type":"CollectionPage","name":"Age
 <Fragment slot="head"><link rel="canonical" href="https://agentstackwatch.com/guides/"/><script type="application/ld+json" set:html={JSON.stringify(ld)}/></Fragment>
 <header class="pagehead"><p class="kicker">Guides</p><h1>Guides to personal AI agents</h1><p class="dek">Plain-language answers to the questions founders, business owners and everyday users ask before they hand work to an AI agent. Every fact links to the vendor's own page; anything we couldn't verify says <span class="unk">unknown</span>.</p></header>
 <div class="ghub">
+<a class="gcard gfeat" href="/quiz/"><p class="kicker">1-minute quiz</p><h2>Which AI agent should you use?</h2><p>Six plain questions. Get a top pick and a runner-up, based only on the facts in these guides.</p></a>
+<a class="gcard" href="/tests/chatgpt-assistant-vs-grok-bot/"><p class="kicker">Hands-on test</p><h2>ChatGPT's assistant vs Grok Bot: same job, who won?</h2><p>We gave both the same research task and checked every fact they cited. Scores, mistakes and caveats.</p></a>
 <a class="gcard gfeat" href="/guide/"><p class="kicker">Start here · the full guide</p><h2>The Personal AI Agent Buyer's Guide (2026)</h2><p>Eleven assistants compared on email, calendar, research, travel, CRM and documents, with security and cost tables.</p></a>
 {guides.map(g=> <a class="gcard" href={`/${g.slug}/`}><p class="kicker">{g.kicker}</p><h2>{g.short}</h2><p>{g.blurb}</p></a>)}
 </div>
-<Signup variant="feature"/>
+<Signup variant="feature" kicker="Free · weekly" title="Get the full buyer's guide and weekly agent tests" text="One email a week: hands-on tests like ChatGPT vs Grok Bot, plus what changed in AI agent prices and features."/>
 <p class="muted small">Also useful: <a href="/pricing/">pricing for every plan</a> · <a href="/compare/">head-to-head comparisons</a> · <a href="/tracker/">the tracker</a>.</p>
 <style>
 .ghub{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px;margin:8px 0 36px}
