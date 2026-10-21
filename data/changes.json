@@ -228,5 +228,45 @@
   "from": "v1.28.1",
   "to": "v1.29.0",
   "url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.29.0"
+ },
+ {
+  "date": "2026-10-21",
+  "slug": "pydantic-ai",
+  "name": "Pydantic AI",
+  "type": "release",
+  "field": "latest_release",
+  "from": "v2.58.0",
+  "to": "v2.59.0",
+  "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.59.0"
+ },
+ {
+  "date": "2026-10-21",
+  "slug": "pydantic-ai",
+  "name": "Pydantic AI",
+  "type": "release",
+  "field": "pypi_version",
+  "from": "2.58.0",
+  "to": "2.59.0",
+  "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.59.0"
+ },
+ {
+  "date": "2026-10-21",
+  "slug": "claude-agent-sdk",
+  "name": "Claude Agent SDK",
+  "type": "release",
+  "field": "latest_release",
+  "from": "v0.2.169",
+  "to": "v0.2.170",
+  "url": "https://github.com/anthropics/claude-agent-sdk-python/releases/tag/v0.2.170"
+ },
+ {
+  "date": "2026-10-21",
+  "slug": "claude-agent-sdk",
+  "name": "Claude Agent SDK",
+  "type": "release",
+  "field": "pypi_version",
+  "from": "0.2.169",
+  "to": "0.2.170",
+  "url": "https://github.com/anthropics/claude-agent-sdk-python/releases/tag/v0.2.170"
  }
 ]

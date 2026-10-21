@@ -1,5 +1,20 @@
 [
  {
+  "slug": "pydantic-ai",
+  "name": "Pydantic AI",
+  "category": "frameworks",
+  "tag": "v2.59.0",
+  "date": "2026-10-21",
+  "week": "2026-10-19",
+  "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.59.0",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "Remove shut-down Groq models playai-tts, playai-tts-arabic, meta-llama/llama-guard-4-12b and meta-llama/llama-4-maverick-17b-128e-instruct by @mekanbaymyradov in https://github.com/pydantic/pydantic-ai/pull/10306"
+  ]
+ },
+ {
   "slug": "e2b",
   "name": "E2B",
   "category": "managed",
