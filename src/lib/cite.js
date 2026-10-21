@@ -9,6 +9,8 @@ const EXTRA = [
  // Checked 21 Oct 2026 for the eight new SEO guides
  ['oai-agent7','https://help.openai.com/en/articles/11752874-chatgpt-agent','ChatGPT agent (OpenAI Help Center: "no longer available")',X],
  ['oai-work7','https://help.openai.com/en/articles/20001275-chatgpt-work-and-codex','ChatGPT Work and Codex (OpenAI Help Center)',X],
+ ['oai-rn8','https://help.openai.com/en/articles/6825453-chatgpt-release-notes','ChatGPT release notes (OpenAI Help Center: ChatGPT Work, 13 Jul 2026 entry; Retiring Atlas)',X],
+ ['oai-atlas8','https://help.openai.com/en/articles/20001371-evolving-atlas-into-chatgpt-for-browser-based-agentic-work','Evolving Atlas into ChatGPT (OpenAI Help Center)',X],
  ['oai-atlas7','https://openai.com/index/introducing-chatgpt-atlas/','Introducing ChatGPT Atlas (OpenAI, now marked deprecated)',X],
  ['mn-pricing7','https://help.manus.im/en/articles/11711111-what-is-the-current-membership-pricing-for-manus','Manus Help Center: current membership pricing',X],
  ['gb-page7','https://x.ai/bot','Grok Bot product page and FAQ (x.ai)',X],
