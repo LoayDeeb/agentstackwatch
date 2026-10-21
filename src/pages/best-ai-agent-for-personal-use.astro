@@ -15,15 +15,15 @@ const costs = [
  ['Claude',`Free${c('cl-pricing3')}`,`Pro $20/mo, or $17/mo yearly ($200 up front); Max from $100/mo${c('cl-pricing3')}`,`Free plan already includes connectors and memory${c('cl-pricing3')}.`],
  ['Google Gemini',`AI Plus $4.99/mo${c('g-plans3')}`,`AI Pro $19.99/mo; Ultra $99.99 or $199.99/mo${c('g-plans3')}`,`Gemini Agent is Ultra only, US and English only${c('g-plans3')}.`],
  ['Grok Bot',`Premium $30/mo, or $300/yr${c('gb-pricing3')}`,`Super $100/mo; Ultra $200/mo${c('gb-pricing3')}`,`Not in the $8 Plus plan${c('gb-pricing3')}. Usage comes from a weekly pool shared with Grok and Cursor${c('gb-docs3')}.`],
- ['ChatGPT dot',`Included with Pro${c('oai-dot')}`,`Pro $100 or $200/mo${c('oai-rn3')}`,`Rolling out gradually; not in the EEA, Switzerland or the UK${c('oai-dot')}.`],
+ ['ChatGPT dot',`Included with Pro${c('oai-dot')}`,`Pro $100, $200 or $500/mo${c('oai-rn3','oai-pro-tiers')}`,`Rolling out gradually; not in the EEA, Switzerland or the UK${c('oai-dot')}.`],
  ['Muse from Meta',`Free with a usage limit${c('mu3')}`,`Power $20/mo; Maximum $100/mo${c('mu3')}`,`Limited testing, not available everywhere${c('mu3')}.`],
  ['Manus',`Free, 300 credits a day${c('mn-pricing3')}`,`Pro $20 or $40/mo; 17% off yearly${c('mn-pricing3')}`,`Credits run down faster on big tasks.`],
  ['Perplexity Comet',`Free${c('ps-perplexity-comet')}`,`Comet Plus $5/mo, included in Perplexity Pro and Max${c('ps-perplexity-comet')}`,`From our tracker entry; Perplexity's pages blocked our check today. Pro and Max prices: ${U}.`],
- ['Lindy',`$50 free credits for 7 days${c('ly3')}`,`From $29.99/user/mo${c('ly3')}`,`Built as a work teammate, billed per user${c('ly3')}.`],
+ ['Lindy',`$50 free credits for 7 days${c('ly3')}`,`From $49.99/user/mo${c('ly-r')}`,`Built as a work teammate, billed per user${c('ly3')}.`],
  ['OpenClaw / Hermes Agent',`$0 software${c('oc3','hm3')}`,`Your AI model bill`,`Hermes has optional paid Nous Portal tiers; prices ${U}${c('hm3')}.`],
 ];
 const body = `
-<div class="tldr"><p><b>Short answer.</b> Most people should start with a $20 assistant: ChatGPT Plus if you want it to book and fill in forms for you, Claude if you mainly want help with Gmail and your calendar. Already paying Google for storage? Google AI Pro at $19.99 adds Gemini. Only pay $30 or more for an always-on agent like Grok Bot once you have errands worth handing off every week.</p></div>
+<div class="tldr"><p><b>The longer answer.</b> Most people should start with a $20 assistant: ChatGPT Plus if you want it to book and fill in forms for you, Claude if you mainly want help with Gmail and your calendar. Already paying Google for storage? Google AI Pro at $19.99 adds Gemini. Only pay $30 or more for an always-on agent like Grok Bot once you have errands worth handing off every week.</p></div>
 
 <h2>What an everyday person actually wants</h2>
 <p>Forget "an AI that does everything". At home, people hand off the same handful of jobs:</p>
@@ -41,7 +41,7 @@ const body = `
 <div class="gtable-wrap"><table class="gtab"><thead><tr><th>If you…</th><th>Pick</th><th>Why</th></tr></thead><tbody>
 ${picks.map(([a,b,w])=>`<tr><td data-l="If you…">${a}</td><td data-l="Pick" class="nm">${b}</td><td data-l="Why">${w}</td></tr>`).join('')}
 </tbody></table></div>
-<p>Lindy is good at inboxes and meetings, but it's sold as a work teammate, billed per user from $29.99/month${c('ly3')}. For home use, the options above are cheaper places to start.</p>
+<p>Lindy is good at inboxes and meetings, but it's sold as a work teammate, billed per user from $49.99/month${c('ly-r')}. For home use, the options above are cheaper places to start.</p>
 
 <h2>Job by job</h2>
 <h3>Email, calendar and reminders</h3>
@@ -105,7 +105,7 @@ const faqs = [
  ['Do AI assistants train on my personal chats?',`Often yes, by default. You can turn it off: "Improve the model for everyone" in ChatGPT${c('oai-data')}, the training setting in Claude${c('cl-pricing3')}, Keep Activity in Gemini${c('g-privacy')}, and Data controls in Muse${c('mu-priv3')}.`],
 ];
 ---
-<GuideArticle slug="best-ai-agent-for-personal-use" kicker="Everyday life" updated="2026-10-18"
+<GuideArticle slug="best-ai-agent-for-personal-use" kicker="Everyday life" updated="2026-10-21"
  title="Best AI Agent for Personal Use (2026): Everyday AI Assistants Compared | AgentStackWatch"
  desc="The best AI personal assistant for everyday life in 2026: ChatGPT, Claude, Gemini, Grok Bot, Muse, Manus and OpenClaw compared on email, calendar, booking, trips, privacy and price. Every fact sourced."
  h1="The best AI agent for personal use (2026)"

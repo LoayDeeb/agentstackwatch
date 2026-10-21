@@ -2,7 +2,7 @@
 import GuideArticle from '../layouts/GuideArticle.astro'; import { citer } from '../lib/cite.js';
 const { c, used, U } = citer();
 const body = `
-<div class="tldr"><p><b>Short answer.</b> For one-off deep dives, the $20-a-month tier of ChatGPT (deep research, plus ChatGPT Work for finished reports) or Google AI Pro (Deep Research) is enough for most people${c('oai-pricing','oai-rn','g-plans')}. For big batches, such as researching 50 companies at once, Manus's Wide Research is built for volume${c('mn-pricing2')}. For research that never stops, use scheduled monitoring tasks in ChatGPT or Hermes's scheduled briefings${c('oai-rn','hm2')}. Whatever you use, open the sources before you rely on the answer.</p></div>
+<div class="tldr"><p><b>The longer answer.</b> For one-off deep dives, the $20-a-month tier of ChatGPT (deep research, plus ChatGPT Work for finished reports) or Google AI Pro (Deep Research) is enough for most people${c('oai-pricing','oai-rn','g-plans')}. For big batches, such as researching 50 companies at once, Manus's Wide Research is built for volume${c('mn-pricing2')}. For research that never stops, use scheduled monitoring tasks in ChatGPT or Hermes's scheduled briefings${c('oai-rn','hm2')}. Whatever you use, open the sources before you rely on the answer.</p></div>
 
 <h2>Three kinds of research job</h2>
 <ul>
@@ -14,7 +14,7 @@ const body = `
 
 <h2>The options</h2>
 <div class="gtable-wrap"><table class="gtab"><thead><tr><th>Agent</th><th>Best at</th><th>Price</th><th>Notes</th></tr></thead><tbody>
-<tr><td data-l="Agent" class="nm">ChatGPT (deep research, Work)</td><td data-l="Best at">Deep dives and finished reports</td><td data-l="Price">Plus $20/mo; Pro $100 or $200${c('oai-rn')}</td><td data-l="Notes">Deep research on Plus and up${c('oai-pricing')}; Work researches, analyzes and produces documents, spreadsheets, presentations and reports${c('oai-rn')}</td></tr>
+<tr><td data-l="Agent" class="nm">ChatGPT (deep research, Work)</td><td data-l="Best at">Deep dives and finished reports</td><td data-l="Price">Plus $20/mo; Pro $100, $200 or $500${c('oai-rn','oai-pro-tiers')}</td><td data-l="Notes">Deep research on Plus and up${c('oai-pricing')}; Work researches, analyzes and produces documents, spreadsheets, presentations and reports${c('oai-rn')}</td></tr>
 <tr><td data-l="Agent" class="nm">ChatGPT scheduled tasks</td><td data-l="Best at">Watching</td><td data-l="Price">Plus, Pro, Business, Enterprise${c('oai-rn')}</td><td data-l="Notes">Monitoring tasks search the web and check connected apps, and notify you only when something is worth reporting; no more than once an hour${c('oai-rn')}</td></tr>
 <tr><td data-l="Agent" class="nm">Google Gemini</td><td data-l="Best at">Deep dives</td><td data-l="Price">AI Pro $19.99/mo; Ultra from $99.99${c('g-plans')}</td><td data-l="Notes">Deep Research and Deep Search in AI Mode on Pro and Ultra${c('g-plans')}</td></tr>
 <tr><td data-l="Agent" class="nm">Manus</td><td data-l="Best at">Batches</td><td data-l="Price">Free tier; Pro from $20/mo${c('mn-pricing2')}</td><td data-l="Notes">Advanced research and Wide Research on Pro, up to 20 tasks at once${c('mn-pricing2')}</td></tr>
@@ -49,7 +49,7 @@ const body = `
 <p>That last line matters: it gives the agent permission not to fill gaps with plausible guesses. It's the rule we use on this site.</p>
 
 <h2>What it costs</h2>
-<p>For most people, $20 a month covers occasional deep research on ChatGPT Plus or Gemini through Google AI Pro${c('oai-rn','g-plans')}. Heavy researchers move up to ChatGPT Pro ($100–200) or Gemini Ultra (from $99.99)${c('oai-rn','g-plans')}. See <a href="/how-much-does-an-ai-agent-cost/">How much does an AI agent cost?</a> and <a href="/pricing/">/pricing</a> for every plan.</p>
+<p>For most people, $20 a month covers occasional deep research on ChatGPT Plus or Gemini through Google AI Pro${c('oai-rn','g-plans')}. Heavy researchers move up to ChatGPT Pro ($100–500) or Gemini Ultra (from $99.99)${c('oai-rn','oai-pro-tiers','g-plans')}. See <a href="/how-much-does-an-ai-agent-cost/">How much does an AI agent cost?</a> and <a href="/pricing/">/pricing</a> for every plan.</p>
 `;
 const faqs = [
  ['What is the best AI agent for research?',`For deep dives, ChatGPT (deep research on Plus and up) or Gemini (Deep Research on AI Pro)${c('oai-pricing','g-plans')}. For big batches, Manus Wide Research${c('mn-pricing2')}. For ongoing monitoring, ChatGPT scheduled tasks or Hermes briefings${c('oai-rn','hm2')}.`],
@@ -59,7 +59,7 @@ const faqs = [
  ['Is Perplexity Comet good for research?',`It's an AI browser that summarizes articles, emails and Slack chats and works across tabs${c('px-comet-ent')}. Enterprise Pro is $40/seat/month${c('px-ent')}; consumer prices are unknown to us.`],
 ];
 ---
-<GuideArticle slug="ai-agent-for-research" kicker="Research"
+<GuideArticle slug="ai-agent-for-research" updated="2026-10-21" kicker="Research"
  title="Best AI Agent for Research (2026): Deep Research, Batches & Monitoring | AgentStackWatch"
  desc="Which AI agent is best for research in 2026: ChatGPT deep research and Work, Gemini Deep Research, Manus Wide Research, Perplexity Comet and Hermes compared, plus how to check what they bring back."
  h1="The best AI agent for research (2026)"

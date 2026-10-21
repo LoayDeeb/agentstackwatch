@@ -7,13 +7,13 @@ const seats = [
  ['Manus Team',20,`"From" price; credit-based${c('mn-pricing')}`],
  ['Gemini Enterprise (Business)',21,`"From" price${c('g-ent')}`],
  ['Microsoft 365 Copilot Business',21,`Add-on to a Microsoft 365 business plan; $18 first-year promo to Dec 31, 2026; annual commitment${c('ms-price','ms-biz')}`],
- ['Lindy',29.99,`"From" price, 3,000 credits per user${c('ly')}`],
+ ['Lindy',49.99,`"From" price, 5,000 credits per user${c('ly-r')}`],
  ['Grok Bot (X Premium seat)',30,`Team seats at the same price as personal${c('gb-pricing')}`],
  ['Perplexity Enterprise Pro',33.33,`$400/yr per seat, or $40 monthly${c('px-ent')}`],
 ];
 const yr = (p,n) => '$'+Math.round(p*12*n).toLocaleString('en-US');
 const body = `
-<div class="tldr"><p><b>Short answer.</b> Buy the AI that matches your email system. On Google Workspace, Claude Team or Gemini Enterprise. On Microsoft 365, Copilot. On neither, ChatGPT Business or Claude Team. Expect about $20–30 per person per month, and always buy the business tier, never personal plans, for staff.</p></div>
+<div class="tldr"><p><b>The longer answer.</b> Buy the AI that matches your email system. On Google Workspace, Claude Team or Gemini Enterprise. On Microsoft 365, Copilot. On neither, ChatGPT Business or Claude Team. Expect about $20–30 per person per month, and always buy the business tier, never personal plans, for staff.</p></div>
 
 <h2>What a small business actually needs from an AI agent</h2>
 <p>A small team doesn't need the most impressive demo. It needs four boring things:</p>
@@ -72,7 +72,7 @@ const faqs = [
  ['Is there a minimum team size?',`ChatGPT Business and Claude Team both require at least two seats${c('oai-biz2','cl-team2')}. Claude Team goes up to 150 seats${c('cl-team2')}; Copilot Business up to 300 users${c('ms-biz')}.`],
 ];
 ---
-<GuideArticle slug="best-ai-agent-for-small-business" kicker="Small business"
+<GuideArticle slug="best-ai-agent-for-small-business" updated="2026-10-21" kicker="Small business"
  title="Best AI Agent for Small Business (2026): Costs per Seat & Safe Setup | AgentStackWatch"
  desc="The best AI agent for a small business in 2026: ChatGPT Business, Claude Team, Microsoft Copilot, Gemini Enterprise, Lindy and Grok Bot compared on cost per seat, admin controls and data safety. Sourced."
  h1="The best AI agent for small business (2026)"

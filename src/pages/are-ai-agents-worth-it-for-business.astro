@@ -5,7 +5,7 @@ const { c, used, U } = citer();
 const seat = 25, rate = 40, hrs = seat / rate;
 const fmt = x => x.toLocaleString('en-US',{maximumFractionDigits:1});
 const body = `
-<div class="tldr"><p><b>Short answer.</b> Usually yes for the cheap version, and only sometimes for the expensive one. A $20–30 a seat assistant pays for itself if it saves each person about an hour a month${c('oai-biz2','cl-team2')}. The best independent study we know of, of 5,179 support agents, found a 14% productivity gain on average and 34% for newer staff${c('nber-genai')}. Fully autonomous agents priced per action or outcome can be worth it too, but only where you can measure the result and keep a human in the loop for anything risky.</p></div>
+<div class="tldr"><p><b>The longer answer.</b> Usually yes for the cheap version, and only sometimes for the expensive one. A $20–30 a seat assistant pays for itself if it saves each person about an hour a month${c('oai-biz2','cl-team2')}. The best independent study we know of, of 5,179 support agents, found a 14% productivity gain on average and 34% for newer staff${c('nber-genai')}. Fully autonomous agents priced per action or outcome can be worth it too, but only where you can measure the result and keep a human in the loop for anything risky.</p></div>
 
 <h2>What the evidence says</h2>
 <p>Most "ROI" numbers you'll see come from vendors. Treat them as marketing. Intercom, for example, quotes customers reporting a 50% resolution rate and a 96% cut in resolution time${c('ic-pricing')}; those are real testimonials, but they are chosen by the seller.</p>
@@ -20,7 +20,7 @@ const body = `
 <h2>What agents actually cost</h2>
 <div class="gtable-wrap"><table class="gtab"><thead><tr><th>Type</th><th>Typical price</th><th>Examples</th></tr></thead><tbody>
 <tr><td data-l="Type" class="nm">Assistant per seat</td><td data-l="Typical price">$20–25 per person per month</td><td data-l="Examples">ChatGPT Business, Claude Team${c('oai-biz2','cl-team2')}; Gemini Enterprise from $21${c('g-ent')}; Microsoft 365 Copilot $21 add-on${c('ms-price')}</td></tr>
-<tr><td data-l="Type" class="nm">Always-on agent</td><td data-l="Typical price">$30–200 per person per month</td><td data-l="Examples">Grok Bot $30/$100/$200 per seat${c('gb-pricing2')}; ChatGPT Pro with a dot $100 or $200${c('oai-rn')}; Lindy from $29.99${c('ly')}</td></tr>
+<tr><td data-l="Type" class="nm">Always-on agent</td><td data-l="Typical price">$30–500 per person per month</td><td data-l="Examples">Grok Bot $30/$100/$200 per seat${c('gb-pricing2')}; ChatGPT Pro with a dot $100, $200 or $500${c('oai-rn','oai-pro-tiers')}; Lindy from $49.99${c('ly-r')}</td></tr>
 <tr><td data-l="Type" class="nm">Per outcome or action</td><td data-l="Typical price">$0.10–2 each</td><td data-l="Examples">Intercom Fin $0.99 per outcome${c('ic-pricing')}; Agentforce $0.10 per action or $2 per conversation${c('sf-agentforce')}</td></tr>
 <tr><td data-l="Type" class="nm">Self-hosted</td><td data-l="Typical price">$0 software, plus model usage and your time</td><td data-l="Examples">OpenClaw, Hermes Agent (MIT)${c('oc','hm2')}</td></tr>
 </tbody></table></div>
@@ -61,12 +61,12 @@ const body = `
 const faqs = [
  ['Are AI agents worth it for small businesses?',`Usually, at the $20–25 a seat level${c('oai-biz2','cl-team2')}: a seat pays for itself if it saves each person roughly an hour a month at typical staff costs. Run a 30-day test with one measurable workflow.`],
  ['What is the ROI of AI agents?',`Independent evidence is limited. The best study we know of found a 14% average productivity gain for support agents with an AI assistant, and 34% for novices${c('nber-genai')}. Vendor ROI figures are testimonials, not studies.`],
- ['How much does an AI agent cost a business?',`$20–25 per person per month for assistants${c('oai-biz2','cl-team2')}, $30–200 for always-on agents${c('gb-pricing2','oai-rn')}, or $0.10–2 per action or outcome for customer-facing agents${c('sf-agentforce','ic-pricing')}.`],
+ ['How much does an AI agent cost a business?',`$20–25 per person per month for assistants${c('oai-biz2','cl-team2')}, $30–500 for always-on agents${c('gb-pricing2','oai-rn')}, or $0.10–2 per action or outcome for customer-facing agents${c('sf-agentforce','ic-pricing')}.`],
  ['When are AI agents not worth it?',`When the work is irreversible without review, can't be measured, or is done by experts who are already fast${c('nber-genai')}. Also when nobody owns the tool, especially self-hosted ones that need patching${c('oc-adv')}.`],
  ['Do AI agents replace employees?',`The strongest evidence shows them making people more productive, especially newer staff, rather than replacing them${c('nber-genai')}.`],
 ];
 ---
-<GuideArticle slug="are-ai-agents-worth-it-for-business" kicker="ROI"
+<GuideArticle slug="are-ai-agents-worth-it-for-business" updated="2026-10-21" kicker="ROI"
  title="Are AI Agents Worth It for Business? Costs, Evidence & a Break-Even (2026) | AgentStackWatch"
  desc="Are AI agents worth it for your business in 2026? What independent research shows, what agents really cost per seat and per outcome, a break-even you can run on your numbers, and when they're not worth it."
  h1="Are AI agents worth it for business?"

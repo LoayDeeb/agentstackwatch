@@ -95,7 +95,7 @@ export const PRODUCTS = [
    weak:`Terminal or desktop install plus your own model provider${c('hm')}: an IT project, not a sign-up.` },
  { id:'lindy', name:'Lindy', maker:'Lindy',
    good:`Inbox management, replies in your voice, meeting scheduling, prep, notes and follow-up, daily briefs, Slack-native, iMessage${c('ly')}.`,
-   price:`From $29.99/user/mo (3,000 credits each, pooled); $50 free credits for 7 days${c('ly')}.`,
+   price:`From $49.99/user/mo (5,000 credits each, pooled); $50 free credits for 7 days${c('ly')}.`,
    connects:`1,500+ integrations, MCP, 2-5 inboxes depending on plan${c('ly')}.`,
    data:`Never used to train models; SOC 2 and GDPR; Enterprise adds SSO, SCIM, audit logs, HIPAA BAA; actions with outside impact wait for approval${c('ly')}.`,
    weak:`Credits run out and Lindy pauses until reset or top-up ($10 per 1,000)${c('ly')}.` },

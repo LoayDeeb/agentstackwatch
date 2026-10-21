@@ -3,96 +3,192 @@
   "slug": "best-personal-ai-agent-for-founders",
   "short": "Best personal AI agent for founders",
   "kicker": "For founders",
-  "blurb": "Which assistant to hand your inbox, research, sales follow-up and errands to, picked by where your company already works."
+  "blurb": "Which assistant to hand your inbox, research, sales follow-up and errands to, picked by where your company already works.",
+  "quick": "Start with ChatGPT Plus or Claude Pro ($20 a month) and connect only your email and calendar. Add an always-on agent such as Grok Bot or a ChatGPT dot once you have repeatable tasks to hand off every week. Switch to a business plan the day your first co-founder or employee joins.",
+  "rel": [
+   "best-ai-agent-for-small-business",
+   "how-much-does-an-ai-agent-cost",
+   "ai-agent-for-email-and-calendar"
+  ]
  },
  {
   "slug": "best-ai-agent-for-personal-use",
   "short": "Best AI agent for personal use",
   "kicker": "Everyday life",
-  "blurb": "The best AI assistant for your inbox, calendar, bookings, research and trips at home: what to pick, what it costs, and how to keep your data private."
+  "blurb": "The best AI assistant for your inbox, calendar, bookings, research and trips at home: what to pick, what it costs, and how to keep your data private.",
+  "quick": "For most people, a $20-a-month assistant is the right start: ChatGPT Plus if you want it to book and fill in forms, Claude Pro if you mainly want help with Gmail and your calendar. If you already pay Google for storage, Google AI Pro ($19.99) adds Gemini. Only pay $30 or more for an always-on agent like Grok Bot once you have weekly errands to hand off.",
+  "rel": [
+   "best-free-ai-agent",
+   "ai-agent-for-email-and-calendar",
+   "chatgpt-vs-gemini"
+  ]
  },
  {
   "slug": "best-free-ai-agent",
   "short": "Best free AI agents and assistants",
   "kicker": "Free & budget",
-  "blurb": "What ChatGPT, Claude, Gemini, Grok, Copilot, Muse and the open-source agents give you for $0, what's locked behind paid plans, privacy defaults and the cheapest upgrade."
+  "blurb": "What ChatGPT, Claude, Gemini, Grok, Copilot, Muse and the open-source agents give you for $0, what's locked behind paid plans, privacy defaults and the cheapest upgrade.",
+  "quick": "ChatGPT Free is the best free assistant for most people, though ads may appear on the free plan. If you live in Google's apps, the free Gemini app is the alternative. When you outgrow free, Google AI Plus at $4.99 a month is the cheapest real upgrade we found.",
+  "rel": [
+   "best-ai-agent-for-personal-use",
+   "how-much-does-an-ai-agent-cost",
+   "chatgpt-vs-gemini"
+  ]
  },
  {
   "slug": "best-ai-agent-for-small-business",
   "short": "Best AI agent for small business",
   "kicker": "Small business",
-  "blurb": "What a 2–50 person company should buy, what it costs per seat, and the business-tier settings that keep customer data safe."
+  "blurb": "What a 2–50 person company should buy, what it costs per seat, and the business-tier settings that keep customer data safe.",
+  "quick": "Buy the AI that matches your email system: Gemini or Claude Team on Google Workspace, Copilot on Microsoft 365, and ChatGPT Business or Claude Team if you use neither. Budget about $20–30 per person per month. Always buy the business tier for staff, never personal plans.",
+  "rel": [
+   "chatgpt-vs-claude-for-business",
+   "are-ai-agents-worth-it-for-business",
+   "how-much-does-an-ai-agent-cost"
+  ]
  },
  {
   "slug": "chatgpt-vs-claude-for-business",
   "short": "ChatGPT vs Claude for business",
   "kicker": "Head to head",
-  "blurb": "ChatGPT Business vs Claude Team: seat prices, email and calendar, admin controls, data training and certifications."
+  "blurb": "ChatGPT Business vs Claude Team: seat prices, email and calendar, admin controls, data training and certifications.",
+  "quick": "They cost the same: $20 a seat per month billed annually, or $25 monthly. Pick ChatGPT Business if your team uses Outlook and Office or wants an always-on agent; pick Claude Team if you live in Gmail and Google Calendar.",
+  "rel": [
+   "chatgpt-vs-gemini",
+   "claude-vs-gemini",
+   "best-ai-agent-for-small-business"
+  ]
  },
  {
   "slug": "chatgpt-vs-gemini",
   "short": "ChatGPT vs Gemini",
   "kicker": "Head to head",
-  "blurb": "Which to pick for a Google or Microsoft business, everyday life or research: personal and business prices, agent features, privacy defaults and certifications."
+  "blurb": "Which to pick for a Google or Microsoft business, everyday life or research: personal and business prices, agent features, privacy defaults and certifications.",
+  "quick": "If your business already pays for Google Workspace, use the Gemini you already have before buying anything else. On Microsoft 365, or if you want an agent that hands back finished files, ChatGPT Business ($20–25 a seat) is the stronger pick. For personal use they cost about the same: ChatGPT for bookings and errands, Gemini if you live in Gmail.",
+  "rel": [
+   "claude-vs-gemini",
+   "chatgpt-vs-claude-for-business",
+   "best-ai-agent-for-personal-use"
+  ]
  },
  {
   "slug": "claude-vs-gemini",
   "short": "Claude vs Gemini",
   "kicker": "Head to head",
-  "blurb": "Which to pick for a Google or Microsoft business, everyday life, writing or hands-off tasks: personal and business prices, agent features, privacy defaults and certifications."
+  "blurb": "Which to pick for a Google or Microsoft business, everyday life, writing or hands-off tasks: personal and business prices, agent features, privacy defaults and certifications.",
+  "quick": "On Google Workspace, start with the Gemini included in your plan. On Microsoft 365 or Slack, or if you want an assistant that takes whole tasks and runs them on a schedule, Claude Team ($20–25 a seat) is the better pick. For personal use: Gemini if you want 5 TB of storage thrown in, Claude Pro if you want hand-off tasks.",
+  "rel": [
+   "chatgpt-vs-gemini",
+   "chatgpt-vs-claude-for-business",
+   "best-ai-agent-for-small-business"
+  ]
  },
  {
   "slug": "how-much-does-an-ai-agent-cost",
   "short": "How much does an AI agent cost?",
   "kicker": "Cost",
-  "blurb": "A sourced price table for every personal agent we track, plus what it costs to run your own agents on the cloud platforms."
+  "blurb": "A sourced price table for every personal agent we track, plus what it costs to run your own agents on the cloud platforms.",
+  "quick": "For one person, $0–20 a month covers most needs; heavy users pay $100 or more. For a team, budget $20–30 per seat per month. Open-source agents are free software, but you still pay for the AI model behind them.",
+  "rel": [
+   "best-free-ai-agent",
+   "are-ai-agents-worth-it-for-business",
+   "best-ai-agent-for-small-business"
+  ]
  },
  {
   "slug": "is-openclaw-safe",
   "short": "Is OpenClaw safe?",
   "kicker": "Security",
-  "blurb": "OpenClaw's real setup risks, what its security advisories and release notes say got fixed, and a hardening checklist."
+  "blurb": "OpenClaw's real setup risks, what its security advisories and release notes say got fixed, and a hardening checklist.",
+  "quick": "OpenClaw can be run safely by a technical user who keeps it on the latest release, on its default settings, with tools locked down. It is not safe by accident: it can act with full access to your computer unless you sandbox it. Don't hand it to a non-technical team as-is.",
+  "rel": [
+   "openclaw-vs-hermes-agent",
+   "best-free-ai-agent",
+   "best-personal-ai-agent-for-founders"
+  ]
  },
  {
   "slug": "ai-agent-for-email-and-calendar",
   "short": "AI agent for email and calendar",
   "kicker": "Inbox & calendar",
-  "blurb": "Which agents can actually read, draft, send and schedule for you, and how each one asks before it acts."
+  "blurb": "Which agents can actually read, draft, send and schedule for you, and how each one asks before it acts.",
+  "quick": "Claude is our pick for Gmail and Google Calendar because it asks before sending by default. ChatGPT covers both Gmail and Outlook, Copilot is the natural choice inside Outlook, and Lindy is built for this one job. Whatever you pick, keep sending behind your approval.",
+  "rel": [
+   "best-ai-agent-for-personal-use",
+   "best-personal-ai-agent-for-founders",
+   "chatgpt-vs-claude-for-business"
+  ]
  },
  {
   "slug": "best-ai-agent-for-customer-support",
   "short": "Best AI agent for customer support",
   "kicker": "Customer support",
-  "blurb": "Customer-facing AI agents vs assistants for your support team: what they cost per resolution or seat, and how to roll one out safely."
+  "blurb": "Customer-facing AI agents vs assistants for your support team: what they cost per resolution or seat, and how to roll one out safely.",
+  "quick": "To have AI answer customers, start with a support platform's own agent: Intercom's Fin at $0.99 per resolved outcome, or Agentforce if you run Salesforce. To help your human team reply faster instead, a copilot or general assistant is cheaper and lower-risk.",
+  "rel": [
+   "are-ai-agents-worth-it-for-business",
+   "best-ai-agent-for-sales-and-crm",
+   "best-ai-agent-for-small-business"
+  ]
  },
  {
   "slug": "chatgpt-agent-vs-manus",
   "short": "ChatGPT agent vs Manus",
   "kicker": "Head to head",
-  "blurb": "ChatGPT's agent mode is gone; ChatGPT Work and dots replaced it. How they compare with Manus on price, credits, deliverables and security."
+  "blurb": "ChatGPT's agent mode is gone; ChatGPT Work and dots replaced it. How they compare with Manus on price, credits, deliverables and security.",
+  "quick": "\"ChatGPT agent\" has been replaced by ChatGPT Work, so the real choice is ChatGPT vs Manus. Pick ChatGPT if you already pay for it and live in Gmail, Outlook or Office; pick Manus for finished deliverables like research, slides and websites on a cheap credit plan.",
+  "rel": [
+   "ai-agent-for-research",
+   "how-much-does-an-ai-agent-cost",
+   "best-personal-ai-agent-for-founders"
+  ]
  },
  {
   "slug": "best-ai-agent-for-sales-and-crm",
   "short": "Best AI agent for sales and CRM",
   "kicker": "Sales & CRM",
-  "blurb": "Agents that research accounts, draft outreach and update your CRM: Grok Bot, ChatGPT, Gemini Enterprise, Lindy and Salesforce Agentforce."
+  "blurb": "Agents that research accounts, draft outreach and update your CRM: Grok Bot, ChatGPT, Gemini Enterprise, Lindy and Salesforce Agentforce.",
+  "quick": "On Salesforce, Agentforce's Sales add-on ($125 a user per month) keeps the agent inside your data. Everyone else should start with a general agent that researches accounts and drafts outreach for you to approve, such as ChatGPT with HubSpot and Gmail, Gemini Enterprise, or Grok Bot.",
+  "rel": [
+   "best-ai-agent-for-customer-support",
+   "best-ai-agent-for-small-business",
+   "ai-agent-for-research"
+  ]
  },
  {
   "slug": "openclaw-vs-hermes-agent",
   "short": "OpenClaw vs Hermes Agent",
   "kicker": "Open source",
-  "blurb": "The two big self-hosted agents compared: channels, memory, sandboxing, security model, track record and real costs."
+  "blurb": "The two big self-hosted agents compared: channels, memory, sandboxing, security model, track record and real costs.",
+  "quick": "Both are free, self-hosted agents you talk to from chat apps. Choose OpenClaw for the most channels and the biggest ecosystem; choose Hermes Agent for stronger sandbox options and memory that turns into reusable skills. Either way, you are responsible for its security.",
+  "rel": [
+   "is-openclaw-safe",
+   "best-free-ai-agent",
+   "how-much-does-an-ai-agent-cost"
+  ]
  },
  {
   "slug": "ai-agent-for-research",
   "short": "AI agent for research",
   "kicker": "Research",
-  "blurb": "Which agents do deep research, recurring briefings and source-checked reports, and how to trust what they bring back."
+  "blurb": "Which agents do deep research, recurring briefings and source-checked reports, and how to trust what they bring back.",
+  "quick": "For most people, the $20 tier of ChatGPT or Google AI Pro ($19.99) is enough for deep research. For big batches, like researching 50 companies at once, Manus's Wide Research is built for volume. Always open the sources before you rely on the answer.",
+  "rel": [
+   "chatgpt-agent-vs-manus",
+   "chatgpt-vs-gemini",
+   "best-personal-ai-agent-for-founders"
+  ]
  },
  {
   "slug": "are-ai-agents-worth-it-for-business",
   "short": "Are AI agents worth it for business?",
   "kicker": "ROI",
-  "blurb": "What the research shows, what agents really cost, a break-even you can run on your own numbers, and when they're not worth it."
+  "blurb": "What the research shows, what agents really cost, a break-even you can run on your own numbers, and when they're not worth it.",
+  "quick": "Usually yes for a $20–30 a seat assistant: it pays for itself if it saves each person about an hour a month. Expensive autonomous agents are worth it only where you can measure the result and keep a person in the loop for anything risky.",
+  "rel": [
+   "how-much-does-an-ai-agent-cost",
+   "best-ai-agent-for-small-business",
+   "best-ai-agent-for-customer-support"
+  ]
  }
 ]

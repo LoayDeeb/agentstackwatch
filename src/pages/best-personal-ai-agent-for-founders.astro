@@ -13,13 +13,13 @@ const costs = [
  ['ChatGPT Plus',`$20/mo${c('oai-rn')}`,'Personal plan; no admin console or SSO'+c('oai-pricing')],
  ['Claude Pro',`$20/mo, or $17/mo annual${c('cl-pricing')}`,'Training is on unless you switch it off'+c('cl-pricing')],
  ['Grok Bot (X Premium)',`$30/mo${c('gb-pricing')}`,'Usage comes from a weekly pool shared with Grok and Cursor'+c('gb-docs')],
- ['ChatGPT Pro (includes a dot)',`$100 or $200/mo${c('oai-rn')}`,'Dots rolling out gradually; Pro access excludes the EEA, Switzerland and the UK at launch'+c('oai-rn')],
+ ['ChatGPT Pro (includes a dot)',`$100, $200 or $500/mo${c('oai-rn','oai-pro-tiers')}`,'Dots rolling out gradually; Pro access excludes the EEA, Switzerland and the UK at launch'+c('oai-rn')],
  ['Manus Pro',`$20 or $40/mo${c('mn-pricing')}`,'Credit-based; heavy tasks use up the allowance'+c('mn-pricing')],
- ['Lindy',`From $29.99/mo${c('ly')}`,'Pauses when credits run out until reset or top-up'+c('ly')],
+ ['Lindy',`From $49.99/user/mo${c('ly-r')}`,'Pauses when credits run out until reset or top-up'+c('ly')],
  ['OpenClaw / Hermes Agent',`$0 software${c('oc','hm')}`,'Plus the AI model you plug in and your time'],
 ];
 const body = `
-<div class="tldr"><p><b>Short answer.</b> Most founders should start with a $20 assistant (ChatGPT Plus or Claude Pro) and connect only email and calendar. Move to an always-on agent (Grok Bot, ChatGPT dots) once you have repeatable web tasks worth handing off. Pick the business tier the day a co-founder or employee joins.</p></div>
+<div class="tldr"><p><b>The longer answer.</b> Most founders should start with a $20 assistant (ChatGPT Plus or Claude Pro) and connect only email and calendar. Move to an always-on agent (Grok Bot, ChatGPT dots) once you have repeatable web tasks worth handing off. Pick the business tier the day a co-founder or employee joins.</p></div>
 
 <h2>What founders actually hand off</h2>
 <p>Founders don't need an agent that "does everything". They need one that takes the same five jobs off their plate every week:</p>
@@ -72,10 +72,10 @@ const faqs = [
  ['Can an AI agent manage my inbox safely?',`Yes, if sending stays behind your approval. Claude's Gmail connector asks before sending by default${c('cl-gws')}, and ChatGPT drafts and lets you choose to send${c('oai-rn')}. Start with read and draft access only.`],
  ['Do these agents train on my data?',`Business plans generally don't: ChatGPT Business doesn't train on workspace data${c('oai-biz2')} and Claude Team doesn't by default${c('cl-pricing')}. On Claude's personal plans, training is on unless you switch it off${c('cl-pricing')}.`],
  ['Is a free open-source agent good enough?',`OpenClaw and Hermes Agent are free and MIT-licensed${c('oc','hm')}, but you pay for the AI model and own the setup, updates and security. Good for technical founders; risky otherwise.`],
- ['What does an always-on agent cost?',`Grok Bot is included in X Premium at $30/month${c('gb-pricing')}. ChatGPT dots come with Pro ($100 or $200/month) and Business Premium${c('oai-rn','oai-pricing')}.`],
+ ['What does an always-on agent cost?',`Grok Bot is included in X Premium at $30/month${c('gb-pricing')}. ChatGPT dots come with Pro ($100, $200 or $500/month) and Business Premium${c('oai-rn','oai-pricing')}.`],
 ];
 ---
-<GuideArticle slug="best-personal-ai-agent-for-founders" kicker="For founders"
+<GuideArticle slug="best-personal-ai-agent-for-founders" updated="2026-10-21" kicker="For founders"
  title="Best Personal AI Agent for Founders (2026): Picks, Prices & Safety | AgentStackWatch"
  desc="Which personal AI agent should a founder use in 2026? ChatGPT, Claude, Grok Bot, Copilot, Manus and OpenClaw compared on inbox, research, sales follow-up and cost, with every fact sourced."
  h1="The best personal AI agent for founders (2026)"

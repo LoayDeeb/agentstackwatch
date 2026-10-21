@@ -1,5 +1,5 @@
 ---
-import Base from './Base.astro'; import Signup from '../components/Signup.astro'; import { ALL } from '../lib/cite.js'; import guides from '../lib/guides.json';
+import Base from './Base.astro'; import Signup from '../components/Signup.astro'; import { ALL } from '../lib/cite.js'; import guides from '../lib/guides.json'; import { getNews } from '../lib/news.js';
 const { slug, title, desc, h1, kicker, dek, faqs = [], used = [], related = [], updated = '2026-10-17' } = Astro.props;
 const url = `https://agentstackwatch.com/${slug}/`;
 const ld = [{"@context":"https://schema.org","@type":"FAQPage","mainEntity":faqs.map(([q,a])=>({"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":a.replace(/<a class="cite"[^>]*>\d+<\/a>/g,'').replace(/<[^>]+>/g,'')}}))},
@@ -7,16 +7,20 @@ const ld = [{"@context":"https://schema.org","@type":"FAQPage","mainEntity":faqs
  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Guides","item":"https://agentstackwatch.com/guides/"},{"@type":"ListItem","position":2,"name":h1,"item":url}]}];
 const D = new Date(updated+'T12:00:00Z').toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'});
 const more = guides.filter(g=>g.slug!==slug);
+const me = guides.find(g=>g.slug===slug) || {}; const relG = (me.rel||[]).map(s=>guides.find(g=>g.slug===s)).filter(Boolean);
+const news = (await getNews()).slice(0,3);
 ---
 <Base title={title} desc={desc} og={`guides-${slug}`} ogType="article">
 <Fragment slot="head"><link rel="canonical" href={url}/><meta name="author" content="Loay Deeb"/>
 <script type="application/ld+json" set:html={JSON.stringify(ld)}/></Fragment>
 <article class="guide ga">
 <header class="pagehead ghead"><p class="kicker"><a href="/guides/">Guides</a> · {kicker}</p><h1>{h1}</h1><p class="dek" set:html={dek}/>
-<p class="byline">By <b>Loay Deeb</b>, AI agent architect · Updated {D} · Every fact links to its source; anything we couldn't verify says <span class="unk">unknown</span>.</p></header>
+<p class="byline">By <b>Loay Deeb</b>, AI agent architect · Last checked {D} · Every fact links to its source; anything we couldn't verify says <span class="unk">unknown</span>.</p></header>
 <div class="gsign"><Signup variant="inline"/></div>
-<div class="gbody"><slot/></div>
+<div class="gbody">{me.quick && <aside class="qa" aria-label="Quick answer"><p class="qa-k">Quick answer</p><p class="qa-t">{me.quick}</p><p class="qa-d">Last checked {D}. Prices and features are linked to the vendor's own pages below.</p></aside>}<slot/></div>
 <section class="gsec" id="faq"><p class="kicker">FAQ</p><h2>Questions people ask</h2><div class="faq">{faqs.map(([q,a])=> <details open><summary>{q}</summary><p set:html={a}/></details>)}</div></section>
+{relG.length>0 && <section class="gsec grelg"><p class="kicker">Related guides</p><h2>Read next</h2><ul class="rel">{relG.map(g=> <li><a href={`/${g.slug}/`}>{g.short}</a>: {g.blurb}</li>)}</ul>
+<p class="kicker" style="margin-top:22px">Latest AI agent news</p><ul class="rel">{news.map(n=> <li><a href={`/news/${n.slug}/`}>{n.data.title}</a></li>)}<li><a href="/news/">All AI agent news →</a></li></ul></section>}
 <section class="gsec"><p class="kicker">Keep reading</p><h2>Related</h2><ul class="rel">
 <li><a href="/guide/">The Personal AI Agent Buyer's Guide (2026)</a>: eleven agents, by job, with security and cost tables.</li>
 <li><a href="/pricing/">AI agent pricing</a>: every plan, linked to the vendor's page with the date checked.</li>
@@ -38,6 +42,7 @@ const more = guides.filter(g=>g.slug!==slug);
 .gtable-wrap{overflow-x:auto;max-width:100%}.gtab{width:100%;border-collapse:collapse;font:400 14.5px/1.5 var(--sans)}.gtab th{text-align:left;font:600 11.5px/1.2 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--mut);padding:10px 12px;border-bottom:1px solid var(--ink)}
 .gtab td{padding:12px;border-bottom:1px solid var(--line);vertical-align:top;font:400 14.5px/1.5 var(--sans)}.gtab td.nm{font-weight:600}.gtab .mono{font-family:var(--mono,ui-monospace,monospace);white-space:nowrap}
 a.cite{display:inline-block;font:600 10px/1 var(--sans);color:var(--acc);background:var(--acc-s);border-radius:4px;padding:2px 4px;margin-left:3px;vertical-align:super;text-decoration:none}a.cite:hover{background:var(--acc);color:#fff}
+.qa{background:var(--acc-s);border:1px solid var(--acc);border-radius:14px;padding:16px 20px;margin:4px 0 18px}.qa p{margin:0}.qa .qa-k{font:700 11.5px/1.2 var(--sans)!important;letter-spacing:.08em;text-transform:uppercase;color:var(--acc)!important;margin-bottom:6px}.qa .qa-t{font:500 17.5px/1.55 var(--sans)!important;color:var(--ink)!important}.qa .qa-d{font:400 13px/1.4 var(--sans)!important;color:var(--mut)!important;margin-top:8px}
 .tldr{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--acc);border-radius:12px;padding:16px 20px;margin:8px 0 10px}.tldr p,.tldr li{font:400 16px/1.6 var(--sans)!important}.tldr ul{margin:6px 0 0;padding-left:18px}
 .faq details{border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin:10px 0;background:var(--card);max-width:760px}.faq summary{font:600 16px/1.4 var(--sans);cursor:pointer}.faq p{margin:10px 0 0;font:400 15.5px/1.6 var(--sans);color:var(--ink2)}
 .rel{padding-left:18px}.rel li{margin:8px 0}.rel a,.ga .muted a{text-decoration:underline}.gsrc{font-size:14px;padding-left:22px}.gsrc li{margin:6px 0;overflow-wrap:anywhere}.gsrc a{text-decoration:underline}.gctasec{text-align:center}.gctasec p{max-width:620px;margin:0 auto}

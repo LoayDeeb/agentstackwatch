@@ -6,6 +6,9 @@ import ps from '../../data/pricing-sources.json';
 const G = '16 Oct 2026', T = '17 Oct 2026', S = '18 Oct 2026', M = '19 Oct 2026', W = '20 Oct 2026', X = '21 Oct 2026';
 const OCR = t => [`oc-${t}`, `https://github.com/openclaw/openclaw/releases/tag/${t}`, `OpenClaw release notes ${t}`, T];
 const EXTRA = [
+ // Re-checked for the guide upgrade on 21 Oct 2026
+ ['ly-r','https://www.lindy.ai/pricing','Lindy pricing (re-checked: now from $49.99 per user for 5,000 credits)',X],
+ ['oai-pro-tiers','https://help.openai.com/en/articles/9793128-about-chatgpt-pro-tiers','About ChatGPT Pro tiers (Pro 100, 200, 500)',X],
  ['oai-rn','https://help.openai.com/en/articles/6825453-chatgpt-release-notes','ChatGPT release notes (OpenAI Help Center)',T],
  ['oai-biz2','https://help.openai.com/en/articles/8792828-chatgpt-business-overview','ChatGPT Business overview (re-checked)',T],
  ['cl-team2','https://support.claude.com/en/articles/9266767-what-is-the-team-plan','Claude Team plan (re-checked)',T],

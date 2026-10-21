@@ -7,12 +7,12 @@ const personal = keys.filter(k=>bySlug[k].category==='personal').map(row).join('
 const managed = keys.filter(k=>bySlug[k].category==='managed').map(row).join('');
 const sessHr = 0.08, hrs = 8*22;
 const body = `
-<div class="tldr"><p><b>Short answer.</b> For one person, an AI agent costs <b>$0–20 a month</b> for most needs, and <b>$100–200</b> if you hand it hours of work a day. For a team, budget <b>$20–30 per seat per month</b>. Open-source agents are free software, but you pay for the AI model behind them. Running your own agents on a cloud platform is metered: tokens plus compute by the hour.</p></div>
+<div class="tldr"><p><b>The longer answer.</b> For one person, an AI agent costs <b>$0–20 a month</b> for most needs, and <b>$100–200</b> if you hand it hours of work a day. For a team, budget <b>$20–30 per seat per month</b>. Open-source agents are free software, but you pay for the AI model behind them. Running your own agents on a cloud platform is metered: tokens plus compute by the hour.</p></div>
 
 <h2>The three ways you pay</h2>
 <ul>
 <li><b>Flat subscription</b> (ChatGPT, Claude, Grok Bot, Gemini, Muse): a monthly price with usage limits. Simple to budget.</li>
-<li><b>Credits</b> (Manus, Lindy): each task burns credits. Manus Pro starts at $20 for 4,000 credits${c('mn-pricing')}; Lindy starts at $29.99 for 3,000 and pauses when you run out, unless you top up at $10 per 1,000${c('ly')}.</li>
+<li><b>Credits</b> (Manus, Lindy): each task burns credits. Manus Pro starts at $20 for 4,000 credits${c('mn-pricing')}; Lindy starts at $49.99 per user for 5,000 credits and pauses when you run out, unless you top up at $10 per 1,000${c('ly')}.</li>
 <li><b>Metered</b> (agent platforms for builders): you pay model tokens plus runtime. Claude Managed Agents, for example, is model tokens plus $0.08 per session-hour${c('ps-claude-managed-agents')}.</li>
 </ul>
 
@@ -63,7 +63,7 @@ const faqs = [
  ['What does it cost to run my own AI agents in the cloud?',`Metered. Claude Managed Agents is tokens plus $0.08 per session-hour${c('ps-claude-managed-agents')}; Google's agent platform lists $0.085 per vCPU-hour${c('ps-vertex-agent-engine')}; AWS Bedrock AgentCore runtime lists $0.0895 per vCPU-hour${c('ps-bedrock-agentcore')}.`],
 ];
 ---
-<GuideArticle slug="how-much-does-an-ai-agent-cost" kicker="Cost"
+<GuideArticle slug="how-much-does-an-ai-agent-cost" updated="2026-10-21" kicker="Cost"
  title="How Much Does an AI Agent Cost? (2026 Price Table) | AgentStackWatch"
  desc="What AI agents cost in 2026: a sourced price table for ChatGPT, Claude, Grok Bot, Manus, Lindy, Gemini, Muse, OpenClaw and more, per-seat business prices, cloud agent platform rates and hidden costs."
  h1="How much does an AI agent cost? (2026)"
