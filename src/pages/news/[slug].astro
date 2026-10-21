@@ -1,0 +1,19 @@
+---
+import Base from '../../layouts/Base.astro'; import Signup from '../../components/Signup.astro';
+import { getNews } from '../../lib/news.js'; import { pdate } from '../../lib/posts.js';
+export async function getStaticPaths(){ const all = await getNews(); return all.map(p=>({params:{slug:p.slug},props:{p, more: all.filter(x=>x.slug!==p.slug).slice(0,3)}})); }
+const { p, more } = Astro.props; const { Content } = await p.render();
+const url = `https://agentstackwatch.com/news/${p.slug}/`; const iso = p.data.date.toISOString().slice(0,10);
+const ld = {"@context":"https://schema.org","@type":"NewsArticle","headline":p.data.title,"description":p.data.summary,"datePublished":iso,"dateModified":iso,"author":{"@type":"Person","name":"Loay Deeb"},"publisher":{"@type":"Organization","name":"AgentStackWatch"},"mainEntityOfPage":url};
+---
+<Base title={`${p.data.title} | AgentStackWatch`} desc={p.data.summary} ogType="article">
+<Fragment slot="head"><link rel="canonical" href={url}/><script type="application/ld+json" set:html={JSON.stringify(ld)}/></Fragment>
+<article class="post news"><header><p class="kicker"><a href="/news/">News</a></p><h1>{p.data.title}</h1><p class="dek">{p.data.summary}</p>
+<p class="byline">By <b>Loay Deeb</b> · {pdate(p.data.date)} · Source: <a href={p.data.source} target="_blank" rel="noopener">{p.data.sourceName}</a></p></header>
+<div class="prose"><Content/></div>
+<section class="nrel"><h2>Related</h2><ul>{p.data.related.map(([h,l])=> <li><a href={h}>{l}</a></li>)}<li><a href="/guides/">All our guides to personal AI agents</a></li></ul>
+{more.length>0 && <><p class="kicker">More news</p><ul>{more.map(m=> <li><a href={`/news/${m.slug}/`}>{m.data.title}</a></li>)}</ul></>}</section>
+</article>
+<Signup variant="feature" title="Get the week's agent news in one email." text="The stories that matter for people who use AI agents at work and at home, each with a source link and a short take."/>
+<style>.nrel{border-top:1px solid var(--line);margin-top:36px;padding-top:20px}.nrel h2{font:500 26px/1.2 var(--serif);margin:0 0 10px}.nrel a{text-decoration:underline}.nrel li{margin:6px 0}.news .prose{overflow-wrap:anywhere}.news .byline a{text-decoration:underline}</style>
+</Base>

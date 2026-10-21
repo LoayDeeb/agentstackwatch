@@ -1,0 +1,11 @@
+---
+import Base from '../../layouts/Base.astro'; import Signup from '../../components/Signup.astro';
+import { getNews } from '../../lib/news.js'; import { pdate } from '../../lib/posts.js';
+const items = await getNews();
+---
+<Base title="AI agent news: what changed this week and what to do about it | AgentStackWatch" desc="Short, sourced news on personal AI agents (ChatGPT, Claude, Gemini, Grok Bot, Perplexity, Manus, OpenClaw and more), each with a plain-language take for business and everyday users.">
+<Fragment slot="head"><link rel="canonical" href="https://agentstackwatch.com/news/"/><link rel="alternate" type="application/rss+xml" title="AgentStackWatch news" href="/news/rss.xml"/></Fragment>
+<header class="pagehead"><p class="kicker">News</p><h1>AI agent news</h1><p class="dek">What changed in personal AI agents, linked to the vendor's own announcement, plus our take on who should care and what to do now. Newest first. <a href="/news/rss.xml">RSS</a></p></header>
+<div class="archive">{items.map(p=> <a class="arow" href={`/news/${p.slug}/`}><span class="date">{pdate(p.data.date)}</span><span><h3>{p.data.title}</h3><p>{p.data.summary}</p></span></a>)}</div>
+<Signup variant="feature" kicker="Agent Stack Weekly · free" title="Get the week's agent news in one email." text="The stories that matter for people who use AI agents at work and at home, each with a source link and a short take."/>
+</Base>
