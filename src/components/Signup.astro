@@ -1,9 +1,9 @@
 ---
-const { variant = 'inline' } = Astro.props;
+const { variant = 'inline', kicker = 'Agent Stack Weekly · free', title = 'One email a week. Everything that shipped in AI agents.', text = 'Releases, pricing changes and breaking changes from the tracker, plus a short take from a working agent architect.' } = Astro.props;
 ---
 <section class={`signup ${variant}`}>
- <div class="sg-copy"><p class="kicker">Agent Stack Weekly · free</p><h3>One email a week. Everything that shipped in AI agents.</h3>
- <p>Releases, pricing changes and breaking changes from the tracker, plus a short take from a working agent architect.</p></div>
+ <div class="sg-copy"><p class="kicker">{kicker}</p><h3>{title}</h3>
+ <p>{text}</p></div>
  <div class="sg-form">
   <div class="bh-embed"><script is:inline async src="https://subscribe-forms.beehiiv.com/v3/loader.js" data-beehiiv-form="04a2cee6-b594-4905-820a-136cd592059d"></script></div>
   <p class="sg-alt">Form not loading? <a href="https://loays-newsletter.beehiiv.com/subscribe" target="_blank" rel="noopener">Subscribe on Beehiiv →</a></p>
