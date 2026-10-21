@@ -1,5 +1,96 @@
 [
  {
+  "slug": "e2b",
+  "name": "E2B",
+  "category": "managed",
+  "tag": "e2b@2.57.0",
+  "date": "2026-10-20",
+  "week": "2026-10-19",
+  "url": "https://github.com/e2b-dev/E2B/releases/tag/e2b%402.57.0",
+  "keywords": [
+   "migration"
+  ],
+  "excerpt": [
+   "- 999782e: Share the process kill implementation between commands and PTY, share the CLI --language option parser between template init and template migrate, and drop unused internal exports"
+  ]
+ },
+ {
+  "slug": "e2b",
+  "name": "E2B",
+  "category": "managed",
+  "tag": "@e2b/python-sdk@2.58.0",
+  "date": "2026-10-20",
+  "week": "2026-10-19",
+  "url": "https://github.com/e2b-dev/E2B/releases/tag/%40e2b/python-sdk%402.58.0",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "- d7ed073: Remove Python 3.10 compatibility shims (Python =3.11 is already required)."
+  ]
+ },
+ {
+  "slug": "e2b",
+  "name": "E2B",
+  "category": "managed",
+  "tag": "@e2b/python-sdk@2.57.0",
+  "date": "2026-10-20",
+  "week": "2026-10-19",
+  "url": "https://github.com/e2b-dev/E2B/releases/tag/%40e2b/python-sdk%402.57.0",
+  "keywords": [
+   "migration"
+  ],
+  "excerpt": [
+   "- 999782e: Share the process kill implementation between commands and PTY, share the CLI --language option parser between template init and template migrate, and drop unused internal exports"
+  ]
+ },
+ {
+  "slug": "e2b",
+  "name": "E2B",
+  "category": "managed",
+  "tag": "@e2b/desktop-python@2.7.1",
+  "date": "2026-10-20",
+  "week": "2026-10-19",
+  "url": "https://github.com/e2b-dev/E2B/releases/tag/%40e2b/desktop-python%402.7.1",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "- d7ed073: Remove Python 3.10 compatibility shims (Python =3.11 is already required)."
+  ]
+ },
+ {
+  "slug": "e2b",
+  "name": "E2B",
+  "category": "managed",
+  "tag": "@e2b/code-interpreter-python@2.11.2",
+  "date": "2026-10-20",
+  "week": "2026-10-19",
+  "url": "https://github.com/e2b-dev/E2B/releases/tag/%40e2b/code-interpreter-python%402.11.2",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "- d7ed073: Remove Python 3.10 compatibility shims (Python =3.11 is already required)."
+  ]
+ },
+ {
+  "slug": "openhands",
+  "name": "OpenHands",
+  "category": "frameworks",
+  "tag": "v1.29.0",
+  "date": "2026-10-20",
+  "week": "2026-10-19",
+  "url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.29.0",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "chore: remove merged PR artifacts by @all-hands-bot in https://github.com/OpenHands/OpenHands/pull/18709",
+   "chore: remove merged PR artifacts by @all-hands-bot in https://github.com/OpenHands/OpenHands/pull/18736"
+  ]
+ },
+ {
   "slug": "vercel-ai-sdk",
   "name": "Vercel AI SDK",
   "category": "frameworks",

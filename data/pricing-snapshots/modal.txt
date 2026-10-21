@@ -110,13 +110,14 @@ Transact through the AWS and GCP marketplace to use committed spend on Modal.
 Apply now
 Modal Sandbox + Notebooks pricing
 Only pay for what you use. Burst up to what you need without over-allocating CPU or memory in advance.
+Sandboxes are billed at non-preemptible rates of 3x list price.
 Compute costs
 button]:px-3.5 [&>button]:py-[3px]"> Per hour Per second
-CPU
+CPU (non-preemptible)
 Physical core (2 vCPU equivalent)
 $ 0.00003942 0 . 0 0 0 0 3 9 4 2 / core / sec
 *minimum of 0.125 cores per container
-Memory
+Memory (non-preemptible)
 $ 0.00000667 0 . 0 0 0 0 0 6 6 7 / GiB / sec
 GPU
 See standard pricing
@@ -186,6 +187,9 @@ Modal bills you during application load time and during the time your container 
 How are CPU and memory usage metered?
 Modal continuously records CPU and memory consumption. CPU usage is tracked in terms of fractional physical cores, allowing for higher utilization compared to providers that set minimum thresholds for core charges. Note that each physical core is equivalent to 2 vCPUs as offered by AWS or GCP.
 You'll be charged based on whichever is higher: the amount you request or the amount you actually use. Each container has a minimum request of 128 MiB of memory and 0.125 CPU cores, which you can increase if you need more resources.
+Why are Sandboxes and Functions billed at different CPU and memory rates?
+Modal Sandboxes are priced at the rate of non-preemptible Functions .
+Modal Functions are subject to preemption by default; while interruptions are rare, they can happen. CPU Sandboxes, on the other hand, are not subject to preemption. On Modal, a 3x multiplier is applied to the CPU and Memory list price for non-preemptible resources.
 How does serverless pricing differ from traditional on-demand pricing?
 Modal's serverless pricing can't be directly compared to traditional on-demand or spot instance pricing.
 Traditional cloud compute doesn't have instant spin-up times. You might spend 10+ minutes provisioning an instance and another 5 terminating it. You also have to commit to a minimum usage time per instance, usually between 1 minute and 1 hour. All this time is billable. In contrast, Modal spins containers up and down in 1-2 seconds. You don't commit to any minimum usage time per instance.

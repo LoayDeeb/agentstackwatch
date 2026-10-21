@@ -1,4 +1,4 @@
-OpenClaw — Open-Source AI Assistant OpenClaw Product Install Ecosystem Integrations Blog Podcast Community Docs Product Install Ecosystem Integrations Blog Podcast Community Docs ... .:.::-::... ..--==++xxx++==--::.. ..::--==++x+x++==--... ..::-::.:. .. .
+OpenClaw — Open-Source AI Assistant OpenClaw Product Install Ecosystem Integrations Blog Podcast Community Support Docs Product Install Ecosystem Integrations Blog Podcast Community Support Docs ... .:.::-::... ..--==++xxx++==--::.. ..::--==++x+x++==--... ..::-::.:. .. .
 . . . ..:::.:.. ..::-=+++++==--::.. ..::--==+++++=-::.. ....:::.. . . .
 . ..:::::.. .::--==+++==--.:.. ..::--==++++=--::. ...:::.:.. .
 ....:.... ..::-=+====::.. ..::==+====::.. ..:.:.:..
@@ -326,7 +326,7 @@ Pavan Davuluri, EVP Windows + Devices TechCrunch Jun 2, 2026
 Microsoft launches Scout, an OpenClaw-inspired personal assistant
 Microsoft ships a personal assistant openly inspired by OpenClaw, bringing agent workflows to the Microsoft 365 ecosystem.
 Russell Brandom
-Discord Join the community Documentation Learn the ropes GitHub View the source ClawHub Install skills and plugins
+Get support Official OpenClaw support Discord Join the community Documentation Learn the ropes GitHub View the source ClawHub Install skills and plugins
 Newsletter
 Stay in the Loop.
 Get updates on new features, integrations, and lobster wisdom.
@@ -342,7 +342,7 @@ OpenClaw
 An OpenClaw Foundation project.
 Product
 Install Showcase Integrations Docs Resources
-Blog Podcast Press Shoutouts Privacy policy Project
+Support Blog Podcast Press Shoutouts Privacy policy Project
 Foundation Security GitHub
 Open-source assistant infrastructure.
 © 2026

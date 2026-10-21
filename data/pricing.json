@@ -3,8 +3,8 @@
   "url": "https://docs.x.ai/x-subscription/pricing",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-20",
-  "last_checked": "2026-10-20",
+  "last_attempt": "2026-10-21",
+  "last_checked": "2026-10-21",
   "first_snapshot": "2026-10-16",
   "hash": "068a184c8d131dcd"
  },
@@ -92,14 +92,29 @@
      "Notee: AI Note Taker",
      "Transcribe audio to text"
     ]
+   },
+   {
+    "date": "2026-10-21",
+    "from": "da0f28802846a13e",
+    "to": "6bc3f02fa3ad1b64",
+    "removed": [
+     "296K Ratings",
+     "12.0 2d ago",
+     "Version 12.0 2d ago"
+    ],
+    "added": [
+     "308K Ratings",
+     "12.0 3d ago",
+     "Version 12.0 3d ago"
+    ]
    }
   ],
   "last_status": 200,
-  "last_attempt": "2026-10-20",
-  "last_checked": "2026-10-20",
+  "last_attempt": "2026-10-21",
+  "last_checked": "2026-10-21",
   "first_snapshot": "2026-10-16",
-  "hash": "da0f28802846a13e",
-  "last_changed": "2026-10-20"
+  "hash": "6bc3f02fa3ad1b64",
+  "last_changed": "2026-10-21"
  },
  "openclaw": {
   "url": "https://openclaw.ai/",
@@ -125,20 +140,35 @@
     "added": [
      "macOS 15+ · Apple Silicon or Intel · v2026.10.5"
     ]
+   },
+   {
+    "date": "2026-10-21",
+    "from": "c2165631fbd2615a",
+    "to": "975a118c86860e4f",
+    "removed": [
+     "OpenClaw — Open-Source AI Assistant OpenClaw Product Install Ecosystem Integrations Blog Podcast Community Docs Product Install Ecosystem Integrations Blog Podcast Community Docs ... .:.::-::... ..--==++xxx++==--::.. ..::--==++x+x++==--... ..::-::.:. .. .",
+     "Discord Join the community Documentation Learn the ropes GitHub View the source ClawHub Install skills and plugins",
+     "Blog Podcast Press Shoutouts Privacy policy Project"
+    ],
+    "added": [
+     "OpenClaw — Open-Source AI Assistant OpenClaw Product Install Ecosystem Integrations Blog Podcast Community Support Docs Product Install Ecosystem Integrations Blog Podcast Community Support Docs ... .:.::-::... ..--==++xxx++==--::.. ..::--==++x+x++==--... ..::-::.:. .. .",
+     "Get support Official OpenClaw support Discord Join the community Documentation Learn the ropes GitHub View the source ClawHub Install skills and plugins",
+     "Support Blog Podcast Press Shoutouts Privacy policy Project"
+    ]
    }
   ],
   "last_status": 200,
-  "last_attempt": "2026-10-20",
-  "last_checked": "2026-10-20",
+  "last_attempt": "2026-10-21",
+  "last_checked": "2026-10-21",
   "first_snapshot": "2026-10-16",
-  "hash": "c2165631fbd2615a",
-  "last_changed": "2026-10-20"
+  "hash": "975a118c86860e4f",
+  "last_changed": "2026-10-21"
  },
  "chatgpt-dots": {
   "url": "https://help.openai.com/en/articles/20001530-getting-started-with-your-dot",
   "history": [],
   "last_status": 403,
-  "last_attempt": "2026-10-20"
+  "last_attempt": "2026-10-21"
  },
  "hermes-agent": {
   "url": "https://hermes-agent.nousresearch.com/",
@@ -158,8 +188,8 @@
    }
   ],
   "last_status": 200,
-  "last_attempt": "2026-10-20",
-  "last_checked": "2026-10-20",
+  "last_attempt": "2026-10-21",
+  "last_checked": "2026-10-21",
   "first_snapshot": "2026-10-16",
   "hash": "0bae364fe4e76ee9",
   "last_changed": "2026-10-20"
@@ -168,8 +198,8 @@
   "url": "https://help.manus.im/en/articles/11711111-what-is-the-current-membership-pricing-for-manus",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-20",
-  "last_checked": "2026-10-20",
+  "last_attempt": "2026-10-21",
+  "last_checked": "2026-10-21",
   "first_snapshot": "2026-10-16",
   "hash": "72fe8d5cefa398ec"
  },
@@ -305,8 +335,8 @@
    }
   ],
   "last_status": 200,
-  "last_attempt": "2026-10-20",
-  "last_checked": "2026-10-20",
+  "last_attempt": "2026-10-21",
+  "last_checked": "2026-10-21",
   "first_snapshot": "2026-10-16",
   "hash": "cf261d094baf1d8d",
   "last_changed": "2026-10-20"
@@ -315,7 +345,7 @@
   "url": "https://www.perplexity.ai/hub/blog/introducing-comet-plus",
   "history": [],
   "last_status": 403,
-  "last_attempt": "2026-10-20"
+  "last_attempt": "2026-10-21"
  },
  "gemini-agent": {
   "url": "https://one.google.com/about/google-ai-plans/",
@@ -409,8 +439,8 @@
    }
   ],
   "last_status": 200,
-  "last_attempt": "2026-10-20",
-  "last_checked": "2026-10-20",
+  "last_attempt": "2026-10-21",
+  "last_checked": "2026-10-21",
   "first_snapshot": "2026-10-16",
   "hash": "a41a43561722ede4",
   "last_changed": "2026-10-17"
@@ -424,21 +454,35 @@
     "to": "15ce335d789d9d60",
     "removed": [],
     "added": []
+   },
+   {
+    "date": "2026-10-21",
+    "from": "15ce335d789d9d60",
+    "to": "1352bf417baa331c",
+    "removed": [
+     "Claude for Chrome",
+     "Mythos",
+     "Fable"
+    ],
+    "added": [
+     "Claude Tag",
+     "Mythos (including Fable)"
+    ]
    }
   ],
   "last_status": 200,
-  "last_attempt": "2026-10-20",
-  "last_checked": "2026-10-20",
+  "last_attempt": "2026-10-21",
+  "last_checked": "2026-10-21",
   "first_snapshot": "2026-10-16",
-  "hash": "15ce335d789d9d60",
-  "last_changed": "2026-10-20"
+  "hash": "1352bf417baa331c",
+  "last_changed": "2026-10-21"
  },
  "claude-managed-agents": {
   "url": "https://platform.claude.com/docs/en/about-claude/pricing",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-20",
-  "last_checked": "2026-10-20",
+  "last_attempt": "2026-10-21",
+  "last_checked": "2026-10-21",
   "first_snapshot": "2026-10-16",
   "hash": "68333a6b7f82f966"
  },
@@ -446,14 +490,14 @@
   "url": "https://help.openai.com/en/articles/20001551-agents-api-beta-faq",
   "history": [],
   "last_status": 403,
-  "last_attempt": "2026-10-20"
+  "last_attempt": "2026-10-21"
  },
  "vertex-agent-engine": {
   "url": "https://cloud.google.com/products/gemini-enterprise-agent-platform/pricing",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-20",
-  "last_checked": "2026-10-20",
+  "last_attempt": "2026-10-21",
+  "last_checked": "2026-10-21",
   "first_snapshot": "2026-10-16",
   "hash": "464295ec30b3fc48"
  },
@@ -461,8 +505,8 @@
   "url": "https://aws.amazon.com/bedrock/agentcore/pricing/",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-20",
-  "last_checked": "2026-10-20",
+  "last_attempt": "2026-10-21",
+  "last_checked": "2026-10-21",
   "first_snapshot": "2026-10-16",
   "hash": "b82863c2b3ec0512"
  },
@@ -470,8 +514,8 @@
   "url": "https://azure.microsoft.com/en-us/pricing/details/foundry-agent-service/",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-20",
-  "last_checked": "2026-10-20",
+  "last_attempt": "2026-10-21",
+  "last_checked": "2026-10-21",
   "first_snapshot": "2026-10-16",
   "hash": "74c92ddf0861d178"
  },
@@ -479,8 +523,8 @@
   "url": "https://relevanceai.com/docs/get-started/pricing",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-20",
-  "last_checked": "2026-10-20",
+  "last_attempt": "2026-10-21",
+  "last_checked": "2026-10-21",
   "first_snapshot": "2026-10-16",
   "hash": "2f131ac6e5df073b"
  },
@@ -499,8 +543,8 @@
    }
   ],
   "last_status": 200,
-  "last_attempt": "2026-10-20",
-  "last_checked": "2026-10-20",
+  "last_attempt": "2026-10-21",
+  "last_checked": "2026-10-21",
   "first_snapshot": "2026-10-16",
   "hash": "f70d2f23614e629c",
   "last_changed": "2026-10-20"
@@ -509,8 +553,8 @@
   "url": "https://www.langchain.com/pricing",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-20",
-  "last_checked": "2026-10-20",
+  "last_attempt": "2026-10-21",
+  "last_checked": "2026-10-21",
   "first_snapshot": "2026-10-16",
   "hash": "a992dda36da811ba"
  },
@@ -518,35 +562,67 @@
   "url": "https://crewai.com/pricing",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-20",
-  "last_checked": "2026-10-20",
+  "last_attempt": "2026-10-21",
+  "last_checked": "2026-10-21",
   "first_snapshot": "2026-10-16",
   "hash": "b0be8f7f3a75bcb8"
  },
  "e2b": {
   "url": "https://e2b.dev/pricing",
-  "history": [],
+  "history": [
+   {
+    "date": "2026-10-21",
+    "from": "19819d4d3c11a738",
+    "to": "b55f9f07cc709ba8",
+    "removed": [
+     "14.4K Sign up Sign in Console Book a Demo"
+    ],
+    "added": [
+     "14.5K Sign up Sign in Console Book a Demo"
+    ]
+   }
+  ],
   "last_status": 200,
-  "last_attempt": "2026-10-20",
-  "last_checked": "2026-10-20",
+  "last_attempt": "2026-10-21",
+  "last_checked": "2026-10-21",
   "first_snapshot": "2026-10-16",
-  "hash": "19819d4d3c11a738"
+  "hash": "b55f9f07cc709ba8",
+  "last_changed": "2026-10-21"
  },
  "modal": {
   "url": "https://modal.com/pricing",
-  "history": [],
+  "history": [
+   {
+    "date": "2026-10-21",
+    "from": "4e0dfcb9a4cde698",
+    "to": "1b321988d8b2cad1",
+    "removed": [
+     "CPU",
+     "Memory"
+    ],
+    "added": [
+     "Sandboxes are billed at non-preemptible rates of 3x list price.",
+     "CPU (non-preemptible)",
+     "Memory (non-preemptible)",
+     "Why are Sandboxes and Functions billed at different CPU and memory rates?",
+     "Modal Sandboxes are priced at the rate of non-preemptible Functions .",
+     "Modal Functions are subject to preemption by default; while interruptions are rare, they can happen. CPU Sandboxes, on the other hand, are not subject to preemption. On Modal, a 3x multiplier is applied to the CPU and Memory list price for non-preemptible resources."
+    ]
+   }
+  ],
   "last_status": 200,
-  "last_attempt": "2026-10-20",
-  "last_checked": "2026-10-20",
+  "last_attempt": "2026-10-21",
+  "last_checked": "2026-10-21",
   "first_snapshot": "2026-10-16",
-  "hash": "4e0dfcb9a4cde698"
+  "hash": "1b321988d8b2cad1",
+  "last_changed": "2026-10-21"
  },
  "daytona": {
   "url": "https://www.daytona.io/pricing",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-20",
-  "last_checked": "2026-10-20",
+  "last_attempt": "2026-10-21",
+  "last_checked": "2026-10-21",
   "first_snapshot": "2026-10-16",
   "hash": "172a8cc9f1cefeff"
  }
