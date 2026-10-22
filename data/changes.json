@@ -268,5 +268,95 @@
   "from": "0.2.169",
   "to": "0.2.170",
   "url": "https://github.com/anthropics/claude-agent-sdk-python/releases/tag/v0.2.170"
+ },
+ {
+  "date": "2026-10-22",
+  "slug": "hermes-agent",
+  "name": "Hermes Agent",
+  "type": "release",
+  "field": "latest_release",
+  "from": "v0.22.2",
+  "to": "v0.22.4",
+  "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v0.22.4"
+ },
+ {
+  "date": "2026-10-22",
+  "slug": "claude-agent-sdk",
+  "name": "Claude Agent SDK",
+  "type": "release",
+  "field": "latest_release",
+  "from": "v0.2.170",
+  "to": "v0.2.171",
+  "url": "https://github.com/anthropics/claude-agent-sdk-python/releases/tag/v0.2.171"
+ },
+ {
+  "date": "2026-10-22",
+  "slug": "claude-agent-sdk",
+  "name": "Claude Agent SDK",
+  "type": "release",
+  "field": "pypi_version",
+  "from": "0.2.170",
+  "to": "0.2.171",
+  "url": "https://github.com/anthropics/claude-agent-sdk-python/releases/tag/v0.2.171"
+ },
+ {
+  "date": "2026-10-22",
+  "slug": "mastra",
+  "name": "Mastra",
+  "type": "release",
+  "field": "latest_release",
+  "from": "@mastra/core@1.78.0",
+  "to": "@mastra/core@1.79.0",
+  "url": "https://github.com/mastra-ai/mastra/releases/tag/%40mastra/core%401.79.0"
+ },
+ {
+  "date": "2026-10-22",
+  "slug": "mastra",
+  "name": "Mastra",
+  "type": "release",
+  "field": "npm_version",
+  "from": "1.78.0",
+  "to": "1.79.0",
+  "url": "https://github.com/mastra-ai/mastra/releases/tag/%40mastra/core%401.79.0"
+ },
+ {
+  "date": "2026-10-22",
+  "slug": "vercel-ai-sdk",
+  "name": "Vercel AI SDK",
+  "type": "release",
+  "field": "latest_release",
+  "from": "@ai-sdk/zai@1.0.8",
+  "to": "@ai-sdk/tool-bash@1.0.0",
+  "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/tool-bash%401.0.0"
+ },
+ {
+  "date": "2026-10-22",
+  "slug": "haystack",
+  "name": "Haystack",
+  "type": "release",
+  "field": "latest_release",
+  "from": "v3.4.0",
+  "to": "v3.4.1",
+  "url": "https://github.com/deepset-ai/haystack/releases/tag/v3.4.1"
+ },
+ {
+  "date": "2026-10-22",
+  "slug": "haystack",
+  "name": "Haystack",
+  "type": "release",
+  "field": "pypi_version",
+  "from": "3.4.0",
+  "to": "3.4.1",
+  "url": "https://github.com/deepset-ai/haystack/releases/tag/v3.4.1"
+ },
+ {
+  "date": "2026-10-22",
+  "slug": "openhands",
+  "name": "OpenHands",
+  "type": "release",
+  "field": "latest_release",
+  "from": "v1.29.0",
+  "to": "v1.30.0",
+  "url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.30.0"
  }
 ]

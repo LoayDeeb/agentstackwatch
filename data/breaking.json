@@ -1,5 +1,55 @@
 [
  {
+  "slug": "openhands",
+  "name": "OpenHands",
+  "category": "frameworks",
+  "tag": "v1.30.0",
+  "date": "2026-10-22",
+  "week": "2026-10-19",
+  "url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.30.0",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "chore: remove merged PR artifacts by @all-hands-bot in https://github.com/OpenHands/OpenHands/pull/18742"
+  ]
+ },
+ {
+  "slug": "mastra",
+  "name": "Mastra",
+  "category": "frameworks",
+  "tag": "@mastra/core@1.79.0",
+  "date": "2026-10-21",
+  "week": "2026-10-19",
+  "url": "https://github.com/mastra-ai/mastra/releases/tag/%40mastra/core%401.79.0",
+  "keywords": [
+   "breaking",
+   "removed",
+   "deprecated"
+  ],
+  "excerpt": [
+   "Breaking Changes",
+   "- Agent controller sessions are keyed by sessionId (scope removed): core/controller APIs, server routes, and client-js controller.session()/session.create() signatures updated.",
+   "- querySpans() contract changed: removed model/provider filters and dropped cost, inputTruncated, outputTruncated, errorTruncated from responses (requires updated storage adapters).",
+   "- Breaking: Agent controller sessions are now addressed by their session id. Many sessions can share one resourceId, so resourceId only says whose threads and memory a session works on. (27336)"
+  ]
+ },
+ {
+  "slug": "openclaw",
+  "name": "OpenClaw",
+  "category": "personal",
+  "tag": "v2026.10.10-beta.3",
+  "date": "2026-10-21",
+  "week": "2026-10-19",
+  "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.10-beta.3",
+  "keywords": [
+   "migration"
+  ],
+  "excerpt": [
+   "- Upgrade recovery: converge app-owned plugins to the upgraded core version, restore affected agent stores including held system agents after schema-changing updates, and scope migration rollback backups to the versioned"
+  ]
+ },
+ {
   "slug": "pydantic-ai",
   "name": "Pydantic AI",
   "category": "frameworks",

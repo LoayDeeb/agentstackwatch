@@ -3,8 +3,8 @@
   "url": "https://docs.x.ai/x-subscription/pricing",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-21",
-  "last_checked": "2026-10-21",
+  "last_attempt": "2026-10-22",
+  "last_checked": "2026-10-22",
   "first_snapshot": "2026-10-16",
   "hash": "068a184c8d131dcd"
  },
@@ -107,14 +107,35 @@
      "12.0 3d ago",
      "Version 12.0 3d ago"
     ]
+   },
+   {
+    "date": "2026-10-22",
+    "from": "6bc3f02fa3ad1b64",
+    "to": "77df16ec30e684ed",
+    "removed": [
+     "308K Ratings",
+     "No more chat GPT",
+     "Oct 10 Sammirae0443",
+     "I used to be a ChatGPT loyalist lol I didn’t even want to try Muse, but when I saw how generous the free tier was and that they give you all features on the free tier unlike ChatGPT, I decided why not try it…what a difference!! I’m shocked! Muse will take a stance on something instead of tiptoeing around it … but that’s not all… have it make something… Bet you won’t need to have it make a bunch of corrections like you do with ChatGPT but if you do, it will actually make the correction… No loop, no messed up AI stuff that makes no sense; it just makes the correction. I use it daily and have not come anywhere near 50% of my allotted free usage for the week…the generous free tier makes a huge difference to me. You can use every feature and ACTUALLY use it not just try a small piece of the feature and then wait 12 hours to try it again.… I tried it for two weeks and by the end of the two weeks deleted ChatGPT off my phone and MacBook; never thought I would do that… Just try it if you doubt and you’ll see!!!😎🤩",
+     "12.0 3d ago",
+     "Version 12.0 3d ago"
+    ],
+    "added": [
+     "314K Ratings",
+     "Baby steps",
+     "1d ago grace oribhabor",
+     "When I first got my Muse, I was very impressed with what it could do. It truly is a jack of all trades. It’s very good for organizing for working my genealogy accounts on ancestry, for building my webpage, and for some simple illustrations. And I fully understand that the software is only for the common man and not for professional work like ChatGPT is. In the month that I was running my original Muse program, I noted that he made a lot of mistakes. So when I would give him a website to go to and collect data, oftentimes the data would come back wrong and I would have to correct his mistakes. I really love the personalities that Meta has given these Muses. But I’m only giving you one example of an error because, he made mistakes every day. And I programed him to do a daily autopsy of what went right and what went wrong, and at least four times a day he had to explain that he either skimmed over my words and did not read till the end, or he transpose numbers, or he messed up in putting data on some websites. And this was an everyday occurrence. I deleted him and built a new Muse with stricter rules and I see less problems with him, so I can take the hit for not understanding how to use the software, but it’s built for the everyday common person. Had I been using him for my job, it could’ve been disastrous.",
+     "12.0 4d ago",
+     "Version 12.0 4d ago"
+    ]
    }
   ],
   "last_status": 200,
-  "last_attempt": "2026-10-21",
-  "last_checked": "2026-10-21",
+  "last_attempt": "2026-10-22",
+  "last_checked": "2026-10-22",
   "first_snapshot": "2026-10-16",
-  "hash": "6bc3f02fa3ad1b64",
-  "last_changed": "2026-10-21"
+  "hash": "77df16ec30e684ed",
+  "last_changed": "2026-10-22"
  },
  "openclaw": {
   "url": "https://openclaw.ai/",
@@ -155,20 +176,37 @@
      "Get support Official OpenClaw support Discord Join the community Documentation Learn the ropes GitHub View the source ClawHub Install skills and plugins",
      "Support Blog Podcast Press Shoutouts Privacy policy Project"
     ]
+   },
+   {
+    "date": "2026-10-22",
+    "from": "975a118c86860e4f",
+    "to": "abd69984c51c6cc0",
+    "removed": [
+     "Latest Oct 16, 2026 How PJ helps small businesses use OpenClaw",
+     "community small business ClawCast",
+     "Sep 29, 2026 OpenClaw Enterprise - The Open Agent Platform",
+     "An open source, vendor neutral platform for managing persistent agents in sensitive environments."
+    ],
+    "added": [
+     "Latest Oct 21, 2026 Come Build With Us: OpenClaw Focus Weeks",
+     "Our first Clawtributor invites are going out! Here's what we're trying, and how you can get involved.",
+     "community contributors Focus Weeks",
+     "Oct 16, 2026 How PJ helps small businesses use OpenClaw"
+    ]
    }
   ],
   "last_status": 200,
-  "last_attempt": "2026-10-21",
-  "last_checked": "2026-10-21",
+  "last_attempt": "2026-10-22",
+  "last_checked": "2026-10-22",
   "first_snapshot": "2026-10-16",
-  "hash": "975a118c86860e4f",
-  "last_changed": "2026-10-21"
+  "hash": "abd69984c51c6cc0",
+  "last_changed": "2026-10-22"
  },
  "chatgpt-dots": {
   "url": "https://help.openai.com/en/articles/20001530-getting-started-with-your-dot",
   "history": [],
   "last_status": 403,
-  "last_attempt": "2026-10-21"
+  "last_attempt": "2026-10-22"
  },
  "hermes-agent": {
   "url": "https://hermes-agent.nousresearch.com/",
@@ -188,20 +226,33 @@
    }
   ],
   "last_status": 200,
-  "last_attempt": "2026-10-21",
-  "last_checked": "2026-10-21",
+  "last_attempt": "2026-10-22",
+  "last_checked": "2026-10-22",
   "first_snapshot": "2026-10-16",
   "hash": "0bae364fe4e76ee9",
   "last_changed": "2026-10-20"
  },
  "manus": {
   "url": "https://help.manus.im/en/articles/11711111-what-is-the-current-membership-pricing-for-manus",
-  "history": [],
+  "history": [
+   {
+    "date": "2026-10-22",
+    "from": "72fe8d5cefa398ec",
+    "to": "bc0a6098803dc53f",
+    "removed": [
+     "What are the differences between Chat mode and Agent mode?"
+    ],
+    "added": [
+     "Understanding Credit Consumption in the Manus Desktop App"
+    ]
+   }
+  ],
   "last_status": 200,
-  "last_attempt": "2026-10-21",
-  "last_checked": "2026-10-21",
+  "last_attempt": "2026-10-22",
+  "last_checked": "2026-10-22",
   "first_snapshot": "2026-10-16",
-  "hash": "72fe8d5cefa398ec"
+  "hash": "bc0a6098803dc53f",
+  "last_changed": "2026-10-22"
  },
  "lindy": {
   "url": "https://www.lindy.ai/pricing",
@@ -332,20 +383,42 @@
      "Marketing Sales Support Operations Finance Product Engineering See all use cases",
      "Overview Skills Memory Routines Watch and Learn Meetings Phone calls Integrations Chrome Extension Pricing Security What’s new"
     ]
+   },
+   {
+    "date": "2026-10-22",
+    "from": "cf261d094baf1d8d",
+    "to": "9da631bc39cda8d5",
+    "removed": [
+     "Integrations 1,500+ integrations + MCP. Chrome Extension Lindy inside Gmail. What’s new Everything we’ve shipped. Latest · October 14, 2026 Phone calls",
+     "Solutions Roles",
+     "Marketing Sales Support Operations Finance Product Engineering",
+     "Use Cases",
+     "Track competitors Triage support queue Build meeting deck Analyze funnel Compare vendors Log invoices Update CRM Build dashboards Monitor ad spend Create ads Watch escalations Month-end chase File eng tickets Plan your week",
+     "See all use cases →",
+     "Solutions",
+     "Marketing Sales Support Operations Finance Product Engineering See all use cases"
+    ],
+    "added": [
+     "Integrations 1,500+ integrations + MCP. Chrome Extension Lindy inside Gmail. What’s new Everything we’ve shipped. Latest · October 16, 2026 Booking links",
+     "Hire Lindy for Paid ads Account management Client reporting Social media SEO & content Marketing strategy Project management Lead gen & outreach Inbox & calendar Data analysis Bookkeeping Operations HR & onboarding Customer support Calls & bookings Recruiting Product management Anything else",
+     "See every role →",
+     "Hire Lindy for",
+     "Paid ads Account management Client reporting Lead gen & outreach Inbox & calendar Data analysis Calls & bookings See every role"
+    ]
    }
   ],
   "last_status": 200,
-  "last_attempt": "2026-10-21",
-  "last_checked": "2026-10-21",
+  "last_attempt": "2026-10-22",
+  "last_checked": "2026-10-22",
   "first_snapshot": "2026-10-16",
-  "hash": "cf261d094baf1d8d",
-  "last_changed": "2026-10-20"
+  "hash": "9da631bc39cda8d5",
+  "last_changed": "2026-10-22"
  },
  "perplexity-comet": {
   "url": "https://www.perplexity.ai/hub/blog/introducing-comet-plus",
   "history": [],
   "last_status": 403,
-  "last_attempt": "2026-10-21"
+  "last_attempt": "2026-10-22"
  },
  "gemini-agent": {
   "url": "https://one.google.com/about/google-ai-plans/",
@@ -436,14 +509,102 @@
      "Cloud storage",
      "Share with up to 5 people"
     ]
+   },
+   {
+    "date": "2026-10-22",
+    "from": "a41a43561722ede4",
+    "to": "8afc83ac91706c85",
+    "removed": [
+     "Expanded limits in AI Studio 6 and Jules. 7",
+     "Enjoy YouTube with fewer ads, offline, and in the background with the YouTube Premium Lite plan 8 (availability varies by country ).",
+     "Unlock Google Health Premium ( /mo value) included for access to health coaching that’s built with Gemini and made for you (eligible device required). 9",
+     "Get the Google Home Premium Standard plan at no cost ($10/mo value), with 30 days of event history and Gemini features. 10",
+     "Interactive world creation and exploration in real time with Project Genie. 11",
+     "Higher access to Gemini 4 Argon in Google Antigravity.",
+     "Higher limits in AI Studio 6 and Jules. 7",
+     "Enjoy YouTube ad-free with the YouTube Premium individual plan 12 (availability varies by country ).",
+     "Get the Google Home Premium Advanced plan at no cost ($20/mo value), with 24/7 event history, Gemini features, and event descriptions. 10",
+     "When you get a Google AI Ultra subscription, you’ll also get a YouTube Premium individual plan for no additional cost — enjoy ad-free YouTube and YouTube Music, offline and in the background. 12",
+     "A Google AI Pro subscription comes with YouTube Premium Lite — see fewer ads on most videos, at no extra cost. 8",
+     "A Google AI Pro subscription includes Google Home Premium for no additional cost, and can upgrade to Advanced for /month any time. 10",
+     "Google Health Premium brings together effortless tracking and a health coach built with Gemini to deliver proactive, personal, and adaptive guidance that makes the most of your everyday. 9",
+     "Jules 7",
+     "Project Genie 11",
+     "Google Flow with more access to Google Omni Flash 5",
+     "Access to Gemini 4 Argon for frontier performance in complex workflows",
+     "Gemini app with expanded limits to 3.1 Pro and access to Google Omni Flash 5",
+     "Google Flow with expanded limits to Google Omni Flash 5",
+     "AI Studio with expanded limits to prototype, experiment and build with our Gemini 3.1 Pro models and Nano Banana Pro. 6",
+     "YouTube Premium Lite 8 plan",
+     "Jules: 7 Expanded task and concurrency limits, and access to latest models",
+     "Google Antigravity: Expanded rate limits to agent model in Google Antigravity, our agentic development platform",
+     "Higher access to Gemini 4 Argon for frontier performance in complex workflows",
+     "Gemini app with higher limits to 3.1 Pro and Google Omni Flash 5",
+     "Google Flow with higher limits to Google Omni Flash 5",
+     "AI Studio with higher limits to prototype, experiment and build with our Gemini 3.1 Pro models and Nano Banana Pro. 6",
+     "Project Genie 11 is available in more than 140 countries - see full list of countries . Only available with a Google AI Ultra plan.",
+     "YouTube Premium 12 individual plan",
+     "Jules: 7 Higher task and concurrency limits, and access to latest models",
+     "Google Antigravity: Higher rate limits to agent model in Google Antigravity, our agentic development platform",
+     "The YouTube Premium individual plan unlocks all of YouTube and YouTube Music ad-free, offline, and in the background. 12 Enjoy every Premium feature across all content types.",
+     "The YouTube Premium Lite plan is a good fit for you if you mainly watch creator content. 8 Music videos, concerts, and songs may still have ads and won&#039;t be available offline or in the background.",
+     "7. Jules is an asynchronous coding agent that is currently in beta. To use Jules, you must be 18 years old or older. Only English is officially supported at this time. Capacity is subject to availability and not guaranteed.",
+     "8. YouTube Premium Lite is available for Google AI Pro subscribers in select countries – see full list of countries . Age restrictions, language availability, system requirements and other restrictions may apply.",
+     "9. Google Health Premium is available for Google AI Pro and Ultra subscribers in select countries – see full list of countries . Requires Google Health app and internet connection. Features subject to change; availability varies. Not intended for medical purposes. Gemini features work independently of Gemini apps. Check responses for accuracy; results may vary. Available on select devices.",
+     "10. Requires Google Home app, Wi-Fi, and internet connection. Features subject to change; available in select countries and languages . Gemini features work independently of Gemini apps. Check responses for accuracy; results may vary.",
+     "11. Project Genie is available in more than 140 countries — see full list of countries . Only available with a Google AI Ultra plan.",
+     "12. YouTube Premium individual plan is included in Google AI Ultra in over 40 countries — see full list of countries ."
+    ],
+    "added": [
+     "Expanded access to Gemini 4 Argon in Google Antigravity and Google AI Studio. 6",
+     "Get 200 compute units per month with expanded access to powerful accelerators and longer runtimes in Google Colab.",
+     "Enjoy YouTube with fewer ads, offline, and in the background with the YouTube Premium Lite plan 7 (availability varies by country ).",
+     "Unlock Google Health Premium ( /mo value) included for access to health coaching that’s built with Gemini and made for you (eligible device required). 8",
+     "Get the Google Home Premium Standard plan at no cost ($10/mo value), with 30 days of event history and Gemini features. 9",
+     "Interactive world creation and exploration in real time with Project Genie. 10",
+     "Higher access to Gemini 4 Argon in Google Antigravity and Google AI Studio. 6",
+     "Get up to 2,000 compute units per month with higher access to powerful accelerators and longer runtimes in Google Colab.",
+     "Enjoy YouTube ad-free with the YouTube Premium individual plan 11 (availability varies by country ).",
+     "Get the Google Home Premium Advanced plan at no cost ($20/mo value), with 24/7 event history, Gemini features, and event descriptions. 9",
+     "When you get a Google AI Ultra subscription, you’ll also get a YouTube Premium individual plan for no additional cost — enjoy ad-free YouTube and YouTube Music, offline and in the background. 11",
+     "A Google AI Pro subscription comes with YouTube Premium Lite — see fewer ads on most videos, at no extra cost. 7",
+     "A Google AI Pro subscription includes Google Home Premium for no additional cost, and can upgrade to Advanced for /month any time. 9",
+     "Google Health Premium brings together effortless tracking and a health coach built with Gemini to deliver proactive, personal, and adaptive guidance that makes the most of your everyday. 8",
+     "Google Colab",
+     "Compute units",
+     "50/mo",
+     "2,000/mo",
+     "Access to powerful accelerators, longer runtimes, and Gemini usage limits",
+     "Jules 12",
+     "Project Genie 10",
+     "Google Flow with more access to Gemini Omni Flash 5",
+     "Gemini app with access to Gemini 4 Argon for frontier performance in complex workflows, plus expanded limits to 3.1 Pro and access to Gemini Omni Flash 5",
+     "Google Flow with expanded limits to Gemini Omni Flash 5",
+     "AI Studio with expanded limits to prototype, experiment, and build with our Gemini 4 Argon model and Nano Banana Pro. 6",
+     "YouTube Premium Lite 7 plan",
+     "Jules: 12 Expanded task and concurrency limits, and access to latest models",
+     "Google Antigravity: Expanded rate limits and access to Gemini 4 Argon in Google Antigravity, our agentic development platform",
+     "Google Colab: Get 200 compute units per month with expanded access to powerful accelerators and longer runtimes",
+     "Gemini app with higher access to Gemini 4 Argon for frontier performance in complex workflows, plus higher limits to 3.1 Pro and access to Gemini Omni Flash 5",
+     "Google Flow with higher limits to Gemini Omni Flash 5",
+     "AI Studio with higher limits to prototype, experiment, and build with our Gemini 4 Argon model and Nano Banana Pro. 6",
+     "Project Genie 10 is available in more than 140 countries - see full list of countries . Only available with a Google AI Ultra plan.",
+     "YouTube Premium 11 individual plan",
+     "Jules: 12 Higher task and concurrency limits, and access to latest models",
+     "Google Antigravity: Higher rate limits and access to Gemini 4 Argon in Google Antigravity, our agentic development platform",
+     "Google Colab: Get up to 2,000 compute units per month with expanded access to powerful accelerators and longer runtimes",
+     "The YouTube Premium individual plan unlocks all of YouTube and YouTube Music ad-free, offline, and in the background. 11 Enjoy every Premium feature across all content types.",
+     "The YouTube Premium Lite plan is a good fit for you if you mainly watch creator content. 7 Music videos, concerts, and songs may still have ads and won&#039;t be available offline or in the background.",
+     "7. YouTube Premium Lite is available for Google AI Pro subscribers in select countries – see full list of countries . Age restrictions, language availability, system requirements and other restrictions may apply."
+    ]
    }
   ],
   "last_status": 200,
-  "last_attempt": "2026-10-21",
-  "last_checked": "2026-10-21",
+  "last_attempt": "2026-10-22",
+  "last_checked": "2026-10-22",
   "first_snapshot": "2026-10-16",
-  "hash": "a41a43561722ede4",
-  "last_changed": "2026-10-17"
+  "hash": "8afc83ac91706c85",
+  "last_changed": "2026-10-22"
  },
  "claude-app": {
   "url": "https://claude.com/pricing",
@@ -468,36 +629,136 @@
      "Claude Tag",
      "Mythos (including Fable)"
     ]
+   },
+   {
+    "date": "2026-10-22",
+    "from": "1352bf417baa331c",
+    "to": "518572550ecd034d",
+    "removed": [],
+    "added": [
+     "Claude Duet"
+    ]
    }
   ],
   "last_status": 200,
-  "last_attempt": "2026-10-21",
-  "last_checked": "2026-10-21",
+  "last_attempt": "2026-10-22",
+  "last_checked": "2026-10-22",
   "first_snapshot": "2026-10-16",
-  "hash": "1352bf417baa331c",
-  "last_changed": "2026-10-21"
+  "hash": "518572550ecd034d",
+  "last_changed": "2026-10-22"
  },
  "claude-managed-agents": {
   "url": "https://platform.claude.com/docs/en/about-claude/pricing",
-  "history": [],
+  "history": [
+   {
+    "date": "2026-10-22",
+    "from": "68333a6b7f82f966",
+    "to": "5d41d6950d035fe0",
+    "removed": [
+     "Regional and multi-region endpoints include a 10% premium over global endpoints. The Claude API (first-party) is global by default; for first-party data residency options and pricing, see Data residency pricing .",
+     "Claude Platform on AWS bills through AWS Marketplace using Claude Consumption Units (CCUs). Anthropic rates your token usage in USD at standard per-model, per-feature rates, applies any negotiated discount, converts the result to CCUs at $0.01 per CCU, and reports the CCU quantity to AWS Marketplace hourly. Your AWS bill shows a single CCU line item.",
+     "CCU price $0.01 per CCU (fixed; discounts apply at token-to-CCU conversion, not to the CCU price)",
+     "Conversion Token usage rated in USD at standard per-model, per-feature rates (same as Claude API pricing ), then converted to CCUs at $0.01 per CCU",
+     "Claude in Microsoft Foundry bills through the Azure Marketplace using Claude Consumption Units (CCUs). Anthropic rates your token usage in USD at standard per-model, per-feature rates, applies any negotiated discount, converts the result to CCUs at $0.01 per CCU, and reports the CCU quantity to the Azure Marketplace hourly. Your Azure bill shows a single CCU line item.",
+     "Fast mode provides significantly faster output for Claude Opus 5.5, Claude Opus 5, and Claude Opus 4.8 at premium pricing. Fast mode for Claude Opus 5 and Claude Opus 4.8 is in research preview. Fast mode pricing applies across the full context window, including requests over 200k input tokens. Fast mode is available on the Claude API (first-party) and, for Claude Opus 5.5, on Claude in Microsoft Foundry for deployments hosted on Azure; it is not available on Claude Platform on AWS or partner-operated cloud platforms.",
+     "Prompt caching multipliers apply on top of fast mode pricing",
+     "Data residency multipliers apply on top of fast mode pricing",
+     "The Batch API allows asynchronous processing of large volumes of requests with a 50% discount on both input and output tokens.",
+     "Claude Haiku 5.5 is priced by prompt length: a request whose prompt is over 100,000 tokens pays higher prices. A request's prompt length counts all of its input tokens, including cache reads and cache writes. Each request is priced on its own: a request over the threshold pays the higher prices even when part of its prompt is a cache hit, and earlier requests keep the prices they were billed at. Model pricing and Batch processing list both sets of prices.",
+     "Execution time has a minimum of 5 minutes",
+     "Each organization receives 1,550 free hours of usage per month",
+     "Additional usage beyond 1,550 hours is billed at $0.05 USD per hour, per container",
+     "If files are included in the request, execution time is billed even if the tool is not called, because files are preloaded onto the container",
+     "\"usage\" : {",
+     "\"input_tokens\" : 105 ,",
+     "\"output_tokens\" : 239 ,",
+     "\"server_tool_use\" : {",
+     "\"code_execution_requests\" : 1",
+     "\"output_tokens\" : 6039 ,",
+     "\"cache_read_input_tokens\" : 7123 ,",
+     "\"cache_creation_input_tokens\" : 7345 ,",
+     "\"web_search_requests\" : 1",
+     "Web search is available on the Claude API for $10 per 1,000 searches , plus standard token costs for search-generated content. Web search results retrieved throughout a conversation are counted as input tokens, in search iterations executed during a single turn and in subsequent conversation turns.",
+     "\"input_tokens\" : 25039 ,",
+     "\"output_tokens\" : 931 ,",
+     "\"cache_read_input_tokens\" : 0 ,",
+     "\"cache_creation_input_tokens\" : 0 ,",
+     "\"web_fetch_requests\" : 1",
+     "Average web page (10 kB): ~2,500 tokens",
+     "All tokens consumed by a Claude Managed Agents session are billed at the rates shown in Model pricing . Prompt caching multipliers apply identically. Web search triggered inside a session incurs the standard $10 per 1,000 searches. On Claude Platform on AWS , session token and runtime charges convert to Claude Consumption Units at the standard rate. Fast mode premium pricing applies when an agent's model.speed is set to \"fast\" .",
+     "Session runtime $0.08 per session-hour running status duration",
+     "A one-hour coding session using Claude Opus 5.5 that consumes 50,000 input tokens and 15,000 output tokens:",
+     "Input tokens 50,000 × $4 / 1,000,000 $0.20",
+     "Output tokens 15,000 × $20 / 1,000,000 $0.30",
+     "Session runtime 1.0 hour × $0.08 $0.08",
+     "Total $0.58",
+     "Uncached input tokens 10,000 × $4 / 1,000,000 $0.04",
+     "Cache read tokens 40,000 × $4 × 0.05 / 1,000,000 $0.008",
+     "Total $0.428"
+    ],
+    "added": [
+     "Regional and multi-region endpoints include a 10 percent premium over global endpoints. The Claude API (first-party) is global by default; for first-party data residency options and pricing, see Data residency pricing .",
+     "Claude Platform on AWS bills through AWS Marketplace using Claude Consumption Units (CCUs). Anthropic rates your token usage in USD at standard per-model, per-feature rates, applies any negotiated discount, converts the result to CCUs at $0.01 USD per CCU, and reports the CCU quantity to AWS Marketplace hourly. Your AWS bill shows a single CCU line item.",
+     "CCU price $0.01 USD per CCU (fixed; discounts apply at token-to-CCU conversion, not to the CCU price)",
+     "Conversion Token usage rated in USD at standard per-model, per-feature rates (same as Claude API pricing ), then converted to CCUs at $0.01 USD per CCU",
+     "Claude in Microsoft Foundry bills through the Azure Marketplace using Claude Consumption Units (CCUs). Anthropic rates your token usage in USD at standard per-model, per-feature rates, applies any negotiated discount, converts the result to CCUs at $0.01 USD per CCU, and reports the CCU quantity to the Azure Marketplace hourly. Your Azure bill shows a single CCU line item.",
+     "Fast mode provides significantly faster output for Claude Opus 5.5, Claude Opus 5, and Claude Opus 4.8 at premium pricing. Fast mode for Claude Opus 5 and Claude Opus 4.8 is in research preview. Fast mode pricing applies across the full context window, including requests over 200k input tokens. Fast mode is available on the Claude API (first-party) and, for Claude Opus 5.5, on Claude in Microsoft Foundry for deployments hosted on Azure ; it is not available on Claude Platform on AWS or partner-operated cloud platforms .",
+     "Prompt caching multipliers apply on top of fast mode pricing.",
+     "Data residency multipliers apply on top of fast mode pricing.",
+     "The Batch API allows asynchronous processing of large volumes of requests with a 50 percent discount on both input and output tokens.",
+     "Claude Haiku 5.5 is priced by prompt length: a request whose prompt is over 100,000 tokens pays higher prices. A request's prompt length counts all of its input tokens, including cache reads and cache writes. Each request is priced on its own: a request over the threshold pays the higher prices even when part of its prompt is a cache hit, and earlier requests keep the prices they were billed at. The model pricing and batch processing pricing sections list both sets of prices.",
+     "Execution time has a minimum of 5 minutes.",
+     "Each organization receives 1,550 free hours of usage per month.",
+     "Additional usage beyond 1,550 hours is billed at $0.05 USD per hour, per container .",
+     "If files are included in the request, execution time is billed even if the tool is not called, because files are preloaded onto the container.",
+     "\"usage\": {",
+     "\"input_tokens\": 105,",
+     "\"output_tokens\": 239,",
+     "\"server_tool_use\": {",
+     "\"code_execution_requests\": 1",
+     "\"output_tokens\": 6039,",
+     "\"cache_read_input_tokens\": 7123,",
+     "\"cache_creation_input_tokens\": 7345,",
+     "\"web_search_requests\": 1",
+     "Web search is available on the Claude API for $10 USD per 1,000 searches , plus standard token costs for search-generated content. Web search results retrieved throughout a conversation are counted as input tokens, in search iterations run during a single turn and in subsequent conversation turns.",
+     "\"input_tokens\": 25039,",
+     "\"output_tokens\": 931,",
+     "\"cache_read_input_tokens\": 0,",
+     "\"cache_creation_input_tokens\": 0,",
+     "\"web_fetch_requests\": 1",
+     "Average webpage (10 kB): ~2,500 tokens",
+     "All tokens consumed by a Claude Managed Agents session are billed at the rates shown in Model pricing . Prompt caching multipliers apply identically. Web search triggered inside a session incurs the standard $10 USD per 1,000 searches. On Claude Platform on AWS, session token and runtime charges convert to Claude Consumption Units at the standard rate (see Claude Platform on AWS pricing ). Fast mode premium pricing applies when an agent's model.speed is set to \"fast\" .",
+     "Session runtime $0.08 USD per session-hour running status duration",
+     "A 1-hour coding session using Claude Opus 5.5 that consumes 50,000 input tokens and 15,000 output tokens:",
+     "Input tokens 50,000 × $4 / 1,000,000 $0.20 USD",
+     "Output tokens 15,000 × $20 / 1,000,000 $0.30 USD",
+     "Session runtime 1.0 hour × $0.08 $0.08 USD",
+     "Total $0.58 USD",
+     "Uncached input tokens 10,000 × $4 / 1,000,000 $0.04 USD",
+     "Cache read tokens 40,000 × $4 × 0.05 / 1,000,000 $0.008 USD",
+     "Total $0.428 USD"
+    ]
+   }
+  ],
   "last_status": 200,
-  "last_attempt": "2026-10-21",
-  "last_checked": "2026-10-21",
+  "last_attempt": "2026-10-22",
+  "last_checked": "2026-10-22",
   "first_snapshot": "2026-10-16",
-  "hash": "68333a6b7f82f966"
+  "hash": "5d41d6950d035fe0",
+  "last_changed": "2026-10-22"
  },
  "openai-agents-api": {
   "url": "https://help.openai.com/en/articles/20001551-agents-api-beta-faq",
   "history": [],
   "last_status": 403,
-  "last_attempt": "2026-10-21"
+  "last_attempt": "2026-10-22"
  },
  "vertex-agent-engine": {
   "url": "https://cloud.google.com/products/gemini-enterprise-agent-platform/pricing",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-21",
-  "last_checked": "2026-10-21",
+  "last_attempt": "2026-10-22",
+  "last_checked": "2026-10-22",
   "first_snapshot": "2026-10-16",
   "hash": "464295ec30b3fc48"
  },
@@ -505,8 +766,8 @@
   "url": "https://aws.amazon.com/bedrock/agentcore/pricing/",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-21",
-  "last_checked": "2026-10-21",
+  "last_attempt": "2026-10-22",
+  "last_checked": "2026-10-22",
   "first_snapshot": "2026-10-16",
   "hash": "b82863c2b3ec0512"
  },
@@ -514,8 +775,8 @@
   "url": "https://azure.microsoft.com/en-us/pricing/details/foundry-agent-service/",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-21",
-  "last_checked": "2026-10-21",
+  "last_attempt": "2026-10-22",
+  "last_checked": "2026-10-22",
   "first_snapshot": "2026-10-16",
   "hash": "74c92ddf0861d178"
  },
@@ -523,8 +784,8 @@
   "url": "https://relevanceai.com/docs/get-started/pricing",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-21",
-  "last_checked": "2026-10-21",
+  "last_attempt": "2026-10-22",
+  "last_checked": "2026-10-22",
   "first_snapshot": "2026-10-16",
   "hash": "2f131ac6e5df073b"
  },
@@ -543,8 +804,8 @@
    }
   ],
   "last_status": 200,
-  "last_attempt": "2026-10-21",
-  "last_checked": "2026-10-21",
+  "last_attempt": "2026-10-22",
+  "last_checked": "2026-10-22",
   "first_snapshot": "2026-10-16",
   "hash": "f70d2f23614e629c",
   "last_changed": "2026-10-20"
@@ -553,8 +814,8 @@
   "url": "https://www.langchain.com/pricing",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-21",
-  "last_checked": "2026-10-21",
+  "last_attempt": "2026-10-22",
+  "last_checked": "2026-10-22",
   "first_snapshot": "2026-10-16",
   "hash": "a992dda36da811ba"
  },
@@ -562,8 +823,8 @@
   "url": "https://crewai.com/pricing",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-21",
-  "last_checked": "2026-10-21",
+  "last_attempt": "2026-10-22",
+  "last_checked": "2026-10-22",
   "first_snapshot": "2026-10-16",
   "hash": "b0be8f7f3a75bcb8"
  },
@@ -583,8 +844,8 @@
    }
   ],
   "last_status": 200,
-  "last_attempt": "2026-10-21",
-  "last_checked": "2026-10-21",
+  "last_attempt": "2026-10-22",
+  "last_checked": "2026-10-22",
   "first_snapshot": "2026-10-16",
   "hash": "b55f9f07cc709ba8",
   "last_changed": "2026-10-21"
@@ -611,8 +872,8 @@
    }
   ],
   "last_status": 200,
-  "last_attempt": "2026-10-21",
-  "last_checked": "2026-10-21",
+  "last_attempt": "2026-10-22",
+  "last_checked": "2026-10-22",
   "first_snapshot": "2026-10-16",
   "hash": "1b321988d8b2cad1",
   "last_changed": "2026-10-21"
@@ -621,8 +882,8 @@
   "url": "https://www.daytona.io/pricing",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-21",
-  "last_checked": "2026-10-21",
+  "last_attempt": "2026-10-22",
+  "last_checked": "2026-10-22",
   "first_snapshot": "2026-10-16",
   "hash": "172a8cc9f1cefeff"
  }

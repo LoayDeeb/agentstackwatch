@@ -1,13 +1,10 @@
 Pricing - Lindy Skip to main content Product What Lindy does
 Skills 40+ built in. Teach it yours. Memory Remembers you. Yours to edit. Routines Work that runs on schedule. Watch and Learn New Show it once. It takes it from there. Meetings Notes, follow-ups, a shared library. Phone calls New Hand off your phone work.
 Where it works
-Integrations 1,500+ integrations + MCP. Chrome Extension Lindy inside Gmail. What’s new Everything we’ve shipped. Latest · October 14, 2026 Phone calls
+Integrations 1,500+ integrations + MCP. Chrome Extension Lindy inside Gmail. What’s new Everything we’ve shipped. Latest · October 16, 2026 Booking links
 See how it all fits together →
-Solutions Roles
-Marketing Sales Support Operations Finance Product Engineering
-Use Cases
-Track competitors Triage support queue Build meeting deck Analyze funnel Compare vendors Log invoices Update CRM Build dashboards Monitor ad spend Create ads Watch escalations Month-end chase File eng tickets Plan your week
-See all use cases →
+Hire Lindy for Paid ads Account management Client reporting Social media SEO & content Marketing strategy Project management Lead gen & outreach Inbox & calendar Data analysis Bookkeeping Operations HR & onboarding Customer support Calls & bookings Recruiting Product management Anything else
+See every role →
 Pricing Security Enterprise Resources Resources
 Chrome Extension Case Studies Docs Blog Engineering blog
 Blog Topics
@@ -115,8 +112,8 @@ More questions? See our docs
 Start with $50 in free credits.
 Put Lindy to work in two minutes.
 Try for free No credit card required
-Solutions
-Marketing Sales Support Operations Finance Product Engineering See all use cases
+Hire Lindy for
+Paid ads Account management Client reporting Lead gen & outreach Inbox & calendar Data analysis Calls & bookings See every role
 Product
 Overview Skills Memory Routines Watch and Learn Meetings Phone calls Integrations Chrome Extension Pricing Security What’s new
 Enterprise

@@ -55,13 +55,14 @@ Study smarter
 Create insightful multi-page reports in less time in Gemini and Search. 2
 Expanded access to features and models in Gemini Notebook.
 Code faster
-Expanded limits in AI Studio 6 and Jules. 7
+Expanded access to Gemini 4 Argon in Google Antigravity and Google AI Studio. 6
+Get 200 compute units per month with expanded access to powerful accelerators and longer runtimes in Google Colab.
 Supercharge Android development with expanded limits to our best Gemini models for agentic AI-assistance in Android Studio.
 $10 in monthly Google Cloud credits from Google Developer Program.
 And more
-Enjoy YouTube with fewer ads, offline, and in the background with the YouTube Premium Lite plan 8 (availability varies by country ).
-Unlock Google Health Premium ( /mo value) included for access to health coaching that’s built with Gemini and made for you (eligible device required). 9
-Get the Google Home Premium Standard plan at no cost ($10/mo value), with 30 days of event history and Gemini features. 10
+Enjoy YouTube with fewer ads, offline, and in the background with the YouTube Premium Lite plan 7 (availability varies by country ).
+Unlock Google Health Premium ( /mo value) included for access to health coaching that’s built with Gemini and made for you (eligible device required). 8
+Get the Google Home Premium Standard plan at no cost ($10/mo value), with 30 days of event history and Gemini features. 9
 5 TB of cloud storage across Gmail, Drive, and Photos.
 Family sharing with up to five others.
 Plus other AI benefits across Google products.
@@ -83,19 +84,19 @@ Gemini in Google apps to help you proofread in Gmail and work smarter in Docs an
 Higher limits to Chrome auto browse. 4
 Unleash creativity
 Higher access to image, music, and video generation models in Gemini, Search, 2 and Google Flow, 5 plus added benefits in Google Photos (US only), like more Remix generations (US only).
-Interactive world creation and exploration in real time with Project Genie. 11
+Interactive world creation and exploration in real time with Project Genie. 10
 Study smarter
 Create insightful multi-page reports in less time in Gemini and Search. 2
 Higher access to features and models in Gemini Notebook.
 Code faster
-Higher access to Gemini 4 Argon in Google Antigravity.
-Higher limits in AI Studio 6 and Jules. 7
+Higher access to Gemini 4 Argon in Google Antigravity and Google AI Studio. 6
+Get up to 2,000 compute units per month with higher access to powerful accelerators and longer runtimes in Google Colab.
 Supercharge Android development with higher limits to our best Gemini models for agentic AI‑assistance in Android Studio.
 $40 in monthly Google Cloud credits from Google Developer Program.
 And more
-Enjoy YouTube ad-free with the YouTube Premium individual plan 12 (availability varies by country ).
-Unlock Google Health Premium ( /mo value) included for access to health coaching that’s built with Gemini and made for you (eligible device required). 9
-Get the Google Home Premium Advanced plan at no cost ($20/mo value), with 24/7 event history, Gemini features, and event descriptions. 10
+Enjoy YouTube ad-free with the YouTube Premium individual plan 11 (availability varies by country ).
+Unlock Google Health Premium ( /mo value) included for access to health coaching that’s built with Gemini and made for you (eligible device required). 8
+Get the Google Home Premium Advanced plan at no cost ($20/mo value), with 24/7 event history, Gemini features, and event descriptions. 9
 Cloud storage starting at 20 TB across Gmail, Drive, and Photos.
 Family sharing with up to five others.
 Plus other AI benefits across Google products.
@@ -228,20 +229,20 @@ Simplify your daily tasks and get help writing, organizing, and visualizing dire
 Google AI Pro and AI Ultra subscribers get premium perks
 YouTube Premium
 Enjoy the entertainment you love with fewer distractions
-When you get a Google AI Ultra subscription, you’ll also get a YouTube Premium individual plan for no additional cost — enjoy ad-free YouTube and YouTube Music, offline and in the background. 12
-A Google AI Pro subscription comes with YouTube Premium Lite — see fewer ads on most videos, at no extra cost. 8
+When you get a Google AI Ultra subscription, you’ll also get a YouTube Premium individual plan for no additional cost — enjoy ad-free YouTube and YouTube Music, offline and in the background. 11
+A Google AI Pro subscription comes with YouTube Premium Lite — see fewer ads on most videos, at no extra cost. 7
 Learn more
 Availability varies by country – see full list of countries for YouTube Premium Lite and YouTube Premium individual .
 Google Home Premium
 Supercharge your smart home devices with Gemini for simpler, smarter living
 Google AI Ultra subscribers get the Advanced plan of Google Home Premium for no extra cost. 1
-A Google AI Pro subscription includes Google Home Premium for no additional cost, and can upgrade to Advanced for /month any time. 10
+A Google AI Pro subscription includes Google Home Premium for no additional cost, and can upgrade to Advanced for /month any time. 9
 Learn more
 Only available with Google AI Pro or Google AI Ultra plans in countries where Google Home Premium is available.
 Google Health Premium
 Get personalized fitness, sleep, and health coaching, powered by Gemini
 A Google AI Ultra or AI Pro subscription includes Google Health Premium for no extra cost. 1
-Google Health Premium brings together effortless tracking and a health coach built with Gemini to deliver proactive, personal, and adaptive guidance that makes the most of your everyday. 9
+Google Health Premium brings together effortless tracking and a health coach built with Gemini to deliver proactive, personal, and adaptive guidance that makes the most of your everyday. 8
 Learn more
 Requires the Google Health app and a Pixel Watch or Fitbit device (sold separately). Only available with Google AI Pro or Google AI Ultra plans in countries where Google Health Premium is available.
 Be among the first to explore Google’s latest AI innovations
@@ -395,6 +396,17 @@ Expanded
 Higher
 Highest
 Priority access to new features
+Google Colab
+Compute units
+50/mo
+200/mo
+1,000/mo
+2,000/mo
+Access to powerful accelerators, longer runtimes, and Gemini usage limits
+More
+Expanded
+Higher
+Highest
 Google Search 2
 Access to our most capable Gemini models
 More
@@ -422,7 +434,7 @@ Complete tasks with Chrome auto browse 4
 Expanded
 Higher
 Highest
-Jules 7
+Jules 12
 Task limits
 Limited
 Expanded
@@ -460,7 +472,7 @@ More
 Expanded
 Higher
 Highest
-Project Genie 11
+Project Genie 10
 Access to interactive world model
 Playground
 Access to game generations to build & play custom games (US only)
@@ -492,22 +504,22 @@ What is included in Google AI plans?
 There are three Google AI plans that users can subscribe to: Google AI Plus, Google AI Pro, and Google AI Ultra.
 Google AI Plus gives you more access to Google AI, including:
 Gemini app with access to Gemini 3.6 Flash and limited access to Gemini Omni Flash 5
-Google Flow with more access to Google Omni Flash 5
+Google Flow with more access to Gemini Omni Flash 5
 Gemini Notebook with more access
 Gemini in Gmail and more
 400 GB of storage for Google Photos, Drive, and Gmail
 Other member benefits
 Google AI Pro gives you everything in Plus, with expanded access to Google AI, and:
-Access to Gemini 4 Argon for frontier performance in complex workflows
-Gemini app with expanded limits to 3.1 Pro and access to Google Omni Flash 5
-Google Flow with expanded limits to Google Omni Flash 5
-AI Studio with expanded limits to prototype, experiment and build with our Gemini 3.1 Pro models and Nano Banana Pro. 6
-YouTube Premium Lite 8 plan
+Gemini app with access to Gemini 4 Argon for frontier performance in complex workflows, plus expanded limits to 3.1 Pro and access to Gemini Omni Flash 5
+Google Flow with expanded limits to Gemini Omni Flash 5
+AI Studio with expanded limits to prototype, experiment, and build with our Gemini 4 Argon model and Nano Banana Pro. 6
+YouTube Premium Lite 7 plan
 Gemini Notebook with expanded access
 Google Search: 2 Get access to the Gemini 3 Pro model to unlock interactive simulations and tools to answer your most complex questions, plus Deep Search, agentic capabilities, and more
 Google Search: Early access to Personal Intelligence in AI Mode (US only)
-Jules: 7 Expanded task and concurrency limits, and access to latest models
-Google Antigravity: Expanded rate limits to agent model in Google Antigravity, our agentic development platform
+Jules: 12 Expanded task and concurrency limits, and access to latest models
+Google Antigravity: Expanded rate limits and access to Gemini 4 Argon in Google Antigravity, our agentic development platform
+Google Colab: Get 200 compute units per month with expanded access to powerful accelerators and longer runtimes
 More Remix generations and Veo 3 5 photo-to-video generations in Google Photos (US only)
 Gemini in Gmail, Docs, Vids, and more
 Google Home Premium Standard: 30 days of event history and Gemini features. Included in all markets where Google Home Premium is available. Learn more
@@ -515,15 +527,15 @@ Access to Tasks in Gemini 3
 5 TB of storage for Google Photos, Drive, and Gmail
 Other premium member benefits
 Google AI Ultra gives you a higher level of access to everything in Google AI Pro, as well as:
-Higher access to Gemini 4 Argon for frontier performance in complex workflows
-Gemini app with higher limits to 3.1 Pro and Google Omni Flash 5
-Google Flow with higher limits to Google Omni Flash 5
-AI Studio with higher limits to prototype, experiment and build with our Gemini 3.1 Pro models and Nano Banana Pro. 6
-Project Genie 11 is available in more than 140 countries - see full list of countries . Only available with a Google AI Ultra plan.
-YouTube Premium 12 individual plan
+Gemini app with higher access to Gemini 4 Argon for frontier performance in complex workflows, plus higher limits to 3.1 Pro and access to Gemini Omni Flash 5
+Google Flow with higher limits to Gemini Omni Flash 5
+AI Studio with higher limits to prototype, experiment, and build with our Gemini 4 Argon model and Nano Banana Pro. 6
+Project Genie 10 is available in more than 140 countries - see full list of countries . Only available with a Google AI Ultra plan.
+YouTube Premium 11 individual plan
 Google Search: 2 Higher access to Gemini 3 Pro model to unlock interactive simulations and tools to answers your most complex questions, plus Deep Search, agentic capabilities and more
-Jules: 7 Higher task and concurrency limits, and access to latest models
-Google Antigravity: Higher rate limits to agent model in Google Antigravity, our agentic development platform
+Jules: 12 Higher task and concurrency limits, and access to latest models
+Google Antigravity: Higher rate limits and access to Gemini 4 Argon in Google Antigravity, our agentic development platform
+Google Colab: Get up to 2,000 compute units per month with expanded access to powerful accelerators and longer runtimes
 Highest Remix generations and Veo 3 5 photo-to-video generations in Google Photos (US only)
 Gemini in Gmail, Docs, Vids, and more
 Google Home Premium Advanced: 24/7 video history, event descriptions, and more. Included in all markets where Google Home Premium is available. Learn more
@@ -548,8 +560,8 @@ Our Google AI plans give you access to video generation in Gemini and Google Flo
 What is the difference between AI Premium and a Google AI Plus plan?
 The Google AI Premium plan has a new name: Google AI Plus. It includes the same benefits like the Gemini app, Gemini Notebook, 400 GB of storage, and more.
 What’s the difference between YouTube Premium individual and YouTube Premium Lite plans?
-The YouTube Premium individual plan unlocks all of YouTube and YouTube Music ad-free, offline, and in the background. 12 Enjoy every Premium feature across all content types.
-The YouTube Premium Lite plan is a good fit for you if you mainly watch creator content. 8 Music videos, concerts, and songs may still have ads and won&#039;t be available offline or in the background.
+The YouTube Premium individual plan unlocks all of YouTube and YouTube Music ad-free, offline, and in the background. 11 Enjoy every Premium feature across all content types.
+The YouTube Premium Lite plan is a good fit for you if you mainly watch creator content. 7 Music videos, concerts, and songs may still have ads and won&#039;t be available offline or in the background.
 What’s the difference between Fitbit Premium and Google Health Premium?
 Google Health Premium replaces the former Fitbit Premium subscription with a singular place to manage and control your health data. The Google Health app simplifies and brings all of your data into one place – including your Fitbit, Google Fit, Health Connect and Apple Health data plus your personal medical records. It also introduces Google Health Coach, which is built with Gemini to be a fitness trainer, sleep coach, and health and wellness advisor, available across the Fitbit and Pixel Watch portfolio.
 Stay in the loop with Google One
@@ -563,15 +575,15 @@ Manage your plan and more with the Google One app
 5. Veo 3.1, Google Flow, and Google Flow Music are available in more than 140 countries and territories — see full list of countries for Veo 3.1 , Google Flow , and Google Flow Music .
 6. The Gemini API Additional Terms of Service and the Google Privacy Policy apply to your use of Google AI Studio. Learn more about data use .
 AI Studio is available in more than 140 countries - see full list of countries . AI Studio is only available for age 18+.
-7. Jules is an asynchronous coding agent that is currently in beta. To use Jules, you must be 18 years old or older. Only English is officially supported at this time. Capacity is subject to availability and not guaranteed.
-8. YouTube Premium Lite is available for Google AI Pro subscribers in select countries – see full list of countries . Age restrictions, language availability, system requirements and other restrictions may apply.
+7. YouTube Premium Lite is available for Google AI Pro subscribers in select countries – see full list of countries . Age restrictions, language availability, system requirements and other restrictions may apply.
 The YouTube Premium Lite plan included in this bundle won’t activate if you already have an equivalent or YouTube Premium subscription. Learn more . Already have a YouTube membership? Learn more about managing memberships .
-9. Google Health Premium is available for Google AI Pro and Ultra subscribers in select countries – see full list of countries . Requires Google Health app and internet connection. Features subject to change; availability varies. Not intended for medical purposes. Gemini features work independently of Gemini apps. Check responses for accuracy; results may vary. Available on select devices.
+8. Google Health Premium is available for Google AI Pro and Ultra subscribers in select countries – see full list of countries . Requires Google Health app and internet connection. Features subject to change; availability varies. Not intended for medical purposes. Gemini features work independently of Gemini apps. Check responses for accuracy; results may vary. Available on select devices.
 Requires a Pixel Watch or Google Health device (sold separately).
-10. Requires Google Home app, Wi-Fi, and internet connection. Features subject to change; available in select countries and languages . Gemini features work independently of Gemini apps. Check responses for accuracy; results may vary.
+9. Requires Google Home app, Wi-Fi, and internet connection. Features subject to change; available in select countries and languages . Gemini features work independently of Gemini apps. Check responses for accuracy; results may vary.
 Requires compatible smart home device(s) (sold separately).
-11. Project Genie is available in more than 140 countries — see full list of countries . Only available with a Google AI Ultra plan.
-12. YouTube Premium individual plan is included in Google AI Ultra in over 40 countries — see full list of countries .
+10. Project Genie is available in more than 140 countries — see full list of countries . Only available with a Google AI Ultra plan.
+11. YouTube Premium individual plan is included in Google AI Ultra in over 40 countries — see full list of countries .
+12. Jules is an asynchronous coding agent that is currently in beta. To use Jules, you must be 18 years old or older. Only English is officially supported at this time. Capacity is subject to availability and not guaranteed.
 13. Deep Search in Google Finance is only available in the US.
 About Google
 Google products
