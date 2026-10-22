@@ -378,5 +378,95 @@
   "from": "0.2.171",
   "to": "0.2.172",
   "url": "https://github.com/anthropics/claude-agent-sdk-python/releases/tag/v0.2.172"
+ },
+ {
+  "date": "2026-10-22",
+  "slug": "openclaw",
+  "name": "OpenClaw",
+  "type": "release",
+  "field": "latest_release",
+  "from": "v2026.10.5",
+  "to": "v2026.10.6",
+  "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.6"
+ },
+ {
+  "date": "2026-10-22",
+  "slug": "openclaw",
+  "name": "OpenClaw",
+  "type": "release",
+  "field": "npm_version",
+  "from": "2026.10.5",
+  "to": "2026.10.6",
+  "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.6"
+ },
+ {
+  "date": "2026-10-22",
+  "slug": "e2b",
+  "name": "E2B",
+  "type": "release",
+  "field": "latest_release",
+  "from": "@e2b/code-interpreter-python@2.11.2",
+  "to": "@e2b/python-sdk@2.59.0",
+  "url": "https://github.com/e2b-dev/E2B/releases/tag/%40e2b/python-sdk%402.59.0"
+ },
+ {
+  "date": "2026-10-22",
+  "slug": "e2b",
+  "name": "E2B",
+  "type": "release",
+  "field": "pypi_version",
+  "from": "2.58.0",
+  "to": "2.59.0",
+  "url": "https://github.com/e2b-dev/E2B/releases/tag/%40e2b/python-sdk%402.59.0"
+ },
+ {
+  "date": "2026-10-22",
+  "slug": "claude-agent-sdk",
+  "name": "Claude Agent SDK",
+  "type": "release",
+  "field": "latest_release",
+  "from": "v0.2.172",
+  "to": "v0.2.173",
+  "url": "https://github.com/anthropics/claude-agent-sdk-python/releases/tag/v0.2.173"
+ },
+ {
+  "date": "2026-10-22",
+  "slug": "claude-agent-sdk",
+  "name": "Claude Agent SDK",
+  "type": "release",
+  "field": "pypi_version",
+  "from": "0.2.172",
+  "to": "0.2.173",
+  "url": "https://github.com/anthropics/claude-agent-sdk-python/releases/tag/v0.2.173"
+ },
+ {
+  "date": "2026-10-22",
+  "slug": "vercel-ai-sdk",
+  "name": "Vercel AI SDK",
+  "type": "release",
+  "field": "latest_release",
+  "from": "@ai-sdk/tool-bash@1.0.0",
+  "to": "@ai-sdk/zai@3.0.39",
+  "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/zai%403.0.39"
+ },
+ {
+  "date": "2026-10-22",
+  "slug": "vercel-ai-sdk",
+  "name": "Vercel AI SDK",
+  "type": "release",
+  "field": "npm_version",
+  "from": "7.0.148",
+  "to": "7.0.150",
+  "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/zai%403.0.39"
+ },
+ {
+  "date": "2026-10-22",
+  "slug": "openhands",
+  "name": "OpenHands",
+  "type": "release",
+  "field": "latest_release",
+  "from": "v1.30.0",
+  "to": "v1.31.0",
+  "url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.31.0"
  }
 ]
