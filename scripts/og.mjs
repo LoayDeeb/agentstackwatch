@@ -4,6 +4,7 @@ import { chromium } from 'playwright'; import fs from 'node:fs';
 const E = JSON.parse(fs.readFileSync('data/entries.json','utf8')); const S = JSON.parse(fs.readFileSync('data/stats.json','utf8'));
 const fmt = n => n==null?null:n>=1e6?(n/1e6).toFixed(1)+'M':n>=1e3?(n/1e3).toFixed(1)+'k':String(n);
 const posts = fs.readdirSync('src/content/posts').filter(f=>f.endsWith('.md')).map(f=>{const t=fs.readFileSync('src/content/posts/'+f,'utf8');if(/draft:\s*true/.test(t))return null;return {slug:f.replace(/\.md$/,''),title:(t.match(/title:\s*"?(.*?)"?\n/)||[])[1]}}).filter(Boolean);
+const news = fs.readdirSync('src/content/news').filter(f=>f.endsWith('.md')).map(f=>{const t=fs.readFileSync('src/content/news/'+f,'utf8');if(/draft:\s*true/.test(t))return null;return {slug:f.replace(/\.md$/,''),title:(t.match(/title:\s*"?(.*?)"?\n/)||[])[1]}}).filter(Boolean);
 const CAT={frameworks:'Dev frameworks & SDKs',personal:'Personal agents',managed:'Managed agent platforms',research:'Research & benchmarks'};
 const esc = s => String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const fonts = ['@fontsource-variable/newsreader/files/newsreader-latin-wght-normal.woff2','@fontsource-variable/inter/files/inter-latin-wght-normal.woff2'].map(p=>'file://'+process.cwd()+'/node_modules/'+p);
@@ -15,6 +16,7 @@ body{margin:0;width:1200px;height:630px;background:#fbfaf7;font-family:I;color:#
 const jobs = [['home',{kicker:'The AI agent stack, tracked',title:'What shipped, what broke, what got cheaper.',meta:[`<b>${E.length}</b> products`]}],
  ['landscape',{kicker:'Interactive map',title:'The Agent Landscape',meta:[`<b>${E.length}</b> products`]}],['tracker',{kicker:'Reference',title:'The Tracker',meta:[`<b>${E.length}</b> products, refreshed nightly`]}],
  ...posts.map(p=>['posts-'+p.slug,{kicker:'Agent Stack Weekly',title:p.title}]),
+ ...news.map(n=>['news-'+n.slug,{kicker:'News · '+n.slug.slice(0,10),title:n.title.length>90?n.title.slice(0,88).replace(/\s+\S*$/,'')+'…':n.title}]),['news',{kicker:'News',title:'Personal AI agent news, with our take'}],
  ...JSON.parse(fs.readFileSync('src/lib/guides.json','utf8')).map(g=>['guides-'+g.slug,{kicker:'Guide · '+g.kicker,title:g.short}]),
  ...[['guide',"Free · The 2026 guide","The Personal AI Agent Buyer's Guide"],['guides','Guides','Guides to personal AI agents'],['pricing','Pricing','What AI agents cost'],['compare','Compare','AI agents, side by side'],
    ['breaking','Breaking changes','What broke this week in AI agents'],['changes','Changelog','What changed this week'],['featured','Featured','Featured listings'],['sponsor','Sponsor','Reach people choosing AI agents'],
