@@ -358,5 +358,25 @@
   "from": "v1.29.0",
   "to": "v1.30.0",
   "url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.30.0"
+ },
+ {
+  "date": "2026-10-22",
+  "slug": "claude-agent-sdk",
+  "name": "Claude Agent SDK",
+  "type": "release",
+  "field": "latest_release",
+  "from": "v0.2.171",
+  "to": "v0.2.172",
+  "url": "https://github.com/anthropics/claude-agent-sdk-python/releases/tag/v0.2.172"
+ },
+ {
+  "date": "2026-10-22",
+  "slug": "claude-agent-sdk",
+  "name": "Claude Agent SDK",
+  "type": "release",
+  "field": "pypi_version",
+  "from": "0.2.171",
+  "to": "0.2.172",
+  "url": "https://github.com/anthropics/claude-agent-sdk-python/releases/tag/v0.2.172"
  }
 ]
