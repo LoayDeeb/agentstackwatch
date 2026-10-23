@@ -468,5 +468,45 @@
   "from": "v1.30.0",
   "to": "v1.31.0",
   "url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.31.0"
+ },
+ {
+  "date": "2026-10-23",
+  "slug": "hermes-agent",
+  "name": "Hermes Agent",
+  "type": "release",
+  "field": "latest_release",
+  "from": "v0.22.4",
+  "to": "v0.22.5",
+  "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v0.22.5"
+ },
+ {
+  "date": "2026-10-23",
+  "slug": "pydantic-ai",
+  "name": "Pydantic AI",
+  "type": "release",
+  "field": "latest_release",
+  "from": "v2.59.0",
+  "to": "v2.60.0",
+  "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.60.0"
+ },
+ {
+  "date": "2026-10-23",
+  "slug": "pydantic-ai",
+  "name": "Pydantic AI",
+  "type": "release",
+  "field": "pypi_version",
+  "from": "2.59.0",
+  "to": "2.60.0",
+  "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.60.0"
+ },
+ {
+  "date": "2026-10-23",
+  "slug": "openhands",
+  "name": "OpenHands",
+  "type": "release",
+  "field": "latest_release",
+  "from": "v1.31.0",
+  "to": "v1.32.0",
+  "url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.32.0"
  }
 ]

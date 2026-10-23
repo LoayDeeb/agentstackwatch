@@ -1,5 +1,54 @@
 [
  {
+  "slug": "hermes-agent",
+  "name": "Hermes Agent",
+  "category": "personal",
+  "tag": "v0.22.5",
+  "date": "2026-10-23",
+  "week": "2026-10-19",
+  "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v0.22.5",
+  "keywords": [
+   "migration"
+  ],
+  "excerpt": [
+   "Also in the window, undocumented here on purpose: Nous sign-in reworked (every sign-in is the plain device login, the free-tier guest hands over to your account, the result shows who signed in, connectors offer sign-in i"
+  ]
+ },
+ {
+  "slug": "openhands",
+  "name": "OpenHands",
+  "category": "frameworks",
+  "tag": "v1.32.0",
+  "date": "2026-10-23",
+  "week": "2026-10-19",
+  "url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.32.0",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "chore: remove merged PR artifacts by @all-hands-bot in https://github.com/OpenHands/OpenHands/pull/18845"
+  ]
+ },
+ {
+  "slug": "pydantic-ai",
+  "name": "Pydantic AI",
+  "category": "frameworks",
+  "tag": "v2.60.0",
+  "date": "2026-10-23",
+  "week": "2026-10-19",
+  "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.60.0",
+  "keywords": [
+   "breaking",
+   "deprecated"
+  ],
+  "excerpt": [
+   "Deprecate RetryPromptPart in favor of ToolReturnPart(outcome='retried') and RetryFeedbackPart by @dsfaccini in https://github.com/pydantic/pydantic-ai/pull/8094",
+   "Deprecate OpenAIDecisionsProvider and let OpenAIDecisionsModel take OpenAIProvider by @DouweM in https://github.com/pydantic/pydantic-ai/pull/10951",
+   "Keep tool returns shaped like media markers from breaking StepPersistence snapshots, and fix SqliteMediaStore, DiskMediaStore, MongoMediaStore and S3MediaStore edge cases by @mpfaffenberger in https://github.com/pydantic",
+   "Filter GitHub tools on readOnlyHint under read_only=True, reject 'oauth', and deprecate plain http:// URLs by @mpfaffenberger in https://github.com/pydantic/pydantic-ai/pull/10815"
+  ]
+ },
+ {
   "slug": "e2b",
   "name": "E2B",
   "category": "managed",
