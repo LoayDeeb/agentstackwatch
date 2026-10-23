@@ -508,5 +508,95 @@
   "from": "v1.31.0",
   "to": "v1.32.0",
   "url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.32.0"
+ },
+ {
+  "date": "2026-10-23",
+  "slug": "langgraph",
+  "name": "LangGraph",
+  "type": "release",
+  "field": "latest_release",
+  "from": "cli==0.4.37",
+  "to": "sdk==0.4.9",
+  "url": "https://github.com/langchain-ai/langgraph/releases/tag/sdk%3D%3D0.4.9"
+ },
+ {
+  "date": "2026-10-23",
+  "slug": "google-adk",
+  "name": "Google ADK",
+  "type": "release",
+  "field": "latest_release",
+  "from": "v2.12.0",
+  "to": "v2.13.0",
+  "url": "https://github.com/google/adk-python/releases/tag/v2.13.0"
+ },
+ {
+  "date": "2026-10-23",
+  "slug": "google-adk",
+  "name": "Google ADK",
+  "type": "release",
+  "field": "pypi_version",
+  "from": "2.12.0",
+  "to": "2.13.0",
+  "url": "https://github.com/google/adk-python/releases/tag/v2.13.0"
+ },
+ {
+  "date": "2026-10-23",
+  "slug": "crewai",
+  "name": "CrewAI",
+  "type": "release",
+  "field": "latest_release",
+  "from": "1.15.28",
+  "to": "1.15.29",
+  "url": "https://github.com/crewAIInc/crewAI/releases/tag/1.15.29"
+ },
+ {
+  "date": "2026-10-23",
+  "slug": "crewai",
+  "name": "CrewAI",
+  "type": "release",
+  "field": "pypi_version",
+  "from": "1.15.28",
+  "to": "1.15.29",
+  "url": "https://github.com/crewAIInc/crewAI/releases/tag/1.15.29"
+ },
+ {
+  "date": "2026-10-23",
+  "slug": "vercel-ai-sdk",
+  "name": "Vercel AI SDK",
+  "type": "release",
+  "field": "latest_release",
+  "from": "@ai-sdk/zai@3.0.39",
+  "to": "@ai-sdk/harness-pi@1.0.166",
+  "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/harness-pi%401.0.166"
+ },
+ {
+  "date": "2026-10-23",
+  "slug": "vercel-ai-sdk",
+  "name": "Vercel AI SDK",
+  "type": "release",
+  "field": "npm_version",
+  "from": "7.0.150",
+  "to": "7.0.152",
+  "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/harness-pi%401.0.166"
+ },
+ {
+  "date": "2026-10-23",
+  "slug": "openhands",
+  "name": "OpenHands",
+  "type": "release",
+  "field": "latest_release",
+  "from": "v1.32.0",
+  "to": "v1.33.0",
+  "url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.33.0"
+ },
+ {
+  "date": "2026-10-23",
+  "slug": "goose",
+  "name": "Goose",
+  "type": "release",
+  "field": "latest_release",
+  "from": "v1.55.0",
+  "to": "v1.56.0",
+  "url": "https://github.com/aaif-goose/goose/releases/tag/v1.56.0"
  }
 ]

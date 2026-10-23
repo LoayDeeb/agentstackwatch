@@ -1,5 +1,25 @@
 [
  {
+  "slug": "google-adk",
+  "name": "Google ADK",
+  "category": "frameworks",
+  "tag": "v2.13.0",
+  "date": "2026-10-23",
+  "week": "2026-10-19",
+  "url": "https://github.com/google/adk-python/releases/tag/v2.13.0",
+  "keywords": [
+   "BREAKING CHANGE",
+   "breaking",
+   "deprecated"
+  ],
+  "excerpt": [
+   "Breaking changes",
+   "⚠ BREAKING CHANGES",
+   "telemetry: deprecate call_llm span and OpenTelemetry 1.36 GenAI semconv",
+   "mark Sequential/Parallel/Loop agents deprecated in README (c9f53a6)"
+  ]
+ },
+ {
   "slug": "hermes-agent",
   "name": "Hermes Agent",
   "category": "personal",
@@ -15,6 +35,21 @@
   ]
  },
  {
+  "slug": "langgraph",
+  "name": "LangGraph",
+  "category": "frameworks",
+  "tag": "sdk==0.4.9",
+  "date": "2026-10-23",
+  "week": "2026-10-19",
+  "url": "https://github.com/langchain-ai/langgraph/releases/tag/sdk%3D%3D0.4.9",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "chore(deps): remove precautionary third-party upper bounds (9390)"
+  ]
+ },
+ {
   "slug": "openhands",
   "name": "OpenHands",
   "category": "frameworks",
@@ -27,6 +62,22 @@
   ],
   "excerpt": [
    "chore: remove merged PR artifacts by @all-hands-bot in https://github.com/OpenHands/OpenHands/pull/18845"
+  ]
+ },
+ {
+  "slug": "openhands",
+  "name": "OpenHands",
+  "category": "frameworks",
+  "tag": "v1.33.0",
+  "date": "2026-10-23",
+  "week": "2026-10-19",
+  "url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.33.0",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "docs: remove beta badge from README by @jpshackelford in https://github.com/OpenHands/OpenHands/pull/18176",
+   "chore: remove merged PR artifacts by @all-hands-bot in https://github.com/OpenHands/OpenHands/pull/18853"
   ]
  },
  {
