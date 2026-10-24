@@ -26,7 +26,7 @@ const moreOn=more.some(([h])=>isOn(h));
 <meta property="og:type" content={ogType}/><meta property="og:url" content={pageUrl}/>
 <link rel="alternate" type="application/rss+xml" title="AgentStackWatch" href="/rss.xml"/><link rel="icon" href="/favicon.svg"/>
 <script is:inline>document.documentElement.dataset.theme=localStorage.theme||'light'</script>
-<link rel="stylesheet" href="/style.css"/>{siteLd.length>0 && <script type="application/ld+json" set:html={JSON.stringify(siteLd)}/>}<slot name="head"/></head>
+<link rel="stylesheet" href="/style.css?v=2026-10-24"/>{siteLd.length>0 && <script type="application/ld+json" set:html={JSON.stringify(siteLd)}/>}<slot name="head"/></head>
 <body>
 <header class="mast"><div class="shell mrow">
  <a class="brand" href="/"><svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true"><circle cx="11" cy="11" r="10" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="11" cy="11" r="4" fill="var(--acc)"/></svg>AgentStack<i>Watch</i></a>
