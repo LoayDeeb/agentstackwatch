@@ -23,7 +23,7 @@ const costs = [
  ['OpenClaw / Hermes Agent',`$0 software${c('oc3','hm3')}`,`Your AI model bill`,`Hermes has optional paid Nous Portal tiers; prices ${U}${c('hm3')}.`],
 ];
 const body = `
-<div class="tldr"><p><b>The longer answer.</b> Most people should start with a $20 assistant: ChatGPT Plus if you want it to book and fill in forms for you, Claude if you mainly want help with Gmail and your calendar. Already paying Google for storage? Google AI Pro at $19.99 adds Gemini. Only pay $30 or more for an always-on agent like Grok Bot once you have errands worth handing off every week.</p></div>
+<div class="tldr"><p><b>The longer answer.</b> Most people should start with a $20 assistant: ChatGPT Plus if you want an agent (ChatGPT Work) that hands back finished documents and can finish tasks on websites you sign in to, asking before any booking or payment, Claude if you mainly want help with Gmail and your calendar. Already paying Google for storage? Google AI Pro at $19.99 adds Gemini. Only pay $30 or more for an always-on agent like Grok Bot once you have errands worth handing off every week.</p></div>
 
 <h2>What an everyday person actually wants</h2>
 <p>Forget "an AI that does everything". At home, people hand off the same handful of jobs:</p>
@@ -98,7 +98,7 @@ ${costs.map(([a,b,p,w])=>`<tr><td data-l="Product" class="nm">${a}</td><td data-
 <p>For the full breakdown of eleven agents, including the "for everyday life" track, read <a href="/guide/#life">the buyer's guide</a>.</p>
 `;
 const faqs = [
- ['What is the best AI personal assistant in 2026?',`For most people, a $20/month plan: ChatGPT Plus${c('oai-plus')} if you want it to book things and fill in forms, or Claude Pro${c('cl-pricing3')} if you mostly want help with Gmail and your calendar. Google AI Pro ($19.99/month) is a good pick if you already pay Google for storage${c('g-plans3')}.`],
+ ['What is the best AI personal assistant in 2026?',`For most people, a $20/month plan: ChatGPT Plus${c('oai-plus')} if you want an agent, ChatGPT Work, that can finish tasks on websites you sign in to and asks before any booking or payment${c('oai-rn3')}, or Claude Pro${c('cl-pricing3')} if you mostly want help with Gmail and your calendar. Google AI Pro ($19.99/month) is a good pick if you already pay Google for storage${c('g-plans3')}.`],
  ['Is there a free AI agent for personal use?',`Yes. Claude Free includes Gmail and Calendar connectors and memory${c('cl-pricing3','cl-gws3')}, ChatGPT restaurant reservations work on every plan${c('oai-rn3')}, and Muse has a free tier with a usage limit${c('mu3')}. OpenClaw and Hermes Agent are free software, but you pay for the AI model${c('oc3','hm3')}.`],
  ['Can an AI agent book restaurants or appointments for me?',`ChatGPT can find and book restaurant times through OpenTable, Resy and Yelp, and ChatGPT Work on Plus and Pro can book things like a DMV appointment on sites you sign in to. It asks before a reservation or payment${c('oai-rn3')}.`],
  ['Is it safe to give an AI agent my email?',`It's reasonable if sending stays behind your approval. Claude asks before sending by default${c('cl-gws3')}. Connect only what a task needs and avoid open-ended "handle everything" requests, as OpenAI advises${c('oai-agent3')}.`],
