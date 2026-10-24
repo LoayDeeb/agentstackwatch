@@ -1,11 +1,6 @@
-Pricing - Lindy Skip to main content Product What Lindy does
-Skills 40+ built in. Teach it yours. Memory Remembers you. Yours to edit. Routines Work that runs on schedule. Watch and Learn New Show it once. It takes it from there. Meetings Notes, follow-ups, a shared library. Phone calls New Hand off your phone work.
-Where it works
-Integrations 1,500+ integrations + MCP. Chrome Extension Lindy inside Gmail. What’s new Everything we’ve shipped. Latest · October 16, 2026 Booking links
-See how it all fits together →
-Hire Lindy for Paid ads Account management Client reporting Social media SEO & content Marketing strategy Project management Lead gen & outreach Inbox & calendar Data analysis Bookkeeping Operations HR & onboarding Customer support Calls & bookings Recruiting Product management Anything else
+Pricing - Lindy Skip to main content Hire Lindy for Paid ads Account management Client reporting Social media SEO & content Marketing strategy Project management Lead gen & outreach Inbox & calendar Data analysis Bookkeeping Operations HR & onboarding Customer support Calls & bookings Recruiting Product management Anything else
 See every role →
-Pricing Security Enterprise Resources Resources
+Integrations Pricing Security Enterprise Resources Resources
 Chrome Extension Case Studies Docs Blog Engineering blog
 Blog Topics
 AI Productivity AI Automation AI Tools AI Agents
@@ -115,7 +110,7 @@ Try for free No credit card required
 Hire Lindy for
 Paid ads Account management Client reporting Lead gen & outreach Inbox & calendar Data analysis Calls & bookings See every role
 Product
-Overview Skills Memory Routines Watch and Learn Meetings Phone calls Integrations Chrome Extension Pricing Security What’s new
+Integrations Pricing Security Chrome Extension What’s new
 Enterprise
 Case Studies Contact Sales
 Resources

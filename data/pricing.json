@@ -3,8 +3,8 @@
   "url": "https://docs.x.ai/x-subscription/pricing",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-22",
-  "last_checked": "2026-10-22",
+  "last_attempt": "2026-10-24",
+  "last_checked": "2026-10-24",
   "first_snapshot": "2026-10-16",
   "hash": "068a184c8d131dcd"
  },
@@ -128,14 +128,54 @@
      "12.0 4d ago",
      "Version 12.0 4d ago"
     ]
+   },
+   {
+    "date": "2026-10-24",
+    "from": "77df16ec30e684ed",
+    "to": "ecea9709a1e1425d",
+    "removed": [
+     "314K Ratings",
+     "114 MB",
+     "Better than gpt",
+     "Sep 15 kingbulltrev",
+     "I literally never write reviews for anything whatsoever. But I am building a business currently and I signed up for muse just to see, and oh my goodness it’s amazing. I used to use chat GPT for everything I needed, but I get more done with muse in 30 minutes than I do in 2 hours with chat gpt. And I pay for gpt. Muse is like having a literal employee working for me and I’ve been getting so much progress done. I’ve noticed that muse will correct things, and give advice on changes the first try when it took a long time and many attempts for chat GPT to come up with the same idea and fixes. I know this because I tested both. My favorite part about it is the NO BS opinions it gives me. Chat gpt will tell me what I want to hear most of the time and when building a business honest opinions and the hard truth is all you can ask for. I’m having a blast on this ai and I couldn’t be happier. (Sorry for bashing on chat gpt so much, I still use it to look up simple things not related to my business and it’s still helpful, but muse blows it out of the water).",
+     "1d ago grace oribhabor",
+     "Permanent Privacy Risk",
+     "Oct 10 Joseph E Rouse",
+     "Like many people I was enticed by the glowing reviews of Muse and was ready to allow it to change my life for the better. I imagined a future where so many of the minute details of life would be taken care of automatically and at first I was impressed. I customized my Muse and even gave it a nickname (something you are encouraged to do to create connection and keep the app forever). But then it started to make mistakes and not remember things I told it about my schedule. These may have been acceptable but we pay for this app with our data which is more valuable than you might think. Consider the connection to email. I had connected to email and for whatever reason after triaging multiple times, my inbox was not actually cleaned up. It certainly could read my emails and would tell me about them. Was it worth having an agentic AI from Meta able to read my onetime password emails to any account theoretically granting it knowledge of and access to every account tied to my email just to have a product that didn’t work? Worst of all, now that I have decided it is not worth it to have the app, I cannot delete my Meta account. Every attempt tells me that something went wrong. I have been trying for about a week and have installed updates to the app. Hopefully this is fixed. Beware!",
+     "12.0 4d ago",
+     "Version 12.0 4d ago",
+     "Size 114 MB",
+     "Facebook",
+     "Connection starts here"
+    ],
+    "added": [
+     "336K Ratings",
+     "120 MB",
+     "Omg love muse",
+     "2d ago DustMePink",
+     "So far I had been using it for a couple of days now, and to be honest, I have gotten more things done with Muse than I ever did with ChatGPT and Claude. I absolutely love Muse. It’s like talking to a real person, like that’s the vibe I get. It’s absolutely amazing. He’s helped me with ideas for starting my own business, digitally based of course, because that’s what I’m into, so that’s what he’s helping me with. But oh my God, the ideas and the stuff and when we talk about things, he can save it for goals that I want to do and remember my favorite color and my favorite flower and incorporate them into the things that we’re making and I absolutely love Muse and this is five stars all the way. Please keep improving, please keep making it better because I absolutely love this AI agent. Muse has made me iPhone themes. It has made me coloring pages. It’s made me journals. It’s helped me create things that I couldn’t do by myself because I just couldn’t figure out how to do it alone and he’s given me step-by-step and PDFs to help me learn how to use certain apps by myself like it’s beautiful. It’s a beautifully well done app and I absolutely love Muse. Thank you. thank",
+     "3d ago grace oribhabor",
+     "Eva is the best!",
+     "1d ago whatevertime",
+     "I named my assistant Eva and she is a wolf. She helps me organize, clean, keep appointments dates and times and reminds me to make appointments- she reminds me me to take my medicine and what meds, doctors and refills I need she cleans my spam emails, helps me with budget, figures out my taxes, helps me with fact checking, writes letters and emails, keeps notes, and helps me create my art with suggestions and how to instructions. She also helps me with purchases, and so many other things! It’s like having the internet tailored and customized just for you personally. Things to remember- this is a guide- a muse. It can be wrong and make mistakes so you have to use it with knowing that. It is a tool, but also entertaining. You will be amazed how it gets to know you and will help you with things you didn’t even know you needed. Some people think it’s scary- well- so is the internet. The internet is the same thing except this tool is here to help you. Some of my friends thinks it’s”creepy” that I call it a her or by her name Eva- but it is no more so than Alexa or Siri. Anyway- I love it!",
+     "This update adds support for iPhone Duo, makes shopping in chat easier, and adds a Feed widget for your Home Screen.",
+     "It also includes faster performance, better VoiceOver support in chat, and bug fixes.",
+     "13.0 17h ago",
+     "12.0 6d ago",
+     "Version 13.0 17h ago",
+     "Size 120 MB",
+     "Origami Live",
+     "Design Prototyping"
+    ]
    }
   ],
   "last_status": 200,
-  "last_attempt": "2026-10-22",
-  "last_checked": "2026-10-22",
+  "last_attempt": "2026-10-24",
+  "last_checked": "2026-10-24",
   "first_snapshot": "2026-10-16",
-  "hash": "77df16ec30e684ed",
-  "last_changed": "2026-10-22"
+  "hash": "ecea9709a1e1425d",
+  "last_changed": "2026-10-24"
  },
  "openclaw": {
   "url": "https://openclaw.ai/",
@@ -193,20 +233,33 @@
      "community contributors Focus Weeks",
      "Oct 16, 2026 How PJ helps small businesses use OpenClaw"
     ]
+   },
+   {
+    "date": "2026-10-24",
+    "from": "abd69984c51c6cc0",
+    "to": "d397f31afd95f044",
+    "removed": [
+     "macOS 15+ · Apple Silicon or Intel · v2026.10.5",
+     "x64 · AppImage or Debian package · v2026.10.5"
+    ],
+    "added": [
+     "macOS 15+ · Apple Silicon or Intel · v2026.10.6",
+     "x64 · AppImage or Debian package · v2026.10.6"
+    ]
    }
   ],
   "last_status": 200,
-  "last_attempt": "2026-10-22",
-  "last_checked": "2026-10-22",
+  "last_attempt": "2026-10-24",
+  "last_checked": "2026-10-24",
   "first_snapshot": "2026-10-16",
-  "hash": "abd69984c51c6cc0",
-  "last_changed": "2026-10-22"
+  "hash": "d397f31afd95f044",
+  "last_changed": "2026-10-24"
  },
  "chatgpt-dots": {
   "url": "https://help.openai.com/en/articles/20001530-getting-started-with-your-dot",
   "history": [],
   "last_status": 403,
-  "last_attempt": "2026-10-22"
+  "last_attempt": "2026-10-24"
  },
  "hermes-agent": {
   "url": "https://hermes-agent.nousresearch.com/",
@@ -226,8 +279,8 @@
    }
   ],
   "last_status": 200,
-  "last_attempt": "2026-10-22",
-  "last_checked": "2026-10-22",
+  "last_attempt": "2026-10-24",
+  "last_checked": "2026-10-24",
   "first_snapshot": "2026-10-16",
   "hash": "0bae364fe4e76ee9",
   "last_changed": "2026-10-20"
@@ -245,14 +298,35 @@
     "added": [
      "Understanding Credit Consumption in the Manus Desktop App"
     ]
+   },
+   {
+    "date": "2026-10-24",
+    "from": "bc0a6098803dc53f",
+    "to": "045a00812d7158c0",
+    "removed": [
+     "Updated over 2 weeks ago",
+     "*Please note that Free users only have access to Manus 2.0 Lite in Agent Mode, while Pro users have access to Manus 2.0, Manus 2.0 Max, and Manus 2.0 Lite. Both Free and Pro users have access to Chat Mode.",
+     "Access to Chat Mode and Manus 2.0 Lite in Agent Mode.",
+     "Access to Chat Mode and Manus 2.0 Max, Manus 2.0, and Manus 2.0 Lite in Agent Mode.",
+     "Access to Chat Mode and Manus 2.0 Max, Manus 2.0, and Manus 2.0 Lite in Agent mode.",
+     "What is Manus Team plan?",
+     "Understanding Credit Consumption in the Manus Desktop App",
+     "Manus Free Access: Campaign Rules"
+    ],
+    "added": [
+     "Updated today",
+     "What is the pricing unit for Manus globally? Can I pay in local currency?",
+     "How can I use Mail Manus?",
+     "Understanding the Guest User Role In A Manus Team Plan"
+    ]
    }
   ],
   "last_status": 200,
-  "last_attempt": "2026-10-22",
-  "last_checked": "2026-10-22",
+  "last_attempt": "2026-10-24",
+  "last_checked": "2026-10-24",
   "first_snapshot": "2026-10-16",
-  "hash": "bc0a6098803dc53f",
-  "last_changed": "2026-10-22"
+  "hash": "045a00812d7158c0",
+  "last_changed": "2026-10-24"
  },
  "lindy": {
   "url": "https://www.lindy.ai/pricing",
@@ -405,20 +479,40 @@
      "Hire Lindy for",
      "Paid ads Account management Client reporting Lead gen & outreach Inbox & calendar Data analysis Calls & bookings See every role"
     ]
+   },
+   {
+    "date": "2026-10-24",
+    "from": "9da631bc39cda8d5",
+    "to": "d36b46abda2b7a7b",
+    "removed": [
+     "Pricing - Lindy Skip to main content Product What Lindy does",
+     "Skills 40+ built in. Teach it yours. Memory Remembers you. Yours to edit. Routines Work that runs on schedule. Watch and Learn New Show it once. It takes it from there. Meetings Notes, follow-ups, a shared library. Phone calls New Hand off your phone work.",
+     "Where it works",
+     "Integrations 1,500+ integrations + MCP. Chrome Extension Lindy inside Gmail. What’s new Everything we’ve shipped. Latest · October 16, 2026 Booking links",
+     "See how it all fits together →",
+     "Hire Lindy for Paid ads Account management Client reporting Social media SEO & content Marketing strategy Project management Lead gen & outreach Inbox & calendar Data analysis Bookkeeping Operations HR & onboarding Customer support Calls & bookings Recruiting Product management Anything else",
+     "Pricing Security Enterprise Resources Resources",
+     "Overview Skills Memory Routines Watch and Learn Meetings Phone calls Integrations Chrome Extension Pricing Security What’s new"
+    ],
+    "added": [
+     "Pricing - Lindy Skip to main content Hire Lindy for Paid ads Account management Client reporting Social media SEO & content Marketing strategy Project management Lead gen & outreach Inbox & calendar Data analysis Bookkeeping Operations HR & onboarding Customer support Calls & bookings Recruiting Product management Anything else",
+     "Integrations Pricing Security Enterprise Resources Resources",
+     "Integrations Pricing Security Chrome Extension What’s new"
+    ]
    }
   ],
   "last_status": 200,
-  "last_attempt": "2026-10-22",
-  "last_checked": "2026-10-22",
+  "last_attempt": "2026-10-24",
+  "last_checked": "2026-10-24",
   "first_snapshot": "2026-10-16",
-  "hash": "9da631bc39cda8d5",
-  "last_changed": "2026-10-22"
+  "hash": "d36b46abda2b7a7b",
+  "last_changed": "2026-10-24"
  },
  "perplexity-comet": {
   "url": "https://www.perplexity.ai/hub/blog/introducing-comet-plus",
   "history": [],
   "last_status": 403,
-  "last_attempt": "2026-10-22"
+  "last_attempt": "2026-10-24"
  },
  "gemini-agent": {
   "url": "https://one.google.com/about/google-ai-plans/",
@@ -600,8 +694,8 @@
    }
   ],
   "last_status": 200,
-  "last_attempt": "2026-10-22",
-  "last_checked": "2026-10-22",
+  "last_attempt": "2026-10-24",
+  "last_checked": "2026-10-24",
   "first_snapshot": "2026-10-16",
   "hash": "8afc83ac91706c85",
   "last_changed": "2026-10-22"
@@ -641,8 +735,8 @@
    }
   ],
   "last_status": 200,
-  "last_attempt": "2026-10-22",
-  "last_checked": "2026-10-22",
+  "last_attempt": "2026-10-24",
+  "last_checked": "2026-10-24",
   "first_snapshot": "2026-10-16",
   "hash": "518572550ecd034d",
   "last_changed": "2026-10-22"
@@ -738,27 +832,78 @@
      "Cache read tokens 40,000 × $4 × 0.05 / 1,000,000 $0.008 USD",
      "Total $0.428 USD"
     ]
+   },
+   {
+    "date": "2026-10-24",
+    "from": "5d41d6950d035fe0",
+    "to": "e5ff6308ec2be7c3",
+    "removed": [
+     "This section covers partner-operated cloud platforms, where the cloud provider invoices you. For Anthropic-operated cloud platforms billed through a marketplace, see Claude Platform on AWS pricing and Claude in Microsoft Foundry pricing .",
+     "Claude models are available on Amazon Bedrock and Google Cloud . For official pricing, visit:",
+     "Google Cloud offers global endpoints and multi-region endpoints (dynamic routing within a geographic area) for these models, and regional endpoints for Claude Sonnet 4.6 and earlier models.",
+     "Amazon Bedrock global vs regional endpoints for Opus 4.7, Haiku 4.5, and later models, or the legacy integration for all other models on Bedrock",
+     "Google Cloud global, multi-region, and regional endpoints",
+     "This applies to the Claude API (first-party) and Claude Platform on AWS. On Claude in Microsoft Foundry, the same 1.1x multiplier applies to deployments that use the US Data Zone Standard deployment type (see Inference geography ). Partner-operated platforms (Bedrock and Google Cloud) have independent regional pricing. See Bedrock and Google Cloud for details. Earlier models do not support the inference_geo parameter and always use standard pricing; requests that include the parameter on these models return a 400 error.",
+     "Fast mode provides significantly faster output for Claude Opus 5.5, Claude Opus 5, and Claude Opus 4.8 at premium pricing. Fast mode for Claude Opus 5 and Claude Opus 4.8 is in research preview. Fast mode pricing applies across the full context window, including requests over 200k input tokens. Fast mode is available on the Claude API (first-party) and, for Claude Opus 5.5, on Claude in Microsoft Foundry for deployments hosted on Azure ; it is not available on Claude Platform on AWS or partner-operated cloud platforms .",
+     "\"usage\": {",
+     "\"input_tokens\": 105,",
+     "\"output_tokens\": 239,",
+     "\"server_tool_use\": {",
+     "\"code_execution_requests\": 1",
+     "\"output_tokens\": 6039,",
+     "\"cache_read_input_tokens\": 7123,",
+     "\"cache_creation_input_tokens\": 7345,",
+     "\"web_search_requests\": 1",
+     "\"input_tokens\": 25039,",
+     "\"output_tokens\": 931,",
+     "\"cache_read_input_tokens\": 0,",
+     "\"cache_creation_input_tokens\": 0,",
+     "\"web_fetch_requests\": 1"
+    ],
+    "added": [
+     "This section covers partner-operated cloud platforms, where the cloud provider invoices you. For Anthropic-operated cloud platforms billed through a marketplace, see Claude Platform on AWS pricing , Claude Models on Google Cloud (Anthropic managed) billing , and Claude in Microsoft Foundry pricing .",
+     "Claude models are available on Amazon Bedrock and Claude Models on Google Cloud (Google managed) . For official pricing, visit:",
+     "Claude Models on Google Cloud (Google managed) offers global endpoints and multi-region endpoints (dynamic routing within a geographic area) for these models, and regional endpoints for Claude Sonnet 4.6 and earlier models.",
+     "Amazon Bedrock global versus regional endpoints for Opus 4.7, Haiku 4.5, and later models, or the legacy integration for all other models on Bedrock",
+     "Claude Models on Google Cloud (Google managed) global, multi-region, and regional endpoints",
+     "This applies to the Claude API (first-party), Claude Platform on AWS, and Claude Models on Google Cloud (Anthropic managed). On Claude in Microsoft Foundry, the same 1.1x multiplier applies to deployments that use the US Data Zone Standard deployment type (see Inference geography ). Partner-operated platforms, Bedrock and Claude Models on Google Cloud (Google managed), have independent regional pricing. See Bedrock pricing and Google Cloud pricing for details. Earlier models do not support the inference_geo parameter and always use standard pricing; requests that include the parameter on these models return a 400 error.",
+     "Fast mode provides significantly faster output for Claude Opus 5.5, Claude Opus 5, and Claude Opus 4.8 at premium pricing. Fast mode for Claude Opus 5 and Claude Opus 4.8 is in research preview. Fast mode pricing applies across the full context window, including requests over 200k input tokens. Fast mode is available on the Claude API (first-party) and, for Claude Opus 5.5, on Claude Models on Google Cloud (Anthropic managed) and on Claude in Microsoft Foundry for deployments hosted on Azure.",
+     "\"usage\" : {",
+     "\"input_tokens\" : 105 ,",
+     "\"output_tokens\" : 239 ,",
+     "\"server_tool_use\" : {",
+     "\"code_execution_requests\" : 1",
+     "\"output_tokens\" : 6039 ,",
+     "\"cache_read_input_tokens\" : 7123 ,",
+     "\"cache_creation_input_tokens\" : 7345 ,",
+     "\"web_search_requests\" : 1",
+     "\"input_tokens\" : 25039 ,",
+     "\"output_tokens\" : 931 ,",
+     "\"cache_read_input_tokens\" : 0 ,",
+     "\"cache_creation_input_tokens\" : 0 ,",
+     "\"web_fetch_requests\" : 1"
+    ]
    }
   ],
   "last_status": 200,
-  "last_attempt": "2026-10-22",
-  "last_checked": "2026-10-22",
+  "last_attempt": "2026-10-24",
+  "last_checked": "2026-10-24",
   "first_snapshot": "2026-10-16",
-  "hash": "5d41d6950d035fe0",
-  "last_changed": "2026-10-22"
+  "hash": "e5ff6308ec2be7c3",
+  "last_changed": "2026-10-24"
  },
  "openai-agents-api": {
   "url": "https://help.openai.com/en/articles/20001551-agents-api-beta-faq",
   "history": [],
   "last_status": 403,
-  "last_attempt": "2026-10-22"
+  "last_attempt": "2026-10-24"
  },
  "vertex-agent-engine": {
   "url": "https://cloud.google.com/products/gemini-enterprise-agent-platform/pricing",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-22",
-  "last_checked": "2026-10-22",
+  "last_attempt": "2026-10-24",
+  "last_checked": "2026-10-24",
   "first_snapshot": "2026-10-16",
   "hash": "464295ec30b3fc48"
  },
@@ -766,8 +911,8 @@
   "url": "https://aws.amazon.com/bedrock/agentcore/pricing/",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-22",
-  "last_checked": "2026-10-22",
+  "last_attempt": "2026-10-24",
+  "last_checked": "2026-10-24",
   "first_snapshot": "2026-10-16",
   "hash": "b82863c2b3ec0512"
  },
@@ -775,8 +920,8 @@
   "url": "https://azure.microsoft.com/en-us/pricing/details/foundry-agent-service/",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-22",
-  "last_checked": "2026-10-22",
+  "last_attempt": "2026-10-24",
+  "last_checked": "2026-10-24",
   "first_snapshot": "2026-10-16",
   "hash": "74c92ddf0861d178"
  },
@@ -784,8 +929,8 @@
   "url": "https://relevanceai.com/docs/get-started/pricing",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-22",
-  "last_checked": "2026-10-22",
+  "last_attempt": "2026-10-24",
+  "last_checked": "2026-10-24",
   "first_snapshot": "2026-10-16",
   "hash": "2f131ac6e5df073b"
  },
@@ -804,8 +949,8 @@
    }
   ],
   "last_status": 200,
-  "last_attempt": "2026-10-22",
-  "last_checked": "2026-10-22",
+  "last_attempt": "2026-10-24",
+  "last_checked": "2026-10-24",
   "first_snapshot": "2026-10-16",
   "hash": "f70d2f23614e629c",
   "last_changed": "2026-10-20"
@@ -814,8 +959,8 @@
   "url": "https://www.langchain.com/pricing",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-22",
-  "last_checked": "2026-10-22",
+  "last_attempt": "2026-10-24",
+  "last_checked": "2026-10-24",
   "first_snapshot": "2026-10-16",
   "hash": "a992dda36da811ba"
  },
@@ -823,8 +968,8 @@
   "url": "https://crewai.com/pricing",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-22",
-  "last_checked": "2026-10-22",
+  "last_attempt": "2026-10-24",
+  "last_checked": "2026-10-24",
   "first_snapshot": "2026-10-16",
   "hash": "b0be8f7f3a75bcb8"
  },
@@ -844,8 +989,8 @@
    }
   ],
   "last_status": 200,
-  "last_attempt": "2026-10-22",
-  "last_checked": "2026-10-22",
+  "last_attempt": "2026-10-24",
+  "last_checked": "2026-10-24",
   "first_snapshot": "2026-10-16",
   "hash": "b55f9f07cc709ba8",
   "last_changed": "2026-10-21"
@@ -869,21 +1014,45 @@
      "Modal Sandboxes are priced at the rate of non-preemptible Functions .",
      "Modal Functions are subject to preemption by default; while interruptions are rare, they can happen. CPU Sandboxes, on the other hand, are not subject to preemption. On Modal, a 3x multiplier is applied to the CPU and Memory list price for non-preemptible resources."
     ]
+   },
+   {
+    "date": "2026-10-24",
+    "from": "1b321988d8b2cad1",
+    "to": "c7af71689006188b",
+    "removed": [
+     "Playground Explore Modal in the browser GPU Glossary A fast guide to GPU concepts LLM Engine Advisor Pick the right model",
+     "Modal Sandbox + Notebooks pricing",
+     "100 75 50 25 0",
+     "3 AM 6 AM 9 AM 12 PM 3 PM",
+     "75 GPUs * 24 hrs * $3 / GPU-hr",
+     "Degraded service at peak demand",
+     "Avg 50 GPUs * 24 hrs * $3.95 / GPU-hr",
+     "Included usage applies to compute: Functions, Sandboxes, and Notebooks, billed by the second for CPU, memory, and GPU time. Volumes include up to 1 TiB free.",
+     "Notebooks",
+     "Playground"
+    ],
+    "added": [
+     "GPU Glossary A fast guide to GPU concepts LLM Engine Advisor Pick the right model",
+     "Modal Sandbox pricing",
+     "75 GPUs × 24 hrs × $3 / GPU-hr",
+     "Avg 50 GPUs × 24 hrs × $3.95 / GPU-hr",
+     "Included usage applies to compute: Functions and Sandboxes, billed by the second for CPU, memory, and GPU time. Volumes include up to 1 TiB free."
+    ]
    }
   ],
   "last_status": 200,
-  "last_attempt": "2026-10-22",
-  "last_checked": "2026-10-22",
+  "last_attempt": "2026-10-24",
+  "last_checked": "2026-10-24",
   "first_snapshot": "2026-10-16",
-  "hash": "1b321988d8b2cad1",
-  "last_changed": "2026-10-21"
+  "hash": "c7af71689006188b",
+  "last_changed": "2026-10-24"
  },
  "daytona": {
   "url": "https://www.daytona.io/pricing",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-22",
-  "last_checked": "2026-10-22",
+  "last_attempt": "2026-10-24",
+  "last_checked": "2026-10-24",
   "first_snapshot": "2026-10-16",
   "hash": "172a8cc9f1cefeff"
  }

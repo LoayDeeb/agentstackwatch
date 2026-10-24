@@ -15,7 +15,7 @@ Inference Serve LLMs, image, video, and audio models, from real-time to batch Sa
 Platform
 Modal Infrastructure Infrastructure rebuilt for AI, from the container runtime and storage to a multi-cloud capacity pool
 Tools
-Playground Explore Modal in the browser GPU Glossary A fast guide to GPU concepts LLM Engine Advisor Pick the right model
+GPU Glossary A fast guide to GPU concepts LLM Engine Advisor Pick the right model
 Resources
 Blog Changelog Startup Credits Partners Slack Community
 Company
@@ -27,7 +27,7 @@ Inference Serve LLMs, image, video, and audio models, from real-time to batch Sa
 Platform
 Modal Infrastructure Infrastructure rebuilt for AI, from the container runtime and storage to a multi-cloud capacity pool
 Resources Tools
-Playground Explore Modal in the browser GPU Glossary A fast guide to GPU concepts LLM Engine Advisor Pick the right model
+GPU Glossary A fast guide to GPU concepts LLM Engine Advisor Pick the right model
 Resources
 Blog Changelog Startup Credits Partners Slack Community
 Company
@@ -108,7 +108,7 @@ Graduate students, labs, and researchers can get up to $10k free compute credits
 Apply now Use committed spend on Modal
 Transact through the AWS and GCP marketplace to use committed spend on Modal.
 Apply now
-Modal Sandbox + Notebooks pricing
+Modal Sandbox pricing
 Only pay for what you use. Burst up to what you need without over-allocating CPU or memory in advance.
 Sandboxes are billed at non-preemptible rates of 3x list price.
 Compute costs
@@ -128,18 +128,13 @@ workloads, we are more cost-effective than fixed on-demand/reserved
 compute.
 Traditional cloud
 You’re billed for reserved GPUs, even when usage drops.
-100 75 50 25 0
-3 AM 6 AM 9 AM 12 PM 3 PM
 $5,400
-75 GPUs * 24 hrs * $3 / GPU-hr
-Degraded service at peak demand
+75 GPUs × 24 hrs × $3 / GPU-hr
 Modal serverless cloud
 Only pay for what you use, when you use it.
-100 75 50 25 0
-3 AM 6 AM 9 AM 12 PM 3 PM
 $4,740
-Avg 50 GPUs * 24 hrs * $3.95 / GPU-hr
 12% lower cost
+Avg 50 GPUs × 24 hrs × $3.95 / GPU-hr
 Compare features
 Plans Starter
 $0 + compute / month
@@ -209,7 +204,7 @@ You can deploy any application that can be containerized, using Python. Modal is
 Can I use my AWS, GCP, or Azure credits on Modal?
 At the moment, credits from AWS, GCP, or Azure cannot be applied towards your Modal usage. However, we have a special partnership with AWS that allows eligible startups to unlock additional Modal credits if they are part of AWS Activate. To find out if your company is eligible, please apply to our startup credits program.
 What does my included usage cover?
-Included usage applies to compute: Functions, Sandboxes, and Notebooks, billed by the second for CPU, memory, and GPU time. Volumes include up to 1 TiB free.
+Included usage applies to compute: Functions and Sandboxes, billed by the second for CPU, memory, and GPU time. Volumes include up to 1 TiB free.
 It does not apply to Shared Endpoints, which are billed per token rather than per second. Token usage is always billed, starting from your first request. To cap out-of-pocket charges, see spend limits .
 I'm on the Starter plan. Why am I being charged?
 Starter has no monthly fee and includes $30 of compute (GPUs, CPUs, Memory) per month. You're billed when you exceed that, or when you use something the included compute doesn't cover.
@@ -221,7 +216,6 @@ Products
 Inference
 Sandboxes
 Training
-Notebooks
 Batch
 Modal Platform
 Solutions
@@ -241,7 +235,6 @@ Model Library
 Tools
 LLM Engine Advisor
 GPU Glossary
-Playground
 Serverless GPU Calculator
 Company
 About
