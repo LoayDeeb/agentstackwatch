@@ -12,7 +12,19 @@ a{color:inherit;text-decoration:none}::selection{background:var(--acc);color:#ff
 .mast{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:saturate(1.4) blur(14px);border-bottom:1px solid var(--line)}
 .mrow{display:flex;align-items:center;justify-content:space-between;height:64px;gap:24px}
 .brand{display:flex;align-items:center;gap:9px;font:600 21px var(--serif);letter-spacing:-.01em}.brand i{font-style:italic;font-weight:400}
-nav{display:flex;gap:4px}nav a{font-size:14px;color:var(--mut);padding:7px 12px;border-radius:99px;transition:.2s var(--ease)}nav a{white-space:nowrap}@media(max-width:1180px){nav{gap:0}nav a{padding:7px 8px;font-size:13.5px}}@media(max-width:1100px){nav a.nx{display:none}}nav a:hover{color:var(--ink);background:var(--bg2)}nav a.on{color:var(--ink);background:var(--bg2)}
+.mnav{display:flex;align-items:center;gap:2px;flex-wrap:nowrap}.mnav>a,.mbtn{display:flex;align-items:center;font:14px/20px var(--sans);color:var(--mut);padding:7px 12px;border-radius:99px;transition:.2s var(--ease);white-space:nowrap}.mnav>a:hover,.mnav>a.on,.mbtn:hover,.mbtn.on,.mbtn[aria-expanded=true]{color:var(--ink);background:var(--bg2)}
+.mrow>.brand,.mtools{flex-shrink:0}.mtools{flex-shrink:0}
+.navmore{position:relative}.mbtn{display:flex;align-items:center;gap:5px;border:0;background:transparent;cursor:pointer}.mbtn svg{transition:transform .2s}.mbtn[aria-expanded=true] svg{transform:rotate(180deg)}
+.mmenu{position:absolute;right:0;top:calc(100% + 8px);min-width:200px;background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:0 12px 32px rgba(0,0,0,.12);padding:6px;display:flex;flex-direction:column;z-index:30}.mmenu[hidden]{display:none}
+.mmenu a{font-size:14px;color:var(--ink2);padding:9px 12px;border-radius:9px;white-space:nowrap}.mmenu a:hover,.mmenu a:focus-visible,.mmenu a.on{background:var(--bg2);color:var(--ink)}
+.mnav a:focus-visible,.mbtn:focus-visible,.ic:focus-visible,.subbtn:focus-visible,.mobmenu a:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+.ic.burger{display:none}.mobmenu{border-top:1px solid var(--line);background:var(--bg);max-height:calc(100vh - 64px);overflow-y:auto}.mobmenu[hidden]{display:none}
+.mobmenu .shell{display:grid;grid-template-columns:1fr 1fr;gap:2px 16px;padding-top:12px;padding-bottom:16px}.mobmenu a{font-size:15px;color:var(--ink2);padding:11px 10px;border-radius:9px}.mobmenu a.on,.mobmenu a:hover{background:var(--bg2);color:var(--ink)}
+@media(max-width:1180px){.mrow{gap:16px}.mnav{gap:0}.mnav>a,.mbtn{padding:7px 9px;font-size:13.5px}}
+@media(max-width:1100px){.mnav>a,.mbtn{padding:7px 7px}}
+@media(max-width:999px){.mnav{display:none}.ic.burger{display:grid}}
+@media(min-width:1000px){.mobmenu{display:none!important}}
+@media(max-width:420px){.mobmenu .shell{grid-template-columns:1fr}}
 .mtools{display:flex;align-items:center;gap:6px}.ic{width:34px;height:34px;display:grid;place-items:center;border-radius:99px;border:1px solid var(--line);background:transparent;color:var(--ink);font-size:16px;cursor:pointer;transition:.2s}.ic:hover{background:var(--bg2)}
 .subbtn{background:var(--ink);color:var(--bg);font:600 13.5px var(--sans);padding:9px 16px;border-radius:99px;transition:.2s var(--ease)}.subbtn:hover{background:var(--acc);color:#fff;transform:translateY(-1px)}
 /* reveal */
@@ -105,7 +117,7 @@ nav{display:flex;gap:4px}nav a{font-size:14px;color:var(--mut);padding:7px 12px;
 /* footer */
 .foot{border-top:1px solid var(--ink);margin-top:80px;padding:44px 0 72px;font-size:14px;color:var(--mut)}.frow{display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap}.foot .brand{color:var(--ink)}.fl{display:grid;grid-template-columns:repeat(2,auto);gap:8px 40px}.fl a:hover{color:var(--ink)}
 /* mobile */
-@media(max-width:900px){.shell{padding:0 20px}nav{display:none}.front,.pgrid,.signup{grid-template-columns:1fr;gap:28px}.rail{border:0;padding:0}.quad{grid-template-columns:1fr 1fr}.qc{border:0;margin:0;padding:20px 12px 20px 0;border-bottom:1px solid var(--line)}
+@media(max-width:900px){.shell{padding:0 20px}.front,.pgrid,.signup{grid-template-columns:1fr;gap:28px}.rail{border:0;padding:0}.quad{grid-template-columns:1fr 1fr}.qc{border:0;margin:0;padding:20px 12px 20px 0;border-bottom:1px solid var(--line)}
 .kpis{grid-template-columns:1fr 1fr}.kpis div{border:0;margin:0;border-bottom:1px solid var(--line)}.hide-s{display:none}.signup,.signup.feature{padding:28px}.hero{padding:56px 0 32px}.pull{margin:36px 0;font-size:26px}.arow{grid-template-columns:1fr;gap:6px}.cats{grid-template-columns:1fr}.tf{min-width:0;width:100%}.prose{font-size:19px}.hero-meta{gap:16px}}
 /* Beehiiv embed: our script (Base.astro) renders Beehiiv's iframe at a fixed 560px and scales/crops it to just the email row */
 .sg-form{min-width:0}.bh-embed{position:relative;width:100%;max-width:460px;min-width:0;height:54px;overflow:hidden;border-radius:10px;background:transparent}.bh-embed>div{width:var(--bhw,560px)!important;max-width:none!important;margin:0!important}.bh-embed.bh-full{height:auto!important;overflow:visible}.bh-embed.bh-full>div{width:100%!important}.bh-embed iframe{display:block;border:0;color-scheme:light}
@@ -123,6 +135,4 @@ nav{display:flex;gap:4px}nav a{font-size:14px;color:var(--mut);padding:7px 12px;
 @media (max-width:720px){.ptab thead{display:none}.ptab tr{display:block;border-bottom:1px solid var(--line);padding:10px 0}.ptab td{display:block;border:0;padding:4px 0}}
 @media (max-width:720px){.cmp{table-layout:fixed;width:100%}.cmp td,.cmp th{word-break:break-word;overflow-wrap:anywhere;padding-left:6px;padding-right:6px}}
 
-/* 2026-10-21: the 12-item nav pushed the Subscribe button off-screen between 1100px and ~1460px; hide the secondary links there too. */
-@media(max-width:1480px){nav a.nx{display:none}}
-.mast nav{min-width:0}
+/* 2026-10-24: header nav reworked: 7 primary links + a More dropdown, hamburger menu at <=999px (see .mnav/.mmenu/.mobmenu near the top). */
