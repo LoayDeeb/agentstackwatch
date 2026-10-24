@@ -17,4 +17,5 @@ const desc=`${a.name} vs ${b.name} (${new Date().getFullYear()}): ${kind} side b
 <tr><th>Pricing source</th>{[a,b].map(x=>{const url=pricing[x.slug]?.url||x.sources[0];return <td>{url?<a href={url}>{url.replace(/^https?:\/\//,'').slice(0,48)}</a>:'unknown'}</td>})}</tr>
 <tr><th>What it is</th><td>{a.description}</td><td>{b.description}</td></tr></table></div><Signup variant="inline"/>
 {guides.length>0 && <p class="small">Related guide{guides.length>1?'s':''}: <Fragment set:html={guides.map(([h,l])=>`<a href="${h}">${l}</a>`).join(' · ')}/></p>}
+<Signup variant="feature" title={`Plans for ${a.name} and ${b.name} change often. Get the weekly heads-up.`}/>
 <p class="muted small">More: <a href="/compare/">all comparisons</a> · <a href="/guide/">the buyer's guide</a> · <a href="/pricing/">pricing</a> and <a href="/breaking/">breaking changes</a>. Badges and facts link to sources on each agent page.</p></Base>

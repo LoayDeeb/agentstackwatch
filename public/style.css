@@ -41,10 +41,17 @@ nav{display:flex;gap:4px}nav a{font-size:14px;color:var(--mut);padding:7px 12px;
 .spark{width:96px;height:26px;display:block;overflow:visible}.spark.big{width:100%;height:180px}.spark .l{fill:none;stroke-width:1.6}.spark.big .l{stroke-width:2.2}.spark .l.up{stroke:var(--up)}.spark .l.dn{stroke:var(--dn)}
 .spark .a.up{fill:color-mix(in srgb,var(--up) 10%,transparent)}.spark .a.dn{fill:color-mix(in srgb,var(--dn) 10%,transparent)}.spark .d.up{fill:var(--up)}.spark .d.dn{fill:var(--dn)}
 /* signup */
-.signup{margin:64px 0;border:1px solid var(--line);border-radius:18px;background:var(--card);padding:36px;display:grid;grid-template-columns:1.2fr 1fr;gap:36px;align-items:center}
+.signup{margin:64px 0;border:1px solid var(--line);border-radius:18px;background:var(--card);padding:36px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:20px 36px;align-items:center}
 .signup.feature{background:radial-gradient(700px 260px at 0% 0%,var(--acc-s),transparent 70%),var(--card);padding:52px}
-.signup h3{font:500 clamp(26px,3vw,36px)/1.1 var(--serif);letter-spacing:-.02em;margin:0 0 10px}.sg-copy p:last-child{color:var(--mut);margin:0}
-.sg-form{display:flex;flex-wrap:wrap;gap:10px}.sg-form input{flex:1;min-width:200px;height:50px;border:1px solid var(--line);border-radius:12px;padding:0 16px;font:15px var(--sans);background:var(--bg);color:var(--ink);transition:.2s}
+.signup h3{font:500 clamp(26px,3vw,36px)/1.1 var(--serif);letter-spacing:-.02em;margin:0 0 10px}.signup .sg-lead{font:400 16px/1.55 var(--sans);color:var(--ink2);margin:0 0 10px}
+.sg-why{list-style:none;margin:6px 0 0;padding:0}.signup .sg-why li{position:relative;padding-left:26px;margin:7px 0;font:400 15.5px/1.5 var(--sans);color:var(--ink2)}.sg-why li::before{content:"✓";position:absolute;left:0;top:0;color:var(--acc);font-weight:700}.sg-why b{color:var(--ink)}
+.signup .sg-fine{margin:10px 0 0;font:400 12.5px/1.45 var(--sans);color:var(--mut)}.signup .kicker{font:600 11.5px/1 var(--sans);letter-spacing:.14em;color:var(--acc);margin:0 0 12px}.signup .sg-alt{font:400 12.5px/1.45 var(--sans)}.sg-fine a{text-decoration:underline}
+.sg-done{width:100%;border:1px solid var(--acc);background:var(--acc-s);border-radius:12px;padding:14px 16px;font:500 15px/1.5 var(--sans);color:var(--ink)}.sg-done a{color:var(--acc);font-weight:700;text-decoration:underline}.sg-done[hidden]{display:none}
+.signup.sg-ok .bh-embed,.signup.sg-ok .sg-fine,.signup.sg-ok .sg-alt{display:none!important}
+.signup.v-inline{padding:22px 26px;margin:24px 0;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:24px;border-color:var(--acc);background:linear-gradient(0deg,var(--card),var(--card))}.signup.v-inline h3{font:600 19px/1.3 var(--sans);letter-spacing:0;margin:0 0 4px}.signup.v-inline .kicker{margin-bottom:8px}.signup.v-inline .sg-why li{font-size:14.5px;margin:4px 0}
+.signup.v-hero{margin:26px 0 8px;padding:0;border:0;background:none;display:block;max-width:560px}.signup.v-hero .sg-fine{font-size:13px}
+.signup.v-slide{margin:0;padding:0;border:0;background:none;display:block}.signup.v-slide .sg-fine{font-size:12px}
+.sg-form{display:block}.sg-form input{flex:1;min-width:200px;height:50px;border:1px solid var(--line);border-radius:12px;padding:0 16px;font:15px var(--sans);background:var(--bg);color:var(--ink);transition:.2s}
 .sg-form input:focus{outline:none;border-color:var(--acc);box-shadow:0 0 0 4px var(--acc-s)}.sg-form button{height:50px;padding:0 24px;border:0;border-radius:12px;background:var(--acc);color:#fff;font:600 15px var(--sans);cursor:pointer;transition:.2s var(--ease)}
 .sg-form button:hover{transform:translateY(-1px);box-shadow:0 8px 24px -8px var(--acc)}.sg-ok{display:none;width:100%;margin:4px 0 0;font-size:13.5px;color:var(--mut)}.sg-form.done .sg-ok{display:block}.sg-form.done button span::before{content:"✓ "}
 /* sections */
@@ -100,11 +107,12 @@ nav{display:flex;gap:4px}nav a{font-size:14px;color:var(--mut);padding:7px 12px;
 /* mobile */
 @media(max-width:900px){.shell{padding:0 20px}nav{display:none}.front,.pgrid,.signup{grid-template-columns:1fr;gap:28px}.rail{border:0;padding:0}.quad{grid-template-columns:1fr 1fr}.qc{border:0;margin:0;padding:20px 12px 20px 0;border-bottom:1px solid var(--line)}
 .kpis{grid-template-columns:1fr 1fr}.kpis div{border:0;margin:0;border-bottom:1px solid var(--line)}.hide-s{display:none}.signup,.signup.feature{padding:28px}.hero{padding:56px 0 32px}.pull{margin:36px 0;font-size:26px}.arow{grid-template-columns:1fr;gap:6px}.cats{grid-template-columns:1fr}.tf{min-width:0;width:100%}.prose{font-size:19px}.hero-meta{gap:16px}}
-/* Beehiiv embed */
-.sg-form{min-width:0}.bh-embed{width:100%;min-width:0;min-height:120px;overflow:hidden;border-radius:12px}.bh-embed>div{width:100%!important;max-width:100%!important}.bh-embed iframe{display:block;width:100%!important;max-width:100%!important;border:0;color-scheme:light}
-.sg-alt{display:none;width:100%;margin:8px 0 0;font-size:12.5px;color:var(--mut)}.sg-alt a{color:var(--acc);font-weight:600}.sg-form.bh-failed .sg-alt{display:block}.sg-form.bh-failed .bh-embed{min-height:0}
+/* Beehiiv embed: our script (Base.astro) renders Beehiiv's iframe at a fixed 560px and scales/crops it to just the email row */
+.sg-form{min-width:0}.bh-embed{position:relative;width:100%;max-width:460px;min-width:0;height:54px;overflow:hidden;border-radius:10px;background:transparent}.bh-embed>div{width:var(--bhw,560px)!important;max-width:none!important;margin:0!important}.bh-embed.bh-full{height:auto!important;overflow:visible}.bh-embed.bh-full>div{width:100%!important}.bh-embed iframe{display:block;border:0;color-scheme:light}
+.sg-alt{display:none;width:100%;margin:8px 0 0;font-size:12.5px;color:var(--mut)}.sg-alt a{color:var(--acc);font-weight:600}.sg-form.bh-failed .sg-alt{display:block}.sg-form.bh-failed .bh-embed{display:none}
 @media(max-width:900px){.signup,.signup.feature{gap:16px}}
-@media(max-width:520px){.signup,.signup.feature{padding:26px 18px 14px;margin:44px 0;border-radius:16px}.signup h3{font-size:26px}.sg-copy p:last-child{font-size:15.5px}/* Beehiiv's form has a fixed 80px inner padding; crop it so the field uses the card width */.bh-embed{margin:-4px 0 0}.bh-embed iframe{width:calc(100% + 136px)!important;max-width:none!important;margin:-62px -68px -66px}.mrow{gap:10px}.brand{font-size:19px;min-width:0}.mtools{gap:4px;flex-shrink:0}.subbtn{padding:8px 12px;font-size:13px}}
+@media(max-width:520px){.signup,.signup.feature{padding:24px 18px 18px;margin:40px 0;border-radius:16px}.signup h3{font-size:25px}.mrow{gap:10px}.brand{font-size:19px;min-width:0}.mtools{gap:4px;flex-shrink:0}.subbtn{padding:8px 12px;font-size:13px}}
+@media(max-width:900px){.signup.v-inline{grid-template-columns:1fr;gap:12px;padding:20px 18px;margin:22px 0}}
 @media(max-width:400px){.mtools .ic[aria-label=Search]{display:none}}
 /* pricing / breaking / badge */
 .ptab{width:100%;border-collapse:collapse;font-size:14.5px}.ptab th,.ptab td{text-align:left;vertical-align:top;padding:14px 12px;border-bottom:1px solid var(--line)}.ptab thead th{font:600 11px var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--mut)}

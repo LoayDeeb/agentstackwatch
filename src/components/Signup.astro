@@ -1,23 +1,40 @@
 ---
-const { variant = 'inline', kicker = 'Agent Stack Weekly · free', title = 'One email a week. Everything that shipped in AI agents.', text = 'Releases, pricing changes and breaking changes from the tracker, plus a short take from a working agent architect.' } = Astro.props;
+// Newsletter signup. The Beehiiv form is mounted lazily by the shared script in Base.astro
+// (window.aswMount), which also crops Beehiiv's duplicate header and handles the success state.
+interface Props { variant?: 'inline' | 'feature' | 'hero' | 'slide' | 'quiz'; kicker?: string; title?: string; text?: string; eager?: boolean; points?: boolean }
+const v = Astro.props.variant ?? 'inline';
+const defaults = {
+  inline: { kicker: 'Free · 1 email a week', title: 'Not sure which AI agent to pay for? Get the 2-minute cheat sheet.' },
+  feature: { kicker: 'The weekly briefing · free', title: 'Know which AI agent is worth paying for, every week.' },
+  hero: { kicker: '', title: '' },
+  slide: { kicker: '', title: '' },
+  quiz: { kicker: 'Keep your pick up to date', title: 'Get your personalized pick + weekly updates.' },
+};
+const kicker = Astro.props.kicker ?? defaults[v].kicker;
+const title = Astro.props.title ?? defaults[v].title;
+const text = Astro.props.text;
+const points = Astro.props.points ?? (v !== 'hero' && v !== 'slide');
+const eager = Astro.props.eager ?? false;
 ---
-<section class={`signup ${variant}`}>
- <div class="sg-copy"><p class="kicker">{kicker}</p><h3>{title}</h3>
- <p>{text}</p></div>
- <div class="sg-form">
-  <div class="bh-embed"><script is:inline async src="https://subscribe-forms.beehiiv.com/v3/loader.js" data-beehiiv-form="04a2cee6-b594-4905-820a-136cd592059d"></script></div>
-  <p class="sg-alt">Form not loading? <a href="https://loays-newsletter.beehiiv.com/subscribe" target="_blank" rel="noopener">Subscribe on Beehiiv →</a></p>
- </div>
+<section class={`signup v-${v}${v === 'feature' || v === 'quiz' ? ' feature' : ''}`} data-asw-signup aria-label="Newsletter signup">
+  {(kicker || title || text || points) && (
+    <div class="sg-copy">
+      {kicker && <p class="kicker">{kicker}</p>}
+      {title && <h3>{title}</h3>}
+      {text && <p class="sg-lead">{text}</p>}
+      {points && (
+        <ul class="sg-why">
+          <li><b>The Personal Agent Cheat Sheet:</b> which AI agent to pay for, in 2 minutes.</li>
+          <li><b>One 5-minute email a week:</b> what changed in ChatGPT, Claude, Grok &amp; co., and what to actually do.</li>
+          {v !== 'inline' && <li>Plain English. Every fact links to the company's own page.</li>}
+        </ul>
+      )}
+    </div>
+  )}
+  <div class="sg-form">
+    <div class="bh-embed" data-eager={eager ? '1' : undefined}></div>
+    <p class="sg-fine">Free. No spam, unsubscribe in one click. Written by Loay Deeb, AI agent architect.</p>
+    <p class="sg-alt">Form not loading? <a href="https://loays-newsletter.beehiiv.com/subscribe" target="_blank" rel="noopener">Subscribe on our Beehiiv page →</a></p>
+    <div class="sg-done" hidden role="status">✓ You're in. Your welcome email is on its way. Meanwhile: <a href="/cheat-sheet/">open your cheat sheet →</a></div>
+  </div>
 </section>
-<script is:inline>
-(function(){var sec=document.currentScript.previousElementSibling,f=sec.querySelector('.sg-form'),box=f.querySelector('.bh-embed'),t=Date.now();
-// Beehiiv's iframe has a fixed 80px inner padding. On phones we render it wider, then scale it down so it fits the screen exactly (no box wider than the viewport).
-function fit(){var fr=box.querySelector('iframe');if(!fr)return;var st=fr.style;
- if(window.innerWidth>520){['width','max-width','margin','transform','transform-origin'].forEach(function(k){st.removeProperty(k)});box.style.height='';return}
- var vw=document.documentElement.clientWidth,left=box.getBoundingClientRect().left,W=vw+58,k=vw/W;
- st.setProperty('width',W+'px','important');st.setProperty('max-width','none','important');st.setProperty('margin','0','important');
- st.setProperty('transform-origin','0 0','important');st.setProperty('transform','translate('+(-left)+'px,'+(-62*k)+'px) scale('+k+')','important');
- var h=fr.offsetHeight;if(h)box.style.height=Math.max(60,(h-62-66)*k)+'px'}
-(function c(){var fr=box.querySelector('iframe');if(fr){fit();try{new ResizeObserver(fit).observe(fr);new MutationObserver(function(){if(!/scale/.test(fr.getAttribute('style')||''))fit()}).observe(fr,{attributes:true,attributeFilter:['style']})}catch(e){}window.addEventListener('resize',fit);return}
- if(Date.now()-t>8000){f.classList.add('bh-failed');return}setTimeout(c,400)})();})();
-</script>

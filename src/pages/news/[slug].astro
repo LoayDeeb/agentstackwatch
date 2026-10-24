@@ -10,10 +10,11 @@ const ld = {"@context":"https://schema.org","@type":"NewsArticle","headline":p.d
 <Fragment slot="head"><link rel="canonical" href={url}/><script type="application/ld+json" set:html={JSON.stringify(ld)}/></Fragment>
 <article class="post news"><header><p class="kicker"><a href="/news/">News</a></p><h1>{p.data.title}</h1><p class="dek">{p.data.summary}</p>
 <p class="byline">By <b>Loay Deeb</b> · {pdate(p.data.date)} · Source: <a href={p.data.source} target="_blank" rel="noopener">{p.data.sourceName}</a></p></header>
+<Signup variant="inline" eager title="Get the week's AI agent news in one 5-minute email." />
 <div class="prose"><Content/></div>
+<Signup variant="feature" title="Liked this? Get one 5-minute email a week like it." />
 <section class="nrel"><h2>Related</h2><ul>{p.data.related.map(([h,l])=> <li><a href={h}>{l}</a></li>)}<li><a href="/guides/">All our guides to personal AI agents</a></li></ul>
 {more.length>0 && <><p class="kicker">More news</p><ul>{more.map(m=> <li><a href={`/news/${m.slug}/`}>{m.data.title}</a></li>)}</ul></>}</section>
 </article>
-<Signup variant="feature" title="Get the week's agent news in one email." text="The stories that matter for people who use AI agents at work and at home, each with a source link and a short take."/>
 <style>.nrel{border-top:1px solid var(--line);margin-top:36px;padding-top:20px}.nrel h2{font:500 26px/1.2 var(--serif);margin:0 0 10px}.nrel a{text-decoration:underline}.nrel li{margin:6px 0}.news .prose{overflow-wrap:anywhere}.news .byline a{text-decoration:underline}</style>
 </Base>

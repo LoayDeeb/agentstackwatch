@@ -1,0 +1,56 @@
+---
+// Shared Beehiiv form manager for every <Signup/> box on the page.
+// - Loads Beehiiv's loader only when a box is near the viewport (or immediately for eager boxes).
+// - Renders Beehiiv's iframe at a fixed 560px and scales/crops it so only the email field + button show
+//   (Beehiiv's own form repeats the newsletter name and description above the field).
+// - Shows the full iframe while Beehiiv runs a bot check, and our own "you're in" state after a signup.
+---
+<script is:inline>
+(function(){
+var FORM='04a2cee6-b594-4905-820a-136cd592059d',PUB='5dd64e58-3f0d-42d9-9240-228d135d1293',SRC='https://subscribe-forms.beehiiv.com/v3/loader.js',ORIGIN='https://subscribe-forms.beehiiv.com';
+function subscribed(){try{return new RegExp('(^|; )bhv_'+PUB+'_subscribed=').test(document.cookie)||localStorage.getItem('asw_sub')==='1'}catch(e){return false}}
+window.aswSubscribed=subscribed;
+function done(box){var sec=box.closest('[data-asw-signup]');if(!sec)return;sec.classList.add('sg-ok');var d=sec.querySelector('.sg-done');if(d)d.hidden=false}
+// Beehiiv's form sits inside 80px side padding and is at most 400px wide, so the iframe is rendered at
+// W = form width + 160 and scaled by k so the field exactly fills our box.
+function want(w){return w>=400?560:Math.max(440,Math.round(w)+160)}
+function kOf(w,W){return W===560?Math.min(1.15,w/400):w/(W-160)}
+function setW(box,W){box._W=W;box.style.setProperty('--bhw',W+'px')}
+function fit(box){
+  var fr=box.querySelector('iframe');if(!fr)return;var st=fr.style;
+  if(box.classList.contains('bh-full')){st.removeProperty('transform');box.style.height='';return}
+  var w=box.clientWidth;if(!w)return;var W=want(w);
+  if(W!==box._W){setW(box,W);box._top=0;st.height='2000px';try{fr.contentWindow.postMessage({type:'beehiiv:resize'},'*')}catch(e){}return}
+  var h=parseFloat(st.height)||0;if(!h||h>1200)return; // loader still measuring
+  if(!box._top){box._top=h-127;box._h0=h} // bottom: 47px field row + 80px padding; everything above it is Beehiiv's header
+  var k=kOf(w,W),extra=Math.max(0,h-box._h0); // extra = error message under the field
+  st.setProperty('width','100%','important');st.setProperty('transform-origin','0 0','important');
+  st.setProperty('transform','translate('+(-80*k)+'px,'+(-box._top*k)+'px) scale('+k+')','important');
+  box.style.height=Math.ceil((47+(extra?extra+8:0))*k)+'px';box.classList.add('bh-ready');
+}
+function boxes(){return document.querySelectorAll('.bh-embed')}
+function mount(box){
+  if(box._m)return;box._m=1;
+  if(subscribed()){done(box);return}
+  if(box.clientWidth)setW(box,want(box.clientWidth));
+  var s=document.createElement('script');s.async=true;s.src=SRC;s.setAttribute('data-beehiiv-form',FORM);box.appendChild(s);
+  setTimeout(function(){if(!box.classList.contains('bh-ready')){if(subscribed())done(box);else box.parentNode.classList.add('bh-failed')}},12000);
+  if(window.ResizeObserver)new ResizeObserver(function(){fit(box)}).observe(box);
+}
+window.aswMount=mount;
+addEventListener('message',function(e){
+  if(e.origin!==ORIGIN||!e.data||!e.data.type)return;var t=e.data.type;
+  boxes().forEach(function(box){
+    var fr=box.querySelector('iframe');if(!fr||fr.contentWindow!==e.source)return;
+    if(t==='beehiiv:challenge'){box.classList.add('bh-full');fit(box)}
+    else if(t==='beehiiv:challenge-resolved'){box.classList.remove('bh-full');setTimeout(function(){fit(box)},80)}
+    else if(t==='beehiiv:submitted'){try{localStorage.setItem('asw_sub','1')}catch(x){}done(box);var si=document.getElementById('asw-si');if(si&&!si.contains(box)){si.classList.remove('on')}}
+    else setTimeout(function(){fit(box)},60);
+  });
+});
+var list=[].slice.call(boxes());
+if(subscribed()){list.forEach(done);return}
+var io='IntersectionObserver' in window?new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){io.unobserve(en.target);mount(en.target)}})},{rootMargin:'800px 0px'}):null;
+list.forEach(function(b){if(b.closest('#asw-si'))return;if(b.dataset.eager||!io)mount(b);else io.observe(b)});
+})();
+</script>

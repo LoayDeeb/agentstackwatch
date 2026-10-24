@@ -1,0 +1,84 @@
+---
+// The Personal Agent Cheat Sheet: one printable page, built only from facts already published (and cited) on our guides.
+import Base from '../layouts/Base.astro'; import Signup from '../components/Signup.astro'; import { citer, ALL } from '../lib/cite.js';
+const { c, used } = citer();
+const D = '21 Oct 2026';
+// [if you..., pick, what it costs, why, the catch, guide]
+const rows = [
+ ['want to try AI and pay nothing', 'ChatGPT Free, Claude Free or Gemini', '$0',
+  `All three have real free plans. Free Claude can search the web, create files and connect to your apps${c('cl-pricing6')}; the free Gemini app includes Deep Research${c('g-overview6')}.`,
+  `Free ChatGPT is limited on uploads, images, voice and deep research, and ads may appear${c('oai-pricing6','oai-go6')}.`, ['/best-free-ai-agent/','Best free AI agents']],
+ ['live in Gmail and Google Docs', 'Gemini, then Google AI Plus', '$0, then $4.99/mo',
+  `Google AI Plus adds Gemini inside Gmail for $4.99 a month${c('g-plans6')}.`,
+  `Gemini in Docs and Sheets needs Google AI Pro ($19.99)${c('g-plans6')}.`, ['/chatgpt-vs-gemini/','ChatGPT vs Gemini']],
+ ['live in Outlook, Word and Excel', 'Microsoft Copilot', '$0, then $9.99/mo',
+  `Copilot is free on the web and phones${c('ms-free6')}; Microsoft 365 Personal puts it inside Word, Excel, PowerPoint and Outlook${c('ms-ind6')}.`,
+  `To use it inside your Office apps you need Microsoft 365 Personal${c('ms-ind6')}.`, ['/ai-agent-for-email-and-calendar/','AI agent for email and calendar']],
+ ['want one paid assistant for a bit of everything', 'ChatGPT Plus', '$20/mo',
+  `Includes deep research and ChatGPT Work for finished reports, documents and spreadsheets${c('oai-plus6','oai-pricing6')}. Works with Gmail and Outlook.`,
+  `Monthly billing only, and exact message limits aren't published${c('oai-plus6','oai-pricing6')}.`, ['/is-chatgpt-plus-worth-it/','Is ChatGPT Plus worth it?']],
+ ['mostly need help with email and your calendar', 'Claude Pro', '$20/mo ($17 yearly)',
+  `The most detailed published Gmail and Google Calendar features in our email guide; adds task hand-off, scheduling and Research${c('cl-pricing6')}.`,
+  `Browsing websites for you needs the Claude desktop app or Claude in Chrome${c('cl-one5','cl-cowork5')}.`, ['/ai-agent-for-email-and-calendar/','AI agent for email and calendar']],
+ ['are a founder with errands and research to hand off every week', 'Grok Bot', 'from $30/mo',
+  `An always-on agent that works on its own cloud computer${c('gb-page6')}. Needs the X Subscription's Premium plan or higher${c('x-pricing6')}.`,
+  `Only worth it once you have repeatable weekly tasks. Start with a $20 assistant first.`, ['/best-personal-ai-agent-for-founders/','Best personal AI agent for founders']],
+ ['are buying for your team or staff', 'ChatGPT Business or Claude Team', '~$20–30 per person/mo',
+  `Business plans don't train on your workspace data by default${c('oai-data6','cl-pricing6')}.`,
+  `Don't put staff on personal plans: you lose admin control and the default no-training promise.`, ['/best-ai-agent-for-small-business/','Best AI agent for small business']],
+ ['need an AI to answer your customers', 'Intercom Fin', '$0.99 per resolved chat',
+  `Answers customers and works on top of other helpdesks, so you don't have to switch tools${c('ic-pricing')}.`,
+  `You pay per resolution, so costs grow with volume${c('ic-pricing')}.`, ['/best-ai-agent-for-customer-support/','Best AI agent for customer support']],
+ ['run sales on Salesforce', 'Salesforce Agentforce', '$125 per user/mo',
+  `The Sales add-on keeps the agent inside your CRM data${c('sf-agentforce')}.`,
+  `The priciest option here; only makes sense if you are already on Salesforce.`, ['/best-ai-agent-for-sales-and-crm/','Best AI agent for sales and CRM']],
+ ['are technical and want to run it yourself', 'OpenClaw or Hermes Agent', 'Free software',
+  `Open source, no subscription for the software. OpenClaw runs on your own computer and keeps its data there${c('oc6','hm6')}.`,
+  `You still pay for the AI model you connect, and setup takes some tech comfort.`, ['/is-openclaw-safe/','Is OpenClaw safe?']],
+];
+const srcs = used.map((k,i)=>({n:i+1,u:ALL[k].u,t:ALL[k].t,d:ALL[k].d}));
+const ld = {"@context":"https://schema.org","@type":"Article","headline":"The Personal Agent Cheat Sheet: which AI agent to pay for, in 2 minutes","author":{"@type":"Person","name":"Loay Deeb"},"publisher":{"@type":"Organization","name":"AgentStackWatch"},"dateModified":"2026-10-24","mainEntityOfPage":"https://agentstackwatch.com/cheat-sheet/"};
+---
+<Base title="The Personal Agent Cheat Sheet: which AI agent to pay for (2026) | AgentStackWatch" desc="Which AI agent should you pay for? A one-page cheat sheet: ChatGPT, Claude, Gemini, Copilot, Grok Bot and more, by situation, with today's prices and the catch. Every fact linked to the source.">
+<Fragment slot="head"><link rel="canonical" href="https://agentstackwatch.com/cheat-sheet/"/><script type="application/ld+json" set:html={JSON.stringify(ld)}/></Fragment>
+<article class="cs">
+<header class="pagehead"><p class="kicker">Free cheat sheet · 2-minute read</p><h1>The Personal Agent Cheat Sheet</h1>
+<p class="dek">Which AI agent to pay for, in 2 minutes. Find the line that sounds like you. Prices checked {D}; every fact links to the company's own page.</p>
+<p class="cs-tools"><button type="button" class="cs-print" onclick="window.print()">Print or save as PDF</button> <span class="muted small">By Loay Deeb, AI agent architect</span></p></header>
+
+<ol class="cs-rows">
+{rows.map(([you,pick,price,why,catchT,g])=> <li class="cs-row">
+ <p class="cs-you">If you {you}</p>
+ <p class="cs-pick"><b>{pick}</b> <span class="cs-price">{price}</span></p>
+ <p class="cs-why" set:html={why}/>
+ <p class="cs-catch"><b>The catch:</b> <Fragment set:html={catchT}/></p>
+ <p class="cs-g"><a href={g[0]}>{g[1]} →</a></p>
+</li>)}
+</ol>
+
+<section class="cs-rules"><h2>4 rules before you pay</h2><ol>
+<li><b>Start free for a week</b> with the one that matches where your email lives: Gemini for Gmail, Copilot for Outlook.</li>
+<li><b>Pay for one $20 plan, not two.</b> ChatGPT Plus or Claude Pro covers most people.</li>
+<li><b>Only pay $30 or more</b> for an always-on agent once you have tasks to hand off every week.</li>
+<li><b>Staff get a business plan,</b> never personal accounts, so your company data isn't used for training by default.</li>
+</ol><p class="muted small">These rules are our advice, based on the guides linked above.</p></section>
+
+<div class="cs-sign"><Signup variant="feature" eager kicker="Keep this cheat sheet current" title="Prices change every week. We'll tell you when it matters." /></div>
+
+<section class="cs-src"><h2>Sources</h2><ol>{srcs.map(s=> <li><a href={s.u} target="_blank" rel="noopener">{s.t}</a> <span class="muted">· checked {s.d}</span></li>)}</ol>
+<p class="muted small">Not sure which line is you? <a href="/quiz/">Take the 1-minute quiz</a> or read <a href="/guide/">the full buyer's guide</a>. We use Grok Bot for research; it is one of the products listed here.</p></section>
+</article>
+<style is:global>
+.cs{max-width:860px}.cs-tools{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin:18px 0 0}.cs-print{font:600 14px var(--sans);padding:10px 16px;border-radius:999px;border:1px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer}.cs-print:hover{background:var(--ink);color:var(--bg)}
+.cs-rows{list-style:none;margin:28px 0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.cs-row{border:1px solid var(--line);border-radius:14px;background:var(--card);padding:16px 18px;min-width:0;break-inside:avoid}.cs-row p{margin:0 0 6px;font-size:14.5px;line-height:1.5;color:var(--ink2)}
+.cs-you{font:600 12px/1.3 var(--sans)!important;letter-spacing:.06em;text-transform:uppercase;color:var(--acc)!important}.cs-pick{font:500 22px/1.25 var(--serif)!important;color:var(--ink)!important;margin:4px 0 8px!important}.cs-pick b{font-weight:600}
+.cs-price{display:inline-block;font:600 12.5px/1.2 var(--sans);background:var(--acc-s);color:var(--ink);border-radius:999px;padding:4px 9px;margin-left:4px;vertical-align:middle;white-space:nowrap}
+.cs-g a,.cs-src a,.cs-rules a{text-decoration:underline;text-decoration-color:var(--acc);text-underline-offset:3px}.cs-g{margin:8px 0 0!important;font-size:13.5px!important}
+.cs a.cite{display:inline-block;font:600 10px/1 var(--sans);color:var(--acc);background:var(--acc-s);border-radius:4px;padding:2px 4px;margin-left:3px;vertical-align:super;text-decoration:none}
+.cs-rules{border-top:1px solid var(--line);padding-top:20px}.cs-rules h2,.cs-src h2{font:500 28px/1.2 var(--serif);margin:0 0 10px}.cs-rules li{margin:8px 0;font-size:16.5px}
+.cs-src{border-top:1px solid var(--line);padding-top:20px;margin-bottom:56px}.cs-src li{font-size:13.5px;margin:4px 0;overflow-wrap:anywhere}
+@media(max-width:720px){.cs-rows{grid-template-columns:1fr}}
+@media print{.mast,.foot,.asw-si,.cs-sign,.cs-print,.ticker{display:none!important}body{background:#fff;color:#000}.cs-rows{gap:8px}.cs-row{padding:10px 12px}.cs-row p{font-size:12px}.cs-pick{font-size:17px!important}.pagehead h1{font-size:30px}}
+</style>
+</Base>

@@ -1,6 +1,8 @@
 ---
 import Base from '../layouts/Base.astro'; import Signup from '../components/Signup.astro';
 ---
-<Base title="Agent Stack Weekly — newsletter" desc="Subscribe free to Agent Stack Weekly: one email a week on what shipped, broke and got cheaper in AI agents, plus hands-on agent tests and the free buyer's guide.">
-<header class="pagehead"><p class="kicker">Newsletter</p><h1>Agent Stack Weekly</h1><p class="dek">What shipped, what broke, what got cheaper. One email a week, generated from the changelog plus a short architect's take.</p></header>
-<Signup variant="feature"/></Base>
+<Base title="Agent Stack Weekly — newsletter" desc="Free newsletter: one 5-minute email a week on what changed in ChatGPT, Claude, Gemini, Grok Bot and co., plus the Personal Agent Cheat Sheet: which AI agent to pay for, in 2 minutes.">
+<header class="pagehead"><p class="kicker">Newsletter · free</p><h1>Know which AI agent is worth paying for.</h1><p class="dek">One 5-minute email a week: what changed in ChatGPT, Claude, Gemini, Grok Bot &amp; co., what it costs now, and what to actually do about it. Written in plain English for founders, business owners and everyday users by Loay Deeb, AI agent architect.</p></header>
+<Signup variant="feature" eager kicker="Subscribe free" title="Start with the 2-minute cheat sheet."/>
+<section class="nlw"><h2>What you get</h2><ul><li><b>The Personal Agent Cheat Sheet</b>: which AI agent to pay for, by situation, with today's prices. <a href="/cheat-sheet/">Preview it</a>.</li><li><b>Every week</b>: the price changes, new features and shutdowns that matter, and whether you should switch.</li><li><b>Sources, always</b>: every fact links to the company's own page, so you can check it yourself.</li><li><b>No spam</b>: one email a week, unsubscribe in one click.</li></ul></section>
+<style>.nlw{max-width:720px;margin:0 0 64px}.nlw h2{font:500 28px/1.2 var(--serif);margin:0 0 12px}.nlw li{margin:8px 0;font-size:17px}.nlw a{text-decoration:underline}</style></Base>
