@@ -678,5 +678,45 @@
   "from": "1.15.29",
   "to": "1.15.30",
   "url": "https://github.com/crewAIInc/crewAI/releases/tag/1.15.30"
+ },
+ {
+  "date": "2026-10-24",
+  "slug": "openclaw",
+  "name": "OpenClaw",
+  "type": "release",
+  "field": "latest_release",
+  "from": "v2026.10.6",
+  "to": "v2026.10.7",
+  "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.7"
+ },
+ {
+  "date": "2026-10-24",
+  "slug": "openclaw",
+  "name": "OpenClaw",
+  "type": "release",
+  "field": "npm_version",
+  "from": "2026.10.6",
+  "to": "2026.10.7",
+  "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.7"
+ },
+ {
+  "date": "2026-10-24",
+  "slug": "vercel-ai-sdk",
+  "name": "Vercel AI SDK",
+  "type": "release",
+  "field": "latest_release",
+  "from": "@ai-sdk/harness-pi@1.0.166",
+  "to": "@ai-sdk/zai@3.0.40",
+  "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/zai%403.0.40"
+ },
+ {
+  "date": "2026-10-24",
+  "slug": "vercel-ai-sdk",
+  "name": "Vercel AI SDK",
+  "type": "release",
+  "field": "npm_version",
+  "from": "7.0.152",
+  "to": "7.0.153",
+  "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/zai%403.0.40"
  }
 ]

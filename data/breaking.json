@@ -15,6 +15,23 @@
   ]
  },
  {
+  "slug": "openclaw",
+  "name": "OpenClaw",
+  "category": "personal",
+  "tag": "v2026.10.7",
+  "date": "2026-10-24",
+  "week": "2026-10-19",
+  "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.7",
+  "keywords": [
+   "removed",
+   "migration"
+  ],
+  "excerpt": [
+   "- Safer update activation and recovery: verified activations remain successful through later maintenance or ledger errors, interrupted package updates resume safely, post-activation Doctor waits are bounded, stale receip",
+   "- Update guidance: avoid irrelevant database-repair advice when a package manager is missing, and remove superseded warnings after a successful update. (173293, 173395) Thanks @DonnieFi, @RomneyDa, @wangmiao0668000666, @"
+  ]
+ },
+ {
   "slug": "pydantic-ai",
   "name": "Pydantic AI",
   "category": "frameworks",
