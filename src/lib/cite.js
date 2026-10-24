@@ -6,6 +6,8 @@ import ps from '../../data/pricing-sources.json';
 const G = '16 Oct 2026', T = '17 Oct 2026', S = '18 Oct 2026', M = '19 Oct 2026', W = '20 Oct 2026', X = '21 Oct 2026';
 const OCR = t => [`oc-${t}`, `https://github.com/openclaw/openclaw/releases/tag/${t}`, `OpenClaw release notes ${t}`, T];
 const EXTRA = [
+ // Checked 24 Oct 2026: Muse launches in Japan
+ ['mu-jp','https://about.fb.com/ja/news/2026/10/muse-personal-ai-agent-launches-in-japan/','Meta Japan: Muse launches in Japan (23 Oct 2026, Japanese)','24 Oct 2026'],
  // Checked 21 Oct 2026 for the eight new SEO guides
  ['oai-agent7','https://help.openai.com/en/articles/11752874-chatgpt-agent','ChatGPT agent (OpenAI Help Center: "no longer available")',X],
  ['oai-work7','https://help.openai.com/en/articles/20001275-chatgpt-work-and-codex','ChatGPT Work and Codex (OpenAI Help Center)',X],

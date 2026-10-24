@@ -6,7 +6,7 @@ const picks = [
  ['Your life runs on Gmail and Google Calendar, and you want it to ask first','Claude (Free or Pro)',`Gmail, Calendar and Drive connectors work on every plan, and Claude asks before it sends an email by default${c('cl-gws3')}. Pro is $20/month, or $17/month paid yearly${c('cl-pricing3')}.`],
  ['You already pay Google for storage, or you live in Chrome','Google AI Pro',`$19.99/month and it includes 5 TB of storage${c('g-plans3')}. Gemini in Gmail, Tasks in Gemini, and Chrome auto browse, which can compare flight and hotel costs for you (US and India only)${c('g-plans3')}.`],
  ['You want errands done while you sleep','Grok Bot, or a ChatGPT dot',`Grok Bot has its own computer and keeps working 24/7 with your laptop closed, from $30/month${c('gb-page3','gb-pricing3')}. A dot is an always-on agent included with ChatGPT Pro, not available in the EEA, Switzerland or the UK${c('oai-dot')}.`],
- ['You want an agent app for bookings and shopping, and you\'re in the US or Canada','Muse from Meta',`Free with a usage limit, $20/month for more${c('mu3')}. Asks before sending an email or buying something${c('mu-priv3')}. Coverage says US and Canada at launch${c('mu-reuters')}.`],
+ ['You want an agent app for bookings and shopping, and you\'re in the US, Canada or Japan','Muse from Meta',`Free with a usage limit, $20/month for more${c('mu3')}. Asks before sending an email or buying something${c('mu-priv3')}. It launched in the US and Canada${c('mu-reuters')} and reached Japan on Oct 23, 2026, its first country outside North America${c('mu-jp')}.`],
  ['You mostly want research, reports and slides','Manus',`Free plan with 300 credits a day, Pro from $20/month${c('mn-pricing3')}. Does in-depth research and slide generation${c('mn-pricing3')}.`],
  ['You care most about privacy and you\'re handy with tech','OpenClaw or Hermes Agent',`Free and open source${c('oc3','hm3')}. OpenClaw runs on your own computer and you chat with it on WhatsApp or Telegram${c('oc3')}. You pay for the AI model you plug in.`],
 ];
@@ -93,7 +93,7 @@ ${costs.map(([a,b,p,w])=>`<tr><td data-l="Product" class="nm">${a}</td><td data-
 <li><b>Do you want it to book and buy, or just help?</b> Booking: ChatGPT Plus. Just help: any free plan is a fine start.</li>
 <li><b>Do you already pay Google One?</b> Google AI Pro may replace that bill, since it includes 5 TB of storage${c('g-plans3')}.</li>
 <li><b>Is there one errand you repeat every week?</b> That's your test for Grok Bot or a dot.</li>
-<li><b>Is it sold where you live?</b> Dots skip the EEA, Switzerland and the UK${c('oai-dot')}. Gemini Agent is US and English only${c('g-plans3')}. Muse isn't everywhere yet${c('mu3')}.</li>
+<li><b>Is it sold where you live?</b> Dots skip the EEA, Switzerland and the UK${c('oai-dot')}. Gemini Agent is US and English only${c('g-plans3')}. Muse is in the US, Canada and Japan so far${c('mu3','mu-jp')}.</li>
 </ol>
 <p>For the full breakdown of eleven agents, including the "for everyday life" track, read <a href="/guide/#life">the buyer's guide</a>.</p>
 `;
@@ -105,7 +105,7 @@ const faqs = [
  ['Do AI assistants train on my personal chats?',`Often yes, by default. You can turn it off: "Improve the model for everyone" in ChatGPT${c('oai-data')}, the training setting in Claude${c('cl-pricing3')}, Keep Activity in Gemini${c('g-privacy')}, and Data controls in Muse${c('mu-priv3')}.`],
 ];
 ---
-<GuideArticle slug="best-ai-agent-for-personal-use" kicker="Everyday life" updated="2026-10-21"
+<GuideArticle slug="best-ai-agent-for-personal-use" kicker="Everyday life" updated="2026-10-24"
  title="Best AI Agent for Personal Use (2026): Everyday AI Assistants Compared | AgentStackWatch"
  desc="The best AI personal assistant for everyday life in 2026: ChatGPT, Claude, Gemini, Grok Bot, Muse, Manus and OpenClaw compared on email, calendar, booking, trips, privacy and price. Every fact sourced."
  h1="The best AI agent for personal use (2026)"
