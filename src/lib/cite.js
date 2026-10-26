@@ -3,7 +3,7 @@
 // and for the best free AI agents guide on 2026-10-21.
 import { SRC as GSRC } from './guide-data.js';
 import ps from '../../data/pricing-sources.json';
-const G = '16 Oct 2026', T = '17 Oct 2026', S = '18 Oct 2026', M = '19 Oct 2026', W = '20 Oct 2026', X = '21 Oct 2026';
+const G = '16 Oct 2026', T = '17 Oct 2026', S = '18 Oct 2026', M = '19 Oct 2026', W = '20 Oct 2026', X = '21 Oct 2026', Z = '26 Oct 2026';
 const OCR = t => [`oc-${t}`, `https://github.com/openclaw/openclaw/releases/tag/${t}`, `OpenClaw release notes ${t}`, T];
 const EXTRA = [
  // Checked 24 Oct 2026: Muse launches in Japan
@@ -163,6 +163,21 @@ const EXTRA = [
  ['t1-dupple-about','https://www.dupple.com/about','Dupple: about',W],
  ['t1-dupple-ad','https://www.dupple.com/advertise','Dupple: advertise',W],
  ['t1-rundown','https://app.therundown.ai/plans','The Rundown AI: plans',W],
+ ['mk-jasper','https://www.jasper.ai/pricing','Jasper pricing',Z],
+ ['mk-hs-agent','https://knowledge.hubspot.com/website-and-landing-pages/create-content-with-content-agent','HubSpot Knowledge Base: create content with content agent',Z],
+ ['mk-hs-catalog','https://legal.hubspot.com/hubspot-product-and-services-catalog','HubSpot Product & Services Catalog (credit costs)',Z],
+ ['mk-hs-price','https://www.hubspot.com/pricing/marketing','HubSpot Marketing Hub pricing',Z],
+ ['mk-canva','https://www.canva.com/pricing/','Canva pricing',Z],
+ ['mk-lindy','https://www.lindy.ai/pricing','Lindy pricing',Z],
+ ['mk-lindy-social','https://www.lindy.ai/hire/social-media-manager','Lindy: social media manager',Z],
+ ['mk-gb','https://x.ai/bot','xAI: Grok Bot',Z],
+ ['mk-gb-docs','https://docs.x.ai/x-subscription/grok-bot','xAI docs: Grok Bot plans',Z],
+ ['mk-gb-price','https://docs.x.ai/x-subscription/pricing','xAI docs: X Subscription pricing (nightly snapshot)',Z],
+ ['mk-claude','https://claude.com/pricing','Claude pricing (nightly snapshot)',Z],
+ ['mk-oai-plus','https://help.openai.com/en/articles/6950777-what-is-chatgpt-plus','OpenAI Help: What is ChatGPT Plus?',Z],
+ ['mk-oai-biz','https://help.openai.com/en/articles/8792828-chatgpt-business-overview','OpenAI Help: ChatGPT Business overview',Z],
+ ['mk-oai-notes','https://help.openai.com/en/articles/6825453-chatgpt-release-notes','OpenAI Help: ChatGPT release notes',Z],
+ ['mk-gws','https://workspace.google.com/pricing','Google Workspace pricing',Z],
 ];
 export const ALL = Object.fromEntries([...GSRC.map(([k,u,t])=>[k,u,t,G]), ...EXTRA].map(([k,u,t,d])=>[k,{u,t,d}]));
 export function citer(){

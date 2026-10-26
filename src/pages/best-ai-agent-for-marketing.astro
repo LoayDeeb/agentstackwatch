@@ -1,0 +1,81 @@
+---
+import GuideArticle from '../layouts/GuideArticle.astro'; import { citer } from '../lib/cite.js';
+const { c, used, U } = citer();
+const body = `
+<div class="tldr"><p><b>The longer answer.</b> For most small teams the cheapest good start is the assistant you already pay for: ChatGPT Plus is $20 a month${c('mk-oai-plus')} and Claude Pro is $20 monthly or $17 a month billed yearly${c('mk-claude')}. Add Canva for visuals (Pro is US$144 a year)${c('mk-canva')}. If you already run HubSpot Marketing Hub Professional, its content agent drafts blogs, social posts and landing pages in your brand voice, but every piece uses 1,000 HubSpot credits${c('mk-hs-agent','mk-hs-catalog')}. Jasper Pro ($69 a month, or $59 billed yearly) is built only for marketing${c('mk-jasper')}. If you want something that does the busywork across your tools, look at Lindy${c('mk-lindy-social')} or Grok Bot${c('mk-gb')}.</p>
+<p><b>What we have and haven't done:</b> we haven't tested any of these tools on marketing work yet. Everything here comes from the vendors' own pages, which we checked on 26 October 2026. Where a page didn't say, we mark it unknown.</p></div>
+
+<h2>What a marketing agent actually does</h2>
+<p>Most "marketing agents" do some mix of five jobs:</p>
+<ol>
+<li><b>Ideas:</b> turn calls, launches and customer questions into topics worth posting about.</li>
+<li><b>Drafts:</b> write blog posts, social posts, emails and landing pages in your brand voice.</li>
+<li><b>Visuals:</b> make or resize images, slides and short videos.</li>
+<li><b>Scheduling and approvals:</b> line up the week's posts and collect a yes from whoever signs off.</li>
+<li><b>Ads and reporting:</b> watch campaigns, pull numbers and suggest changes.</li>
+</ol>
+<p>The first four are low-risk as long as a person approves before anything goes out. The fifth one spends real money, so give it read-only access until you trust it.</p>
+
+<h2>The options</h2>
+<div class="gtable-wrap"><table class="gtab"><thead><tr><th>Tool</th><th>Price</th><th>Marketing work it covers</th><th>Approval before publishing</th></tr></thead><tbody>
+<tr><td data-l="Tool" class="nm">ChatGPT</td><td data-l="Price">Plus $20/mo${c('mk-oai-plus')}; Business $20/seat/mo yearly or $25 monthly, 2 seats minimum${c('mk-oai-biz')}</td><td data-l="Marketing work it covers">Writing, image generation and deep research on Plus${c('mk-oai-plus')}; Canva and HubSpot connectors on Plus${c('mk-oai-notes')}; Slides with export to PowerPoint or Google Slides (Pro, Business, Enterprise)${c('mk-oai-notes')}</td><td data-l="Approval before publishing">You copy or export the work yourself${c('mk-oai-notes')}</td></tr>
+<tr><td data-l="Tool" class="nm">Claude</td><td data-l="Price">Pro $20 monthly or $17/mo yearly; Team $20–25/seat${c('mk-claude')}</td><td data-l="Marketing work it covers">Claude Design, Slides and Docs (listed even on Free); Pro can hand off and schedule tasks${c('mk-claude')}</td><td data-l="Approval before publishing">${U} for publishing; no marketing-specific agent named${c('mk-claude')}</td></tr>
+<tr><td data-l="Tool" class="nm">Jasper</td><td data-l="Price">Pro $69/seat/mo monthly or $59 yearly; Business custom${c('mk-jasper')}</td><td data-l="Marketing work it covers">"Agents for core marketing workflows", brand voices, audiences; Business adds GEO, translation, deep research and a custom agent builder${c('mk-jasper')}</td><td data-l="Approval before publishing">${U}</td></tr>
+<tr><td data-l="Tool" class="nm">HubSpot Marketing Hub</td><td data-l="Price">Starter $20/seat/mo (promo $7 for new customers); Professional from $800/mo with 3 seats plus a $3,000 onboarding fee${c('mk-hs-price')}</td><td data-l="Marketing work it covers">Content agent (beta, Professional and up): blogs, social posts, landing pages, campaign assets${c('mk-hs-agent','mk-hs-price')}</td><td data-l="Approval before publishing">Yes: "content agent doesn't publish automatically"${c('mk-hs-agent')}</td></tr>
+<tr><td data-l="Tool" class="nm">Canva</td><td data-l="Price">Free; Pro US$144/yr for one person; Business US$250/yr per person${c('mk-canva')}</td><td data-l="Marketing work it covers">AI design tools, resize and translate, brand kits, social scheduling (Pro)${c('mk-canva')}</td><td data-l="Approval before publishing">Approvals on Business${c('mk-canva')}</td></tr>
+<tr><td data-l="Tool" class="nm">Lindy</td><td data-l="Price">From $49.99/user/mo with 5,000 credits; $50 free credits to try${c('mk-lindy')}</td><td data-l="Marketing work it covers">Roles for paid ads, social media, SEO and content, marketing strategy${c('mk-lindy')}; 1,500+ integrations${c('mk-lindy-social')}</td><td data-l="Approval before publishing">"Nothing goes live until the client approves" in its social example${c('mk-lindy-social')}</td></tr>
+<tr><td data-l="Tool" class="nm">Grok Bot</td><td data-l="Price">X Premium $30/mo; Super $100, Ultra $200${c('mk-gb-price')}; not on Plus${c('mk-gb-docs')}</td><td data-l="Marketing work it covers">Lists a "Paid Media" job (details ${U})${c('mk-gb')}; works in the apps you log it into${c('mk-gb')}</td><td data-l="Approval before publishing">Comes back to you for approval${c('mk-gb')}</td></tr>
+<tr><td data-l="Tool" class="nm">Gemini in Google Workspace</td><td data-l="Price">Starter $7/user/mo; Standard $14 (yearly plan prices)${c('mk-gws')}</td><td data-l="Marketing work it covers">Gemini in Gmail and Google Vids on Starter; Gemini in Docs, Meet and more on Standard${c('mk-gws')}</td><td data-l="Approval before publishing">${U}</td></tr>
+</tbody></table></div>
+<p>Not covered here: the built-in AI in ad platforms (Google Ads, Meta) and email tools like Mailchimp or Klaviyo. ${U} for this guide; we didn't check them.</p>
+
+<h2>Picks by situation</h2>
+<h3>You're a founder doing marketing on the side</h3>
+<p>Start with ChatGPT Plus ($20 a month)${c('mk-oai-plus')} or Claude Pro ($20 monthly)${c('mk-claude')} for drafts, and Canva for visuals. On ChatGPT Plus you can connect Canva and HubSpot${c('mk-oai-notes')}. Canva's free plan includes up to 20 AI uses${c('mk-canva')}, so try it before you pay. If you want a deck from a conversation, ChatGPT Slides can export to PowerPoint or Google Slides, but it's rolling out to Pro, Business and Enterprise, not Plus${c('mk-oai-notes')}.</p>
+<h3>You're already on HubSpot</h3>
+<p>The content agent needs Marketing Hub Professional or Enterprise${c('mk-hs-agent')}. It writes blog posts, social posts, landing pages and campaign assets using your brand voice and account data, and you review every draft before it goes live${c('mk-hs-agent')}. Do the credit math first. One piece of content costs 1,000 credits${c('mk-hs-catalog')}. Professional includes 3,000 credits a month${c('mk-hs-price')}, and extra credits cost $0.01 each, or $10 per 1,000${c('mk-hs-catalog')}. By our math, that's about three pieces a month before you pay about $10 for each extra piece. Credits reset monthly and don't roll over${c('mk-hs-catalog')}. Professional starts at $800 a month and adds a required $3,000 onboarding fee${c('mk-hs-price')}, so it only makes sense if you need the rest of the hub too.</p>
+<h3>You have a content team that needs to stay on-brand</h3>
+<p>Jasper is built only for marketing. Pro ($69 a month, or $59 billed yearly) gives one seat, 2 brand voices and agents for core marketing workflows, with a 7-day free trial${c('mk-jasper')}. More than one user means moving to Business, which has custom pricing and a 12-month commitment, and adds GEO (showing up in AI answers), translation, deep research and a no-code agent builder${c('mk-jasper')}. On Business, agents use credits${c('mk-jasper')}.</p>
+<h3>You want social posts made from real work</h3>
+<p>Lindy's social media manager example reads your client calls, drafts a week of LinkedIn and X posts in each client's voice, schedules them and sends an approval link. In Lindy's words, "Nothing goes live until the client approves"${c('mk-lindy-social')}. Pricing starts at $49.99 a user per month with 5,000 credits${c('mk-lindy')}. How many posts 5,000 credits buys: ${U}.</p>
+<h3>You want an agent that works your tools like a person</h3>
+<p>Grok Bot runs on its own computer, uses the apps you log it into, can learn a routine by watching you do it once, and comes back to you for approval${c('mk-gb')}. Its job list includes "Paid Media"${c('mk-gb')}, but the page didn't say what that job does, so treat it as ${U}. It's included from X Premium at $30 a month${c('mk-gb-price','mk-gb-docs')}.</p>
+<h3>Your team lives in Google Workspace</h3>
+<p>Business Starter ($7 a user per month on the yearly plan) includes Gemini in Gmail and the Google Vids video maker. Standard ($14) adds Gemini in Docs, Meet and more${c('mk-gws')}. It's a good fit if most of your marketing is email, docs and short videos.</p>
+
+<h2>Guardrails that matter in marketing</h2>
+<ul>
+<li><b>Approve everything before it's public.</b> HubSpot's content agent doesn't publish by itself${c('mk-hs-agent')}, Lindy waits for approval on anything with outside impact, like posting or publishing${c('mk-lindy')}, and Grok Bot checks back with you${c('mk-gb')}. Keep it that way for the first month.</li>
+<li><b>Fact-check claims and numbers.</b> A made-up statistic or customer quote in an ad or blog is worse than no post at all.</li>
+<li><b>Don't hand over the ad budget.</b> Let an agent read campaign data and suggest changes. Change budgets yourself.</li>
+<li><b>Watch credits, not just seat prices.</b> HubSpot, Jasper Business and Lindy all charge for agent work in credits${c('mk-hs-catalog','mk-jasper','mk-lindy')}.</li>
+<li><b>Check the training settings.</b> ChatGPT Business doesn't train on workspace data${c('mk-oai-biz')}, while on Plus you have to opt out${c('mk-oai-plus')}. Jasper and Lindy say they don't train on your data${c('mk-jasper','mk-lindy')}, and Claude's consumer plans are listed as opt-out${c('mk-claude')}.</li>
+</ul>
+
+<h2>A one-week test</h2>
+<ol>
+<li>Write down your brand voice in five lines, with two posts you were proud of as examples.</li>
+<li>Give the tool one real input, like a customer call summary, a launch note or a FAQ, and ask for a week of posts plus one blog outline.</li>
+<li>Score each draft: would you publish it as is, after edits, or never?</li>
+<li>Time how long your edits take. If editing takes longer than writing from scratch, stop there.</li>
+<li>If most drafts are usable, connect your scheduler or CRM with approvals on, and compare a month of output and results with the month before.</li>
+</ol>
+<p>Selling as well as marketing? See <a href="/best-ai-agent-for-sales-and-crm/">the best AI agent for sales and CRM</a> and <a href="/best-ai-agent-for-small-business/">the best AI agent for small business</a>.</p>
+`;
+const faqs = [
+ ['What is the best AI agent for marketing?',`For most small teams, a $20 general assistant (ChatGPT Plus or Claude Pro)${c('mk-oai-plus','mk-claude')} plus Canva for visuals${c('mk-canva')}. HubSpot Marketing Hub Professional users can try its content agent${c('mk-hs-agent')}; content teams that need many on-brand workflows can look at Jasper (Pro $69/month, $59 billed yearly)${c('mk-jasper')}. We haven't tested these on marketing work yet.`],
+ ['Can an AI agent post to social media for me?',`Some can draft and schedule. Canva Pro includes social content scheduling${c('mk-canva')}, and Lindy's social example drafts and schedules posts, then sends an approval link${c('mk-lindy-social')}. HubSpot's content agent never publishes automatically${c('mk-hs-agent')}. Keep approvals on.`],
+ ['How much does HubSpot\'s content agent cost?',`It needs Marketing Hub Professional (from $800 a month plus a $3,000 onboarding fee)${c('mk-hs-price')}. Each piece of content uses 1,000 credits; extra credits are $0.01 each${c('mk-hs-catalog')}. Professional includes 3,000 credits a month${c('mk-hs-price')}.`],
+ ['Is Jasper better than ChatGPT for marketing?',`We haven't tested them side by side. Jasper is marketing-only, with brand voices, audiences and marketing agents, from $59 a month billed yearly${c('mk-jasper')}. ChatGPT Plus is $20 a month and covers writing, images and research${c('mk-oai-plus')}.`],
+ ['Can an AI agent run my ads?',`Lindy lists a paid ads role${c('mk-lindy')} and Grok Bot lists a "Paid Media" job${c('mk-gb')}, but how well they do it is unknown to us. Let them read and suggest; change budgets yourself.`],
+];
+---
+<GuideArticle slug="best-ai-agent-for-marketing" updated="2026-10-26" kicker="Marketing"
+ title="Best AI Agent for Marketing (2026): ChatGPT, HubSpot, Jasper, Canva & More | AgentStackWatch"
+ desc="The best AI agents for marketing in 2026, for founders and small teams: ChatGPT, Claude, HubSpot's content agent, Jasper, Canva, Lindy and Grok Bot compared on price, what they do and approvals."
+ h1="The best AI agent for marketing (2026)"
+ dek="Agents that draft posts, blogs and campaigns in your brand voice, compared on price, what they actually cover, and whether they wait for your OK before anything goes public."
+ faqs={faqs} used={used}
+ related={[['/best-ai-agent-for-sales-and-crm/','Best AI agent for sales and CRM'],['/best-ai-agent-for-small-business/','Best AI agent for small business'],['/how-much-does-an-ai-agent-cost/','How much does an AI agent cost?']]}>
+<Fragment set:html={body}/>
+</GuideArticle>

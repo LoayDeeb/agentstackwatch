@@ -44,7 +44,7 @@
   "rel": [
    "chatgpt-vs-claude-for-business",
    "are-ai-agents-worth-it-for-business",
-   "how-much-does-an-ai-agent-cost"
+   "best-ai-agent-for-marketing"
   ]
  },
  {
@@ -150,9 +150,21 @@
   "blurb": "Agents that research accounts, draft outreach and update your CRM: Grok Bot, ChatGPT, Gemini Enterprise, Lindy and Salesforce Agentforce.",
   "quick": "On Salesforce, Agentforce's Sales add-on ($125 a user per month) keeps the agent inside your data. Everyone else should start with a general agent that researches accounts and drafts outreach for you to approve, such as ChatGPT with HubSpot and Gmail, Gemini Enterprise, or Grok Bot.",
   "rel": [
+   "best-ai-agent-for-marketing",
    "best-ai-agent-for-customer-support",
+   "best-ai-agent-for-small-business"
+  ]
+ },
+ {
+  "slug": "best-ai-agent-for-marketing",
+  "short": "Best AI agent for marketing",
+  "kicker": "Marketing",
+  "blurb": "Agents that draft posts, blogs and campaigns in your brand voice: ChatGPT, Claude, HubSpot's content agent, Jasper, Canva, Lindy and Grok Bot.",
+  "quick": "Most small teams should start with the $20 assistant they already pay for (ChatGPT Plus or Claude Pro) plus Canva for visuals. On HubSpot Marketing Hub Professional, the content agent drafts in your brand voice, but each piece uses 1,000 credits. Jasper Pro ($69 a month, $59 billed yearly) suits teams that need many on-brand marketing workflows.",
+  "rel": [
+   "best-ai-agent-for-sales-and-crm",
    "best-ai-agent-for-small-business",
-   "ai-agent-for-research"
+   "how-much-does-an-ai-agent-cost"
   ]
  },
  {
