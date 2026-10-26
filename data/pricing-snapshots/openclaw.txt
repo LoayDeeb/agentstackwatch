@@ -1,4 +1,4 @@
-OpenClaw — Open-Source AI Assistant OpenClaw Product Install Ecosystem Integrations Blog Podcast Community Support Docs Product Install Ecosystem Integrations Blog Podcast Community Support Docs ... .:.::-::... ..--==++xxx++==--::.. ..::--==++x+x++==--... ..::-::.:. .. .
+OpenClaw — Open-Source AI Assistant OpenClaw Product Install Ecosystem Integrations Blog Podcast Webinar Community Support Docs Product Install Ecosystem Integrations Blog Podcast Webinar Community Support Docs ... .:.::-::... ..--==++xxx++==--::.. ..::--==++x+x++==--... ..::-::.:. .. .
 . . . ..:::.:.. ..::-=+++++==--::.. ..::--==+++++=-::.. ....:::.. . . .
 . ..:::::.. .::--==+++==--.:.. ..::--==++++=--::. ...:::.:.. .
 ....:.... ..::-=+====::.. ..::==+====::.. ..:.:.:..
@@ -54,7 +54,7 @@ $ pnpm openclaw onboard
 Desktop Apps
 Full apps that install everything for you — gateway, chat, setup, and node features. Available for macOS, Windows, and Linux.
 macOS
-macOS 15+ · Apple Silicon or Intel · v2026.10.6
+macOS 15+ · Apple Silicon or Intel · v2026.10.7
 Download Universal
 Silicon Intel
 Windows
@@ -62,7 +62,7 @@ Windows 10/11 · x64 or ARM64 · v2026.9.8-1
 Download x64
 Download ARM64
 Linux New
-x64 · AppImage or Debian package · v2026.10.6
+x64 · AppImage or Debian package · v2026.10.7
 Download AppImage
 Download .deb
 Works on macOS, Linux, and Windows. The apps and the one-liner install Node.js and everything else for you. Switch later with openclaw update --channel dev or openclaw update --channel stable .
