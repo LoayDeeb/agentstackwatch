@@ -798,5 +798,15 @@
   "from": "0.13.11",
   "to": "0.13.14",
   "url": "https://github.com/browser-use/browser-use/releases/tag/0.13.14"
+ },
+ {
+  "date": "2026-10-27",
+  "slug": "pydantic-ai",
+  "name": "Pydantic AI",
+  "type": "release",
+  "field": "latest_release",
+  "from": "v2.61.0",
+  "to": "v2.62.0",
+  "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.62.0"
  }
 ]
