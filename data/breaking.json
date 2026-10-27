@@ -1,5 +1,20 @@
 [
  {
+  "slug": "browser-use",
+  "name": "Browser Use",
+  "category": "frameworks",
+  "tag": "0.13.14",
+  "date": "2026-10-26",
+  "week": "2026-10-26",
+  "url": "https://github.com/browser-use/browser-use/releases/tag/0.13.14",
+  "keywords": [
+   "migration"
+  ],
+  "excerpt": [
+   "This release keeps the Python agent and its existing models. The Pi migration remains separate."
+  ]
+ },
+ {
   "slug": "langgraph",
   "name": "LangGraph",
   "category": "frameworks",
