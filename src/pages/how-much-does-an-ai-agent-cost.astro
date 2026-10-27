@@ -2,73 +2,76 @@
 import GuideArticle from '../layouts/GuideArticle.astro'; import { citer } from '../lib/cite.js'; import { bySlug, pricingCurated } from '../lib/data.js';
 const { c, used, U } = citer();
 const keys = Object.keys(pricingCurated).filter(k=>!k.startsWith('_')&&bySlug[k]);
-const row = k => { const p=pricingCurated[k], e=bySlug[k]; return `<tr><td data-l="Product" class="nm"><a href="/agents/${k}/">${e.name}</a><br/><span class="muted small">${e.maker||U}</span></td><td data-l="Price">${p.price.replace(/unknown/g,U)}${c('ps-'+k)}</td><td data-l="Confirmed on pricing page?">${p.confirmed?'Yes':'No, from another official source'}</td><td data-l="Checked" class="mono">${p.checked}</td></tr>`; };
+const row = k => { const p=pricingCurated[k], e=bySlug[k]; return `<tr><td data-l="Product" class="nm"><a href="/agents/${k}/">${e.name}</a><br/><span class="muted small">${e.maker||U}</span></td><td data-l="Price">${p.price.replace(/unknown/g,U)}${c('pc-'+k)}</td><td data-l="Confirmed on pricing page?">${p.confirmed?'Yes':'No, from another official source'}</td><td data-l="Checked" class="mono">${p.checked}</td></tr>`; };
 const personal = keys.filter(k=>bySlug[k].category==='personal').map(row).join('');
 const managed = keys.filter(k=>bySlug[k].category==='managed').map(row).join('');
 const sessHr = 0.08, hrs = 8*22;
 const body = `
-<div class="tldr"><p><b>The longer answer.</b> For one person, an AI agent costs <b>$0–20 a month</b> for most needs, and <b>$100–200</b> if you hand it hours of work a day. For a team, budget <b>$20–30 per seat per month</b>. Open-source agents are free software, but you pay for the AI model behind them. Running your own agents on a cloud platform is metered: tokens plus compute by the hour.</p></div>
+<div class="tldr"><p><b>The longer answer.</b> For one person, an AI agent costs <b>$0–20 a month</b> for most needs, and <b>$100–200</b> if you hand it hours of work a day (ChatGPT's top Pro tier goes to $500). For a team, budget <b>$20–30 per seat per month</b>. Open-source agents are free software, but you pay for the AI model behind them. Running your own agents on a cloud platform is metered: tokens plus compute by the hour.</p></div>
+<p class="muted small"><b>Prices checked 27 Oct 2026</b> against each vendor's own pricing or help pages. US list prices, before tax. Where a vendor's page wasn't clear, we say so.</p>
 
 <h2>The three ways you pay</h2>
 <ul>
 <li><b>Flat subscription</b> (ChatGPT, Claude, Grok Bot, Gemini, Muse): a monthly price with usage limits. Simple to budget.</li>
-<li><b>Credits</b> (Manus, Lindy): each task burns credits. Manus Pro starts at $20 for 4,000 credits${c('mn-pricing')}; Lindy starts at $49.99 per user for 5,000 credits and pauses when you run out, unless you top up at $10 per 1,000${c('ly')}.</li>
-<li><b>Metered</b> (agent platforms for builders): you pay model tokens plus runtime. Claude Managed Agents, for example, is model tokens plus $0.08 per session-hour${c('ps-claude-managed-agents')}.</li>
+<li><b>Credits</b> (Manus, Lindy): each task burns credits. Manus Pro starts at $20 for 4,000 credits${c('mn-1027')}. Lindy charges per user and pauses when you run out, unless you top up at $10 per 1,000 credits. Its pricing page showed two different starting prices when we loaded it on 27 Oct 2026: $29.99 a month for 3,000 credits on most loads, and $49.99 for 5,000 credits on others, so confirm the price at checkout${c('ly-1027')}.</li>
+<li><b>Metered</b> (agent platforms for builders): you pay model tokens plus runtime. Claude Managed Agents, for example, is model tokens plus $0.08 per session-hour${c('pc-claude-managed-agents')}.</li>
 </ul>
 
 <h2>Personal AI agents: every price we track</h2>
 <p>From our pricing data. Each price links to the vendor's own page; "No" in the confirmed column means the number wasn't visible in the fetched pricing-page text (blocked or rendered by script) and comes from another official page, so treat it as unconfirmed.</p>
 <div class="gtable-wrap"><table class="gtab"><thead><tr><th>Product</th><th>Price</th><th>Confirmed on pricing page?</th><th>Checked</th></tr></thead><tbody>${personal}</tbody></table></div>
-<p class="muted small">Notes: Meta's subscriptions help page lists Muse at free with limits, Power $20/mo and Maximum $100/mo${c('mu')}, newer than the App Store listing above. ChatGPT Plus is $20/mo and Pro comes at $100 or $200/mo, with a $500 Pro tier added in September${c('oai-rn')}. Claude's Max tier runs from $100/mo${c('cl-pricing')}.</p>
+<p class="muted small">Notes: Muse prices come from Meta's subscriptions help page (free with limits, Power $20/mo, Maximum $100/mo), still in limited testing${c('mu-1027')}; the App Store listing only says "In-App Purchases". ChatGPT Plus is $20/mo${c('oai-plus-1027')}, and ChatGPT Pro comes in three tiers: $100, $200 or $500 a month, billed monthly only${c('oai-pro-1027')}. The $500 tier launched on 29 Sep 2026${c('oai-rn-1027')}. Claude Max is $100 or $200 a month and now includes $100–200 a month in Claude Platform API credits${c('cl-pricing-1027')}.</p>
+<p class="muted small"><b>ChatGPT agent mode is gone.</b> OpenAI's help page says ChatGPT agent is no longer available and points to ChatGPT Work for longer, multi-step tasks${c('oai-agent-1027')}. Work is included with paid ChatGPT plans such as Plus and Business${c('oai-work-1027','oai-biz-1027')}. See <a href="/chatgpt-agent-alternatives/">ChatGPT agent alternatives</a>.</p>
 
 <h2>For teams: price per seat</h2>
 <div class="gtable-wrap"><table class="gtab"><thead><tr><th>Plan</th><th>Per seat / mo</th><th>Notes</th></tr></thead><tbody>
-<tr><td data-l="Plan" class="nm">ChatGPT Business</td><td data-l="Per seat / mo" class="mono">$20–25</td><td data-l="Notes">Annual vs monthly; Premium $100–125${c('oai-biz2')}</td></tr>
-<tr><td data-l="Plan" class="nm">Claude Team</td><td data-l="Per seat / mo" class="mono">$20–25</td><td data-l="Notes">Annual vs monthly; Premium $100–125${c('cl-team2')}</td></tr>
-<tr><td data-l="Plan" class="nm">Gemini Enterprise (Business)</td><td data-l="Per seat / mo" class="mono">from $21</td><td data-l="Notes">${c('g-ent')}</td></tr>
-<tr><td data-l="Plan" class="nm">Microsoft 365 Copilot Business</td><td data-l="Per seat / mo" class="mono">$21</td><td data-l="Notes">Add-on; needs a Microsoft 365 business plan; $18 promo to Dec 31, 2026${c('ms-price')}</td></tr>
-<tr><td data-l="Plan" class="nm">Manus Team</td><td data-l="Per seat / mo" class="mono">from $20</td><td data-l="Notes">Credit-based${c('mn-pricing')}</td></tr>
-<tr><td data-l="Plan" class="nm">Grok Bot team seat</td><td data-l="Per seat / mo" class="mono">$30–200</td><td data-l="Notes">Same as Premium, Super, Ultra${c('gb-pricing')}</td></tr>
-<tr><td data-l="Plan" class="nm">Perplexity Enterprise Pro</td><td data-l="Per seat / mo" class="mono">$40</td><td data-l="Notes">Or $400/yr${c('px-ent')}</td></tr>
+<tr><td data-l="Plan" class="nm">ChatGPT Business</td><td data-l="Per seat / mo" class="mono">$20–25</td><td data-l="Notes">Annual vs monthly; Premium seats $100–125; 2-seat minimum${c('oai-biz-1027')}</td></tr>
+<tr><td data-l="Plan" class="nm">Claude Team</td><td data-l="Per seat / mo" class="mono">$20–25</td><td data-l="Notes">Annual vs monthly; Premium seats $100–125; 2 to 150 seats${c('cl-team-1027','cl-pricing-1027')}</td></tr>
+<tr><td data-l="Plan" class="nm">Claude Enterprise</td><td data-l="Per seat / mo" class="mono">$20 + usage</td><td data-l="Notes">Billed annually, 20-seat minimum; usage charged on top at API rates${c('cl-pricing-1027')}</td></tr>
+<tr><td data-l="Plan" class="nm">Gemini Enterprise (Business)</td><td data-l="Per seat / mo" class="mono">from $21</td><td data-l="Notes">Starting price per seat${c('g-ent-1027')}</td></tr>
+<tr><td data-l="Plan" class="nm">Microsoft 365 Copilot Business</td><td data-l="Per seat / mo" class="mono">$18 promo, normally $21</td><td data-l="Notes">Add-on for existing Microsoft 365 Business customers. $18 is a promo (1 Jul to 31 Dec 2026) for the first year, annual commitment required; list price from $21${c('ms-price-1027')}</td></tr>
+<tr><td data-l="Plan" class="nm">Manus Team</td><td data-l="Per seat / mo" class="mono">from $20</td><td data-l="Notes">Credit-based${c('mn-1027')}</td></tr>
+<tr><td data-l="Plan" class="nm">Grok Bot team seat</td><td data-l="Per seat / mo" class="mono">$30–200</td><td data-l="Notes">Premium $30, Super $100 or Ultra $200 seats, mixable; annual team price ${U}${c('gb-pricing-1027')}</td></tr>
+<tr><td data-l="Plan" class="nm">Perplexity Enterprise Pro</td><td data-l="Per seat / mo" class="mono">$40</td><td data-l="Notes">Or $400/yr${c('px-ent-1027')}</td></tr>
 </tbody></table></div>
-<p>Ten people on ChatGPT Business or Claude Team at the annual rate is $2,400 a year; at the monthly rate, $3,000. More detail in the <a href="/best-ai-agent-for-small-business/">small-business guide</a>.</p>
+<p>Ten people on ChatGPT Business or Claude Team at the annual rate is $2,400 a year; at the monthly rate, $3,000. More detail in the <a href="/best-ai-agent-for-small-business/">small-business guide</a>. Buying for a marketing team? See <a href="/best-ai-agent-for-marketing/">the best AI agent for marketing</a>.</p>
 
 <h2>Running your own agents: platform prices</h2>
 <p>If you're building agents rather than subscribing to one, you pay a platform. These prices exclude model tokens unless stated.</p>
 <div class="gtable-wrap"><table class="gtab"><thead><tr><th>Product</th><th>Price</th><th>Confirmed on pricing page?</th><th>Checked</th></tr></thead><tbody>${managed}</tbody></table></div>
-<p><b>Worked example:</b> one Claude Managed Agents session running 8 hours a day, 22 working days a month, is ${hrs} session-hours × $${sessHr} = <b>$${(hrs*sessHr).toFixed(2)}</b> a month in runtime${c('ps-claude-managed-agents')}, plus the model tokens it uses. Token costs depend on the model and the workload, so the total for your use case is ${U} until you measure it.</p>
+<p><b>Worked example:</b> one Claude Managed Agents session running 8 hours a day, 22 working days a month, is ${hrs} session-hours × $${sessHr} = <b>$${(hrs*sessHr).toFixed(2)}</b> a month in runtime${c('pc-claude-managed-agents')}, plus the model tokens it uses. Token costs depend on the model and the workload, so the total for your use case is ${U} until you measure it.</p>
 
 <h2>Hidden costs to budget for</h2>
 <ul>
-<li><b>Shared pools.</b> Grok Bot usage comes out of a weekly pool shared with Grok and Cursor${c('gb-docs')}.</li>
-<li><b>Required base licences.</b> Copilot Business needs a Microsoft 365 business plan and an annual commitment${c('ms-price','ms-biz')}.</li>
-<li><b>Gated features.</b> Gemini Agent requires Google AI Ultra ($99.99 or $199.99/mo) and is US and English only${c('g-plans')}. ChatGPT dots need Pro or Business Premium${c('oai-rn')}.</li>
-<li><b>Overage.</b> ChatGPT Business and Claude Team both sell extra usage credits beyond the included limits${c('oai-biz2','cl-team2')}.</li>
-<li><b>Open-source isn't $0.</b> OpenClaw has no subscription or hosted tier${c('oc')}, and Hermes Agent's optional Nous Portal tiers sell model credits${c('hm')}. You still pay a model provider and spend time on setup and security (see <a href="/is-openclaw-safe/">Is OpenClaw safe?</a>).</li>
+<li><b>Shared pools.</b> Grok Bot usage comes out of a weekly pool shared with Grok and Cursor${c('gb-docs-1027')}.</li>
+<li><b>Required base licences.</b> Copilot Business is sold to existing Microsoft 365 Business customers, and the $18 promo needs an annual commitment, then renews${c('ms-price-1027')}.</li>
+<li><b>Gated features.</b> Gemini Agent requires Google AI Ultra (Ultra 5x $99.99/mo or Ultra 20x $199.99/mo) and is US and English only${c('g-plans-1027')}. Your first ChatGPT dot comes with Pro or a Business Premium seat; on Enterprise it's a beta that's off by default${c('oai-dot-1027')}.</li>
+<li><b>Overage.</b> ChatGPT Business and Claude Team both sell extra usage credits beyond the included limits${c('oai-biz-1027','cl-team-1027')}. Claude Enterprise bills all usage on top of the seat price${c('cl-pricing-1027')}.</li>
+<li><b>Open-source isn't $0.</b> OpenClaw has no subscription or hosted tier${c('oc-1027')}, and Hermes Agent's optional Nous Portal plans for model credits run Free, $20, $100 or $200 a month${c('hm-1027')}. You still pay a model provider and spend time on setup and security (see <a href="/is-openclaw-safe/">Is OpenClaw safe?</a>).</li>
 </ul>
 
 <h2>How to keep the bill sane</h2>
 <ol>
-<li>Start on monthly billing; switch to annual (about 20% cheaper on ChatGPT and Claude seats${c('oai-biz2','cl-team2')}) after two months of real use.</li>
-<li>Give Premium seats only to the people who hit limits. Both ChatGPT Business and Claude Team let you mix seat types${c('oai-biz2','cl-team2')}.</li>
+<li>Start on monthly billing; switch to annual (about 20% cheaper on ChatGPT and Claude seats${c('oai-biz-1027','cl-team-1027')}) after two months of real use.</li>
+<li>Give Premium seats only to the people who hit limits. Both ChatGPT Business and Claude Team let you mix seat types${c('oai-biz-1027','cl-team-1027')}.</li>
 <li>For credit plans, set a monthly cap and check usage weekly.</li>
 </ol>
 <p>Prices change. We re-check vendor pages weekly and log changes on the <a href="/pricing/">pricing page</a> and in the <a href="/guide/">buyer's guide</a>.</p>
 `;
 const faqs = [
- ['How much does an AI agent cost per month?',`For one person, $0–20 covers most needs: ChatGPT Plus and Claude Pro are $20${c('oai-rn','cl-pricing')}. Heavy users pay $100–200 (ChatGPT Pro, Claude Max, Grok Bot via X Super or Ultra)${c('oai-rn','cl-pricing','gb-pricing')}.`],
- ['How much does an AI agent cost for a business?',`About $20–30 per seat per month. ChatGPT Business and Claude Team are $20 annual or $25 monthly per seat${c('oai-biz2','cl-team2')}; Copilot Business is $21 on top of Microsoft 365${c('ms-price')}.`],
- ['Are open-source AI agents free?',`The software is: OpenClaw and Hermes Agent are MIT-licensed${c('oc','hm')}. You still pay for the AI model you connect and for hosting if you don't run it on your own computer.`],
- ['What is the cheapest AI agent?',`Several have free tiers: Claude, Manus and Muse among them${c('ps-claude-app','mn-pricing','mu')}. OpenClaw costs nothing for the software${c('oc')}. Free tiers have tight limits.`],
- ['What does it cost to run my own AI agents in the cloud?',`Metered. Claude Managed Agents is tokens plus $0.08 per session-hour${c('ps-claude-managed-agents')}; Google's agent platform lists $0.085 per vCPU-hour${c('ps-vertex-agent-engine')}; AWS Bedrock AgentCore runtime lists $0.0895 per vCPU-hour${c('ps-bedrock-agentcore')}.`],
+ ['How much does an AI agent cost per month?',`For one person, $0–20 covers most needs: ChatGPT Plus and Claude Pro are $20${c('oai-plus-1027','cl-pricing-1027')}. Heavy users pay $100–200 (ChatGPT Pro, Claude Max, Grok Bot via X Super or Ultra), and ChatGPT's top Pro tier is $500${c('oai-pro-1027','cl-pricing-1027','gb-pricing-1027')}. Prices checked 27 Oct 2026.`],
+ ['How much does an AI agent cost for a business?',`About $20–30 per seat per month. ChatGPT Business and Claude Team are $20 annual or $25 monthly per seat${c('oai-biz-1027','cl-team-1027')}; Claude Enterprise is $20 per seat plus usage, with a 20-seat minimum${c('cl-pricing-1027')}; Copilot Business is $21 on top of Microsoft 365, or $18 for the first year under a promo running to 31 Dec 2026${c('ms-price-1027')}.`],
+ ['Are open-source AI agents free?',`The software is: OpenClaw and Hermes Agent are MIT-licensed${c('oc-1027','hm-1027')}. You still pay for the AI model you connect and for hosting if you don't run it on your own computer.`],
+ ['What is the cheapest AI agent?',`Several have free tiers: Claude, Manus and Muse among them${c('pc-claude-app','mn-1027','mu-1027')}. OpenClaw costs nothing for the software${c('oc-1027')}. Free tiers have tight limits.`],
+ ['What does it cost to run my own AI agents in the cloud?',`Metered. Claude Managed Agents is tokens plus $0.08 per session-hour${c('pc-claude-managed-agents')}; Google's agent platform lists $0.085 per vCPU-hour after 50 free hours a month${c('pc-vertex-agent-engine')}; AWS Bedrock AgentCore runtime lists $0.0895 per vCPU-hour${c('pc-bedrock-agentcore')}.`],
 ];
 ---
-<GuideArticle slug="how-much-does-an-ai-agent-cost" updated="2026-10-21" kicker="Cost"
+<GuideArticle slug="how-much-does-an-ai-agent-cost" updated="2026-10-27" kicker="Cost"
  title="How Much Does an AI Agent Cost? (2026 Price Table) | AgentStackWatch"
  desc="What AI agents cost in 2026: a sourced price table for ChatGPT, Claude, Grok Bot, Manus, Lindy, Gemini, Muse, OpenClaw and more, per-seat business prices, cloud agent platform rates and hidden costs."
  h1="How much does an AI agent cost? (2026)"
  dek="Every personal agent we track, its price and where it's from, plus per-seat business costs, what it costs to run your own agents, and the hidden extras."
  faqs={faqs} used={used}
- related={[['/compare/grok-bot-vs-chatgpt-dots/','Grok Bot vs ChatGPT dots'],['/compare/manus-vs-lindy/','Manus vs Lindy'],['/compare/claude-managed-agents-vs-openai-agents-api/','Claude Managed Agents vs OpenAI Agents API'],['/compare/vertex-agent-engine-vs-bedrock-agentcore/','Vertex Agent Engine vs Bedrock AgentCore'],['/best-free-ai-agent/','Best free AI agents and assistants (what you get for $0)']]}>
+ related={[['/compare/grok-bot-vs-chatgpt-dots/','Grok Bot vs ChatGPT dots'],['/compare/manus-vs-lindy/','Manus vs Lindy'],['/compare/claude-managed-agents-vs-openai-agents-api/','Claude Managed Agents vs OpenAI Agents API'],['/compare/vertex-agent-engine-vs-bedrock-agentcore/','Vertex Agent Engine vs Bedrock AgentCore'],['/best-free-ai-agent/','Best free AI agents and assistants (what you get for $0)'],['/best-ai-agent-for-marketing/','Best AI agent for marketing']]}>
 <Fragment set:html={body}/>
 </GuideArticle>
