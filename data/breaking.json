@@ -32,6 +32,23 @@
   ]
  },
  {
+  "slug": "openhands",
+  "name": "OpenHands",
+  "category": "frameworks",
+  "tag": "v1.34.0",
+  "date": "2026-10-27",
+  "week": "2026-10-26",
+  "url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.34.0",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "refactor: remove code with no production caller by @VascoSch92 in https://github.com/OpenHands/OpenHands/pull/18978",
+   "chore: remove merged PR artifacts by @all-hands-bot in https://github.com/OpenHands/OpenHands/pull/18876",
+   "chore: remove merged PR artifacts by @all-hands-bot in https://github.com/OpenHands/OpenHands/pull/19003"
+  ]
+ },
+ {
   "slug": "pydantic-ai",
   "name": "Pydantic AI",
   "category": "frameworks",
@@ -48,6 +65,22 @@
    "Add CodeMode(monty_sandbox=...), which takes a remote Monty URL or a function that builds the pool, and deprecate monty_sandbox_url by @adtyavrdhn in https://github.com/pydantic/pydantic-ai/pull/11141",
    "Build Harness SystemReminders on request-scoped system prompts and deprecate cache_ttl by @DouweM in https://github.com/pydantic/pydantic-ai/pull/9712",
    "Keep deferred capabilities loaded when SummarizingCompaction, SlidingWindowCompaction and RelevanceCompaction remove their load_capability exchange by @DouweM in https://github.com/pydantic/pydantic-ai/pull/11394"
+  ]
+ },
+ {
+  "slug": "vercel-ai-sdk",
+  "name": "Vercel AI SDK",
+  "category": "frameworks",
+  "tag": "ai@7.0.155",
+  "date": "2026-10-27",
+  "week": "2026-10-26",
+  "url": "https://github.com/vercel/ai/releases/tag/ai%407.0.155",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "- b6b9dca: chore(ai): remove runtime validation of inputs that TypeScript types already guarantee",
+   "streamText, generateText, generateObject and streamObject no longer validate messages against the ModelMessage schema. This removes a cost that grew linearly with message history and was paid on every streamText step. Ty"
   ]
  },
  {

@@ -808,5 +808,85 @@
   "from": "v2.61.0",
   "to": "v2.62.0",
   "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.62.0"
+ },
+ {
+  "date": "2026-10-27",
+  "slug": "openclaw",
+  "name": "OpenClaw",
+  "type": "release",
+  "field": "latest_release",
+  "from": "v2026.10.7",
+  "to": "v2026.10.8",
+  "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.8"
+ },
+ {
+  "date": "2026-10-27",
+  "slug": "openclaw",
+  "name": "OpenClaw",
+  "type": "release",
+  "field": "npm_version",
+  "from": "2026.10.7",
+  "to": "2026.10.8",
+  "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.8"
+ },
+ {
+  "date": "2026-10-27",
+  "slug": "pydantic-ai",
+  "name": "Pydantic AI",
+  "type": "release",
+  "field": "pypi_version",
+  "from": "2.61.0",
+  "to": "2.62.0",
+  "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.62.0"
+ },
+ {
+  "date": "2026-10-27",
+  "slug": "crewai",
+  "name": "CrewAI",
+  "type": "release",
+  "field": "latest_release",
+  "from": "1.15.30",
+  "to": "1.15.32",
+  "url": "https://github.com/crewAIInc/crewAI/releases/tag/1.15.32"
+ },
+ {
+  "date": "2026-10-27",
+  "slug": "crewai",
+  "name": "CrewAI",
+  "type": "release",
+  "field": "pypi_version",
+  "from": "1.15.30",
+  "to": "1.15.32",
+  "url": "https://github.com/crewAIInc/crewAI/releases/tag/1.15.32"
+ },
+ {
+  "date": "2026-10-27",
+  "slug": "vercel-ai-sdk",
+  "name": "Vercel AI SDK",
+  "type": "release",
+  "field": "latest_release",
+  "from": "@ai-sdk/xai@5.0.31",
+  "to": "@ai-sdk/xai@3.0.146",
+  "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/xai%403.0.146"
+ },
+ {
+  "date": "2026-10-27",
+  "slug": "vercel-ai-sdk",
+  "name": "Vercel AI SDK",
+  "type": "release",
+  "field": "npm_version",
+  "from": "7.0.154",
+  "to": "7.0.155",
+  "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/xai%403.0.146"
+ },
+ {
+  "date": "2026-10-27",
+  "slug": "openhands",
+  "name": "OpenHands",
+  "type": "release",
+  "field": "latest_release",
+  "from": "v1.33.0",
+  "to": "v1.34.0",
+  "url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.34.0"
  }
 ]
