@@ -19,7 +19,7 @@ const costs = [
  ['Muse from Meta',`Free with a usage limit${c('mu3')}`,`Power $20/mo; Maximum $100/mo${c('mu3')}`,`Limited testing, not available everywhere${c('mu3')}.`],
  ['Manus',`Free, 300 credits a day${c('mn-pricing3')}`,`Pro $20 or $40/mo; 17% off yearly${c('mn-pricing3')}`,`Credits run down faster on big tasks.`],
  ['Perplexity Comet',`Free${c('ps-perplexity-comet')}`,`Comet Plus $5/mo, included in Perplexity Pro and Max${c('ps-perplexity-comet')}`,`From our tracker entry; Perplexity's pages blocked our check today. Pro and Max prices: ${U}.`],
- ['Lindy',`$50 free credits for 7 days${c('ly3')}`,`From $49.99/user/mo${c('ly-r')}`,`Built as a work teammate, billed per user${c('ly3')}.`],
+ ['Lindy',`$50 free credits for 7 days${c('ly3')}`,`From $29.99/user/mo (some page loads show $49.99)${c('ly-1028')}`,`Built as a work teammate, billed per user${c('ly3')}.`],
  ['OpenClaw / Hermes Agent',`$0 software${c('oc3','hm3')}`,`Your AI model bill`,`Hermes has optional paid Nous Portal tiers; prices ${U}${c('hm3')}.`],
 ];
 const body = `
@@ -41,7 +41,7 @@ const body = `
 <div class="gtable-wrap"><table class="gtab"><thead><tr><th>If you…</th><th>Pick</th><th>Why</th></tr></thead><tbody>
 ${picks.map(([a,b,w])=>`<tr><td data-l="If you…">${a}</td><td data-l="Pick" class="nm">${b}</td><td data-l="Why">${w}</td></tr>`).join('')}
 </tbody></table></div>
-<p>Lindy is good at inboxes and meetings, but it's sold as a work teammate, billed per user from $49.99/month${c('ly-r')}. For home use, the options above are cheaper places to start.</p>
+<p>Lindy is good at inboxes and meetings, but it's sold as a work teammate, billed per user from $29.99 a month (some loads of its pricing page show $49.99)${c('ly-1028')}. For home use, the options above are cheaper places to start.</p>
 
 <h2>Job by job</h2>
 <h3>Email, calendar and reminders</h3>

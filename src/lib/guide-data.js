@@ -30,6 +30,7 @@ export const SRC = [
  ['mu-reuters','https://www.reuters.com/business/meta-launches-ai-agent-that-can-access-other-apps-send-emails-make-payments-2026-09-08/','Reuters: Meta launches Muse (Sep 8, 2026)'],
  ['oai-dots','https://openai.com/index/introducing-dots/','OpenAI: Introducing dots'],
  ['cl-certs','https://privacy.claude.com/en/articles/10015870-what-certifications-has-anthropic-obtained','Anthropic: certifications for commercial products (checked 2026-10-17)'],
+ ['ly-1028','https://www.lindy.ai/pricing','Lindy pricing (re-checked 28 Oct 2026: $29.99/3,000 credits on some loads, $49.99/5,000 on others)'],
 ];
 export const NUM = Object.fromEntries(SRC.map(([k],i)=>[k,i+1]));
 export const URL = Object.fromEntries(SRC.map(([k,u])=>[k,u]));
@@ -95,7 +96,7 @@ export const PRODUCTS = [
    weak:`Terminal or desktop install plus your own model provider${c('hm')}: an IT project, not a sign-up.` },
  { id:'lindy', name:'Lindy', maker:'Lindy',
    good:`Inbox management, replies in your voice, meeting scheduling, prep, notes and follow-up, daily briefs, Slack-native, iMessage${c('ly')}.`,
-   price:`From $49.99/user/mo (5,000 credits each, pooled); $50 free credits for 7 days${c('ly')}.`,
+   price:`From $29.99/user/mo (3,000 credits each, pooled); some loads of Lindy's pricing page show $49.99 with 5,000 credits; $50 free credits for 7 days${c('ly')}.`,
    connects:`1,500+ integrations, MCP, 2-5 inboxes depending on plan${c('ly')}.`,
    data:`Never used to train models; SOC 2 and GDPR; Enterprise adds SSO, SCIM, audit logs, HIPAA BAA; actions with outside impact wait for approval${c('ly')}.`,
    weak:`Credits run out and Lindy pauses until reset or top-up ($10 per 1,000)${c('ly')}.` },

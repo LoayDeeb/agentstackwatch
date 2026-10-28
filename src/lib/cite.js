@@ -1,9 +1,9 @@
 // Per-page numbered citations. Reuses the buyer's-guide sources (checked 2026-10-16) plus sources checked for the guides hub on 2026-10-17
 // for the personal-use guide on 2026-10-18, for the ChatGPT vs Gemini guide on 2026-10-19, for the Claude vs Gemini guide on 2026-10-20,
-// and for the best free AI agents guide on 2026-10-21. Cost-page price refresh re-checked on 2026-10-27 (keys ending -1027, pc-*).
+// and for the best free AI agents guide on 2026-10-21. Cost-page price refresh re-checked on 2026-10-27 (keys ending -1027, pc-*). Lindy price wording re-checked across guides on 2026-10-28 (ly-1028).
 import { SRC as GSRC } from './guide-data.js';
 import ps from '../../data/pricing-sources.json';
-const G = '16 Oct 2026', T = '17 Oct 2026', S = '18 Oct 2026', M = '19 Oct 2026', W = '20 Oct 2026', X = '21 Oct 2026', Z = '26 Oct 2026', N = '27 Oct 2026';
+const G = '16 Oct 2026', T = '17 Oct 2026', S = '18 Oct 2026', M = '19 Oct 2026', W = '20 Oct 2026', X = '21 Oct 2026', Z = '26 Oct 2026', N = '27 Oct 2026', O = '28 Oct 2026';
 const OCR = t => [`oc-${t}`, `https://github.com/openclaw/openclaw/releases/tag/${t}`, `OpenClaw release notes ${t}`, T];
 const EXTRA = [
  // Re-checked 27 Oct 2026 for the /how-much-does-an-ai-agent-cost/ price refresh
@@ -19,6 +19,7 @@ const EXTRA = [
  ['gb-pricing-1027','https://docs.x.ai/x-subscription/pricing','The X Subscription pricing, incl. Teams (docs.x.ai, updated 11 Oct 2026)',N],
  ['gb-docs-1027','https://docs.x.ai/x-subscription/grok-bot','Grok Bot on The X Subscription (docs.x.ai)',N],
  ['mn-1027','https://help.manus.im/en/articles/11711111-what-is-the-current-membership-pricing-for-manus','Manus Help Center: current membership pricing',N],
+ ['ly-1028','https://www.lindy.ai/pricing','Lindy pricing (28 Oct 2026: page summary says $29.99 per user per month; plan section showed $29.99/3,000 credits on some loads and $49.99/5,000 credits on others)',O],
  ['ly-1027','https://www.lindy.ai/pricing','Lindy pricing (showed $29.99/3,000 credits on most loads and $49.99/5,000 credits on others)',N],
  ['mu-1027','https://www.meta.com/help/subscriptions/1021145227643680/','About Muse subscriptions (Meta Help Center)',N],
  ['g-plans-1027','https://one.google.com/about/google-ai-plans/','Google AI plans: Plus, Pro, Ultra 5x, Ultra 20x',N],
