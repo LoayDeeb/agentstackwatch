@@ -908,5 +908,85 @@
   "from": "2.62.0",
   "to": "2.63.0",
   "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.63.0"
+ },
+ {
+  "date": "2026-10-29",
+  "slug": "e2b",
+  "name": "E2B",
+  "type": "release",
+  "field": "latest_release",
+  "from": "e2b@2.61.0",
+  "to": "@e2b/code-interpreter-python@2.11.6",
+  "url": "https://github.com/e2b-dev/E2B/releases/tag/%40e2b/code-interpreter-python%402.11.6"
+ },
+ {
+  "date": "2026-10-29",
+  "slug": "e2b",
+  "name": "E2B",
+  "type": "release",
+  "field": "pypi_version",
+  "from": "2.61.0",
+  "to": "2.62.0",
+  "url": "https://github.com/e2b-dev/E2B/releases/tag/%40e2b/code-interpreter-python%402.11.6"
+ },
+ {
+  "date": "2026-10-29",
+  "slug": "crewai",
+  "name": "CrewAI",
+  "type": "release",
+  "field": "pypi_version",
+  "from": "1.15.32",
+  "to": "1.15.33",
+  "url": "https://github.com/crewAIInc/crewAI/releases/tag/1.15.32"
+ },
+ {
+  "date": "2026-10-29",
+  "slug": "mastra",
+  "name": "Mastra",
+  "type": "release",
+  "field": "latest_release",
+  "from": "@mastra/core@1.79.0",
+  "to": "@mastra/core@1.80.0",
+  "url": "https://github.com/mastra-ai/mastra/releases/tag/%40mastra/core%401.80.0"
+ },
+ {
+  "date": "2026-10-29",
+  "slug": "mastra",
+  "name": "Mastra",
+  "type": "release",
+  "field": "npm_version",
+  "from": "1.79.0",
+  "to": "1.80.0",
+  "url": "https://github.com/mastra-ai/mastra/releases/tag/%40mastra/core%401.80.0"
+ },
+ {
+  "date": "2026-10-29",
+  "slug": "vercel-ai-sdk",
+  "name": "Vercel AI SDK",
+  "type": "release",
+  "field": "latest_release",
+  "from": "@ai-sdk/xai@3.0.146",
+  "to": "@ai-sdk/workflow-harness@1.0.167",
+  "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/workflow-harness%401.0.167"
+ },
+ {
+  "date": "2026-10-29",
+  "slug": "vercel-ai-sdk",
+  "name": "Vercel AI SDK",
+  "type": "release",
+  "field": "npm_version",
+  "from": "7.0.155",
+  "to": "7.0.156",
+  "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/workflow-harness%401.0.167"
+ },
+ {
+  "date": "2026-10-29",
+  "slug": "goose",
+  "name": "Goose",
+  "type": "release",
+  "field": "latest_release",
+  "from": "v1.56.0",
+  "to": "v1.57.0",
+  "url": "https://github.com/aaif-goose/goose/releases/tag/v1.57.0"
  }
 ]
