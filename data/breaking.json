@@ -1,5 +1,84 @@
 [
  {
+  "slug": "crewai",
+  "name": "CrewAI",
+  "category": "frameworks",
+  "tag": "1.15.33",
+  "date": "2026-10-29",
+  "week": "2026-10-26",
+  "url": "https://github.com/crewAIInc/crewAI/releases/tag/1.15.33",
+  "keywords": [
+   "breaking",
+   "migration"
+  ],
+  "excerpt": [
+   "- Save unrestorable checkpoint callbacks as null instead of breaking restore",
+   "- Document agent planning with PlanningConfig and migrate the reasoning page"
+  ]
+ },
+ {
+  "slug": "openclaw",
+  "name": "OpenClaw",
+  "category": "personal",
+  "tag": "v2026.10.9",
+  "date": "2026-10-29",
+  "week": "2026-10-26",
+  "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.9",
+  "keywords": [
+   "migration"
+  ],
+  "excerpt": [
+   "- Migrate large transcript archives without exceeding Node.js string limits. (170853, 170847) Thanks @iamonlv426 and @RomneyDa."
+  ]
+ },
+ {
+  "slug": "openclaw",
+  "name": "OpenClaw",
+  "category": "personal",
+  "tag": "v2026.9.36",
+  "date": "2026-10-29",
+  "week": "2026-10-26",
+  "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.9.36",
+  "keywords": [
+   "migration"
+  ],
+  "excerpt": [
+   "- Update, install, and Doctor: restore the installed package root after a denied rollback rename, keep Doctor recovery guidance and migration rollback restrictions, preserve cleanup uncertainty in buffered command result"
+  ]
+ },
+ {
+  "slug": "vercel-ai-sdk",
+  "name": "Vercel AI SDK",
+  "category": "frameworks",
+  "tag": "ai@7.0.157",
+  "date": "2026-10-29",
+  "week": "2026-10-26",
+  "url": "https://github.com/vercel/ai/releases/tag/ai%407.0.157",
+  "keywords": [
+   "deprecated"
+  ],
+  "excerpt": [
+   "- 0cc4921: graduate LanguageModelStreamPart to stable and deprecate Experimental_LanguageModelStreamPart",
+   "- 077cfb3: feat(ai): Graduate filterActiveTools from experimental. It is now exported as filterActiveTools; experimental_filterActiveTools remains as a deprecated alias."
+  ]
+ },
+ {
+  "slug": "vercel-ai-sdk",
+  "name": "Vercel AI SDK",
+  "category": "frameworks",
+  "tag": "@ai-sdk/workflow@2.0.89",
+  "date": "2026-10-29",
+  "week": "2026-10-26",
+  "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/workflow%402.0.89",
+  "keywords": [
+   "deprecated"
+  ],
+  "excerpt": [
+   "- 0cc4921: graduate LanguageModelStreamPart to stable and deprecate Experimental_LanguageModelStreamPart",
+   "- 077cfb3: feat(ai): Graduate filterActiveTools from experimental. It is now exported as filterActiveTools; experimental_filterActiveTools remains as a deprecated alias."
+  ]
+ },
+ {
   "slug": "e2b",
   "name": "E2B",
   "category": "managed",

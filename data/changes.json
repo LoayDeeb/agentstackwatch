@@ -988,5 +988,55 @@
   "from": "v1.56.0",
   "to": "v1.57.0",
   "url": "https://github.com/aaif-goose/goose/releases/tag/v1.57.0"
+ },
+ {
+  "date": "2026-10-30",
+  "slug": "openclaw",
+  "name": "OpenClaw",
+  "type": "release",
+  "field": "latest_release",
+  "from": "v2026.10.8",
+  "to": "v2026.10.9",
+  "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.9"
+ },
+ {
+  "date": "2026-10-30",
+  "slug": "openclaw",
+  "name": "OpenClaw",
+  "type": "release",
+  "field": "npm_version",
+  "from": "2026.10.8",
+  "to": "2026.10.9",
+  "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.9"
+ },
+ {
+  "date": "2026-10-30",
+  "slug": "crewai",
+  "name": "CrewAI",
+  "type": "release",
+  "field": "latest_release",
+  "from": "1.15.32",
+  "to": "1.15.33",
+  "url": "https://github.com/crewAIInc/crewAI/releases/tag/1.15.33"
+ },
+ {
+  "date": "2026-10-30",
+  "slug": "vercel-ai-sdk",
+  "name": "Vercel AI SDK",
+  "type": "release",
+  "field": "latest_release",
+  "from": "@ai-sdk/workflow-harness@1.0.167",
+  "to": "@ai-sdk/vue@3.0.319",
+  "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/vue%403.0.319"
+ },
+ {
+  "date": "2026-10-30",
+  "slug": "vercel-ai-sdk",
+  "name": "Vercel AI SDK",
+  "type": "release",
+  "field": "npm_version",
+  "from": "7.0.156",
+  "to": "7.0.157",
+  "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/vue%403.0.319"
  }
 ]
