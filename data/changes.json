@@ -1038,5 +1038,25 @@
   "from": "7.0.156",
   "to": "7.0.157",
   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/vue%403.0.319"
+ },
+ {
+  "date": "2026-10-30",
+  "slug": "claude-agent-sdk",
+  "name": "Claude Agent SDK",
+  "type": "release",
+  "field": "latest_release",
+  "from": "v0.2.174",
+  "to": "v0.2.175",
+  "url": "https://github.com/anthropics/claude-agent-sdk-python/releases/tag/v0.2.175"
+ },
+ {
+  "date": "2026-10-30",
+  "slug": "claude-agent-sdk",
+  "name": "Claude Agent SDK",
+  "type": "release",
+  "field": "pypi_version",
+  "from": "0.2.174",
+  "to": "0.2.175",
+  "url": "https://github.com/anthropics/claude-agent-sdk-python/releases/tag/v0.2.175"
  }
 ]

@@ -1,5 +1,25 @@
 [
  {
+  "slug": "openclaw",
+  "name": "OpenClaw",
+  "category": "personal",
+  "tag": "v2026.10.10-beta.5",
+  "date": "2026-10-30",
+  "week": "2026-10-26",
+  "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.10-beta.5",
+  "keywords": [
+   "breaking",
+   "removed",
+   "migration"
+  ],
+  "excerpt": [
+   "- Sessions: preserve transcript IDs across idle resets and the linked model account across /new, /reset, and idle or daily resets, commit automation results during active turns, keep cleared history out of forks, keep a ",
+   "- Session commands and lookups: report session read failures before native execution, fail cleanly when the runtime changes during turn preparation, omit directories from session file activity, match canonical Unicode ti",
+   "- Update platforms: use the owning pnpm 10 shim and global bin, tolerate absent optional packages in Windows pnpm swaps, retire migration originals on externally supervised installs, retain late imports on Bun, and keep ",
+   "- Doctor: repair empty retired plugin install metadata, finish plugin repair when historical archives are missing, preserve explicit session runtime selections, automatic child-session model selections, and channel owner"
+  ]
+ },
+ {
   "slug": "crewai",
   "name": "CrewAI",
   "category": "frameworks",
