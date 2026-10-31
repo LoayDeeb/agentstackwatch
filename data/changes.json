@@ -1058,5 +1058,65 @@
   "from": "0.2.174",
   "to": "0.2.175",
   "url": "https://github.com/anthropics/claude-agent-sdk-python/releases/tag/v0.2.175"
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "langgraph",
+  "name": "LangGraph",
+  "type": "release",
+  "field": "latest_release",
+  "from": "1.2.18",
+  "to": "1.2.19",
+  "url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.19"
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "langgraph",
+  "name": "LangGraph",
+  "type": "release",
+  "field": "pypi_version",
+  "from": "1.2.18",
+  "to": "1.2.19",
+  "url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.19"
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "pydantic-ai",
+  "name": "Pydantic AI",
+  "type": "release",
+  "field": "latest_release",
+  "from": "v2.63.0",
+  "to": "v2.64.0",
+  "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.64.0"
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "mastra",
+  "name": "Mastra",
+  "type": "release",
+  "field": "npm_version",
+  "from": "1.80.0",
+  "to": "1.81.0",
+  "url": "https://github.com/mastra-ai/mastra/releases/tag/%40mastra/core%401.80.0"
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "vercel-ai-sdk",
+  "name": "Vercel AI SDK",
+  "type": "release",
+  "field": "latest_release",
+  "from": "@ai-sdk/vue@3.0.319",
+  "to": "@ai-sdk/xai@5.0.35",
+  "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/xai%405.0.35"
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "vercel-ai-sdk",
+  "name": "Vercel AI SDK",
+  "type": "release",
+  "field": "npm_version",
+  "from": "7.0.157",
+  "to": "7.0.159",
+  "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/xai%405.0.35"
  }
 ]

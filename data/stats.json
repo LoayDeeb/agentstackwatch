@@ -1,27 +1,27 @@
 {
  "grok-bot": {
-  "fetched_at": "2026-10-30T07:10:56.135Z",
+  "fetched_at": "2026-10-31T00:00:19.228Z",
   "display_version": null,
   "display_version_source": null
  },
  "muse": {
-  "fetched_at": "2026-10-30T07:10:56.137Z",
+  "fetched_at": "2026-10-31T00:00:19.230Z",
   "display_version": null,
   "display_version_source": null
  },
  "openclaw": {
-  "fetched_at": "2026-10-30T07:10:56.137Z",
-  "stars": 393404,
-  "forks": 82696,
-  "open_issues": 7869,
+  "fetched_at": "2026-10-31T00:00:19.230Z",
+  "stars": 393474,
+  "forks": 82703,
+  "open_issues": 7917,
   "license": "MIT",
-  "pushed_at": "2026-10-30T07:06:03Z",
+  "pushed_at": "2026-10-30T23:59:52Z",
   "archived": false,
   "repo_full_name": "openclaw/openclaw",
   "latest_release": "v2026.10.9",
   "release_date": "2026-10-29T15:54:35Z",
   "release_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.9",
-  "npm_last_week": 3455782,
+  "npm_last_week": 3440912,
   "npm_version": "2026.10.9",
   "downloads_weekly": [
    {
@@ -130,17 +130,17 @@
   "display_version_source": "npm"
  },
  "chatgpt-dots": {
-  "fetched_at": "2026-10-30T07:10:57.137Z",
+  "fetched_at": "2026-10-31T00:00:20.264Z",
   "display_version": null,
   "display_version_source": null
  },
  "hermes-agent": {
-  "fetched_at": "2026-10-30T07:10:57.137Z",
-  "stars": 258611,
-  "forks": 56806,
-  "open_issues": 51983,
+  "fetched_at": "2026-10-31T00:00:20.265Z",
+  "stars": 258872,
+  "forks": 56904,
+  "open_issues": 52095,
   "license": "MIT",
-  "pushed_at": "2026-10-30T06:58:24Z",
+  "pushed_at": "2026-10-30T20:26:02Z",
   "archived": false,
   "repo_full_name": "NousResearch/hermes-agent",
   "latest_release": "v0.22.5",
@@ -150,82 +150,82 @@
   "display_version_source": "GitHub release"
  },
  "manus": {
-  "fetched_at": "2026-10-30T07:10:57.641Z",
+  "fetched_at": "2026-10-31T00:00:20.697Z",
   "display_version": null,
   "display_version_source": null
  },
  "lindy": {
-  "fetched_at": "2026-10-30T07:10:57.641Z",
+  "fetched_at": "2026-10-31T00:00:20.697Z",
   "display_version": null,
   "display_version_source": null
  },
  "perplexity-comet": {
-  "fetched_at": "2026-10-30T07:10:57.641Z",
+  "fetched_at": "2026-10-31T00:00:20.697Z",
   "display_version": null,
   "display_version_source": null
  },
  "gemini-agent": {
-  "fetched_at": "2026-10-30T07:10:57.641Z",
+  "fetched_at": "2026-10-31T00:00:20.697Z",
   "display_version": null,
   "display_version_source": null
  },
  "claude-app": {
-  "fetched_at": "2026-10-30T07:10:57.641Z",
+  "fetched_at": "2026-10-31T00:00:20.697Z",
   "display_version": null,
   "display_version_source": null
  },
  "claude-managed-agents": {
-  "fetched_at": "2026-10-30T07:10:57.642Z",
+  "fetched_at": "2026-10-31T00:00:20.697Z",
   "display_version": null,
   "display_version_source": null
  },
  "openai-agents-api": {
-  "fetched_at": "2026-10-30T07:10:57.642Z",
+  "fetched_at": "2026-10-31T00:00:20.697Z",
   "display_version": null,
   "display_version_source": null
  },
  "vertex-agent-engine": {
-  "fetched_at": "2026-10-30T07:10:57.642Z",
+  "fetched_at": "2026-10-31T00:00:20.697Z",
   "display_version": null,
   "display_version_source": null
  },
  "bedrock-agentcore": {
-  "fetched_at": "2026-10-30T07:10:57.642Z",
+  "fetched_at": "2026-10-31T00:00:20.697Z",
   "display_version": null,
   "display_version_source": null
  },
  "azure-foundry-agents": {
-  "fetched_at": "2026-10-30T07:10:57.642Z",
+  "fetched_at": "2026-10-31T00:00:20.697Z",
   "display_version": null,
   "display_version_source": null
  },
  "relevance-ai": {
-  "fetched_at": "2026-10-30T07:10:57.642Z",
+  "fetched_at": "2026-10-31T00:00:20.697Z",
   "display_version": null,
   "display_version_source": null
  },
  "letta-cloud": {
-  "fetched_at": "2026-10-30T07:10:57.642Z",
+  "fetched_at": "2026-10-31T00:00:20.697Z",
   "display_version": null,
   "display_version_source": null
  },
  "langgraph-platform": {
-  "fetched_at": "2026-10-30T07:10:57.642Z",
+  "fetched_at": "2026-10-31T00:00:20.697Z",
   "display_version": null,
   "display_version_source": null
  },
  "crewai-amp": {
-  "fetched_at": "2026-10-30T07:10:57.642Z",
+  "fetched_at": "2026-10-31T00:00:20.697Z",
   "display_version": null,
   "display_version_source": null
  },
  "e2b": {
-  "fetched_at": "2026-10-30T07:10:57.642Z",
-  "stars": 14611,
+  "fetched_at": "2026-10-31T00:00:20.697Z",
+  "stars": 14625,
   "forks": 1145,
   "open_issues": 116,
   "license": "Apache-2.0",
-  "pushed_at": "2026-10-29T15:37:47Z",
+  "pushed_at": "2026-10-30T23:48:56Z",
   "archived": false,
   "repo_full_name": "e2b-dev/E2B",
   "latest_release": "@e2b/code-interpreter-python@2.11.6",
@@ -344,14 +344,14 @@
   "display_version_source": "PyPI"
  },
  "modal": {
-  "fetched_at": "2026-10-30T07:10:58.402Z",
+  "fetched_at": "2026-10-31T00:00:21.492Z",
   "display_version": null,
   "display_version_source": null
  },
  "daytona": {
-  "fetched_at": "2026-10-30T07:10:58.402Z",
-  "stars": 71432,
-  "forks": 5647,
+  "fetched_at": "2026-10-31T00:00:21.492Z",
+  "stars": 71427,
+  "forks": 5651,
   "open_issues": 457,
   "license": null,
   "pushed_at": "2026-07-24T07:12:07Z",
@@ -364,19 +364,19 @@
   "display_version_source": "GitHub release"
  },
  "langgraph": {
-  "fetched_at": "2026-10-30T07:10:59.032Z",
-  "stars": 44140,
-  "forks": 7591,
-  "open_issues": 513,
+  "fetched_at": "2026-10-31T00:00:22.069Z",
+  "stars": 44184,
+  "forks": 7603,
+  "open_issues": 515,
   "license": "MIT",
-  "pushed_at": "2026-10-29T19:10:23Z",
+  "pushed_at": "2026-10-30T23:51:09Z",
   "archived": false,
   "repo_full_name": "langchain-ai/langgraph",
-  "latest_release": "1.2.18",
-  "release_date": "2026-10-26T20:04:45Z",
-  "release_url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.18",
+  "latest_release": "1.2.19",
+  "release_date": "2026-10-30T22:23:43Z",
+  "release_url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.19",
   "pypi_last_week": 13758763,
-  "pypi_version": "1.2.18",
+  "pypi_version": "1.2.19",
   "downloads_weekly": [
    {
     "w": "2026-04-27",
@@ -484,21 +484,21 @@
    }
   ],
   "downloads_source": "PyPI",
-  "display_version": "1.2.18",
+  "display_version": "1.2.19",
   "display_version_source": "PyPI"
  },
  "pydantic-ai": {
-  "fetched_at": "2026-10-30T07:10:59.708Z",
-  "stars": 20950,
-  "forks": 3063,
-  "open_issues": 1625,
+  "fetched_at": "2026-10-31T00:00:22.681Z",
+  "stars": 20963,
+  "forks": 3071,
+  "open_issues": 1661,
   "license": "MIT",
-  "pushed_at": "2026-10-30T04:48:13Z",
+  "pushed_at": "2026-10-31T00:00:18Z",
   "archived": false,
   "repo_full_name": "pydantic/pydantic-ai",
-  "latest_release": "v2.63.0",
-  "release_date": "2026-10-28T00:55:47Z",
-  "release_url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.63.0",
+  "latest_release": "v2.64.0",
+  "release_date": "2026-10-30T23:27:24Z",
+  "release_url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.64.0",
   "pypi_last_week": 1708130,
   "pypi_version": "2.63.0",
   "downloads_weekly": [
@@ -612,12 +612,12 @@
   "display_version_source": "PyPI"
  },
  "openai-agents-sdk": {
-  "fetched_at": "2026-10-30T07:11:00.242Z",
-  "stars": 30386,
-  "forks": 4958,
-  "open_issues": 17,
+  "fetched_at": "2026-10-31T00:00:23.168Z",
+  "stars": 30399,
+  "forks": 4959,
+  "open_issues": 20,
   "license": "MIT",
-  "pushed_at": "2026-10-27T19:44:03Z",
+  "pushed_at": "2026-10-30T20:30:17Z",
   "archived": false,
   "repo_full_name": "openai/openai-agents-python",
   "latest_release": "v0.24.0",
@@ -736,12 +736,12 @@
   "display_version_source": "PyPI"
  },
  "claude-agent-sdk": {
-  "fetched_at": "2026-10-30T07:11:00.738Z",
-  "stars": 8391,
+  "fetched_at": "2026-10-31T00:00:23.592Z",
+  "stars": 8394,
   "forks": 1386,
-  "open_issues": 606,
+  "open_issues": 607,
   "license": "MIT",
-  "pushed_at": "2026-10-30T01:50:50Z",
+  "pushed_at": "2026-10-30T22:53:51Z",
   "archived": false,
   "repo_full_name": "anthropics/claude-agent-sdk-python",
   "latest_release": "v0.2.175",
@@ -860,12 +860,12 @@
   "display_version_source": "PyPI"
  },
  "google-adk": {
-  "fetched_at": "2026-10-30T07:11:01.316Z",
-  "stars": 22047,
-  "forks": 4272,
-  "open_issues": 412,
+  "fetched_at": "2026-10-31T00:00:24.067Z",
+  "stars": 22051,
+  "forks": 4273,
+  "open_issues": 388,
   "license": "Apache-2.0",
-  "pushed_at": "2026-10-30T06:28:40Z",
+  "pushed_at": "2026-10-30T23:57:57Z",
   "archived": false,
   "repo_full_name": "google/adk-python",
   "latest_release": "v2.13.0",
@@ -984,12 +984,12 @@
   "display_version_source": "PyPI"
  },
  "crewai": {
-  "fetched_at": "2026-10-30T07:11:01.826Z",
-  "stars": 60275,
-  "forks": 8955,
-  "open_issues": 918,
+  "fetched_at": "2026-10-31T00:00:24.566Z",
+  "stars": 60314,
+  "forks": 8976,
+  "open_issues": 947,
   "license": "MIT",
-  "pushed_at": "2026-10-30T05:28:37Z",
+  "pushed_at": "2026-10-30T08:57:18Z",
   "archived": false,
   "repo_full_name": "crewAIInc/crewAI",
   "latest_release": "1.15.33",
@@ -1108,19 +1108,19 @@
   "display_version_source": "PyPI"
  },
  "mastra": {
-  "fetched_at": "2026-10-30T07:11:02.352Z",
-  "stars": 29202,
-  "forks": 3061,
-  "open_issues": 646,
+  "fetched_at": "2026-10-31T00:00:25.048Z",
+  "stars": 29218,
+  "forks": 3063,
+  "open_issues": 661,
   "license": "NOASSERTION",
-  "pushed_at": "2026-10-30T06:59:42Z",
+  "pushed_at": "2026-10-30T23:58:57Z",
   "archived": false,
   "repo_full_name": "mastra-ai/mastra",
   "latest_release": "@mastra/core@1.80.0",
   "release_date": "2026-10-28T15:23:57Z",
   "release_url": "https://github.com/mastra-ai/mastra/releases/tag/%40mastra/core%401.80.0",
-  "npm_last_week": 3044665,
-  "npm_version": "1.80.0",
+  "npm_last_week": 3003513,
+  "npm_version": "1.81.0",
   "downloads_weekly": [
    {
     "w": "2026-05-04",
@@ -1224,23 +1224,23 @@
    }
   ],
   "downloads_source": "npm",
-  "display_version": "1.80.0",
+  "display_version": "1.81.0",
   "display_version_source": "npm"
  },
  "vercel-ai-sdk": {
-  "fetched_at": "2026-10-30T07:11:03.687Z",
-  "stars": 27618,
-  "forks": 5476,
-  "open_issues": 1520,
+  "fetched_at": "2026-10-31T00:00:25.846Z",
+  "stars": 27631,
+  "forks": 5481,
+  "open_issues": 1521,
   "license": "NOASSERTION",
-  "pushed_at": "2026-10-30T03:02:20Z",
+  "pushed_at": "2026-10-30T23:35:11Z",
   "archived": false,
   "repo_full_name": "vercel/ai",
-  "latest_release": "@ai-sdk/vue@3.0.319",
-  "release_date": "2026-10-29T18:47:35Z",
-  "release_url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/vue%403.0.319",
-  "npm_last_week": 41654469,
-  "npm_version": "7.0.157",
+  "latest_release": "@ai-sdk/xai@5.0.35",
+  "release_date": "2026-10-30T22:19:56Z",
+  "release_url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/xai%405.0.35",
+  "npm_last_week": 41889127,
+  "npm_version": "7.0.159",
   "downloads_weekly": [
    {
     "w": "2026-05-04",
@@ -1344,14 +1344,14 @@
    }
   ],
   "downloads_source": "npm",
-  "display_version": "7.0.157",
+  "display_version": "7.0.159",
   "display_version_source": "npm"
  },
  "llamaindex": {
-  "fetched_at": "2026-10-30T07:11:04.507Z",
-  "stars": 52741,
-  "forks": 8472,
-  "open_issues": 1117,
+  "fetched_at": "2026-10-31T00:00:26.821Z",
+  "stars": 52750,
+  "forks": 8481,
+  "open_issues": 1144,
   "license": "MIT",
   "pushed_at": "2026-10-26T21:25:10Z",
   "archived": false,
@@ -1472,12 +1472,12 @@
   "display_version_source": "PyPI"
  },
  "haystack": {
-  "fetched_at": "2026-10-30T07:11:04.988Z",
-  "stars": 26880,
-  "forks": 3367,
+  "fetched_at": "2026-10-31T00:00:27.390Z",
+  "stars": 26891,
+  "forks": 3368,
   "open_issues": 197,
   "license": "Apache-2.0",
-  "pushed_at": "2026-10-30T02:12:13Z",
+  "pushed_at": "2026-10-30T11:37:59Z",
   "archived": false,
   "repo_full_name": "deepset-ai/haystack",
   "latest_release": "v3.4.1",
@@ -1596,8 +1596,8 @@
   "display_version_source": "PyPI"
  },
  "letta": {
-  "fetched_at": "2026-10-30T07:11:05.515Z",
-  "stars": 25292,
+  "fetched_at": "2026-10-31T00:00:27.922Z",
+  "stars": 25294,
   "forks": 2662,
   "open_issues": 0,
   "license": "Apache-2.0",
@@ -1611,12 +1611,12 @@
   "display_version_source": "GitHub release"
  },
  "dspy": {
-  "fetched_at": "2026-10-30T07:11:05.930Z",
-  "stars": 38851,
-  "forks": 3461,
-  "open_issues": 737,
+  "fetched_at": "2026-10-31T00:00:28.285Z",
+  "stars": 38858,
+  "forks": 3462,
+  "open_issues": 739,
   "license": "MIT",
-  "pushed_at": "2026-10-29T16:58:58Z",
+  "pushed_at": "2026-10-30T12:41:31Z",
   "archived": false,
   "repo_full_name": "stanfordnlp/dspy",
   "latest_release": "3.4.1",
@@ -1735,9 +1735,9 @@
   "display_version_source": "PyPI"
  },
  "smolagents": {
-  "fetched_at": "2026-10-30T07:11:06.452Z",
-  "stars": 30141,
-  "forks": 3170,
+  "fetched_at": "2026-10-31T00:00:28.731Z",
+  "stars": 30150,
+  "forks": 3172,
   "open_issues": 1024,
   "license": "Apache-2.0",
   "pushed_at": "2026-10-29T12:52:33Z",
@@ -1859,10 +1859,10 @@
   "display_version_source": "PyPI"
  },
  "browser-use": {
-  "fetched_at": "2026-10-30T07:11:06.983Z",
-  "stars": 119523,
-  "forks": 13305,
-  "open_issues": 626,
+  "fetched_at": "2026-10-31T00:00:29.173Z",
+  "stars": 119599,
+  "forks": 13314,
+  "open_issues": 641,
   "license": "MIT",
   "pushed_at": "2026-10-30T04:28:51Z",
   "archived": false,
@@ -1983,12 +1983,12 @@
   "display_version_source": "PyPI"
  },
  "openhands": {
-  "fetched_at": "2026-10-30T07:11:07.492Z",
-  "stars": 92230,
-  "forks": 12268,
-  "open_issues": 1162,
+  "fetched_at": "2026-10-31T00:00:29.618Z",
+  "stars": 92288,
+  "forks": 12284,
+  "open_issues": 1164,
   "license": "MIT",
-  "pushed_at": "2026-10-30T04:08:59Z",
+  "pushed_at": "2026-10-30T22:20:53Z",
   "archived": false,
   "repo_full_name": "OpenHands/OpenHands",
   "latest_release": "v1.34.0",
@@ -1998,12 +1998,12 @@
   "display_version_source": "GitHub release"
  },
  "goose": {
-  "fetched_at": "2026-10-30T07:11:07.859Z",
-  "stars": 55943,
-  "forks": 6500,
-  "open_issues": 539,
+  "fetched_at": "2026-10-31T00:00:30.010Z",
+  "stars": 55978,
+  "forks": 6504,
+  "open_issues": 526,
   "license": "Apache-2.0",
-  "pushed_at": "2026-10-29T21:40:12Z",
+  "pushed_at": "2026-10-30T20:20:50Z",
   "archived": false,
   "repo_full_name": "aaif-goose/goose",
   "latest_release": "v1.57.0",
@@ -2013,15 +2013,15 @@
   "display_version_source": "GitHub release"
  },
  "hal": {
-  "fetched_at": "2026-10-30T07:11:08.558Z",
+  "fetched_at": "2026-10-31T00:00:30.714Z",
   "display_version": null,
   "display_version_source": null
  },
  "swe-bench": {
-  "fetched_at": "2026-10-30T07:11:08.558Z",
-  "stars": 6118,
-  "forks": 1036,
-  "open_issues": 52,
+  "fetched_at": "2026-10-31T00:00:30.714Z",
+  "stars": 6124,
+  "forks": 1039,
+  "open_issues": 53,
   "license": "MIT",
   "pushed_at": "2026-09-18T05:08:56Z",
   "archived": false,
@@ -2030,12 +2030,12 @@
   "display_version_source": null
  },
  "gaia": {
-  "fetched_at": "2026-10-30T07:11:09.045Z",
+  "fetched_at": "2026-10-31T00:00:31.181Z",
   "display_version": null,
   "display_version_source": null
  },
  "tau-bench": {
-  "fetched_at": "2026-10-30T07:11:09.045Z",
+  "fetched_at": "2026-10-31T00:00:31.181Z",
   "stars": 1484,
   "forks": 221,
   "open_issues": 56,
@@ -2047,8 +2047,8 @@
   "display_version_source": null
  },
  "osworld": {
-  "fetched_at": "2026-10-30T07:11:09.588Z",
-  "stars": 3241,
+  "fetched_at": "2026-10-31T00:00:31.943Z",
+  "stars": 3245,
   "forks": 556,
   "open_issues": 188,
   "license": "Apache-2.0",

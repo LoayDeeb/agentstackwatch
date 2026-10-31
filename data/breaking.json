@@ -20,6 +20,22 @@
   ]
  },
  {
+  "slug": "pydantic-ai",
+  "name": "Pydantic AI",
+  "category": "frameworks",
+  "tag": "v2.64.0",
+  "date": "2026-10-30",
+  "week": "2026-10-26",
+  "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.64.0",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "Remove unresolvable RealtimeEvent from pydantic_ai.agent.__all__ by @adtyavrdhn in https://github.com/pydantic/pydantic-ai/pull/10189",
+   "Remove unresolvable RealtimeEvent from pydantic_ai.agent.__all__ by @adtyavrdhn in https://github.com/pydantic/pydantic-ai/pull/10189"
+  ]
+ },
+ {
   "slug": "crewai",
   "name": "CrewAI",
   "category": "frameworks",
