@@ -1118,5 +1118,35 @@
   "from": "7.0.157",
   "to": "7.0.159",
   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/xai%405.0.35"
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "pydantic-ai",
+  "name": "Pydantic AI",
+  "type": "release",
+  "field": "pypi_version",
+  "from": "2.63.0",
+  "to": "2.64.0",
+  "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.64.0"
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "claude-agent-sdk",
+  "name": "Claude Agent SDK",
+  "type": "release",
+  "field": "latest_release",
+  "from": "v0.2.175",
+  "to": "v0.2.176",
+  "url": "https://github.com/anthropics/claude-agent-sdk-python/releases/tag/v0.2.176"
+ },
+ {
+  "date": "2026-10-31",
+  "slug": "claude-agent-sdk",
+  "name": "Claude Agent SDK",
+  "type": "release",
+  "field": "pypi_version",
+  "from": "0.2.175",
+  "to": "0.2.176",
+  "url": "https://github.com/anthropics/claude-agent-sdk-python/releases/tag/v0.2.176"
  }
 ]
