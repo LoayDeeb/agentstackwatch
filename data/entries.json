@@ -188,7 +188,7 @@
   "maker": "Anthropic",
   "url": "https://claude.com/pricing",
   "description": "Anthropic's Claude assistant (web, desktop, mobile) incl. Claude Code and Cowork on paid plans.",
-  "pricing": "Free; Pro $20/mo ($17/mo annual); Max 5x $100/mo; Max 20x $200/mo",
+  "pricing": "Free; Pro $20/mo ($17/mo annual); Max $100/mo; Ultra $200/mo (formerly Max 5x / Max 20x, renamed 30 Oct 2026)",
   "open_source": false,
   "license": "proprietary",
   "github": null,

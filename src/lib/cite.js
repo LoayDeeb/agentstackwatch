@@ -14,6 +14,8 @@ const EXTRA = [
  ['oai-agent-1027','https://help.openai.com/en/articles/11752874-chatgpt-agent','ChatGPT agent (OpenAI Help Center: "no longer available", use ChatGPT Work)',N],
  ['oai-work-1027','https://help.openai.com/en/articles/20001275-chatgpt-work-and-codex','ChatGPT Work and Codex (OpenAI Help Center)',N],
  ['oai-dot-1027','https://help.openai.com/en/articles/20001530-getting-started-with-your-dot','Getting started with your dot: which plans include dots (OpenAI Help Center)',N],
+ ['cl-ultra-1031','https://x.com/claudeai/status/2116220869479428500','Claude on X: Max 5x renamed Max, Max 20x renamed Ultra; no 5-hour limit for verified Ultra accounts (30 Oct 2026)','31 Oct 2026'],
+ ['oai-rn-1031','https://help.openai.com/en/articles/6825453-chatgpt-release-notes','ChatGPT release notes: more Work and Codex usage on Pro (29 Oct 2026)','31 Oct 2026'],
  ['cl-pricing-1027','https://claude.com/pricing','Claude pricing: Free, Pro, Max, Team, Enterprise',N],
  ['cl-team-1027','https://support.claude.com/en/articles/9266767-what-is-the-team-plan','What is the Team plan? (Claude Help Center)',N],
  ['gb-pricing-1027','https://docs.x.ai/x-subscription/pricing','The X Subscription pricing, incl. Teams (docs.x.ai, updated 11 Oct 2026)',N],

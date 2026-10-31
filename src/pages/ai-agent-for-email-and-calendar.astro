@@ -3,7 +3,7 @@ import GuideArticle from '../layouts/GuideArticle.astro'; import { citer } from 
 const { c, used, U } = citer();
 const rows = [
  ['Claude',`Gmail: search, draft, send, reply, forward${c('cl-gws')}; Outlook on Pro and up${c('cl-pricing')}`,`Google Calendar: create and move events, find mutual availability, RSVP${c('cl-gws')}`,`Asks before sending by default${c('cl-gws')}`],
- ['ChatGPT',`Gmail and Outlook: drafts, then you choose to send (web)${c('oai-rn')}; Outlook shared mailboxes${c('oai-rn')}`,`Google Calendar; Outlook shared calendars: create, update, RSVP, cancel${c('oai-rn')}`,`You set it: always ask, ask before changes, or only before important changes${c('oai-rn')}`],
+ ['ChatGPT',`Gmail and Outlook: drafts, then you choose to send (web)${c('oai-rn')}; Outlook shared mailboxes${c('oai-rn')}; iCloud Mail on all plans (from 27 Oct 2026)${c('oai-rn')}`,`Google Calendar; Outlook shared calendars: create, update, RSVP, cancel${c('oai-rn')}; iCloud Calendar on all plans (from 27 Oct 2026)${c('oai-rn')}`,`You set it: always ask, ask before changes, or only before important changes${c('oai-rn')}`],
  ['Microsoft 365 Copilot',`Drafts emails in Outlook${c('ms-biz')}`,`Recaps meetings in Teams${c('ms-biz')}; scheduling ${U}`,U],
  ['Google Gemini',`Gemini in Gmail; AI Inbox briefing${c('g-plans')}`,U,U],
  ['Lindy',`Inbox triage, replies in your voice; 2–5 inboxes by plan${c('ly')}`,`Meeting scheduling, prep, notes, follow-up${c('ly')}`,`Actions with outside impact wait for approval${c('ly')}`],
@@ -15,6 +15,7 @@ const rows = [
 ];
 const body = `
 <div class="tldr"><p><b>The longer answer.</b> Several agents can genuinely work your inbox and calendar today. <b>Claude</b> has the most detailed published Gmail and Google Calendar features and asks before sending by default${c('cl-gws')}. <b>ChatGPT</b> covers Gmail and Outlook, including shared mailboxes${c('oai-rn')}. <b>Copilot</b> is the natural pick inside Outlook${c('ms-biz')}. <b>Lindy</b> is built specifically for this job${c('ly')}. Whatever you pick, keep sending behind your approval.</p></div>
+<p class="muted small"><b>Update 31 Oct 2026:</b> ChatGPT now connects to iCloud Mail and iCloud Calendar on all plans, including Free, on web, desktop and iOS (added 27 Oct)${c('oai-rn')}. See <a href="/news/2026-10-31-chatgpt-icloud-mail-calendar-text-your-dot/">our news post</a>.</p>
 
 <h2>Which agents can actually do it</h2>
 <p>"Works with email" can mean anything from summarizing one message to sending on your behalf. Here's what each vendor's own pages say, and whether it asks before acting. A blank we couldn't fill reads <span class="unk">unknown</span>.</p>
