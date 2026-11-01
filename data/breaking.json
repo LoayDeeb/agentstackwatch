@@ -1,5 +1,26 @@
 [
  {
+  "slug": "crewai",
+  "name": "CrewAI",
+  "category": "frameworks",
+  "tag": "1.15.34",
+  "date": "2026-11-01",
+  "week": "2026-10-26",
+  "url": "https://github.com/crewAIInc/crewAI/releases/tag/1.15.34",
+  "keywords": [
+   "breaking",
+   "removed",
+   "deprecated",
+   "migration"
+  ],
+  "excerpt": [
+   "- Document agent planning with planningconfig and migrate reasoning page",
+   "- Restore removed import paths with deprecation warnings",
+   "- Save unrestorable callbacks as null instead of breaking restore",
+   "Breaking Changes"
+  ]
+ },
+ {
   "slug": "openclaw",
   "name": "OpenClaw",
   "category": "personal",

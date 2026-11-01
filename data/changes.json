@@ -1148,5 +1148,25 @@
   "from": "0.2.175",
   "to": "0.2.176",
   "url": "https://github.com/anthropics/claude-agent-sdk-python/releases/tag/v0.2.176"
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "crewai",
+  "name": "CrewAI",
+  "type": "release",
+  "field": "latest_release",
+  "from": "1.15.33",
+  "to": "1.15.34",
+  "url": "https://github.com/crewAIInc/crewAI/releases/tag/1.15.34"
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "crewai",
+  "name": "CrewAI",
+  "type": "release",
+  "field": "pypi_version",
+  "from": "1.15.33",
+  "to": "1.15.34",
+  "url": "https://github.com/crewAIInc/crewAI/releases/tag/1.15.34"
  }
 ]
