@@ -3,9 +3,19 @@
 // and for the best free AI agents guide on 2026-10-21. Cost-page price refresh re-checked on 2026-10-27 (keys ending -1027, pc-*). Lindy price wording re-checked across guides on 2026-10-28 (ly-1028).
 import { SRC as GSRC } from './guide-data.js';
 import ps from '../../data/pricing-sources.json';
-const G = '16 Oct 2026', T = '17 Oct 2026', S = '18 Oct 2026', M = '19 Oct 2026', W = '20 Oct 2026', X = '21 Oct 2026', Z = '26 Oct 2026', N = '27 Oct 2026', O = '28 Oct 2026';
+const G = '16 Oct 2026', T = '17 Oct 2026', S = '18 Oct 2026', M = '19 Oct 2026', W = '20 Oct 2026', X = '21 Oct 2026', Z = '26 Oct 2026', N = '27 Oct 2026', O = '28 Oct 2026', P1 = '1 Nov 2026';
 const OCR = t => [`oc-${t}`, `https://github.com/openclaw/openclaw/releases/tag/${t}`, `OpenClaw release notes ${t}`, T];
 const EXTRA = [
+ // Checked 1 Nov 2026 for the Microsoft 365 Copilot vs ChatGPT for business guide
+ ['ms-price-1101','https://www.microsoft.com/en-us/microsoft-365-copilot/pricing','Microsoft Copilot business plans and pricing: Copilot Business add-on, Business Standard/Premium with Copilot, plan comparison and FAQ (Microsoft)',P1],
+ ['ms-sb-1101','https://www.microsoft.com/en-us/microsoft-365/copilot/business','Microsoft Copilot for small business: Copilot in Outlook, Teams, Cowork and Autopilot (Microsoft)',P1],
+ ['ms-ent-1101','https://www.microsoft.com/en-us/microsoft-365-copilot/enterprise','Microsoft Copilot for enterprise: Microsoft 365 Copilot add-on pricing (Microsoft)',P1],
+ ['ms-studio-1101','https://www.microsoft.com/en-us/copilot/pricing/copilot-studio','Microsoft Copilot Studio plans and pricing (Microsoft)',P1],
+ ['ms-lic-1101','https://learn.microsoft.com/en-us/microsoft-365/copilot/copilot-license-options','License options for Microsoft Copilot: Copilot Business eligibility and 300-user limit (Microsoft Learn)',P1],
+ ['oai-pricing-1101','https://chatgpt.com/pricing','ChatGPT pricing: Free, Go, Plus, Pro, Business, Enterprise (OpenAI)',P1],
+ ['oai-biz-1101','https://help.openai.com/en/articles/8792828-chatgpt-business-overview','ChatGPT Business overview: Standard and Premium seats, 2-seat minimum (OpenAI Help Center)',P1],
+ ['oai-bizpage-1101','https://chatgpt.com/business/','ChatGPT Business product page: dots, Work, plugins, team use cases (OpenAI)',P1],
+ ['oai-rn-1101','https://help.openai.com/en/articles/6825453-chatgpt-release-notes','ChatGPT release notes: Office add-ins, Gmail/Outlook sending, Meetings plugin, SharePoint, Slides (OpenAI Help Center)',P1],
  // Re-checked 27 Oct 2026 for the /how-much-does-an-ai-agent-cost/ price refresh
  ['oai-plus-1027','https://help.openai.com/en/articles/6950777-what-is-chatgpt-plus','What is ChatGPT Plus? ($20/month, OpenAI Help Center)',N],
  ['oai-pro-1027','https://help.openai.com/en/articles/9793128-about-chatgpt-pro-tiers','About ChatGPT Pro tiers: Pro 100, 200 and 500 (OpenAI Help Center)',N],

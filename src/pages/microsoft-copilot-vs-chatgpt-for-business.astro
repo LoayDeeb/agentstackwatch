@@ -1,0 +1,77 @@
+---
+import GuideArticle from '../layouts/GuideArticle.astro'; import { citer } from '../lib/cite.js';
+const { c, used, U } = citer();
+const rows = [
+ ['Price per seat',`Copilot Business add-on: $18/user/mo paid yearly (promo, normally $21), or $25.20 on monthly billing${c('ms-price-1101')}`,`Standard seat: $20/user/mo annual, $25 monthly; Premium seat: $100 annual, $125 monthly${c('oai-biz-1101')}`],
+ ['What else you must buy',`An eligible Microsoft 365 business plan (Business Basic, Standard or Premium, among others)${c('ms-lic-1101')}. Bundles: Business Standard with Copilot $23.50, Business Premium with Copilot $32, per user per month paid yearly${c('ms-price-1101')}`,`Nothing. ChatGPT Business is its own workspace${c('oai-biz-1101')} and connects to Gmail or Outlook${c('oai-rn-1101')}`],
+ ['Team size',`No minimum listed on the pages we checked; up to 300 users per tenant${c('ms-lic-1101')}`,`Minimum 2 seats${c('oai-biz-1101')}; maximum ${U}`],
+ ['Commitment',`Annual commitment${c('ms-lic-1101')}; the $18 promo runs 1 Jul to 31 Dec 2026, first year only, then renews${c('ms-price-1101')}`,`Monthly or annual billing${c('oai-biz-1101')}`],
+ ['Email and calendar',`Copilot in Outlook: catch up on email, draft replies, manage your calendar${c('ms-sb-1101')}; summarizes long threads${c('ms-price-1101')}`,`With Gmail or Outlook connected, drafts an email and you choose to send it (web)${c('oai-rn-1101')}`],
+ ['Meetings',`Copilot in Teams recaps meetings and highlights action items; the add-on needs a Teams license${c('ms-price-1101')}`,`Meetings plugin takes notes and saves summaries with action items; beta, macOS desktop app, Pro and Business${c('oai-rn-1101')}`],
+ ['Word, Excel, PowerPoint',`Copilot built into Word, Excel, PowerPoint and OneNote${c('ms-price-1101')}`,`ChatGPT add-ins for Word, Excel and PowerPoint${c('oai-rn-1101')}; Slides exports to PowerPoint or Google Slides${c('oai-rn-1101')}`],
+ ['Agent for longer tasks',`Copilot Cowork and Autopilot, billed by usage (Copilot Credits) on top of the seat${c('ms-price-1101')}`,`ChatGPT Work and Codex included in Standard seats; buy workspace credits past the limits${c('oai-biz-1101')}`],
+ ['Always-on agent',`Autopilot: give it a role and a goal for ongoing work${c('ms-sb-1101')} (usage-based${c('ms-price-1101')})`,`Dots, on Business Premium in eligible markets${c('oai-bizpage-1101')}`],
+ ['Ready-made agents',`Researcher, Analyst, Facilitator, plus Sales, Service and Finance agents${c('ms-price-1101')}`,`Deep Research, Company Knowledge and ChatGPT Agent in Standard seats${c('oai-biz-1101')}; plugins such as Zendesk and Data${c('oai-rn-1101')}`],
+ ['Build your own agents',`Agent Builder and Copilot Studio for internal agents included; publishing to websites or apps needs standalone Copilot Studio${c('ms-studio-1101')}`,`Build plugins for your company's own systems${c('oai-bizpage-1101')}`],
+ ['Trains on your data?',`No: prompts and responses aren't used to train the models${c('ms-price-1101')}`,`No${c('oai-biz-1101')}`],
+ ['Free option',`Copilot Chat, at no extra cost with eligible Microsoft 365 plans${c('ms-price-1101')}`,`ChatGPT Free: unlimited text chats; limited uploads, deep research and ChatGPT Work (desktop)${c('oai-pricing-1101')}`],
+];
+const body = `
+<p class="muted small">Prices checked 1 Nov 2026 on Microsoft's and OpenAI's own pages, in US dollars. OpenAI notes its prices can vary by country and currency${c('oai-biz-1101')}.</p>
+<div class="tldr"><p><b>The longer answer.</b> If your company already runs on Microsoft 365, with Outlook, Teams, Word and Excel, <b>Microsoft 365 Copilot Business</b> is the natural pick. It works inside those apps and your work data, and it's $18 a seat this year on the promo (normally $21), on top of your Microsoft 365 plan${c('ms-price-1101')}. If your team uses a mix of tools, or Gmail, or isn't on Microsoft 365 at all, <b>ChatGPT Business</b> is $20–25 a seat with nothing else to buy, and its agent (ChatGPT Work) is included in the seat${c('oai-biz-1101')}.</p></div>
+
+<h2>Side by side</h2>
+<p>Both are business plans with admin controls, and neither trains its models on your company's prompts${c('ms-price-1101','oai-biz-1101')}. Here's where they differ, fact by fact, from each company's own pages.</p>
+<div class="gtable-wrap"><table class="gtab"><thead><tr><th></th><th>Microsoft 365 Copilot Business</th><th>ChatGPT Business</th></tr></thead><tbody>
+${rows.map(([k,a,b])=>`<tr><td data-l="" class="nm">${k}</td><td data-l="Microsoft 365 Copilot Business">${a}</td><td data-l="ChatGPT Business">${b}</td></tr>`).join('')}
+</tbody></table></div>
+
+<h2>What it really costs per person</h2>
+<p><b>Copilot is an add-on, not a standalone tool.</b> Copilot Business is sold only to existing Microsoft 365 customers with an eligible business plan${c('ms-price-1101')}. The add-on is $21 per user per month paid yearly; from 1 July to 31 December 2026 it's $18 for the first year, with an annual commitment, and it auto-renews${c('ms-price-1101')}. Microsoft also sells bundles: Business Standard with Copilot at $23.50 and Business Premium with Copilot at $32, per user per month paid yearly${c('ms-price-1101')}. Copilot Business is capped at 300 users per company; bigger firms use Microsoft 365 Copilot, which is $30 per user per month paid yearly${c('ms-lic-1101','ms-ent-1101')}.</p>
+<p><b>Watch the usage meter.</b> Everyday Copilot, meaning chat and Copilot in your Microsoft 365 apps, is included. The bigger agent features, Copilot Cowork, Autopilot and the Work IQ APIs, are billed by usage with Copilot Credits, and admins manage that spend in Cost Management in the Microsoft 365 admin center${c('ms-price-1101')}.</p>
+<p><b>ChatGPT Business is one price.</b> A Standard seat is $20 per user per month billed annually or $25 monthly; a Premium seat with more agent usage and no five-hour limit is $100 annual or $125 monthly${c('oai-biz-1101')}. You need at least two seats${c('oai-biz-1101')}. Beyond the included limits you can buy workspace credits${c('oai-biz-1101')}. API usage isn't included${c('oai-biz-1101')}.</p>
+<p><b>Example, a 5-person team already on Microsoft 365, paying yearly:</b> Copilot Business adds $90 a month at the promo price, or $105 at $21${c('ms-price-1101')}. ChatGPT Business Standard is $100 a month${c('oai-biz-1101')}, and you'd still pay for Microsoft 365 separately. For every plan side by side, see <a href="/how-much-does-an-ai-agent-cost/">how much an AI agent costs</a>.</p>
+
+<h2>Email, calendar and documents</h2>
+<p>This is Copilot's home turf. It lives inside Outlook, where it catches you up on email, drafts replies and helps manage your calendar${c('ms-sb-1101')}. In Teams it recaps meetings and pulls out action items; in Word it drafts and summarizes; in Excel it analyzes data and builds charts; in PowerPoint it drafts outlines and layouts${c('ms-price-1101')}. It adds context from your emails, chats, documents and meetings through Microsoft Graph${c('ms-price-1101')}. One catch: Copilot in Teams requires a Teams license on the add-on${c('ms-price-1101')}.</p>
+<p>ChatGPT reaches into Microsoft apps from the outside. With Gmail or Outlook connected, it drafts an email and you choose whether to send it, on the web for Business${c('oai-rn-1101')}. It has add-ins for Word, Excel and PowerPoint${c('oai-rn-1101')}, can open SharePoint, Box, Dropbox and Google Drive files from its Library${c('oai-rn-1101')}, and can connect several Google accounts at once${c('oai-rn-1101')}. Its Outlook Email and Calendar apps can also work with shared mailboxes and shared calendars you have access to${c('oai-rn-1101')}. The release notes list a Microsoft Teams connector for searching chats on Plus and Pro${c('oai-rn-1101')}; how far it goes on Business, we didn't verify: ${U}. If your team is split between Google and Microsoft, ChatGPT works with both. More in <a href="/ai-agent-for-email-and-calendar/">AI agents for email and calendar</a>.</p>
+
+<h2>Sales, marketing and content</h2>
+<p><b>Copilot</b> comes with Sales, Service and Finance agents on the business plans${c('ms-price-1101')}. Microsoft says agents can look things up in CRM systems, update CRM records and help with sales qualification, and Copilot connectors bring in outside data${c('ms-price-1101')}. Which CRMs connect, and how well, we didn't verify: ${U}. For content, Copilot drafts in Word and builds decks in PowerPoint${c('ms-price-1101')}.</p>
+<p><b>ChatGPT Business</b> pitches sales teams an account "command center" that pulls together call notes, emails and messages to plan next steps, and marketing teams a way to turn briefs and docs into launch-ready assets and track campaign results${c('oai-bizpage-1101')}. Its Data use case combines query results with CRM data and turns them into an action plan${c('oai-bizpage-1101')}, and the release notes list a HubSpot connector${c('oai-rn-1101')}. ChatGPT Slides lets your team keep working on the same deck and export it to PowerPoint, PDF or Google Slides${c('oai-rn-1101')}, and Sites can turn work into live dashboards${c('oai-bizpage-1101')}.</p>
+<p>Comparing CRM-specific tools too? See the <a href="/best-ai-agent-for-sales-and-crm/">best AI agent for sales and CRM</a>.</p>
+
+<h2>Agents and automation</h2>
+<p><b>Copilot</b> includes ready-made agents: Researcher, Analyst and Facilitator${c('ms-price-1101')}. Give Cowork a goal and context and it plans, executes and delivers the work from start to finish while you review; give Autopilot a role and a goal and it handles ongoing work, follows up and keeps you updated${c('ms-sb-1101')}. Both are billed by usage${c('ms-price-1101')}. Your team can build internal agents with Agent Builder and Copilot Studio at no extra cost with a Copilot license${c('ms-studio-1101')}. To publish an agent to your website, apps or social channels, or let unlicensed people use it, you need standalone Copilot Studio: $200 a month for 25,000 Copilot Credits, or pay-as-you-go, with an Azure subscription required${c('ms-studio-1101')}.</p>
+<p><b>ChatGPT</b> includes ChatGPT Work and Codex in every Standard seat${c('oai-biz-1101')}. Give Work a goal and it gathers context, makes a plan, does the work and checks in when it needs your approval${c('oai-bizpage-1101')}. Scheduled tasks in ChatGPT Work can respond when something changes in a supported app${c('oai-rn-1101')}. Premium seats add dots, always-on agents that keep working between conversations, in eligible markets${c('oai-bizpage-1101')}. Teams can also build plugins for their own systems${c('oai-bizpage-1101')}.</p>
+
+<h2>Free options</h2>
+<p>If you already pay for Microsoft 365, try <b>Copilot Chat</b> first. It's included at no extra cost with eligible Microsoft 365 plans, includes Copilot in Outlook and the Microsoft Copilot app, and lets you use your organization's custom agents on a metered basis${c('ms-price-1101')}. Word, Excel, PowerPoint and Teams Copilot, plus the Researcher and Analyst agents, need the paid license${c('ms-price-1101')}.</p>
+<p><b>ChatGPT Free</b> gives everyone unlimited text chats, with limited uploads, deep research and ChatGPT Work on desktop${c('oai-pricing-1101')}, and ChatGPT for Word works on the Free plan too${c('oai-rn-1101')}. It's a personal plan, though: Free, Go and Plus are designed for individuals, and Business is the plan for companies${c('oai-pricing-1101')}. More in <a href="/best-free-ai-agent/">the best free AI agents</a>.</p>
+
+<h2>Verdict: which should you buy?</h2>
+<ul>
+<li><b>Choose Microsoft 365 Copilot Business</b> if your company runs on Outlook, Teams, Word and Excel and you want AI inside those apps and your company data. Lock in the $18 first-year promo before 31 December 2026 if you'd buy anyway${c('ms-price-1101')}.</li>
+<li><b>Choose ChatGPT Business</b> if you use a mix of tools, or Gmail, or want one price with an agent (ChatGPT Work) included in the seat and no annual commitment${c('oai-biz-1101')}.</li>
+<li><b>Not sure?</b> If you're on Microsoft 365, start with the free Copilot Chat${c('ms-price-1101')}. In parallel, a 2-seat ChatGPT Business workspace on monthly billing is $50 a month${c('oai-biz-1101')}. Keep the one your team actually opens.</li>
+</ul>
+<p>Also weighing Claude or Gemini? Read <a href="/chatgpt-vs-claude-for-business/">ChatGPT vs Claude for business</a> and the <a href="/best-ai-agent-for-small-business/">best AI agent for small business</a>. Want a personal pick in a minute? Take the <a href="/quiz/">quiz</a> or read the full <a href="/guide/">buyer's guide</a>.</p>
+`;
+const faqs = [
+ ['Is Microsoft Copilot or ChatGPT better for business?',`It depends on your tools. Copilot works inside Outlook, Teams, Word, Excel and PowerPoint and grounds answers in your Microsoft 365 data${c('ms-price-1101')}. ChatGPT Business works with Gmail or Outlook${c('oai-rn-1101')} and includes its ChatGPT Work agent in the seat${c('oai-biz-1101')}.`],
+ ['How much does Microsoft 365 Copilot Business cost?',`$21 per user per month paid yearly, or $18 for the first year on a promo running 1 July to 31 December 2026 with an annual commitment; $25.20 on monthly billing. It's an add-on to an eligible Microsoft 365 business plan${c('ms-price-1101')}.`],
+ ['How much does ChatGPT Business cost?',`$20 per seat per month billed annually or $25 monthly for Standard seats, and $100 annual or $125 monthly for Premium seats, with a 2-seat minimum${c('oai-biz-1101')}.`],
+ ['Is there a minimum number of users?',`ChatGPT Business needs at least 2 seats${c('oai-biz-1101')}. We found no minimum listed for Copilot Business; it supports up to 300 users per tenant${c('ms-lic-1101')}.`],
+ ['Is there a free version of Copilot or ChatGPT for work?',`Copilot Chat is included at no extra cost with eligible Microsoft 365 plans${c('ms-price-1101')}. ChatGPT has a Free plan, but it's designed for individuals; Business is the plan for companies${c('oai-pricing-1101')}.`],
+ ['Do Copilot or ChatGPT Business train on my company data?',`No. Microsoft says prompts and responses aren't used to train the underlying models${c('ms-price-1101')}; OpenAI says it won't train on a Business workspace's data${c('oai-biz-1101')}.`],
+];
+---
+<GuideArticle slug="microsoft-copilot-vs-chatgpt-for-business" updated="2026-11-01" kicker="Head to head"
+ title="Microsoft 365 Copilot vs ChatGPT for Business (2026): Price, Outlook, Agents | AgentStackWatch"
+ desc="Microsoft 365 Copilot Business vs ChatGPT Business in 2026: $18–21 add-on vs $20–25 seat, seat minimums, Outlook and Teams, Word and Excel, sales and marketing use, agents and free options. Every fact sourced."
+ h1="Microsoft 365 Copilot vs ChatGPT for business (2026)"
+ dek="Copilot lives inside Outlook, Teams and Office. ChatGPT works across whatever tools you use. Here's the price per seat, what each does for email, docs, sales and marketing, and which to buy."
+ faqs={faqs} used={used}
+ related={[['/chatgpt-vs-claude-for-business/','ChatGPT vs Claude for business'],['/how-much-does-an-ai-agent-cost/','How much does an AI agent cost?'],['/best-ai-agent-for-small-business/','Best AI agent for small business'],['/best-ai-agent-for-sales-and-crm/','Best AI agent for sales and CRM'],['/quiz/','Quiz: which AI agent should you use?']]}>
+<Fragment set:html={body}/>
+</GuideArticle>

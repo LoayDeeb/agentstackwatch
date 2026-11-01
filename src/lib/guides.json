@@ -54,8 +54,21 @@
   "blurb": "ChatGPT Business vs Claude Team: seat prices, email and calendar, admin controls, data training and certifications.",
   "quick": "They cost the same: $20 a seat per month billed annually, or $25 monthly. Pick ChatGPT Business if your team uses Outlook and Office or wants an always-on agent; pick Claude Team if you live in Gmail and Google Calendar.",
   "rel": [
+   "microsoft-copilot-vs-chatgpt-for-business",
    "chatgpt-vs-gemini",
    "claude-vs-gemini",
+   "best-ai-agent-for-small-business"
+  ]
+ },
+ {
+  "slug": "microsoft-copilot-vs-chatgpt-for-business",
+  "short": "Microsoft 365 Copilot vs ChatGPT for business",
+  "kicker": "Head to head",
+  "blurb": "Copilot Business vs ChatGPT Business: price per seat, seat minimums, Outlook and Teams, Office apps, agents and free options.",
+  "quick": "If you run on Microsoft 365 (Outlook, Teams, Word, Excel), get Copilot Business: $21 a seat on top of Microsoft 365, or $18 the first year on the promo to 31 Dec 2026. If you use a mix of tools or Gmail, ChatGPT Business is $20 a seat annual or $25 monthly with its agent included.",
+  "rel": [
+   "chatgpt-vs-claude-for-business",
+   "how-much-does-an-ai-agent-cost",
    "best-ai-agent-for-small-business"
   ]
  },
