@@ -1,4 +1,16 @@
-OpenClaw — Open-Source AI Assistant OpenClaw Product Install Ecosystem Integrations Blog Podcast Webinar Community Support Docs Product Install Ecosystem Integrations Blog Podcast Webinar Community Support Docs ... .:.::-::... ..--==++xxx++==--::.. ..::--==++x+x++==--... ..::-::.:. .. .
+OpenClaw — Open-Source AI Assistant Install Product Overview Integrations Showcase Enterprise
+Resources Blog Podcast Ecosystem Skills & plugins (opens in a new tab) GitHub (opens in a new tab)
+Community Get support (opens in a new tab) Discord (opens in a new tab) Reddit (opens in a new tab)
+Docs (opens in a new tab)
+Install
+Product
+Overview Integrations Showcase Enterprise
+Resources
+Blog Podcast Ecosystem Skills & plugins (opens in a new tab) GitHub (opens in a new tab)
+Community
+Get support (opens in a new tab) Discord (opens in a new tab) Reddit (opens in a new tab)
+Docs (opens in a new tab)
+... .:.::-::... ..--==++xxx++==--::.. ..::--==++x+x++==--... ..::-::.:. .. .
 . . . ..:::.:.. ..::-=+++++==--::.. ..::--==+++++=-::.. ....:::.. . . .
 . ..:::::.. .::--==+++==--.:.. ..::--==++++=--::. ...:::.:.. .
 ....:.... ..::-=+====::.. ..::==+====::.. ..:.:.:..
@@ -54,7 +66,7 @@ $ pnpm openclaw onboard
 Desktop Apps
 Full apps that install everything for you — gateway, chat, setup, and node features. Available for macOS, Windows, and Linux.
 macOS
-macOS 15+ · Apple Silicon or Intel · v2026.10.7
+macOS 15+ · Apple Silicon or Intel · v2026.10.9
 Download Universal
 Silicon Intel
 Windows
@@ -62,7 +74,7 @@ Windows 10/11 · x64 or ARM64 · v2026.9.8-1
 Download x64
 Download ARM64
 Linux New
-x64 · AppImage or Debian package · v2026.10.7
+x64 · AppImage or Debian package · v2026.10.9
 Download AppImage
 Download .deb
 Works on macOS, Linux, and Windows. The apps and the one-liner install Node.js and everything else for you. Switch later with openclaw update --channel dev or openclaw update --channel stable .
@@ -338,7 +350,6 @@ The Foundation is funded by donors, including the University of Michigan, OpenAI
 We have nothing to sell you, so we have no reason to route you anywhere. By default an install sends the Foundation nothing but a daily version check, and you can turn that off: what OpenClaw sends .
 Donors and sponsors
 Donors and infrastructure sponsors support the Foundation; none of them own or direct the project. Also supported by Amazon, Red Hat, the University of Michigan, Offline Holdings, and Lobster Computer Company.
-OpenClaw
 An OpenClaw Foundation project.
 Product
 Install Showcase Integrations Docs Resources

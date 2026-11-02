@@ -650,7 +650,7 @@ Pairwise Question Answering Quality
 Pairwise
 Prices are listed in US Dollars (USD). If you pay in a currency other than USD, the prices listed in your currency on Cloud Platform SKUs apply.
 Agents
-Gemini platform products to Scale have a unified pricing structure, using 3 resource types: Compute, Memory and Storage. All Scale products are billed on these SKUs. Some services are measured by number of requests, but billed under Agent Compute vCPU-h, at the rates described in the sections below. A free usage tier applies per month, per account for each resource.
+Gemini platform products to Scale have a unified pricing structure, using 3 resource types: Compute, Memory and Storage. All Scale products are billed on these SKUs. Some services are measured by number of requests, but billed under Agent Compute vCPU-h, at the rates described in the sections below.
 Show discount options
 Hourly Hourly
 Monthly Monthly
@@ -666,44 +666,11 @@ Gemini Enterprise Flexible Savings Plan - 3 Year * (USD) info
 Consumption model ID:
 C109-C9C0-A044
 Agent Compute
-0 hour to 50 hour
-$0.00 (Free) / 1 hour, per 1 month / account
-50 hour and above
-$0.085 / 1 hour, per 1 month / account
-0 hour to 50 hour
-$0.00 (Free) / 1 hour, per 1 month / account
-50 hour and above
-$0.0765 / 1 hour, per 1 month / account
-0 hour to 50 hour
-$0.00 (Free) / 1 hour, per 1 month / account
-50 hour and above
-$0.068 / 1 hour, per 1 month / account
+$0.085 / 1 hour, per 1 month / account $0.0765 / 1 hour, per 1 month / account $0.068 / 1 hour, per 1 month / account
 Agent Memory (RAM)
-0 gibibyte hour to 100 gibibyte hour
-$0.00 (Free) / 1 gibibyte hour, per 1 month / account
-100 gibibyte hour and above
-$0.009 / 1 gibibyte hour, per 1 month / account
-0 gibibyte hour to 100 gibibyte hour
-$0.00 (Free) / 1 gibibyte hour, per 1 month / account
-100 gibibyte hour and above
-$0.0081 / 1 gibibyte hour, per 1 month / account
-0 gibibyte hour to 100 gibibyte hour
-$0.00 (Free) / 1 gibibyte hour, per 1 month / account
-100 gibibyte hour and above
-$0.0072 / 1 gibibyte hour, per 1 month / account
+$0.009 / 1 gibibyte hour, per 1 month / account $0.0081 / 1 gibibyte hour, per 1 month / account $0.0072 / 1 gibibyte hour, per 1 month / account
 Agent Storage
-0 gibibyte month to 1 gibibyte month
-$0.00 (Free) / 1 gibibyte hour, per 1 month / account
-1 gibibyte month and above
-$0.000410959 / 1 gibibyte hour, per 1 month / account
-0 gibibyte month to 1 gibibyte month
-$0.00 (Free) / 1 gibibyte hour, per 1 month / account
-1 gibibyte month and above
-$0.000369863 / 1 gibibyte hour, per 1 month / account
-0 gibibyte month to 1 gibibyte month
-$0.00 (Free) / 1 gibibyte hour, per 1 month / account
-1 gibibyte month and above
-$0.000328767 / 1 gibibyte hour, per 1 month / account
+$0.000410959 / 1 gibibyte hour, per 1 month / account $0.000369863 / 1 gibibyte hour, per 1 month / account $0.000328767 / 1 gibibyte hour, per 1 month / account
 * Each consumption model has a unique ID. You may need to opt-in to be eligible for consumption model discounts. Click here to learn more.
 Agent Compute
 Runtime and Sandbox environments, including Code Execution and Computer Use, are billed on Agent Compute (vCPU-hours) and Agent Memory (GiB-hours) resource usage.
@@ -1737,10 +1704,20 @@ Hourly Hourly
 Monthly Monthly
 Machine type
 Price (USD)
+* info
+Consumption model ID:
+7754-699E-0EBF
+Gemini Enterprise Flexible Savings Plan - 1 Year * (USD) info
+Consumption model ID:
+BBB5-D209-3835
+Gemini Enterprise Flexible Savings Plan - 3 Year * (USD) info
+Consumption model ID:
+C109-C9C0-A044
 a3-ultragpu-8g
 $96.015616 / 1 hour $86.4140544 / 1 hour $76.8124928 / 1 hour
 a3-megagpu-8g
 $106.65474 / 1 hour $95.989266 / 1 hour $85.323792 / 1 hour
+* Each consumption model has a unique ID. You may need to opt-in to be eligible for consumption model discounts. Click here to learn more.
 When consuming from a reservation or spot capacity, billing is spread across two SKUs: the GCE SKU with the label 'vertex-ai-online-prediction' and the Gemini platform Management Fee SKU. This enables you to use your Committed Use Discounts (CUDs) in Gemini platform.
 A4 Series
 Iowa (us-central1)
@@ -3296,14 +3273,17 @@ Johannesburg (africa-south1)
 Taiwan (asia-east1)
 Hong Kong (asia-east2)
 Tokyo (asia-northeast1)
+Osaka (asia-northeast2)
 Seoul (asia-northeast3)
 Mumbai (asia-south1)
 Delhi (asia-south2)
 Singapore (asia-southeast1)
 Jakarta (asia-southeast2)
 Sydney (australia-southeast1)
+Melbourne (australia-southeast2)
 Warsaw (europe-central2)
 Finland (europe-north1)
+Stockholm (europe-north2)
 Madrid (europe-southwest1)
 Belgium (europe-west1)
 Berlin (europe-west10)
@@ -3313,6 +3293,7 @@ Frankfurt (europe-west3)
 Netherlands (europe-west4)
 Zurich (europe-west6)
 Milan (europe-west8)
+Paris (europe-west9)
 Doha (me-central1)
 Dammam (me-central2)
 Tel Aviv (me-west1)
@@ -3329,6 +3310,7 @@ Oregon (us-west1)
 Los Angeles (us-west2)
 Salt Lake City (us-west3)
 Las Vegas (us-west4)
+Phoenix (us-west8)
 Show discount options
 Hourly Hourly
 Monthly Monthly
@@ -3374,14 +3356,17 @@ Johannesburg (africa-south1)
 Taiwan (asia-east1)
 Hong Kong (asia-east2)
 Tokyo (asia-northeast1)
+Osaka (asia-northeast2)
 Seoul (asia-northeast3)
 Mumbai (asia-south1)
 Delhi (asia-south2)
 Singapore (asia-southeast1)
 Jakarta (asia-southeast2)
 Sydney (australia-southeast1)
+Melbourne (australia-southeast2)
 Warsaw (europe-central2)
 Finland (europe-north1)
+Stockholm (europe-north2)
 Madrid (europe-southwest1)
 Belgium (europe-west1)
 Berlin (europe-west10)
@@ -3391,6 +3376,7 @@ Frankfurt (europe-west3)
 Netherlands (europe-west4)
 Zurich (europe-west6)
 Milan (europe-west8)
+Paris (europe-west9)
 Doha (me-central1)
 Dammam (me-central2)
 Tel Aviv (me-west1)
@@ -3406,6 +3392,7 @@ Oregon (us-west1)
 Los Angeles (us-west2)
 Salt Lake City (us-west3)
 Las Vegas (us-west4)
+Phoenix (us-west8)
 Show discount options
 Hourly Hourly
 Monthly Monthly
@@ -3458,6 +3445,7 @@ Delhi (asia-south2)
 Singapore (asia-southeast1)
 Jakarta (asia-southeast2)
 Sydney (australia-southeast1)
+Melbourne (australia-southeast2)
 Warsaw (europe-central2)
 Finland (europe-north1)
 Madrid (europe-southwest1)
@@ -3469,6 +3457,7 @@ Frankfurt (europe-west3)
 Netherlands (europe-west4)
 Zurich (europe-west6)
 Milan (europe-west8)
+Paris (europe-west9)
 Doha (me-central1)
 Dammam (me-central2)
 Tel Aviv (me-west1)
@@ -3484,6 +3473,7 @@ Oregon (us-west1)
 Los Angeles (us-west2)
 Salt Lake City (us-west3)
 Las Vegas (us-west4)
+Phoenix (us-west8)
 Show discount options
 Hourly Hourly
 Monthly Monthly
@@ -3528,14 +3518,17 @@ Johannesburg (africa-south1)
 Taiwan (asia-east1)
 Hong Kong (asia-east2)
 Tokyo (asia-northeast1)
+Osaka (asia-northeast2)
 Seoul (asia-northeast3)
 Mumbai (asia-south1)
 Delhi (asia-south2)
 Singapore (asia-southeast1)
 Jakarta (asia-southeast2)
 Sydney (australia-southeast1)
+Melbourne (australia-southeast2)
 Warsaw (europe-central2)
 Finland (europe-north1)
+Stockholm (europe-north2)
 Madrid (europe-southwest1)
 Belgium (europe-west1)
 Berlin (europe-west10)
@@ -3545,6 +3538,7 @@ Frankfurt (europe-west3)
 Netherlands (europe-west4)
 Zurich (europe-west6)
 Milan (europe-west8)
+Paris (europe-west9)
 Doha (me-central1)
 Dammam (me-central2)
 Tel Aviv (me-west1)
@@ -3556,11 +3550,13 @@ Iowa (us-central1)
 South Carolina (us-east1)
 Northern Virginia (us-east4)
 Columbus (us-east5)
+Alabama (us-east7)
 Dallas (us-south1)
 Oregon (us-west1)
 Los Angeles (us-west2)
 Salt Lake City (us-west3)
 Las Vegas (us-west4)
+Phoenix (us-west8)
 Show discount options
 Hourly Hourly
 Monthly Monthly
@@ -3576,6 +3572,15 @@ Gemini Enterprise Flexible Savings Plan - 3 Year * (USD) info
 Consumption model ID:
 C109-C9C0-A044
 Management Fee
+* (USD) info
+Consumption model ID:
+7754-699E-0EBF
+Gemini Enterprise Flexible Savings Plan - 1 Year * (USD) info
+Consumption model ID:
+BBB5-D209-3835
+Gemini Enterprise Flexible Savings Plan - 3 Year * (USD) info
+Consumption model ID:
+C109-C9C0-A044
 Hyperdisk Extreme provisioned space
 $0.000205479 / 1 gibibyte hour $0.000184932 / 1 gibibyte hour $0.000164384 / 1 gibibyte hour $0.000034247 / 1 gibibyte hour $0.000030822 / 1 gibibyte hour $0.000027397 / 1 gibibyte hour
 Balanced provisioned space

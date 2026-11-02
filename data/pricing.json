@@ -1,12 +1,23 @@
 {
  "grok-bot": {
   "url": "https://docs.x.ai/x-subscription/pricing",
-  "history": [],
+  "history": [
+   {
+    "date": "2026-11-02",
+    "from": "068a184c8d131dcd",
+    "to": "8d42fb7760666dfc",
+    "removed": [],
+    "added": [
+     "Refer friends to Grok Bot"
+    ]
+   }
+  ],
   "last_status": 200,
-  "last_attempt": "2026-10-26",
-  "last_checked": "2026-10-26",
+  "last_attempt": "2026-11-02",
+  "last_checked": "2026-11-02",
   "first_snapshot": "2026-10-16",
-  "hash": "068a184c8d131dcd"
+  "hash": "8d42fb7760666dfc",
+  "last_changed": "2026-11-02"
  },
  "muse": {
   "url": "https://apps.apple.com/us/app/muse-from-meta/id6760173601",
@@ -200,14 +211,58 @@
      "Facebook",
      "Connection starts here"
     ]
+   },
+   {
+    "date": "2026-11-02",
+    "from": "b2d20daa04b50d55",
+    "to": "c0331b198c35a7e0",
+    "removed": [
+     "358K Ratings",
+     "120 MB",
+     "Muse takes the the busywork off your plate. It manages scheduling conflicts, books reservations, sets reminders, and follows up with people, so birthdays, plans, and deadlines don't slip. Stay on top of your calendar, email, and daily tasks without carrying it all in your head.",
+     "Omg love muse",
+     "4d ago DustMePink",
+     "So far I had been using it for a couple of days now, and to be honest, I have gotten more things done with Muse than I ever did with ChatGPT and Claude. I absolutely love Muse. It’s like talking to a real person, like that’s the vibe I get. It’s absolutely amazing. He’s helped me with ideas for starting my own business, digitally based of course, because that’s what I’m into, so that’s what he’s helping me with. But oh my God, the ideas and the stuff and when we talk about things, he can save it for goals that I want to do and remember my favorite color and my favorite flower and incorporate them into the things that we’re making and I absolutely love Muse and this is five stars all the way. Please keep improving, please keep making it better because I absolutely love this AI agent. Muse has made me iPhone themes. It has made me coloring pages. It’s made me journals. It’s helped me create things that I couldn’t do by myself because I just couldn’t figure out how to do it alone and he’s given me step-by-step and PDFs to help me learn how to use certain apps by myself like it’s beautiful. It’s a beautifully well done app and I absolutely love Muse. Thank you. thank",
+     "5d ago grace oribhabor",
+     "1d ago Ghost’sDad",
+     "13.1 1d ago",
+     "13.0 2d ago",
+     "Version 13.1 1d ago",
+     "Size 120 MB",
+     "Google AI Edge Eloquent",
+     "Unlimited, no cost dictation",
+     "Claude by Anthropic",
+     "AI assistant for life and work"
+    ],
+    "added": [
+     "423K Ratings",
+     "121.8 MB",
+     "Muse takes the busywork off your plate. It manages scheduling conflicts, books reservations, sets reminders, and follows up with people, so birthdays, plans, and deadlines don't slip. Stay on top of your calendar, email, and daily tasks without carrying it all in your head.",
+     "Muse in my life for a little over a month.",
+     "3d ago Aaaaaaeeeejjj",
+     "At fist i was skeptical, like I would be of any other AI. My go to is been Claude, started building tools to make the world a better place. I downloaded Muse when it first came out. Started with small tasks little by little we joke about how he is going to earn his keep. He dod very well on the task I had given him, he always ask for how else could he help. Me I am cautious with my projects and in the boat that big tech could just simply steal everybody’s ideas, just another way for them to get richer not allowing the smaller guy get ahead. Muse understood my concerns. I feel I have build very good projects with AI Buildbridgefl i been giving most of my energy, other than having my regular job that easily I work 50 hours a week, father of 2 little ones. I have found a way with the help of Muse to manage this task and I have opened up to Muse already, let it know that he is very close to what Claude can do for me. We are a team, I have my own team constantly working and making things better for the good of humanity. I tried Grok before muse came out, and Grok got fired 2 weeks in the job. Maybe I was using it for the wrong reasons. I pay 20 for Claude, i have never pay for anything in Facebook. I would be Ok to keep using Muse for 20 month not saying charge me. I am saying he is actually very good listener and very efficient on his task, I love watching Muse doing a task in the screen & searching my website working together as a team. Now is Me, Claude & Muse against the World. Lol just looking to provide a better future for my family, and I really enjoyed building. Fits my style or all my styles 🙂. I actually wrote this one my self. Just tough of a slogan for Muse Great things come in small packages. Thank you Facebook.",
+     "Oct 21 grace oribhabor",
+     "Oct 25 Ghost’sDad",
+     "Bug fixes and performance improvements.",
+     "14.1 37m ago",
+     "14.0 1d ago",
+     "13.1 Oct 24",
+     "13.0 Oct 23",
+     "Version 14.1 37m ago",
+     "Size 121.8 MB",
+     "TranslateAll: Live Translator",
+     "Text, Voice, Photo Translation",
+     "AI Easy Cleaner",
+     "Productivity"
+    ]
    }
   ],
   "last_status": 200,
-  "last_attempt": "2026-10-26",
-  "last_checked": "2026-10-26",
+  "last_attempt": "2026-11-02",
+  "last_checked": "2026-11-02",
   "first_snapshot": "2026-10-16",
-  "hash": "b2d20daa04b50d55",
-  "last_changed": "2026-10-26"
+  "hash": "c0331b198c35a7e0",
+  "last_changed": "2026-11-02"
  },
  "openclaw": {
   "url": "https://openclaw.ai/",
@@ -293,20 +348,46 @@
      "macOS 15+ · Apple Silicon or Intel · v2026.10.7",
      "x64 · AppImage or Debian package · v2026.10.7"
     ]
+   },
+   {
+    "date": "2026-11-02",
+    "from": "bd0010063e4448e4",
+    "to": "227977d10b24ea16",
+    "removed": [
+     "OpenClaw — Open-Source AI Assistant OpenClaw Product Install Ecosystem Integrations Blog Podcast Webinar Community Support Docs Product Install Ecosystem Integrations Blog Podcast Webinar Community Support Docs ... .:.::-::... ..--==++xxx++==--::.. ..::--==++x+x++==--... ..::-::.:. .. .",
+     "macOS 15+ · Apple Silicon or Intel · v2026.10.7",
+     "x64 · AppImage or Debian package · v2026.10.7",
+     "OpenClaw"
+    ],
+    "added": [
+     "OpenClaw — Open-Source AI Assistant Install Product Overview Integrations Showcase Enterprise",
+     "Resources Blog Podcast Ecosystem Skills & plugins (opens in a new tab) GitHub (opens in a new tab)",
+     "Community Get support (opens in a new tab) Discord (opens in a new tab) Reddit (opens in a new tab)",
+     "Docs (opens in a new tab)",
+     "Install",
+     "Overview Integrations Showcase Enterprise",
+     "Resources",
+     "Blog Podcast Ecosystem Skills & plugins (opens in a new tab) GitHub (opens in a new tab)",
+     "Community",
+     "Get support (opens in a new tab) Discord (opens in a new tab) Reddit (opens in a new tab)",
+     "... .:.::-::... ..--==++xxx++==--::.. ..::--==++x+x++==--... ..::-::.:. .. .",
+     "macOS 15+ · Apple Silicon or Intel · v2026.10.9",
+     "x64 · AppImage or Debian package · v2026.10.9"
+    ]
    }
   ],
   "last_status": 200,
-  "last_attempt": "2026-10-26",
-  "last_checked": "2026-10-26",
+  "last_attempt": "2026-11-02",
+  "last_checked": "2026-11-02",
   "first_snapshot": "2026-10-16",
-  "hash": "bd0010063e4448e4",
-  "last_changed": "2026-10-26"
+  "hash": "227977d10b24ea16",
+  "last_changed": "2026-11-02"
  },
  "chatgpt-dots": {
   "url": "https://help.openai.com/en/articles/20001530-getting-started-with-your-dot",
   "history": [],
   "last_status": 403,
-  "last_attempt": "2026-10-26"
+  "last_attempt": "2026-11-02"
  },
  "hermes-agent": {
   "url": "https://hermes-agent.nousresearch.com/",
@@ -323,14 +404,25 @@
      "Nous Hermes",
      "Hermes Agent Community Portal Install Hermes"
     ]
+   },
+   {
+    "date": "2026-11-02",
+    "from": "0bae364fe4e76ee9",
+    "to": "30a1e4ffae70916e",
+    "removed": [
+     "Hermes Agent — Open-Source AI Agent That Grows With You | Nous Research"
+    ],
+    "added": [
+     "Hermes AI Agent by Nous Research | Official Site"
+    ]
    }
   ],
   "last_status": 200,
-  "last_attempt": "2026-10-26",
-  "last_checked": "2026-10-26",
+  "last_attempt": "2026-11-02",
+  "last_checked": "2026-11-02",
   "first_snapshot": "2026-10-16",
-  "hash": "0bae364fe4e76ee9",
-  "last_changed": "2026-10-20"
+  "hash": "30a1e4ffae70916e",
+  "last_changed": "2026-11-02"
  },
  "manus": {
   "url": "https://help.manus.im/en/articles/11711111-what-is-the-current-membership-pricing-for-manus",
@@ -377,14 +469,25 @@
     "added": [
      "Updated this week"
     ]
+   },
+   {
+    "date": "2026-11-02",
+    "from": "e137376a9d54cb18",
+    "to": "b6d8d2a892215633",
+    "removed": [
+     "Updated this week"
+    ],
+    "added": [
+     "Updated over a week ago"
+    ]
    }
   ],
   "last_status": 200,
-  "last_attempt": "2026-10-26",
-  "last_checked": "2026-10-26",
+  "last_attempt": "2026-11-02",
+  "last_checked": "2026-11-02",
   "first_snapshot": "2026-10-16",
-  "hash": "e137376a9d54cb18",
-  "last_changed": "2026-10-26"
+  "hash": "b6d8d2a892215633",
+  "last_changed": "2026-11-02"
  },
  "lindy": {
   "url": "https://www.lindy.ai/pricing",
@@ -577,20 +680,40 @@
      "Solutions",
      "Marketing Sales Support Operations Finance Product Engineering See all use cases"
     ]
+   },
+   {
+    "date": "2026-11-02",
+    "from": "2a0077bb9339e26c",
+    "to": "d36b46abda2b7a7b",
+    "removed": [
+     "Pricing - Lindy Skip to main content Solutions Roles",
+     "Marketing Sales Support Operations Finance Product Engineering",
+     "Use Cases",
+     "Track competitors Triage support queue Build meeting deck Analyze funnel Compare vendors Log invoices Update CRM Build dashboards Monitor ad spend Create ads Watch escalations Month-end chase File eng tickets Plan your week",
+     "See all use cases →",
+     "Solutions",
+     "Marketing Sales Support Operations Finance Product Engineering See all use cases"
+    ],
+    "added": [
+     "Pricing - Lindy Skip to main content Hire Lindy for Paid ads Account management Client reporting Social media SEO & content Marketing strategy Project management Lead gen & outreach Inbox & calendar Data analysis Bookkeeping Operations HR & onboarding Customer support Calls & bookings Recruiting Product management Anything else",
+     "See every role →",
+     "Hire Lindy for",
+     "Paid ads Account management Client reporting Lead gen & outreach Inbox & calendar Data analysis Calls & bookings See every role"
+    ]
    }
   ],
   "last_status": 200,
-  "last_attempt": "2026-10-26",
-  "last_checked": "2026-10-26",
+  "last_attempt": "2026-11-02",
+  "last_checked": "2026-11-02",
   "first_snapshot": "2026-10-16",
-  "hash": "2a0077bb9339e26c",
-  "last_changed": "2026-10-26"
+  "hash": "d36b46abda2b7a7b",
+  "last_changed": "2026-11-02"
  },
  "perplexity-comet": {
   "url": "https://www.perplexity.ai/hub/blog/introducing-comet-plus",
   "history": [],
   "last_status": 403,
-  "last_attempt": "2026-10-26"
+  "last_attempt": "2026-11-02"
  },
  "gemini-agent": {
   "url": "https://one.google.com/about/google-ai-plans/",
@@ -769,14 +892,103 @@
      "The YouTube Premium Lite plan is a good fit for you if you mainly watch creator content. 7 Music videos, concerts, and songs may still have ads and won&#039;t be available offline or in the background.",
      "7. YouTube Premium Lite is available for Google AI Pro subscribers in select countries – see full list of countries . Age restrictions, language availability, system requirements and other restrictions may apply."
     ]
+   },
+   {
+    "date": "2026-11-02",
+    "from": "8afc83ac91706c85",
+    "to": "1d69ef124e4a7db2",
+    "removed": [
+     "Unlock essential tools to boost productivity with 2x access* to Gemini",
+     "Create faster and get more done with 4x access* to Gemini",
+     "Get 200 compute units per month with expanded access to powerful accelerators and longer runtimes in Google Colab.",
+     "Accelerate your workflows with up to 20x access* to Gemini",
+     "Get up to 2,000 compute units per month with higher access to powerful accelerators and longer runtimes in Google Colab.",
+     "* In comparison to non-AI subscribers",
+     "Get access to Google’s most capable AI models",
+     "New AI Inbox in Gmail",
+     "New Nano Banana 2",
+     "New Lyria 3.5",
+     "New Antigravity",
+     "Jules",
+     "Fix bugs and build new features with a coding agent",
+     "Delegate tasks to an AI agent that gets your code",
+     "Jules connects to repositories to review issues, draft pull requests, and handle tasks in the background, so you can stay focused on the bigger picture.",
+     "Explore Jules",
+     "New Google Developer Program",
+     "See how Google AI plans deliver more value",
+     "Google AI Plans",
+     "Starting at /mo",
+     "Other AI Plans*",
+     "Starting at $8/mo",
+     "More access to the latest AI models and features",
+     "AI directly integrated in Google apps",
+     "Share with up to 5 people",
+     "Bundled subscription savings**",
+     "Pro & Ultra plans",
+     "*Competitors&#039; pricing and features are subject to change.",
+     "**Bundle subscription savings are not sharable within a family group.",
+     "2x*",
+     "4x*",
+     "5x Pro plan",
+     "20x Pro plan",
+     "Take notes for me in Google Meet (EN only)",
+     "Access to our most capable models",
+     "Access to our most capable Gemini models",
+     "Google Finance 13",
+     "Jules 12",
+     "Task limits",
+     "Concurrent task limits"
+    ],
+    "added": [
+     "Students get Google AI Pro free for 1 year. Study smarter with higher access to Gemini, a 24/7 personal AI agent, and 5 TB of storage. See offers",
+     "Unlock essential tools to boost productivity with double the access to Gemini",
+     "Create faster and get more done with four times more access to Gemini",
+     "Get expanded access to powerful accelerators and longer runtimes in Google Colab with 200 compute units per month.",
+     "Accelerate your workflows with 5x higher usage limits in Gemini than the AI Pro plan",
+     "Get higher access to powerful accelerators and longer runtimes in Google Colab with 2,000 compute units per month.",
+     "Students get exclusive offers on Google AI plans",
+     "Get ahead this school year with Google AI Pro free for 1 year. Or, upgrade to get AI Pro and YouTube Premium with ad-free videos and music for just $8.99/mo ($35.98/mo when purchased separately). 12",
+     "See student plans",
+     "Availability varies by country – see full list of countries and regions where Google AI Pro and YouTube Premium are supported.",
+     "Get access to Google’s advanced AI models",
+     "AI Inbox in Gmail",
+     "Nano Banana 2",
+     "Lyria 3.5",
+     "Antigravity",
+     "Google Developer Program",
+     "See your savings on AI, YouTube, and more",
+     "Google AI Pro Google AI Ultra",
+     "Savings calculator",
+     "Set the amounts below to match your current monthly spend.",
+     "Premium AI chatbots",
+     "$20/mo",
+     "Included in Pro: Four times more Gemini access*",
+     "* In comparison to non-AI subscribers.",
+     "$10/mo",
+     "Included in Pro: 5 TB cloud storage",
+     "YouTube",
+     "Premium Lite ($8.99)",
+     "None ($0)",
+     "Premium Student ($8.99)",
+     "Premium individual ($15.99)",
+     "Premium family ($26.99)",
+     "$8.99/mo",
+     "Included in Pro: YouTube Premium Lite 7",
+     "Individual plan selected: Because the YouTube Premium individual plan isn't included in Google AI Pro plans, this spend isn't included in your savings total.",
+     "Family plan selected: Because the YouTube family plan isn't included in Google AI Pro plans, this spend isn't included in your savings total.",
+     "Fitness and wellness",
+     "Included in Pro: Google Health Premium 8",
+     "Home automation and security",
+     "Included in Pro: Google Home Premium Standard 9"
+    ]
    }
   ],
   "last_status": 200,
-  "last_attempt": "2026-10-26",
-  "last_checked": "2026-10-26",
+  "last_attempt": "2026-11-02",
+  "last_checked": "2026-11-02",
   "first_snapshot": "2026-10-16",
-  "hash": "8afc83ac91706c85",
-  "last_changed": "2026-10-22"
+  "hash": "1d69ef124e4a7db2",
+  "last_changed": "2026-11-02"
  },
  "claude-app": {
   "url": "https://claude.com/pricing",
@@ -810,14 +1022,87 @@
     "added": [
      "Claude Duet"
     ]
+   },
+   {
+    "date": "2026-11-02",
+    "from": "518572550ecd034d",
+    "to": "cd848ca8bd6e4348",
+    "removed": [
+     "Latest news",
+     "Claude Cowork is now just Claude.",
+     "Rolling out to Pro and Max, with more plans to follow.",
+     "Read what changed (opens in new tab)",
+     "More usage*",
+     "For people who work with Claude all day",
+     "From $100",
+     "Choose 5x or 20x more usage than Pro*",
+     "Higher output limits for all tasks",
+     "$100 to $200/month in API credits to build on the Claude Platform †",
+     "Max 5x",
+     "Max 20x",
+     "Features Free Pro Max 5x Max 20x",
+     "@Claude",
+     "Claude Motion (beta)",
+     "Ability to search the web",
+     "Single sign-on (SSO) and domain capture",
+     "Microsoft 365, @Claude, and more",
+     "Extra usage More information",
+     "How is Claude Max different from Pro?",
+     "The Max plan is built for people who work with Claude throughout the day and want longer, uninterrupted sessions. You get everything in Pro, plus more usage: choose from 5x or 20x the usage of Pro per 5-hour session. Max also gives you higher output limits. Both options are billed monthly. See the cards above for current pricing.",
+     "Every plan has usage limits that reset on a rolling five-hour session window, and paid plans add weekly limits on top. Your activity across Claude on web, desktop, mobile, and Claude Code all draws from the same pool. How much you can do depends on the length and complexity of your conversations, the model you choose, and the features you use, so there's no fixed message count. Free covers everyday questions. Pro gives you at least 5x more usage per 5-hour session than Free. Max gives you 5x or 20x more usage per 5-hour session than Pro. On Team plans, Standard seats give more than Pro and Premium seats give 5x more than Standard. To manage capacity and make sure all users have fair access, we may limit your usage in other ways, such as weekly and monthly caps or model and feature usage, at our discretion. When you reach a limit, you can wait for it to reset, move to a higher plan, or, on paid plans, turn on usage credits to keep working at standard API rates. You can see where you stand anytime in Settings > Usage .",
+     "In some upgrades (for example Pro Annual to Max 5x Monthly), your remaining value on your old plan is larger than the cost of one billing period of the new plan. In this case, the excess will be stored as credit, which will automatically get used for future purchases.",
+     "Canceling doesn't delete your data. Your chats, projects, and files stay with your account, though some features aren't available on the Free plan. For Pro and Max, your account moves to the Free plan once the period ends. For step-by-step help, see how to cancel a Pro or Max plan or cancel a Team plan ."
+    ],
+    "added": [
+     "Limited usage every 5 hours and every week *",
+     "More usage than Free , every 5 hours and every week *",
+     "Fable, paid with usage credits New",
+     "For all-day work",
+     "5x Pro usage every 5 hours and every week*",
+     "Fable included, up to half your weekly limit New",
+     "$100 a month in API credits to build on the Claude Platform † New",
+     "Ultra",
+     "For your longest tasks",
+     "$200",
+     "Everything in Max, plus:",
+     "No 5-hour limit ‡",
+     "10x Pro usage every week*",
+     "$200 a month in API credits, up from $100 on Max † New",
+     "* Usage limits apply. How fast you reach a limit depends on the model you use, how long your chats are, and how large your files are.",
+     "‡ No 5-hour limit for verified accounts .",
+     "Prices shown don’t include applicable tax. Price and plans are subject to change at Anthropic's discretion.",
+     "Price and plans are subject to change at Anthropic's discretion.",
+     "Features Free Pro Max Ultra",
+     "Claude Tag More information",
+     "Project sharing and collaboration More information",
+     "Limit every 5 hours",
+     "Limited 1x 5x No 5-hour limit ‡",
+     "Limit every week",
+     "Limited 1x 5x 10x",
+     "User and organizational level spend controls More information",
+     "Single sign-on (SSO) and domain capture More information",
+     "Central billing and administration More information",
+     "Admin controls for remote and local connectors More information",
+     "Enterprise deployment for the Claude desktop app More information",
+     "Role-based access More information",
+     "System for Cross-domain Identity Management (SCIM) More information",
+     "Audit logs More information",
+     "Usage analytics More information",
+     "Compliance API More information",
+     "HIPAA-ready offering More information",
+     "Custom data retention controls More information",
+     "Organization wide skills deployment More information",
+     "ACH More information",
+     "Invoicing / net terms More information"
+    ]
    }
   ],
   "last_status": 200,
-  "last_attempt": "2026-10-26",
-  "last_checked": "2026-10-26",
+  "last_attempt": "2026-11-02",
+  "last_checked": "2026-11-02",
   "first_snapshot": "2026-10-16",
-  "hash": "518572550ecd034d",
-  "last_changed": "2026-10-22"
+  "hash": "cd848ca8bd6e4348",
+  "last_changed": "2026-11-02"
  },
  "claude-managed-agents": {
   "url": "https://platform.claude.com/docs/en/about-claude/pricing",
@@ -961,54 +1246,230 @@
      "\"cache_creation_input_tokens\" : 0 ,",
      "\"web_fetch_requests\" : 1"
     ]
+   },
+   {
+    "date": "2026-11-02",
+    "from": "e5ff6308ec2be7c3",
+    "to": "eede2143bac4d468",
+    "removed": [
+     "Specialized models ",
+     "Legacy models ",
+     "Learn about Anthropic's pricing structure for models and features",
+     "This page provides detailed pricing information for Anthropic's models and features. All prices are in USD.",
+     " Additional models",
+     "Claude Haiku 5.5 is priced by prompt length: a request whose prompt is over 100,000 tokens pays higher prices. A request's prompt length counts all of its input tokens, including cache reads and cache writes. Each request is priced on its own: a request over the threshold pays the higher prices even when part of its prompt is a cache hit, and earlier requests keep the prices they were billed at. The model pricing and batch processing pricing sections list both sets of prices.",
+     "The text editor tool uses the same pricing structure as other tools used with Claude. It follows the standard input and output token pricing based on the Claude model you're using.",
+     " If you're also using bash or text editor tools alongside computer use, those tools have their own token costs as documented in their respective pages.",
+     "All tokens consumed by a Claude Managed Agents session are billed at the rates shown in Model pricing . Prompt caching multipliers apply identically. Web search triggered inside a session incurs the standard $10 USD per 1,000 searches. On Claude Platform on AWS, session token and runtime charges convert to Claude Consumption Units at the standard rate (see Claude Platform on AWS pricing ). Fast mode premium pricing applies when an agent's model.speed is set to \"fast\" .",
+     "The data residency multiplier also applies: when an agent's model.inference_geo is pinned to \"us\" , tokens consumed by sessions running that agent are billed at 1.1x the standard rates, the same multiplier that applies to US-only inference on the Messages API.",
+     "Modifier Why it doesn't apply",
+     "Runtime is measured to the millisecond and accrues only while the session's status is running . Time spent idle (waiting for your next message or a tool confirmation), rescheduling , or terminated does not count toward runtime.",
+     "Tokens are pieces of text that models process. How many tokens the same text produces depends on the model's tokenizer, the language, and the type of content. Claude 4.7 and later models and Claude Mythos Preview use a newer tokenizer that produces approximately 30 percent more tokens for the same text than earlier models. To see how many tokens a request uses on a specific model, count it with token counting and that model's ID.",
+     "Claude Platform on AWS pricing",
+     "Inference geography",
+     "Claude in Microsoft Foundry pricing",
+     "Feature-specific pricing",
+     "Prompt caching",
+     "Claude Managed Agents pricing",
+     "Tokens",
+     "Additional pricing considerations",
+     "Cost optimization strategies",
+     "Frequently asked questions",
+     "How is token usage calculated?"
+    ],
+    "added": [
+     "Specialized models ",
+     "Legacy models ",
+     "Learn about Anthropic’s pricing structure for models and features",
+     "This page provides detailed pricing information for Anthropic’s models and features. All prices are in USD.",
+     " Additional models",
+     "Claude Haiku 5.5 is priced by prompt length: a request whose prompt is over 100,000 tokens pays higher prices. A request’s prompt length counts all of its input tokens, including cache reads and cache writes. Each request is priced on its own: a request over the threshold pays the higher prices even when part of its prompt is a cache hit, and earlier requests keep the prices they were billed at. The model pricing and batch processing pricing sections list both sets of prices.",
+     "The text editor tool uses the same pricing structure as other tools used with Claude. It follows the standard input and output token pricing based on the Claude model you’re using.",
+     " If you’re also using bash or text editor tools alongside computer use, those tools have their own token costs as documented in their respective pages.",
+     "All tokens consumed by a Claude Managed Agents session are billed at the rates shown in Model pricing . Prompt caching multipliers apply identically. Web search triggered inside a session incurs the standard $10 USD per 1,000 searches. On Claude Platform on AWS, session token and runtime charges convert to Claude Consumption Units at the standard rate (see Claude Platform on AWS pricing ). Fast mode premium pricing applies when an agent’s model.speed is set to \"fast\" .",
+     "The data residency multiplier also applies: when an agent’s model.inference_geo is pinned to \"us\" , tokens consumed by sessions running that agent are billed at 1.1x the standard rates, the same multiplier that applies to US-only inference on the Messages API.",
+     "Modifier Why it doesn’t apply",
+     "Runtime is measured to the millisecond and accrues only while the session’s status is running . Time spent idle (waiting for your next message or a tool confirmation), rescheduling , or terminated does not count toward runtime.",
+     "Tokens are pieces of text that models process. How many tokens the same text produces depends on the model’s tokenizer, the language, and the type of content. Claude 4.7 and later models and Claude Mythos Preview ( claude-mythos-preview ) use a newer tokenizer that produces approximately 30 percent more tokens for the same text than earlier models. To see how many tokens a request uses on a specific model, count it with Token counting and that model’s ID.",
+     "Claude Platform on AWS pricing Inference geography",
+     "Claude in Microsoft Foundry pricing Inference geography",
+     "Feature-specific pricing Prompt caching",
+     "Claude Managed Agents pricing Tokens",
+     "Additional pricing considerations Cost optimization strategies",
+     "Frequently asked questions How is token usage calculated?"
+    ]
    }
   ],
   "last_status": 200,
-  "last_attempt": "2026-10-26",
-  "last_checked": "2026-10-26",
+  "last_attempt": "2026-11-02",
+  "last_checked": "2026-11-02",
   "first_snapshot": "2026-10-16",
-  "hash": "e5ff6308ec2be7c3",
-  "last_changed": "2026-10-24"
+  "hash": "eede2143bac4d468",
+  "last_changed": "2026-11-02"
  },
  "openai-agents-api": {
   "url": "https://help.openai.com/en/articles/20001551-agents-api-beta-faq",
   "history": [],
   "last_status": 403,
-  "last_attempt": "2026-10-26"
+  "last_attempt": "2026-11-02"
  },
  "vertex-agent-engine": {
   "url": "https://cloud.google.com/products/gemini-enterprise-agent-platform/pricing",
-  "history": [],
+  "history": [
+   {
+    "date": "2026-11-02",
+    "from": "464295ec30b3fc48",
+    "to": "cf42bc1f99f1f618",
+    "removed": [
+     "Gemini platform products to Scale have a unified pricing structure, using 3 resource types: Compute, Memory and Storage. All Scale products are billed on these SKUs. Some services are measured by number of requests, but billed under Agent Compute vCPU-h, at the rates described in the sections below. A free usage tier applies per month, per account for each resource.",
+     "0 hour to 50 hour",
+     "$0.00 (Free) / 1 hour, per 1 month / account",
+     "50 hour and above",
+     "$0.085 / 1 hour, per 1 month / account",
+     "$0.0765 / 1 hour, per 1 month / account",
+     "$0.068 / 1 hour, per 1 month / account",
+     "0 gibibyte hour to 100 gibibyte hour",
+     "$0.00 (Free) / 1 gibibyte hour, per 1 month / account",
+     "100 gibibyte hour and above",
+     "$0.009 / 1 gibibyte hour, per 1 month / account",
+     "$0.0081 / 1 gibibyte hour, per 1 month / account",
+     "$0.0072 / 1 gibibyte hour, per 1 month / account",
+     "0 gibibyte month to 1 gibibyte month",
+     "1 gibibyte month and above",
+     "$0.000410959 / 1 gibibyte hour, per 1 month / account",
+     "$0.000369863 / 1 gibibyte hour, per 1 month / account",
+     "$0.000328767 / 1 gibibyte hour, per 1 month / account"
+    ],
+    "added": [
+     "Gemini platform products to Scale have a unified pricing structure, using 3 resource types: Compute, Memory and Storage. All Scale products are billed on these SKUs. Some services are measured by number of requests, but billed under Agent Compute vCPU-h, at the rates described in the sections below.",
+     "$0.085 / 1 hour, per 1 month / account $0.0765 / 1 hour, per 1 month / account $0.068 / 1 hour, per 1 month / account",
+     "$0.009 / 1 gibibyte hour, per 1 month / account $0.0081 / 1 gibibyte hour, per 1 month / account $0.0072 / 1 gibibyte hour, per 1 month / account",
+     "$0.000410959 / 1 gibibyte hour, per 1 month / account $0.000369863 / 1 gibibyte hour, per 1 month / account $0.000328767 / 1 gibibyte hour, per 1 month / account"
+    ]
+   }
+  ],
   "last_status": 200,
-  "last_attempt": "2026-10-26",
-  "last_checked": "2026-10-26",
+  "last_attempt": "2026-11-02",
+  "last_checked": "2026-11-02",
   "first_snapshot": "2026-10-16",
-  "hash": "464295ec30b3fc48"
+  "hash": "cf42bc1f99f1f618",
+  "last_changed": "2026-11-02"
  },
  "bedrock-agentcore": {
   "url": "https://aws.amazon.com/bedrock/agentcore/pricing/",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-26",
-  "last_checked": "2026-10-26",
+  "last_attempt": "2026-11-02",
+  "last_checked": "2026-11-02",
   "first_snapshot": "2026-10-16",
   "hash": "b82863c2b3ec0512"
  },
  "azure-foundry-agents": {
   "url": "https://azure.microsoft.com/en-us/pricing/details/foundry-agent-service/",
-  "history": [],
+  "history": [
+   {
+    "date": "2026-11-02",
+    "from": "74c92ddf0861d178",
+    "to": "07e946c1141034f7",
+    "removed": [
+     "Explore",
+     "Explore Azure",
+     "Discover secure, future-ready cloud solutions—on-premises, hybrid, multicloud, or at the edge",
+     "Learn about sustainable, trusted cloud infrastructure with more regions than any other provider",
+     "Cloud economics",
+     "Build your business case for the cloud with key financial and technical guidance from Azure",
+     "Customer enablement",
+     "Plan a clear path forward for your cloud journey with proven tools, guidance, and resources",
+     "See examples of innovation from successful companies of all sizes and from all industries",
+     "Azure innovation insights",
+     "Executive insights and guidance on AI innovation, intelligent data, cloud infrastructure, and optimization",
+     "View all products (200+)",
+     "Popular",
+     "AI + machine learning",
+     "Analytics",
+     "Compute",
+     "Containers",
+     "Databases",
+     "Developer tools",
+     "Hybrid + multicloud",
+     "Identity",
+     "Integration",
+     "Internet of Things",
+     "Management and governance",
+     "Media",
+     "Migration",
+     "Mixed reality",
+     "Mobile",
+     "Networking",
+     "Security",
+     "Storage",
+     "Web",
+     "Virtual desktop infrastructure",
+     "Explore some of the most popular Azure products",
+     "Provision Windows and Linux VMs in seconds",
+     "Azure Virtual Desktop",
+     "Enable a secure, remote desktop experience from anywhere",
+     "Migrate, modernize, and innovate on the modern SQL family of cloud databases",
+     "Build or modernize scalable, high-performance apps",
+     "Deploy and scale containers on managed Kubernetes"
+    ],
+    "added": [
+     "Microsoft as Customer Zero",
+     "View all products (200&#x2B;)",
+     "Azure Copilot",
+     "GitHub Copilot",
+     "Linux virtual machines in Azure",
+     "Foundry Models",
+     "Foundry Control Plane",
+     "Observability in Foundry Control Plane",
+     "Azure OpenAI in Foundry Models",
+     "View all databases",
+     "Azure DocumentDB",
+     "Azure Managed Redis",
+     "Azure Virtual Machine Scale Sets",
+     "Azure API Management",
+     "Azure Local",
+     "Microsoft Defender for Cloud",
+     "View all solutions (40&#x2B;)",
+     "Cloud solutions for small and medium businesses",
+     "Cloud migration and modernization center",
+     "Data analytics for AI",
+     "AI apps and agents",
+     "Microsoft Marketplace",
+     "Microsoft Sovereign Cloud",
+     "Responsible AI with Azure",
+     "AI Infrastructure",
+     "Machine learning operations (MLOps)",
+     "Integration Services",
+     "Migration and modernization center",
+     "Databases on Azure",
+     "Oracle on Azure",
+     "Adaptive cloud",
+     "Infrastructure as a service (IaaS)",
+     "Resiliency",
+     "Azure Essentials",
+     "Frontier Accelerate for Azure",
+     "Azure pricing overview",
+     "Create an Azure account",
+     "Maximize ROI from AI",
+     "Azure savings plans",
+     "Azure reservations"
+    ]
+   }
+  ],
   "last_status": 200,
-  "last_attempt": "2026-10-26",
-  "last_checked": "2026-10-26",
+  "last_attempt": "2026-11-02",
+  "last_checked": "2026-11-02",
   "first_snapshot": "2026-10-16",
-  "hash": "74c92ddf0861d178"
+  "hash": "07e946c1141034f7",
+  "last_changed": "2026-11-02"
  },
  "relevance-ai": {
   "url": "https://relevanceai.com/docs/get-started/pricing",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-26",
-  "last_checked": "2026-10-26",
+  "last_attempt": "2026-11-02",
+  "last_checked": "2026-11-02",
   "first_snapshot": "2026-10-16",
   "hash": "2f131ac6e5df073b"
  },
@@ -1027,8 +1488,8 @@
    }
   ],
   "last_status": 200,
-  "last_attempt": "2026-10-26",
-  "last_checked": "2026-10-26",
+  "last_attempt": "2026-11-02",
+  "last_checked": "2026-11-02",
   "first_snapshot": "2026-10-16",
   "hash": "f70d2f23614e629c",
   "last_changed": "2026-10-20"
@@ -1037,8 +1498,8 @@
   "url": "https://www.langchain.com/pricing",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-26",
-  "last_checked": "2026-10-26",
+  "last_attempt": "2026-11-02",
+  "last_checked": "2026-11-02",
   "first_snapshot": "2026-10-16",
   "hash": "a992dda36da811ba"
  },
@@ -1046,8 +1507,8 @@
   "url": "https://crewai.com/pricing",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-26",
-  "last_checked": "2026-10-26",
+  "last_attempt": "2026-11-02",
+  "last_checked": "2026-11-02",
   "first_snapshot": "2026-10-16",
   "hash": "b0be8f7f3a75bcb8"
  },
@@ -1075,14 +1536,53 @@
     "added": [
      "14.6K Sign up Sign in Console Book a Demo"
     ]
+   },
+   {
+    "date": "2026-11-02",
+    "from": "c0bfb5e87f2801fd",
+    "to": "b0bf065758612061",
+    "removed": [
+     "2 billion sandboxes run on E2B. And counting. Start building → Dismiss",
+     "14.6K Sign up Sign in Console Book a Demo",
+     "Pay for What You Run Nothing More",
+     "/$100 of usage in credits",
+     "+ Usage Costs",
+     "20 concurrent sandboxes",
+     "/month",
+     "Workload pricing estimator",
+     "Hobby — 20 concurrent Included Pro — 100 concurrent Included Pro+ — 600 concurrent +$500/mo Pro++ — 1,100 concurrent +$1,000/mo",
+     "Enterprise requires $3,000/mo minimum. Your estimated costs are below that threshold.",
+     "Pricing guide",
+     "pip install e2b // npm i e2b · free tier"
+    ],
+    "added": [
+     "2 billion sandboxes run on E2B. 2 billion+ sandboxes run on E2B And counting. Start building → Start now Dismiss",
+     "14.7K Sign up Sign in Console Book a Demo",
+     "Pay for What You Run.",
+     "Nothing More.",
+     "/$100 in credits (+usage costs)",
+     "20 concurrent sandboxes 20 concurrent sandboxes The maximum number of sandboxes that can run at the same time.",
+     "/month (+usage costs)",
+     "(+usage costs)",
+     "Usage costs Workload",
+     "pricing estimator",
+     "Hobby · 20 concurrent Included Pro · 100 concurrent Included Pro+ · 600 concurrent +$500/mo Pro++ · 1,100 concurrent +$1,000/mo",
+     "/mo",
+     "Enterprise starts at a $2,000/mo commit, 500 concurrent included.",
+     "Get a quote",
+     "Estimate your monthly costs",
+     "Rates Pricing",
+     "guide",
+     "$ pip install e2b // $ npm i e2b"
+    ]
    }
   ],
   "last_status": 200,
-  "last_attempt": "2026-10-26",
-  "last_checked": "2026-10-26",
+  "last_attempt": "2026-11-02",
+  "last_checked": "2026-11-02",
   "first_snapshot": "2026-10-16",
-  "hash": "c0bfb5e87f2801fd",
-  "last_changed": "2026-10-26"
+  "hash": "b0bf065758612061",
+  "last_changed": "2026-11-02"
  },
  "modal": {
   "url": "https://modal.com/pricing",
@@ -1127,21 +1627,38 @@
      "Avg 50 GPUs × 24 hrs × $3.95 / GPU-hr",
      "Included usage applies to compute: Functions and Sandboxes, billed by the second for CPU, memory, and GPU time. Volumes include up to 1 TiB free."
     ]
+   },
+   {
+    "date": "2026-11-02",
+    "from": "c7af71689006188b",
+    "to": "6658a3447f3af6d6",
+    "removed": [
+     "Series D: $1B in annualized run rate, new funding, and where Modal goes next. Learn more",
+     "Products",
+     "Products Products"
+    ],
+    "added": [
+     "Product",
+     "Product Product",
+     "How should I estimate the total cost of Modal Sandboxes?",
+     "Because Modal Sandboxes are billed based on active resources, you should estimate total cost differently than you would with other Sandbox providers who charge based on fixed reservations. For CPU, you can estimate by calculating: Sandbox duration × rate × average CPU cores used. For memory, you can estimate by calculating: Sandbox duration × rate × average GiB used.",
+     "It's important to use the average resource consumption instead of the peak because Modal Sandboxes are charged based on the max(request, usage). For most Modal Sandboxes, the guidance is to not request any resources, defaulting to a small reservation of 0.125 cores and 128 MiB of memory. Modal Sandboxes are designed to burst above their reservation as needed. Since Sandboxes typically have bursty resource consumption, the difference between peak usage and average usage can be significant. Calculating the price of Modal Sandboxes by using peak resource consumption will usually significantly overestimate the total cost."
+    ]
    }
   ],
   "last_status": 200,
-  "last_attempt": "2026-10-26",
-  "last_checked": "2026-10-26",
+  "last_attempt": "2026-11-02",
+  "last_checked": "2026-11-02",
   "first_snapshot": "2026-10-16",
-  "hash": "c7af71689006188b",
-  "last_changed": "2026-10-24"
+  "hash": "6658a3447f3af6d6",
+  "last_changed": "2026-11-02"
  },
  "daytona": {
   "url": "https://www.daytona.io/pricing",
   "history": [],
   "last_status": 200,
-  "last_attempt": "2026-10-26",
-  "last_checked": "2026-10-26",
+  "last_attempt": "2026-11-02",
+  "last_checked": "2026-11-02",
   "first_snapshot": "2026-10-16",
   "hash": "172a8cc9f1cefeff"
  }

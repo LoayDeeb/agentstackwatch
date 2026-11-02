@@ -1,4 +1,6 @@
 Google AI plans with Cloud Storage - Google One
+Students get Google AI Pro free for 1 year. Study smarter with higher access to Gemini, a 24/7 personal AI agent, and 5 TB of storage. See offers
+Close
 Skip to main content
 One
 Overview
@@ -17,7 +19,7 @@ United States
 Google AI Plus
 /mo
 400 GB storage
-Unlock essential tools to boost productivity with 2x access* to Gemini
+Unlock essential tools to boost productivity with double the access to Gemini
 Get Plus
 Terms apply 1
 Boost productivity
@@ -38,7 +40,7 @@ Includes Gemini 4 Argon
 Google AI Pro
 /mo
 5 TB storage
-Create faster and get more done with 4x access* to Gemini
+Create faster and get more done with four times more access to Gemini
 Get Pro
 Terms apply 1
 Boost productivity
@@ -56,7 +58,7 @@ Create insightful multi-page reports in less time in Gemini and Search. 2
 Expanded access to features and models in Gemini Notebook.
 Code faster
 Expanded access to Gemini 4 Argon in Google Antigravity and Google AI Studio. 6
-Get 200 compute units per month with expanded access to powerful accelerators and longer runtimes in Google Colab.
+Get expanded access to powerful accelerators and longer runtimes in Google Colab with 200 compute units per month.
 Supercharge Android development with expanded limits to our best Gemini models for agentic AI-assistance in Android Studio.
 $10 in monthly Google Cloud credits from Google Developer Program.
 And more
@@ -72,7 +74,7 @@ Includes Gemini 4 Argon
 Google AI Ultra
 From /mo
 Starting at 20 TB of storage
-Accelerate your workflows with up to 20x access* to Gemini
+Accelerate your workflows with 5x higher usage limits in Gemini than the AI Pro plan
 Get Ultra
 Terms apply 1
 Boost productivity
@@ -90,7 +92,7 @@ Create insightful multi-page reports in less time in Gemini and Search. 2
 Higher access to features and models in Gemini Notebook.
 Code faster
 Higher access to Gemini 4 Argon in Google Antigravity and Google AI Studio. 6
-Get up to 2,000 compute units per month with higher access to powerful accelerators and longer runtimes in Google Colab.
+Get higher access to powerful accelerators and longer runtimes in Google Colab with 2,000 compute units per month.
 Supercharge Android development with higher limits to our best Gemini models for agentic AI‑assistance in Android Studio.
 $40 in monthly Google Cloud credits from Google Developer Program.
 And more
@@ -104,11 +106,14 @@ Google AI Ultra is available in more than 150 countries — see full list of cou
 YouTube Premium individual plan is available in over 40 countries — see full list of countries .
 View plan benefits
 Hide plan benefits
-* In comparison to non-AI subscribers
 Age restrictions, language availability, system requirements, and other restrictions may apply.
 Your Google Account gives you 15 GB of storage, which is included as part of the total storage offered in Google One plans.
 Compare plans
 Looking for AI solutions for your business or work account? Try Gemini Enterprise
+Students get exclusive offers on Google AI plans
+Get ahead this school year with Google AI Pro free for 1 year. Or, upgrade to get AI Pro and YouTube Premium with ad-free videos and music for just $8.99/mo ($35.98/mo when purchased separately). 12
+See student plans
+Availability varies by country – see full list of countries and regions where Google AI Pro and YouTube Premium are supported.
 Discover a universe of possibilities
 New
 Next-gen AI
@@ -133,7 +138,7 @@ Coding
 Studying
 And more
 Sign up
-Get access to Google’s most capable AI models
+Get access to Google’s advanced AI models
 Frontier intelligence for your most complex workflows with Gemini 4 Argon
 Turn ambitious ideas into real projects
 Meet Gemini 4 Argon, our frontier model built to take your most complex tasks from start to finish. Whether you are exploring new coding projects, analyzing dense information, or visualizing 3D spaces, Argon turns your ambitious ideas into polished, ready-to-use outputs.
@@ -157,9 +162,9 @@ Rolling out
 Let your voice do the work
 Say what you need to instantly search your inbox with Gmail Live, or outline and write full documents with Docs Live just by talking.
 Gmail Live (AI Plus, Pro, Ultra) and Docs Live (AI Pro, Ultra) are rolling out on Android and iOS in US only.
-New AI Inbox in Gmail
+AI Inbox in Gmail
 Prioritize your to‑dos and important updates with AI Inbox
-New AI Inbox in Gmail
+AI Inbox in Gmail
 Stay on top of what matters most
 AI Inbox is like having a personalized briefing, highlighting to-dos and catching you up on what matters.
 Available to Google AI Plus, Pro, and Ultra users in the US.
@@ -179,34 +184,28 @@ Bring your next creative masterpiece to life
 Gemini Omni
 Blend text, images, and video to bring your ideas to life in motion
 You can now upload multiple reference images to direct the characters, objects, and style of your scene for more dynamic storytelling.
-New Nano Banana 2
+Nano Banana 2
 Create images that match your imagination
-New Nano Banana 2
+Nano Banana 2
 Where imagination becomes imagery
 Create visuals that match exactly what you have in mind, from images and typography to infographics. Describe what you want, explore styles, and refine every element, all in Gemini and Flow.
 Discover Nano Banana 2
-New Lyria 3.5
+Lyria 3.5
 Compose custom soundtracks for any moment
-New Lyria 3.5
+Lyria 3.5
 Play with sound styles to create new songs
 Generate complete tracks with Lyria 3.5, including instrumentals, vocals, and lyrics. Mix genres, moods, and eras using simple prompts to push your sound in new directions.
 Discover Lyria 3.5
 Code and ship faster with autonomous AI agents
-New Antigravity
+Antigravity
 Orchestrate complex projects with agentic workflows
-New Antigravity
+Antigravity
 Manage your own team of AI coding agents
 Guide multiple agents to plan, generate, and refine code in one place. Powered by Google Antigravity, your agent-first development platform.
 Explore Antigravity
-Jules
-Fix bugs and build new features with a coding agent
-Jules
-Delegate tasks to an AI agent that gets your code
-Jules connects to repositories to review issues, draft pull requests, and handle tasks in the background, so you can stay focused on the bigger picture.
-Explore Jules
-New Google Developer Program
+Google Developer Program
 Accelerate your path to deploy and scale
-New Google Developer Program
+Google Developer Program
 Fuel your next build with the ultimate developer toolkit
 Build, test, and deploy without infrastructure limits. Access cloud credits, powerful models, and a unified developer profile, so your projects can scale seamlessly.
 Explore Google Developer Program
@@ -255,19 +254,105 @@ Learn more
 Playground
 Create custom games in minutes (US only)
 Learn more
-See how Google AI plans deliver more value
-Google AI Plans
-Starting at /mo
-Other AI Plans*
-Starting at $8/mo
-More access to the latest AI models and features
-AI directly integrated in Google apps
+See your savings on AI, YouTube, and more
+Google AI Pro Google AI Ultra
+Savings calculator
+Set the amounts below to match your current monthly spend.
+Premium AI chatbots
+$20/mo
+Included in Pro: Four times more Gemini access*
+* In comparison to non-AI subscribers.
 Cloud storage
-Share with up to 5 people
-Bundled subscription savings**
-Pro & Ultra plans
-*Competitors&#039; pricing and features are subject to change.
-**Bundle subscription savings are not sharable within a family group.
+$10/mo
+Included in Pro: 5 TB cloud storage
+YouTube
+Premium Lite ($8.99)
+None ($0)
+Premium Lite ($8.99)
+Premium Student ($8.99)
+Premium individual ($15.99)
+Premium family ($26.99)
+$8.99/mo
+Included in Pro: YouTube Premium Lite 7
+Individual plan selected: Because the YouTube Premium individual plan isn't included in Google AI Pro plans, this spend isn't included in your savings total.
+Family plan selected: Because the YouTube family plan isn't included in Google AI Pro plans, this spend isn't included in your savings total.
+Fitness and wellness
+$10/mo
+Included in Pro: Google Health Premium 8
+Home automation and security
+$10/mo
+Included in Pro: Google Home Premium Standard 9
+Reset all to $0
+Monthly ($19.99) Annual ($199.99)
+Your estimated savings
+$39 / mo
+Spend summary
+Current separate services
+$59/mo
+Google AI Pro bundle
+$19.99/mo
+Monthly savings
+$39
+Share storage and AI with up to 5 people
+$6.67/mo equivalent cost per user
+View all bundled Pro features
+5 TB secure storage across Google Drive, Gmail, and Photos
+Gemini in Gmail, Docs, and Sheets
+YouTube Premium Lite 7
+Google Health Premium 8
+Google Home Premium Standard 9
+Get Google AI Pro
+Explore all plans
+Get Google AI Pro
+Explore all plans
+Digital spend estimates, including per-user cost, are for illustrative purposes only and are based solely on your self-reported inputs. Actual costs, individual feature eligibility, usage capacity, and savings may vary depending on your specific subscriptions, regional availability, and plan terms. Offers and pricing are subject to change.
+Savings calculator
+Set the amounts below to match your current monthly spend.
+Premium AI chatbots
+$100/mo
+Included in Ultra: 5x more Gemini access than Pro
+Cloud storage
+$10/mo
+Included in Ultra: 20 TB cloud storage
+YouTube
+Premium individual ($15.99)
+None ($0)
+Premium Lite ($8.99)
+Premium Student ($8.99)
+Premium individual ($15.99)
+Premium family ($26.99)
+$15.99/mo
+Included in Ultra: YouTube Premium individual
+Family plan selected: Because the YouTube family plan isn't included in Google AI Ultra plans, this spend isn't included in your savings total.
+Fitness and wellness
+$10/mo
+Included in Ultra: Google Health Premium
+Home automation and security
+$10/mo
+Included in Ultra: Google Home Premium Advanced
+Reset all to $0
+$99.99/mo - Ultra plans are billed monthly only
+Your estimated savings
+$46 / mo
+Spend summary
+Current separate services
+$146/mo
+Google AI Ultra bundle
+$99.99/mo
+Monthly savings
+$46
+Share storage and AI with up to 5 people
+$33.33/mo equivalent cost per user
+View all bundled Ultra features
+20 TB secure storage across Google Drive, Gmail, and Photos
+Gemini in Gmail, Docs, and Sheets
+YouTube Premium individual (videos and music ad-free, offline, and in the background)
+Google Health Premium 8
+Google Home Premium Advanced 9
+More benefits across Google
+Get Google AI Ultra
+Explore all plans
+Digital spend estimates, including per-user cost, are for illustrative purposes only and are based solely on your self-reported inputs. Actual costs, individual feature eligibility, usage capacity, and savings may vary depending on your specific subscriptions, regional availability, and plan terms. Offers and pricing are subject to change.
 Find the right Google AI plan for you
 Features
 Google AI
@@ -294,10 +379,14 @@ Storage manager
 Google AI
 Gemini
 Higher Usage Limits
-2x*
-4x*
-5x Pro plan
-20x Pro plan
+Two times
+(non-AI plans)
+Four times
+(non-AI plans)
+5x
+(Pro plan)
+20x
+(Pro plan)
 Access to Gemini 4 Argon
 Access to our Pro models
 Higher
@@ -332,7 +421,7 @@ Gemini in Gmail, Docs, and more
 Ask your Gmail inbox and get an AI Overview (US only)
 Proofread in Gmail
 Help me generate video in Vids
-Take notes for me in Google Meet (EN only)
+Take notes for me in Google Meet 13
 Gemini Notebook
 Usage limits
 More
@@ -379,7 +468,7 @@ Highest
 Access to Gemini 4 Argon
 Google AI Studio 6
 Access to Gemini 4 Argon
-Access to our most capable models
+Access to our advanced models
 Limited
 Expanded
 Higher
@@ -408,7 +497,7 @@ Expanded
 Higher
 Highest
 Google Search 2
-Access to our most capable Gemini models
+Access to our advanced models
 More
 Expanded
 Higher
@@ -423,7 +512,7 @@ More
 Expanded
 Higher
 Highest
-Google Finance 13
+Google Finance 14
 Deep Search in Google Finance
 More
 Expanded
@@ -434,29 +523,13 @@ Complete tasks with Chrome auto browse 4
 Expanded
 Higher
 Highest
-Jules 12
-Task limits
-Limited
-Expanded
-Higher
-Highest
-Concurrent task limits
-Limited
-Expanded
-Higher
-Highest
-Access to latest models
-Limited
-Expanded
-Higher
-Highest
 Google Developer Program premium
 Google Cloud credits
 $10 monthly credits
 $40 monthly credits
 $100 monthly credits
 Android Studio
-Access limits to our best Gemini models for agentic AI-assistance
+Access limits to our advanced Gemini models for agentic AI-assistance
 Limited
 Expanded
 Higher
@@ -496,7 +569,6 @@ Standard
 Advanced
 Advanced
 Google Health Premium
-* In comparison to non-AI subscribers
 Frequently asked questions
 Expand all
 Collapse all
@@ -517,9 +589,8 @@ YouTube Premium Lite 7 plan
 Gemini Notebook with expanded access
 Google Search: 2 Get access to the Gemini 3 Pro model to unlock interactive simulations and tools to answer your most complex questions, plus Deep Search, agentic capabilities, and more
 Google Search: Early access to Personal Intelligence in AI Mode (US only)
-Jules: 12 Expanded task and concurrency limits, and access to latest models
 Google Antigravity: Expanded rate limits and access to Gemini 4 Argon in Google Antigravity, our agentic development platform
-Google Colab: Get 200 compute units per month with expanded access to powerful accelerators and longer runtimes
+Google Colab: Get expanded access to powerful accelerators and longer runtimes with 200 compute units per month
 More Remix generations and Veo 3 5 photo-to-video generations in Google Photos (US only)
 Gemini in Gmail, Docs, Vids, and more
 Google Home Premium Standard: 30 days of event history and Gemini features. Included in all markets where Google Home Premium is available. Learn more
@@ -533,9 +604,8 @@ AI Studio with higher limits to prototype, experiment, and build with our Gemini
 Project Genie 10 is available in more than 140 countries - see full list of countries . Only available with a Google AI Ultra plan.
 YouTube Premium 11 individual plan
 Google Search: 2 Higher access to Gemini 3 Pro model to unlock interactive simulations and tools to answers your most complex questions, plus Deep Search, agentic capabilities and more
-Jules: 12 Higher task and concurrency limits, and access to latest models
 Google Antigravity: Higher rate limits and access to Gemini 4 Argon in Google Antigravity, our agentic development platform
-Google Colab: Get up to 2,000 compute units per month with expanded access to powerful accelerators and longer runtimes
+Google Colab: Get higher access to powerful accelerators and longer runtimes with 2,000 compute units per month
 Highest Remix generations and Veo 3 5 photo-to-video generations in Google Photos (US only)
 Gemini in Gmail, Docs, Vids, and more
 Google Home Premium Advanced: 24/7 video history, event descriptions, and more. Included in all markets where Google Home Premium is available. Learn more
@@ -581,10 +651,11 @@ The YouTube Premium Lite plan included in this bundle won’t activate if you al
 Requires a Pixel Watch or Google Health device (sold separately).
 9. Requires Google Home app, Wi-Fi, and internet connection. Features subject to change; available in select countries and languages . Gemini features work independently of Gemini apps. Check responses for accuracy; results may vary.
 Requires compatible smart home device(s) (sold separately).
-10. Project Genie is available in more than 140 countries — see full list of countries . Only available with a Google AI Ultra plan.
+10. Project Genie is available in more than 140 countries — see full list of countries . Only available with a Google AI Ultra 20x plan.
 11. YouTube Premium individual plan is included in Google AI Ultra in over 40 countries — see full list of countries .
-12. Jules is an asynchronous coding agent that is currently in beta. To use Jules, you must be 18 years old or older. Only English is officially supported at this time. Capacity is subject to availability and not guaranteed.
-13. Deep Search in Google Finance is only available in the US.
+12. Student Special Offer and Combined Google and YouTube Offer terms apply. These student offers provide students with discounted pricing and benefits on the Google AI Plus and Google AI Pro plans. Available to eligible students. Verification via SheerID required upon sign-up. Student offers are valid for up to 4 years and may automatically renew at the standard monthly price once student status concludes. Not available on school-issued accounts. Individual use only.
+13. “Take notes for me” in Google Meet is available in select countries — see full list of countries .
+14. Deep Search in Google Finance is only available in the US.
 About Google
 Google products
 Privacy

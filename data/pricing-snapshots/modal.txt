@@ -1,16 +1,15 @@
 Pricing: Pay per second for GPUs and CPUs | Modal
 Skip to content
-Series D: $1B in annualized run rate, new funding, and where Modal goes next. Learn more
 Download logo as .svg
 Download wordmark as .svg
 Go to press kit
-Products
+Product
 Resources
 Customers
 Pricing
 Docs
 Log in Sign up
-Products
+Product
 Inference Serve LLMs, image, video, and audio models, from real-time to batch Sandboxes Isolated environments for coding agents, RL rollouts, and untrusted code Training Fine-tune, run RL, and evaluate models on GPUs that spin up in seconds
 Platform
 Modal Infrastructure Infrastructure rebuilt for AI, from the container runtime and storage to a multi-cloud capacity pool
@@ -22,7 +21,7 @@ Company
 About Careers Events
 Featured
 Scaling to 1 million concurrent sandboxes in seconds Engineering
-Products Products
+Product Product
 Inference Serve LLMs, image, video, and audio models, from real-time to batch Sandboxes Isolated environments for coding agents, RL rollouts, and untrusted code Training Fine-tune, run RL, and evaluate models on GPUs that spin up in seconds
 Platform
 Modal Infrastructure Infrastructure rebuilt for AI, from the container runtime and storage to a multi-cloud capacity pool
@@ -195,6 +194,9 @@ This job will cost $0.02365/day for the CPU, and $0.00200/day for the memory, ad
 What's an example of real-world GPU billing?
 You run stable diffusion on an A10G GPU. This will run for about 1.5 seconds to generate each image, while using 4 GiB RAM and 1 CPU.
 This will cost approximately $0.000458/image in GPU charges, $0.000020/image in CPU charges, and $0.000013/image in memory charges, adding up to $0.000491/image in total charges, i.e., $0.491 per 1,000 images .
+How should I estimate the total cost of Modal Sandboxes?
+Because Modal Sandboxes are billed based on active resources, you should estimate total cost differently than you would with other Sandbox providers who charge based on fixed reservations. For CPU, you can estimate by calculating: Sandbox duration × rate × average CPU cores used. For memory, you can estimate by calculating: Sandbox duration × rate × average GiB used.
+It's important to use the average resource consumption instead of the peak because Modal Sandboxes are charged based on the max(request, usage). For most Modal Sandboxes, the guidance is to not request any resources, defaulting to a small reservation of 0.125 cores and 128 MiB of memory. Modal Sandboxes are designed to burst above their reservation as needed. Since Sandboxes typically have bursty resource consumption, the difference between peak usage and average usage can be significant. Calculating the price of Modal Sandboxes by using peak resource consumption will usually significantly overestimate the total cost.
 Do I need to purchase credits?
 Workspaces receive a free allotment of compute per month, but usage on the Starter and Team plans is pay-as-you-go and does not require pre-purchasing compute or tokens. If you want to limit your monthly spend, you can set a Workspace budget .
 Can I add more than three team members on the starter plan?
@@ -212,7 +214,7 @@ Free usage of Shared Endpoints is not part of the Starter plan. Tokens are bille
 Ship your first app in minutes
 Get started Contact us
 $30 / month free compute
-Products
+Product
 Inference
 Sandboxes
 Training

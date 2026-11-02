@@ -40,6 +40,7 @@ Sign-in domains
 Grok Bot
 Grok Bot on The X Subscription
 Grok Bot sign-in
+Refer friends to Grok Bot
 Help
 FAQ
 API Docs
@@ -78,6 +79,7 @@ Sign-in domains
 Grok Bot
 Grok Bot on The X Subscription
 Grok Bot sign-in
+Refer friends to Grok Bot
 Help
 FAQ
 Plans and usage

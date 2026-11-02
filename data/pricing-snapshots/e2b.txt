@@ -1,28 +1,27 @@
 Pricing | E2B — The AI Agent Cloud
 Skip to main content
-2 billion sandboxes run on E2B. And counting. Start building → Dismiss
+2 billion sandboxes run on E2B. 2 billion+ sandboxes run on E2B And counting. Start building → Start now Dismiss
 Enterprise
 Resources
 Company
 Pricing
 Docs
-14.6K Sign up Sign in Console Book a Demo
+14.7K Sign up Sign in Console Book a Demo
 pricing
-Pay for What You Run Nothing More
+Pay for What You Run.
+Nothing More.
 Free Hobby tier, and paid upgrades to cover all needs. Separate usage costs.
 ↓ calculate your costs ↓
 Hobby FREE
-/$100 of usage in credits
-+ Usage Costs
+/$100 in credits (+usage costs)
 See our cost calculator
 $100 one-time usage credit
 Sessions up to 1 hour
-20 concurrent sandboxes
+20 concurrent sandboxes 20 concurrent sandboxes The maximum number of sandboxes that can run at the same time.
 Default sandbox CPU and RAM
 Start for Free (✓) No credit card required
 pro $150
-/month
-+ Usage Costs
+/month (+usage costs)
 See our cost calculator
 Everything in Hobby, usage billed by the second
 Sessions up to 24 hours
@@ -30,14 +29,15 @@ Sessions up to 24 hours
 Custom sandbox CPU and RAM
 Choose Pro (S) Billed through Stripe
 Enterprise CUSTOM
-+ Usage Costs
+(+usage costs)
 See our cost calculator
 Committed usage, custom billing
 Multi-day and persistent sessions
 Tens of thousands of concurrent sandboxes
 Custom sizes, plus BYOC deployment
 Talk to an engineer ($) Custom deployment and billing
-Workload pricing estimator
+Usage costs Workload
+pricing estimator
 We charge per second of a running sandbox. See a detailed breakdown below.
 Compute Configuration
 vCPUs
@@ -46,7 +46,7 @@ Run Hours / Month
 Run Hours = total sandbox runtime.
 Example: 100 sandboxes × 10 hrs = 1,000 hrs
 Concurrency
-Hobby — 20 concurrent Included Pro — 100 concurrent Included Pro+ — 600 concurrent +$500/mo Pro++ — 1,100 concurrent +$1,000/mo
+Hobby · 20 concurrent Included Pro · 100 concurrent Included Pro+ · 600 concurrent +$500/mo Pro++ · 1,100 concurrent +$1,000/mo
 Pro Plan Monthly Cost
 Usage Cost
 $166
@@ -56,16 +56,20 @@ Concurrency Addon
 $0
 Total Monthly
 $316
+/mo
 Max Concurrent Sandboxes 100
-Enterprise requires $3,000/mo minimum. Your estimated costs are below that threshold.
+Enterprise starts at a $2,000/mo commit, 500 concurrent included.
+Get a quote
 Step 1 of 2: enter your email address.
 Let us know if you need more powerful compute.
 If you don't see convenient times, please email us at enterprise@e2b.dev with preferences and we'll reach out.
 Please enter your work email *
 Book a call
+Estimate your monthly costs
 Estimate your monthly costs Estimate your monthly costs Estimate your monthly costs Estimate your monthly costs Estimate your monthly costs Estimate your monthly costs
 Estimate your monthly costs Estimate your monthly costs Estimate your monthly costs Estimate your monthly costs Estimate your monthly costs Estimate your monthly costs
-Pricing guide
+Rates Pricing
+guide
 We charge per second of a running sandbox. See a detailed breakdown below.
 vCPUs RAM Storage
 vCPUs Plan Costs
@@ -86,7 +90,7 @@ Let us know if you need more powerful compute.
 2B+ sandboxes started
 Give every agent a machine
 Start Building Talk to an engineer
-pip install e2b // npm i e2b · free tier
+$ pip install e2b // $ npm i e2b
 Follow us on:
 SOC 2 · HIPAA Trust center
 Company
@@ -95,14 +99,14 @@ Careers
 Contact
 Security
 Brand assets
+E2B for Research
+E2B for Startups
 Resources
 All Resources
 Blog
 Case studies
 Cookbook
 Docs
-E2B for Research
-E2B for Startups
 Open source
 Product updates
 Talks
