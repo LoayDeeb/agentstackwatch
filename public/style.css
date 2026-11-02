@@ -136,3 +136,6 @@ a{color:inherit;text-decoration:none}::selection{background:var(--acc);color:#ff
 @media (max-width:720px){.cmp{table-layout:fixed;width:100%}.cmp td,.cmp th{word-break:break-word;overflow-wrap:anywhere;padding-left:6px;padding-right:6px}}
 
 /* 2026-10-24: header nav reworked: 7 primary links + a More dropdown, hamburger menu at <=999px (see .mnav/.mmenu/.mobmenu near the top). */
+/* 2026-11-02: header fit at <=400px / <=340px (was 15-55px horizontal scroll from .mtools/burger at 320-360px). */
+@media(max-width:400px){.mrow{gap:8px}.brand{font-size:17px;gap:6px}.brand svg{width:18px;height:18px}.mtools{gap:3px}.mtools .ic{width:32px;height:32px}.subbtn{padding:7px 10px;font-size:12.5px}}
+@media(max-width:340px){.brand svg{display:none}.brand{font-size:16px}.subbtn{padding:6px 9px}}
