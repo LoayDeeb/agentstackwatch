@@ -1,0 +1,19 @@
+# AgentStackWatch: Competitor Brief (20 Oct 2026)
+
+| Name | Who it's for | How often | How it makes money | Does better |
+|---|---|---|---|---|
+| [The Neuron](https://www.theneuron.ai/) | "Business and technology leaders" ([media kit](https://www.theneuron.ai/get-media-kit/)) | Daily ([advertise](https://www.theneurondaily.com/c/advertise), [TechnologyAdvice](https://solutions.technologyadvice.com/newsletter-sponsorships/)) | Sponsorships: native, banner, sponsored sections ([TA](https://solutions.technologyadvice.com/newsletter-sponsorships/)). No public rate card; a third party estimates ~$16k–$28k per send ([BeeDirectory](https://bee-directory.com/newsletter/750)) | Scale: says 700k subscribers and 45% opens ([advertise](https://www.theneurondaily.com/c/advertise)), plus a structured Academy with learning pathways ([site](https://www.theneuron.ai/)) |
+| [Superhuman AI](https://www.superhuman.ai/) | Professionals: "2 million+ pros" ([site](https://www.superhuman.ai/)) | Daily ("Daily Edition", [site](https://www.superhuman.ai/)) | unknown | Ready-to-use prompts (1,000+) and a tool directory in 11 categories ([site](https://www.superhuman.ai/)) |
+| [Hustling Labs: Lab Notes](https://newsletter.hustlinglabs.com/) | Local and small service businesses ([Lab Verdict](https://newsletter.hustlinglabs.com/p/lab-verdict-7-desktop-ai-agents-ranked-for-local-business)) | About weekly. Posts are dated Apr 6, 13, 20, 27 and May 11, 2026 ([home](https://newsletter.hustlinglabs.com/)) | Issue sponsors ("In partnership with", [Lab Verdict](https://newsletter.hustlinglabs.com/p/lab-verdict-7-desktop-ai-agents-ranked-for-local-business)). Prices unknown | Ranks agents by business type, says what each "replaces" in dollars, and includes setup steps ([Lab Verdict](https://newsletter.hustlinglabs.com/p/lab-verdict-7-desktop-ai-agents-ranked-for-local-business)) |
+| [Balanced AI Insights](https://newsletter.blend2balance.com/) | Finance leaders ([home](https://newsletter.blend2balance.com/)) | unknown | unknown | Compares 6 agents for finance teams, with a comparison framework and a task-design guide ([CFO guide](https://newsletter.blend2balance.com/p/the-cfo-s-guide-to-agentic-ai)) |
+| [Future Tools (Matt Wolfe)](https://www.futuretools.io/) | General AI followers ([site](https://www.futuretools.io/)) | News "updated throughout the day" ([site](https://www.futuretools.io/)) | unknown | Combines news, a tool directory, YouTube breakdowns and CEO interviews ([site](https://www.futuretools.io/)) |
+
+## Gaps AgentStackWatch could own
+1. **Head-to-head agent comparisons for executive tasks** (email, calendar, CRM, travel). The big dailies cover news and tools broadly ([Neuron](https://www.theneuron.ai/), [Superhuman](https://www.superhuman.ai/)). The niche competitors focus on local business or finance ([Hustling Labs](https://newsletter.hustlinglabs.com/p/lab-verdict-7-desktop-ai-agents-ranked-for-local-business), [Balanced](https://newsletter.blend2balance.com/p/the-cfo-s-guide-to-agentic-ai)).
+2. **Verified, dated facts.** Every claim links to the vendor's page, and anything unchecked says "unknown" ([AgentStackWatch guide](https://agentstackwatch.com/guide/)). None of the competitor pages I opened showed per-fact citations. Make this the brand.
+3. **A guide that stays updated.** The competitors publish one-off issues, while AgentStackWatch keeps a single updated buyer's guide ([guide](https://agentstackwatch.com/guide/)). A monthly "what changed" changelog for prices and features would build on that.
+
+## Recommended next step
+Publish a monthly "Agent Price & Feature Changelog" issue built from the guide's vendor citations. Then pitch it as a sponsor-free trust signal, in contrast to the sponsor-funded competitors.
+
+*Note: unknown means I could not verify it on the pages I opened. Superhuman's and The Neuron's advertise pages returned 404. Not verified: Lab Notes ad prices and any paid tiers.*

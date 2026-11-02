@@ -49,6 +49,8 @@ const EXTRA = [
  ['oc-1027','https://openclaw.ai/','OpenClaw homepage',N],
  ['hm-1027','https://hermes-agent.nousresearch.com/','Hermes Agent homepage and Nous Portal plans',N],
  ...Object.entries(ps).map(([k,u])=>[`pc-${k}`,u,`Pricing page: ${k} (re-checked)`,N]),
+ // Checked 2 Nov 2026: shared ChatGPT and Codex allowance from December
+ ['oai-shared-1102','https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits','Understanding ChatGPT and Codex usage limits (OpenAI Help Center)','2 Nov 2026'],
  // Checked 27 Oct 2026: GPT-6.1 Terra launch
  ['oai-terra-1027','https://openai.com/index/introducing-gpt-6-1-terra/','Introducing GPT-6.1 Terra (OpenAI, 26 Oct 2026)',N],
  // Checked 24 Oct 2026: Muse launches in Japan
