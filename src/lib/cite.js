@@ -3,9 +3,17 @@
 // and for the best free AI agents guide on 2026-10-21. Cost-page price refresh re-checked on 2026-10-27 (keys ending -1027, pc-*). Lindy price wording re-checked across guides on 2026-10-28 (ly-1028).
 import { SRC as GSRC } from './guide-data.js';
 import ps from '../../data/pricing-sources.json';
-const G = '16 Oct 2026', T = '17 Oct 2026', S = '18 Oct 2026', M = '19 Oct 2026', W = '20 Oct 2026', X = '21 Oct 2026', Z = '26 Oct 2026', N = '27 Oct 2026', O = '28 Oct 2026', P1 = '1 Nov 2026';
+const G = '16 Oct 2026', T = '17 Oct 2026', S = '18 Oct 2026', M = '19 Oct 2026', W = '20 Oct 2026', X = '21 Oct 2026', Z = '26 Oct 2026', N = '27 Oct 2026', O = '28 Oct 2026', P1 = '1 Nov 2026', P2 = '2 Nov 2026';
 const OCR = t => [`oc-${t}`, `https://github.com/openclaw/openclaw/releases/tag/${t}`, `OpenClaw release notes ${t}`, T];
 const EXTRA = [
+ // Checked 2 Nov 2026 for the best AI meeting note taker guide
+ ['otter-1102','https://otter.ai/pricing','Otter.ai pricing: Basic, Pro, Business, Enterprise and plan comparison (Otter.ai)',P2],
+ ['ff-1102','https://fireflies.ai/pricing','Fireflies.ai pricing: Free, Pro, Business, Enterprise and plan comparison (Fireflies.ai)',P2],
+ ['fathom-1102','https://www.fathom.ai/pricing','Fathom pricing: Free, Premium, Team, Business, Enterprise and feature table (Fathom)',P2],
+ ['granola-1102','https://www.granola.ai/pricing','Granola pricing: Basic, Business, Enterprise and plan comparison (Granola)',P2],
+ ['zoom-1102','https://www.zoom.com/en/products/ai-assistant/','ZoomMate (Zoom AI) product page with ZoomMate Basic and paid plan features (Zoom)',P2],
+ ['gws-price-1102','https://workspace.google.com/pricing','Google Workspace pricing and plan comparison: Gemini in Meet by plan (Google)',P2],
+ ['gws-plans-1102','https://knowledge.workspace.google.com/admin/billing/compare-flexible-and-annual-fixed-term-payment-plans','Google Workspace: Flexible vs Annual plan prices in USD (Google Workspace Admin Help)',P2],
  // Checked 1 Nov 2026 for the Microsoft 365 Copilot vs ChatGPT for business guide
  ['ms-price-1101','https://www.microsoft.com/en-us/microsoft-365-copilot/pricing','Microsoft Copilot business plans and pricing: Copilot Business add-on, Business Standard/Premium with Copilot, plan comparison and FAQ (Microsoft)',P1],
  ['ms-sb-1101','https://www.microsoft.com/en-us/microsoft-365/copilot/business','Microsoft Copilot for small business: Copilot in Outlook, Teams, Cowork and Autopilot (Microsoft)',P1],

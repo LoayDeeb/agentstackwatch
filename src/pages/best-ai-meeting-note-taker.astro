@@ -1,0 +1,78 @@
+---
+import GuideArticle from '../layouts/GuideArticle.astro'; import { citer } from '../lib/cite.js';
+const { c, used, U } = citer();
+// [tool, free plan, paid from (billed yearly), monthly billing, CRM / sales, the catch]
+const rows = [
+ ['Fathom',`Unlimited recordings and transcriptions, instant AI call summaries${c('fathom-1102')}`,`Premium $16/user/mo; Team $15/user/mo (2-user min)${c('fathom-1102')}`,`Premium $20, Team $19, Business $34${c('fathom-1102')}`,`CRM field sync on Business ($25/user/mo yearly)${c('fathom-1102')}`,`Advanced summaries and Ask Fathom are limited on Free${c('fathom-1102')}`],
+ ['Fireflies',`Unlimited transcription, limited AI summaries, 400 minutes of storage per team${c('ff-1102')}`,`Pro $10/seat/mo; Business $19${c('ff-1102')}`,`Pro $18, Business $29${c('ff-1102')}`,`Integrations on Pro; conversation intelligence on Business${c('ff-1102')}`,`Free storage runs out fast at 400 minutes per team${c('ff-1102')}`],
+ ['Otter',`300 transcription minutes a month, 30 minutes per conversation${c('otter-1102')}`,`Pro $8.33/user/mo; Business $19.99${c('otter-1102')}`,`Pro $16.99, Business $30 ($24 for 3 months for first-time subscribers)${c('otter-1102')}`,`Salesforce and HubSpot sync from Pro, with user limits${c('otter-1102')}`,`Pro caps you at 1,200 minutes a month and 90 minutes per meeting${c('otter-1102')}`],
+ ['Granola',`AI meeting notes, 30 days of meeting history${c('granola-1102')}`,`Business $14/user/mo (billing period not stated: ${U})${c('granola-1102')}`,U,`HubSpot, Attio, Notion, Affinity and Zapier on Business; Salesforce on Enterprise ($35)${c('granola-1102')}`,`Free keeps only 30 days of history${c('granola-1102')}`],
+ ['Gemini in Google Meet',`Not on Business Starter${c('gws-price-1102')}`,`Inside Business Standard, $14/user/mo yearly${c('gws-price-1102','gws-plans-1102')}`,`Business Standard $16.80 on the Flexible plan${c('gws-plans-1102')}`,U,`Only for Google Meet calls`],
+ ['Copilot in Microsoft Teams',`Not included in free Copilot Chat${c('ms-price-1101')}`,`Copilot Business add-on, $18–21/user/mo yearly, on top of Microsoft 365${c('ms-price-1101')}`,`$25.20${c('ms-price-1101')}`,`Microsoft lists Sales agents that can update CRM records${c('ms-price-1101')}`,`Needs a Teams license${c('ms-price-1101')}`],
+ ['ZoomMate (Zoom)',`Meeting summaries for 3 hosted meetings a month, My Notes 3 times a month${c('zoom-1102')}`,`${U} (price didn't load on Zoom's page)`,U,`Can update Salesforce after meetings${c('zoom-1102')}`,`Free summaries cover only 3 hosted meetings a month${c('zoom-1102')}`],
+];
+const body = `
+<p class="muted small">Prices checked 2 Nov 2026 on each company's own pricing page, in US dollars, per user per month. "Yearly" means the monthly price when you pay for a year up front.</p>
+<div class="tldr"><p><b>The longer answer.</b> Most people should start free with <b>Fathom</b>: its free plan has unlimited recordings, transcriptions and instant AI summaries${c('fathom-1102')}. If your sales team needs notes pushed into the CRM, compare <b>Fathom Business</b> (CRM field sync, $25 a user yearly)${c('fathom-1102')}, <b>Otter</b> (Salesforce and HubSpot sync from the $8.33 Pro plan, with user limits)${c('otter-1102')} and <b>Fireflies</b> ($10 Pro, $19 Business, yearly)${c('ff-1102')}. If you hate having a bot join your calls, <b>Granola</b> captures audio from your own device, from $14 a user${c('granola-1102')}. Already paying for Google Workspace Standard or Microsoft 365 Copilot? Use the notes built into Meet or Teams first${c('gws-price-1102','ms-price-1101')}.</p></div>
+
+<h2>Side by side</h2>
+<p>Every number below comes from the company's own pricing page. Where a price didn't load or isn't published, it says ${U}.</p>
+<div class="gtable-wrap"><table class="gtab"><thead><tr><th></th><th>Free plan</th><th>Paid, billed yearly</th><th>Paid, billed monthly</th><th>CRM and sales</th><th>The catch</th></tr></thead><tbody>
+${rows.map(([k,a,b,m,s,x])=>`<tr><td data-l="" class="nm">${k}</td><td data-l="Free plan">${a}</td><td data-l="Paid, billed yearly">${b}</td><td data-l="Paid, billed monthly">${m}</td><td data-l="CRM and sales">${s}</td><td data-l="The catch">${x}</td></tr>`).join('')}
+</tbody></table></div>
+
+<h2>Best free AI note taker: Fathom</h2>
+<p>Fathom's free plan gives you unlimited recordings and transcriptions, instant AI call summaries, clips and search across your calls${c('fathom-1102')}. You can choose bot capture or bot-free capture (bot-free is a beta feature for Mac)${c('fathom-1102')}. Advanced summaries and Ask Fathom, its chat about a single call, are "limited use" on Free${c('fathom-1102')}.</p>
+<p>The free runners-up have tighter limits. Otter's free Basic plan gives 300 transcription minutes a month with a 30-minute cap per conversation and only your 25 most recent conversations${c('otter-1102')}. Fireflies Free has unlimited transcription but limited AI summaries and 400 minutes of storage for the whole team${c('ff-1102')}. Granola Basic has AI meeting notes but only 30 days of meeting history${c('granola-1102')}. Zoom's free ZoomMate Basic covers summaries for 3 hosted meetings a month${c('zoom-1102')}.</p>
+
+<h2>Best for sales teams and your CRM</h2>
+<p>The point for sales is getting call notes into the CRM without typing them. Here's what each says it does, and on which plan:</p>
+<ul>
+<li><b>Fathom Business</b> ($25 a user yearly, $34 monthly, 2-user minimum): CRM field sync that updates records after meetings, a Deal View, coaching metrics and AI scorecards${c('fathom-1102')}. Fathom lists HubSpot and Salesforce integrations${c('fathom-1102')}.</li>
+<li><b>Otter</b>: Salesforce and HubSpot integrations start on Pro ($8.33 yearly, $16.99 monthly), subject to user limits${c('otter-1102')}. Its comparison table lists synced notes for 1 user, 5 users and unlimited users across its paid tiers${c('otter-1102')}. The Otter Sales Notetaker is on Enterprise (contact sales)${c('otter-1102')}.</li>
+<li><b>Fireflies</b>: Pro ($10 yearly, $18 monthly) includes unlimited integrations, an email assistant and action items; Business ($19 yearly, $29 monthly) adds conversation intelligence and team analytics${c('ff-1102')}.</li>
+<li><b>Granola Business</b> ($14 a user): integrations with Attio, HubSpot, Affinity, Notion and Zapier, plus follow-up emails and pre-meeting briefs; Salesforce needs Enterprise ($35)${c('granola-1102')}.</li>
+<li><b>ZoomMate</b>: Zoom says it can update Salesforce, send follow-up emails and draft decks after a meeting${c('zoom-1102')}. The paid price didn't load on Zoom's page: ${U}.</li>
+</ul>
+<p>Comparing the whole sales stack, not just notes? See the <a href="/best-ai-agent-for-sales-and-crm/">best AI agent for sales and CRM</a>.</p>
+
+<h2>Best if you don't want a bot in the call: Granola</h2>
+<p>Some clients don't like seeing "Notetaker" join the call. Granola records from your own device's audio instead of sending a bot, on every plan, with desktop, iOS, Android and Apple Watch apps${c('granola-1102')}. It deletes the audio after transcription and is SOC 2 Type II certified${c('granola-1102')}. Fathom (beta, Mac) and Fireflies (through its Chrome extension) also offer ways to record without their bot${c('fathom-1102','ff-1102')}. Whatever you use, tell people you're recording; Granola and Otter both have features for letting attendees know${c('granola-1102','otter-1102')}.</p>
+
+<h2>Already paying for Google, Microsoft or Zoom?</h2>
+<p><b>Google Workspace:</b> Gemini in Meet summarizes, translates and takes notes in meetings, but it isn't included in Business Starter${c('gws-price-1102')}. Business Standard is $14 a user a month on the annual plan or $16.80 on the Flexible plan${c('gws-plans-1102')}.</p>
+<p><b>Microsoft 365:</b> Copilot in Teams recaps meetings and highlights action items, but it needs the Copilot Business add-on ($21 a user a month yearly, $18 on the first-year promo to 31 December 2026) and a Teams license${c('ms-price-1101')}. More in <a href="/microsoft-copilot-vs-chatgpt-for-business/">Microsoft 365 Copilot vs ChatGPT for business</a>.</p>
+<p><b>Zoom:</b> ZoomMate Basic is free with Workplace Basic but limited to 3 hosted meetings a month for summaries; the paid ZoomMate plan adds unlimited AI note-taking, custom summary templates and 2,200 AI credits per user per month${c('zoom-1102')}.</p>
+<p><b>ChatGPT:</b> ChatGPT has a Meetings plugin that takes notes and saves summaries with action items. It's in beta, on the macOS desktop app, for Pro and Business${c('oai-rn-1101')}.</p>
+<p>The built-ins only cover their own meeting app. If your calls are split between Zoom, Meet and Teams, a standalone note taker is simpler: Otter, Fathom and Fireflies all list Zoom, Google Meet and Microsoft Teams${c('otter-1102','fathom-1102','ff-1102')}.</p>
+
+<h2>What it costs for a small team</h2>
+<p><b>Example, 5 people, paying yearly:</b> Granola Business is $70 a month${c('granola-1102')}, Fathom Team $75${c('fathom-1102')}, Fireflies Business $95${c('ff-1102')}, Otter Business about $100${c('otter-1102')} and Fathom Business $125${c('fathom-1102')}. On Google Workspace Business Standard you'd already have Gemini in Meet in the $14 a seat${c('gws-plans-1102','gws-price-1102')}. For all AI agent prices side by side, see <a href="/how-much-does-an-ai-agent-cost/">how much an AI agent costs</a>.</p>
+
+<h2>Verdict: which should you use?</h2>
+<ul>
+<li><b>Just want notes, for free:</b> Fathom Free${c('fathom-1102')}.</li>
+<li><b>Sales team that lives in the CRM:</b> Fathom Business for CRM field sync, or Otter if you want Salesforce/HubSpot sync on a cheaper plan${c('fathom-1102','otter-1102')}.</li>
+<li><b>Lots of client calls, no bot wanted:</b> Granola${c('granola-1102')}.</li>
+<li><b>Whole team on Google Workspace Standard or Microsoft 365 Copilot:</b> use Gemini in Meet or Copilot in Teams first, since you already pay for them${c('gws-price-1102','ms-price-1101')}.</li>
+</ul>
+<p>Want an assistant that does more than meetings, like email, calendar and research? Read the <a href="/ai-agent-for-email-and-calendar/">AI agents for email and calendar</a> guide, the <a href="/best-ai-agent-for-small-business/">best AI agent for small business</a>, or take the <a href="/quiz/">1-minute quiz</a>.</p>
+`;
+const faqs = [
+ ['What is the best free AI meeting note taker?',`Fathom's free plan has unlimited recordings and transcriptions and instant AI call summaries${c('fathom-1102')}. Otter's free plan is capped at 300 minutes a month and 30 minutes per conversation${c('otter-1102')}.`],
+ ['How much does Otter.ai cost?',`Otter Pro is $8.33 per user per month billed yearly or $16.99 monthly; Business is $19.99 yearly or $30 monthly. Basic is free${c('otter-1102')}.`],
+ ['How much does Fireflies.ai cost?',`Pro is $10 per seat per month billed yearly or $18 monthly; Business is $19 yearly or $29 monthly; Enterprise is $39, annual only. There's a free plan${c('ff-1102')}.`],
+ ['How much does Fathom cost?',`Free for individuals. Premium is $16 a month yearly or $20 monthly; Team is $15 per user yearly or $19 monthly and Business $25 yearly or $34 monthly, both with a 2-user minimum${c('fathom-1102')}.`],
+ ['Which AI note taker works without a bot joining the call?',`Granola captures your device's audio instead of sending a bot${c('granola-1102')}. Fathom offers bot-free capture in beta on Mac, and Fireflies can record through its Chrome extension without its bot${c('fathom-1102','ff-1102')}.`],
+ ['Does Google Meet have a free AI note taker?',`Gemini in Meet takes notes in meetings on Google Workspace Business Standard and above, not on Business Starter${c('gws-price-1102')}. Standard is $14 per user per month on the annual plan${c('gws-plans-1102')}.`],
+];
+---
+<GuideArticle slug="best-ai-meeting-note-taker" updated="2026-11-02" kicker="Best for"
+ title="Best AI Meeting Note Taker for Business (2026): Otter vs Fireflies vs Fathom vs Granola | AgentStackWatch"
+ desc="The best AI meeting note takers in 2026 for founders and sales teams: Fathom, Fireflies, Otter, Granola, plus Gemini in Meet, Copilot in Teams and ZoomMate. Free plans, prices per user, CRM sync. Every fact sourced."
+ h1="The best AI meeting note taker for business (2026)"
+ dek="Otter, Fireflies, Fathom and Granola, plus the notes built into Google Meet, Teams and Zoom. Free plans, price per user, CRM sync for sales, and which one to pick."
+ faqs={faqs} used={used}
+ related={[['/best-ai-agent-for-sales-and-crm/','Best AI agent for sales and CRM'],['/microsoft-copilot-vs-chatgpt-for-business/','Microsoft 365 Copilot vs ChatGPT for business'],['/ai-agent-for-email-and-calendar/','AI agents for email and calendar'],['/best-ai-agent-for-small-business/','Best AI agent for small business'],['/quiz/','Quiz: which AI agent should you use?']]}>
+<Fragment set:html={body}/>
+</GuideArticle>

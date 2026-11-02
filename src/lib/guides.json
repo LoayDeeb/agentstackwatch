@@ -73,6 +73,18 @@
   ]
  },
  {
+  "slug": "best-ai-meeting-note-taker",
+  "short": "Best AI meeting note taker for business",
+  "kicker": "Best for",
+  "blurb": "Otter vs Fireflies vs Fathom vs Granola, plus Gemini in Meet, Copilot in Teams and ZoomMate: free plans, price per user, CRM sync.",
+  "quick": "Start free with Fathom (unlimited recordings and AI summaries). For sales notes into your CRM, compare Fathom Business ($25 a user yearly), Otter ($8.33 Pro with Salesforce/HubSpot sync) and Fireflies ($10 Pro). No bot in the call: Granola, from $14 a user.",
+  "rel": [
+   "best-ai-agent-for-sales-and-crm",
+   "microsoft-copilot-vs-chatgpt-for-business",
+   "ai-agent-for-email-and-calendar"
+  ]
+ },
+ {
   "slug": "chatgpt-vs-gemini",
   "short": "ChatGPT vs Gemini",
   "kicker": "Head to head",
@@ -165,7 +177,7 @@
   "rel": [
    "best-ai-agent-for-marketing",
    "best-ai-agent-for-customer-support",
-   "best-ai-agent-for-small-business"
+   "best-ai-meeting-note-taker"
   ]
  },
  {
