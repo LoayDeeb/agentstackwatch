@@ -3,9 +3,17 @@
 // and for the best free AI agents guide on 2026-10-21. Cost-page price refresh re-checked on 2026-10-27 (keys ending -1027, pc-*). Lindy price wording re-checked across guides on 2026-10-28 (ly-1028).
 import { SRC as GSRC } from './guide-data.js';
 import ps from '../../data/pricing-sources.json';
-const G = '16 Oct 2026', T = '17 Oct 2026', S = '18 Oct 2026', M = '19 Oct 2026', W = '20 Oct 2026', X = '21 Oct 2026', Z = '26 Oct 2026', N = '27 Oct 2026', O = '28 Oct 2026', P1 = '1 Nov 2026', P2 = '2 Nov 2026';
+const G = '16 Oct 2026', T = '17 Oct 2026', S = '18 Oct 2026', M = '19 Oct 2026', W = '20 Oct 2026', X = '21 Oct 2026', Z = '26 Oct 2026', N = '27 Oct 2026', O = '28 Oct 2026', P1 = '1 Nov 2026', P2 = '2 Nov 2026', P3 = '3 Nov 2026';
 const OCR = t => [`oc-${t}`, `https://github.com/openclaw/openclaw/releases/tag/${t}`, `OpenClaw release notes ${t}`, T];
 const EXTRA = [
+ // Checked 3 Nov 2026 for the best AI presentation maker guide
+ ['gamma-1103','https://gamma.app/pricing','Gamma pricing: Free, Plus, Pro, Ultra, Business, Enterprise and FAQ (Gamma)',P3],
+ ['bai-1103','https://www.beautiful.ai/pricing','Beautiful.ai pricing: Pro, Team, Enterprise, 14-day trial and FAQ (Beautiful.ai)',P3],
+ ['canva-1103','https://www.canva.com/pricing/','Canva plans and pricing: Free, Pro, Business, Enterprise and AI usage (Canva)',P3],
+ ['pitch-1103','https://pitch.com/pricing','Pitch pricing: Free, Plus, Team, Business, Enterprise and FAQ (Pitch)',P3],
+ ['gslides-1103','https://workspace.google.com/products/slides/','Google Slides product page: Gemini in Slides (Google Workspace)',P3],
+ ['ms-price-1103','https://www.microsoft.com/en-us/microsoft-365-copilot/pricing','Microsoft Copilot business plans and pricing: Copilot in PowerPoint by plan (Microsoft)',P3],
+ ['oai-rn-1103','https://help.openai.com/en/articles/6825453-chatgpt-release-notes','ChatGPT release notes: ChatGPT Slides, 16 Oct 2026 entry (OpenAI Help Center)',P3],
  // Checked 2 Nov 2026 for the best AI meeting note taker guide
  ['otter-1102','https://otter.ai/pricing','Otter.ai pricing: Basic, Pro, Business, Enterprise and plan comparison (Otter.ai)',P2],
  ['ff-1102','https://fireflies.ai/pricing','Fireflies.ai pricing: Free, Pro, Business, Enterprise and plan comparison (Fireflies.ai)',P2],

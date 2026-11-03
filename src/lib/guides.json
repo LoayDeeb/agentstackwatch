@@ -85,6 +85,18 @@
   ]
  },
  {
+  "slug": "best-ai-presentation-maker",
+  "short": "Best AI presentation maker for business",
+  "kicker": "Best for",
+  "blurb": "Gamma vs Canva vs Beautiful.ai vs Pitch, plus Copilot in PowerPoint, Gemini in Slides and ChatGPT Slides: free plans, price per seat, PowerPoint export.",
+  "quick": "Start free with Gamma (400 credits, exports to PowerPoint and Google Slides; Plus $9 a seat yearly). Team already in Canva? Its AI is in Pro (US$120 a year). For tracked sales decks, Pitch Team ($15 yearly per seat); for brand-locked client decks, Beautiful.ai (from $14.50).",
+  "rel": [
+   "best-ai-agent-for-marketing",
+   "best-ai-agent-for-sales-and-crm",
+   "microsoft-copilot-vs-chatgpt-for-business"
+  ]
+ },
+ {
   "slug": "chatgpt-vs-gemini",
   "short": "ChatGPT vs Gemini",
   "kicker": "Head to head",
@@ -187,9 +199,9 @@
   "blurb": "Agents that draft posts, blogs and campaigns in your brand voice: ChatGPT, Claude, HubSpot's content agent, Jasper, Canva, Lindy and Grok Bot.",
   "quick": "Most small teams should start with the $20 assistant they already pay for (ChatGPT Plus or Claude Pro) plus Canva for visuals. On HubSpot Marketing Hub Professional, the content agent drafts in your brand voice, but each piece uses 1,000 credits. Jasper Pro ($69 a month, $59 billed yearly) suits teams that need many on-brand marketing workflows.",
   "rel": [
+   "best-ai-presentation-maker",
    "best-ai-agent-for-sales-and-crm",
-   "best-ai-agent-for-small-business",
-   "how-much-does-an-ai-agent-cost"
+   "best-ai-agent-for-small-business"
   ]
  },
  {

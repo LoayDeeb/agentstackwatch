@@ -1,0 +1,71 @@
+---
+import GuideArticle from '../layouts/GuideArticle.astro'; import { citer } from '../lib/cite.js';
+const { c, used, U } = citer();
+// [tool, free plan, paid billed yearly, paid billed monthly, works with PowerPoint/Slides, the catch]
+const rows = [
+ ['Gamma',`$0: 400 credits at signup, up to 10 slides per prompt${c('gamma-1103')}`,`Plus $9/seat/mo, Pro $18, Business $40${c('gamma-1103')}`,`Plus $12, Pro $25; Business ${U}${c('gamma-1103')}`,`Imports PDF and PPTX; exports to PDF, PPTX, PNG and Google Slides${c('gamma-1103')}`,`Free credits are a one-time 400; Gamma branding stays until Plus${c('gamma-1103')}`],
+ ['Beautiful.ai',`No free plan; 14-day free trial of Pro or Team (card required)${c('bai-1103')}`,`Pro $14.50/mo (individuals); Team $40/user/mo${c('bai-1103')}`,`Team $50/user/mo; Pro ${U}${c('bai-1103')}`,`PowerPoint import and export on every seat${c('bai-1103')}`,`Trial charges your card in full if you don't cancel in 14 days${c('bai-1103')}`],
+ ['Canva',`Free plan with limited access to its AI tools${c('canva-1103')}`,`Pro US$120/year (one person); Business US$210/year per person${c('canva-1103')}`,U,`Exports PDF, JPG, PNG; multiple presentation modes${c('canva-1103')}`,`AI tools share a monthly allowance; heavy use needs the paid AI Pass add-on${c('canva-1103')}`],
+ ['Pitch',`$0 forever: unlimited presentations, 100 AI credits that don't renew${c('pitch-1103')}`,`Plus $10/mo, Team $15, Business $20 (price shown for 1 seat)${c('pitch-1103')}`,`Plus $12, Team $18, Business $24 (1 seat)${c('pitch-1103')}`,`PowerPoint (PPTX) export from Plus${c('pitch-1103')}`,`Price depends on how many seats you buy; extra AI credits $0.004 each${c('pitch-1103')}`],
+ ['Copilot in PowerPoint',`Not stated for free Copilot Chat: ${U}`,`Copilot Business add-on $21/user/mo yearly ($18 first-year promo)${c('ms-price-1103')}`,U,`Works inside PowerPoint itself${c('ms-price-1103')}`,`Add-on sits on top of a Microsoft 365 plan${c('ms-price-1103')}`],
+ ['Gemini in Google Slides',U,`${U} (which Workspace plans include it isn't stated on the Slides page)`,U,`Works inside Google Slides; can use your Drive files${c('gslides-1103')}`,`Builds a slide from a prompt; not a full-deck design tool on that page${c('gslides-1103')}`],
+ ['ChatGPT Slides',`Not on Free: rolling out to Pro, Business and Enterprise${c('oai-rn-1103')}`,`Included in those ChatGPT plans${c('oai-rn-1103')}`,`Included in those ChatGPT plans${c('oai-rn-1103')}`,`Exports to PowerPoint, PDF or Google Slides on the web${c('oai-rn-1103')}`,`Needs Space access; still rolling out${c('oai-rn-1103')}`],
+];
+const body = `
+<p class="muted small">Prices checked 3 Nov 2026 on each company's own pricing page, in US dollars. "Yearly" means the monthly price when you pay for a year up front. Taxes may be added depending on where you are${c('gamma-1103')}.</p>
+<div class="tldr"><p><b>The longer answer.</b> For most founders and marketers, <b>Gamma</b> is the place to start: it's free to try (400 credits), turns a prompt into a deck, and exports to PowerPoint and Google Slides${c('gamma-1103')}. Plus is $9 a seat a month paid yearly${c('gamma-1103')}. If your team already lives in <b>Canva</b>, its AI is inside the plan you pay for (Pro US$120 a year)${c('canva-1103')}. For sales and client decks that must stay on-brand, <b>Beautiful.ai</b> (from $14.50 a month) and <b>Pitch</b> (free plan, Plus from $10) are built for that, and Pitch adds view tracking on its team plans${c('bai-1103','pitch-1103')}. Already paying for Microsoft 365 Copilot or ChatGPT Business? Try Copilot in PowerPoint or ChatGPT Slides before buying anything else${c('ms-price-1103','oai-rn-1103')}.</p></div>
+
+<h2>Side by side</h2>
+<p>Every number below comes from the company's own pricing page. Where a price isn't shown or didn't load, it says ${U}.</p>
+<div class="gtable-wrap"><table class="gtab"><thead><tr><th></th><th>Free plan</th><th>Paid, billed yearly</th><th>Paid, billed monthly</th><th>PowerPoint and Google Slides</th><th>The catch</th></tr></thead><tbody>
+${rows.map(([k,a,b,m,s,x])=>`<tr><td data-l="" class="nm">${k}</td><td data-l="Free plan">${a}</td><td data-l="Paid, billed yearly">${b}</td><td data-l="Paid, billed monthly">${m}</td><td data-l="PowerPoint and Google Slides">${s}</td><td data-l="The catch">${x}</td></tr>`).join('')}
+</tbody></table></div>
+
+<h2>Best overall for a fast first draft: Gamma</h2>
+<p>Gamma makes presentations, docs, websites and social posts from a prompt${c('gamma-1103')}. The free plan gives you 400 credits once, at signup, and up to 10 slides per prompt, with no credit card needed${c('gamma-1103')}. You can import a PDF or PowerPoint file and export to PDF, PPTX, PNG and Google Slides, so you're not locked in${c('gamma-1103')}.</p>
+<p>Plus ($9 a seat a month yearly, $12 monthly) gives 1,500 credits a month, up to 100 slides per prompt and removes the Gamma branding${c('gamma-1103')}. Pro ($18 yearly, $25 monthly) adds 4,000 credits, custom branding, detailed analytics and custom domains${c('gamma-1103')}. Business is $40 a seat a month billed yearly with 10,000 credits per seat and SSO${c('gamma-1103')}. Gamma says annual billing saves up to 28%${c('gamma-1103')}.</p>
+
+<h2>Best if your team already uses Canva</h2>
+<p>Canva's AI tools come with the plan: the free plan has limited access, Pro has 10 times more AI than Free, and Business 20 times more${c('canva-1103')}. Pro is US$120 a year for one person and Business US$210 a year per person, with collaboration, team admin tools and 100 Brand Kits with approvals${c('canva-1103')}. Canva AI 2.0, which Canva describes as generating on-brand designs and visuals from a single prompt, is listed on Pro and Business${c('canva-1103')}.</p>
+<p>The catch: Canva's Standard, Premium and Ultra AI tools share a monthly allowance, more complex tasks use more of it, and extra AI is a paid add-on (AI Pass)${c('canva-1103')}. Canva's monthly prices didn't load for us: ${U}.</p>
+
+<h2>Best for on-brand sales and client decks: Beautiful.ai or Pitch</h2>
+<p><b>Beautiful.ai</b> auto-designs your slides as you type, with 300+ Smart Slide layouts, unlimited AI content generation, custom brand themes and PowerPoint import and export on every seat${c('bai-1103')}. Pro is $14.50 a month for individuals, billed yearly${c('bai-1103')}. Its FAQ puts Team at $40 per user a month billed yearly or $50 monthly, for 2 to 20 seats, though the plan card on the same page says "includes 3 users", so confirm before you buy${c('bai-1103')}. There's no free plan, just a 14-day trial that needs a card and charges in full if you don't cancel${c('bai-1103')}.</p>
+<p><b>Pitch</b> has a free plan with unlimited presentations and 100 AI credits that don't renew${c('pitch-1103')}. Plus is $10 a month paying yearly ($12 monthly) with 500 AI credits a month and PowerPoint export; Team is $15 ($18) and Business $20 ($24), priced for one seat, and Pitch says the price depends on how many seats you need${c('pitch-1103')}. Team adds 25 "advanced links" that track visits, slide views and time spent per slide, and shared pitch rooms for clients; Business makes those unlimited${c('pitch-1103')}. Pitch Agent can generate a presentation for you${c('pitch-1103')}.</p>
+
+<h2>Already paying for Microsoft, Google or ChatGPT?</h2>
+<p><b>Microsoft 365:</b> Copilot in PowerPoint (with Word, Excel and Outlook) comes with the Copilot Business add-on, $21 a user a month yearly or $18 on Microsoft's first-year promo, on top of your Microsoft 365 plan${c('ms-price-1103')}. More in <a href="/microsoft-copilot-vs-chatgpt-for-business/">Microsoft 365 Copilot vs ChatGPT for business</a>.</p>
+<p><b>Google Workspace:</b> Google says Gemini in Slides can summarize content, generate a slide from a simple prompt and your Drive files, and create images${c('gslides-1103')}. Which Workspace plans include it wasn't stated on that page: ${U}.</p>
+<p><b>ChatGPT:</b> Since 16 October 2026, ChatGPT Slides lets you build a deck from a chat, files or an outline, edit it with your team, present from ChatGPT, and export to PowerPoint, PDF or Google Slides on the web${c('oai-rn-1103')}. It's rolling out to Pro, Business and Enterprise users with Space access, not Free or Plus${c('oai-rn-1103')}. See <a href="/chatgpt-vs-claude-for-business/">ChatGPT vs Claude for business</a> for those plans.</p>
+
+<h2>What it costs for a small team</h2>
+<p><b>Example, 5 people, paying yearly:</b> Gamma Plus is $45 a month and Gamma Pro $90${c('gamma-1103')}; Canva Business is US$1,050 a year, about $87.50 a month${c('canva-1103')}; Copilot Business is $105 a month ($90 on the promo) on top of Microsoft 365${c('ms-price-1103')}; Beautiful.ai Team is $200 a month if it's $40 per user as its FAQ says${c('bai-1103')}; Gamma Business is $200 a month${c('gamma-1103')}. Pitch's 5-seat price: ${U}, since its price changes with seat count${c('pitch-1103')}. For AI assistant prices side by side, see <a href="/how-much-does-an-ai-agent-cost/">how much an AI agent costs</a>.</p>
+
+<h2>Verdict: which should you use?</h2>
+<ul>
+<li><b>Quick decks from a prompt, start free:</b> Gamma${c('gamma-1103')}.</li>
+<li><b>Marketing team already in Canva:</b> stay in Canva Pro or Business${c('canva-1103')}.</li>
+<li><b>Sales decks you want to track after sending:</b> Pitch Team or Business (view analytics per slide)${c('pitch-1103')}.</li>
+<li><b>Polished, brand-locked client decks with PowerPoint in and out:</b> Beautiful.ai${c('bai-1103')}.</li>
+<li><b>Company runs on Microsoft 365 or ChatGPT Business:</b> try Copilot in PowerPoint or ChatGPT Slides first${c('ms-price-1103','oai-rn-1103')}.</li>
+</ul>
+<p>Making decks is one job. For the rest of your marketing, read the <a href="/best-ai-agent-for-marketing/">best AI agent for marketing</a>, the <a href="/best-ai-agent-for-sales-and-crm/">best AI agent for sales and CRM</a>, or take the <a href="/quiz/">1-minute quiz</a>.</p>
+`;
+const faqs = [
+ ['What is the best AI presentation maker?',`For most people, Gamma: it has a free plan (400 credits), makes a deck from a prompt and exports to PowerPoint and Google Slides. Plus is $9 a seat a month paid yearly${c('gamma-1103')}.`],
+ ['Is Gamma free?',`Yes, Gamma Free is $0 with 400 credits at signup and up to 10 slides per prompt, no credit card required. Paid plans are Plus ($9 yearly, $12 monthly), Pro ($18 / $25), Ultra ($90 / $100) and Business ($40 a seat yearly)${c('gamma-1103')}.`],
+ ['How much does Beautiful.ai cost?',`Pro is $14.50 a month billed yearly. Its FAQ lists Team at $40 per user a month yearly or $50 monthly, for 2 to 20 seats. There's a 14-day free trial that needs a card${c('bai-1103')}.`],
+ ['Can Canva make presentations with AI?',`Yes. Canva's plans include AI tools with a shared monthly allowance: limited on Free, 10x more on Pro (US$120 a year) and 20x more on Business (US$210 a year per person)${c('canva-1103')}.`],
+ ['Can ChatGPT make a PowerPoint?',`Yes, with ChatGPT Slides, which exports to PowerPoint, PDF or Google Slides. It's rolling out to Pro, Business and Enterprise users with Space access${c('oai-rn-1103')}.`],
+ ['Does PowerPoint have built-in AI?',`Copilot in PowerPoint comes with Microsoft's Copilot Business add-on, $21 a user a month yearly ($18 first-year promo), on top of Microsoft 365${c('ms-price-1103')}.`],
+];
+---
+<GuideArticle slug="best-ai-presentation-maker" updated="2026-11-03" kicker="Best for"
+ title="Best AI Presentation Maker for Business (2026): Gamma vs Canva vs Beautiful.ai vs Pitch | AgentStackWatch"
+ desc="The best AI presentation makers in 2026 for founders, sales and marketing: Gamma, Canva, Beautiful.ai, Pitch, plus Copilot in PowerPoint, Gemini in Slides and ChatGPT Slides. Free plans, prices, PowerPoint export. Every fact sourced."
+ h1="The best AI presentation maker for business (2026)"
+ dek="Gamma, Canva, Beautiful.ai and Pitch, plus the AI built into PowerPoint, Google Slides and ChatGPT. Free plans, price per seat, PowerPoint export, and which one to pick."
+ faqs={faqs} used={used}
+ related={[['/best-ai-agent-for-marketing/','Best AI agent for marketing'],['/best-ai-agent-for-sales-and-crm/','Best AI agent for sales and CRM'],['/microsoft-copilot-vs-chatgpt-for-business/','Microsoft 365 Copilot vs ChatGPT for business'],['/best-ai-meeting-note-taker/','Best AI meeting note taker'],['/quiz/','Quiz: which AI agent should you use?']]}>
+<Fragment set:html={body}/>
+</GuideArticle>
