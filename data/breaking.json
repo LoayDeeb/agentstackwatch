@@ -1,5 +1,87 @@
 [
  {
+  "slug": "pydantic-ai",
+  "name": "Pydantic AI",
+  "category": "frameworks",
+  "tag": "v2.65.0",
+  "date": "2026-11-03",
+  "week": "2026-11-02",
+  "url": "https://github.com/pydantic/pydantic-ai/releases/tag/v2.65.0",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "Name the V2 replacement when code imports a name V2 removed, like OpenAIModel or MCPServerStdio by @DouweM in https://github.com/pydantic/pydantic-ai/pull/12035",
+   "Name the V2 replacement when code imports a name V2 removed, like OpenAIModel or MCPServerStdio by @DouweM in https://github.com/pydantic/pydantic-ai/pull/12035",
+   "Remove the Daytona close() workaround and require daytona=0.226.1 by @mislavivanda in https://github.com/pydantic/pydantic-ai/pull/11977"
+  ]
+ },
+ {
+  "slug": "vercel-ai-sdk",
+  "name": "Vercel AI SDK",
+  "category": "frameworks",
+  "tag": "ai@7.0.162",
+  "date": "2026-11-03",
+  "week": "2026-11-02",
+  "url": "https://github.com/vercel/ai/releases/tag/ai%407.0.162",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "- 4d6d830: Support a single telemetry operation for durable WorkflowAgent runs, including the prompt, final output, steps, and tools. Events recorded in the workflow are reported on completion or suspension with their or"
+  ]
+ },
+ {
+  "slug": "vercel-ai-sdk",
+  "name": "Vercel AI SDK",
+  "category": "frameworks",
+  "tag": "@ai-sdk/workflow@2.0.94",
+  "date": "2026-11-03",
+  "week": "2026-11-02",
+  "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/workflow%402.0.94",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "- 4d6d830: Support a single telemetry operation for durable WorkflowAgent runs, including the prompt, final output, steps, and tools. Events recorded in the workflow are reported on completion or suspension with their or"
+  ]
+ },
+ {
+  "slug": "hermes-agent",
+  "name": "Hermes Agent",
+  "category": "personal",
+  "tag": "v0.22.6",
+  "date": "2026-11-02",
+  "week": "2026-11-02",
+  "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v0.22.6",
+  "keywords": [
+   "migration"
+  ],
+  "excerpt": [
+   "Also in the window, undocumented here on purpose: the Webapp served from the gateway's own listener (hermes webapp, a Desktop Web Access pane to open it on your network or your own URL behind Nous sign-in, and Desktop pl"
+  ]
+ },
+ {
+  "slug": "mastra",
+  "name": "Mastra",
+  "category": "frameworks",
+  "tag": "@mastra/core@1.81.0",
+  "date": "2026-11-02",
+  "week": "2026-11-02",
+  "url": "https://github.com/mastra-ai/mastra/releases/tag/%40mastra/core%401.81.0",
+  "keywords": [
+   "breaking",
+   "removed",
+   "deprecated"
+  ],
+  "excerpt": [
+   "Breaking Changes",
+   "- @mastra/playground-ui: Metrics chart card API cleanup (e.g., removed ChartCard description/summary, removed several MetricsCard. components, changed related table/legend APIs).",
+   "- @mastra/playground-ui: Removed fluid-hover utilities (useFluidHover, FluidHoverHighlight) and CommandList.highlightClassName.",
+   "- @mastra/core: Removed runtime-importable subpaths @mastra/core/network/vNext and @mastra/core/telemetry/otel-vendor (they pointed to files that no longer ship)."
+  ]
+ },
+ {
   "slug": "crewai",
   "name": "CrewAI",
   "category": "frameworks",
