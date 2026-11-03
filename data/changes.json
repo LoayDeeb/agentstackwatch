@@ -1268,5 +1268,15 @@
   "from": "7.0.159",
   "to": "7.0.162",
   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/deepinfra%401.0.64"
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "openclaw",
+  "name": "OpenClaw",
+  "type": "release",
+  "field": "latest_release",
+  "from": "v2026.10.9",
+  "to": "v2026.10.10",
+  "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.10"
  }
 ]

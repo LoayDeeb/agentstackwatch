@@ -1,5 +1,22 @@
 [
  {
+  "slug": "openclaw",
+  "name": "OpenClaw",
+  "category": "personal",
+  "tag": "v2026.10.10",
+  "date": "2026-11-03",
+  "week": "2026-11-02",
+  "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.10.10",
+  "keywords": [
+   "removed",
+   "migration"
+  ],
+  "excerpt": [
+   "- Replies: prevent Gateway stalls on streamed XML and partial HTML, preserve multiline ACP steering, remove MiniMax tool tails, deduplicate CRLF replies, retain Markdown prose, preserve group-command formatting, and avoi",
+   "- Updates: isolate Linux managed handoffs from Gateway lifetime, preserve source updates through late imports and maintenance repair, improve blocked-update and authentication diagnostics, bound Doctor inspection, preser"
+  ]
+ },
+ {
   "slug": "pydantic-ai",
   "name": "Pydantic AI",
   "category": "frameworks",
