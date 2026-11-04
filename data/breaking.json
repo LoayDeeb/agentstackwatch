@@ -1,5 +1,22 @@
 [
  {
+  "slug": "openclaw",
+  "name": "OpenClaw",
+  "category": "personal",
+  "tag": "v2026.11.5-beta.1",
+  "date": "2026-11-04",
+  "week": "2026-11-02",
+  "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.11.5-beta.1",
+  "keywords": [
+   "migration"
+  ],
+  "excerpt": [
+   "- PostgreSQL data plane: add PostgreSQL-backed state, migration tooling, and compatibility coverage for existing deployments. (173968, 174080, 174085, 174183, 174242, 174374, 174387, 174399, 174623) Authored by @steipete",
+   "- Credential compatibility: improve credential migration and compatibility across legacy and current configuration formats. (174294, 174599) Authored by @steipete.",
+   "- Memory: fix indexing, retrieval, migration, and cleanup edge cases. (186829, 187429, 187621, 187797; fixes 187788) Thanks @SunnyShu0925, @obviyus, @Baumus, @Leon-SK668, and @fredtanxo."
+  ]
+ },
+ {
   "slug": "langgraph",
   "name": "LangGraph",
   "category": "frameworks",
