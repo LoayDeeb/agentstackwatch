@@ -1,5 +1,38 @@
 [
  {
+  "slug": "langgraph",
+  "name": "LangGraph",
+  "category": "frameworks",
+  "tag": "sdk==0.4.12",
+  "date": "2026-11-03",
+  "week": "2026-11-02",
+  "url": "https://github.com/langchain-ai/langgraph/releases/tag/sdk%3D%3D0.4.12",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "feat(sdk-py): remove fairness_weight from PrioritySettings (9441)"
+  ]
+ },
+ {
+  "slug": "openai-agents-sdk",
+  "name": "OpenAI Agents SDK",
+  "category": "frameworks",
+  "tag": "v0.24.0-alpha.6",
+  "date": "2026-11-03",
+  "week": "2026-11-02",
+  "url": "https://github.com/openai/openai-agents-python/releases/tag/v0.24.0-alpha.6",
+  "keywords": [
+   "removed",
+   "migration"
+  ],
+  "excerpt": [
+   "- Use Agent.run() or Agent.run_sync() for one-shot calls; the redundant Runner aliases have been removed.",
+   "- Rename Subagent.submit() to Subagent.start(). Unify Python callbacks and manual tools under FunctionTool; remove the separate ManualTool declaration.",
+   "- Add examples for browser applications, AG-UI streaming, deferred jobs, evaluation, observability, and common application tasks. Remove migration guides from the preview documentation."
+  ]
+ },
+ {
   "slug": "openclaw",
   "name": "OpenClaw",
   "category": "personal",
@@ -14,6 +47,25 @@
   "excerpt": [
    "- Replies: prevent Gateway stalls on streamed XML and partial HTML, preserve multiline ACP steering, remove MiniMax tool tails, deduplicate CRLF replies, retain Markdown prose, preserve group-command formatting, and avoi",
    "- Updates: isolate Linux managed handoffs from Gateway lifetime, preserve source updates through late imports and maintenance repair, improve blocked-update and authentication diagnostics, bound Doctor inspection, preser"
+  ]
+ },
+ {
+  "slug": "openhands",
+  "name": "OpenHands",
+  "category": "frameworks",
+  "tag": "v1.35.0",
+  "date": "2026-11-03",
+  "week": "2026-11-02",
+  "url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.35.0",
+  "keywords": [
+   "removed",
+   "deprecated"
+  ],
+  "excerpt": [
+   "fix(chat): remove the emoji prefix and the ok badge from hook event titles by @ak684 in https://github.com/OpenHands/OpenHands/pull/19083",
+   "chore: remove merged PR artifacts by @all-hands-bot in https://github.com/OpenHands/OpenHands/pull/19050",
+   "chore(deps): drop the deprecated boolean package from desktop packaging by @VascoSch92 in https://github.com/OpenHands/OpenHands/pull/19089",
+   "chore: remove merged PR artifacts by @all-hands-bot in https://github.com/OpenHands/OpenHands/pull/19111"
   ]
  },
  {
