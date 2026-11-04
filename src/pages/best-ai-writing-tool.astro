@@ -1,0 +1,73 @@
+---
+import GuideArticle from '../layouts/GuideArticle.astro'; import { citer } from '../lib/cite.js';
+const { c, used, U } = citer();
+// [tool, best for, free option, paid billed yearly, paid billed monthly, the catch]
+const rows = [
+ ['Jasper','Marketing teams writing on-brand content at volume',`No free plan; 7-day free trial of Pro${c('jasper-1104')}`,`Pro $59/mo (1 seat), 12-month commitment${c('jasper-1104')}`,`Pro $69/mo, cancel anytime${c('jasper-1104')}`,`Pro is 1 seat; more people means the custom-priced Business plan${c('jasper-1104')}`],
+ ['Copy.ai','Small sales and marketing teams sharing one chat workspace',`Free plan: ${U}`,`Chat $24/mo, billed $288/yr; the plan lists 5 seats${c('copyai-1104')}`,`Chat $29/mo${c('copyai-1104')}`,`Automated Workflows start on Growth at $1,000/mo billed yearly${c('copyai-1104')}`],
+ ['WRITER','Companies that want brand rules and approvals on every piece',`Free plan: ${U}`,`Starter, up to 5 users: price ${U}${c('writer-1104')}`,`Starter price ${U}${c('writer-1104')}`,`Price isn't shown on the pricing page; Enterprise is via sales${c('writer-1104')}`],
+ ['Grammarly','Cleaner emails and docs for everyone, inside the apps you already use',`Free $0: spelling, grammar, tone, 100 AI prompts a month${c('gram-1104')}`,`Pro $12/mo ($144 a year)${c('gram-1104')}`,`Pro $30/mo${c('gram-1104')}`,`It polishes and rewrites; long-form drafting is capped at 2,000 AI prompts per member a month on Pro${c('gram-1104')}`],
+ ['ChatGPT Business','Teams that want one assistant for writing and everything else',`Free ChatGPT plan exists for individuals${c('oai-biz-1104')}`,`$20/seat/mo (Standard)${c('oai-biz-1104')}`,`$25/seat/mo${c('oai-biz-1104')}`,`No brand-voice or style-guide controls listed on the plan; for 2–200 people${c('oai-biz-1104')}`],
+ ['Claude Team','Long, careful drafts and editing; Claude Docs included',`Claude Free includes Claude Docs${c('claude-1104')}`,`$20/seat/mo (Standard)${c('claude-1104')}`,`$25/seat/mo${c('claude-1104')}`,`Usage limits apply; for 2–150 people${c('claude-1104')}`],
+];
+const body = `
+<p class="muted small">Prices checked 4 Nov 2026 on each company's own pricing page, in US dollars. "Yearly" means the monthly price when you pay for a year up front. Taxes may be added${c('claude-1104')}.</p>
+<div class="tldr"><p><b>The longer answer.</b> Most small businesses don't need a separate "AI writer". If your team already pays for <b>ChatGPT Business</b> or <b>Claude Team</b> ($20 a seat a month billed yearly, $25 monthly), write there first${c('oai-biz-1104','claude-1104')}. Add <b>Grammarly</b> (free, or Pro at $12 a month paid yearly) so every email and doc gets checked in Google Docs, Microsoft Office and your browser${c('gram-1104')}. Pay for a marketing writer only when brand voice at volume is the bottleneck: <b>Jasper</b> Pro is $59 a month billed yearly for one seat${c('jasper-1104')}, and <b>Copy.ai</b> Chat is $24 a month billed yearly with 5 seats listed on the plan${c('copyai-1104')}.</p></div>
+
+<h2>Side by side</h2>
+<p>Every number below comes from the company's own pricing page. Where a price isn't shown or didn't load, it says ${U}.</p>
+<div class="gtable-wrap"><table class="gtab"><thead><tr><th></th><th>Best for</th><th>Free option</th><th>Paid, billed yearly</th><th>Paid, billed monthly</th><th>The catch</th></tr></thead><tbody>
+${rows.map(([k,f,a,b,m,x])=>`<tr><td data-l="" class="nm">${k}</td><td data-l="Best for">${f}</td><td data-l="Free option">${a}</td><td data-l="Paid, billed yearly">${b}</td><td data-l="Paid, billed monthly">${m}</td><td data-l="The catch">${x}</td></tr>`).join('')}
+</tbody></table></div>
+
+<h2>Start with the assistant you already pay for</h2>
+<p><b>ChatGPT Business</b> Standard seats are $20 a month billed yearly or $25 monthly, for teams of 2 to 200${c('oai-biz-1104')}. It connects to Google Workspace, Slack, Microsoft 365 and more, and OpenAI says it doesn't train on your business data by default${c('oai-biz-1104')}. <b>Claude Team</b> costs the same ($20 / $25 a standard seat) for 2 to 150 people, includes Claude Docs and Slides, and Anthropic says there's no model training on your content by default${c('claude-1104')}. Even Claude's free plan lists Claude Docs${c('claude-1104')}. For a deeper look at those two, read <a href="/chatgpt-vs-claude-for-business/">ChatGPT vs Claude for business</a>.</p>
+<p>What these general assistants don't list on their plan pages is a brand-voice or style-guide feature, which is what the paid writing tools below sell${c('oai-biz-1104','claude-1104')}.</p>
+
+<h2>Best for marketing content in your brand voice: Jasper</h2>
+<p>Jasper is built for marketers. Pro is $59 a month billed yearly (a 12-month commitment) or $69 month to month, and includes one seat${c('jasper-1104')}. Pro comes with 2 Brand Voices, 5 company knowledge files and 3 audience profiles so drafts sound like you and speak to the right buyer, plus 100+ ready-made marketing agents, a document editor, rewrite-in-one-click, content in 30+ languages and a Chrome/Edge extension${c('jasper-1104')}. There's a 7-day free trial of Pro${c('jasper-1104')}.</p>
+<p>The catch: if more than one person needs Jasper, the FAQ sends you to sales for the Business plan (custom pricing, 12-month commitment), which adds unlimited brand voices, a style guide, custom agents, SSO and the API${c('jasper-1104')}. Jasper says it never lets third parties train AI models on customer data${c('jasper-1104')}.</p>
+
+<h2>Best cheap shared workspace for a small team: Copy.ai</h2>
+<p>Copy.ai's Chat plan is $29 a month billed monthly or $24 a month billed $288 a year, lists 5 seats, unlimited words in chat and access to OpenAI, Anthropic and Gemini models${c('copyai-1104')}. That makes it one of the lowest per-team prices here, if the 5 seats are included in that price as the plan card suggests: ${U} whether more seats cost extra${c('copyai-1104')}.</p>
+<p>Copy.ai's bigger pitch is "Workflows" that chain research, writing and tool steps for sales and marketing, paid in workflow credits${c('copyai-1104')}. Those start on Growth: $1,000 a month billed $12,000 a year, with 75 seats and 20,000 workflow credits a month${c('copyai-1104')}. A free plan wasn't shown on the pricing page: ${U}.</p>
+
+<h2>Best for brand rules across a company: WRITER</h2>
+<p>WRITER's Starter plan is for up to 5 users, with WRITER Agent for chat and automation, up to 5 Playbooks (saved, repeatable workflows), 1 team "Personality" profile for brand voice and basic connectors${c('writer-1104')}. WRITER says Starter has monthly or annual per-seat prices with fixed credit limits, but the price itself wasn't shown on the page we loaded: ${U}${c('writer-1104')}. Enterprise adds unlimited users, approvals, departmental brand and voice profiles and audit logs${c('writer-1104')}.</p>
+<p>On data, WRITER says it takes a zero data retention approach and doesn't train its models on customer data by default${c('writer-1104')}. Nonprofits and schools get 20% off; payment is by card only (no PayPal or invoicing)${c('writer-1104')}.</p>
+
+<h2>Best for polishing everything you write: Grammarly</h2>
+<p>Grammarly checks writing inside the tools you already use: there are versions for Google Docs, Microsoft Office, Windows, Mac, Chrome, Safari, Edge, Firefox, iPhone and Android${c('gram-1104')}. The free plan fixes spelling and grammar, shows your tone and includes 100 AI prompts a month${c('gram-1104')}.</p>
+<p>Pro is $12 a month when you pay $144 for the year, or $30 month to month${c('gram-1104')}. It adds full-sentence rewrites, tone changes, plagiarism and AI-text detection, 2,000 AI prompts per member a month, plus 1 shared style guide and 1 brand tone for teams${c('gram-1104')}. Pro has a free trial with an email reminder 2 days before it ends; the trial length wasn't stated on the page: ${U}${c('gram-1104')}. Enterprise (unlimited prompts, data loss prevention) is sold through Superhuman Go, the company behind Grammarly${c('gram-1104')}.</p>
+
+<h2>What it costs for a small team</h2>
+<p><b>Example, 5 people, paying yearly:</b> Copy.ai Chat is $24 a month for the plan listing 5 seats${c('copyai-1104')}; Grammarly Pro is $60 a month (5 × $12)${c('gram-1104')}; ChatGPT Business or Claude Team is $100 a month (5 × $20)${c('oai-biz-1104','claude-1104')}; Jasper Pro covers one person at $59, and a 5-person Jasper team needs a Business quote: ${U}${c('jasper-1104')}. WRITER Starter: ${U}. For AI assistant prices side by side, see <a href="/how-much-does-an-ai-agent-cost/">how much an AI agent costs</a>.</p>
+
+<h2>Verdict: which should you use?</h2>
+<ul>
+<li><b>Most small teams:</b> the ChatGPT Business or Claude Team seats you already need, plus free Grammarly${c('oai-biz-1104','claude-1104','gram-1104')}.</li>
+<li><b>One marketer writing a lot of on-brand content:</b> Jasper Pro${c('jasper-1104')}.</li>
+<li><b>Small team on a tight budget wanting one shared AI workspace:</b> Copy.ai Chat${c('copyai-1104')}.</li>
+<li><b>Growing company that needs brand rules and approvals for everyone:</b> get a WRITER quote${c('writer-1104')}.</li>
+<li><b>Everyone who writes emails to customers:</b> Grammarly, free or Pro${c('gram-1104')}.</li>
+</ul>
+<p>Writing is one job. For the rest of your marketing, read the <a href="/best-ai-agent-for-marketing/">best AI agent for marketing</a>, the <a href="/best-ai-presentation-maker/">best AI presentation maker</a>, or take the <a href="/quiz/">1-minute quiz</a>.</p>
+`;
+const faqs = [
+ ['What is the best AI writing tool for business?',`For most small teams, the ChatGPT Business or Claude Team seats you already pay for ($20 a seat a month billed yearly) plus Grammarly for checking. For on-brand marketing content at volume, Jasper Pro ($59 a month billed yearly)${c('oai-biz-1104','claude-1104','gram-1104','jasper-1104')}.`],
+ ['How much does Jasper cost?',`Jasper Pro is $59 a month billed yearly or $69 billed monthly, for one seat, with a 7-day free trial. More seats need the custom-priced Business plan${c('jasper-1104')}.`],
+ ['How much does Copy.ai cost?',`The Chat plan is $29 a month billed monthly or $24 a month billed $288 a year, with 5 seats listed. Growth, which adds workflow credits, is $1,000 a month billed $12,000 a year${c('copyai-1104')}.`],
+ ['Is Grammarly free?',`Yes. Grammarly Free is $0 with spelling, grammar, tone and 100 AI prompts a month. Pro is $12 a month paid yearly ($144) or $30 monthly${c('gram-1104')}.`],
+ ['Is ChatGPT or Claude good enough for business writing?',`For most drafting, yes. Both business plans are $20 a seat a month billed yearly and say they don't train on your business content by default; neither lists brand-voice controls on its plan page${c('oai-biz-1104','claude-1104')}.`],
+ ['How much does WRITER cost?',`WRITER's Starter plan (up to 5 users) is priced per seat, monthly or yearly, but the price wasn't shown on its pricing page when we checked on 4 Nov 2026${c('writer-1104')}.`],
+];
+---
+<GuideArticle slug="best-ai-writing-tool" updated="2026-11-04" kicker="Best for"
+ title="Best AI Writing Tool for Business (2026): Jasper vs Copy.ai vs WRITER vs Grammarly | AgentStackWatch"
+ desc="The best AI writing tools for business in 2026: Jasper, Copy.ai, WRITER and Grammarly vs just using ChatGPT or Claude. Free plans, price per seat, brand voice and the catch. Every fact sourced."
+ h1="The best AI writing tool for business (2026)"
+ dek="Jasper, Copy.ai, WRITER and Grammarly, versus just using ChatGPT Business or Claude Team. Free plans, price per seat, brand voice, and which one to pick."
+ faqs={faqs} used={used}
+ related={[['/best-ai-agent-for-marketing/','Best AI agent for marketing'],['/best-ai-presentation-maker/','Best AI presentation maker'],['/chatgpt-vs-claude-for-business/','ChatGPT vs Claude for business'],['/best-ai-agent-for-sales-and-crm/','Best AI agent for sales and CRM'],['/quiz/','Quiz: which AI agent should you use?']]}>
+<Fragment set:html={body}/>
+</GuideArticle>

@@ -97,6 +97,18 @@
   ]
  },
  {
+  "slug": "best-ai-writing-tool",
+  "short": "Best AI writing tool for business",
+  "kicker": "Best for",
+  "blurb": "Jasper vs Copy.ai vs WRITER vs Grammarly, versus just using ChatGPT or Claude: free plans, price per seat, brand voice and the catch.",
+  "quick": "Write in the ChatGPT Business or Claude Team seats you already pay for ($20 a seat yearly) and add Grammarly (free, or Pro $12 a month yearly). Need on-brand marketing content at volume? Jasper Pro, $59 a month yearly for one seat. Tight budget team: Copy.ai Chat, $24 a month yearly with 5 seats listed.",
+  "rel": [
+   "best-ai-agent-for-marketing",
+   "best-ai-presentation-maker",
+   "chatgpt-vs-claude-for-business"
+  ]
+ },
+ {
   "slug": "chatgpt-vs-gemini",
   "short": "ChatGPT vs Gemini",
   "kicker": "Head to head",
@@ -199,9 +211,9 @@
   "blurb": "Agents that draft posts, blogs and campaigns in your brand voice: ChatGPT, Claude, HubSpot's content agent, Jasper, Canva, Lindy and Grok Bot.",
   "quick": "Most small teams should start with the $20 assistant they already pay for (ChatGPT Plus or Claude Pro) plus Canva for visuals. On HubSpot Marketing Hub Professional, the content agent drafts in your brand voice, but each piece uses 1,000 credits. Jasper Pro ($69 a month, $59 billed yearly) suits teams that need many on-brand marketing workflows.",
   "rel": [
+   "best-ai-writing-tool",
    "best-ai-presentation-maker",
-   "best-ai-agent-for-sales-and-crm",
-   "best-ai-agent-for-small-business"
+   "best-ai-agent-for-sales-and-crm"
   ]
  },
  {

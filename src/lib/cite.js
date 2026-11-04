@@ -3,9 +3,16 @@
 // and for the best free AI agents guide on 2026-10-21. Cost-page price refresh re-checked on 2026-10-27 (keys ending -1027, pc-*). Lindy price wording re-checked across guides on 2026-10-28 (ly-1028).
 import { SRC as GSRC } from './guide-data.js';
 import ps from '../../data/pricing-sources.json';
-const G = '16 Oct 2026', T = '17 Oct 2026', S = '18 Oct 2026', M = '19 Oct 2026', W = '20 Oct 2026', X = '21 Oct 2026', Z = '26 Oct 2026', N = '27 Oct 2026', O = '28 Oct 2026', P1 = '1 Nov 2026', P2 = '2 Nov 2026', P3 = '3 Nov 2026';
+const G = '16 Oct 2026', T = '17 Oct 2026', S = '18 Oct 2026', M = '19 Oct 2026', W = '20 Oct 2026', X = '21 Oct 2026', Z = '26 Oct 2026', N = '27 Oct 2026', O = '28 Oct 2026', P1 = '1 Nov 2026', P2 = '2 Nov 2026', P3 = '3 Nov 2026', P4 = '4 Nov 2026';
 const OCR = t => [`oc-${t}`, `https://github.com/openclaw/openclaw/releases/tag/${t}`, `OpenClaw release notes ${t}`, T];
 const EXTRA = [
+ // Checked 4 Nov 2026 for the best AI writing tool guide
+ ['jasper-1104','https://www.jasper.ai/pricing','Jasper pricing: Pro, Business, feature table and FAQ (Jasper)',P4],
+ ['copyai-1104','https://www.copy.ai/prices','Copy.ai pricing: Chat, Growth, Expansion, Scale and Enterprise (Copy.ai)',P4],
+ ['writer-1104','https://writer.com/pricing/','WRITER plans and pricing: Starter, Enterprise and FAQ (WRITER)',P4],
+ ['gram-1104','https://www.grammarly.com/plans','Grammarly plans: Free, Pro, Enterprise and plan comparison (Grammarly)',P4],
+ ['claude-1104','https://claude.com/pricing','Claude pricing: Free, Pro, Team and Enterprise plans (Anthropic)',P4],
+ ['oai-biz-1104','https://chatgpt.com/pricing/','ChatGPT pricing: Business and Enterprise plans (OpenAI)',P4],
  // Checked 3 Nov 2026 for the best AI presentation maker guide
  ['gamma-1103','https://gamma.app/pricing','Gamma pricing: Free, Plus, Pro, Ultra, Business, Enterprise and FAQ (Gamma)',P3],
  ['bai-1103','https://www.beautiful.ai/pricing','Beautiful.ai pricing: Pro, Team, Enterprise, 14-day trial and FAQ (Beautiful.ai)',P3],
