@@ -1,5 +1,52 @@
 [
  {
+  "slug": "langgraph",
+  "name": "LangGraph",
+  "category": "frameworks",
+  "tag": "cli==0.4.41",
+  "date": "2026-11-05",
+  "week": "2026-11-02",
+  "url": "https://github.com/langchain-ai/langgraph/releases/tag/cli%3D%3D0.4.41",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "fix(cli): remove outdated deploy private-beta notice (9506)"
+  ]
+ },
+ {
+  "slug": "vercel-ai-sdk",
+  "name": "Vercel AI SDK",
+  "category": "frameworks",
+  "tag": "ai@7.0.163",
+  "date": "2026-11-05",
+  "week": "2026-11-02",
+  "url": "https://github.com/vercel/ai/releases/tag/ai%407.0.163",
+  "keywords": [
+   "deprecated"
+  ],
+  "excerpt": [
+   "- 933dae3: fix (ai): download deprecated file-url and image-url tool result content",
+   "Tool result content parts that use the deprecated file-url and image-url"
+  ]
+ },
+ {
+  "slug": "vercel-ai-sdk",
+  "name": "Vercel AI SDK",
+  "category": "frameworks",
+  "tag": "@ai-sdk/workflow@2.0.95",
+  "date": "2026-11-05",
+  "week": "2026-11-02",
+  "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/workflow%402.0.95",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "- 85b920f: feat(workflow): remove experimental_transform from WorkflowAgent.stream()",
+   "Stream transforms cannot reliably run across workflow step boundaries, so the option has been removed along with the StreamTextTransform type export."
+  ]
+ },
+ {
   "slug": "mastra",
   "name": "Mastra",
   "category": "frameworks",

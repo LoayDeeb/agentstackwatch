@@ -1428,5 +1428,45 @@
   "from": "@mastra/core@1.81.0",
   "to": "@mastra/core@1.82.0",
   "url": "https://github.com/mastra-ai/mastra/releases/tag/%40mastra/core%401.82.0"
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "langgraph",
+  "name": "LangGraph",
+  "type": "release",
+  "field": "latest_release",
+  "from": "sdk==0.4.12",
+  "to": "1.2.20",
+  "url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.20"
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "langgraph",
+  "name": "LangGraph",
+  "type": "release",
+  "field": "pypi_version",
+  "from": "1.2.19",
+  "to": "1.2.20",
+  "url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.20"
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "vercel-ai-sdk",
+  "name": "Vercel AI SDK",
+  "type": "release",
+  "field": "latest_release",
+  "from": "@ai-sdk/deepinfra@1.0.64",
+  "to": "@ai-sdk/zai@3.0.47",
+  "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/zai%403.0.47"
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "vercel-ai-sdk",
+  "name": "Vercel AI SDK",
+  "type": "release",
+  "field": "npm_version",
+  "from": "7.0.162",
+  "to": "7.0.163",
+  "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/zai%403.0.47"
  }
 ]
