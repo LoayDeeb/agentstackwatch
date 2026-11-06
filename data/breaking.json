@@ -1,5 +1,24 @@
 [
  {
+  "slug": "hermes-agent",
+  "name": "Hermes Agent",
+  "category": "personal",
+  "tag": "v0.23.0",
+  "date": "2026-11-05",
+  "week": "2026-11-02",
+  "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v0.23.0",
+  "keywords": [
+   "removed",
+   "migration"
+  ],
+  "excerpt": [
+   "- The old built-in browser tools are gone. Browser automation runs on browser_exec only; agent-browser and the ten browser_ tools (browser_navigate, browser_click, ...) were removed. Homes that used Camofox get the camof",
+   "- Word, PowerPoint and Excel skills are now one microsoft-office skill. Old copies stay on disk until you remove them.",
+   "- Smaller core, setup imports — hermes mcp serve moves to the official mcp-serve plugin (hermes mcp-serve). hermes import-agent and the OpenClaw migration move to the agent-importers plugin. First-time hermes setup now o",
+   "- Leaner built-in skills — a fresh install ships 44 built-in skills instead of 58. Word, PowerPoint and Excel merge into one microsoft-office skill, 12 niche skills become optional installs, and optional skills that vend"
+  ]
+ },
+ {
   "slug": "langgraph",
   "name": "LangGraph",
   "category": "frameworks",
@@ -12,6 +31,40 @@
   ],
   "excerpt": [
    "fix(cli): remove outdated deploy private-beta notice (9506)"
+  ]
+ },
+ {
+  "slug": "openclaw",
+  "name": "OpenClaw",
+  "category": "personal",
+  "tag": "v2026.11.1",
+  "date": "2026-11-05",
+  "week": "2026-11-02",
+  "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.11.1",
+  "keywords": [
+   "migration"
+  ],
+  "excerpt": [
+   "- Update startup and migration: recover with retained worker indexes, avoid crashes in automatic migration recovery from 2026.10.7–2026.10.9, preserve recovery errors, and reject Git targets that require an unavailable n",
+   "- Doctor migrations: bound long Matrix archive filenames, preserve config promotion when only migration guidance changes, run explicitly requested headless repairs, return failure rather than success when required work w"
+  ]
+ },
+ {
+  "slug": "openhands",
+  "name": "OpenHands",
+  "category": "frameworks",
+  "tag": "v1.36.0",
+  "date": "2026-11-05",
+  "week": "2026-11-02",
+  "url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.36.0",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "chore: remove components, wrappers and keys left unused by recent UI changes by @VascoSch92 in https://github.com/OpenHands/OpenHands/pull/19358",
+   "chore: remove merged PR artifacts by @all-hands-bot in https://github.com/OpenHands/OpenHands/pull/19324",
+   "chore: remove merged PR artifacts (.pr/) by @neubig in https://github.com/OpenHands/OpenHands/pull/19374",
+   "chore: remove merged PR artifacts by @all-hands-bot in https://github.com/OpenHands/OpenHands/pull/19373"
   ]
  },
  {
