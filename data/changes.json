@@ -1508,5 +1508,35 @@
   "from": "v1.35.0",
   "to": "pr19394-evidence",
   "url": "https://github.com/OpenHands/OpenHands/releases/tag/pr19394-evidence"
+ },
+ {
+  "date": "2026-11-06",
+  "slug": "langgraph",
+  "name": "LangGraph",
+  "type": "release",
+  "field": "latest_release",
+  "from": "1.2.20",
+  "to": "sdk==0.4.14",
+  "url": "https://github.com/langchain-ai/langgraph/releases/tag/sdk%3D%3D0.4.14"
+ },
+ {
+  "date": "2026-11-06",
+  "slug": "crewai",
+  "name": "CrewAI",
+  "type": "release",
+  "field": "latest_release",
+  "from": "1.15.35",
+  "to": "1.15.36",
+  "url": "https://github.com/crewAIInc/crewAI/releases/tag/1.15.36"
+ },
+ {
+  "date": "2026-11-06",
+  "slug": "crewai",
+  "name": "CrewAI",
+  "type": "release",
+  "field": "pypi_version",
+  "from": "1.15.35",
+  "to": "1.15.36",
+  "url": "https://github.com/crewAIInc/crewAI/releases/tag/1.15.36"
  }
 ]
