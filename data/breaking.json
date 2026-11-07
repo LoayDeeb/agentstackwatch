@@ -16,6 +16,21 @@
   ]
  },
  {
+  "slug": "vercel-ai-sdk",
+  "name": "Vercel AI SDK",
+  "category": "frameworks",
+  "tag": "ai@7.0.165",
+  "date": "2026-11-07",
+  "week": "2026-11-02",
+  "url": "https://github.com/vercel/ai/releases/tag/ai%407.0.165",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "- 883fcde: remove transcription word timings from telemetry when recordOutputs is false"
+  ]
+ },
+ {
   "slug": "openhands",
   "name": "OpenHands",
   "category": "frameworks",
