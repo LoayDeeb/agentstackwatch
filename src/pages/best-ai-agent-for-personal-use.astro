@@ -53,6 +53,8 @@ ${picks.map(([a,b,w])=>`<tr><td data-l="If you…">${a}</td><td data-l="Pick" cl
 
 <h3>Research</h3>
 <p>ChatGPT, Claude and Gemini all do deep research on their paid plans. ChatGPT Plus has expanded deep research${c('oai-pricing3')}, Claude Pro includes Research${c('cl-pricing3')}, and Google AI Pro has expanded Deep Research in Gemini${c('g-plans3')}. <b>Manus</b> is the pick if you want the result as slides or a report${c('mn-pricing3')}. Always click through to the sources before you act on a health, money or legal answer. More in <a href="/ai-agent-for-research/">AI agent for research</a>.</p>
+<h3>Money and spending</h3>
+<p>Claude's <b>Personal Finance</b> beta (rolling out to US Pro, Max and Ultra users) lets you connect banks and cards through Plaid and ask about balances and spending in plain language. Access is read-only: it can't move, manage or invest your money, and Anthropic says chats in that hub aren't used for training${c('cl-finance-1107','cl-finance-help-1107')}. ChatGPT has offered a similar Plaid-based money feature since earlier in 2026. Treat every total as a draft until you confirm it in your bank app. Full write-up: <a href="/news/2026-11-05-claude-personal-finance-plaid-bank-accounts/">Claude can now read your bank accounts</a>.</p>
 
 <h3>Planning trips</h3>
 <p>Google's own example for Chrome auto browse is researching hotel and flight costs across several date options to find a cheaper time to travel. It's on AI Pro and Ultra, US and India only${c('g-plans3')}. OpenClaw advertises checking you in for flights from WhatsApp or Telegram, if you're willing to set it up${c('oc3')}. Any $20 assistant can write the day-by-day plan.</p>
@@ -84,7 +86,7 @@ ${costs.map(([a,b,p,w])=>`<tr><td data-l="Product" class="nm">${a}</td><td data-
 <li>Don't say "check my email and handle everything". Give it one clear job${c('oai-agent3')}.</li>
 <li>Type passwords yourself, never in the chat${c('oai-agent3')}. Muse keeps logins in a store the AI model can't see${c('mu-priv3')}.</li>
 <li>Keep "ask before sending or buying" turned on. Claude, ChatGPT, Muse and Lindy all have an approval step${c('cl-gws3','oai-rn3','mu-priv3','ly3')}.</li>
-<li>Never hand over your banking login. ChatGPT also offers Lockdown Mode, which limits web access to cut prompt-injection risk${c('oai-rn3')}.</li>
+<li>Never type your banking password into a chat. Claude's Personal Finance (US Pro/Max/Ultra beta) and similar ChatGPT money tools connect through Plaid, so the assistant sees balances and transactions read-only and never gets your bank password${c('cl-finance-1107','cl-finance-help-1107')}. Still start with one low-stakes account, and check any big number against your bank app. ChatGPT also offers Lockdown Mode, which limits web access to cut prompt-injection risk${c('oai-rn3')}.</li>
 </ol>
 
 <h2>Choose in five minutes</h2>
@@ -105,7 +107,7 @@ const faqs = [
  ['Do AI assistants train on my personal chats?',`Often yes, by default. You can turn it off: "Improve the model for everyone" in ChatGPT${c('oai-data')}, the training setting in Claude${c('cl-pricing3')}, Keep Activity in Gemini${c('g-privacy')}, and Data controls in Muse${c('mu-priv3')}.`],
 ];
 ---
-<GuideArticle slug="best-ai-agent-for-personal-use" kicker="Everyday life" updated="2026-10-24"
+<GuideArticle slug="best-ai-agent-for-personal-use" kicker="Everyday life" updated="2026-11-07"
  title="Best AI Agent for Personal Use (2026): Everyday AI Assistants Compared | AgentStackWatch"
  desc="The best AI personal assistant for everyday life in 2026: ChatGPT, Claude, Gemini, Grok Bot, Muse, Manus and OpenClaw compared on email, calendar, booking, trips, privacy and price. Every fact sourced."
  h1="The best AI agent for personal use (2026)"

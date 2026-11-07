@@ -17,6 +17,9 @@ const EXTRA = [
  ['rows-1107','https://rows.com/pricing','Rows pricing: Free, Plus, Pro, Enterprise and AI Tasks (Rows)',P5],
  ['rows-sh-1107','https://rows.com/blog/post/rows-is-joining-superhuman','Rows will be joining Superhuman: product wind-down note (Rows)',P5],
  ['ba-1107','https://www.betteranalyst.com/pricing','Better Analyst (formerly Formula Bot) pricing: Free, Pro, Team, Enterprise (Better Analyst)',P5],
+ // Checked 7 Nov 2026: Claude Personal Finance beta
+ ['cl-finance-1107','https://claude.com/resources/articles/introducing-personal-finance-in-claude','Introducing Personal Finance in Claude (Anthropic)',P5],
+ ['cl-finance-help-1107','https://support.claude.com/en/articles/18185620-use-personal-finance-in-claude','Use Personal Finance in Claude (Claude Help Center)',P5],
  // Checked 4 Nov 2026 for the best AI writing tool guide
  ['jasper-1104','https://www.jasper.ai/pricing','Jasper pricing: Pro, Business, feature table and FAQ (Jasper)',P4],
  ['copyai-1104','https://www.copy.ai/prices','Copy.ai pricing: Chat, Growth, Expansion, Scale and Enterprise (Copy.ai)',P4],
