@@ -1588,5 +1588,45 @@
   "from": "pr19394-evidence",
   "to": "v1.37.0",
   "url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.37.0"
+ },
+ {
+  "date": "2026-11-07",
+  "slug": "google-adk",
+  "name": "Google ADK",
+  "type": "release",
+  "field": "latest_release",
+  "from": "v2.13.0",
+  "to": "v2.14.0",
+  "url": "https://github.com/google/adk-python/releases/tag/v2.14.0"
+ },
+ {
+  "date": "2026-11-07",
+  "slug": "google-adk",
+  "name": "Google ADK",
+  "type": "release",
+  "field": "pypi_version",
+  "from": "2.13.0",
+  "to": "2.14.0",
+  "url": "https://github.com/google/adk-python/releases/tag/v2.14.0"
+ },
+ {
+  "date": "2026-11-07",
+  "slug": "crewai",
+  "name": "CrewAI",
+  "type": "release",
+  "field": "latest_release",
+  "from": "1.15.36",
+  "to": "1.15.37",
+  "url": "https://github.com/crewAIInc/crewAI/releases/tag/1.15.37"
+ },
+ {
+  "date": "2026-11-07",
+  "slug": "crewai",
+  "name": "CrewAI",
+  "type": "release",
+  "field": "pypi_version",
+  "from": "1.15.36",
+  "to": "1.15.37",
+  "url": "https://github.com/crewAIInc/crewAI/releases/tag/1.15.37"
  }
 ]

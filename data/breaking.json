@@ -1,5 +1,21 @@
 [
  {
+  "slug": "google-adk",
+  "name": "Google ADK",
+  "category": "frameworks",
+  "tag": "v2.14.0",
+  "date": "2026-11-07",
+  "week": "2026-11-02",
+  "url": "https://github.com/google/adk-python/releases/tag/v2.14.0",
+  "keywords": [
+   "breaking"
+  ],
+  "excerpt": [
+   "Breaking changes",
+   "reject path-breaking identity ids in FirestoreSessionService (ec9756e), closes #7800"
+  ]
+ },
+ {
   "slug": "openhands",
   "name": "OpenHands",
   "category": "frameworks",
