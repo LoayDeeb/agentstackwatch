@@ -3,9 +3,20 @@
 // and for the best free AI agents guide on 2026-10-21. Cost-page price refresh re-checked on 2026-10-27 (keys ending -1027, pc-*). Lindy price wording re-checked across guides on 2026-10-28 (ly-1028).
 import { SRC as GSRC } from './guide-data.js';
 import ps from '../../data/pricing-sources.json';
-const G = '16 Oct 2026', T = '17 Oct 2026', S = '18 Oct 2026', M = '19 Oct 2026', W = '20 Oct 2026', X = '21 Oct 2026', Z = '26 Oct 2026', N = '27 Oct 2026', O = '28 Oct 2026', P1 = '1 Nov 2026', P2 = '2 Nov 2026', P3 = '3 Nov 2026', P4 = '4 Nov 2026';
+const G = '16 Oct 2026', T = '17 Oct 2026', S = '18 Oct 2026', M = '19 Oct 2026', W = '20 Oct 2026', X = '21 Oct 2026', Z = '26 Oct 2026', N = '27 Oct 2026', O = '28 Oct 2026', P1 = '1 Nov 2026', P2 = '2 Nov 2026', P3 = '3 Nov 2026', P4 = '4 Nov 2026', P5 = '7 Nov 2026';
 const OCR = t => [`oc-${t}`, `https://github.com/openclaw/openclaw/releases/tag/${t}`, `OpenClaw release notes ${t}`, T];
 const EXTRA = [
+ // Checked 7 Nov 2026 for the best AI for Excel / spreadsheets guide
+ ['ms-excel-1107','https://www.microsoft.com/en-us/microsoft-365-copilot/pricing','Microsoft Copilot business plans and pricing: Copilot in Excel by plan (Microsoft)',P5],
+ ['gws-sheets-1107','https://workspace.google.com/pricing','Google Workspace pricing and plan comparison: Gemini in Sheets by plan (Google)',P5],
+ ['gws-plans-1107','https://knowledge.workspace.google.com/admin/billing/compare-flexible-and-annual-fixed-term-payment-plans','Google Workspace: Flexible vs Annual plan prices in USD (Google Workspace Admin Help)',P5],
+ ['gws-sheets-prod-1107','https://workspace.google.com/products/sheets/','Google Sheets product page: Gemini in Sheets (Google Workspace)',P5],
+ ['oai-biz-1107','https://chatgpt.com/pricing/','ChatGPT pricing: Business and Enterprise plans, spreadsheet extensions (OpenAI)',P5],
+ ['oai-bizhelp-1107','https://help.openai.com/en/articles/8792828-chatgpt-business-overview','ChatGPT Business overview: Standard and Premium seat prices (OpenAI Help Center)',P5],
+ ['claude-1107','https://claude.com/pricing','Claude pricing: Free, Pro, Team and Enterprise plans (Anthropic)',P5],
+ ['rows-1107','https://rows.com/pricing','Rows pricing: Free, Plus, Pro, Enterprise and AI Tasks (Rows)',P5],
+ ['rows-sh-1107','https://rows.com/blog/post/rows-is-joining-superhuman','Rows will be joining Superhuman: product wind-down note (Rows)',P5],
+ ['ba-1107','https://www.betteranalyst.com/pricing','Better Analyst (formerly Formula Bot) pricing: Free, Pro, Team, Enterprise (Better Analyst)',P5],
  // Checked 4 Nov 2026 for the best AI writing tool guide
  ['jasper-1104','https://www.jasper.ai/pricing','Jasper pricing: Pro, Business, feature table and FAQ (Jasper)',P4],
  ['copyai-1104','https://www.copy.ai/prices','Copy.ai pricing: Chat, Growth, Expansion, Scale and Enterprise (Copy.ai)',P4],

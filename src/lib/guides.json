@@ -39,9 +39,10 @@
   "slug": "best-ai-agent-for-small-business",
   "short": "Best AI agent for small business",
   "kicker": "Small business",
-  "blurb": "What a 2–50 person company should buy, what it costs per seat, and the business-tier settings that keep customer data safe.",
-  "quick": "Buy the AI that matches your email system: Gemini or Claude Team on Google Workspace, Copilot on Microsoft 365, and ChatGPT Business or Claude Team if you use neither. Budget about $20–30 per person per month. Always buy the business tier for staff, never personal plans.",
+  "blurb": "What a 2\u201350 person company should buy, what it costs per seat, and the business-tier settings that keep customer data safe.",
+  "quick": "Buy the AI that matches your email system: Gemini or Claude Team on Google Workspace, Copilot on Microsoft 365, and ChatGPT Business or Claude Team if you use neither. Budget about $20\u201330 per person per month. Always buy the business tier for staff, never personal plans.",
   "rel": [
+   "best-ai-for-excel",
    "chatgpt-vs-claude-for-business",
    "are-ai-agents-worth-it-for-business",
    "best-ai-agent-for-marketing"
@@ -67,6 +68,7 @@
   "blurb": "Copilot Business vs ChatGPT Business: price per seat, seat minimums, Outlook and Teams, Office apps, agents and free options.",
   "quick": "If you run on Microsoft 365 (Outlook, Teams, Word, Excel), get Copilot Business: $21 a seat on top of Microsoft 365, or $18 the first year on the promo to 31 Dec 2026. If you use a mix of tools or Gmail, ChatGPT Business is $20 a seat annual or $25 monthly with its agent included.",
   "rel": [
+   "best-ai-for-excel",
    "chatgpt-vs-claude-for-business",
    "how-much-does-an-ai-agent-cost",
    "best-ai-agent-for-small-business"
@@ -103,9 +105,22 @@
   "blurb": "Jasper vs Copy.ai vs WRITER vs Grammarly, versus just using ChatGPT or Claude: free plans, price per seat, brand voice and the catch.",
   "quick": "Write in the ChatGPT Business or Claude Team seats you already pay for ($20 a seat yearly) and add Grammarly (free, or Pro $12 a month yearly). Need on-brand marketing content at volume? Jasper Pro, $59 a month yearly for one seat. Tight budget team: Copy.ai Chat, $24 a month yearly with 5 seats listed.",
   "rel": [
+   "best-ai-for-excel",
    "best-ai-agent-for-marketing",
    "best-ai-presentation-maker",
    "chatgpt-vs-claude-for-business"
+  ]
+ },
+ {
+  "slug": "best-ai-for-excel",
+  "short": "Best AI for Excel and spreadsheets",
+  "kicker": "Best for",
+  "blurb": "Copilot in Excel vs Gemini in Sheets vs ChatGPT, Claude, Better Analyst and Rows: free plans, price per seat, which grid each one works in.",
+  "quick": "Already in Excel on Microsoft 365? Copilot Business add-on ($18\u201321 a user yearly). In Google Sheets? Gemini on Workspace Business Standard ($14 yearly). Mixed tools: ChatGPT Business or Claude Team ($20 a seat yearly). Ops chat on files: Better Analyst Pro $20 yearly. Skip Rows \u2014 it joined Superhuman / wound down.",
+  "rel": [
+   "how-much-does-an-ai-agent-cost",
+   "best-ai-agent-for-small-business",
+   "microsoft-copilot-vs-chatgpt-for-business"
   ]
  },
  {
@@ -113,7 +128,7 @@
   "short": "ChatGPT vs Gemini",
   "kicker": "Head to head",
   "blurb": "Which to pick for a Google or Microsoft business, everyday life or research: personal and business prices, agent features, privacy defaults and certifications.",
-  "quick": "If your business already pays for Google Workspace, use the Gemini you already have before buying anything else. On Microsoft 365, or if you want an agent that hands back finished files, ChatGPT Business ($20–25 a seat) is the stronger pick. For personal use they cost about the same: ChatGPT for bookings and errands, Gemini if you live in Gmail.",
+  "quick": "If your business already pays for Google Workspace, use the Gemini you already have before buying anything else. On Microsoft 365, or if you want an agent that hands back finished files, ChatGPT Business ($20\u201325 a seat) is the stronger pick. For personal use they cost about the same: ChatGPT for bookings and errands, Gemini if you live in Gmail.",
   "rel": [
    "claude-vs-gemini",
    "chatgpt-vs-claude-for-business",
@@ -125,7 +140,7 @@
   "short": "Claude vs Gemini",
   "kicker": "Head to head",
   "blurb": "Which to pick for a Google or Microsoft business, everyday life, writing or hands-off tasks: personal and business prices, agent features, privacy defaults and certifications.",
-  "quick": "On Google Workspace, start with the Gemini included in your plan. On Microsoft 365 or Slack, or if you want an assistant that takes whole tasks and runs them on a schedule, Claude Team ($20–25 a seat) is the better pick. For personal use: Gemini if you want 5 TB of storage thrown in, Claude Pro if you want hand-off tasks.",
+  "quick": "On Google Workspace, start with the Gemini included in your plan. On Microsoft 365 or Slack, or if you want an assistant that takes whole tasks and runs them on a schedule, Claude Team ($20\u201325 a seat) is the better pick. For personal use: Gemini if you want 5 TB of storage thrown in, Claude Pro if you want hand-off tasks.",
   "rel": [
    "chatgpt-vs-gemini",
    "chatgpt-vs-claude-for-business",
@@ -137,8 +152,9 @@
   "short": "How much does an AI agent cost?",
   "kicker": "Cost",
   "blurb": "A sourced price table for every personal agent we track, plus what it costs to run your own agents on the cloud platforms.",
-  "quick": "For one person, $0–20 a month covers most needs; heavy users pay $100 or more. For a team, budget $20–30 per seat per month. Open-source agents are free software, but you still pay for the AI model behind them.",
+  "quick": "For one person, $0\u201320 a month covers most needs; heavy users pay $100 or more. For a team, budget $20\u201330 per seat per month. Open-source agents are free software, but you still pay for the AI model behind them.",
   "rel": [
+   "best-ai-for-excel",
    "best-free-ai-agent",
    "are-ai-agents-worth-it-for-business",
    "best-ai-agent-for-small-business"
@@ -245,7 +261,7 @@
   "short": "Are AI agents worth it for business?",
   "kicker": "ROI",
   "blurb": "What the research shows, what agents really cost, a break-even you can run on your own numbers, and when they're not worth it.",
-  "quick": "Usually yes for a $20–30 a seat assistant: it pays for itself if it saves each person about an hour a month. Expensive autonomous agents are worth it only where you can measure the result and keep a person in the loop for anything risky.",
+  "quick": "Usually yes for a $20\u201330 a seat assistant: it pays for itself if it saves each person about an hour a month. Expensive autonomous agents are worth it only where you can measure the result and keep a person in the loop for anything risky.",
   "rel": [
    "how-much-does-an-ai-agent-cost",
    "best-ai-agent-for-small-business",
