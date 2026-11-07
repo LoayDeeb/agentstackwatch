@@ -1,5 +1,21 @@
 [
  {
+  "slug": "openhands",
+  "name": "OpenHands",
+  "category": "frameworks",
+  "tag": "v1.37.0",
+  "date": "2026-11-06",
+  "week": "2026-11-02",
+  "url": "https://github.com/OpenHands/OpenHands/releases/tag/v1.37.0",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "chore: remove merged PR artifacts by @all-hands-bot in https://github.com/OpenHands/OpenHands/pull/19401",
+   "chore: remove merged PR artifacts by @all-hands-bot in https://github.com/OpenHands/OpenHands/pull/19417"
+  ]
+ },
+ {
   "slug": "hermes-agent",
   "name": "Hermes Agent",
   "category": "personal",
