@@ -1,5 +1,20 @@
 [
  {
+  "slug": "openai-agents-sdk",
+  "name": "OpenAI Agents SDK",
+  "category": "frameworks",
+  "tag": "v0.24.0-alpha.7",
+  "date": "2026-11-08",
+  "week": "2026-11-02",
+  "url": "https://github.com/openai/openai-agents-python/releases/tag/v0.24.0-alpha.7",
+  "keywords": [
+   "removed"
+  ],
+  "excerpt": [
+   "- Experimental saved-login reuse. NativeProvider(auth=CodexLogin()) can use a saved Codex login over HTTP. Omit api_key and base_url. This experimental feature may change or be removed; see the authentication guidance an"
+  ]
+ },
+ {
   "slug": "google-adk",
   "name": "Google ADK",
   "category": "frameworks",
